@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_InventoryOnLine_Detail" targetNamespace="http://tempuri.org/DS_InventoryOnLine_Detail.xsd" xmlns:mstns="http://tempuri.org/DS_InventoryOnLine_Detail.xsd" xmlns="http://tempuri.org/DS_InventoryOnLine_Detail.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="CealsaServer" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CealsaServer (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WMSOnePlan_Client.My.MySettings.GlobalReference.Default.CealsaServer" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="OP_WMS_VIEW_INVENTORY_DETAILTableAdapter" GeneratorDataComponentClassName="OP_WMS_VIEW_INVENTORY_DETAILTableAdapter" Name="OP_WMS_VIEW_INVENTORY_DETAIL" UserDataComponentName="OP_WMS_VIEW_INVENTORY_DETAILTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CealsaServer (MySettings)" DbObjectName="OP_WMS.cealsa.OP_WMS_VIEW_INVENTORY_DETAIL" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT CLIENT_NAME, NUMERO_ORDEN, LICENSE_ID, TERMS_OF_TRADE, MATERIAL_ID, BARCODE_ID, MATERIAL_NAME, QTY, REGIMEN, CODIGO_POLIZA, CURRENT_LOCATION FROM cealsa.OP_WMS_VIEW_INVENTORY_DETAIL</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CLIENT_NAME" DataSetColumn="CLIENT_NAME" />
+              <Mapping SourceColumn="NUMERO_ORDEN" DataSetColumn="NUMERO_ORDEN" />
+              <Mapping SourceColumn="LICENSE_ID" DataSetColumn="LICENSE_ID" />
+              <Mapping SourceColumn="TERMS_OF_TRADE" DataSetColumn="TERMS_OF_TRADE" />
+              <Mapping SourceColumn="MATERIAL_ID" DataSetColumn="MATERIAL_ID" />
+              <Mapping SourceColumn="BARCODE_ID" DataSetColumn="BARCODE_ID" />
+              <Mapping SourceColumn="MATERIAL_NAME" DataSetColumn="MATERIAL_NAME" />
+              <Mapping SourceColumn="QTY" DataSetColumn="QTY" />
+              <Mapping SourceColumn="REGIMEN" DataSetColumn="REGIMEN" />
+              <Mapping SourceColumn="CODIGO_POLIZA" DataSetColumn="CODIGO_POLIZA" />
+              <Mapping SourceColumn="CURRENT_LOCATION" DataSetColumn="CURRENT_LOCATION" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_InventoryOnLine_Detail" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_InventoryOnLine_Detail" msprop:Generator_UserDSName="DS_InventoryOnLine_Detail">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="OP_WMS_VIEW_INVENTORY_DETAIL" msprop:Generator_TableClassName="OP_WMS_VIEW_INVENTORY_DETAILDataTable" msprop:Generator_TableVarName="tableOP_WMS_VIEW_INVENTORY_DETAIL" msprop:Generator_TablePropName="OP_WMS_VIEW_INVENTORY_DETAIL" msprop:Generator_RowDeletingName="OP_WMS_VIEW_INVENTORY_DETAILRowDeleting" msprop:Generator_UserTableName="OP_WMS_VIEW_INVENTORY_DETAIL" msprop:Generator_RowChangingName="OP_WMS_VIEW_INVENTORY_DETAILRowChanging" msprop:Generator_RowEvHandlerName="OP_WMS_VIEW_INVENTORY_DETAILRowChangeEventHandler" msprop:Generator_RowDeletedName="OP_WMS_VIEW_INVENTORY_DETAILRowDeleted" msprop:Generator_RowEvArgName="OP_WMS_VIEW_INVENTORY_DETAILRowChangeEvent" msprop:Generator_RowChangedName="OP_WMS_VIEW_INVENTORY_DETAILRowChanged" msprop:Generator_RowClassName="OP_WMS_VIEW_INVENTORY_DETAILRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CLIENT_NAME" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnCLIENT_NAME" msprop:Generator_ColumnPropNameInRow="CLIENT_NAME" msprop:Generator_ColumnPropNameInTable="CLIENT_NAMEColumn" msprop:Generator_UserColumnName="CLIENT_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NUMERO_ORDEN" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnNUMERO_ORDEN" msprop:Generator_ColumnPropNameInRow="NUMERO_ORDEN" msprop:Generator_ColumnPropNameInTable="NUMERO_ORDENColumn" msprop:Generator_UserColumnName="NUMERO_ORDEN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LICENSE_ID" msprop:Generator_ColumnVarNameInTable="columnLICENSE_ID" msprop:Generator_ColumnPropNameInRow="LICENSE_ID" msprop:Generator_ColumnPropNameInTable="LICENSE_IDColumn" msprop:Generator_UserColumnName="LICENSE_ID" type="xs:decimal" />
+              <xs:element name="TERMS_OF_TRADE" msprop:Generator_ColumnVarNameInTable="columnTERMS_OF_TRADE" msprop:Generator_ColumnPropNameInRow="TERMS_OF_TRADE" msprop:Generator_ColumnPropNameInTable="TERMS_OF_TRADEColumn" msprop:Generator_UserColumnName="TERMS_OF_TRADE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MATERIAL_ID" msprop:Generator_ColumnVarNameInTable="columnMATERIAL_ID" msprop:Generator_ColumnPropNameInRow="MATERIAL_ID" msprop:Generator_ColumnPropNameInTable="MATERIAL_IDColumn" msprop:Generator_UserColumnName="MATERIAL_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BARCODE_ID" msprop:Generator_ColumnVarNameInTable="columnBARCODE_ID" msprop:Generator_ColumnPropNameInRow="BARCODE_ID" msprop:Generator_ColumnPropNameInTable="BARCODE_IDColumn" msprop:Generator_UserColumnName="BARCODE_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MATERIAL_NAME" msprop:Generator_ColumnVarNameInTable="columnMATERIAL_NAME" msprop:Generator_ColumnPropNameInRow="MATERIAL_NAME" msprop:Generator_ColumnPropNameInTable="MATERIAL_NAMEColumn" msprop:Generator_UserColumnName="MATERIAL_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="QTY" msprop:Generator_ColumnVarNameInTable="columnQTY" msprop:Generator_ColumnPropNameInRow="QTY" msprop:Generator_ColumnPropNameInTable="QTYColumn" msprop:Generator_UserColumnName="QTY" type="xs:decimal" />
+              <xs:element name="REGIMEN" msprop:Generator_ColumnVarNameInTable="columnREGIMEN" msprop:Generator_ColumnPropNameInRow="REGIMEN" msprop:Generator_ColumnPropNameInTable="REGIMENColumn" msprop:Generator_UserColumnName="REGIMEN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CODIGO_POLIZA" msprop:Generator_ColumnVarNameInTable="columnCODIGO_POLIZA" msprop:Generator_ColumnPropNameInRow="CODIGO_POLIZA" msprop:Generator_ColumnPropNameInTable="CODIGO_POLIZAColumn" msprop:Generator_UserColumnName="CODIGO_POLIZA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CURRENT_LOCATION" msprop:Generator_ColumnVarNameInTable="columnCURRENT_LOCATION" msprop:Generator_ColumnPropNameInRow="CURRENT_LOCATION" msprop:Generator_ColumnPropNameInTable="CURRENT_LOCATIONColumn" msprop:Generator_UserColumnName="CURRENT_LOCATION" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

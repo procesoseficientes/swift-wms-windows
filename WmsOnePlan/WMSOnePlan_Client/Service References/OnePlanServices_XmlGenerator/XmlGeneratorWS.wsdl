@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="CrearAcuseXml">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="numeroDeclaracion" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="fobDolares" type="tns:ArrayOfDouble" />
+            <s:element minOccurs="1" maxOccurs="1" name="fechaIngreso" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="codigoTransportista" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="placaTransporte" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="numeroContenedor" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="numeroMarchamo" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="acuseDocId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfDouble">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="double" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CrearAcuseXmlResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="VerificarXmlPendientes">
+        <s:complexType />
+      </s:element>
+      <s:element name="VerificarXmlPendientesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VerificarXmlPendientesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RecibirXmlPendientes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dsSat">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RecibirXmlPendientesResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CrearAcuseXmlSoapIn">
+    <wsdl:part name="parameters" element="tns:CrearAcuseXml" />
+  </wsdl:message>
+  <wsdl:message name="CrearAcuseXmlSoapOut">
+    <wsdl:part name="parameters" element="tns:CrearAcuseXmlResponse" />
+  </wsdl:message>
+  <wsdl:message name="VerificarXmlPendientesSoapIn">
+    <wsdl:part name="parameters" element="tns:VerificarXmlPendientes" />
+  </wsdl:message>
+  <wsdl:message name="VerificarXmlPendientesSoapOut">
+    <wsdl:part name="parameters" element="tns:VerificarXmlPendientesResponse" />
+  </wsdl:message>
+  <wsdl:message name="RecibirXmlPendientesSoapIn">
+    <wsdl:part name="parameters" element="tns:RecibirXmlPendientes" />
+  </wsdl:message>
+  <wsdl:message name="RecibirXmlPendientesSoapOut">
+    <wsdl:part name="parameters" element="tns:RecibirXmlPendientesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="XmlGeneratorWSSoap">
+    <wsdl:operation name="CrearAcuseXml">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Crear XML de Acuse de Recibo para envío a SAT</wsdl:documentation>
+      <wsdl:input message="tns:CrearAcuseXmlSoapIn" />
+      <wsdl:output message="tns:CrearAcuseXmlSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerificarXmlPendientes">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Verifica todos los XML que esten en estado 'PENDIENTE' de envío a SAT</wsdl:documentation>
+      <wsdl:input message="tns:VerificarXmlPendientesSoapIn" />
+      <wsdl:output message="tns:VerificarXmlPendientesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RecibirXmlPendientes">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Recibe un Dataset con los XML en estado 'PENDIENTE' para reenviarlo a SAT</wsdl:documentation>
+      <wsdl:input message="tns:RecibirXmlPendientesSoapIn" />
+      <wsdl:output message="tns:RecibirXmlPendientesSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="XmlGeneratorWSSoap" type="tns:XmlGeneratorWSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CrearAcuseXml">
+      <soap:operation soapAction="http://tempuri.org/CrearAcuseXml" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerificarXmlPendientes">
+      <soap:operation soapAction="http://tempuri.org/VerificarXmlPendientes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecibirXmlPendientes">
+      <soap:operation soapAction="http://tempuri.org/RecibirXmlPendientes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="XmlGeneratorWSSoap12" type="tns:XmlGeneratorWSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CrearAcuseXml">
+      <soap12:operation soapAction="http://tempuri.org/CrearAcuseXml" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerificarXmlPendientes">
+      <soap12:operation soapAction="http://tempuri.org/VerificarXmlPendientes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecibirXmlPendientes">
+      <soap12:operation soapAction="http://tempuri.org/RecibirXmlPendientes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="XmlGeneratorWS">
+    <wsdl:port name="XmlGeneratorWSSoap" binding="tns:XmlGeneratorWSSoap">
+      <soap:address location="http://localhost/XMLWS/XmlGeneratorWS.asmx" />
+    </wsdl:port>
+    <wsdl:port name="XmlGeneratorWSSoap12" binding="tns:XmlGeneratorWSSoap12">
+      <soap12:address location="http://localhost/XMLWS/XmlGeneratorWS.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="RegistroEncabezado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ordenVenta" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="numeroBultos" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="resultado" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegistroEncabezadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RegistroEncabezadoResult" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="resultado" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegistroDetalle">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idEncabezado" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="codigoBarrasCanasta" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pesoAproximado" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="puerta" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resultado" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegistroDetalleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RegistroDetalleResult" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="resultado" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="RegistroEncabezadoSoapIn">
+    <wsdl:part name="parameters" element="tns:RegistroEncabezado" />
+  </wsdl:message>
+  <wsdl:message name="RegistroEncabezadoSoapOut">
+    <wsdl:part name="parameters" element="tns:RegistroEncabezadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="RegistroDetalleSoapIn">
+    <wsdl:part name="parameters" element="tns:RegistroDetalle" />
+  </wsdl:message>
+  <wsdl:message name="RegistroDetalleSoapOut">
+    <wsdl:part name="parameters" element="tns:RegistroDetalleResponse" />
+  </wsdl:message>
+  <wsdl:portType name="BandaAtoxAriumSoap">
+    <wsdl:operation name="RegistroEncabezado">
+      <wsdl:input message="tns:RegistroEncabezadoSoapIn" />
+      <wsdl:output message="tns:RegistroEncabezadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RegistroDetalle">
+      <wsdl:input message="tns:RegistroDetalleSoapIn" />
+      <wsdl:output message="tns:RegistroDetalleSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BandaAtoxAriumSoap" type="tns:BandaAtoxAriumSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RegistroEncabezado">
+      <soap:operation soapAction="http://tempuri.org/RegistroEncabezado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegistroDetalle">
+      <soap:operation soapAction="http://tempuri.org/RegistroDetalle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BandaAtoxAriumSoap12" type="tns:BandaAtoxAriumSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RegistroEncabezado">
+      <soap12:operation soapAction="http://tempuri.org/RegistroEncabezado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegistroDetalle">
+      <soap12:operation soapAction="http://tempuri.org/RegistroDetalle" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BandaAtoxArium">
+    <wsdl:port name="BandaAtoxAriumSoap" binding="tns:BandaAtoxAriumSoap">
+      <soap:address location="http://localhost/WmsBandaTransportadora/Servicios/BandaAtoxArium.asmx" />
+    </wsdl:port>
+    <wsdl:port name="BandaAtoxAriumSoap12" binding="tns:BandaAtoxAriumSoap12">
+      <soap12:address location="http://localhost/WmsBandaTransportadora/Servicios/BandaAtoxArium.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

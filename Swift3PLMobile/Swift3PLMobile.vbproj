@@ -1,0 +1,839 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{73C0722E-C03D-4AC2-951E-0F6528F9F7CB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Swift3PLMobile.frmBase</StartupObject>
+    <RootNamespace>Swift3PLMobile</RootNamespace>
+    <AssemblyName>Swift3PLMobile</AssemblyName>
+    <ProjectTypeGuids>{68B1623D-7FB9-47D8-8664-7ECEA3297D4F};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <PlatformFamilyName>PocketPC</PlatformFamilyName>
+    <PlatformID>2AC76CE7-3E8C-402d-85E7-AE9C98D7B6BA</PlatformID>
+    <OSVersion>5.02</OSVersion>
+    <MyType>WindowsForms</MyType>
+    <DeployDirSuffix>Swift3PLMobile</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <NativePlatformName>Windows Mobile 6.5.3 Professional DTK</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+    <ApplicationIcon>1P_WMS_BackTransp_32x32.ico</ApplicationIcon>
+    <DeployDirPrefix>%25CSIDL_PROGRAM_FILES%25</DeployDirPrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>$(PlatformFamilyName)=TRUE</DefineConstants>
+    <DocumentationFile>Swift3PLMobile.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <FileAlignment>512</FileAlignment>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>$(PlatformFamilyName)=TRUE</DefineConstants>
+    <DocumentationFile>Swift3PLMobile.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <FileAlignment>512</FileAlignment>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Resco.AdvancedComboBox.CF3, Version=6.15.0.0, Culture=neutral, PublicKeyToken=7444f602060105f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\Resco MobileForms Toolkit - Windows Mobile\NET35\CF\Resco.AdvancedComboBox.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="Resco.AdvancedList.CF3, Version=6.15.0.0, Culture=neutral, PublicKeyToken=7444f602060105f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\Resco MobileForms Toolkit - Windows Mobile\NET35\CF\Resco.AdvancedList.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="Resco.AdvancedTree.CF3, Version=6.15.0.0, Culture=neutral, PublicKeyToken=7444f602060105f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\Resco MobileForms Toolkit - Windows Mobile\NET35\CF\Resco.AdvancedTree.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="Resco.CommonControls.CF3, Version=6.15.0.1, Culture=neutral, PublicKeyToken=7444f602060105f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\Resco MobileForms Toolkit - Windows Mobile\NET35\CF\Resco.CommonControls.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="Resco.Core.CF3, Version=3.5.0.0, Culture=neutral, PublicKeyToken=7444f602060105f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\Resco MobileForms Toolkit - Windows Mobile\NET35\CF\Resco.Core.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="Resco.DetailView.CF3, Version=6.15.0.0, Culture=neutral, PublicKeyToken=7444f602060105f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\Resco MobileForms Toolkit - Windows Mobile\NET35\CF\Resco.DetailView.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="Resco.ImageBox.CF3, Version=6.12.0.0, Culture=neutral, PublicKeyToken=7444f602060105f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\Resco MobileForms Toolkit - Windows Mobile\NET35\CF\Resco.ImageBox.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="Resco.KeyboardPro.CF3, Version=6.15.0.1, Culture=neutral, PublicKeyToken=7444f602060105f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\Resco MobileForms Toolkit - Windows Mobile\NET35\CF\Resco.KeyboardPro.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="Resco.MessageBox.CF3, Version=6.15.0.1, Culture=neutral, PublicKeyToken=7444f602060105f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\Resco MobileForms Toolkit - Windows Mobile\NET35\CF\Resco.MessageBox.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="Resco.Net.CF3, Version=6.15.0.1, Culture=neutral, PublicKeyToken=7444f602060105f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\Resco MobileForms Toolkit - Windows Mobile\NET35\CF\Resco.Net.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="Resco.OutlookControls.CF3, Version=6.15.0.1, Culture=neutral, PublicKeyToken=7444f602060105f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\Resco MobileForms Toolkit - Windows Mobile\NET35\CF\Resco.OutlookControls.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="Resco.RichTextBox.CF3, Version=6.15.0.0, Culture=neutral, PublicKeyToken=7444f602060105f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\Resco MobileForms Toolkit - Windows Mobile\NET35\CF\Resco.RichTextBox.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="Resco.ScrollBar.CF3, Version=6.15.0.0, Culture=neutral, PublicKeyToken=7444f602060105f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\Resco MobileForms Toolkit - Windows Mobile\NET35\CF\Resco.ScrollBar.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="Resco.SmartGrid.CF3, Version=6.15.0.0, Culture=neutral, PublicKeyToken=7444f602060105f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\Resco MobileForms Toolkit - Windows Mobile\NET35\CF\Resco.SmartGrid.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="Resco.UIElements.CF3, Version=6.15.0.0, Culture=neutral, PublicKeyToken=7444f602060105f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\Resco MobileForms Toolkit - Windows Mobile\NET35\CF\Resco.UIElements.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Data" />
+    <Reference Include="USICF, Version=2.5.2847.19577, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\USICF.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ctrls\ctrl_acuse_recibo.Designer.vb">
+      <DependentUpon>ctrl_acuse_recibo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrls\ctrl_acuse_recibo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrls\ctrl_browse_pictures.Designer.vb">
+      <DependentUpon>ctrl_browse_pictures.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrls\ctrl_browse_pictures.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrls\ctrl_info_handler.Designer.vb">
+      <DependentUpon>ctrl_info_handler.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrls\ctrl_info_handler.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrls\ctrl_info_handler_tree.Designer.vb">
+      <DependentUpon>ctrl_info_handler_tree.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrls\ctrl_info_handler_tree.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrls\ctrl_Login.Designer.vb">
+      <DependentUpon>ctrl_Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrls\ctrl_Login.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrls\ctrl_Menu.Designer.vb">
+      <DependentUpon>ctrl_Menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrls\ctrl_Menu.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrls\ctrl_Picture.Designer.vb">
+      <DependentUpon>ctrl_Picture.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrls\ctrl_Picture.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrls\ctrl_RECFIS_Step2.Designer.vb">
+      <DependentUpon>ctrl_RECFIS_Step2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrls\ctrl_RECFIS_Step2.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrls\ctrl_ScanDocument.Designer.vb">
+      <DependentUpon>ctrl_ScanDocument.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrls\ctrl_ScanDocument.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrls\ctrl_setup_printer.Designer.vb">
+      <DependentUpon>ctrl_setup_printer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrls\ctrl_setup_printer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrls\ctrl_trans_handler.Designer.vb">
+      <DependentUpon>ctrl_trans_handler.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrls\ctrl_trans_handler.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrls\ctrl_type_charge.Designer.vb">
+      <DependentUpon>ctrl_type_charge.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrls\ctrl_type_charge.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrls\DetalleDevoluciones.Designer.vb">
+      <DependentUpon>DetalleDevoluciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrls\DetalleDevoluciones.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrls\ExplodeMasterPack.Designer.vb">
+      <DependentUpon>ExplodeMasterPack.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrls\ExplodeMasterPack.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrls\ExplodeMasterPackDetail.Designer.vb">
+      <DependentUpon>ExplodeMasterPackDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrls\ExplodeMasterPackDetail.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrls\info\ctrl_inv_x_lic.Designer.vb">
+      <DependentUpon>ctrl_inv_x_lic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrls\info\ctrl_inv_x_lic.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrls\MaterialXSerialNumbers.Designer.vb">
+      <DependentUpon>MaterialXSerialNumbers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrls\MaterialXSerialNumbers.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrls\MyTasks\myCounting.Designer.vb">
+      <DependentUpon>myCounting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrls\MyTasks\myCounting.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrls\MyTasks\myPicking.Designer.vb">
+      <DependentUpon>myPicking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrls\MyTasks\myPicking.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrls\MyTasks\myPickingMC92.Designer.vb">
+      <DependentUpon>myPickingMC92.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrls\MyTasks\myPickingMC92.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrls\MyTasks\MyReception.Designer.vb">
+      <DependentUpon>MyReception.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrls\MyTasks\MyReception.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrls\SerialNumberProcess.Designer.vb">
+      <DependentUpon>SerialNumberProcess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrls\SerialNumberProcess.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrls\Transactions\RecepFiscal\ctrl_RecepFiscal.Designer.vb">
+      <DependentUpon>ctrl_RecepFiscal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrls\Transactions\RecepFiscal\ctrl_RecepFiscal.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrls\Transactions\RecepFiscal\ctrl_RECFIS_LogisInfo.Designer.vb">
+      <DependentUpon>ctrl_RECFIS_LogisInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrls\Transactions\RecepFiscal\ctrl_RECFIS_LogisInfo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrls\Transactions\RecepFiscal\ctrl_RECFIS_Step1.Designer.vb">
+      <DependentUpon>ctrl_RECFIS_Step1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrls\Transactions\RecepFiscal\ctrl_RECFIS_Step1.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrls\Transactions\Traslado\ctrl_traslado_a_general.Designer.vb">
+      <DependentUpon>ctrl_traslado_a_general.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrls\Transactions\Traslado\ctrl_traslado_a_general.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrls\Transactions\Traslado\ctrl_TRAS_FAG_Step1.Designer.vb">
+      <DependentUpon>ctrl_TRAS_FAG_Step1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrls\Transactions\Traslado\ctrl_TRAS_FAG_Step1.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrls\UbicacionesSugeridas.Designer.vb">
+      <DependentUpon>UbicacionesSugeridas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrls\UbicacionesSugeridas.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmBase.Designer.vb">
+      <DependentUpon>frmBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Global.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WMS_Clients\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WMS_InfoInventory\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WMS_InfoTrans\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WMS_Materials\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WMS_Polizas\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WMS_Security\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WMS_Settings\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WMS_Trans\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="ZebraPrinterModule.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ctrls\ctrl_acuse_recibo.resx">
+      <DependentUpon>ctrl_acuse_recibo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrls\ctrl_browse_pictures.resx">
+      <DependentUpon>ctrl_browse_pictures.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrls\ctrl_info_handler.resx">
+      <DependentUpon>ctrl_info_handler.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrls\ctrl_info_handler_tree.resx">
+      <DependentUpon>ctrl_info_handler_tree.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrls\ctrl_Login.resx">
+      <DependentUpon>ctrl_Login.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrls\ctrl_Menu.resx">
+      <DependentUpon>ctrl_Menu.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrls\ctrl_Picture.resx">
+      <DependentUpon>ctrl_Picture.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrls\ctrl_RECFIS_Step2.resx">
+      <DependentUpon>ctrl_RECFIS_Step2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrls\ctrl_ScanDocument.resx">
+      <DependentUpon>ctrl_ScanDocument.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrls\ctrl_setup_printer.resx">
+      <DependentUpon>ctrl_setup_printer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrls\ctrl_trans_handler.resx">
+      <DependentUpon>ctrl_trans_handler.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrls\ctrl_type_charge.resx">
+      <DependentUpon>ctrl_type_charge.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrls\DetalleDevoluciones.resx">
+      <DependentUpon>DetalleDevoluciones.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrls\ExplodeMasterPack.resx">
+      <DependentUpon>ExplodeMasterPack.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrls\ExplodeMasterPackDetail.resx">
+      <DependentUpon>ExplodeMasterPackDetail.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrls\info\ctrl_inv_x_lic.resx">
+      <DependentUpon>ctrl_inv_x_lic.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrls\MaterialXSerialNumbers.resx">
+      <DependentUpon>MaterialXSerialNumbers.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrls\MyTasks\myCounting.resx">
+      <DependentUpon>myCounting.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrls\MyTasks\myPicking.resx">
+      <DependentUpon>myPicking.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrls\MyTasks\myPickingMC92.resx">
+      <DependentUpon>myPickingMC92.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrls\MyTasks\MyReception.resx">
+      <DependentUpon>MyReception.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrls\SerialNumberProcess.resx">
+      <DependentUpon>SerialNumberProcess.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrls\Transactions\RecepFiscal\ctrl_RecepFiscal.resx">
+      <DependentUpon>ctrl_RecepFiscal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrls\Transactions\RecepFiscal\ctrl_RECFIS_LogisInfo.resx">
+      <DependentUpon>ctrl_RECFIS_LogisInfo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrls\Transactions\RecepFiscal\ctrl_RECFIS_Step1.resx">
+      <DependentUpon>ctrl_RECFIS_Step1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrls\Transactions\Traslado\ctrl_traslado_a_general.resx">
+      <DependentUpon>ctrl_traslado_a_general.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrls\Transactions\Traslado\ctrl_TRAS_FAG_Step1.resx">
+      <DependentUpon>ctrl_TRAS_FAG_Step1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrls\UbicacionesSugeridas.resx">
+      <DependentUpon>UbicacionesSugeridas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBase.resx">
+      <DependentUpon>frmBase.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1P_WMS_BackTransp_32x32.ico" />
+    <Content Include="1P_WMS_BackWhite.ico" />
+    <Content Include="1P_WMS_Plain.ico" />
+    <Content Include="ctrls\rtdfiles\audit_summ.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ctrls\rtdfiles\counting_tasks.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ctrls\rtdfiles\info_audit_query.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ctrls\rtdfiles\info_inv_x_lic.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ctrls\rtdfiles\info_inv_x_lic_tree.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ctrls\rtdfiles\info_inv_x_lic_tree_MC92.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ctrls\rtdfiles\info_inv_x_loc.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ctrls\rtdfiles\info_inv_x_loc_tree.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ctrls\rtdfiles\info_inv_x_loc_tree_MC92.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ctrls\rtdfiles\info_inv_x_poliza.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ctrls\rtdfiles\info_inv_x_poliza_tree.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ctrls\rtdfiles\info_inv_x_poliza_tree_MC92.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ctrls\rtdfiles\info_inv_x_sku.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ctrls\rtdfiles\info_inv_x_sku_tree.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ctrls\rtdfiles\info_inv_x_sku_tree_MC92.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ctrls\rtdfiles\info_reprint_lic.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ctrls\rtdfiles\init_general.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ctrls\rtdfiles\ivn_x_return.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ctrls\rtdfiles\lic_realloc.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ctrls\rtdfiles\menu_list.xml" />
+    <Content Include="ctrls\rtdfiles\my_waves_tree.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ctrls\rtdfiles\occupancy.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ctrls\rtdfiles\PickingTask.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ctrls\rtdfiles\PickingTaskByLocation.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ctrls\rtdfiles\poliza.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ctrls\rtdfiles\realloc_to_gen.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ctrls\rtdfiles\reception_task.xml" />
+    <Content Include="ctrls\rtdfiles\skus_s1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ctrls\rtdfiles\sku_license.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ctrls\rtdfiles\sku_license_audit_scanning.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ctrls\rtdfiles\sku_license_extended.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ctrls\rtdfiles\wave_picking.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DirectShow.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DirectShow.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="photos\photos.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Wms_Background.bmp" />
+    <None Include="Resources\UiListaTareas.BackgroundImage.jpg" />
+    <Content Include="Resco.KeyboardPro.Native.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sonda_circle_new_black.ico" />
+    <Content Include="Symbol.WPAN.dll" />
+    <None Include="Web References\WMS_InfoTrans\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WMS_InfoTrans\wms_infoTrans.disco" />
+    <None Include="Web References\WMS_InfoTrans\wms_infoTrans.wsdl" />
+    <None Include="Web References\WMS_Materials\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WMS_Materials\WMS_Materials.disco" />
+    <None Include="Web References\WMS_Materials\WMS_Materials.wsdl" />
+    <None Include="Web References\WMS_Trans\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WMS_Trans\WMS_Trans.disco" />
+    <None Include="Web References\WMS_Polizas\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WMS_Polizas\WMS_Polizas.disco" />
+    <None Include="Web References\WMS_Polizas\WMS_Polizas.wsdl" />
+    <None Include="Web References\WMS_Security\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WMS_Security\WMS_Security.disco" />
+    <None Include="Web References\WMS_Clients\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WMS_Clients\WMS_Clients.disco" />
+    <None Include="Web References\WMS_Clients\WMS_Clients.wsdl" />
+    <None Include="Web References\WMS_Security\WMS_Security.wsdl" />
+    <None Include="Web References\WMS_Settings\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WMS_Settings\wms_settings.disco" />
+    <None Include="Web References\WMS_Settings\wms_settings.wsdl" />
+    <None Include="Web References\WMS_InfoInventory\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WMS_InfoInventory\WMS_InfoInventory.disco" />
+    <None Include="Web References\WMS_InfoInventory\WMS_InfoInventory.wsdl" />
+    <None Include="Web References\WMS_Trans\WMS_Trans.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:8088/WMSOnePlan_BusinessServices/Catalogues/WMS_Materials.asmx">
+      <UrlBehavior>Static</UrlBehavior>
+      <RelPath>Web References\WMS_Materials\</RelPath>
+      <UpdateFromURL>http://localhost:8088/WMSOnePlan_BusinessServices/Catalogues/WMS_Materials.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>
+      </CachedAppSettingsObjectName>
+      <CachedSettingsPropName>
+      </CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:8088/WMSOnePlan_BusinessServices/info/wms_infoTrans.asmx">
+      <UrlBehavior>Static</UrlBehavior>
+      <RelPath>Web References\WMS_InfoTrans\</RelPath>
+      <UpdateFromURL>http://localhost:8088/WMSOnePlan_BusinessServices/info/wms_infoTrans.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>
+      </CachedAppSettingsObjectName>
+      <CachedSettingsPropName>
+      </CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:8088/WMSOnePlan_BusinessServices/Trans/WMS_Polizas.asmx">
+      <UrlBehavior>Static</UrlBehavior>
+      <RelPath>Web References\WMS_Polizas\</RelPath>
+      <UpdateFromURL>http://localhost:8088/WMSOnePlan_BusinessServices/Trans/WMS_Polizas.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>
+      </CachedAppSettingsObjectName>
+      <CachedSettingsPropName>
+      </CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:8088/WMSOnePlan_BusinessServices/Trans/WMS_Trans.asmx%3fop=RegisterTrans">
+      <UrlBehavior>Static</UrlBehavior>
+      <RelPath>Web References\WMS_Trans\</RelPath>
+      <UpdateFromURL>http://localhost:8088/WMSOnePlan_BusinessServices/Trans/WMS_Trans.asmx%3fop=RegisterTrans</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>
+      </CachedAppSettingsObjectName>
+      <CachedSettingsPropName>
+      </CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/WMSOnePlan_BusinessServices/Catalogues/WMS_Clients.asmx">
+      <UrlBehavior>Static</UrlBehavior>
+      <RelPath>Web References\WMS_Clients\</RelPath>
+      <UpdateFromURL>http://localhost/WMSOnePlan_BusinessServices/Catalogues/WMS_Clients.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>
+      </CachedAppSettingsObjectName>
+      <CachedSettingsPropName>
+      </CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/WMSOnePlan_BusinessServices/Catalogues/WMS_Security.asmx">
+      <UrlBehavior>Static</UrlBehavior>
+      <RelPath>Web References\WMS_Security\</RelPath>
+      <UpdateFromURL>http://localhost/WMSOnePlan_BusinessServices/Catalogues/WMS_Security.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>
+      </CachedAppSettingsObjectName>
+      <CachedSettingsPropName>
+      </CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:8088/WMSOnePlan_BusinessServices/catalogues/wms_settings.asmx">
+      <UrlBehavior>Static</UrlBehavior>
+      <RelPath>Web References\WMS_Settings\</RelPath>
+      <UpdateFromURL>http://localhost:8088/WMSOnePlan_BusinessServices/catalogues/wms_settings.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>
+      </CachedAppSettingsObjectName>
+      <CachedSettingsPropName>
+      </CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:8088/WMSOnePlan_BusinessServices/Info/WMS_InfoInventory.asmx">
+      <UrlBehavior>Static</UrlBehavior>
+      <RelPath>Web References\WMS_InfoInventory\</RelPath>
+      <UpdateFromURL>http://localhost:8088/WMSOnePlan_BusinessServices/Info/WMS_InfoInventory.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>
+      </CachedAppSettingsObjectName>
+      <CachedSettingsPropName>
+      </CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\MobilityScm.Modelo.TipoYEstados\MobilityScm.Modelo.TipoYEstados.CF.csproj">
+      <Project>{26936AB4-C580-48AF-8B2A-6ECA7942206B}</Project>
+      <Name>MobilityScm.Modelo.TipoYEstados.CF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\MobilityScm.Vertical\MobilityScm.Vertical.CF.csproj">
+      <Project>{823C391D-7272-4269-B159-546E3269C743}</Project>
+      <Name>MobilityScm.Vertical.CF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MobilityScm.Bluetooth\MobilityScm.Bluetooth.csproj">
+      <Project>{E43AB41E-2E70-4268-8055-F5633C0F932B}</Project>
+      <Name>MobilityScm.Bluetooth</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MobilityScm.Keyboard\MobilityScm.Keyboard.csproj">
+      <Project>{ED6E1213-6BF5-441D-B1BD-44A131E3C684}</Project>
+      <Name>MobilityScm.Keyboard</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MobilityScm.Louncher\MobilityScm.Louncher.csproj">
+      <Project>{788FDC23-CD25-41CE-9A18-EAF1FCEE2565}</Project>
+      <Name>MobilityScm.Louncher</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MobilityScm.Modelo.Vistas.Certificacion\MobilityScm.Modelo.Vistas.Certificacion.csproj">
+      <Project>{5033C712-5912-4D17-9F70-B7538566B5FA}</Project>
+      <Name>MobilityScm.Modelo.Vistas.Certificacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MobilityScm.Modelo.Vistas.Consultas\MobilityScm.Modelo.Vistas.Consultas.csproj">
+      <Project>{6A439166-1C18-4257-BEED-E3C25988C080}</Project>
+      <Name>MobilityScm.Modelo.Vistas.Consultas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MobilityScm.Modelo.Vistas.Conteos\MobilityScm.Modelo.Vistas.Conteos.csproj">
+      <Project>{D3B57131-095E-440E-8ED4-C4C23ED79527}</Project>
+      <Name>MobilityScm.Modelo.Vistas.Conteos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MobilityScm.Modelo.Vistas.EntregaDeDespacho\MobilityScm.Modelo.Vistas.EntregaDeDespacho.csproj">
+      <Project>{EEE380C4-010C-4DD7-A510-948A3B97D8DC}</Project>
+      <Name>MobilityScm.Modelo.Vistas.EntregaDeDespacho</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MobilityScm.Modelo.Vistas.Operaciones\MobilityScm.Modelo.Vistas.Operaciones.csproj">
+      <Project>{33D73CB9-24FA-46BB-AC36-0AA4D4DACC95}</Project>
+      <Name>MobilityScm.Modelo.Vistas.Operaciones</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MobilityScm.Print\MobilityScm.Print.csproj">
+      <Project>{46240B17-8FF5-4787-9AC9-10233F4296FC}</Project>
+      <Name>MobilityScm.Print</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MobilityScm.TomarFoto\MobilityScm.TomarFoto.csproj">
+      <Project>{0101D550-5E2C-4F0D-81AD-81DF8FC9FDBF}</Project>
+      <Name>MobilityScm.TomarFoto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyAppSettings\MyAppSettings.vbproj">
+      <Project>{54550147-C797-4ED1-AC67-50FF108C7BEB}</Project>
+      <Name>MyAppSettings</Name>
+    </ProjectReference>
+    <ProjectReference Include="MobilityScm.BarcodeScann\MobilityScm.BarcodeScann.csproj">
+      <Project>{C463CD79-90ED-479E-ACB9-C9958513C077}</Project>
+      <Name>MobilityScm.BarcodeScann</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Skins\" />
+    <Folder Include="xml\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CompactFramework.VisualBasic.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{F184B08F-C81C-45F6-A57F-5ABD9991F28F}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

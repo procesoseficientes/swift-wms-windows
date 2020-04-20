@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetAllServicesNotRelated">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pCLIENT_ERP_CODE" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllServicesNotRelatedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllServicesNotRelatedResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllServicesRelatedTo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pCLIENT_ERP_CODE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllServicesRelatedToResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllServicesRelatedToResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RelateServiceTo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pCLIENT_ERP_CODE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pSERVICE_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLOGIN_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RelateServiceToResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RelateServiceToResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UnRelateServiceTo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pCLIENT_ERP_CODE" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pSERVICE_SEQUENCE" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLOGIN_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UnRelateServiceToResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UnRelateServiceToResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateServiceComments">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pCLIENT_ERP_CODE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pSERVICE_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCOMMENTS" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pREFERENCES" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLOGIN_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateServiceCommentsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateServiceCommentsResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pCLIENT_ERP_CODE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pSERVICE_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLOGIN_ID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pQTY" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateServiceResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllClientsWithServices">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllClientsWithServicesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllClientsWithServicesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetAllServicesNotRelatedSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllServicesNotRelated" />
+  </wsdl:message>
+  <wsdl:message name="GetAllServicesNotRelatedSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllServicesNotRelatedResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllServicesRelatedToSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllServicesRelatedTo" />
+  </wsdl:message>
+  <wsdl:message name="GetAllServicesRelatedToSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllServicesRelatedToResponse" />
+  </wsdl:message>
+  <wsdl:message name="RelateServiceToSoapIn">
+    <wsdl:part name="parameters" element="tns:RelateServiceTo" />
+  </wsdl:message>
+  <wsdl:message name="RelateServiceToSoapOut">
+    <wsdl:part name="parameters" element="tns:RelateServiceToResponse" />
+  </wsdl:message>
+  <wsdl:message name="UnRelateServiceToSoapIn">
+    <wsdl:part name="parameters" element="tns:UnRelateServiceTo" />
+  </wsdl:message>
+  <wsdl:message name="UnRelateServiceToSoapOut">
+    <wsdl:part name="parameters" element="tns:UnRelateServiceToResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateServiceCommentsSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateServiceComments" />
+  </wsdl:message>
+  <wsdl:message name="UpdateServiceCommentsSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateServiceCommentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateService" />
+  </wsdl:message>
+  <wsdl:message name="UpdateServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllClientsWithServicesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllClientsWithServices" />
+  </wsdl:message>
+  <wsdl:message name="GetAllClientsWithServicesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllClientsWithServicesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WMS_ServicesToBillSoap">
+    <wsdl:operation name="GetAllServicesNotRelated">
+      <wsdl:input message="tns:GetAllServicesNotRelatedSoapIn" />
+      <wsdl:output message="tns:GetAllServicesNotRelatedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllServicesRelatedTo">
+      <wsdl:input message="tns:GetAllServicesRelatedToSoapIn" />
+      <wsdl:output message="tns:GetAllServicesRelatedToSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RelateServiceTo">
+      <wsdl:input message="tns:RelateServiceToSoapIn" />
+      <wsdl:output message="tns:RelateServiceToSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UnRelateServiceTo">
+      <wsdl:input message="tns:UnRelateServiceToSoapIn" />
+      <wsdl:output message="tns:UnRelateServiceToSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateServiceComments">
+      <wsdl:input message="tns:UpdateServiceCommentsSoapIn" />
+      <wsdl:output message="tns:UpdateServiceCommentsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateService">
+      <wsdl:input message="tns:UpdateServiceSoapIn" />
+      <wsdl:output message="tns:UpdateServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllClientsWithServices">
+      <wsdl:input message="tns:GetAllClientsWithServicesSoapIn" />
+      <wsdl:output message="tns:GetAllClientsWithServicesSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WMS_ServicesToBillSoap" type="tns:WMS_ServicesToBillSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllServicesNotRelated">
+      <soap:operation soapAction="http://tempuri.org/GetAllServicesNotRelated" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllServicesRelatedTo">
+      <soap:operation soapAction="http://tempuri.org/GetAllServicesRelatedTo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RelateServiceTo">
+      <soap:operation soapAction="http://tempuri.org/RelateServiceTo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnRelateServiceTo">
+      <soap:operation soapAction="http://tempuri.org/UnRelateServiceTo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateServiceComments">
+      <soap:operation soapAction="http://tempuri.org/UpdateServiceComments" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateService">
+      <soap:operation soapAction="http://tempuri.org/UpdateService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllClientsWithServices">
+      <soap:operation soapAction="http://tempuri.org/GetAllClientsWithServices" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WMS_ServicesToBillSoap12" type="tns:WMS_ServicesToBillSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllServicesNotRelated">
+      <soap12:operation soapAction="http://tempuri.org/GetAllServicesNotRelated" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllServicesRelatedTo">
+      <soap12:operation soapAction="http://tempuri.org/GetAllServicesRelatedTo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RelateServiceTo">
+      <soap12:operation soapAction="http://tempuri.org/RelateServiceTo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnRelateServiceTo">
+      <soap12:operation soapAction="http://tempuri.org/UnRelateServiceTo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateServiceComments">
+      <soap12:operation soapAction="http://tempuri.org/UpdateServiceComments" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateService">
+      <soap12:operation soapAction="http://tempuri.org/UpdateService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllClientsWithServices">
+      <soap12:operation soapAction="http://tempuri.org/GetAllClientsWithServices" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WMS_ServicesToBill">
+    <wsdl:port name="WMS_ServicesToBillSoap" binding="tns:WMS_ServicesToBillSoap">
+      <soap:address location="http://localhost/WMSOnePlan_BusinessServices/trans/wms_servicestobill.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WMS_ServicesToBillSoap12" binding="tns:WMS_ServicesToBillSoap12">
+      <soap12:address location="http://localhost/WMSOnePlan_BusinessServices/trans/wms_servicestobill.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,143 @@
+﻿{
+	"id":"FORM-46-CC",
+	"title":"INSPECCION DE CONTENEDORES",
+	"pages":
+		[{
+			"id":"page1",
+			"title":"Página 1 de 7",
+			"secuense":1,
+			"groups":
+			[{
+				"id":"group1_page1",
+				"title":"General",
+				"expanded":true,
+				"secuense":1,
+				"questions":
+				[
+					{
+						"fieldcontainer":"default",
+						"causesnewline":true,
+						"id":"NOMBRE_PILOTO",	
+						"title":"Nombre Piloto:",
+						"secuense":1,
+						"inputtype":"text"	
+					},
+					{
+						"fieldcontainer":"default",
+						"causesnewline":true,
+						"id":"LICENCIA",
+						"title":"Licencia:",
+						"secuense":2,
+						"inputtype":"text"	
+					},
+					{
+						"fieldcontainer":"second",
+						"causesnewline":true,
+						"id":"CONTENEDOR",	
+						"title":"Contenedor:",
+						"secuense":3,
+						"inputtype":"text"	
+					},
+					{
+						"fieldcontainer":"second",
+						"causesnewline":true,
+						"id":"PLACA",	
+						"title":"Placa:",
+						"secuense":4,
+						"inputtype":"text"	
+					},
+					{
+						"fieldcontainer":"second",
+						"causesnewline":true,
+						"id":"MARCHAMO",	
+						"title":"Marchamo:",
+						"secuense":5,
+						"inputtype":"text"	
+					},
+					{
+						"fieldcontainer":"second",
+						"causesnewline":true,
+						"id":"EMPRESA",	
+						"title":"Empresa:",
+						"secuense":6,
+						"inputtype":"text"	
+					}
+				]
+			}]
+			
+		},
+		{
+			"id":"page2",
+			"title":"Página 2 de 7",
+			"secuense":2,
+			"groups":
+			[{
+				"id":"group1_page2",
+				"title":"General",
+				"expanded":true,
+				"secuense":1,
+				"questions":
+				[
+					{
+						"fieldcontainer":"default",
+						"causesnewline":true,
+						"id":"CHASIS",	
+						"title":"Número Chasis:",
+						"secuense":1,
+						"inputtype":"text"	
+					},
+					{
+						"fieldcontainer":"second",
+						"causesnewline":true,
+						"id":"SIZE_CONTENEDOR",	
+						"title":"Tamaño Contenedor:",
+						"secuense":2,
+						"inputtype":"toggle",
+						"toggleitems":[
+							{"caption":"20","value":"20"},
+							{"caption":"40","value":"40"},
+							{"caption":"43","value":"43"},
+							{"caption":"45","value":"45"}
+						]
+
+					},
+					{
+						"fieldcontainer":"second",
+						"causesnewline":true,
+						"id":"LLENO_VACIO",	
+						"title":"Lleno o Vacio:",
+						"secuense":3,
+						"inputtype":"toggle",
+						"toggleitems":[
+							{"caption":"SI","value":"SI"},
+							{"caption":"NO","value":"NO"}
+						]
+					},
+					{
+						"fieldcontainer":"second",
+						"causesnewline":true,
+						"id":"AMBIENTE",	
+						"title":"Ambiente:",
+						"secuense":4,
+						"inputtype":"toggle",
+						"toggleitems":[
+							{"caption":"Seco","value":"SECO"},
+							{"caption":"Refri.","value":"REFRIGERADO"}
+						]
+
+					},
+					{
+						"fieldcontainer":"third",
+						"causesnewline":true,
+						"id":"COMENTARIOS",	
+						"title":"Comentarios:",
+						"secuense":5,
+						"inputtype":"textarea",
+						"areacols":40,
+						"arearows":8
+					}
+				]
+			}]
+		}]
+
+}

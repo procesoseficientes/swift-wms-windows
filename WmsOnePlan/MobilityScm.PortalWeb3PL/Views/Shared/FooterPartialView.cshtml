@@ -1,0 +1,32 @@
+@using MobilityScm.PortalWeb3PL.Controllers
+
+<div class="footerMenu" style="padding-right: 2%">
+    @{
+        var alerts = TempData.ContainsKey(Alert.TempDataKey)
+            ? (List<Alert>)TempData[Alert.TempDataKey]
+            : new List<Alert>();
+        @*if (alerts.Any())
+        {
+            <hr />
+        }*@
+
+        foreach (var alert in alerts)
+        {
+            var dismissableClass = alert.Dismissable ? "alert-dismissable" : null;
+            <div class="alert alert-@alert.AlertStyle @dismissableClass">
+                @if (alert.Dismissable)
+                {
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                }
+                <strong>@Html.Raw(alert.Message)</strong>
+            </div>
+        }
+    }
+</div>
+<div class="copyright">
+    @Html.DevExpress().Label(settings =>
+    {
+        settings.EncodeHtml = false;
+        settings.Text = DateTime.Now.Year + " &copy; Copyright by Mobility";
+    }).GetHtml()
+</div>

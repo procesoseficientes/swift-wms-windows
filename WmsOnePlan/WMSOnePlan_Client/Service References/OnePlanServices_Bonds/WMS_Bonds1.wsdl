@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="CreateBond">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pCertificateId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pBondId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pAmount" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="pInsurenceCompanyId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCurrency" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateBondResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateBondResult" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="pCertificateId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateBond">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pCertificateId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pBondId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pAmount" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="pInsurenceCompanyId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCurrency" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateBondResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateBondResult" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="pCertificateId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteBond">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pCertificateId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteBondResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteBondResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FillBond">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pCertificateId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FillBondResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FillBondResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CreateBondSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateBond" />
+  </wsdl:message>
+  <wsdl:message name="CreateBondSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateBondResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateBondSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateBond" />
+  </wsdl:message>
+  <wsdl:message name="UpdateBondSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateBondResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteBondSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteBond" />
+  </wsdl:message>
+  <wsdl:message name="DeleteBondSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteBondResponse" />
+  </wsdl:message>
+  <wsdl:message name="FillBondSoapIn">
+    <wsdl:part name="parameters" element="tns:FillBond" />
+  </wsdl:message>
+  <wsdl:message name="FillBondSoapOut">
+    <wsdl:part name="parameters" element="tns:FillBondResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WMS_BondsSoap">
+    <wsdl:operation name="CreateBond">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Create a bond</wsdl:documentation>
+      <wsdl:input message="tns:CreateBondSoapIn" />
+      <wsdl:output message="tns:CreateBondSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBond">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update a bond</wsdl:documentation>
+      <wsdl:input message="tns:UpdateBondSoapIn" />
+      <wsdl:output message="tns:UpdateBondSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBond">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete a bond</wsdl:documentation>
+      <wsdl:input message="tns:DeleteBondSoapIn" />
+      <wsdl:output message="tns:DeleteBondSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FillBond">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Fill a bond</wsdl:documentation>
+      <wsdl:input message="tns:FillBondSoapIn" />
+      <wsdl:output message="tns:FillBondSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WMS_BondsSoap" type="tns:WMS_BondsSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateBond">
+      <soap:operation soapAction="http://tempuri.org/CreateBond" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBond">
+      <soap:operation soapAction="http://tempuri.org/UpdateBond" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBond">
+      <soap:operation soapAction="http://tempuri.org/DeleteBond" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillBond">
+      <soap:operation soapAction="http://tempuri.org/FillBond" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WMS_BondsSoap12" type="tns:WMS_BondsSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateBond">
+      <soap12:operation soapAction="http://tempuri.org/CreateBond" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBond">
+      <soap12:operation soapAction="http://tempuri.org/UpdateBond" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBond">
+      <soap12:operation soapAction="http://tempuri.org/DeleteBond" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillBond">
+      <soap12:operation soapAction="http://tempuri.org/FillBond" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WMS_Bonds">
+    <wsdl:port name="WMS_BondsSoap" binding="tns:WMS_BondsSoap">
+      <soap:address location="http://localhost/WMSOnePlan_BusinessServices/Catalogues/WMS_Bonds.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WMS_BondsSoap12" binding="tns:WMS_BondsSoap12">
+      <soap12:address location="http://localhost/WMSOnePlan_BusinessServices/Catalogues/WMS_Bonds.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

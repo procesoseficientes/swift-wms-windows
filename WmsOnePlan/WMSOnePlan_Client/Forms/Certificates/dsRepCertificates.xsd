@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsRepCertificates" targetNamespace="http://tempuri.org/dsRepCertificates.xsd" xmlns:mstns="http://tempuri.org/dsRepCertificates.xsd" xmlns="http://tempuri.org/dsRepCertificates.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsRepCertificates" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsRepCertificates" msprop:Generator_UserDSName="dsRepCertificates">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="repCertificadoBono" msprop:Generator_TableClassName="repCertificadoBonoDataTable" msprop:Generator_TableVarName="tablerepCertificadoBono" msprop:Generator_TablePropName="repCertificadoBono" msprop:Generator_RowDeletingName="repCertificadoBonoRowDeleting" msprop:Generator_RowChangingName="repCertificadoBonoRowChanging" msprop:Generator_RowEvHandlerName="repCertificadoBonoRowChangeEventHandler" msprop:Generator_RowDeletedName="repCertificadoBonoRowDeleted" msprop:Generator_UserTableName="repCertificadoBono" msprop:Generator_RowChangedName="repCertificadoBonoRowChanged" msprop:Generator_RowEvArgName="repCertificadoBonoRowChangeEvent" msprop:Generator_RowClassName="repCertificadoBonoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NumCertificado" msprop:Generator_ColumnVarNameInTable="columnNumCertificado" msprop:Generator_ColumnPropNameInRow="NumCertificado" msprop:Generator_ColumnPropNameInTable="NumCertificadoColumn" msprop:Generator_UserColumnName="NumCertificado" type="xs:int" minOccurs="0" />
+              <xs:element name="MontoBono" msprop:Generator_ColumnVarNameInTable="columnMontoBono" msprop:Generator_ColumnPropNameInRow="MontoBono" msprop:Generator_ColumnPropNameInTable="MontoBonoColumn" msprop:Generator_UserColumnName="MontoBono" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FechaVencimiento" msprop:Generator_ColumnVarNameInTable="columnFechaVencimiento" msprop:Generator_ColumnPropNameInRow="FechaVencimiento" msprop:Generator_ColumnPropNameInTable="FechaVencimientoColumn" msprop:Generator_UserColumnName="FechaVencimiento" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="NumBono" msprop:Generator_ColumnVarNameInTable="columnNumBono" msprop:Generator_ColumnPropNameInRow="NumBono" msprop:Generator_ColumnPropNameInTable="NumBonoColumn" msprop:Generator_UserColumnName="NumBono" type="xs:string" minOccurs="0" />
+              <xs:element name="CodigoCliente" msprop:Generator_ColumnVarNameInTable="columnCodigoCliente" msprop:Generator_ColumnPropNameInRow="CodigoCliente" msprop:Generator_ColumnPropNameInTable="CodigoClienteColumn" msprop:Generator_UserColumnName="CodigoCliente" type="xs:string" minOccurs="0" />
+              <xs:element name="NombreCliente" msprop:Generator_ColumnVarNameInTable="columnNombreCliente" msprop:Generator_ColumnPropNameInRow="NombreCliente" msprop:Generator_ColumnPropNameInTable="NombreClienteColumn" msprop:Generator_UserColumnName="NombreCliente" type="xs:string" minOccurs="0" />
+              <xs:element name="Aseguradora" msprop:Generator_ColumnVarNameInTable="columnAseguradora" msprop:Generator_ColumnPropNameInRow="Aseguradora" msprop:Generator_ColumnPropNameInTable="AseguradoraColumn" msprop:Generator_UserColumnName="Aseguradora" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="repPolizasSeguro" msprop:Generator_TableClassName="repPolizasSeguroDataTable" msprop:Generator_TableVarName="tablerepPolizasSeguro" msprop:Generator_TablePropName="repPolizasSeguro" msprop:Generator_RowDeletingName="repPolizasSeguroRowDeleting" msprop:Generator_RowChangingName="repPolizasSeguroRowChanging" msprop:Generator_RowEvHandlerName="repPolizasSeguroRowChangeEventHandler" msprop:Generator_RowDeletedName="repPolizasSeguroRowDeleted" msprop:Generator_UserTableName="repPolizasSeguro" msprop:Generator_RowChangedName="repPolizasSeguroRowChanged" msprop:Generator_RowEvArgName="repPolizasSeguroRowChangeEvent" msprop:Generator_RowClassName="repPolizasSeguroRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NumPoliza" msprop:Generator_ColumnVarNameInTable="columnNumPoliza" msprop:Generator_ColumnPropNameInRow="NumPoliza" msprop:Generator_ColumnPropNameInTable="NumPolizaColumn" msprop:Generator_UserColumnName="NumPoliza" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaVencimiento" msprop:Generator_ColumnVarNameInTable="columnFechaVencimiento" msprop:Generator_ColumnPropNameInRow="FechaVencimiento" msprop:Generator_ColumnPropNameInTable="FechaVencimientoColumn" msprop:Generator_UserColumnName="FechaVencimiento" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CodigoCliente" msprop:Generator_ColumnVarNameInTable="columnCodigoCliente" msprop:Generator_ColumnPropNameInRow="CodigoCliente" msprop:Generator_ColumnPropNameInTable="CodigoClienteColumn" msprop:Generator_UserColumnName="CodigoCliente" type="xs:string" minOccurs="0" />
+              <xs:element name="NombreCliente" msprop:Generator_ColumnVarNameInTable="columnNombreCliente" msprop:Generator_ColumnPropNameInRow="NombreCliente" msprop:Generator_ColumnPropNameInTable="NombreClienteColumn" msprop:Generator_UserColumnName="NombreCliente" type="xs:string" minOccurs="0" />
+              <xs:element name="MontoAsegurado" msprop:Generator_ColumnVarNameInTable="columnMontoAsegurado" msprop:Generator_ColumnPropNameInRow="MontoAsegurado" msprop:Generator_ColumnPropNameInTable="MontoAseguradoColumn" msprop:Generator_UserColumnName="MontoAsegurado" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MontoInventario" msprop:Generator_ColumnVarNameInTable="columnMontoInventario" msprop:Generator_ColumnPropNameInRow="MontoInventario" msprop:Generator_ColumnPropNameInTable="MontoInventarioColumn" msprop:Generator_UserColumnName="MontoInventario" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Porcentaje" msprop:Generator_ColumnVarNameInTable="columnPorcentaje" msprop:Generator_ColumnPropNameInRow="Porcentaje" msprop:Generator_ColumnPropNameInTable="PorcentajeColumn" msprop:Generator_UserColumnName="Porcentaje" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotalPorcentaje" msprop:Generator_ColumnVarNameInTable="columnTotalPorcentaje" msprop:Generator_ColumnPropNameInRow="TotalPorcentaje" msprop:Generator_ColumnPropNameInTable="TotalPorcentajeColumn" msprop:Generator_UserColumnName="TotalPorcentaje" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

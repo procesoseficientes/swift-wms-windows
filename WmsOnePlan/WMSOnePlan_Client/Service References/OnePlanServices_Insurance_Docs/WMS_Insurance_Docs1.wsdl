@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="CreateInsuranceDocs">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pCompanyId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCLientCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pPoliza" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pFechaVenInicio" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pFechaVenFihnal" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pMonto" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCobertura" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCreateBy" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pInsuranceOwhen" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateInsuranceDocsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateInsuranceDocsResult" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="pFechaVenInicio" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pFechaVenFihnal" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pMonto" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCobertura" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCreateBy" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateInsuranceDocs">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pCompanyId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pMonto" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCobertura" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLastUpdateBy" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateInsuranceDocsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateInsuranceDocsResult" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="pMonto" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCobertura" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLastUpdateBy" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteInsuranceDocs">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pCompanyId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteInsuranceDocsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteInsuranceDocsResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInsuranceDocs">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInsuranceDocsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetInsuranceDocsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FillInsuranceDocs">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pDocId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FillInsuranceDocsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FillInsuranceDocsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRepInsuranceDoscs">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pNameTable" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRepInsuranceDoscsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRepInsuranceDoscsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInsuranceDocsCliente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pClientCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInsuranceDocsClienteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetInsuranceDocsClienteResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateInsuranceDocsLog">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pDocId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pUserId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pFechaInicio" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pFechaFinal" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="pComentario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pAutorizado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateInsuranceDocsLogResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateInsuranceDocsLogResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInsuranceDocsLog">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pInsuranceDocId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInsuranceDocsLogResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetInsuranceDocsLogResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExpirationPolizaDoc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pFechaInicio" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pFechaFinal" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExpirationPolizaDocResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetExpirationPolizaDocResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExpirationInsuranceDoc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pFechaInicio" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pFechaFinal" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExpirationInsuranceDocResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetExpirationInsuranceDocResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CreateInsuranceDocsSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateInsuranceDocs" />
+  </wsdl:message>
+  <wsdl:message name="CreateInsuranceDocsSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateInsuranceDocsResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateInsuranceDocsSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateInsuranceDocs" />
+  </wsdl:message>
+  <wsdl:message name="UpdateInsuranceDocsSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateInsuranceDocsResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteInsuranceDocsSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteInsuranceDocs" />
+  </wsdl:message>
+  <wsdl:message name="DeleteInsuranceDocsSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteInsuranceDocsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetInsuranceDocsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetInsuranceDocs" />
+  </wsdl:message>
+  <wsdl:message name="GetInsuranceDocsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetInsuranceDocsResponse" />
+  </wsdl:message>
+  <wsdl:message name="FillInsuranceDocsSoapIn">
+    <wsdl:part name="parameters" element="tns:FillInsuranceDocs" />
+  </wsdl:message>
+  <wsdl:message name="FillInsuranceDocsSoapOut">
+    <wsdl:part name="parameters" element="tns:FillInsuranceDocsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRepInsuranceDoscsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRepInsuranceDoscs" />
+  </wsdl:message>
+  <wsdl:message name="GetRepInsuranceDoscsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRepInsuranceDoscsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetInsuranceDocsClienteSoapIn">
+    <wsdl:part name="parameters" element="tns:GetInsuranceDocsCliente" />
+  </wsdl:message>
+  <wsdl:message name="GetInsuranceDocsClienteSoapOut">
+    <wsdl:part name="parameters" element="tns:GetInsuranceDocsClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateInsuranceDocsLogSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateInsuranceDocsLog" />
+  </wsdl:message>
+  <wsdl:message name="CreateInsuranceDocsLogSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateInsuranceDocsLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetInsuranceDocsLogSoapIn">
+    <wsdl:part name="parameters" element="tns:GetInsuranceDocsLog" />
+  </wsdl:message>
+  <wsdl:message name="GetInsuranceDocsLogSoapOut">
+    <wsdl:part name="parameters" element="tns:GetInsuranceDocsLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetExpirationPolizaDocSoapIn">
+    <wsdl:part name="parameters" element="tns:GetExpirationPolizaDoc" />
+  </wsdl:message>
+  <wsdl:message name="GetExpirationPolizaDocSoapOut">
+    <wsdl:part name="parameters" element="tns:GetExpirationPolizaDocResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetExpirationInsuranceDocSoapIn">
+    <wsdl:part name="parameters" element="tns:GetExpirationInsuranceDoc" />
+  </wsdl:message>
+  <wsdl:message name="GetExpirationInsuranceDocSoapOut">
+    <wsdl:part name="parameters" element="tns:GetExpirationInsuranceDocResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WMS_Insurance_DocsSoap">
+    <wsdl:operation name="CreateInsuranceDocs">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Create a Insurance Docs</wsdl:documentation>
+      <wsdl:input message="tns:CreateInsuranceDocsSoapIn" />
+      <wsdl:output message="tns:CreateInsuranceDocsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInsuranceDocs">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">UPDATE a Insurance Docs</wsdl:documentation>
+      <wsdl:input message="tns:UpdateInsuranceDocsSoapIn" />
+      <wsdl:output message="tns:UpdateInsuranceDocsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteInsuranceDocs">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">DELETE a Insurance Docs</wsdl:documentation>
+      <wsdl:input message="tns:DeleteInsuranceDocsSoapIn" />
+      <wsdl:output message="tns:DeleteInsuranceDocsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInsuranceDocs">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get a Insurance Docs</wsdl:documentation>
+      <wsdl:input message="tns:GetInsuranceDocsSoapIn" />
+      <wsdl:output message="tns:GetInsuranceDocsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FillInsuranceDocs">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get a Insurance Docs</wsdl:documentation>
+      <wsdl:input message="tns:FillInsuranceDocsSoapIn" />
+      <wsdl:output message="tns:FillInsuranceDocsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRepInsuranceDoscs">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Report Insurance Docs</wsdl:documentation>
+      <wsdl:input message="tns:GetRepInsuranceDoscsSoapIn" />
+      <wsdl:output message="tns:GetRepInsuranceDoscsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInsuranceDocsCliente">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get a Insurance Docs Client</wsdl:documentation>
+      <wsdl:input message="tns:GetInsuranceDocsClienteSoapIn" />
+      <wsdl:output message="tns:GetInsuranceDocsClienteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateInsuranceDocsLog">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Create Insurance Docs Log</wsdl:documentation>
+      <wsdl:input message="tns:CreateInsuranceDocsLogSoapIn" />
+      <wsdl:output message="tns:CreateInsuranceDocsLogSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInsuranceDocsLog">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get a Insurance Docs Log</wsdl:documentation>
+      <wsdl:input message="tns:GetInsuranceDocsLogSoapIn" />
+      <wsdl:output message="tns:GetInsuranceDocsLogSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExpirationPolizaDoc">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Expiration Poliza Docs</wsdl:documentation>
+      <wsdl:input message="tns:GetExpirationPolizaDocSoapIn" />
+      <wsdl:output message="tns:GetExpirationPolizaDocSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExpirationInsuranceDoc">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Expiration Insurance Docs</wsdl:documentation>
+      <wsdl:input message="tns:GetExpirationInsuranceDocSoapIn" />
+      <wsdl:output message="tns:GetExpirationInsuranceDocSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WMS_Insurance_DocsSoap" type="tns:WMS_Insurance_DocsSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateInsuranceDocs">
+      <soap:operation soapAction="http://tempuri.org/CreateInsuranceDocs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInsuranceDocs">
+      <soap:operation soapAction="http://tempuri.org/UpdateInsuranceDocs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteInsuranceDocs">
+      <soap:operation soapAction="http://tempuri.org/DeleteInsuranceDocs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInsuranceDocs">
+      <soap:operation soapAction="http://tempuri.org/GetInsuranceDocs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillInsuranceDocs">
+      <soap:operation soapAction="http://tempuri.org/FillInsuranceDocs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRepInsuranceDoscs">
+      <soap:operation soapAction="http://tempuri.org/GetRepInsuranceDoscs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInsuranceDocsCliente">
+      <soap:operation soapAction="http://tempuri.org/GetInsuranceDocsCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateInsuranceDocsLog">
+      <soap:operation soapAction="http://tempuri.org/CreateInsuranceDocsLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInsuranceDocsLog">
+      <soap:operation soapAction="http://tempuri.org/GetInsuranceDocsLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExpirationPolizaDoc">
+      <soap:operation soapAction="http://tempuri.org/GetExpirationPolizaDoc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExpirationInsuranceDoc">
+      <soap:operation soapAction="http://tempuri.org/GetExpirationInsuranceDoc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WMS_Insurance_DocsSoap12" type="tns:WMS_Insurance_DocsSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateInsuranceDocs">
+      <soap12:operation soapAction="http://tempuri.org/CreateInsuranceDocs" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInsuranceDocs">
+      <soap12:operation soapAction="http://tempuri.org/UpdateInsuranceDocs" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteInsuranceDocs">
+      <soap12:operation soapAction="http://tempuri.org/DeleteInsuranceDocs" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInsuranceDocs">
+      <soap12:operation soapAction="http://tempuri.org/GetInsuranceDocs" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillInsuranceDocs">
+      <soap12:operation soapAction="http://tempuri.org/FillInsuranceDocs" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRepInsuranceDoscs">
+      <soap12:operation soapAction="http://tempuri.org/GetRepInsuranceDoscs" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInsuranceDocsCliente">
+      <soap12:operation soapAction="http://tempuri.org/GetInsuranceDocsCliente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateInsuranceDocsLog">
+      <soap12:operation soapAction="http://tempuri.org/CreateInsuranceDocsLog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInsuranceDocsLog">
+      <soap12:operation soapAction="http://tempuri.org/GetInsuranceDocsLog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExpirationPolizaDoc">
+      <soap12:operation soapAction="http://tempuri.org/GetExpirationPolizaDoc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExpirationInsuranceDoc">
+      <soap12:operation soapAction="http://tempuri.org/GetExpirationInsuranceDoc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WMS_Insurance_Docs">
+    <wsdl:port name="WMS_Insurance_DocsSoap" binding="tns:WMS_Insurance_DocsSoap">
+      <soap:address location="http://localhost/WMSOnePlan_BusinessServices/Catalogues/WMS_Insurance_Docs.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WMS_Insurance_DocsSoap12" binding="tns:WMS_Insurance_DocsSoap12">
+      <soap12:address location="http://localhost/WMSOnePlan_BusinessServices/Catalogues/WMS_Insurance_Docs.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

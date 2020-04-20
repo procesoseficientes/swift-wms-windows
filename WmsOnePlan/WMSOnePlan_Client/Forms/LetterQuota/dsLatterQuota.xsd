@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsLatterQuota" targetNamespace="http://tempuri.org/dsLatterQuota.xsd" xmlns:mstns="http://tempuri.org/dsLatterQuota.xsd" xmlns="http://tempuri.org/dsLatterQuota.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsLatterQuota" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsLatterQuota" msprop:Generator_UserDSName="dsLatterQuota">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Quota_Letter" msprop:Generator_TableClassName="Quota_LetterDataTable" msprop:Generator_TableVarName="tableQuota_Letter" msprop:Generator_TablePropName="Quota_Letter" msprop:Generator_RowDeletingName="Quota_LetterRowDeleting" msprop:Generator_RowChangingName="Quota_LetterRowChanging" msprop:Generator_RowEvHandlerName="Quota_LetterRowChangeEventHandler" msprop:Generator_RowDeletedName="Quota_LetterRowDeleted" msprop:Generator_UserTableName="Quota_Letter" msprop:Generator_RowChangedName="Quota_LetterRowChanged" msprop:Generator_RowEvArgName="Quota_LetterRowChangeEvent" msprop:Generator_RowClassName="Quota_LetterRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DOC_ID" msprop:Generator_ColumnVarNameInTable="columnDOC_ID" msprop:Generator_ColumnPropNameInRow="DOC_ID" msprop:Generator_ColumnPropNameInTable="DOC_IDColumn" msprop:Generator_UserColumnName="DOC_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="POLIZAS" msprop:Generator_ColumnVarNameInTable="columnPOLIZAS" msprop:Generator_ColumnPropNameInRow="POLIZAS" msprop:Generator_ColumnPropNameInTable="POLIZASColumn" msprop:Generator_UserColumnName="POLIZAS" type="xs:string" minOccurs="0" />
+              <xs:element name="CLAVE_ADUANA" msprop:Generator_ColumnVarNameInTable="columnCLAVE_ADUANA" msprop:Generator_ColumnPropNameInRow="CLAVE_ADUANA" msprop:Generator_ColumnPropNameInTable="CLAVE_ADUANAColumn" msprop:Generator_UserColumnName="CLAVE_ADUANA" type="xs:string" minOccurs="0" />
+              <xs:element name="NOMBRE_ADUANA" msprop:Generator_ColumnVarNameInTable="columnNOMBRE_ADUANA" msprop:Generator_ColumnPropNameInRow="NOMBRE_ADUANA" msprop:Generator_ColumnPropNameInTable="NOMBRE_ADUANAColumn" msprop:Generator_UserColumnName="NOMBRE_ADUANA" type="xs:string" minOccurs="0" />
+              <xs:element name="NO_FACTURA" msprop:Generator_ColumnVarNameInTable="columnNO_FACTURA" msprop:Generator_ColumnPropNameInRow="NO_FACTURA" msprop:Generator_ColumnPropNameInTable="NO_FACTURAColumn" msprop:Generator_UserColumnName="NO_FACTURA" type="xs:string" minOccurs="0" />
+              <xs:element name="MERCHANDISE_DESCRIPTION" msprop:Generator_ColumnVarNameInTable="columnMERCHANDISE_DESCRIPTION" msprop:Generator_ColumnPropNameInRow="MERCHANDISE_DESCRIPTION" msprop:Generator_ColumnPropNameInTable="MERCHANDISE_DESCRIPTIONColumn" msprop:Generator_UserColumnName="MERCHANDISE_DESCRIPTION" type="xs:string" minOccurs="0" />
+              <xs:element name="MERCHANDISE_QTY" msprop:Generator_ColumnVarNameInTable="columnMERCHANDISE_QTY" msprop:Generator_ColumnPropNameInRow="MERCHANDISE_QTY" msprop:Generator_ColumnPropNameInTable="MERCHANDISE_QTYColumn" msprop:Generator_UserColumnName="MERCHANDISE_QTY" type="xs:int" minOccurs="0" />
+              <xs:element name="MERCHANDISE_VALUE" msprop:Generator_ColumnVarNameInTable="columnMERCHANDISE_VALUE" msprop:Generator_ColumnPropNameInRow="MERCHANDISE_VALUE" msprop:Generator_ColumnPropNameInTable="MERCHANDISE_VALUEColumn" msprop:Generator_UserColumnName="MERCHANDISE_VALUE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BL_NUMBER" msprop:Generator_ColumnVarNameInTable="columnBL_NUMBER" msprop:Generator_ColumnPropNameInRow="BL_NUMBER" msprop:Generator_ColumnPropNameInTable="BL_NUMBERColumn" msprop:Generator_UserColumnName="BL_NUMBER" type="xs:string" minOccurs="0" />
+              <xs:element name="CONTAINER_NUMBER" msprop:Generator_ColumnVarNameInTable="columnCONTAINER_NUMBER" msprop:Generator_ColumnPropNameInRow="CONTAINER_NUMBER" msprop:Generator_ColumnPropNameInTable="CONTAINER_NUMBERColumn" msprop:Generator_UserColumnName="CONTAINER_NUMBER" type="xs:string" minOccurs="0" />
+              <xs:element name="CLAVE_AGENTE_ADUANERO" msprop:Generator_ColumnVarNameInTable="columnCLAVE_AGENTE_ADUANERO" msprop:Generator_ColumnPropNameInRow="CLAVE_AGENTE_ADUANERO" msprop:Generator_ColumnPropNameInTable="CLAVE_AGENTE_ADUANEROColumn" msprop:Generator_UserColumnName="CLAVE_AGENTE_ADUANERO" type="xs:string" minOccurs="0" />
+              <xs:element name="NOMBRE_AGENTE_ADUANERO" msprop:Generator_ColumnVarNameInTable="columnNOMBRE_AGENTE_ADUANERO" msprop:Generator_ColumnPropNameInRow="NOMBRE_AGENTE_ADUANERO" msprop:Generator_ColumnPropNameInTable="NOMBRE_AGENTE_ADUANEROColumn" msprop:Generator_UserColumnName="NOMBRE_AGENTE_ADUANERO" type="xs:string" minOccurs="0" />
+              <xs:element name="NOMBRE_CONSIGNATARIO" msprop:Generator_ColumnVarNameInTable="columnNOMBRE_CONSIGNATARIO" msprop:Generator_ColumnPropNameInRow="NOMBRE_CONSIGNATARIO" msprop:Generator_ColumnPropNameInTable="NOMBRE_CONSIGNATARIOColumn" msprop:Generator_UserColumnName="NOMBRE_CONSIGNATARIO" type="xs:string" minOccurs="0" />
+              <xs:element name="NIT_CONSIGNATARIO" msprop:Generator_ColumnVarNameInTable="columnNIT_CONSIGNATARIO" msprop:Generator_ColumnPropNameInRow="NIT_CONSIGNATARIO" msprop:Generator_ColumnPropNameInTable="NIT_CONSIGNATARIOColumn" msprop:Generator_UserColumnName="NIT_CONSIGNATARIO" type="xs:string" minOccurs="0" />
+              <xs:element name="DOMICILIO_FISCAL_CONSIGNATARIO" msprop:Generator_ColumnVarNameInTable="columnDOMICILIO_FISCAL_CONSIGNATARIO" msprop:Generator_ColumnPropNameInRow="DOMICILIO_FISCAL_CONSIGNATARIO" msprop:Generator_ColumnPropNameInTable="DOMICILIO_FISCAL_CONSIGNATARIOColumn" msprop:Generator_UserColumnName="DOMICILIO_FISCAL_CONSIGNATARIO" type="xs:string" minOccurs="0" />
+              <xs:element name="STATUS" msprop:Generator_ColumnVarNameInTable="columnSTATUS" msprop:Generator_ColumnPropNameInRow="STATUS" msprop:Generator_ColumnPropNameInTable="STATUSColumn" msprop:Generator_UserColumnName="STATUS" type="xs:string" minOccurs="0" />
+              <xs:element name="RELATED_CLIENT_CODE" msprop:Generator_ColumnVarNameInTable="columnRELATED_CLIENT_CODE" msprop:Generator_ColumnPropNameInRow="RELATED_CLIENT_CODE" msprop:Generator_ColumnPropNameInTable="RELATED_CLIENT_CODEColumn" msprop:Generator_UserColumnName="RELATED_CLIENT_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="CLIENT_NAME" msprop:Generator_ColumnVarNameInTable="columnCLIENT_NAME" msprop:Generator_ColumnPropNameInRow="CLIENT_NAME" msprop:Generator_ColumnPropNameInTable="CLIENT_NAMEColumn" msprop:Generator_UserColumnName="CLIENT_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="Regimen" msprop:Generator_ColumnVarNameInTable="columnRegimen" msprop:Generator_ColumnPropNameInRow="Regimen" msprop:Generator_ColumnPropNameInTable="RegimenColumn" msprop:Generator_UserColumnName="Regimen" type="xs:string" minOccurs="0" />
+              <xs:element name="Unidad_Medida" msprop:Generator_ColumnVarNameInTable="columnUnidad_Medida" msprop:Generator_ColumnPropNameInRow="Unidad_Medida" msprop:Generator_ColumnPropNameInTable="Unidad_MedidaColumn" msprop:Generator_UserColumnName="Unidad_Medida" type="xs:string" minOccurs="0" />
+              <xs:element name="Firma" msprop:Generator_ColumnVarNameInTable="columnFirma" msprop:Generator_ColumnPropNameInRow="Firma" msprop:Generator_ColumnPropNameInTable="FirmaColumn" msprop:Generator_UserColumnName="Firma" type="xs:string" minOccurs="0" />
+              <xs:element name="clave_aduana_alsersa" msprop:Generator_ColumnVarNameInTable="columnclave_aduana_alsersa" msprop:Generator_ColumnPropNameInRow="clave_aduana_alsersa" msprop:Generator_ColumnPropNameInTable="clave_aduana_alsersaColumn" msprop:Generator_UserColumnName="clave_aduana_alsersa" type="xs:string" minOccurs="0" />
+              <xs:element name="POSITION_PERSON" msprop:Generator_ColumnVarNameInTable="columnPOSITION_PERSON" msprop:Generator_ColumnPropNameInRow="POSITION_PERSON" msprop:Generator_ColumnPropNameInTable="POSITION_PERSONColumn" msprop:Generator_UserColumnName="POSITION_PERSON" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

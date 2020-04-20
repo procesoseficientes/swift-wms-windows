@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="OP_WMSDataSet_DetailWavePicking" targetNamespace="http://tempuri.org/OP_WMSDataSet_DetailWavePicking.xsd" xmlns:mstns="http://tempuri.org/OP_WMSDataSet_DetailWavePicking.xsd" xmlns="http://tempuri.org/OP_WMSDataSet_DetailWavePicking.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="CealsaServer" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CealsaServer (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WMSOnePlan_Client.My.MySettings.GlobalReference.Default.CealsaServer" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="OP_WMS_CEALSAConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="OP_WMS_CEALSAConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WMSOnePlan_Client.My.MySettings.GlobalReference.Default.OP_WMS_CEALSAConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="OP_WMS_VIEW_DETAIL_WAVEPICKINGTableAdapter" GeneratorDataComponentClassName="OP_WMS_VIEW_DETAIL_WAVEPICKINGTableAdapter" Name="OP_WMS_VIEW_DETAIL_WAVEPICKING" UserDataComponentName="OP_WMS_VIEW_DETAIL_WAVEPICKINGTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="OP_WMS_CEALSAConnectionString (MySettings)" DbObjectName="OP_WMS.cealsa.OP_WMS_VIEW_DETAIL_WAVEPICKING" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT BARCODE_ID, MATERIAL_NAME, QUANTITY_ASSIGNED, CODIGO_POLIZA_SOURCE, CODIGO_POLIZA_TARGET, WAVE_PICKING_ID, REGIMEN, CLIENT_OWNER, CLIENT_NAME, ASSIGNED_DATE FROM cealsa.OP_WMS_VIEW_DETAIL_WAVEPICKING</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BARCODE_ID" DataSetColumn="BARCODE_ID" />
+              <Mapping SourceColumn="MATERIAL_NAME" DataSetColumn="MATERIAL_NAME" />
+              <Mapping SourceColumn="QUANTITY_ASSIGNED" DataSetColumn="QUANTITY_ASSIGNED" />
+              <Mapping SourceColumn="CODIGO_POLIZA_SOURCE" DataSetColumn="CODIGO_POLIZA_SOURCE" />
+              <Mapping SourceColumn="CODIGO_POLIZA_TARGET" DataSetColumn="CODIGO_POLIZA_TARGET" />
+              <Mapping SourceColumn="WAVE_PICKING_ID" DataSetColumn="WAVE_PICKING_ID" />
+              <Mapping SourceColumn="REGIMEN" DataSetColumn="REGIMEN" />
+              <Mapping SourceColumn="CLIENT_OWNER" DataSetColumn="CLIENT_OWNER" />
+              <Mapping SourceColumn="CLIENT_NAME" DataSetColumn="CLIENT_NAME" />
+              <Mapping SourceColumn="ASSIGNED_DATE" DataSetColumn="ASSIGNED_DATE" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="OP_WMSDataSet_DetailWavePicking" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="OP_WMSDataSet_DetailWavePicking" msprop:Generator_UserDSName="OP_WMSDataSet_DetailWavePicking">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="OP_WMS_VIEW_DETAIL_WAVEPICKING" msprop:Generator_TableClassName="OP_WMS_VIEW_DETAIL_WAVEPICKINGDataTable" msprop:Generator_TableVarName="tableOP_WMS_VIEW_DETAIL_WAVEPICKING" msprop:Generator_TablePropName="OP_WMS_VIEW_DETAIL_WAVEPICKING" msprop:Generator_RowDeletingName="OP_WMS_VIEW_DETAIL_WAVEPICKINGRowDeleting" msprop:Generator_UserTableName="OP_WMS_VIEW_DETAIL_WAVEPICKING" msprop:Generator_RowChangingName="OP_WMS_VIEW_DETAIL_WAVEPICKINGRowChanging" msprop:Generator_RowEvHandlerName="OP_WMS_VIEW_DETAIL_WAVEPICKINGRowChangeEventHandler" msprop:Generator_RowDeletedName="OP_WMS_VIEW_DETAIL_WAVEPICKINGRowDeleted" msprop:Generator_RowEvArgName="OP_WMS_VIEW_DETAIL_WAVEPICKINGRowChangeEvent" msprop:Generator_RowChangedName="OP_WMS_VIEW_DETAIL_WAVEPICKINGRowChanged" msprop:Generator_RowClassName="OP_WMS_VIEW_DETAIL_WAVEPICKINGRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BARCODE_ID" msprop:Generator_ColumnVarNameInTable="columnBARCODE_ID" msprop:Generator_ColumnPropNameInRow="BARCODE_ID" msprop:Generator_ColumnPropNameInTable="BARCODE_IDColumn" msprop:Generator_UserColumnName="BARCODE_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MATERIAL_NAME" msprop:Generator_ColumnVarNameInTable="columnMATERIAL_NAME" msprop:Generator_ColumnPropNameInRow="MATERIAL_NAME" msprop:Generator_ColumnPropNameInTable="MATERIAL_NAMEColumn" msprop:Generator_UserColumnName="MATERIAL_NAME">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="QUANTITY_ASSIGNED" msprop:Generator_ColumnVarNameInTable="columnQUANTITY_ASSIGNED" msprop:Generator_ColumnPropNameInRow="QUANTITY_ASSIGNED" msprop:Generator_ColumnPropNameInTable="QUANTITY_ASSIGNEDColumn" msprop:Generator_UserColumnName="QUANTITY_ASSIGNED" type="xs:decimal" />
+              <xs:element name="CODIGO_POLIZA_SOURCE" msprop:Generator_ColumnVarNameInTable="columnCODIGO_POLIZA_SOURCE" msprop:Generator_ColumnPropNameInRow="CODIGO_POLIZA_SOURCE" msprop:Generator_ColumnPropNameInTable="CODIGO_POLIZA_SOURCEColumn" msprop:Generator_UserColumnName="CODIGO_POLIZA_SOURCE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CODIGO_POLIZA_TARGET" msprop:Generator_ColumnVarNameInTable="columnCODIGO_POLIZA_TARGET" msprop:Generator_ColumnPropNameInRow="CODIGO_POLIZA_TARGET" msprop:Generator_ColumnPropNameInTable="CODIGO_POLIZA_TARGETColumn" msprop:Generator_UserColumnName="CODIGO_POLIZA_TARGET" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WAVE_PICKING_ID" msprop:Generator_ColumnVarNameInTable="columnWAVE_PICKING_ID" msprop:Generator_ColumnPropNameInRow="WAVE_PICKING_ID" msprop:Generator_ColumnPropNameInTable="WAVE_PICKING_IDColumn" msprop:Generator_UserColumnName="WAVE_PICKING_ID" type="xs:decimal" minOccurs="0" />
+              <xs:element name="REGIMEN" msprop:Generator_ColumnVarNameInTable="columnREGIMEN" msprop:Generator_ColumnPropNameInRow="REGIMEN" msprop:Generator_ColumnPropNameInTable="REGIMENColumn" msprop:Generator_UserColumnName="REGIMEN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CLIENT_OWNER" msprop:Generator_ColumnVarNameInTable="columnCLIENT_OWNER" msprop:Generator_ColumnPropNameInRow="CLIENT_OWNER" msprop:Generator_ColumnPropNameInTable="CLIENT_OWNERColumn" msprop:Generator_UserColumnName="CLIENT_OWNER" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CLIENT_NAME" msprop:Generator_ColumnVarNameInTable="columnCLIENT_NAME" msprop:Generator_ColumnPropNameInRow="CLIENT_NAME" msprop:Generator_ColumnPropNameInTable="CLIENT_NAMEColumn" msprop:Generator_UserColumnName="CLIENT_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ASSIGNED_DATE" msprop:Generator_ColumnVarNameInTable="columnASSIGNED_DATE" msprop:Generator_ColumnPropNameInRow="ASSIGNED_DATE" msprop:Generator_ColumnPropNameInTable="ASSIGNED_DATEColumn" msprop:Generator_UserColumnName="ASSIGNED_DATE" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

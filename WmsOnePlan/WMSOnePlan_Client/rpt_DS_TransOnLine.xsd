@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="http://tempuri.org/nwindDataSet.xsd" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" id="rpt_DS_TransOnLine" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Data Source=MOBILITYSCM-PC\SQL2008_LOCAL;Initial Catalog=OP_WMS;Integrated Security=True" IsAppSettingsProperty="false" Modifier="Assembly" ParameterPrefix="@" Provider="System.Data.SqlClient" Name="Connection" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="OP_WMS_TRANSAdapter" Name="OP_WMS_TRANS" UserDataComponentName="OP_WMS_TRANSAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Connection" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT SERIAL_NUMBER, TRANS_DATE, LOGIN_ID, LOGIN_NAME, TRANS_TYPE, TRANS_DESCRIPTION, TRANS_EXTRA_COMMENTS, ERP_LEGACY_ID, ERP_LEGACY_TYPE, TASK_OWNER, MATERIAL_BARCODE, MATERIAL_CODE, MATERIAL_DESCRIPTION, MATERIAL_TYPE, MATERIAL_COST, CAMPAING_OWNER, SOURCE_BIN, TARGET_BIN, SOURCE_LOCATION, TARGET_LOCATION, CLIENT_OWNER, CLIENT_NAME, QUANTITY_UNITS, QUANTITY_BOXES, SOURCE_WAREHOUSE, TARGET_WAREHOSUE, ERP_SOURCE_WAREHOUSE, ERP_TARGET_WAREHOUSE, ERP_POSTED_NUM FROM dbo.OP_WMS_TRANS</CommandText>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="SERIAL_NUMBER" DataSetColumn="SERIAL_NUMBER" />
+              <Mapping SourceColumn="TRANS_DATE" DataSetColumn="TRANS_DATE" />
+              <Mapping SourceColumn="LOGIN_ID" DataSetColumn="LOGIN_ID" />
+              <Mapping SourceColumn="LOGIN_NAME" DataSetColumn="LOGIN_NAME" />
+              <Mapping SourceColumn="TRANS_TYPE" DataSetColumn="TRANS_TYPE" />
+              <Mapping SourceColumn="TRANS_DESCRIPTION" DataSetColumn="TRANS_DESCRIPTION" />
+              <Mapping SourceColumn="TRANS_EXTRA_COMMENTS" DataSetColumn="TRANS_EXTRA_COMMENTS" />
+              <Mapping SourceColumn="ERP_LEGACY_ID" DataSetColumn="ERP_LEGACY_ID" />
+              <Mapping SourceColumn="ERP_LEGACY_TYPE" DataSetColumn="ERP_LEGACY_TYPE" />
+              <Mapping SourceColumn="TASK_OWNER" DataSetColumn="TASK_OWNER" />
+              <Mapping SourceColumn="MATERIAL_BARCODE" DataSetColumn="MATERIAL_BARCODE" />
+              <Mapping SourceColumn="MATERIAL_CODE" DataSetColumn="MATERIAL_CODE" />
+              <Mapping SourceColumn="MATERIAL_DESCRIPTION" DataSetColumn="MATERIAL_DESCRIPTION" />
+              <Mapping SourceColumn="MATERIAL_TYPE" DataSetColumn="MATERIAL_TYPE" />
+              <Mapping SourceColumn="MATERIAL_COST" DataSetColumn="MATERIAL_COST" />
+              <Mapping SourceColumn="CAMPAING_OWNER" DataSetColumn="CAMPAING_OWNER" />
+              <Mapping SourceColumn="SOURCE_BIN" DataSetColumn="SOURCE_BIN" />
+              <Mapping SourceColumn="TARGET_BIN" DataSetColumn="TARGET_BIN" />
+              <Mapping SourceColumn="SOURCE_LOCATION" DataSetColumn="SOURCE_LOCATION" />
+              <Mapping SourceColumn="TARGET_LOCATION" DataSetColumn="TARGET_LOCATION" />
+              <Mapping SourceColumn="CLIENT_OWNER" DataSetColumn="CLIENT_OWNER" />
+              <Mapping SourceColumn="CLIENT_NAME" DataSetColumn="CLIENT_NAME" />
+              <Mapping SourceColumn="QUANTITY_UNITS" DataSetColumn="QUANTITY_UNITS" />
+              <Mapping SourceColumn="QUANTITY_BOXES" DataSetColumn="QUANTITY_BOXES" />
+              <Mapping SourceColumn="SOURCE_WAREHOUSE" DataSetColumn="SOURCE_WAREHOUSE" />
+              <Mapping SourceColumn="TARGET_WAREHOSUE" DataSetColumn="TARGET_WAREHOSUE" />
+              <Mapping SourceColumn="ERP_SOURCE_WAREHOUSE" DataSetColumn="ERP_SOURCE_WAREHOUSE" />
+              <Mapping SourceColumn="ERP_TARGET_WAREHOUSE" DataSetColumn="ERP_TARGET_WAREHOUSE" />
+              <Mapping SourceColumn="ERP_POSTED_NUM" DataSetColumn="ERP_POSTED_NUM" />
+            </Mappings>
+          </TableAdapter>
+        </Tables>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="rpt_DS_TransOnLine" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="OP_WMS_TRANS">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SERIAL_NUMBER" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:decimal" />
+              <xs:element name="TRANS_DATE" type="xs:dateTime" />
+              <xs:element name="LOGIN_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LOGIN_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TRANS_TYPE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TRANS_DESCRIPTION">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TRANS_EXTRA_COMMENTS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ERP_LEGACY_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ERP_LEGACY_TYPE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TASK_OWNER" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MATERIAL_BARCODE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MATERIAL_CODE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MATERIAL_DESCRIPTION">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MATERIAL_TYPE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MATERIAL_COST" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CAMPAING_OWNER">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SOURCE_BIN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TARGET_BIN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SOURCE_LOCATION">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TARGET_LOCATION">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CLIENT_OWNER" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CLIENT_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="QUANTITY_UNITS" type="xs:decimal" />
+              <xs:element name="QUANTITY_BOXES" type="xs:decimal" />
+              <xs:element name="SOURCE_WAREHOUSE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TARGET_WAREHOSUE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ERP_SOURCE_WAREHOUSE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ERP_TARGET_WAREHOUSE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ERP_POSTED_NUM" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//OP_WMS_TRANS" />
+      <xs:field xpath="SERIAL_NUMBER" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

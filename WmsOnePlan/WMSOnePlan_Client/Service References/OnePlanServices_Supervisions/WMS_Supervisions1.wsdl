@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="CreateSupervisions">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pSuperId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pClientOwhen" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pAuditAddress" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pComents" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pIsInitial" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pAuditedBy" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateSupervisionsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateSupervisionsResult" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="pSuperId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pAuditedBy" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Updatesupervision">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pSuperId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pClientOwhen" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pAuditAddress" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pComents" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pIsInitial" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatesupervisionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdatesupervisionResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateStatusSupervision">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pSuperId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pAsignado" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateStatusSupervisionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateStatusSupervisionResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteSupervisions">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pSuperId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteSupervisionsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteSupervisionsResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSupervisions">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pAddConStatus" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSupervisionsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSupervisionsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FillSupervisions">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pSuperId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FillSupervisionsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FillSupervisionsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CreateSupervisionsSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateSupervisions" />
+  </wsdl:message>
+  <wsdl:message name="CreateSupervisionsSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateSupervisionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdatesupervisionSoapIn">
+    <wsdl:part name="parameters" element="tns:Updatesupervision" />
+  </wsdl:message>
+  <wsdl:message name="UpdatesupervisionSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdatesupervisionResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateStatusSupervisionSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateStatusSupervision" />
+  </wsdl:message>
+  <wsdl:message name="UpdateStatusSupervisionSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateStatusSupervisionResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSupervisionsSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteSupervisions" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSupervisionsSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteSupervisionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSupervisionsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSupervisions" />
+  </wsdl:message>
+  <wsdl:message name="GetSupervisionsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSupervisionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="FillSupervisionsSoapIn">
+    <wsdl:part name="parameters" element="tns:FillSupervisions" />
+  </wsdl:message>
+  <wsdl:message name="FillSupervisionsSoapOut">
+    <wsdl:part name="parameters" element="tns:FillSupervisionsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WMS_SupervisionsSoap">
+    <wsdl:operation name="CreateSupervisions">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Create a supervision</wsdl:documentation>
+      <wsdl:input message="tns:CreateSupervisionsSoapIn" />
+      <wsdl:output message="tns:CreateSupervisionsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Updatesupervision">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update a supervision</wsdl:documentation>
+      <wsdl:input message="tns:UpdatesupervisionSoapIn" />
+      <wsdl:output message="tns:UpdatesupervisionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStatusSupervision">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update a supervision</wsdl:documentation>
+      <wsdl:input message="tns:UpdateStatusSupervisionSoapIn" />
+      <wsdl:output message="tns:UpdateStatusSupervisionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSupervisions">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete a supervision</wsdl:documentation>
+      <wsdl:input message="tns:DeleteSupervisionsSoapIn" />
+      <wsdl:output message="tns:DeleteSupervisionsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSupervisions">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get a Supervisions</wsdl:documentation>
+      <wsdl:input message="tns:GetSupervisionsSoapIn" />
+      <wsdl:output message="tns:GetSupervisionsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FillSupervisions">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get a Supervisions</wsdl:documentation>
+      <wsdl:input message="tns:FillSupervisionsSoapIn" />
+      <wsdl:output message="tns:FillSupervisionsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WMS_SupervisionsSoap" type="tns:WMS_SupervisionsSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateSupervisions">
+      <soap:operation soapAction="http://tempuri.org/CreateSupervisions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Updatesupervision">
+      <soap:operation soapAction="http://tempuri.org/Updatesupervision" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStatusSupervision">
+      <soap:operation soapAction="http://tempuri.org/UpdateStatusSupervision" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSupervisions">
+      <soap:operation soapAction="http://tempuri.org/DeleteSupervisions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSupervisions">
+      <soap:operation soapAction="http://tempuri.org/GetSupervisions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillSupervisions">
+      <soap:operation soapAction="http://tempuri.org/FillSupervisions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WMS_SupervisionsSoap12" type="tns:WMS_SupervisionsSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateSupervisions">
+      <soap12:operation soapAction="http://tempuri.org/CreateSupervisions" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Updatesupervision">
+      <soap12:operation soapAction="http://tempuri.org/Updatesupervision" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStatusSupervision">
+      <soap12:operation soapAction="http://tempuri.org/UpdateStatusSupervision" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSupervisions">
+      <soap12:operation soapAction="http://tempuri.org/DeleteSupervisions" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSupervisions">
+      <soap12:operation soapAction="http://tempuri.org/GetSupervisions" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillSupervisions">
+      <soap12:operation soapAction="http://tempuri.org/FillSupervisions" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WMS_Supervisions">
+    <wsdl:port name="WMS_SupervisionsSoap" binding="tns:WMS_SupervisionsSoap">
+      <soap:address location="http://localhost/WMSOnePlan_BusinessServices/Catalogues/WMS_Supervisions.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WMS_SupervisionsSoap12" binding="tns:WMS_SupervisionsSoap12">
+      <soap12:address location="http://localhost/WMSOnePlan_BusinessServices/Catalogues/WMS_Supervisions.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

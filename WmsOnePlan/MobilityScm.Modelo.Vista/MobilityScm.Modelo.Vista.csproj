@@ -1,0 +1,874 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D23D2FFB-CD6C-40AC-BB87-78E338FCF32D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MobilityScm.Modelo</RootNamespace>
+    <AssemblyName>MobilityScm.Modelo.Vista</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="ClosedXML, Version=0.87.0.0, Culture=neutral, PublicKeyToken=fd1eb21b62ae805b, processorArchitecture=MSIL">
+      <HintPath>..\packages\ClosedXML.0.87.1\lib\net40\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v19.2.UI, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Docs.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Map.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Export, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Spreadsheet.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v19.2.UI, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.2.Extensions, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v19.2.UI, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.2.Wizard, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraDialogs.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v19.2.Win, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraMap.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPivotGrid.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.2.Extensions, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Images.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DocumentFormat.OpenXml, Version=2.7.2.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.7.2\lib\net40\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelNumberFormat, Version=1.0.3.0, Culture=neutral, PublicKeyToken=23c6f5d73be07eca, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelNumberFormat.1.0.3\lib\net20\ExcelNumberFormat.dll</HintPath>
+    </Reference>
+    <Reference Include="FastMember, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FastMember.1.3.0\lib\net45\FastMember.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualC" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Device" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Input.Manipulations" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.OpenAccess.Ria.Extensions, Version=2015.1.225.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL'S\Telerik.OpenAccess.Ria.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.OpenAccess.Runtime, Version=2015.1.225.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL'S\Telerik.OpenAccess.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Atributos\PushpinFactory.cs" />
+    <Compile Include="DataSets\AcuerdoComercialPorInventario.cs">
+      <DependentUpon>AcuerdoComercialPorInventario.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\AcuerdoComercialPorInventario.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AcuerdoComercialPorInventario.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\ManifiestoDeCarga.cs">
+      <DependentUpon>ManifiestoDeCarga.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\ManifiestoDeCarga.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ManifiestoDeCarga.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\MasterPackInventario.cs">
+      <DependentUpon>MasterPackInventario.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\MasterPackInventario.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MasterPackInventario.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\PolizasVencidas.cs">
+      <DependentUpon>PolizasVencidas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\PolizasVencidas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PolizasVencidas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\SolicitudDeTraslado.cs">
+      <DependentUpon>SolicitudDeTraslado.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\SolicitudDeTraslado.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SolicitudDeTraslado.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Popups\CambiarPrioridadDeTareaPopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Popups\CambiarPrioridadDeTareaPopup.Designer.cs">
+      <DependentUpon>CambiarPrioridadDeTareaPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popups\LiberarPolizaPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popups\LiberarPolizaPopup.Designer.cs">
+      <DependentUpon>LiberarPolizaPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popups\ListaParaParametrosGeneralesPopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Popups\ListaParaParametrosGeneralesPopup.Designer.cs">
+      <DependentUpon>ListaParaParametrosGeneralesPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popups\ReasignarTareaLineaDePickingPopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\AcuerdoComercialPorInventario.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\AcuerdoComercialPorInventario.Designer.cs">
+      <DependentUpon>AcuerdoComercialPorInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\BalanceDeSaldosFiscal.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\BalanceDeSaldosFiscal.Designer.cs">
+      <DependentUpon>BalanceDeSaldosFiscal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ConsultaConteoFiciso.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\ConsultaConteoFiciso.Designer.cs">
+      <DependentUpon>ConsultaConteoFiciso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ConsultaCosteosConsolidado.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\ConsultaCosteosConsolidado.Designer.cs">
+      <DependentUpon>ConsultaCosteosConsolidado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ConsultaCosteosPorDocumento.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\ConsultaCosteosPorDocumento.Designer.cs">
+      <DependentUpon>ConsultaCosteosPorDocumento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ConsultaDeInventarioDiario.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\ConsultaDeInventarioDiario.Designer.cs">
+      <DependentUpon>ConsultaDeInventarioDiario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ConsultaLineaPicking.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\ConsultaLineaPicking.Designer.cs">
+      <DependentUpon>ConsultaLineaPicking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ConsultaPedidosPorVendedor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\ConsultaPedidosPorVendedor.Designer.cs">
+      <DependentUpon>ConsultaPedidosPorVendedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ManifiestoDeCargaConsolidado.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\ManifiestoDeCargaConsolidado.Designer.cs">
+      <DependentUpon>ManifiestoDeCargaConsolidado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ManifiestoDeCargaDetallado.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\ManifiestoDeCargaDetallado.Designer.cs">
+      <DependentUpon>ManifiestoDeCargaDetallado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\MasterPackInventario.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\MasterPackInventario.Designer.cs">
+      <DependentUpon>MasterPackInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\OrdenesDeVentaPendientes.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\OrdenesDeVentaPendientes.Designer.cs">
+      <DependentUpon>OrdenesDeVentaPendientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\PaseDeSalida.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\PaseDeSalida.Designer.cs">
+      <DependentUpon>PaseDeSalida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\PolizasVencidas.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\PolizasVencidas.Designer.cs">
+      <DependentUpon>PolizasVencidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReporteCajasPorVendedor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReporteCajasPorVendedor.Designer.cs">
+      <DependentUpon>ReporteCajasPorVendedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReporteDeSolicitudDeTraslado.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReporteDeSolicitudDeTraslado.Designer.cs">
+      <DependentUpon>ReporteDeSolicitudDeTraslado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReporteDevolucionesConsolidado.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReporteDevolucionesConsolidado.Designer.cs">
+      <DependentUpon>ReporteDevolucionesConsolidado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReporteDevolucionesDetallado.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReporteDevolucionesDetallado.Designer.cs">
+      <DependentUpon>ReporteDevolucionesDetallado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReporteInventarioComprometido.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReporteInventarioComprometido.Designer.cs">
+      <DependentUpon>ReporteInventarioComprometido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\SolicitudDeTraslado.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\SolicitudDeTraslado.Designer.cs">
+      <DependentUpon>SolicitudDeTraslado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\AcuerdoComercialVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\AcuerdoComercialVista.Designer.cs">
+      <DependentUpon>AcuerdoComercialVista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\AdministradorDeLineaDePickingVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\AdministradorDeLineaDePickingVista.Designer.cs">
+      <DependentUpon>AdministradorDeLineaDePickingVista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\AdministradorDeTareasVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\AdministradorDeTareasVista.Designer.cs">
+      <DependentUpon>AdministradorDeTareasVista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\AsignacionConteoFisico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\AsignacionConteoFisico.Designer.cs">
+      <DependentUpon>AsignacionConteoFisico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\BalanceDeSaldosFiscalVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\BalanceDeSaldosFiscalVista.Designer.cs">
+      <DependentUpon>BalanceDeSaldosFiscalVista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\BloqueoDeInventarioVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\BloqueoDeInventarioVista.Designer.cs">
+      <DependentUpon>BloqueoDeInventarioVista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\CatalogoZonaVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\CatalogoZonaVista.Designer.cs">
+      <DependentUpon>CatalogoZonaVista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ClaseVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ClaseVista.Designer.cs">
+      <DependentUpon>ClaseVista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ConsultaConteoFisico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ConsultaConteoFisico.Designer.cs">
+      <DependentUpon>ConsultaConteoFisico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ConsultaCosteoVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ConsultaCosteoVista.Designer.cs">
+      <DependentUpon>ConsultaCosteoVista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ConsultaDeInventarioDiarioVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ConsultaDeInventarioDiarioVista.Designer.cs">
+      <DependentUpon>ConsultaDeInventarioDiarioVista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ConsultaDeLineaDePickingVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ConsultaDeLineaDePickingVista.Designer.cs">
+      <DependentUpon>ConsultaDeLineaDePickingVista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ConsultaDeManifiestoVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ConsultaDeManifiestoVista.Designer.cs">
+      <DependentUpon>ConsultaDeManifiestoVista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ConsultaDePaseDeSalidaVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ConsultaDePaseDeSalidaVista.Designer.cs">
+      <DependentUpon>ConsultaDePaseDeSalidaVista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ConsultaPedidosPorVendedorVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ConsultaPedidosPorVendedorVista.Designer.cs">
+      <DependentUpon>ConsultaPedidosPorVendedorVista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\CosteoVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\CosteoVista.Designer.cs">
+      <DependentUpon>CosteoVista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\CumplimientoDeEntregaVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\CumplimientoDeEntregaVista.Designer.cs">
+      <DependentUpon>CumplimientoDeEntregaVista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\EmpresaDeTransporteVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\EmpresaDeTransporteVista.Designer.cs">
+      <DependentUpon>EmpresaDeTransporteVista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\EstadoDeUbicacionesVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\EstadoDeUbicacionesVista.Designer.cs">
+      <DependentUpon>EstadoDeUbicacionesVista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\IndicesDeBodegaVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\IndicesDeBodegaVista.Designer.cs">
+      <DependentUpon>IndicesDeBodegaVista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\InventarioComprometido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\InventarioComprometido.Designer.cs">
+      <DependentUpon>InventarioComprometido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ProyectoVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ProyectoVista.Designer.cs">
+      <DependentUpon>ProyectoVista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\SugeridoCompraVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\SugeridoCompraVista.Designer.cs">
+      <DependentUpon>SugeridoCompraVista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\InventarioInactivoVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\InventarioInactivoVista.Designer.cs">
+      <DependentUpon>InventarioInactivoVista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\InventarioMasterPackVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\InventarioMasterPackVista.Designer.cs">
+      <DependentUpon>InventarioMasterPackVista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\OrdenesDeVentaPendientesVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\OrdenesDeVentaPendientesVista.Designer.cs">
+      <DependentUpon>OrdenesDeVentaPendientesVista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ManifiestoCargaVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ManifiestoCargaVista.Designer.cs">
+      <DependentUpon>ManifiestoCargaVista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\PaseDeSalidaVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\PaseDeSalidaVista.Designer.cs">
+      <DependentUpon>PaseDeSalidaVista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\PilotoVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\PilotoVista.Designer.cs">
+      <DependentUpon>PilotoVista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\RecepcionErpVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\RecepcionErpVista.Designer.cs">
+      <DependentUpon>RecepcionErpVista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ReporteDeSolicitudDeTrasladoVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ReporteDeSolicitudDeTrasladoVista.Designer.cs">
+      <DependentUpon>ReporteDeSolicitudDeTrasladoVista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ReportePickingVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ReportePickingVista.Designer.cs">
+      <DependentUpon>ReportePickingVista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ReporteRecepcionPorDevolucionVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ReporteRecepcionPorDevolucionVista.Designer.cs">
+      <DependentUpon>ReporteRecepcionPorDevolucionVista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ServiciosPorCobrarVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ServiciosPorCobrarVista.Designer.cs">
+      <DependentUpon>ServiciosPorCobrarVista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\DemandaDeDespachoVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\DemandaDeDespachoVista.Designer.cs">
+      <DependentUpon>DemandaDeDespachoVista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\SolicitudDeTrasladoVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\SolicitudDeTrasladoVista.Designer.cs">
+      <DependentUpon>SolicitudDeTrasladoVista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\TrazabilidadDeDemandaVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\TrazabilidadDeDemandaVista.Designer.cs">
+      <DependentUpon>TrazabilidadDeDemandaVista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\VehiculoVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\VehiculoVista.Designer.cs">
+      <DependentUpon>VehiculoVista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\VencimientoDePolizasVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\VencimientoDePolizasVista.Designer.cs">
+      <DependentUpon>VencimientoDePolizasVista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\VistaBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\VistaBaseDeveExpress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ZonaDePosicionamientoVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ZonaDePosicionamientoVista.Designer.cs">
+      <DependentUpon>ZonaDePosicionamientoVista.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Popups\LiberarPolizaPopup.resx">
+      <DependentUpon>LiberarPolizaPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ListaParaParametrosGeneralesPopup.resx">
+      <DependentUpon>ListaParaParametrosGeneralesPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ReasignarTareaLineaDePickingPopup.resx">
+      <DependentUpon>ReasignarTareaLineaDePickingPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Reportes\AcuerdoComercialPorInventario.resx">
+      <DependentUpon>AcuerdoComercialPorInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\BalanceDeSaldosFiscal.resx">
+      <DependentUpon>BalanceDeSaldosFiscal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ConsultaConteoFiciso.resx">
+      <DependentUpon>ConsultaConteoFiciso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ConsultaCosteosConsolidado.resx">
+      <DependentUpon>ConsultaCosteosConsolidado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ConsultaCosteosPorDocumento.resx">
+      <DependentUpon>ConsultaCosteosPorDocumento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ConsultaDeInventarioDiario.resx">
+      <DependentUpon>ConsultaDeInventarioDiario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ConsultaLineaPicking.resx">
+      <DependentUpon>ConsultaLineaPicking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ConsultaPedidosPorVendedor.resx">
+      <DependentUpon>ConsultaPedidosPorVendedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ManifiestoDeCargaConsolidado.resx">
+      <DependentUpon>ManifiestoDeCargaConsolidado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ManifiestoDeCargaDetallado.resx">
+      <DependentUpon>ManifiestoDeCargaDetallado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\MasterPackInventario.resx">
+      <DependentUpon>MasterPackInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\OrdenesDeVentaPendientes.resx">
+      <DependentUpon>OrdenesDeVentaPendientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\PaseDeSalida.resx">
+      <DependentUpon>PaseDeSalida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\PolizasVencidas.resx">
+      <DependentUpon>PolizasVencidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteCajasPorVendedor.resx">
+      <DependentUpon>ReporteCajasPorVendedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteDeSolicitudDeTraslado.resx">
+      <DependentUpon>ReporteDeSolicitudDeTraslado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteDevolucionesConsolidado.resx">
+      <DependentUpon>ReporteDevolucionesConsolidado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteDevolucionesDetallado.resx">
+      <DependentUpon>ReporteDevolucionesDetallado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteInventarioComprometido.resx">
+      <DependentUpon>ReporteInventarioComprometido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\SolicitudDeTraslado.resx">
+      <DependentUpon>SolicitudDeTraslado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\AcuerdoComercialVista.resx">
+      <DependentUpon>AcuerdoComercialVista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\AdministradorDeLineaDePickingVista.resx">
+      <DependentUpon>AdministradorDeLineaDePickingVista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\AdministradorDeTareasVista.resx">
+      <DependentUpon>AdministradorDeTareasVista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\AsignacionConteoFisico.resx">
+      <DependentUpon>AsignacionConteoFisico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\BalanceDeSaldosFiscalVista.resx">
+      <DependentUpon>BalanceDeSaldosFiscalVista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\BloqueoDeInventarioVista.resx">
+      <DependentUpon>BloqueoDeInventarioVista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\CatalogoZonaVista.resx">
+      <DependentUpon>CatalogoZonaVista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ClaseVista.resx">
+      <DependentUpon>ClaseVista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ConsultaConteoFisico.resx">
+      <DependentUpon>ConsultaConteoFisico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ConsultaCosteoVista.resx">
+      <DependentUpon>ConsultaCosteoVista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ConsultaDeInventarioDiarioVista.resx">
+      <DependentUpon>ConsultaDeInventarioDiarioVista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ConsultaDeLineaDePickingVista.resx">
+      <DependentUpon>ConsultaDeLineaDePickingVista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ConsultaDeManifiestoVista.resx">
+      <DependentUpon>ConsultaDeManifiestoVista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ConsultaDePaseDeSalidaVista.resx">
+      <DependentUpon>ConsultaDePaseDeSalidaVista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ConsultaPedidosPorVendedorVista.resx">
+      <DependentUpon>ConsultaPedidosPorVendedorVista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\CosteoVista.resx">
+      <DependentUpon>CosteoVista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\CumplimientoDeEntregaVista.resx">
+      <DependentUpon>CumplimientoDeEntregaVista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\EmpresaDeTransporteVista.resx">
+      <DependentUpon>EmpresaDeTransporteVista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\EstadoDeUbicacionesVista.resx">
+      <DependentUpon>EstadoDeUbicacionesVista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\IndicesDeBodegaVista.resx">
+      <DependentUpon>IndicesDeBodegaVista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\InventarioComprometido.resx">
+      <DependentUpon>InventarioComprometido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ProyectoVista.resx">
+      <DependentUpon>ProyectoVista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\SugeridoCompraVista.resx">
+      <DependentUpon>SugeridoCompraVista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\InventarioInactivoVista.resx">
+      <DependentUpon>InventarioInactivoVista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\InventarioMasterPackVista.resx">
+      <DependentUpon>InventarioMasterPackVista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\OrdenesDeVentaPendientesVista.resx">
+      <DependentUpon>OrdenesDeVentaPendientesVista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ManifiestoCargaVista.resx">
+      <DependentUpon>ManifiestoCargaVista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\PaseDeSalidaVista.resx">
+      <DependentUpon>PaseDeSalidaVista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\PilotoVista.resx">
+      <DependentUpon>PilotoVista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\RecepcionErpVista.resx">
+      <DependentUpon>RecepcionErpVista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ReporteDeSolicitudDeTrasladoVista.resx">
+      <DependentUpon>ReporteDeSolicitudDeTrasladoVista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ReportePickingVista.resx">
+      <DependentUpon>ReportePickingVista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ReporteRecepcionPorDevolucionVista.resx">
+      <DependentUpon>ReporteRecepcionPorDevolucionVista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ServiciosPorCobrarVista.resx">
+      <DependentUpon>ServiciosPorCobrarVista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\DemandaDeDespachoVista.resx">
+      <DependentUpon>DemandaDeDespachoVista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\SolicitudDeTrasladoVista.resx">
+      <DependentUpon>SolicitudDeTrasladoVista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\TrazabilidadDeDemandaVista.resx">
+      <DependentUpon>TrazabilidadDeDemandaVista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\VehiculoVista.resx">
+      <DependentUpon>VehiculoVista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\VencimientoDePolizasVista.resx">
+      <DependentUpon>VencimientoDePolizasVista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ZonaDePosicionamientoVista.resx">
+      <DependentUpon>ZonaDePosicionamientoVista.cs</DependentUpon>
+    </EmbeddedResource>
+    <ProjectReference Include="..\..\..\MobilityScm.Modelo.TipoYEstados\MobilityScm.Modelo.TipoYEstados.csproj">
+      <Project>{7FA62357-7B1C-447A-9CF4-48D33DD92488}</Project>
+      <Name>MobilityScm.Modelo.TipoYEstados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\MobilityScm.Utilerias\MobilityScm.Utilerias.csproj">
+      <Project>{2DC8C4BB-E781-4CAA-ADD8-63EF554DBE22}</Project>
+      <Name>MobilityScm.Utilerias</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\MobilityScm.Vertical\MobilityScm.Vertical.csproj">
+      <Project>{4807256A-677E-4286-82E4-13F230A45337}</Project>
+      <Name>MobilityScm.Vertical</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\SwiftExpress\SwiftExpress\MobilityScm.Utilerias.Web\MobilityScm.Utilerias.Win.csproj">
+      <Project>{55F31AC8-0873-4680-A2C7-E934482D5530}</Project>
+      <Name>MobilityScm.Utilerias.Win</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MobilityScm.Modelo.Entidades\MobilityScm.Modelo.Entidades.csproj">
+      <Project>{0D4A97D7-6303-4C48-B3A6-1C4314F09C76}</Project>
+      <Name>MobilityScm.Modelo.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MobilityScm.Modelo\MobilityScm.Modelo.csproj">
+      <Project>{3DBA5BC7-059F-41CE-9692-C4E875FA6D10}</Project>
+      <Name>MobilityScm.Modelo</Name>
+    </ProjectReference>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DataSets\AcuerdoComercialPorInventario.xsc">
+      <DependentUpon>AcuerdoComercialPorInventario.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\AcuerdoComercialPorInventario.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AcuerdoComercialPorInventario.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSets\AcuerdoComercialPorInventario.xss">
+      <DependentUpon>AcuerdoComercialPorInventario.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\ManifiestoDeCarga.xsc">
+      <DependentUpon>ManifiestoDeCarga.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\ManifiestoDeCarga.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ManifiestoDeCarga.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSets\ManifiestoDeCarga.xss">
+      <DependentUpon>ManifiestoDeCarga.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\MasterPackInventario.xsc">
+      <DependentUpon>MasterPackInventario.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\MasterPackInventario.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MasterPackInventario.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSets\MasterPackInventario.xss">
+      <DependentUpon>MasterPackInventario.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\PolizasVencidas.xsc">
+      <DependentUpon>PolizasVencidas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\PolizasVencidas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PolizasVencidas.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSets\PolizasVencidas.xss">
+      <DependentUpon>PolizasVencidas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\SolicitudDeTraslado.xsc">
+      <DependentUpon>SolicitudDeTraslado.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\SolicitudDeTraslado.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SolicitudDeTraslado.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSets\SolicitudDeTraslado.xss">
+      <DependentUpon>SolicitudDeTraslado.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\find_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\product_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\product_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\pushpin-red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

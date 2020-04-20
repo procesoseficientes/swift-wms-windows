@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="CreateInsuranceCompany">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pCompanyId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCompanyName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCreateBy" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateInsuranceCompanyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateInsuranceCompanyResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateInsuranceCompany">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pCompanyId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCompanyName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateInsuranceCompanyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateInsuranceCompanyResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteInsuranceCompany">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pCompanyId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteInsuranceCompanyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteInsuranceCompanyResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInsuranceCompany">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInsuranceCompanyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetInsuranceCompanyResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FillInsuranceCompany">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pCompanyId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FillInsuranceCompanyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FillInsuranceCompanyResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Exist_Insurance_Companie">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pCompanyId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Exist_Insurance_CompanieResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Exist_Insurance_CompanieResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CreateInsuranceCompanySoapIn">
+    <wsdl:part name="parameters" element="tns:CreateInsuranceCompany" />
+  </wsdl:message>
+  <wsdl:message name="CreateInsuranceCompanySoapOut">
+    <wsdl:part name="parameters" element="tns:CreateInsuranceCompanyResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateInsuranceCompanySoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateInsuranceCompany" />
+  </wsdl:message>
+  <wsdl:message name="UpdateInsuranceCompanySoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateInsuranceCompanyResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteInsuranceCompanySoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteInsuranceCompany" />
+  </wsdl:message>
+  <wsdl:message name="DeleteInsuranceCompanySoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteInsuranceCompanyResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetInsuranceCompanySoapIn">
+    <wsdl:part name="parameters" element="tns:GetInsuranceCompany" />
+  </wsdl:message>
+  <wsdl:message name="GetInsuranceCompanySoapOut">
+    <wsdl:part name="parameters" element="tns:GetInsuranceCompanyResponse" />
+  </wsdl:message>
+  <wsdl:message name="FillInsuranceCompanySoapIn">
+    <wsdl:part name="parameters" element="tns:FillInsuranceCompany" />
+  </wsdl:message>
+  <wsdl:message name="FillInsuranceCompanySoapOut">
+    <wsdl:part name="parameters" element="tns:FillInsuranceCompanyResponse" />
+  </wsdl:message>
+  <wsdl:message name="Exist_Insurance_CompanieSoapIn">
+    <wsdl:part name="parameters" element="tns:Exist_Insurance_Companie" />
+  </wsdl:message>
+  <wsdl:message name="Exist_Insurance_CompanieSoapOut">
+    <wsdl:part name="parameters" element="tns:Exist_Insurance_CompanieResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WMS_Insurance_CompaniesSoap">
+    <wsdl:operation name="CreateInsuranceCompany">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Create a Insurance Companies</wsdl:documentation>
+      <wsdl:input message="tns:CreateInsuranceCompanySoapIn" />
+      <wsdl:output message="tns:CreateInsuranceCompanySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInsuranceCompany">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update a Insurance Companies</wsdl:documentation>
+      <wsdl:input message="tns:UpdateInsuranceCompanySoapIn" />
+      <wsdl:output message="tns:UpdateInsuranceCompanySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteInsuranceCompany">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete a Insurance Companies</wsdl:documentation>
+      <wsdl:input message="tns:DeleteInsuranceCompanySoapIn" />
+      <wsdl:output message="tns:DeleteInsuranceCompanySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInsuranceCompany">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get a Insurance Company</wsdl:documentation>
+      <wsdl:input message="tns:GetInsuranceCompanySoapIn" />
+      <wsdl:output message="tns:GetInsuranceCompanySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FillInsuranceCompany">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Fill a Insurance Company</wsdl:documentation>
+      <wsdl:input message="tns:FillInsuranceCompanySoapIn" />
+      <wsdl:output message="tns:FillInsuranceCompanySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Exist_Insurance_Companie">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Mira si ya existe el insurance companie</wsdl:documentation>
+      <wsdl:input message="tns:Exist_Insurance_CompanieSoapIn" />
+      <wsdl:output message="tns:Exist_Insurance_CompanieSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WMS_Insurance_CompaniesSoap" type="tns:WMS_Insurance_CompaniesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateInsuranceCompany">
+      <soap:operation soapAction="http://tempuri.org/CreateInsuranceCompany" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInsuranceCompany">
+      <soap:operation soapAction="http://tempuri.org/UpdateInsuranceCompany" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteInsuranceCompany">
+      <soap:operation soapAction="http://tempuri.org/DeleteInsuranceCompany" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInsuranceCompany">
+      <soap:operation soapAction="http://tempuri.org/GetInsuranceCompany" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillInsuranceCompany">
+      <soap:operation soapAction="http://tempuri.org/FillInsuranceCompany" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Exist_Insurance_Companie">
+      <soap:operation soapAction="http://tempuri.org/Exist_Insurance_Companie" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WMS_Insurance_CompaniesSoap12" type="tns:WMS_Insurance_CompaniesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateInsuranceCompany">
+      <soap12:operation soapAction="http://tempuri.org/CreateInsuranceCompany" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInsuranceCompany">
+      <soap12:operation soapAction="http://tempuri.org/UpdateInsuranceCompany" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteInsuranceCompany">
+      <soap12:operation soapAction="http://tempuri.org/DeleteInsuranceCompany" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInsuranceCompany">
+      <soap12:operation soapAction="http://tempuri.org/GetInsuranceCompany" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillInsuranceCompany">
+      <soap12:operation soapAction="http://tempuri.org/FillInsuranceCompany" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Exist_Insurance_Companie">
+      <soap12:operation soapAction="http://tempuri.org/Exist_Insurance_Companie" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WMS_Insurance_Companies">
+    <wsdl:port name="WMS_Insurance_CompaniesSoap" binding="tns:WMS_Insurance_CompaniesSoap">
+      <soap:address location="http://localhost/WMSOnePlan_BusinessServices/Catalogues/WMS_Insurance_Companies.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WMS_Insurance_CompaniesSoap12" binding="tns:WMS_Insurance_CompaniesSoap12">
+      <soap12:address location="http://localhost/WMSOnePlan_BusinessServices/Catalogues/WMS_Insurance_Companies.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

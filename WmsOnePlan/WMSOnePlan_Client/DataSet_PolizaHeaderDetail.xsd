@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:mstns="http://tempuri.org/nwindDataSet.xsd" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" id="DataSet_PolizaHeaderDetail" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Data Source=192.168.0.63;Persist Security Info=True;Password=123;User ID=
+                      
+        ;Initial Catalog=OP_WMS" IsAppSettingsProperty="false" Modifier="Assembly" ParameterPrefix="@" Provider="System.Data.OleDb" Name="Connection" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="OP_WMS_VIEW_INVENTORY_X_DOCSAdapter" Name="OP_WMS_VIEW_INVENTORY_X_DOCS" UserDataComponentName="OP_WMS_VIEW_INVENTORY_X_DOCSAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Connection" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT NUMERO_ORDEN, WAREHOUSE_REGIMEN, CODIGO_POLIZA, NUMERO_DUA, CLIENT_CODE, CONSIGNATARIO_CODIGO, BULTOS, QTY, CUSTOMS_AMOUNT, DAI, IVA, SAC_CODE, SKU_DESCRIPTION, NET_WEIGTH, WEIGTH_UNIT, VOLUME, VOLUME_UNIT, QTY_UNIT, FECHA_DOCUMENTO, LINE_NUMBER, DOC_ID FROM alsersa.OP_WMS_VIEW_INVENTORY_X_DOCS</CommandText>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="NUMERO_ORDEN" DataSetColumn="NUMERO_ORDEN" />
+              <Mapping SourceColumn="WAREHOUSE_REGIMEN" DataSetColumn="WAREHOUSE_REGIMEN" />
+              <Mapping SourceColumn="CODIGO_POLIZA" DataSetColumn="CODIGO_POLIZA" />
+              <Mapping SourceColumn="NUMERO_DUA" DataSetColumn="NUMERO_DUA" />
+              <Mapping SourceColumn="CLIENT_CODE" DataSetColumn="CLIENT_CODE" />
+              <Mapping SourceColumn="CONSIGNATARIO_CODIGO" DataSetColumn="CONSIGNATARIO_CODIGO" />
+              <Mapping SourceColumn="BULTOS" DataSetColumn="BULTOS" />
+              <Mapping SourceColumn="QTY" DataSetColumn="QTY" />
+              <Mapping SourceColumn="CUSTOMS_AMOUNT" DataSetColumn="CUSTOMS_AMOUNT" />
+              <Mapping SourceColumn="DAI" DataSetColumn="DAI" />
+              <Mapping SourceColumn="IVA" DataSetColumn="IVA" />
+              <Mapping SourceColumn="SAC_CODE" DataSetColumn="SAC_CODE" />
+              <Mapping SourceColumn="SKU_DESCRIPTION" DataSetColumn="SKU_DESCRIPTION" />
+              <Mapping SourceColumn="NET_WEIGTH" DataSetColumn="NET_WEIGTH" />
+              <Mapping SourceColumn="WEIGTH_UNIT" DataSetColumn="WEIGTH_UNIT" />
+              <Mapping SourceColumn="VOLUME" DataSetColumn="VOLUME" />
+              <Mapping SourceColumn="VOLUME_UNIT" DataSetColumn="VOLUME_UNIT" />
+              <Mapping SourceColumn="QTY_UNIT" DataSetColumn="QTY_UNIT" />
+              <Mapping SourceColumn="FECHA_DOCUMENTO" DataSetColumn="FECHA_DOCUMENTO" />
+              <Mapping SourceColumn="LINE_NUMBER" DataSetColumn="LINE_NUMBER" />
+              <Mapping SourceColumn="DOC_ID" DataSetColumn="DOC_ID" />
+            </Mappings>
+          </TableAdapter>
+        </Tables>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet_PolizaHeaderDetail" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="OP_WMS_VIEW_INVENTORY_X_DOCS">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NUMERO_ORDEN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WAREHOUSE_REGIMEN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CODIGO_POLIZA">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NUMERO_DUA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CLIENT_CODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CONSIGNATARIO_CODIGO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BULTOS" msdata:ReadOnly="true" type="xs:decimal" minOccurs="0" />
+              <xs:element name="QTY" msdata:ReadOnly="true" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CUSTOMS_AMOUNT" msdata:ReadOnly="true" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DAI" msdata:ReadOnly="true" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IVA" msdata:ReadOnly="true" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SAC_CODE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SKU_DESCRIPTION">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NET_WEIGTH" msdata:ReadOnly="true" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WEIGTH_UNIT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VOLUME" msdata:ReadOnly="true" type="xs:decimal" minOccurs="0" />
+              <xs:element name="VOLUME_UNIT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="QTY_UNIT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FECHA_DOCUMENTO" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LINE_NUMBER" type="xs:decimal" />
+              <xs:element name="DOC_ID" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//OP_WMS_VIEW_INVENTORY_X_DOCS" />
+      <xs:field xpath="LINE_NUMBER" />
+      <xs:field xpath="DOC_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

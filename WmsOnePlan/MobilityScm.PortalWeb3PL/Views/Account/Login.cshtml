@@ -1,0 +1,54 @@
+@{ Layout = "~/Views/Shared/_lightLayout.cshtml"; }
+
+@model MobilityScm_PortalWeb3PL.Models.LoginModel
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="box login" id="divLogin">
+        <div style="text-align: center;">
+            <img class="auto-style1" src="~/Content/Images/logo-mobility.png" draggable="false" />
+        </div>
+        <fieldset class="boxBody">
+            @Html.DevExpress().Label(settings =>
+            {
+                settings.Name = "LblLogin";
+                settings.Text = "Ingrese su usuario";
+                settings.AssociatedControlName = "UserName";
+            }).GetHtml()
+            <div class="form-field">
+                @Html.EditorFor(m => m.UserName)
+                @Html.ValidationMessageFor(m => m.UserName)
+            </div>
+            @Html.DevExpress().Label(settings =>
+            {
+                settings.Name = "PasswordLabel";
+                settings.Text = "Password";
+                settings.AssociatedControlName = "Password";
+            }).GetHtml()
+            <div class="form-field">
+                @Html.EditorFor(m => m.Password)
+                @Html.ValidationMessageFor(m => m.Password)
+            </div>
+            @Html.DevExpress().Label(settings =>
+            {
+                settings.Name = "ErrorLabel";
+                settings.Text = "";
+            }).GetHtml()
+            <footer >
+                <div style="text-align: right;">
+                    @Html.DevExpress().Button(settings =>
+                    {
+                        settings.Name = "Button";
+                        settings.Text = "Aceptar";
+                        settings.UseSubmitBehavior = true;
+                    }).GetHtml()
+                </div>
+            </footer>
+        </fieldset>
+
+    </div>
+
+}

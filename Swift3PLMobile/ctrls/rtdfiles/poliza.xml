@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<DSDetailView xmlns="http://www.rescodeveloper.net/schemas/DSDetailView.xsd">
+  <DetailView DpiX="96" DpiY="96">
+    <Property Name="Dock" Value="Fill" />
+    <Property Name="KeyTabNavigation" Value="True" />
+    <Property Name="TouchScrolling" Value="True" />
+    <Property Name="PagingStyle" Value="Dots" />
+    <Property Name="Size" Value="240,323" />
+    <Property Name="Location" Value="0,0" />
+    <Property Name="GradientBackColor" Value="ff012847,ff054e84,Vertical" />
+    <Property Name="ForeColor" Value="White" />
+    <Property Name="TabStop" Value="False" />
+    <Property Name="UseClickVisualize" Value="True" />
+    <Property Name="UseGradient" Value="True" />
+    <Property Name="DisabledForeColor" Value="Gray" />
+    <Property Name="BackColor" Value="ff404040" />
+    <Property Name="EnableDesignTimeCustomItems" Value="True" />
+    <Property Name="TabIndex" Value="0" />
+    <Property Name="SeparatorWidth" Value="0" />
+    <Property Name="LabelWidth" Value="90" />
+    <Property Name="KeyNavigation" Value="True" />
+    <Item Type="Resco.Controls.DetailView.Item">
+      <Property Name="TextBackColor" Value="Black" />
+      <Property Name="Height" Value="0" />
+      <Property Name="Name" Value="Separator1" />
+      <Property Name="ItemBorder" Value="None" />
+      <Property Name="LabelBackColor" Value="ffcf5f00" />
+      <Property Name="LabelHeight" Value="3" />
+      <Property Name="LabelAlignment" Value="Left" />
+      <Property Name="Style" Value="LabelTop" />
+    </Item>
+    <Item Type="Resco.Controls.DetailView.Item">
+      <Property Name="TextBackColor" Value="White" />
+      <Property Name="Height" Value="0" />
+      <Property Name="Name" Value="Header1" />
+      <Property Name="Label" Value="..." />
+      <Property Name="TextFont" Value="Arial, 8pt, style=Regular" />
+      <Property Name="ItemBorder" Value="None" />
+      <Property Name="LabelBackColor" Value="Black" />
+      <Property Name="LabelFont" Value="Arial, 14pt, style=Bold" />
+      <Property Name="LabelHeight" Value="36" />
+      <Property Name="LabelForeColor" Value="White" />
+      <Property Name="LabelAlignment" Value="Center" />
+      <Property Name="Style" Value="LabelTop" />
+    </Item>
+    <Item Type="Resco.Controls.DetailView.ItemTextBox">
+      <Property Name="Name" Value="ScannedPoliza" />
+      <Property Name="TextFont" Value="Arial, 10pt, style=Bold" />
+      <Property Name="LabelFont" Value="Arial, 14pt, style=Regular" />
+      <Property Name="TextForeColor" Value="White" />
+      <Property Name="LabelHeight" Value="24" />
+      <Property Name="ReadOnly" Value="True" />
+      <Property Name="Height" Value="24" />
+      <Property Name="CharacterCasing" Value="Upper" />
+      <Property Name="Style" Value="LabelTop" />
+      <Property Name="LabelForeColor" Value="White" />
+      <Property Name="Label" Value="Scan Poliza: " />
+      <Property Name="LabelAlignment" Value="Left" />
+      <Property Name="ItemBorder" Value="Flat" />
+      <Property Name="Text" Value="..." />
+    </Item>
+    <Item Type="Resco.Controls.DetailView.ItemTextBox">
+      <Property Name="Name" Value="txtNumeroOrden" />
+      <Property Name="TextFont" Value="Arial, 10pt, style=Bold" />
+      <Property Name="LabelFont" Value="Arial, 14pt, style=Regular" />
+      <Property Name="TextForeColor" Value="White" />
+      <Property Name="LabelHeight" Value="24" />
+      <Property Name="Height" Value="24" />
+      <Property Name="CharacterCasing" Value="Upper" />
+      <Property Name="Style" Value="LabelTop" />
+      <Property Name="LabelForeColor" Value="White" />
+      <Property Name="Label" Value="Numero Orden" />
+      <Property Name="LabelAlignment" Value="Left" />
+      <Property Name="ItemBorder" Value="Flat" />
+      <Property Name="Text" Value="..." />
+    </Item>
+    <Item Type="Resco.Controls.DetailView.ItemTextBox">
+      <Property Name="Name" Value="ClientName" />
+      <Property Name="TextFont" Value="Arial, 8pt, style=Regular" />
+      <Property Name="LabelFont" Value="Arial, 10pt, style=Regular" />
+      <Property Name="TextForeColor" Value="White" />
+      <Property Name="LabelHeight" Value="24" />
+      <Property Name="ReadOnly" Value="True" />
+      <Property Name="Height" Value="48" />
+      <Property Name="CharacterCasing" Value="Upper" />
+      <Property Name="Style" Value="LabelTop" />
+      <Property Name="LabelForeColor" Value="White" />
+      <Property Name="WordWrap" Value="True" />
+      <Property Name="Label" Value="Cliente:" />
+      <Property Name="LabelAlignment" Value="Left" />
+      <Property Name="MultiLine" Value="True" />
+      <Property Name="ItemBorder" Value="Flat" />
+    </Item>
+    <Item Type="Resco.Controls.DetailView.ItemTextBox">
+      <Property Name="Name" Value="Regimen" />
+      <Property Name="TextFont" Value="Arial, 8pt, style=Regular" />
+      <Property Name="LabelFont" Value="Arial, 10pt, style=Regular" />
+      <Property Name="TextForeColor" Value="White" />
+      <Property Name="LabelHeight" Value="24" />
+      <Property Name="DataMember" Value="Contact" />
+      <Property Name="ReadOnly" Value="True" />
+      <Property Name="Height" Value="24" />
+      <Property Name="CharacterCasing" Value="Upper" />
+      <Property Name="Style" Value="LabelTop" />
+      <Property Name="LabelForeColor" Value="White" />
+      <Property Name="Label" Value="Regimen:" />
+      <Property Name="LabelAlignment" Value="Left" />
+      <Property Name="ItemBorder" Value="Flat" />
+    </Item>
+    <Item Type="Resco.Controls.DetailView.ItemTextBox">
+      <Property Name="Name" Value="txtContenedor" />
+      <Property Name="TextFont" Value="Arial, 8pt, style=Regular" />
+      <Property Name="LabelFont" Value="Arial, 10pt, style=Regular" />
+      <Property Name="TextForeColor" Value="White" />
+      <Property Name="LabelHeight" Value="24" />
+      <Property Name="NewLine" Value="False" />
+      <Property Name="Height" Value="24" />
+      <Property Name="Style" Value="LabelTop" />
+      <Property Name="LabelForeColor" Value="White" />
+      <Property Name="Label" Value="Contenedor:" />
+      <Property Name="LabelAlignment" Value="Left" />
+      <Property Name="LineAlign" Value="Middle" />
+      <Property Name="ItemBorder" Value="Flat" />
+    </Item>
+  </DetailView>
+</DSDetailView>

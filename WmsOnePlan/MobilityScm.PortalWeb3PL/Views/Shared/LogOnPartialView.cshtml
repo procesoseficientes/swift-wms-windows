@@ -1,0 +1,94 @@
+@if(!Request.IsAuthenticated) {
+    @*@Html.ActionLink("Register", "Register", "Account") 
+    @: | 
+    @Html.ActionLink("Login", "Login", "Account")*@
+
+    @Html.DevExpress().Button(
+            settings =>
+            {
+                settings.Name = "UiProfileButton";
+                settings.EnableTheming = false;
+                settings.Text = "Nombre";
+                settings.AllowFocus = false;
+                settings.ImagePosition = ImagePosition.Left;
+                settings.ControlStyle.CssClass = "icq";
+                settings.Styles.Style.HoverStyle.CssClass = "icqHovered";
+                settings.Styles.Style.PressedStyle.CssClass = "icqPressed";
+                settings.Images.Image.Url = Url.Content("~/Content/Images/perfil-01.png");
+                settings.Images.Image.Height = 16;
+                settings.Images.Image.Width = 16;
+            }).GetHtml()
+
+
+    @Html.DevExpress().PopupControl(
+                settings =>
+                {
+                    settings.Name = "UserInfo";
+                    settings.PopupElementID = "UiProfileButton";
+                    settings.Height = 250;
+                    settings.MinHeight = 150;
+                    settings.MinWidth = 150;
+                    settings.MaxHeight = 800;
+                    settings.MaxWidth = 800;
+
+                    settings.ShowCloseButton = false;
+                    settings.PreRender = (sender, e) =>
+                    {
+                        var popup = (ASPxPopupControl)sender;
+                        popup.ShowShadow = true;
+                    };
+
+                    settings.ShowFooter = true;
+                    settings.ShowHeader = true;
+                    settings.PopupHorizontalAlign = PopupHorizontalAlign.Center;
+                    settings.PopupVerticalAlign = PopupVerticalAlign.BottomSides;
+                    settings.PopupHorizontalOffset = 250;
+                    settings.PopupVerticalOffset = 250;
+                    //settings.Opacity = (0 <= options.Opacity && options.Opacity < 100) ? options.Opacity : -1;
+                    settings.PopupAnimationType = AnimationType.Slide;
+                    settings.CloseAnimationType = AnimationType.Slide;
+                    settings.AllowDragging = false;
+                    settings.DragElement = DragElement.Header;
+                    settings.AllowResize = false;
+                    settings.ResizingMode = ResizingMode.Live;
+                    settings.ShowSizeGrip = ShowSizeGrip.Auto;
+                    settings.CloseAction = CloseAction.MouseOut;
+                    settings.CloseOnEscape = true;
+                    settings.PopupAction = PopupAction.MouseOver;
+                    //settings.AppearAfter = ;
+                    //settings.DisappearAfter = ;
+                    settings.ScrollBars = ScrollBars.None;
+
+                    settings.FooterText = "login";
+                    settings.HeaderText = "Información de Usuario";
+                    settings.SetContent(() =>
+                    {
+                    ViewContext.Writer.Write(
+                         "<table>" +
+                            "<tr>" +
+                                "<td rowspan='2'>" +
+                                    "<img src=\"" + Url.Content("~/Content/Images/AquaHeader.jpg") + "\" alt=\"Usuario\" style='width: 100px; height: 100px; -ms - border - radius: 200px; border - radius: 200px' draggable='false'/>" +
+                                "</td>" +
+                                "<td>" +
+                                       "combo de temas" +
+                                "</td>" +
+                            "</tr>" +
+                            "<tr>" +
+                                "<td>" +
+                                    @Html.ActionLink("Logout", "LogOff", "Account")+
+                                "</td>" +
+                            "</tr>" +
+                        "</table>"
+                        );
+                });
+    }).GetHtml()
+}
+else
+{
+    @: Welcome <b>@User.Identity.Name</b>!
+
+
+    
+    @: |
+    @Html.ActionLink("Logout", "LogOff", "Account")
+}

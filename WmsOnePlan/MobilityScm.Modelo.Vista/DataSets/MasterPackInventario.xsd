@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MasterPackInventario" targetNamespace="http://tempuri.org/MasterPackInventario.xsd" xmlns:mstns="http://tempuri.org/MasterPackInventario.xsd" xmlns="http://tempuri.org/MasterPackInventario.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MasterPackInventario" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="MasterPackInventario" msprop:Generator_UserDSName="MasterPackInventario">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="InventarioMasterPack" msprop:Generator_TableClassName="InventarioMasterPackDataTable" msprop:Generator_TableVarName="tableInventarioMasterPack" msprop:Generator_TablePropName="InventarioMasterPack" msprop:Generator_RowDeletingName="InventarioMasterPackRowDeleting" msprop:Generator_RowChangingName="InventarioMasterPackRowChanging" msprop:Generator_RowEvHandlerName="InventarioMasterPackRowChangeEventHandler" msprop:Generator_RowDeletedName="InventarioMasterPackRowDeleted" msprop:Generator_UserTableName="InventarioMasterPack" msprop:Generator_RowChangedName="InventarioMasterPackRowChanged" msprop:Generator_RowEvArgName="InventarioMasterPackRowChangeEvent" msprop:Generator_RowClassName="InventarioMasterPackRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LICENSE_ID" msprop:Generator_ColumnVarNameInTable="columnLICENSE_ID" msprop:Generator_ColumnPropNameInRow="LICENSE_ID" msprop:Generator_ColumnPropNameInTable="LICENSE_IDColumn" msprop:Generator_UserColumnName="LICENSE_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="MASTER_PACK_MATERIAL_ID" msprop:Generator_ColumnVarNameInTable="columnMASTER_PACK_MATERIAL_ID" msprop:Generator_ColumnPropNameInRow="MASTER_PACK_MATERIAL_ID" msprop:Generator_ColumnPropNameInTable="MASTER_PACK_MATERIAL_IDColumn" msprop:Generator_UserColumnName="MASTER_PACK_MATERIAL_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="MASTER_PACK_DESCRIPTION" msprop:Generator_ColumnVarNameInTable="columnMASTER_PACK_DESCRIPTION" msprop:Generator_ColumnPropNameInRow="MASTER_PACK_DESCRIPTION" msprop:Generator_ColumnPropNameInTable="MASTER_PACK_DESCRIPTIONColumn" msprop:Generator_UserColumnName="MASTER_PACK_DESCRIPTION" type="xs:string" minOccurs="0" />
+              <xs:element name="CURRENT_WAREHOUSE" msprop:Generator_ColumnVarNameInTable="columnCURRENT_WAREHOUSE" msprop:Generator_ColumnPropNameInRow="CURRENT_WAREHOUSE" msprop:Generator_ColumnPropNameInTable="CURRENT_WAREHOUSEColumn" msprop:Generator_UserColumnName="CURRENT_WAREHOUSE" type="xs:string" minOccurs="0" />
+              <xs:element name="CURRENT_LOCATION" msprop:Generator_ColumnVarNameInTable="columnCURRENT_LOCATION" msprop:Generator_ColumnPropNameInRow="CURRENT_LOCATION" msprop:Generator_ColumnPropNameInTable="CURRENT_LOCATIONColumn" msprop:Generator_UserColumnName="CURRENT_LOCATION" type="xs:string" minOccurs="0" />
+              <xs:element name="MATERIAL_ID" msprop:Generator_ColumnVarNameInTable="columnMATERIAL_ID" msprop:Generator_ColumnPropNameInRow="MATERIAL_ID" msprop:Generator_ColumnPropNameInTable="MATERIAL_IDColumn" msprop:Generator_UserColumnName="MATERIAL_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="MATERIAL_NAME" msprop:Generator_ColumnVarNameInTable="columnMATERIAL_NAME" msprop:Generator_ColumnPropNameInRow="MATERIAL_NAME" msprop:Generator_ColumnPropNameInTable="MATERIAL_NAMEColumn" msprop:Generator_UserColumnName="MATERIAL_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="QTY" msprop:Generator_ColumnVarNameInTable="columnQTY" msprop:Generator_ColumnPropNameInRow="QTY" msprop:Generator_ColumnPropNameInTable="QTYColumn" msprop:Generator_UserColumnName="QTY" type="xs:string" minOccurs="0" />
+              <xs:element name="MEASUREMENT_UNIT" msprop:Generator_ColumnVarNameInTable="columnMEASUREMENT_UNIT" msprop:Generator_ColumnPropNameInRow="MEASUREMENT_UNIT" msprop:Generator_ColumnPropNameInTable="MEASUREMENT_UNITColumn" msprop:Generator_UserColumnName="MEASUREMENT_UNIT" type="xs:string" minOccurs="0" />
+              <xs:element name="DATE_EXPIRATION" msprop:Generator_ColumnVarNameInTable="columnDATE_EXPIRATION" msprop:Generator_ColumnPropNameInRow="DATE_EXPIRATION" msprop:Generator_ColumnPropNameInTable="DATE_EXPIRATIONColumn" msprop:Generator_UserColumnName="DATE_EXPIRATION" type="xs:string" minOccurs="0" />
+              <xs:element name="BATCH" msprop:Generator_ColumnVarNameInTable="columnBATCH" msprop:Generator_ColumnPropNameInRow="BATCH" msprop:Generator_ColumnPropNameInTable="BATCHColumn" msprop:Generator_UserColumnName="BATCH" type="xs:string" minOccurs="0" />
+              <xs:element name="LAST_UPDATED" msprop:Generator_ColumnVarNameInTable="columnLAST_UPDATED" msprop:Generator_ColumnPropNameInRow="LAST_UPDATED" msprop:Generator_ColumnPropNameInTable="LAST_UPDATEDColumn" msprop:Generator_UserColumnName="LAST_UPDATED" type="xs:string" minOccurs="0" />
+              <xs:element name="STATUS_NAME" msprop:Generator_ColumnVarNameInTable="columnSTATUS_NAME" msprop:Generator_ColumnPropNameInRow="STATUS_NAME" msprop:Generator_ColumnPropNameInTable="STATUS_NAMEColumn" msprop:Generator_UserColumnName="STATUS_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="BLOCKS_INVENTORY" msprop:Generator_ColumnVarNameInTable="columnBLOCKS_INVENTORY" msprop:Generator_ColumnPropNameInRow="BLOCKS_INVENTORY" msprop:Generator_ColumnPropNameInTable="BLOCKS_INVENTORYColumn" msprop:Generator_UserColumnName="BLOCKS_INVENTORY" type="xs:string" minOccurs="0" />
+              <xs:element name="TONE" msprop:Generator_ColumnVarNameInTable="columnTONE" msprop:Generator_ColumnPropNameInRow="TONE" msprop:Generator_ColumnPropNameInTable="TONEColumn" msprop:Generator_UserColumnName="TONE" type="xs:string" minOccurs="0" />
+              <xs:element name="CALIBER" msprop:Generator_ColumnVarNameInTable="columnCALIBER" msprop:Generator_ColumnPropNameInRow="CALIBER" msprop:Generator_ColumnPropNameInTable="CALIBERColumn" msprop:Generator_UserColumnName="CALIBER" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

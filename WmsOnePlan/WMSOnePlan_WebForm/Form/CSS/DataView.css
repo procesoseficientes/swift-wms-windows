@@ -1,0 +1,60 @@
+﻿
+.RegistroDvTitulo
+{
+	padding-bottom: 2px;
+	padding-top: 0px;	
+    text-shadow: 0.1em 0.1em 0.2em black;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0000FF;
+}
+
+.RegistroDvSubTitulo {
+    text-shadow: black 0.1em 0.1em 0.2em;
+	color: black;
+	font-size: 14px;
+}
+
+.RegistroDvCampo
+{    
+    text-shadow: black 0.1em 0.1em 0.2em;
+    color: black;
+	font-size: 10px;
+}
+
+.RegistroDvImagen {
+    text-shadow: black 0.1em 0.1em 0.2em;    
+}
+
+/*.RegistroDvTituloCampo
+{
+	font-size: 12px;
+	color: #000000;
+	padding-bottom: 2px;
+}
+
+.RegistroDvCodigo
+{
+	float: right;
+	border: thin inset #FFFFFF;
+	font-family: 'Lucida Console';
+	font-size: 14px;
+	background-color: #000000;
+	color: #ffffff;
+	text-align: center;
+	vertical-align: middle;
+	width: 40px;
+	padding-top: 5px;
+}*/
+
+.RegistroDvContenido
+{
+	vertical-align: top;
+	padding-left: 5px;			
+}
+
+.BusquedaDv
+{
+	text-align: left;
+	background: #D3E4A6;
+}

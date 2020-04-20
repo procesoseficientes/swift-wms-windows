@@ -1,0 +1,296 @@
+﻿* {
+	margin: 0;
+}
+
+html {
+	height: 100%;
+}
+
+
+body
+{
+	height: 100%;
+    font: 75%/150% "Trebuchet MS" , Tahoma, Arial;
+    color: #000000;
+    background: #ffffff;
+    
+}
+
+form {
+    height: 100%;
+}
+
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	padding-bottom : 10px;
+	margin: 0 auto -3em;
+}
+
+#divMain
+{
+	margin: auto;
+	width: 1200px;
+	background: #ffffff;	
+	/*-moz-box-shadow: 0px 3px 4px #000000;
+	-webkit-box-shadow: 0px 3px 4px #000000;
+	-box-shadow: 0px 3px 4px #000000;*/
+}
+
+#divMenu
+{
+	width: 100%;
+	height: 48px;
+	display : block;
+	padding-left:-25px;
+}
+
+#divHeader
+{
+	clear: both;	
+	color: #FFFFFF;
+	font-size: 80%; 	
+	width: 100%;height: 100px;
+	background: #2360a3  url('IMG/Parte_1_banner.png') repeat-x;	
+}
+
+#divHeaderMain
+{
+	clear: both;	
+	color: #FFFFFF;
+	font-size: 80%; 	
+	width: 100%;
+    height: 100px;
+	background: #2360a3  url('IMG/banner_100.png') repeat-x;	
+}
+
+#divLogoHeader
+{
+	float: left;
+	padding-left: 50px;
+	padding-top: 5px;
+}
+
+#imgLogoHeader
+{		
+	border-style: none;
+	border-width: 0px;
+	height: 71px;
+	width: 172px;
+}
+
+#divRotuloHeader
+{
+    /*float: left;
+	padding-top: 20px;*/
+	float: right;
+	padding-right: 75px;
+	padding-top: 14px;
+}
+
+#imgRotuloHeader
+{		
+	border-style: none;
+	border-width: 0px;
+}
+
+#divBusquedaHeader
+{	
+	float: right;
+	padding-right: 75px;
+	padding-top: 14px;
+}
+
+#divOpcionesHeader
+{	
+	clear: right;
+    float: right;
+	padding-right: 75px;
+	top: 5px;	
+    position: relative;
+}
+
+
+#imgLogOff
+{
+	width: 45px;
+	height: 24px;
+	background-image: url('../IMG/LogOff.png');
+}
+
+
+#imgLogOff:hover
+{		
+	background-image: url('../IMG/LogOff_Hover.png');
+}
+
+.listaLinks li
+{
+	display: inline;
+	font-family: 'Trebuchet MS';
+	font-size: 12px;
+	font-weight: bold;
+	color: #B3C432;
+}
+
+#divContenido
+{	    
+	clear:both;
+	background: #a9c3df;		
+}
+
+#divContenidoForm
+{	
+	/*border-color: #EEEEEE;*/
+	min-height: 400px;
+	background: #ffffff;
+	width: 100%;
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	border-right: #EEEEEE outset 1px;
+	border-left: #EEEEEE outset 1px;
+	border-bottom: #EEEEEE outset 1px;
+}
+
+.divContenidoTitulo
+{
+    clear:both ;
+    text-align:left;
+    background-color:#ffffff;
+    color:#666;
+    font-size:24px;
+    font-weight:bold;
+    padding:5px 0px 5px 10px;
+    margin:10px 0px;
+    border-bottom:1px solid #fff;
+    border-top:1px solid #d9d9d9;    
+    text-shadow:1px 1px 1px #fff;
+}
+
+.push {
+	height: 3em;
+}
+
+#divFooter
+{
+	border-style: inset outset outset inset;
+	border-width: 2px 1px 1px 1px;
+	border-color: #C0D0CA;
+	clear: both;
+	background: #184272;
+	color: #a9c3df;
+	font-size: 80%;
+	line-height: 130%;
+	text-align: center;
+	vertical-align: middle;	
+	width: 100%;
+	height: 3em;
+}
+
+#divLogin
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 18em;
+    margin-top: -9em; 
+    margin-left: -18em;
+}  
+
+.divFormularioBusqueda
+{
+	background-color: #fffccc;
+	border: 1px solid #FF9933;
+	font-size: 100px;
+	font-weight: bold;
+	color: #000066;
+	font-family: 'Century Gothic';
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.transparentStyle
+        {
+            background-color: transparent;
+        }
+        
+.bodyConsulRes
+{    
+    background-color:#ffffff;	
+}
+
+#divFondoConsultaRes
+{
+    clear: both;	
+	
+	font-size: 100%; 	
+	margin: auto;
+	width: 1016px;
+	height: 768px;
+	background: #ffffff  url('../IMG/FondoReservacion.jpg') repeat-x;	
+	/*background: #2360a3*/
+}
+
+/*
+.loginEncabezado
+{
+    color: #ffffff;
+    background: #0066CC url('../Imagenes/BannerLogin.png') no-repeat;
+    margin: 0px;
+    width: 100%;
+    height: 45px;
+    vertical-align :middle;
+    text-align:right;
+    padding-right:10px;
+    font-weight:bold;
+}  
+
+#tbLogin
+{
+    width: 100%;
+    background-color: #f3f3f3;
+    padding: 0px 0px 0px 0px;
+    border: 2px solid #0066CC;    
+    vertical-align:middle;
+    height: 100%;
+}
+
+#tbFormularioEnc
+{	 	 
+	 width :100%;
+	 font-weight:bold;
+	 color:#fff;
+	 text-align : center;	 	 	 
+}
+
+#tbFormularioEnc tr td
+{	
+	height:30px;		
+	border-bottom : 1pt solid #4B4B4B;
+	border-top: 1pt outset #4B4B4B;
+	border-left: 1pt outset #4B4B4B;
+	border-right: 1pt solid #4B4B4B;
+	background: #808080;	
+}
+
+#divFormularioEnc
+{	
+	border: 1pt outset #4B4B4B;		
+	background: #808080;	
+	color:#fff;
+	font-weight:bold;	
+}
+
+#divDetalle
+{
+    border: 1px solid #FFCC00;
+    background: #fffccc;
+    font-family: Arial;
+    font-size: 10px;
+    padding:10px 5px 5px 5px;     
+}*/
+

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dtPolizas" targetNamespace="http://tempuri.org/dtPolizas.xsd" xmlns:mstns="http://tempuri.org/dtPolizas.xsd" xmlns="http://tempuri.org/dtPolizas.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dtPolizas" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dtPolizas" msprop:Generator_UserDSName="dtPolizas">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="rpAprovacionFiscal" msprop:Generator_TableClassName="rpAprovacionFiscalDataTable" msprop:Generator_TableVarName="tablerpAprovacionFiscal" msprop:Generator_RowChangedName="rpAprovacionFiscalRowChanged" msprop:Generator_TablePropName="rpAprovacionFiscal" msprop:Generator_RowDeletingName="rpAprovacionFiscalRowDeleting" msprop:Generator_RowChangingName="rpAprovacionFiscalRowChanging" msprop:Generator_RowEvHandlerName="rpAprovacionFiscalRowChangeEventHandler" msprop:Generator_RowDeletedName="rpAprovacionFiscalRowDeleted" msprop:Generator_RowClassName="rpAprovacionFiscalRow" msprop:Generator_UserTableName="rpAprovacionFiscal" msprop:Generator_RowEvArgName="rpAprovacionFiscalRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CODIGO_POLIZA" msprop:Generator_ColumnVarNameInTable="columnCODIGO_POLIZA" msprop:Generator_ColumnPropNameInRow="CODIGO_POLIZA" msprop:Generator_ColumnPropNameInTable="CODIGO_POLIZAColumn" msprop:Generator_UserColumnName="CODIGO_POLIZA" type="xs:string" minOccurs="0" />
+              <xs:element name="TRANS_ID" msprop:Generator_ColumnVarNameInTable="columnTRANS_ID" msprop:Generator_ColumnPropNameInRow="TRANS_ID" msprop:Generator_ColumnPropNameInTable="TRANS_IDColumn" msprop:Generator_UserColumnName="TRANS_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="LINENO_POLIZA" msprop:Generator_ColumnVarNameInTable="columnLINENO_POLIZA" msprop:Generator_ColumnPropNameInRow="LINENO_POLIZA" msprop:Generator_ColumnPropNameInTable="LINENO_POLIZAColumn" msprop:Generator_UserColumnName="LINENO_POLIZA" type="xs:int" minOccurs="0" />
+              <xs:element name="DOC_ID" msprop:Generator_ColumnVarNameInTable="columnDOC_ID" msprop:Generator_ColumnPropNameInRow="DOC_ID" msprop:Generator_ColumnPropNameInTable="DOC_IDColumn" msprop:Generator_UserColumnName="DOC_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="SKU_DESCRIPTION" msprop:Generator_ColumnVarNameInTable="columnSKU_DESCRIPTION" msprop:Generator_ColumnPropNameInRow="SKU_DESCRIPTION" msprop:Generator_ColumnPropNameInTable="SKU_DESCRIPTIONColumn" msprop:Generator_UserColumnName="SKU_DESCRIPTION" type="xs:string" minOccurs="0" />
+              <xs:element name="MATERIAL_CODE" msprop:Generator_ColumnVarNameInTable="columnMATERIAL_CODE" msprop:Generator_ColumnPropNameInRow="MATERIAL_CODE" msprop:Generator_ColumnPropNameInTable="MATERIAL_CODEColumn" msprop:Generator_UserColumnName="MATERIAL_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="MATERIAL_DESCRIPTION" msprop:Generator_ColumnVarNameInTable="columnMATERIAL_DESCRIPTION" msprop:Generator_ColumnPropNameInRow="MATERIAL_DESCRIPTION" msprop:Generator_ColumnPropNameInTable="MATERIAL_DESCRIPTIONColumn" msprop:Generator_UserColumnName="MATERIAL_DESCRIPTION" type="xs:string" minOccurs="0" />
+              <xs:element name="QTY_TRANS" msprop:Generator_ColumnVarNameInTable="columnQTY_TRANS" msprop:Generator_ColumnPropNameInRow="QTY_TRANS" msprop:Generator_ColumnPropNameInTable="QTY_TRANSColumn" msprop:Generator_UserColumnName="QTY_TRANS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="QTY_POLIZA" msprop:Generator_ColumnVarNameInTable="columnQTY_POLIZA" msprop:Generator_ColumnPropNameInRow="QTY_POLIZA" msprop:Generator_ColumnPropNameInTable="QTY_POLIZAColumn" msprop:Generator_UserColumnName="QTY_POLIZA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BULTOS_POLIZA" msprop:Generator_ColumnVarNameInTable="columnBULTOS_POLIZA" msprop:Generator_ColumnPropNameInRow="BULTOS_POLIZA" msprop:Generator_ColumnPropNameInTable="BULTOS_POLIZAColumn" msprop:Generator_UserColumnName="BULTOS_POLIZA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="QTY" msprop:Generator_ColumnVarNameInTable="columnQTY" msprop:Generator_ColumnPropNameInRow="QTY" msprop:Generator_ColumnPropNameInTable="QTYColumn" msprop:Generator_UserColumnName="QTY" type="xs:decimal" minOccurs="0" />
+              <xs:element name="COMMENTS" msprop:Generator_ColumnVarNameInTable="columnCOMMENTS" msprop:Generator_ColumnPropNameInRow="COMMENTS" msprop:Generator_ColumnPropNameInTable="COMMENTSColumn" msprop:Generator_UserColumnName="COMMENTS" type="xs:string" minOccurs="0" />
+              <xs:element name="LICENSE_ID" msprop:Generator_ColumnVarNameInTable="columnLICENSE_ID" msprop:Generator_ColumnPropNameInRow="LICENSE_ID" msprop:Generator_ColumnPropNameInTable="LICENSE_IDColumn" msprop:Generator_UserColumnName="LICENSE_ID" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="COMPROBANTE_ENTRADA" msprop:Generator_TableClassName="COMPROBANTE_ENTRADADataTable" msprop:Generator_TableVarName="tableCOMPROBANTE_ENTRADA" msprop:Generator_TablePropName="COMPROBANTE_ENTRADA" msprop:Generator_RowDeletingName="COMPROBANTE_ENTRADARowDeleting" msprop:Generator_RowChangingName="COMPROBANTE_ENTRADARowChanging" msprop:Generator_RowEvHandlerName="COMPROBANTE_ENTRADARowChangeEventHandler" msprop:Generator_RowDeletedName="COMPROBANTE_ENTRADARowDeleted" msprop:Generator_UserTableName="COMPROBANTE_ENTRADA" msprop:Generator_RowChangedName="COMPROBANTE_ENTRADARowChanged" msprop:Generator_RowEvArgName="COMPROBANTE_ENTRADARowChangeEvent" msprop:Generator_RowClassName="COMPROBANTE_ENTRADARow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MATERIAL_ID" msprop:Generator_ColumnVarNameInTable="columnMATERIAL_ID" msprop:Generator_ColumnPropNameInRow="MATERIAL_ID" msprop:Generator_ColumnPropNameInTable="MATERIAL_IDColumn" msprop:Generator_UserColumnName="MATERIAL_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="PACKING" msprop:Generator_ColumnVarNameInTable="columnPACKING" msprop:Generator_ColumnPropNameInRow="PACKING" msprop:Generator_ColumnPropNameInTable="PACKINGColumn" msprop:Generator_UserColumnName="PACKING" type="xs:string" minOccurs="0" />
+              <xs:element name="MATERIAL_NAME" msprop:Generator_ColumnVarNameInTable="columnMATERIAL_NAME" msprop:Generator_ColumnPropNameInRow="MATERIAL_NAME" msprop:Generator_ColumnPropNameInTable="MATERIAL_NAMEColumn" msprop:Generator_UserColumnName="MATERIAL_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="QTY" msprop:Generator_ColumnVarNameInTable="columnQTY" msprop:Generator_ColumnPropNameInRow="QTY" msprop:Generator_ColumnPropNameInTable="QTYColumn" msprop:Generator_UserColumnName="QTY" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

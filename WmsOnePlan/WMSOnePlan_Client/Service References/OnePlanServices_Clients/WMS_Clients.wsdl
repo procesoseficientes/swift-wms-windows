@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="CreateClients">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pCLIENT_CODE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCLIENT_NAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCLIENT_ROUTE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCLIENT_CLASS" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pCLIENT_STATUS" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCLIENT_ERP_CODE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateClientsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateClientsResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateClients">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pCLIENT_CODE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCLIENT_NAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCLIENT_ROUTE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCLIENT_CLASS" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pCLIENT_STATUS" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCLIENT_ERP_CODE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateClientsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateClientsResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteClients">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pCLIENT_CODE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteClientsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteClientsResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchByKeyClients">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pCLIENT_CODE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchByKeyClientsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchByKeyClientsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetClientsPendingToRelate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetClientsPendingToRelateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetClientsPendingToRelateResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetERPClients">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetERPClientsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetERPClientsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchPartialClients">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pCLIENT_CODE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCLIENT_NAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchPartialClientsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchPartialClientsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetViewClients">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetViewClientsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetViewClientsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIfExistsMaterialByClient">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="clientCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="environmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIfExistsMaterialByClientResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetIfExistsMaterialByClientResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CreateClientsSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateClients" />
+  </wsdl:message>
+  <wsdl:message name="CreateClientsSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateClientsResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateClientsSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateClients" />
+  </wsdl:message>
+  <wsdl:message name="UpdateClientsSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateClientsResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteClientsSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteClients" />
+  </wsdl:message>
+  <wsdl:message name="DeleteClientsSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteClientsResponse" />
+  </wsdl:message>
+  <wsdl:message name="SearchByKeyClientsSoapIn">
+    <wsdl:part name="parameters" element="tns:SearchByKeyClients" />
+  </wsdl:message>
+  <wsdl:message name="SearchByKeyClientsSoapOut">
+    <wsdl:part name="parameters" element="tns:SearchByKeyClientsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetClientsPendingToRelateSoapIn">
+    <wsdl:part name="parameters" element="tns:GetClientsPendingToRelate" />
+  </wsdl:message>
+  <wsdl:message name="GetClientsPendingToRelateSoapOut">
+    <wsdl:part name="parameters" element="tns:GetClientsPendingToRelateResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetERPClientsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetERPClients" />
+  </wsdl:message>
+  <wsdl:message name="GetERPClientsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetERPClientsResponse" />
+  </wsdl:message>
+  <wsdl:message name="SearchPartialClientsSoapIn">
+    <wsdl:part name="parameters" element="tns:SearchPartialClients" />
+  </wsdl:message>
+  <wsdl:message name="SearchPartialClientsSoapOut">
+    <wsdl:part name="parameters" element="tns:SearchPartialClientsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetViewClientsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetViewClients" />
+  </wsdl:message>
+  <wsdl:message name="GetViewClientsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetViewClientsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetIfExistsMaterialByClientSoapIn">
+    <wsdl:part name="parameters" element="tns:GetIfExistsMaterialByClient" />
+  </wsdl:message>
+  <wsdl:message name="GetIfExistsMaterialByClientSoapOut">
+    <wsdl:part name="parameters" element="tns:GetIfExistsMaterialByClientResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WMS_ClientsSoap">
+    <wsdl:operation name="CreateClients">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Create Clients</wsdl:documentation>
+      <wsdl:input message="tns:CreateClientsSoapIn" />
+      <wsdl:output message="tns:CreateClientsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateClients">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update Clients</wsdl:documentation>
+      <wsdl:input message="tns:UpdateClientsSoapIn" />
+      <wsdl:output message="tns:UpdateClientsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteClients">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete Clients</wsdl:documentation>
+      <wsdl:input message="tns:DeleteClientsSoapIn" />
+      <wsdl:output message="tns:DeleteClientsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchByKeyClients">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Search Clients</wsdl:documentation>
+      <wsdl:input message="tns:SearchByKeyClientsSoapIn" />
+      <wsdl:output message="tns:SearchByKeyClientsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClientsPendingToRelate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Search Clients that haven't been related from ERP to WMS</wsdl:documentation>
+      <wsdl:input message="tns:GetClientsPendingToRelateSoapIn" />
+      <wsdl:output message="tns:GetClientsPendingToRelateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetERPClients">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Search Clients that haven't been related from ERP to WMS</wsdl:documentation>
+      <wsdl:input message="tns:GetERPClientsSoapIn" />
+      <wsdl:output message="tns:GetERPClientsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchPartialClients">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Search Clients</wsdl:documentation>
+      <wsdl:input message="tns:SearchPartialClientsSoapIn" />
+      <wsdl:output message="tns:SearchPartialClientsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetViewClients">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Search view Clients</wsdl:documentation>
+      <wsdl:input message="tns:GetViewClientsSoapIn" />
+      <wsdl:output message="tns:GetViewClientsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIfExistsMaterialByClient">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">GetIfExistsMaterialByClient</wsdl:documentation>
+      <wsdl:input message="tns:GetIfExistsMaterialByClientSoapIn" />
+      <wsdl:output message="tns:GetIfExistsMaterialByClientSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WMS_ClientsSoap" type="tns:WMS_ClientsSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateClients">
+      <soap:operation soapAction="http://tempuri.org/CreateClients" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateClients">
+      <soap:operation soapAction="http://tempuri.org/UpdateClients" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteClients">
+      <soap:operation soapAction="http://tempuri.org/DeleteClients" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchByKeyClients">
+      <soap:operation soapAction="http://tempuri.org/SearchByKeyClients" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientsPendingToRelate">
+      <soap:operation soapAction="http://tempuri.org/GetClientsPendingToRelate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetERPClients">
+      <soap:operation soapAction="http://tempuri.org/GetERPClients" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchPartialClients">
+      <soap:operation soapAction="http://tempuri.org/SearchPartialClients" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetViewClients">
+      <soap:operation soapAction="http://tempuri.org/GetViewClients" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIfExistsMaterialByClient">
+      <soap:operation soapAction="http://tempuri.org/GetIfExistsMaterialByClient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WMS_ClientsSoap12" type="tns:WMS_ClientsSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateClients">
+      <soap12:operation soapAction="http://tempuri.org/CreateClients" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateClients">
+      <soap12:operation soapAction="http://tempuri.org/UpdateClients" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteClients">
+      <soap12:operation soapAction="http://tempuri.org/DeleteClients" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchByKeyClients">
+      <soap12:operation soapAction="http://tempuri.org/SearchByKeyClients" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientsPendingToRelate">
+      <soap12:operation soapAction="http://tempuri.org/GetClientsPendingToRelate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetERPClients">
+      <soap12:operation soapAction="http://tempuri.org/GetERPClients" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchPartialClients">
+      <soap12:operation soapAction="http://tempuri.org/SearchPartialClients" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetViewClients">
+      <soap12:operation soapAction="http://tempuri.org/GetViewClients" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIfExistsMaterialByClient">
+      <soap12:operation soapAction="http://tempuri.org/GetIfExistsMaterialByClient" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WMS_Clients">
+    <wsdl:port name="WMS_ClientsSoap" binding="tns:WMS_ClientsSoap">
+      <soap:address location="http://localhost/WMSOnePlan_BusinessServices/Catalogues/WMS_Clients.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WMS_ClientsSoap12" binding="tns:WMS_ClientsSoap12">
+      <soap12:address location="http://localhost/WMSOnePlan_BusinessServices/Catalogues/WMS_Clients.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsRectification" targetNamespace="http://tempuri.org/dsRectification.xsd" xmlns:mstns="http://tempuri.org/dsRectification.xsd" xmlns="http://tempuri.org/dsRectification.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsRectification" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsRectification" msprop:Generator_UserDSName="dsRectification">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="RECTIFICATION" msprop:Generator_TableClassName="RECTIFICATIONDataTable" msprop:Generator_TableVarName="tableRECTIFICATION" msprop:Generator_TablePropName="RECTIFICATION" msprop:Generator_RowDeletingName="RECTIFICATIONRowDeleting" msprop:Generator_RowChangingName="RECTIFICATIONRowChanging" msprop:Generator_RowEvHandlerName="RECTIFICATIONRowChangeEventHandler" msprop:Generator_RowDeletedName="RECTIFICATIONRowDeleted" msprop:Generator_UserTableName="RECTIFICATION" msprop:Generator_RowChangedName="RECTIFICATIONRowChanged" msprop:Generator_RowEvArgName="RECTIFICATIONRowChangeEvent" msprop:Generator_RowClassName="RECTIFICATIONRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DOC_ID_RECTIFADA" msprop:Generator_ColumnVarNameInTable="columnDOC_ID_RECTIFADA" msprop:Generator_ColumnPropNameInRow="DOC_ID_RECTIFADA" msprop:Generator_ColumnPropNameInTable="DOC_ID_RECTIFADAColumn" msprop:Generator_UserColumnName="DOC_ID_RECTIFADA" type="xs:string" minOccurs="0" />
+              <xs:element name="NUMERO_ORDEN_RECTIFADA" msprop:Generator_ColumnVarNameInTable="columnNUMERO_ORDEN_RECTIFADA" msprop:Generator_ColumnPropNameInRow="NUMERO_ORDEN_RECTIFADA" msprop:Generator_ColumnPropNameInTable="NUMERO_ORDEN_RECTIFADAColumn" msprop:Generator_UserColumnName="NUMERO_ORDEN_RECTIFADA" type="xs:string" minOccurs="0" />
+              <xs:element name="CODIGO_POLIZA_RECTIFADA" msprop:Generator_ColumnVarNameInTable="columnCODIGO_POLIZA_RECTIFADA" msprop:Generator_ColumnPropNameInRow="CODIGO_POLIZA_RECTIFADA" msprop:Generator_ColumnPropNameInTable="CODIGO_POLIZA_RECTIFADAColumn" msprop:Generator_UserColumnName="CODIGO_POLIZA_RECTIFADA" type="xs:string" minOccurs="0" />
+              <xs:element name="CLASE_POLIZA_RECTIFADA" msprop:Generator_ColumnVarNameInTable="columnCLASE_POLIZA_RECTIFADA" msprop:Generator_ColumnPropNameInRow="CLASE_POLIZA_RECTIFADA" msprop:Generator_ColumnPropNameInTable="CLASE_POLIZA_RECTIFADAColumn" msprop:Generator_UserColumnName="CLASE_POLIZA_RECTIFADA" type="xs:string" minOccurs="0" />
+              <xs:element name="COMENTARIO_RECTIFADA" msprop:Generator_ColumnVarNameInTable="columnCOMENTARIO_RECTIFADA" msprop:Generator_ColumnPropNameInRow="COMENTARIO_RECTIFADA" msprop:Generator_ColumnPropNameInTable="COMENTARIO_RECTIFADAColumn" msprop:Generator_UserColumnName="COMENTARIO_RECTIFADA" type="xs:string" minOccurs="0" />
+              <xs:element name="FECHA_RECTIFICADA" msprop:Generator_ColumnVarNameInTable="columnFECHA_RECTIFICADA" msprop:Generator_ColumnPropNameInRow="FECHA_RECTIFICADA" msprop:Generator_ColumnPropNameInTable="FECHA_RECTIFICADAColumn" msprop:Generator_UserColumnName="FECHA_RECTIFICADA" type="xs:string" minOccurs="0" />
+              <xs:element name="OPERADOR_RECTIFICADA" msprop:Generator_ColumnVarNameInTable="columnOPERADOR_RECTIFICADA" msprop:Generator_ColumnPropNameInRow="OPERADOR_RECTIFICADA" msprop:Generator_ColumnPropNameInTable="OPERADOR_RECTIFICADAColumn" msprop:Generator_UserColumnName="OPERADOR_RECTIFICADA" type="xs:string" minOccurs="0" />
+              <xs:element name="DOC_ID_RECTIFICACION" msprop:Generator_ColumnVarNameInTable="columnDOC_ID_RECTIFICACION" msprop:Generator_ColumnPropNameInRow="DOC_ID_RECTIFICACION" msprop:Generator_ColumnPropNameInTable="DOC_ID_RECTIFICACIONColumn" msprop:Generator_UserColumnName="DOC_ID_RECTIFICACION" type="xs:string" minOccurs="0" />
+              <xs:element name="NUMERO_ORDEN_RECTIFICACION" msprop:Generator_ColumnVarNameInTable="columnNUMERO_ORDEN_RECTIFICACION" msprop:Generator_ColumnPropNameInRow="NUMERO_ORDEN_RECTIFICACION" msprop:Generator_ColumnPropNameInTable="NUMERO_ORDEN_RECTIFICACIONColumn" msprop:Generator_UserColumnName="NUMERO_ORDEN_RECTIFICACION" type="xs:string" minOccurs="0" />
+              <xs:element name="CODIGO_POLIZA_RECTIFICACION" msprop:Generator_ColumnVarNameInTable="columnCODIGO_POLIZA_RECTIFICACION" msprop:Generator_ColumnPropNameInRow="CODIGO_POLIZA_RECTIFICACION" msprop:Generator_ColumnPropNameInTable="CODIGO_POLIZA_RECTIFICACIONColumn" msprop:Generator_UserColumnName="CODIGO_POLIZA_RECTIFICACION" type="xs:string" minOccurs="0" />
+              <xs:element name="COMENTARIO_RECTIFICACION" msprop:Generator_ColumnVarNameInTable="columnCOMENTARIO_RECTIFICACION" msprop:Generator_ColumnPropNameInRow="COMENTARIO_RECTIFICACION" msprop:Generator_ColumnPropNameInTable="COMENTARIO_RECTIFICACIONColumn" msprop:Generator_UserColumnName="COMENTARIO_RECTIFICACION" type="xs:string" minOccurs="0" />
+              <xs:element name="FECHA_RECTIFICACION" msprop:Generator_ColumnVarNameInTable="columnFECHA_RECTIFICACION" msprop:Generator_ColumnPropNameInRow="FECHA_RECTIFICACION" msprop:Generator_ColumnPropNameInTable="FECHA_RECTIFICACIONColumn" msprop:Generator_UserColumnName="FECHA_RECTIFICACION" type="xs:string" minOccurs="0" />
+              <xs:element name="OPERADOR_RECTIFICACION" msprop:Generator_ColumnVarNameInTable="columnOPERADOR_RECTIFICACION" msprop:Generator_ColumnPropNameInRow="OPERADOR_RECTIFICACION" msprop:Generator_ColumnPropNameInTable="OPERADOR_RECTIFICACIONColumn" msprop:Generator_UserColumnName="OPERADOR_RECTIFICACION" type="xs:string" minOccurs="0" />
+              <xs:element name="PENDIENTE_RECTIFICACION_DESCRIPCION" msprop:Generator_ColumnVarNameInTable="columnPENDIENTE_RECTIFICACION_DESCRIPCION" msprop:Generator_ColumnPropNameInRow="PENDIENTE_RECTIFICACION_DESCRIPCION" msprop:Generator_ColumnPropNameInTable="PENDIENTE_RECTIFICACION_DESCRIPCIONColumn" msprop:Generator_UserColumnName="PENDIENTE_RECTIFICACION_DESCRIPCION" type="xs:string" minOccurs="0" />
+              <xs:element name="CLIENT_CODE" msprop:Generator_ColumnVarNameInTable="columnCLIENT_CODE" msprop:Generator_ColumnPropNameInRow="CLIENT_CODE" msprop:Generator_ColumnPropNameInTable="CLIENT_CODEColumn" msprop:Generator_UserColumnName="CLIENT_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="CLIENT_NAME" msprop:Generator_ColumnVarNameInTable="columnCLIENT_NAME" msprop:Generator_ColumnPropNameInRow="CLIENT_NAME" msprop:Generator_ColumnPropNameInTable="CLIENT_NAMEColumn" msprop:Generator_UserColumnName="CLIENT_NAME" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FFD26045-9C54-4FD7-ADDB-8C9865F67C1D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>WMSOnePlan_BusinessServices</RootNamespace>
+    <AssemblyName>WMSOnePlan_BusinessServices</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
+    <UseIISExpress>false</UseIISExpress>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WMSOnePlan_BusinessServices.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WMSOnePlan_BusinessServices.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\Downloads\Json40r3\Bin\Net35\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="3PL\3PL_Polizas.asmx.vb">
+      <DependentUpon>3PL_Polizas.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Basc\BASC_Forms.asmx.vb">
+      <DependentUpon>BASC_Forms.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Catalogues\WMS_Bonds.asmx.vb">
+      <DependentUpon>WMS_Bonds.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Catalogues\WMS_Certificates.asmx.vb">
+      <DependentUpon>WMS_Certificates.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Catalogues\WMS_Clients.asmx.vb">
+      <DependentUpon>WMS_Clients.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Catalogues\WMS_Insurance_Companies.asmx.vb">
+      <DependentUpon>WMS_Insurance_Companies.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Catalogues\WMS_Insurance_Docs.asmx.vb">
+      <DependentUpon>WMS_Insurance_Docs.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Catalogues\WMS_Insurance_Log.asmx.vb">
+      <DependentUpon>WMS_Insurance_Log.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Catalogues\WMS_Locations.asmx.vb">
+      <DependentUpon>WMS_Locations.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Catalogues\WMS_Materials.asmx.vb">
+      <DependentUpon>WMS_Materials.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Catalogues\WMS_Materials_Droid.aspx.designer.vb">
+      <DependentUpon>WMS_Materials_Droid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogues\WMS_Materials_Droid.aspx.vb">
+      <DependentUpon>WMS_Materials_Droid.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Catalogues\WMS_Phisical_Couting.asmx.vb">
+      <DependentUpon>WMS_Phisical_Couting.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Catalogues\WMS_Security.asmx.vb">
+      <DependentUpon>WMS_Security.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Catalogues\WMS_Settings.asmx.vb">
+      <DependentUpon>WMS_Settings.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Catalogues\WMS_Supervisions.asmx.vb">
+      <DependentUpon>WMS_Supervisions.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Catalogues\WMS_SupervisionsDetail.asmx.vb">
+      <DependentUpon>WMS_SupervisionsDetail.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Catalogues\WMS_Tariff.asmx.vb">
+      <DependentUpon>WMS_Tariff.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Indicadores\WMS_Indicators.asmx.vb">
+      <DependentUpon>WMS_Indicators.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Info\WMS_InfoInventory.asmx.vb">
+      <DependentUpon>WMS_InfoInventory.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Info\WMS_InfoTrans.asmx.vb">
+      <DependentUpon>WMS_InfoTrans.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ModuleServices.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="postimage.aspx.designer.vb">
+      <DependentUpon>postimage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="postimage.aspx.vb">
+      <DependentUpon>postimage.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Sonda\SONDA_Documentos.asmx.vb">
+      <DependentUpon>SONDA_Documentos.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sonda\SONDA_GetGeoPoints_ByRoute.aspx.designer.vb">
+      <DependentUpon>SONDA_GetGeoPoints_ByRoute.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sonda\SONDA_GetGeoPoints_ByRoute.aspx.vb">
+      <DependentUpon>SONDA_GetGeoPoints_ByRoute.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sonda\SONDA_PackageCounting.asmx.vb">
+      <DependentUpon>SONDA_PackageCounting.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sonda\SONDA_Transport.asmx.vb">
+      <DependentUpon>SONDA_Transport.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Trans\WMS_Certification.asmx.vb">
+      <DependentUpon>WMS_Certification.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Trans\WMS_DeliveredLabels.asmx.vb">
+      <DependentUpon>WMS_DeliveredLabels.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Trans\WMS_InitInventory.asmx.vb">
+      <DependentUpon>WMS_InitInventory.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Trans\WMS_Polizas.asmx.vb">
+      <DependentUpon>WMS_Polizas.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Trans\WMS_Reception.asmx.vb">
+      <DependentUpon>WMS_Reception.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Trans\WMS_ServicesToBill.asmx.vb">
+      <DependentUpon>WMS_ServicesToBill.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Trans\WMS_TaskLib.asmx.vb">
+      <DependentUpon>WMS_TaskLib.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Trans\WMS_TasksAdmin.asmx.vb">
+      <DependentUpon>WMS_TasksAdmin.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Trans\WMS_Trans.asmx.vb">
+      <DependentUpon>WMS_Trans.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Basc\form-46CC.json" />
+    <Content Include="Catalogues\WMS_Phisical_Couting.asmx" />
+    <Content Include="ClassDiagram1.cd" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="My Project\PublishProfiles\OnePlan_BusinessServices.pubxml" />
+    <None Include="My Project\PublishProfiles\publish.pubxml" />
+    <None Include="My Project\PublishProfiles\QA.pubxml" />
+    <None Include="My Project\PublishProfiles\WmsOnePlan_BusinessServices.pubxml" />
+    <None Include="My Project\PublishProfiles\WMS_WebServices.pubxml" />
+    <None Include="My Project\PublishProfiles\WsmAlsersa.pubxml" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="3PL\3PL_Polizas.asmx" />
+    <Content Include="Basc\BASC_Forms.asmx" />
+    <Content Include="Catalogues\WMS_Bonds.asmx" />
+    <Content Include="Catalogues\WMS_Certificates.asmx" />
+    <Content Include="Catalogues\WMS_Clients.asmx" />
+    <Content Include="Catalogues\WMS_Insurance_Companies.asmx" />
+    <Content Include="Catalogues\WMS_Insurance_Docs.asmx" />
+    <Content Include="Catalogues\WMS_Insurance_Log.asmx" />
+    <Content Include="Catalogues\WMS_Locations.asmx" />
+    <Content Include="Catalogues\WMS_Materials.asmx" />
+    <Content Include="Catalogues\WMS_Materials_Droid.aspx" />
+    <Content Include="Catalogues\WMS_Security.asmx" />
+    <Content Include="Catalogues\WMS_Settings.asmx" />
+    <Content Include="Catalogues\WMS_Supervisions.asmx" />
+    <Content Include="Catalogues\WMS_SupervisionsDetail.asmx" />
+    <Content Include="Catalogues\WMS_Tariff.asmx" />
+    <Content Include="Indicadores\WMS_Indicators.asmx" />
+    <Content Include="Info\WMS_InfoInventory.asmx" />
+    <Content Include="Info\WMS_InfoTrans.asmx" />
+    <Content Include="postimage.aspx" />
+    <Content Include="Sonda\SONDA_Documentos.asmx" />
+    <Content Include="Sonda\SONDA_GetGeoPoints_ByRoute.aspx" />
+    <Content Include="Sonda\SONDA_PackageCounting.asmx" />
+    <Content Include="Sonda\SONDA_Transport.asmx" />
+    <Content Include="Trans\WMS_Certification.asmx" />
+    <Content Include="Trans\WMS_DeliveredLabels.asmx" />
+    <Content Include="Trans\WMS_InitInventory.asmx" />
+    <Content Include="Trans\WMS_Polizas.asmx" />
+    <Content Include="Trans\WMS_Reception.asmx" />
+    <Content Include="Trans\WMS_ServicesToBill.asmx" />
+    <Content Include="Trans\WMS_TaskLib.asmx" />
+    <Content Include="Trans\WMS_TasksAdmin.asmx" />
+    <Content Include="Trans\WMS_Trans.asmx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\MobilityScm.Modelo.TipoYEstados\MobilityScm.Modelo.TipoYEstados.csproj">
+      <Project>{7fa62357-7b1c-447a-9cf4-48d33dd92488}</Project>
+      <Name>MobilityScm.Modelo.TipoYEstados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\MobilityScm.Utilerias\MobilityScm.Utilerias.csproj">
+      <Project>{2DC8C4BB-E781-4CAA-ADD8-63EF554DBE22}</Project>
+      <Name>MobilityScm.Utilerias</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>50987</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:8088/WMSOnePlan_BusinessServices</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

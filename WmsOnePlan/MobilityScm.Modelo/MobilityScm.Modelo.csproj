@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3DBA5BC7-059F-41CE-9692-C4E875FA6D10}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MobilityScm.Modelo</RootNamespace>
+    <AssemblyName>MobilityScm.Modelo</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClosedXML, Version=0.87.0.0, Culture=neutral, PublicKeyToken=fd1eb21b62ae805b, processorArchitecture=MSIL">
+      <HintPath>..\packages\ClosedXML.0.87.1\lib\net40\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Map.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraMap.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DocumentFormat.OpenXml, Version=2.7.2.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.7.2\lib\net40\DocumentFormat.OpenXml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ExcelNumberFormat, Version=1.0.3.0, Culture=neutral, PublicKeyToken=23c6f5d73be07eca, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelNumberFormat.1.0.3\lib\net20\ExcelNumberFormat.dll</HintPath>
+    </Reference>
+    <Reference Include="FastMember, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FastMember.1.3.0\lib\net45\FastMember.dll</HintPath>
+    </Reference>
+    <Reference Include="MoreLinq, Version=3.3.1.0, Culture=neutral, PublicKeyToken=384d532d7e88985d, processorArchitecture=MSIL">
+      <HintPath>..\packages\morelinq.3.3.1\lib\net451\MoreLinq.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.DomainServices.Server, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.OpenAccess, Version=2015.1.225.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
+      <HintPath>..\DLL'S\Telerik.OpenAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.OpenAccess.35.Extensions, Version=2015.1.225.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.OpenAccess.Ria.Extensions, Version=2015.1.225.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL'S\Telerik.OpenAccess.Ria.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.OpenAccess.Runtime, Version=2015.1.225.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Telerik\Data Access\bin\Telerik.OpenAccess.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controladores\AcuerdoComercialPorInventarioControlador.cs" />
+    <Compile Include="Controladores\AdministradorDeLineaDePickingControlador.cs" />
+    <Compile Include="Controladores\AdministradorDeTareasControlador.cs" />
+    <Compile Include="Controladores\AsignacionConteoFisicoControlador.cs" />
+    <Compile Include="Controladores\BloqueoDeInventarioControlador.cs" />
+    <Compile Include="Controladores\CatalogoZonaControlador.cs" />
+    <Compile Include="Controladores\ClaseControlador.cs" />
+    <Compile Include="Controladores\ConsultaCosteoControlador.cs" />
+    <Compile Include="Controladores\BalanceDeSaldosFiscalControlador.cs" />
+    <Compile Include="Controladores\ConsultaDeConteoFisicoControlador.cs" />
+    <Compile Include="Controladores\ConsultaDeInventarioDiarioControlador.cs" />
+    <Compile Include="Controladores\ConsultaDeLineaDePickingControlador.cs" />
+    <Compile Include="Controladores\ConsultaDeManifiestoControlador.cs" />
+    <Compile Include="Controladores\ConsultaDePaseDeSalidaControlador.cs" />
+    <Compile Include="Controladores\ConsultaPedidosPorVendedorControlador.cs" />
+    <Compile Include="Controladores\CosteoControlador.cs" />
+    <Compile Include="Controladores\CumplimientoDeEntregaControlador.cs" />
+    <Compile Include="Controladores\DemandaDeDespachoControlador.cs" />
+    <Compile Include="Controladores\EmpresaDeTransporteControlador.cs" />
+    <Compile Include="Controladores\EstadoDeUbicacionesControlador.cs" />
+    <Compile Include="Controladores\IndicesDeBodegaControlador.cs" />
+    <Compile Include="Controladores\InventarioComprometidoControlador.cs" />
+    <Compile Include="Controladores\ProyectoControlador.cs" />
+    <Compile Include="Controladores\SugerenciaCompraControlador.cs" />
+    <Compile Include="Controladores\InventarioInactivoControlador.cs" />
+    <Compile Include="Controladores\ReportePickingControlador.cs" />
+    <Compile Include="Controladores\ZonaDePosicionamientoControlador.cs" />
+    <Compile Include="Interfaces\Controladores\IConsulaDePaseDeSalidaControlador.cs" />
+    <Compile Include="Interfaces\Controladores\IIndicesDeBodegaControlador.cs" />
+    <Compile Include="Interfaces\Controladores\IInventarioComprometidoControlador.cs" />
+    <Compile Include="Interfaces\Controladores\IProyectoControlador.cs" />
+    <Compile Include="Interfaces\Controladores\ISugerenciaCompraControlador.cs" />
+    <Compile Include="Interfaces\Controladores\IInventarioInactivoControlador.cs" />
+    <Compile Include="Interfaces\Controladores\IPaseDeSalidaControlador.cs" />
+    <Compile Include="Controladores\PaseDeSalidaControlador.cs" />
+    <Compile Include="Controladores\ReporteRecepcionPorDevolucionControlador.cs" />
+    <Compile Include="Interfaces\Controladores\IAdministradorDeLineaDePickingControlador.cs" />
+    <Compile Include="Interfaces\Controladores\IConsultaDeInventarioDiarioControlador.cs" />
+    <Compile Include="Interfaces\Controladores\IConsultaDeLineaDePickingControlador.cs" />
+    <Compile Include="Controladores\PilotoControlador.cs" />
+    <Compile Include="Controladores\VehiculoControlador.cs" />
+    <Compile Include="Interfaces\Controladores\IConsultaDeManifiestoControlador.cs" />
+    <Compile Include="Interfaces\Controladores\IConsultaPedidosPorVendedorControlador.cs" />
+    <Compile Include="Interfaces\Controladores\IPilotoControlador.cs" />
+    <Compile Include="Interfaces\Controladores\IEmpresaDeTransporteControlador.cs" />
+    <Compile Include="Interfaces\Controladores\ICumplimientoDeEntregaControlador.cs" />
+    <Compile Include="Interfaces\Controladores\IReportePickingControlador.cs" />
+    <Compile Include="Interfaces\Controladores\IReporteRecepcionPorDevolucionControlador.cs" />
+    <Compile Include="Interfaces\Controladores\ITrazabilidadDeDemandaControlador.cs" />
+    <Compile Include="Controladores\LiberarPolizaPopupControlador.cs" />
+    <Compile Include="Controladores\ManifiestoCargaControlador.cs" />
+    <Compile Include="Controladores\MasterPackControlador.cs" />
+    <Compile Include="Controladores\OrdenesDeVentaPendienteControlador.cs" />
+    <Compile Include="Controladores\RecepcionControlador.cs" />
+    <Compile Include="Controladores\ReporteDeSolicitudDeTrasladoControlador.cs" />
+    <Compile Include="Controladores\SolicitudDeTrasladoControlador.cs" />
+    <Compile Include="Controladores\TrazabilidadDeDemandaControlador.cs" />
+    <Compile Include="Controladores\VencimientoDePolizasControlador.cs" />
+    <Compile Include="Interfaces\Controladores\IAcuerdoComercialPorInventarioControlador.cs" />
+    <Compile Include="Interfaces\Controladores\IAdministradorDeTareasControlador.cs" />
+    <Compile Include="Interfaces\Controladores\IBloqueoDeInventarioControlador.cs" />
+    <Compile Include="Interfaces\Controladores\ICatalogoZonaControlador.cs" />
+    <Compile Include="Interfaces\Controladores\IClaseControlador.cs" />
+    <Compile Include="Interfaces\Controladores\IConsultaCosteoControlador.cs" />
+    <Compile Include="Interfaces\Controladores\IBalanceDeSaldosFiscalControlador.cs" />
+    <Compile Include="Interfaces\Controladores\IConsultaDeConteoFisicoControlador.cs" />
+    <Compile Include="Interfaces\Controladores\ICosteoControlador.cs" />
+    <Compile Include="Interfaces\Controladores\IDemandaDeDespachoControlador.cs" />
+    <Compile Include="Interfaces\Controladores\IEstadoDeUbicacionesControlador.cs" />
+    <Compile Include="Interfaces\Controladores\ILiberarPolizaPopupControlador.cs" />
+    <Compile Include="Interfaces\Controladores\IManifiestoCargaControlador.cs" />
+    <Compile Include="Interfaces\Controladores\IMasterPackControlador.cs" />
+    <Compile Include="Interfaces\Controladores\IOrdenesDeVentaPendienteControlador.cs" />
+    <Compile Include="Interfaces\Controladores\IRecepcionControlador.cs" />
+    <Compile Include="Interfaces\Controladores\IReporteDeSolicitudDeTrasladoControlador.cs" />
+    <Compile Include="Interfaces\Controladores\ISolicitudDeTrasladoControlador.cs" />
+    <Compile Include="Interfaces\Controladores\IVehiculoControlador.cs" />
+    <Compile Include="Interfaces\Controladores\IVencimientoDePolizasControlador.cs" />
+    <Compile Include="Interfaces\Controladores\IZonaDePosicionamientoControlador.cs" />
+    <Compile Include="Interfaces\Servicios\IClaseServicio.cs" />
+    <Compile Include="Interfaces\Servicios\IConsultaDeManifiestoServicio.cs" />
+    <Compile Include="Interfaces\Servicios\ICumplimientoDeEntregaServicio.cs" />
+    <Compile Include="Interfaces\Servicios\IEmpresaDeTransporteServicio.cs" />
+    <Compile Include="Interfaces\Servicios\IIndiceBodegaServicio.cs" />
+    <Compile Include="Interfaces\Servicios\IInventarioComprometidoServicio.cs" />
+    <Compile Include="Interfaces\Servicios\IInventarioServicio.cs" />
+    <Compile Include="Interfaces\Servicios\ILineaDePickingServicio.cs" />
+    <Compile Include="Interfaces\Servicios\IOrdenDeCompraServicio.cs" />
+    <Compile Include="Interfaces\Servicios\IParametroServicio.cs" />
+    <Compile Include="Interfaces\Servicios\IPaseDeSalidaServicio.cs" />
+    <Compile Include="Interfaces\Servicios\IPilotoServicio.cs" />
+    <Compile Include="Interfaces\Servicios\IPoligonoServicio.cs" />
+    <Compile Include="Interfaces\Servicios\IProyectoServicio.cs" />
+    <Compile Include="Interfaces\Servicios\ISeguridadServicio.cs" />
+    <Compile Include="Interfaces\Servicios\ISolicitudDeTrasladoServicio.cs" />
+    <Compile Include="Interfaces\Servicios\IVehiculoServicio.cs" />
+    <Compile Include="Interfaces\Servicios\IVencimientoDePolizasServicio.cs" />
+    <Compile Include="Interfaces\Servicios\IPosicionamientoServicio.cs" />
+    <Compile Include="Service References\BandaAtoxAriumWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\BalanceDeSaldosFiscalServicio.cs" />
+    <Compile Include="Interfaces\Servicios\IAcuerdoComercialServicio.cs" />
+    <Compile Include="Interfaces\Controladores\IAsignacionConteoFisicoControlador.cs" />
+    <Compile Include="Interfaces\Servicios\IBalanceDeSaldosFiscalServicio.cs" />
+    <Compile Include="Interfaces\Servicios\IBodegaServicio.cs" />
+    <Compile Include="Interfaces\Servicios\ICatalogoZonaServicio.cs" />
+    <Compile Include="Interfaces\Servicios\IClienteServicio.cs" />
+    <Compile Include="Interfaces\Servicios\IConfiguracionServicio.cs" />
+    <Compile Include="Interfaces\Servicios\IConsultaCosteoServicio.cs" />
+    <Compile Include="Interfaces\Servicios\IConteoFisicoServicio.cs" />
+    <Compile Include="Interfaces\Servicios\ICosteoServicio.cs" />
+    <Compile Include="Interfaces\Servicios\IDemandaDeDespachoServicio.cs" />
+    <Compile Include="Interfaces\Servicios\IEstadoDeUbicacionesServicio.cs" />
+    <Compile Include="Interfaces\Servicios\IFuenteExternaServicio.cs" />
+    <Compile Include="Interfaces\Servicios\IManifiestoCargaServicio.cs" />
+    <Compile Include="Interfaces\Servicios\IMaterialServicio.cs" />
+    <Compile Include="Interfaces\Servicios\IOrdenDeVentaERPServicio.cs" />
+    <Compile Include="Interfaces\Servicios\IOrdenDeVentaSwiftExpressServicio.cs" />
+    <Compile Include="Interfaces\Servicios\IPickingServicio.cs" />
+    <Compile Include="Interfaces\Servicios\IPolizaAseguradaServicio.cs" />
+    <Compile Include="Interfaces\Servicios\IPolizaServicio.cs" />
+    <Compile Include="Interfaces\Servicios\IRecepcionServicio.cs" />
+    <Compile Include="Interfaces\Servicios\IRutasSwiftExpressServicio.cs" />
+    <Compile Include="Controladores\ServicioPorCobrarControlador.cs" />
+    <Compile Include="Interfaces\Controladores\IServicioPorCobrarControlador.cs" />
+    <Compile Include="Interfaces\Servicios\IServiciosPorCobrarServicio.cs" />
+    <Compile Include="Controladores\DemoControlador.cs" />
+    <Compile Include="Interfaces\Controladores\IDemoControlador.cs" />
+    <Compile Include="Interfaces\Servicios\IDemoServicio.cs" />
+    <Compile Include="Interfaces\Servicios\ITareaServicio.cs" />
+    <Compile Include="Interfaces\Servicios\IUbicacionServicio.cs" />
+    <Compile Include="Interfaces\Servicios\IUsuarioServicio.cs" />
+    <Compile Include="Interfaces\Servicios\lMasterPackServicio.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Servicios\AcuerdoComercialServicio.cs" />
+    <Compile Include="Servicios\BodegaServicio.cs" />
+    <Compile Include="Servicios\CatalogoZonaServicio.cs" />
+    <Compile Include="Servicios\ClaseServicio.cs" />
+    <Compile Include="Servicios\ClienteServicio.cs" />
+    <Compile Include="Servicios\ConfiguracionServicio.cs" />
+    <Compile Include="Servicios\ConsultaCosteoServicio.cs" />
+    <Compile Include="Servicios\ConsultaDeManifiestoServicio.cs" />
+    <Compile Include="Servicios\ConteoFisicoServicio.cs" />
+    <Compile Include="Servicios\CosteoServicio.cs" />
+    <Compile Include="Servicios\CumplimientoDeEntregaServicio.cs" />
+    <Compile Include="Servicios\DemandaDeDespachoServicio.cs" />
+    <Compile Include="Servicios\DemoServicio.cs" />
+    <Compile Include="Servicios\EmpresaDeTransporteServicio.cs" />
+    <Compile Include="Servicios\EstadoDeUbicacionesServicio.cs" />
+    <Compile Include="Servicios\FuenteExternaServicio.cs" />
+    <Compile Include="Servicios\IndiceBodegaServicio.cs" />
+    <Compile Include="Servicios\InventarioComprometidoServicio.cs" />
+    <Compile Include="Servicios\InventarioServicio.cs" />
+    <Compile Include="Servicios\LineaDePickingServicio.cs" />
+    <Compile Include="Servicios\ManifiestoCargaServicio.cs" />
+    <Compile Include="Servicios\MasterPackServicio.cs" />
+    <Compile Include="Servicios\MaterialServicio.cs" />
+    <Compile Include="Servicios\OrdenDeCompraServicio.cs" />
+    <Compile Include="Servicios\OrdenDeVentaERPServicio.cs" />
+    <Compile Include="Servicios\OrdenDeVentaSwiftExpressServicio.cs" />
+    <Compile Include="Servicios\ParametroServicio.cs" />
+    <Compile Include="Servicios\PaseDeSalidaServicio.cs" />
+    <Compile Include="Servicios\PickingServicio.cs" />
+    <Compile Include="Servicios\PilotoServicio.cs" />
+    <Compile Include="Servicios\PoligonoServicio.cs" />
+    <Compile Include="Servicios\PolizaAseguradaServicio.cs" />
+    <Compile Include="Servicios\PolizaServicio.cs" />
+    <Compile Include="Servicios\PosicionamientoServicio.cs" />
+    <Compile Include="Servicios\ProyectoServicio.cs" />
+    <Compile Include="Servicios\RecepcionServicio.cs" />
+    <Compile Include="Servicios\RutasSwiftExpressServicio.cs" />
+    <Compile Include="Servicios\SeguridadServicio.cs" />
+    <Compile Include="Servicios\SolicitudDeTrasladoServicio.cs" />
+    <Compile Include="Servicios\TareaServicio.cs" />
+    <Compile Include="Servicios\UbicacionServicio.cs" />
+    <Compile Include="Servicios\UsuarioServicio.cs" />
+    <Compile Include="Servicios\VehiculoServicio.cs" />
+    <Compile Include="Servicios\VencimientoDePolizasServicio.cs" />
+    <Compile Include="Vistas\IAcuerdoComercialPorInventarioVista.cs" />
+    <Compile Include="Vistas\IAdministradorDeLineaDePickingVista.cs" />
+    <Compile Include="Vistas\IAdministradorDeTareasVista.cs" />
+    <Compile Include="Vistas\IAsignacionConteosFisicosVista.cs" />
+    <Compile Include="Vistas\IBloqueoDeInventarioVista.cs" />
+    <Compile Include="Vistas\ICatalogoZonaVista.cs" />
+    <Compile Include="Vistas\IClaseVista.cs" />
+    <Compile Include="Vistas\IConsultaCosteoVista.cs" />
+    <Compile Include="Vistas\IBalanceDeSaldosFiscalVista.cs" />
+    <Compile Include="Vistas\IConsultaDeConteoFisicoVista.cs" />
+    <Compile Include="Vistas\IConsultaDeInventarioDiarioVista.cs" />
+    <Compile Include="Vistas\IConsultaDeLineaDePickingVista.cs" />
+    <Compile Include="Vistas\IConsultaDeManifiestoVista.cs" />
+    <Compile Include="Vistas\IConsultaDePaseDeSalidaVista.cs" />
+    <Compile Include="Vistas\IConsultaPedidosPorVendedorVista.cs" />
+    <Compile Include="Vistas\ICosteoVista.cs" />
+    <Compile Include="Vistas\ICumplimientoDeEntregaVista.cs" />
+    <Compile Include="Vistas\IDemandaDeDespachoVista.cs" />
+    <Compile Include="Vistas\IDemoVista.cs" />
+    <Compile Include="Vistas\IEmpresaDeTransporteVista.cs" />
+    <Compile Include="Vistas\IEstadoDeUbicacionesVista.cs" />
+    <Compile Include="Vistas\IIndicesDeBodegaVista.cs" />
+    <Compile Include="Vistas\IInventarioComprometidoVista.cs" />
+    <Compile Include="Vistas\IProyectoVista.cs" />
+    <Compile Include="Vistas\ISugeridoCompraVista.cs" />
+    <Compile Include="Vistas\IInventarioInactivoVista.cs" />
+    <Compile Include="Vistas\ILiberarPolizaPopup.cs" />
+    <Compile Include="Vistas\IManifiestoCargaVista.cs" />
+    <Compile Include="Vistas\IMasterPackVista.cs" />
+    <Compile Include="Vistas\IOrdenesDeVentaPendientesVista.cs" />
+    <Compile Include="Vistas\IPaseDeSalidaVista.cs" />
+    <Compile Include="Vistas\IPilotoVista.cs" />
+    <Compile Include="Vistas\IRecepcionErpVista.cs" />
+    <Compile Include="Vistas\IReporteDeSolicitudDeTrasladoVista.cs" />
+    <Compile Include="Vistas\IReportePickingVista.cs" />
+    <Compile Include="Vistas\IReporteRecepcionPorDevolucionVista.cs" />
+    <Compile Include="Vistas\IServicioPorCobrarVista.cs" />
+    <Compile Include="Servicios\ServiciosPorCobrarServicio.cs" />
+    <Compile Include="Vistas\ISolicitudDeTrasladoVista.cs" />
+    <Compile Include="Vistas\ITrazabilidadDeDemandaVista.cs" />
+    <Compile Include="Vistas\IVehiculoVista.cs" />
+    <Compile Include="Vistas\IVencimientoDePolizasVista.cs" />
+    <Compile Include="Vistas\IVistaBase.cs" />
+    <Compile Include="Vistas\IZonaDePosicionamientoVista.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\MobilityScm.Modelo.TipoYEstados\MobilityScm.Modelo.TipoYEstados.csproj">
+      <Project>{7fa62357-7b1c-447a-9cf4-48d33dd92488}</Project>
+      <Name>MobilityScm.Modelo.TipoYEstados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\MobilityScm.Utilerias\MobilityScm.Utilerias.csproj">
+      <Project>{2dc8c4bb-e781-4caa-add8-63ef554dbe22}</Project>
+      <Name>MobilityScm.Utilerias</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\MobilityScm.Verticial.Excepciones\MobilityScm.Vertical.Excepciones.csproj">
+      <Project>{5a23436d-3bd2-4a22-a238-540e88c6fea0}</Project>
+      <Name>MobilityScm.Vertical.Excepciones</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\SwiftExpress\SwiftExpress\MobilityScm.Utilerias.Web\MobilityScm.Utilerias.Win.csproj">
+      <Project>{55f31ac8-0873-4680-a2c7-e934482d5530}</Project>
+      <Name>MobilityScm.Utilerias.Win</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MobilityScm.Modelo.Entidades\MobilityScm.Modelo.Entidades.csproj">
+      <Project>{0D4A97D7-6303-4C48-B3A6-1C4314F09C76}</Project>
+      <Name>MobilityScm.Modelo.Entidades</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\MobilityScm.Vertical\MobilityScm.Vertical.csproj">
+      <Project>{4807256a-677e-4286-82e4-13f230a45337}</Project>
+      <Name>MobilityScm.Vertical</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\MobilityScm.Modelo.TipoYEstados\MobilityScm.Modelo.TipoYEstados.csproj">
+      <Project>{7FA62357-7B1C-447A-9CF4-48D33DD92488}</Project>
+      <Name>MobilityScm.Modelo.TipoYEstados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\MobilityScm.Vertical\MobilityScm.Vertical.csproj">
+      <Project>{4807256A-677E-4286-82E4-13F230A45337}</Project>
+      <Name>MobilityScm.Vertical</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MobilityScm.Modelo.Entidades\MobilityScm.Modelo.Entidades.csproj">
+      <Project>{0d4a97d7-6303-4c48-b3a6-1c4314f09c76}</Project>
+      <Name>MobilityScm.Modelo.Entidades</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Service References\BandaAtoxAriumWS\BandaAtoxArium.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\BandaAtoxAriumWS\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BandaAtoxAriumWS\BandaAtoxArium.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BandaAtoxAriumWS\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BandaAtoxAriumWS\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BandaAtoxAriumWS\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

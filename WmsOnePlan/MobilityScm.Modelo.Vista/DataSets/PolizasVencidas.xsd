@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PolizasVencidas" targetNamespace="http://tempuri.org/PolizasVencidas.xsd" xmlns:mstns="http://tempuri.org/PolizasVencidas.xsd" xmlns="http://tempuri.org/PolizasVencidas.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PolizasVencidas" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="PolizasVencidas" msprop:Generator_UserDSName="PolizasVencidas">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DOC_ID" msprop:Generator_ColumnVarNameInTable="columnDOC_ID" msprop:Generator_ColumnPropNameInRow="DOC_ID" msprop:Generator_ColumnPropNameInTable="DOC_IDColumn" msprop:Generator_UserColumnName="DOC_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="REGIMEN" msprop:Generator_ColumnVarNameInTable="columnREGIMEN" msprop:Generator_ColumnPropNameInRow="REGIMEN" msprop:Generator_ColumnPropNameInTable="REGIMENColumn" msprop:Generator_UserColumnName="REGIMEN" type="xs:string" minOccurs="0" />
+              <xs:element name="FECHA_INGRESO" msprop:Generator_ColumnVarNameInTable="columnFECHA_INGRESO" msprop:Generator_ColumnPropNameInRow="FECHA_INGRESO" msprop:Generator_ColumnPropNameInTable="FECHA_INGRESOColumn" msprop:Generator_UserColumnName="FECHA_INGRESO" type="xs:string" minOccurs="0" />
+              <xs:element name="EXPIRATION_DATE" msprop:Generator_ColumnVarNameInTable="columnEXPIRATION_DATE" msprop:Generator_ColumnPropNameInRow="EXPIRATION_DATE" msprop:Generator_ColumnPropNameInTable="EXPIRATION_DATEColumn" msprop:Generator_UserColumnName="EXPIRATION_DATE" type="xs:string" minOccurs="0" />
+              <xs:element name="CLIENT_CODE" msprop:Generator_ColumnVarNameInTable="columnCLIENT_CODE" msprop:Generator_ColumnPropNameInRow="CLIENT_CODE" msprop:Generator_ColumnPropNameInTable="CLIENT_CODEColumn" msprop:Generator_UserColumnName="CLIENT_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="CLIENT_NAME" msprop:Generator_ColumnVarNameInTable="columnCLIENT_NAME" msprop:Generator_ColumnPropNameInRow="CLIENT_NAME" msprop:Generator_ColumnPropNameInTable="CLIENT_NAMEColumn" msprop:Generator_UserColumnName="CLIENT_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="DAYS_FOR_LOCKING" msprop:Generator_ColumnVarNameInTable="columnDAYS_FOR_LOCKING" msprop:Generator_ColumnPropNameInRow="DAYS_FOR_LOCKING" msprop:Generator_ColumnPropNameInTable="DAYS_FOR_LOCKINGColumn" msprop:Generator_UserColumnName="DAYS_FOR_LOCKING" type="xs:string" minOccurs="0" />
+              <xs:element name="TIME_BLOCKED" msprop:Generator_ColumnVarNameInTable="columnTIME_BLOCKED" msprop:Generator_ColumnPropNameInRow="TIME_BLOCKED" msprop:Generator_ColumnPropNameInTable="TIME_BLOCKEDColumn" msprop:Generator_UserColumnName="TIME_BLOCKED" type="xs:string" minOccurs="0" />
+              <xs:element name="QTY" msprop:Generator_ColumnVarNameInTable="columnQTY" msprop:Generator_ColumnPropNameInRow="QTY" msprop:Generator_ColumnPropNameInTable="QTYColumn" msprop:Generator_UserColumnName="QTY" type="xs:string" minOccurs="0" />
+              <xs:element name="TOTAL_VALUE" msprop:Generator_ColumnVarNameInTable="columnTOTAL_VALUE" msprop:Generator_ColumnPropNameInRow="TOTAL_VALUE" msprop:Generator_ColumnPropNameInTable="TOTAL_VALUEColumn" msprop:Generator_UserColumnName="TOTAL_VALUE" type="xs:string" minOccurs="0" />
+              <xs:element name="DESCRIPTION_STATUS" msprop:Generator_ColumnVarNameInTable="columnDESCRIPTION_STATUS" msprop:Generator_ColumnPropNameInRow="DESCRIPTION_STATUS" msprop:Generator_ColumnPropNameInTable="DESCRIPTION_STATUSColumn" msprop:Generator_UserColumnName="DESCRIPTION_STATUS" type="xs:string" minOccurs="0" />
+              <xs:element name="UNLOCK_DATE" msprop:Generator_ColumnVarNameInTable="columnUNLOCK_DATE" msprop:Generator_ColumnPropNameInRow="UNLOCK_DATE" msprop:Generator_ColumnPropNameInTable="UNLOCK_DATEColumn" msprop:Generator_UserColumnName="UNLOCK_DATE" type="xs:string" minOccurs="0" />
+              <xs:element name="UNLOCK_USER" msprop:Generator_ColumnVarNameInTable="columnUNLOCK_USER" msprop:Generator_ColumnPropNameInRow="UNLOCK_USER" msprop:Generator_ColumnPropNameInTable="UNLOCK_USERColumn" msprop:Generator_UserColumnName="UNLOCK_USER" type="xs:string" minOccurs="0" />
+              <xs:element name="UNLOCK_DOCUMENT" msprop:Generator_ColumnVarNameInTable="columnUNLOCK_DOCUMENT" msprop:Generator_ColumnPropNameInRow="UNLOCK_DOCUMENT" msprop:Generator_ColumnPropNameInTable="UNLOCK_DOCUMENTColumn" msprop:Generator_UserColumnName="UNLOCK_DOCUMENT" type="xs:string" minOccurs="0" />
+              <xs:element name="COMENTARIO_DESBLOQUEO" msprop:Generator_ColumnVarNameInTable="columnCOMENTARIO_DESBLOQUEO" msprop:Generator_ColumnPropNameInRow="COMENTARIO_DESBLOQUEO" msprop:Generator_ColumnPropNameInTable="COMENTARIO_DESBLOQUEOColumn" msprop:Generator_UserColumnName="COMENTARIO_DESBLOQUEO" type="xs:string" minOccurs="0" />
+              <xs:element name="FECHA_LLEGADA" msprop:Generator_ColumnVarNameInTable="columnFECHA_LLEGADA" msprop:Generator_ColumnPropNameInRow="FECHA_LLEGADA" msprop:Generator_ColumnPropNameInTable="FECHA_LLEGADAColumn" msprop:Generator_UserColumnName="FECHA_LLEGADA" type="xs:string" minOccurs="0" />
+              <xs:element name="CODIGO_POLIZA" msprop:Generator_ColumnVarNameInTable="columnCODIGO_POLIZA" msprop:Generator_ColumnPropNameInRow="CODIGO_POLIZA" msprop:Generator_ColumnPropNameInTable="CODIGO_POLIZAColumn" msprop:Generator_UserColumnName="CODIGO_POLIZA" type="xs:string" minOccurs="0" />
+              <xs:element name="REGIMEN_GROUP" msprop:Generator_ColumnVarNameInTable="columnREGIMEN_GROUP" msprop:Generator_ColumnPropNameInRow="REGIMEN_GROUP" msprop:Generator_ColumnPropNameInTable="REGIMEN_GROUPColumn" msprop:Generator_UserColumnName="REGIMEN_GROUP" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

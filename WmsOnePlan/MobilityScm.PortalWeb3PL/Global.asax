@@ -1,0 +1,1 @@
+<%@ Application Codebehind="Global.asax.cs" Inherits="MobilityScm_PortalWeb3PL.MvcApplication" Language="C#" %>

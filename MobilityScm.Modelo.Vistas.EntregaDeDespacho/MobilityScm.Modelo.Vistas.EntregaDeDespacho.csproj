@@ -1,0 +1,188 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EEE380C4-010C-4DD7-A510-948A3B97D8DC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MobilityScm.Modelo.Vistas.EntregaDeDespacho</RootNamespace>
+    <AssemblyName>MobilityScm.Modelo.Vistas.EntregaDeDespacho</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>PocketPC</PlatformFamilyName>
+    <PlatformID>4118C335-430C-497f-BE48-11C3316B135E</PlatformID>
+    <OSVersion>5.1</OSVersion>
+    <DeployDirSuffix>MobilityScm.Modelo.Vistas.EntregaDeDespacho</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <NativePlatformName>Windows Mobile 5.0 Pocket PC SDK</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="Resco.AdvancedList.CF3, Version=6.15.0.0, Culture=neutral, PublicKeyToken=7444f602060105f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Resco.AdvancedTree.CF3, Version=6.15.0.0, Culture=neutral, PublicKeyToken=7444f602060105f9, processorArchitecture=MSIL" />
+    <Reference Include="Resco.Core.CF3, Version=3.5.0.0, Culture=neutral, PublicKeyToken=7444f602060105f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Resco.DetailView.CF3, Version=6.15.0.0, Culture=neutral, PublicKeyToken=7444f602060105f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Resco.OutlookControls.CF3, Version=6.15.0.1, Culture=neutral, PublicKeyToken=7444f602060105f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Servicios\WMS_DeliveredLabels.cs" />
+    <Compile Include="Servicios\WMS_Settings.cs" />
+    <Compile Include="VariablesDeAmbienteEntregaDeDespacho.cs" />
+    <Compile Include="Vistas\EntregaDeDespacho.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vistas\EntregaDeDespacho.Designer.cs">
+      <DependentUpon>EntregaDeDespacho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WMS_DeliveredLabels\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WMS_Settings\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Vistas\EntregaDeDespacho.resx">
+      <DependentUpon>EntregaDeDespacho.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:8088/WMSOnePlan_BusinessServices/Catalogues/WMS_Settings.asmx">
+      <UrlBehavior>Static</UrlBehavior>
+      <RelPath>Web References\WMS_Settings\</RelPath>
+      <UpdateFromURL>http://localhost:8088/WMSOnePlan_BusinessServices/Catalogues/WMS_Settings.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>
+      </CachedAppSettingsObjectName>
+      <CachedSettingsPropName>
+      </CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:8088/WMSOnePlan_BusinessServices/Trans/WMS_DeliveredLabels.asmx">
+      <UrlBehavior>Static</UrlBehavior>
+      <RelPath>Web References\WMS_DeliveredLabels\</RelPath>
+      <UpdateFromURL>http://localhost:8088/WMSOnePlan_BusinessServices/Trans/WMS_DeliveredLabels.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>
+      </CachedAppSettingsObjectName>
+      <CachedSettingsPropName>
+      </CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\WMS_DeliveredLabels\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WMS_DeliveredLabels\WMS_DeliveredLabels.disco" />
+    <None Include="Web References\WMS_DeliveredLabels\WMS_DeliveredLabels.wsdl" />
+    <None Include="Web References\WMS_Settings\WMS_Settings.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\MobilityScm.Modelo.TipoYEstados\MobilityScm.Modelo.TipoYEstados.CF.csproj">
+      <Project>{26936AB4-C580-48AF-8B2A-6ECA7942206B}</Project>
+      <Name>MobilityScm.Modelo.TipoYEstados.CF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MobilityScm.Keyboard\MobilityScm.Keyboard.csproj">
+      <Project>{ED6E1213-6BF5-441D-B1BD-44A131E3C684}</Project>
+      <Name>MobilityScm.Keyboard</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MobilityScm.Louncher\MobilityScm.Louncher.csproj">
+      <Project>{788FDC23-CD25-41CE-9A18-EAF1FCEE2565}</Project>
+      <Name>MobilityScm.Louncher</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MobilityScm.Modelo.Vistas.Consultas\MobilityScm.Modelo.Vistas.Consultas.csproj">
+      <Project>{6A439166-1C18-4257-BEED-E3C25988C080}</Project>
+      <Name>MobilityScm.Modelo.Vistas.Consultas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MobilityScm.Print\MobilityScm.Print.csproj">
+      <Project>{46240B17-8FF5-4787-9AC9-10233F4296FC}</Project>
+      <Name>MobilityScm.Print</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Swift3PLMobile\MobilityScm.BarcodeScann\MobilityScm.BarcodeScann.csproj">
+      <Project>{C463CD79-90ED-479E-ACB9-C9958513C077}</Project>
+      <Name>MobilityScm.BarcodeScann</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\WMS_Settings\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WMS_Settings\WMS_Settings.disco" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

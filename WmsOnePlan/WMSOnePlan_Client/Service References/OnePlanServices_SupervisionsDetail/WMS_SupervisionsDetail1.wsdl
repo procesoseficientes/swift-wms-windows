@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="CreateSupervisionsDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pSuperId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pDescription" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pQty" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="pCost" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateSupervisionsDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateSupervisionsDetailResult" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="pSuperId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pCost" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateSupervisionDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pSuperId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pDescription" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pQty" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="pCost" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateSupervisionDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateSupervisionDetailResult" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="pSuperId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pCost" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteSupervisionsDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pSuperId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteSupervisionsDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteSupervisionsDetailsResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteAllBySuperIdSupervisionsDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pSuperId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteAllBySuperIdSupervisionsDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteAllBySuperIdSupervisionsDetailResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSupervisionsDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pSuperId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSupervisionsDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSupervisionsDetailResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FillSupervisionsDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pSuperId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FillSupervisionsDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FillSupervisionsDetailResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExistSupervisionsDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pSuperId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExistSupervisionsDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExistSupervisionsDetailResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CreateSupervisionsDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateSupervisionsDetail" />
+  </wsdl:message>
+  <wsdl:message name="CreateSupervisionsDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateSupervisionsDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateSupervisionDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateSupervisionDetail" />
+  </wsdl:message>
+  <wsdl:message name="UpdateSupervisionDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateSupervisionDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSupervisionsDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteSupervisionsDetails" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSupervisionsDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteSupervisionsDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteAllBySuperIdSupervisionsDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteAllBySuperIdSupervisionsDetail" />
+  </wsdl:message>
+  <wsdl:message name="DeleteAllBySuperIdSupervisionsDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteAllBySuperIdSupervisionsDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSupervisionsDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSupervisionsDetail" />
+  </wsdl:message>
+  <wsdl:message name="GetSupervisionsDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSupervisionsDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="FillSupervisionsDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:FillSupervisionsDetail" />
+  </wsdl:message>
+  <wsdl:message name="FillSupervisionsDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:FillSupervisionsDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExistSupervisionsDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:ExistSupervisionsDetail" />
+  </wsdl:message>
+  <wsdl:message name="ExistSupervisionsDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:ExistSupervisionsDetailResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WMS_SupervisionsDetailSoap">
+    <wsdl:operation name="CreateSupervisionsDetail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Create a supervision detail</wsdl:documentation>
+      <wsdl:input message="tns:CreateSupervisionsDetailSoapIn" />
+      <wsdl:output message="tns:CreateSupervisionsDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSupervisionDetail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update a supervision detail</wsdl:documentation>
+      <wsdl:input message="tns:UpdateSupervisionDetailSoapIn" />
+      <wsdl:output message="tns:UpdateSupervisionDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSupervisionsDetails">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete a supervision detail</wsdl:documentation>
+      <wsdl:input message="tns:DeleteSupervisionsDetailsSoapIn" />
+      <wsdl:output message="tns:DeleteSupervisionsDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAllBySuperIdSupervisionsDetail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete a supervision detail</wsdl:documentation>
+      <wsdl:input message="tns:DeleteAllBySuperIdSupervisionsDetailSoapIn" />
+      <wsdl:output message="tns:DeleteAllBySuperIdSupervisionsDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSupervisionsDetail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get a Supervisions detail</wsdl:documentation>
+      <wsdl:input message="tns:GetSupervisionsDetailSoapIn" />
+      <wsdl:output message="tns:GetSupervisionsDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FillSupervisionsDetail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get a Supervisions detail</wsdl:documentation>
+      <wsdl:input message="tns:FillSupervisionsDetailSoapIn" />
+      <wsdl:output message="tns:FillSupervisionsDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExistSupervisionsDetail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get a Supervisions detail</wsdl:documentation>
+      <wsdl:input message="tns:ExistSupervisionsDetailSoapIn" />
+      <wsdl:output message="tns:ExistSupervisionsDetailSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WMS_SupervisionsDetailSoap" type="tns:WMS_SupervisionsDetailSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateSupervisionsDetail">
+      <soap:operation soapAction="http://tempuri.org/CreateSupervisionsDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSupervisionDetail">
+      <soap:operation soapAction="http://tempuri.org/UpdateSupervisionDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSupervisionsDetails">
+      <soap:operation soapAction="http://tempuri.org/DeleteSupervisionsDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAllBySuperIdSupervisionsDetail">
+      <soap:operation soapAction="http://tempuri.org/DeleteAllBySuperIdSupervisionsDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSupervisionsDetail">
+      <soap:operation soapAction="http://tempuri.org/GetSupervisionsDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillSupervisionsDetail">
+      <soap:operation soapAction="http://tempuri.org/FillSupervisionsDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExistSupervisionsDetail">
+      <soap:operation soapAction="http://tempuri.org/ExistSupervisionsDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WMS_SupervisionsDetailSoap12" type="tns:WMS_SupervisionsDetailSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateSupervisionsDetail">
+      <soap12:operation soapAction="http://tempuri.org/CreateSupervisionsDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSupervisionDetail">
+      <soap12:operation soapAction="http://tempuri.org/UpdateSupervisionDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSupervisionsDetails">
+      <soap12:operation soapAction="http://tempuri.org/DeleteSupervisionsDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAllBySuperIdSupervisionsDetail">
+      <soap12:operation soapAction="http://tempuri.org/DeleteAllBySuperIdSupervisionsDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSupervisionsDetail">
+      <soap12:operation soapAction="http://tempuri.org/GetSupervisionsDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillSupervisionsDetail">
+      <soap12:operation soapAction="http://tempuri.org/FillSupervisionsDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExistSupervisionsDetail">
+      <soap12:operation soapAction="http://tempuri.org/ExistSupervisionsDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WMS_SupervisionsDetail">
+    <wsdl:port name="WMS_SupervisionsDetailSoap" binding="tns:WMS_SupervisionsDetailSoap">
+      <soap:address location="http://localhost/WMSOnePlan_BusinessServices/Catalogues/WMS_SupervisionsDetail.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WMS_SupervisionsDetailSoap12" binding="tns:WMS_SupervisionsDetailSoap12">
+      <soap12:address location="http://localhost/WMSOnePlan_BusinessServices/Catalogues/WMS_SupervisionsDetail.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

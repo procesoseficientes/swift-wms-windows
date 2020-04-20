@@ -1,0 +1,3146 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+WMSOnePlan_Client
+</name>
+</assembly>
+<members>
+<member name="T:WMSOnePlan_Client.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources._4_x_4_Label">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources._4_x_4_Label1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources._4_x_6_Label">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources._48search">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources._next">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.about">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.ac0052_32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.AccessLevel">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.AddADigitalSignature_Large">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.Alsersa">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.android_delivery">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.application_from_storage">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.application_side_list">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.application_side_list1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.AQUA_ICONS_SYSTEM_ITOOLS">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.arrow_divide">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.arrow_in">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.arrow_right">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.AuditDispatch">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.AutomaticColor">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.background_cli">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.balance_unbalance">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.basket">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.basket_add">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.basket_go">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.bold">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.calculator_edit">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.Calendar">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.Calendario">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.CascadeWindows">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.change_password">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.ChangeCase">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.ChangeListLevel_Small">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.chart_bar">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.charts11">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.charts66">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.check">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.Clipboard">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.clock_select_remain">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.close_large">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.Closed">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.CloseSmall">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.CLSDFOLD">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.cmd_excel">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.CollapseAll">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.Comments_Small">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.comp_bebox01">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.comp_bebox02">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.comp_bebox05">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.comp_bebox26">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.comp_bebox36">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.comp_bebox48">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.comp_bebox93">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.comp_bebox94">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.comp_beos011">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.comp_beos012">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.comp_beos042">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.comp_beos061">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.comp_beos064">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.comp_beos132">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.comp_beos133">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.comp_comms036">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.comp_filetype042">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.comp_filetype105">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.comp_folder397">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.comp_folder398">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.comp_hardware032">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.comp_hardware053">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.comp_misc37">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.comp_printing103">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.comp_printing109">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.comp_recycle019">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.comp_recycle020">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.comp_screens011">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.Compare__Large">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.Compare_Small">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.computer_folder_search">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.convert_16x16">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.convert_32x32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.corbeille_vide_3D_v2_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.CreateDocumentWorkspace_Large">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.Cross_reference_Small">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.Darkroom_spotlight">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.database_go">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.dayview_16x16">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.dayview_32x32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.deep_blue_background">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.DisplayForReview_Small">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.DistributeVertically_Small">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.door_out">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.E_ribbon_file_button_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.edittask_16x16">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.edittask_32x32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.EjemploCaja">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.EncryptDocument_Large">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.ES400_2_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.ES400_5_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.estanteria_metalica">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.exclamation">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.exit_small">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.ExpandAll">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.export_excel">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.file_extension_pdf">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.file_extension_pdf1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.file_extension_pdf2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.folder_user">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.FontColor">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.Gears">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.go_to_program_s_website">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.google_map">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.google_map1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.GraphTest">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.group">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.group_go">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.group_key">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.human127">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.ico_error">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.ico_warning">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.icon_truckLoad">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.iconExcel">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.id_blank_page_large">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.ID_EDIT_COPY_SMALL">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.ID_EDIT_CUT_SMALL">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.ID_EDIT_GOTO_SMALL">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.ID_EDIT_PASTE_BIG">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.id_paragraph_align_center">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.id_paragraph_align_justify">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.id_paragraph_align_left">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.id_paragraph_align_right">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.id_qa_file_save">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.ID_WINDOW_RESET_POSITION_SMALL">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.imageres_dll_187_18">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.imagesCA4CBTN0">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.Indicadores">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.Indicadores32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.Insert_ClipArt_Large">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.it_glass_collection">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.italic">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.linebalance">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.LineSeries">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.linespacing_16x16">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.linespacing_32x32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.linespacing2_16x16">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.linespacing2_32x32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.LogoCirculoMobility">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.LogoSat">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.map_go">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.map_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.map_magnify">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.MarkAsFinal_Large">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.Men">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.MessageBox_Caption">
+<summary>
+  Looks up a localized string similar to Mobility SCM.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.miniglobe">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.misc044">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.misc171">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.mobility_scm_update_engine">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.monitor">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.monitor_edit">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.monitor_go">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.monitor_window_3d">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.monthview_16x16">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.monthview_32x32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.MoreColors">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.nd0004_32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.nd0017_32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.new_large">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.NewSmall">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.Next_Small">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.ni0072_32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.NoColor">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.noselect_all">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.open_large">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.OPENFOLD">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.OpenSmall">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.Packed">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.paintbrush">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.paintbrush1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.pastesmall">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.pause">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.pax_x4">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.pax_x6">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.PicBorder">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.play">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.Prepare_Large">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.prev">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.Print">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.print_16x16">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.print_32x32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.print_large">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.printer">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.PrintSmall">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.ProcessExcelFile">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.RedoLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.RedoSmall">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.refresh">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.refresh1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.report">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.report_go">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.return_report_16x16">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.return_report_32x32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.Right_Small">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.road_sign">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.role_16x16">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.role_32x32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.rrs714">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.sap_Logo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.save">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.save_large">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.saveas_large">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.SaveAsPlainText">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.SaveAsRtf">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.SaveAsSmall">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.search_plus">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.select_all">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.SelectAll">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.send_large">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.SendSmall">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.ServerPlay">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.ServerPlay1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.setting_tools">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.Shapes_Small">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.shapes040">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.shapes080">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.shapes085">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.sheduled_task">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.size_vertical">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.small_car">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.small_comp_beos012">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.small_edit">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.Small_Find">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.small_key">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.small_monitor">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.small_sap_Logo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.small_user">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.SmallPack">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.status_16x16">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.status_32x32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.Strikethrough">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.Symbols_Delete_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.table_delete">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.table_excel">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.table_gear">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.table_insert">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.table_link">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.table_paint_can">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.table_relationship">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.table_row_delete">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.table_row_delete1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.table_sheet">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.table_tab_search">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.TableSmall">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.team_16x16">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.team_32x32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.text_indent_remove">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.TextHightlightColor">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.thumbnail_small">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.tools01">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.transmit_blue">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.transmit_go">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.transport107">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.transport139">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.travel_and_transportation">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.underline">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.UndoLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.UndoSmall">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.user_female">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.user_green">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.user_silhouette">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.usergroup_16x16">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.usergroup_32x32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.users">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.Vista07">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.wi0102_32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.WordCount_Small">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.WordOptions_Small">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.writing026">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.writing219">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.My.Resources.Resources.zoom_extend">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.DataSet_PolizaHeaderDetail">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.DataSet_PolizaHeaderDetail.OP_WMS_VIEW_INVENTORY_X_DOCSDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.DataSet_PolizaHeaderDetail.OP_WMS_VIEW_INVENTORY_X_DOCSRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.DataSet_PolizaHeaderDetail.OP_WMS_VIEW_INVENTORY_X_DOCSRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.DataSet_PolizaHeaderDetailTableAdapters.OP_WMS_VIEW_INVENTORY_X_DOCSAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.DataSet_TransHistory">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.DataSet_TransHistory.OP_WMS_VIEW_INVENTORY_TRANS_HISTORYDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.DataSet_TransHistory.OP_WMS_VIEW_INVENTORY_TRANS_HISTORYRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.DataSet_TransHistory.OP_WMS_VIEW_INVENTORY_TRANS_HISTORYRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.DataSet_TransHistoryTableAdapters.OP_WMS_VIEW_INVENTORY_TRANS_HISTORYTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.DataSet_TransHistoryTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:WMSOnePlan_Client.DataSet_TransHistoryTableAdapters.TableAdapterManager.UpdateUpdatedRows(WMSOnePlan_Client.DataSet_TransHistory,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:WMSOnePlan_Client.DataSet_TransHistoryTableAdapters.TableAdapterManager.UpdateInsertedRows(WMSOnePlan_Client.DataSet_TransHistory,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:WMSOnePlan_Client.DataSet_TransHistoryTableAdapters.TableAdapterManager.UpdateDeletedRows(WMSOnePlan_Client.DataSet_TransHistory,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:WMSOnePlan_Client.DataSet_TransHistoryTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:WMSOnePlan_Client.DataSet_TransHistoryTableAdapters.TableAdapterManager.UpdateAll(WMSOnePlan_Client.DataSet_TransHistory)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.DataSet_TransHistoryTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.DataSet_TransHistoryTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.DS_InventoryOnLine_Detail">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.DS_InventoryOnLine_Detail.OP_WMS_VIEW_INVENTORY_DETAILDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.DS_InventoryOnLine_Detail.OP_WMS_VIEW_INVENTORY_DETAILRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.DS_InventoryOnLine_Detail.OP_WMS_VIEW_INVENTORY_DETAILRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.DS_InventoryOnLine_DetailTableAdapters.OP_WMS_VIEW_INVENTORY_DETAILTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.DS_InventoryOnLine_DetailTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:WMSOnePlan_Client.DS_InventoryOnLine_DetailTableAdapters.TableAdapterManager.UpdateUpdatedRows(WMSOnePlan_Client.DS_InventoryOnLine_Detail,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:WMSOnePlan_Client.DS_InventoryOnLine_DetailTableAdapters.TableAdapterManager.UpdateInsertedRows(WMSOnePlan_Client.DS_InventoryOnLine_Detail,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:WMSOnePlan_Client.DS_InventoryOnLine_DetailTableAdapters.TableAdapterManager.UpdateDeletedRows(WMSOnePlan_Client.DS_InventoryOnLine_Detail,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:WMSOnePlan_Client.DS_InventoryOnLine_DetailTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:WMSOnePlan_Client.DS_InventoryOnLine_DetailTableAdapters.TableAdapterManager.UpdateAll(WMSOnePlan_Client.DS_InventoryOnLine_Detail)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.DS_InventoryOnLine_DetailTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.DS_InventoryOnLine_DetailTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.DS_WaveReport">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.DS_WaveReport.OP_WMS_VIEW_DETAIL_WAVEPICKINGDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.DS_WaveReport.OP_WMS_VIEW_DETAIL_WAVEPICKINGRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.DS_WaveReport.OP_WMS_VIEW_DETAIL_WAVEPICKINGRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.DS_WaveReportTableAdapters.OP_WMS_VIEW_DETAIL_WAVEPICKINGTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.DS_WaveReportTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:WMSOnePlan_Client.DS_WaveReportTableAdapters.TableAdapterManager.UpdateUpdatedRows(WMSOnePlan_Client.DS_WaveReport,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:WMSOnePlan_Client.DS_WaveReportTableAdapters.TableAdapterManager.UpdateInsertedRows(WMSOnePlan_Client.DS_WaveReport,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:WMSOnePlan_Client.DS_WaveReportTableAdapters.TableAdapterManager.UpdateDeletedRows(WMSOnePlan_Client.DS_WaveReport,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:WMSOnePlan_Client.DS_WaveReportTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:WMSOnePlan_Client.DS_WaveReportTableAdapters.TableAdapterManager.UpdateAll(WMSOnePlan_Client.DS_WaveReport)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.DS_WaveReportTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.DS_WaveReportTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsRepCertificates">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsRepCertificates.repCertificadoBonoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsRepCertificates.repPolizasSeguroDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsRepCertificates.repCertificadoBonoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsRepCertificates.repPolizasSeguroRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsRepCertificates.repCertificadoBonoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsRepCertificates.repPolizasSeguroRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.frmConsultaDeIngresoFiscal">
+ <summary>
+ Formulario de consulta de reportes de egreso
+ </summary>
+</member>
+<member name="M:WMSOnePlan_Client.frmConsultaDeIngresoFiscal.fn_llena_combos">
+ <summary>
+ Método para llenar los combos de régimen y cliente de la pantalla.
+ </summary>
+</member>
+<member name="M:WMSOnePlan_Client.frmConsultaDeIngresoFiscal.UiBotonExpandirVista_ItemClick(System.Object,DevExpress.XtraBars.ItemClickEventArgs)">
+ <summary>
+ Expandir Grupos
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:WMSOnePlan_Client.frmConsultaDeIngresoFiscal.UiBotonContraerVista_ItemClick(System.Object,DevExpress.XtraBars.ItemClickEventArgs)">
+ <summary>
+ Colapsar grupos
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:WMSOnePlan_Client.frmConsultaDeIngresoFiscal.UIFechaInicio_EditValueChanged(System.Object,System.EventArgs)">
+ <summary>
+ Cambió Fecha inicio
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:WMSOnePlan_Client.frmConsultaDeIngresoFiscal.UiFechaFinal_EditValueChanged(System.Object,System.EventArgs)">
+ <summary>
+ Cambió fecha final
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:WMSOnePlan_Client.frmConsultaDeIngresoFiscal.UiBotonRefrescarVista_ItemClick(System.Object,DevExpress.XtraBars.ItemClickEventArgs)">
+ <summary>
+ Usuario desea refrescar
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:WMSOnePlan_Client.frmConsultaDeIngresoFiscal.LlenarVistaIngreso">
+ <summary>
+ Llenar vista de ingreso
+ </summary>
+</member>
+<member name="T:WMSOnePlan_Client.FrmConsultaDeEgreso">
+ <summary>
+ Formulario de consulta de reportes de egreso
+ </summary>
+</member>
+<member name="M:WMSOnePlan_Client.FrmConsultaDeEgreso.FrmConsultaDeEgreso_Load(System.Object,System.EventArgs)">
+ <summary>
+ Iniciar carga de formulario
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:WMSOnePlan_Client.FrmConsultaDeEgreso.fn_llena_combos">
+ <summary>
+ Método para llenar los combos de régimen y cliente de la pantalla.
+ </summary>
+</member>
+<member name="M:WMSOnePlan_Client.FrmConsultaDeEgreso.UiBotonExpandirVista_ItemClick(System.Object,DevExpress.XtraBars.ItemClickEventArgs)">
+ <summary>
+ Expandir Grupos
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:WMSOnePlan_Client.FrmConsultaDeEgreso.UiBotonContraerVista_ItemClick(System.Object,DevExpress.XtraBars.ItemClickEventArgs)">
+ <summary>
+ Colapsar grupos
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="T:WMSOnePlan_Client.dsPase">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsPase.SALIDA_VEHICULODataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsPase.RETIRODataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsPase.PASE_SALIDA_CON_MONTODataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsPase.SALIDA_VEHICULORow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsPase.RETIRORow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsPase.PASE_SALIDA_CON_MONTORow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsPase.SALIDA_VEHICULORowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsPase.RETIRORowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsPase.PASE_SALIDA_CON_MONTORowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsRectification">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsRectification.RECTIFICATIONDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsRectification.RECTIFICATIONRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsRectification.RECTIFICATIONRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsReporteEgreso">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsReporteEgreso.dtReporteEgresoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsReporteEgreso.dtReporteEgresoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsReporteEgreso.dtReporteEgresoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsReporteIngreso">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsReporteIngreso.dtReporteIngresoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsReporteIngreso.dtReporteIngresoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsReporteIngreso.dtReporteIngresoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dtCertificateDeposit">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dtCertificateDeposit.CertificateDetDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dtCertificateDeposit.CertificateDetRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dtCertificateDeposit.CertificateDetRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dtPolizaEgreso">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dtPolizaEgreso.repPolEgresoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dtPolizaEgreso.repPolEgresoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dtPolizaEgreso.repPolEgresoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dtPolizaEgresoFiscal">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dtPolizaEgresoFiscal.repPolEgresoFiscalDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dtPolizaEgresoFiscal.repPolEgresoFiscalRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dtPolizaEgresoFiscal.repPolEgresoFiscalRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dtPolizas">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dtPolizas.rpAprovacionFiscalDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dtPolizas.COMPROBANTE_ENTRADADataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dtPolizas.rpAprovacionFiscalRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dtPolizas.COMPROBANTE_ENTRADARow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dtPolizas.rpAprovacionFiscalRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dtPolizas.COMPROBANTE_ENTRADARowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsInventoryOnline">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsInventoryOnline.INVENTORY_ONLINEDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsInventoryOnline.INVENTORY_ONLINERow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsInventoryOnline.INVENTORY_ONLINERowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsTransOnline">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsTransOnline.repTransIngGeneralDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsTransOnline.repTransIngGeneralRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsTransOnline.repTransIngGeneralRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsReportsInsurance">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsReportsInsurance.repPolizasSeguroDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsReportsInsurance.repPolizasSeguroRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsReportsInsurance.repPolizasSeguroRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsInvReports">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsInvReports.DIFERENCIASDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsInvReports.DIFERENCIASRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsInvReports.DIFERENCIASRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsLatterQuota">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsLatterQuota.Quota_LetterDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsLatterQuota.Quota_LetterRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsLatterQuota.Quota_LetterRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsReportTariff">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsReportTariff.repAcuerdoComercialDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsReportTariff.repAcuerdoComercialRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.dsReportTariff.repAcuerdoComercialRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="M:WMSOnePlan_Client.RibbonForm1.UiBotonReporteEgreso_ItemClick(System.Object,DevExpress.XtraBars.ItemClickEventArgs)">
+ <summary>
+ Usuario desea abrir consulta de egreso
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="T:WMSOnePlan_Client.OP_WMSDataSet_DetailWavePicking">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.OP_WMSDataSet_DetailWavePicking.OP_WMS_VIEW_DETAIL_WAVEPICKINGDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.OP_WMSDataSet_DetailWavePicking.OP_WMS_VIEW_DETAIL_WAVEPICKINGRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.OP_WMSDataSet_DetailWavePicking.OP_WMS_VIEW_DETAIL_WAVEPICKINGRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.OP_WMSDataSet_DetailWavePickingTableAdapters.OP_WMS_VIEW_DETAIL_WAVEPICKINGTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.OP_WMSDataSet_DetailWavePickingTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:WMSOnePlan_Client.OP_WMSDataSet_DetailWavePickingTableAdapters.TableAdapterManager.UpdateUpdatedRows(WMSOnePlan_Client.OP_WMSDataSet_DetailWavePicking,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:WMSOnePlan_Client.OP_WMSDataSet_DetailWavePickingTableAdapters.TableAdapterManager.UpdateInsertedRows(WMSOnePlan_Client.OP_WMSDataSet_DetailWavePicking,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:WMSOnePlan_Client.OP_WMSDataSet_DetailWavePickingTableAdapters.TableAdapterManager.UpdateDeletedRows(WMSOnePlan_Client.OP_WMSDataSet_DetailWavePicking,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:WMSOnePlan_Client.OP_WMSDataSet_DetailWavePickingTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:WMSOnePlan_Client.OP_WMSDataSet_DetailWavePickingTableAdapters.TableAdapterManager.UpdateAll(WMSOnePlan_Client.OP_WMSDataSet_DetailWavePicking)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.OP_WMSDataSet_DetailWavePickingTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.OP_WMSDataSet_DetailWavePickingTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.PrintRibbonControllerResources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_ClosePreview">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_ClosePreviewLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_Customize">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_CustomizeLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_Document">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_DocumentMap">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_DocumentMapLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_EditPageHF">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_EditPageHFLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_ExportCsv">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_ExportCsvLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_ExportFile">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_ExportFileLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_ExportGraphic">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_ExportGraphicLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_ExportHtm">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_ExportHtmLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_ExportMht">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_ExportMhtLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_ExportPdf">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_ExportPdfLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_ExportRtf">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_ExportRtfLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_ExportTxt">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_ExportTxtLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_ExportXls">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_ExportXlsLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_ExportXlsx">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_ExportXlsxLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_FillBackground">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_FillBackgroundLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_Find">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_FindLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_HandTool">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_Magnifier">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_MultiplePages">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_MultiplePagesLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_Open">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_OpenLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_PageMargins">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_PageMarginsLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_PageMarginsModerate">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_PageMarginsNarrow">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_PageMarginsNormal">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_PageMarginsWide">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_PageOrientation">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_PageOrientationLandscape">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_PageOrientationLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_PageOrientationPortrait">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_PageSetupDialog">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_PaperKind_A3">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_PaperKind_A4">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_PaperKind_A5">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_PaperKind_A6">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_PaperKind_Executive">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_PaperKind_Legal">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_PaperKind_Letter">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_PaperKind_Tabloid">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_PaperSize">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_PaperSizeLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_Parameters">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_ParametersLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_Pointer">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_Print">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_PrintDirect">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_PrintDirectLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_PrintLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_PrintSetup">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_PrintSetupLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_Save">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_SaveLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_Scale">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_ScaleLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_SendCsv">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_SendCsvLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_SendFile">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_SendFileLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_SendGraphic">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_SendGraphicLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_SendMht">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_SendMhtLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_SendPdf">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_SendPdfLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_SendRtf">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_SendRtfLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_SendTxt">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_SendTxtLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_SendXls">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_SendXlsLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_SendXlsx">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_SendXlsxLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_ShowFirstPage">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_ShowFirstPageLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_ShowLastPage">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_ShowLastPageLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_ShowNextPage">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_ShowNextPageLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_ShowPrevPage">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_ShowPrevPageLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_Watermark">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_WatermarkLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_Zoom">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_ZoomIn">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_ZoomInLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_ZoomLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_ZoomOut">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.PrintRibbonControllerResources.RibbonPrintPreview_ZoomOutLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.rpt_DS_TransOnLine">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.rpt_DS_TransOnLine.OP_WMS_TRANSDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.rpt_DS_TransOnLine.OP_WMS_TRANSRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.rpt_DS_TransOnLine.OP_WMS_TRANSRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.rpt_DS_TransOnLineTableAdapters.OP_WMS_TRANSAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WMSOnePlan_Client.XRDesignRibbonControllerResources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_AlignBottom">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_AlignHorizontalCenters">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_AlignLeft">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_AlignRight">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_AlignToGrid">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_AlignTop">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_AlignVerticalCenters">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_BackColor">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_BringToFront">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_CenterHorizontally">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_CenterVertically">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_Copy">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_CopyLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_Cut">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_CutLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_Edit">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_Exit">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_ExitLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_Font">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_FontBold">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_FontItalic">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_FontUnderline">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_ForeColor">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_HorizSpaceConcatenate">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_HorizSpaceDecrease">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_HorizSpaceIncrease">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_HorizSpaceMakeEqual">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_HtmlBackward">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_HtmlBackwardLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_HtmlFind">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_HtmlFindLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_HtmlForward">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_HtmlForwardLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_HtmlHome">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_HtmlHomeLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_HtmlRefresh">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_HtmlRefreshLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_HtmlStop">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_HtmlStopLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_JustifyCenter">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_JustifyJustify">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_JustifyLeft">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_JustifyRight">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_NewReport">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_NewReportLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_NewReportWizard">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_NewReportWizardLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_OpenFile">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_OpenFileLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_Paste">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_PasteLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_Redo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_RedoLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_Report">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_SaveAll">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_SaveAllLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_SaveFile">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_SaveFileAs">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_SaveFileAsLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_SaveFileLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_Scripts">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_ScriptsLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_SendToBack">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_SizeToControl">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_SizeToControlHeight">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_SizeToControlWidth">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_SizeToGrid">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_Undo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_UndoLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_VertSpaceConcatenate">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_VertSpaceDecrease">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_VertSpaceIncrease">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_VertSpaceMakeEqual">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_Windows">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_WindowsLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_Zoom">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_ZoomIn">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_ZoomInLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_ZoomLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_ZoomOut">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WMSOnePlan_Client.XRDesignRibbonControllerResources.RibbonUserDesigner_ZoomOutLarge">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+</members>
+</doc>

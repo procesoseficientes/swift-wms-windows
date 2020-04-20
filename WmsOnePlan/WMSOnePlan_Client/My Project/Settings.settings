@@ -1,0 +1,93 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="ServiceInterval" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="NotificationInterval" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="PhaseInterval" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1000</Value>
+    </Setting>
+    <Setting Name="UpdateServer1" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://localhost:1337</Value>
+    </Setting>
+    <Setting Name="ServiceInterval1" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="NotificationInterval1" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="CealsaServer" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=190.56.115.27;Initial Catalog=OP_WMS_NEXUS;Persist Security Info=True;User ID=sa;Password=M0b1SCM@7710;Application Name=OnePlanWMSMobileSite&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=190.56.115.27;Initial Catalog=OP_WMS_NEXUS;Persist Security Info=True;User ID=sa;Password=M0b1SCM@7710;Application Name=OnePlanWMSMobileSite</Value>
+    </Setting>
+    <Setting Name="USUARIOS" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;190.56.115.27;Initial Catalog=OP_WMS_NEXUS;Persist Security Info=True;User ID=sa;Password=M0b1SCM@7710&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">190.56.115.27;Initial Catalog=OP_WMS_NEXUS;Persist Security Info=True;User ID=sa;Password=M0b1SCM@7710</Value>
+    </Setting>
+    <Setting Name="OP_WMSConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=190.56.115.27;Initial Catalog=OP_WMS_NEXUS;Persist Security Info=True;User ID=sa;Password=M0b1SCM@7710&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=190.56.115.27;Initial Catalog=OP_WMS_NEXUS;Persist Security Info=True;User ID=sa;Password=M0b1SCM@7710</Value>
+    </Setting>
+    <Setting Name="CealsaServer_ConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Provider=SQLNCLI.1;190.56.115.27;Initial Catalog=OP_WMS_NEXUS;Persist Security Info=True;User ID=sa;Password=M0b1SCM@7710&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.OleDb&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Provider=SQLNCLI.1;190.56.115.27;Initial Catalog=OP_WMS_NEXUS;Persist Security Info=True;User ID=sa;Password=M0b1SCM@7710</Value>
+    </Setting>
+    <Setting Name="ConnectionToCealsaServer" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Provider=SQLNCLI.1;190.56.115.27;Initial Catalog=OP_WMS_NEXUS;Persist Security Info=True;User ID=sa;Password=M0b1SCM@7710&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.OleDb&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Provider=SQLNCLI.1;190.56.115.27;Initial Catalog=OP_WMS_NEXUS;Persist Security Info=True;User ID=sa;Password=M0b1SCM@7710</Value>
+    </Setting>
+    <Setting Name="OP_WMS_CEALSAConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;190.56.115.27;Initial Catalog=OP_WMS_NEXUS;Persist Security Info=True;User ID=sa;Password=M0b1SCM@7710&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">190.56.115.27;Initial Catalog=OP_WMS_NEXUS;Persist Security Info=True;User ID=sa;Password=M0b1SCM@7710</Value>
+    </Setting>
+    <Setting Name="UpdateServer" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://192.168.1.110:1336</Value>
+    </Setting>
+    <Setting Name="WSHOST" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://localhost:8088/WMSOnePlan_BusinessServices</Value>
+    </Setting>
+    <Setting Name="WMSOnePlan_Client_OnePlanServices_Security_WMS_Security" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:8088/WMSOnePlan_BusinessServices</Value>
+    </Setting>
+    <Setting Name="Schema" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">alsersa</Value>
+    </Setting>
+    <Setting Name="ConnectionString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Server=192.168.1.114,1433;Database=OP_WMS_ALSERSA;User=sa;Pwd=S3rvSQ12@!8</Value>
+    </Setting>
+    <Setting Name="SERVER_IP" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">190.56.115.27,1433</Value>
+    </Setting>
+    <Setting Name="_LEAD_TIME" Type="System.String" Scope="User">
+      <Value Profile="(Default)">PropiedadDeDatosGenerales_LEAD_TIME</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

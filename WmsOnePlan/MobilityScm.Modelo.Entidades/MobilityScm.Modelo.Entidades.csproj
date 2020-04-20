@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0D4A97D7-6303-4C48-B3A6-1C4314F09C76}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MobilityScm.Modelo</RootNamespace>
+    <AssemblyName>MobilityScm.Modelo.Entidades</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Map.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraMap.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxPivotGrid.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Argumentos\AcuerdoComercialArgumento.cs" />
+    <Compile Include="Argumentos\BalanceDeSaldosFiscalArgumento.cs" />
+    <Compile Include="Argumentos\CajaArgumento.cs" />
+    <Compile Include="Argumentos\ClaseArgumento.cs" />
+    <Compile Include="Argumentos\InventarioComprometidoArgumento.cs" />
+    <Compile Include="Argumentos\InventarioInactivoArgumento.cs" />
+    <Compile Include="Argumentos\OlaDePickingDeDemandaDespachoArgumento.cs" />
+    <Compile Include="Argumentos\PaseDeSalidaArgumento.cs" />
+    <Compile Include="Argumentos\CumplimientoDeEntregaArgumento.cs" />
+    <Compile Include="Argumentos\PosicionamientoArgumento.cs" />
+    <Compile Include="Argumentos\ProyectoArgumento.cs" />
+    <Compile Include="Argumentos\SugeridoCompraArgumento.cs" />
+    <Compile Include="Entidades\BodegaERP.cs" />
+    <Compile Include="Entidades\Caja.cs" />
+    <Compile Include="Argumentos\PilotoArgumento.cs" />
+    <Compile Include="Argumentos\EmpresaDeTransporteArgumento.cs" />
+    <Compile Include="Argumentos\VehiculoArgumento.cs" />
+    <Compile Include="Entidades\CajaPorCliente.cs" />
+    <Compile Include="Entidades\CamionMapa.cs" />
+    <Compile Include="Entidades\Clase.cs" />
+    <Compile Include="Argumentos\ConsultaArgumento.cs" />
+    <Compile Include="Argumentos\ConteoFisicoArgumento.cs" />
+    <Compile Include="Argumentos\CosteoArgumento.cs" />
+    <Compile Include="Argumentos\DocumentoRecepcionERPArgumento.cs" />
+    <Compile Include="Argumentos\EstadoDeUbicacionArgumento.cs" />
+    <Compile Include="Argumentos\InventarioArgumento.cs" />
+    <Compile Include="Argumentos\ManifiestoArgumento.cs" />
+    <Compile Include="Argumentos\MasterPackArgumento.cs" />
+    <Compile Include="Argumentos\OrdenDeVentaArgumento.cs" />
+    <Compile Include="Argumentos\PickingArgumento.cs" />
+    <Compile Include="Argumentos\PolizaArgumento.cs" />
+    <Compile Include="Argumentos\ReporteDeSolicitudDeTrasladoArgumento.cs" />
+    <Compile Include="Argumentos\SeguridadArgumento.cs" />
+    <Compile Include="Argumentos\SkuArgumento.cs" />
+    <Compile Include="Argumentos\SolicitudDeTrasladoArgumento.cs" />
+    <Compile Include="Argumentos\TareaArgumento.cs" />
+    <Compile Include="Argumentos\ZonaArgumento.cs" />
+    <Compile Include="Entidades\AcuerdoComercial.cs" />
+    <Compile Include="Entidades\BalanceDeSaldosFiscal.cs" />
+    <Compile Include="Entidades\Bodega.cs" />
+    <Compile Include="Entidades\Cliente.cs" />
+    <Compile Include="Entidades\Configuracion.cs" />
+    <Compile Include="Entidades\ConfiguracionDeAmbiente.cs" />
+    <Compile Include="Entidades\ConteoFisico.cs" />
+    <Compile Include="Entidades\ConteoFisicoDetalle.cs" />
+    <Compile Include="Entidades\ConteoFisicoEncabezado.cs" />
+    <Compile Include="Entidades\CredencialesDeUsuario.cs" />
+    <Compile Include="Entidades\CumplimientoDeEntrega.cs" />
+    <Compile Include="Entidades\DemandaDeDespachoEncabezado.cs" />
+    <Compile Include="Entidades\DemandaDespachoDetalle.cs" />
+    <Compile Include="Entidades\DemandaDespachoHeader.cs" />
+    <Compile Include="Entidades\Documento.cs" />
+    <Compile Include="Entidades\DocumentoRecepcionDetalle.cs" />
+    <Compile Include="Entidades\DocumentoRecepcion.cs" />
+    <Compile Include="Entidades\DocumentoRecepcionErpDetalle.cs" />
+    <Compile Include="Entidades\DocumentoRecepcionErpEncabezado.cs" />
+    <Compile Include="Entidades\Dominio.cs" />
+    <Compile Include="Entidades\EmpresaDeTransporte.cs" />
+    <Compile Include="Entidades\Entidad.cs" />
+    <Compile Include="Argumentos\ServicioPorCobrarArgumento.cs" />
+    <Compile Include="Entidades\FuenteExterna.cs" />
+    <Compile Include="Entidades\IndicesBodega.cs" />
+    <Compile Include="Entidades\Inventario.cs" />
+    <Compile Include="Entidades\InventarioComprometidoDetalle.cs" />
+    <Compile Include="Entidades\InventarioComprometidoEncabezado.cs" />
+    <Compile Include="Entidades\InventarioComprometidoParaReporte.cs" />
+    <Compile Include="Entidades\InventarioInactivo.cs" />
+    <Compile Include="Entidades\InventarioParaPickingPorEstado.cs" />
+    <Compile Include="Entidades\InventarioReservadoProyecto.cs" />
+    <Compile Include="Entidades\ListaDeTareas.cs" />
+    <Compile Include="Entidades\ManifiestoCarga.cs" />
+    <Compile Include="Entidades\ManifiestoDetalle.cs" />
+    <Compile Include="Entidades\ManifiestoEncabezado.cs" />
+    <Compile Include="Entidades\MasterPackDetalle.cs" />
+    <Compile Include="Entidades\MasterPackEncabezado.cs" />
+    <Compile Include="Entidades\MasterPackMaestroDetalle.cs" />
+    <Compile Include="Entidades\Material.cs" />
+    <Compile Include="Entidades\MaterialConTonoYCalibre.cs" />
+    <Compile Include="Entidades\ListaOperadorParaActualizacionDeTarea.cs" />
+    <Compile Include="Entidades\OlaDePickingDeDemandaDespacho.cs" />
+    <Compile Include="Entidades\OrdenDeCompraDetalle.cs" />
+    <Compile Include="Entidades\OrdenDeVentaDetalle.cs" />
+    <Compile Include="Entidades\OrdenDeVentaEncabezado.cs" />
+    <Compile Include="Entidades\OrdenDeVentaPendiente.cs" />
+    <Compile Include="Entidades\OrdenDeVentaReporte.cs" />
+    <Compile Include="Entidades\Parametro.cs" />
+    <Compile Include="Entidades\PaseDeSalida.cs" />
+    <Compile Include="Entidades\PaseDeSalidaDetalle.cs" />
+    <Compile Include="Entidades\PaseDeSalidaEncabezado.cs" />
+    <Compile Include="Entidades\PedidosPorOla.cs" />
+    <Compile Include="Entidades\PedidosPorVendedor.cs" />
+    <Compile Include="Entidades\PickingDetalle.cs" />
+    <Compile Include="Entidades\PickingEncabezado.cs" />
+    <Compile Include="Entidades\Piloto.cs" />
+    <Compile Include="Entidades\Poligono.cs" />
+    <Compile Include="Entidades\Poliza.cs" />
+    <Compile Include="Entidades\PolizaAsegurada.cs" />
+    <Compile Include="Entidades\PolizaDetalle.cs" />
+    <Compile Include="Entidades\PolizaMaestroDetalle.cs" />
+    <Compile Include="Entidades\Proyecto.cs" />
+    <Compile Include="Entidades\PuntoDePoligono.cs" />
+    <Compile Include="Entidades\ReporteDeInventarioDiario.cs" />
+    <Compile Include="Entidades\ReportePedidosPorVendedor.cs" />
+    <Compile Include="Entidades\ReportePicking.cs" />
+    <Compile Include="Entidades\ReporteRecepcionPorDevolucion.cs" />
+    <Compile Include="Entidades\ResumenInventarioProyecto.cs" />
+    <Compile Include="Entidades\RolDeUsuario.cs" />
+    <Compile Include="Entidades\Ruta.cs" />
+    <Compile Include="Entidades\RutaMapa.cs" />
+    <Compile Include="Entidades\Seguridad.cs" />
+    <Compile Include="Entidades\SerieRecepcionDetalle.cs" />
+    <Compile Include="Entidades\ServicioPorCobrar.cs" />
+    <Compile Include="Entidades\Sku.cs" />
+    <Compile Include="Entidades\SolicitudDeTrasladoDetalle.cs" />
+    <Compile Include="Entidades\SolicitudDeTrasladoEncabezado.cs" />
+    <Compile Include="Entidades\SugeridoCompra.cs" />
+    <Compile Include="Entidades\Tarea.cs" />
+    <Compile Include="Entidades\TareaDeCumplimientoDeEntrega.cs" />
+    <Compile Include="Entidades\TareaDetalle.cs" />
+    <Compile Include="Entidades\TareaDetalleErp.cs" />
+    <Compile Include="Entidades\TrazabilidadDeSolicitudDeTraslado.cs" />
+    <Compile Include="Entidades\Ubicacion.cs" />
+    <Compile Include="Entidades\Usuario.cs" />
+    <Compile Include="Entidades\UsuarioPorPiloto.cs" />
+    <Compile Include="Entidades\Vehiculo.cs" />
+    <Compile Include="Entidades\VehiculoManifiesto.cs" />
+    <Compile Include="Entidades\Zona.cs" />
+    <Compile Include="Entidades\ZonaDePosicionamiento.cs" />
+    <Compile Include="Entidades\ZonaDePosicionamientoPorClase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CrearClasseDesdeSQL.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\MobilityScm.Modelo.TipoYEstados\MobilityScm.Modelo.TipoYEstados.csproj">
+      <Project>{7fa62357-7b1c-447a-9cf4-48d33dd92488}</Project>
+      <Name>MobilityScm.Modelo.TipoYEstados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\MobilityScm.Vertical\MobilityScm.Vertical.csproj">
+      <Project>{4807256A-677E-4286-82E4-13F230A45337}</Project>
+      <Name>MobilityScm.Vertical</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

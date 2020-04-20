@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet_TransHistory" targetNamespace="http://tempuri.org/DataSet_TransHistory.xsd" xmlns:mstns="http://tempuri.org/DataSet_TransHistory.xsd" xmlns="http://tempuri.org/DataSet_TransHistory.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="ConnectionToCealsaServer" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionToCealsaServer (MySettings)" PropertyReference="ApplicationSettings.WMSOnePlan_Client.My.MySettings.GlobalReference.Default.ConnectionToCealsaServer" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="OP_WMS_VIEW_INVENTORY_TRANS_HISTORYTableAdapter" GeneratorDataComponentClassName="OP_WMS_VIEW_INVENTORY_TRANS_HISTORYTableAdapter" Name="OP_WMS_VIEW_INVENTORY_TRANS_HISTORY" UserDataComponentName="OP_WMS_VIEW_INVENTORY_TRANS_HISTORYTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionToCealsaServer (MySettings)" DbObjectName="OP_WMS.cealsa.OP_WMS_VIEW_INVENTORY_TRANS_HISTORY" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT REGIMEN, TRANS_DATE, LOGIN_NAME, TRANS_DESCRIPTION, SOURCE_LICENSE, TARGET_LICENSE, MATERIAL_CODE, MATERIAL_BARCODE, MATERIAL_DESCRIPTION, QUANTITY_UNITS, CLIENT_OWNER, CLIENT_NAME, CODIGO_POLIZA, NUMERO_ORDEN, WAVE_PICKING_ID FROM cealsa.OP_WMS_VIEW_INVENTORY_TRANS_HISTORY</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="REGIMEN" DataSetColumn="REGIMEN" />
+              <Mapping SourceColumn="TRANS_DATE" DataSetColumn="TRANS_DATE" />
+              <Mapping SourceColumn="LOGIN_NAME" DataSetColumn="LOGIN_NAME" />
+              <Mapping SourceColumn="TRANS_DESCRIPTION" DataSetColumn="TRANS_DESCRIPTION" />
+              <Mapping SourceColumn="SOURCE_LICENSE" DataSetColumn="SOURCE_LICENSE" />
+              <Mapping SourceColumn="TARGET_LICENSE" DataSetColumn="TARGET_LICENSE" />
+              <Mapping SourceColumn="MATERIAL_CODE" DataSetColumn="MATERIAL_CODE" />
+              <Mapping SourceColumn="MATERIAL_BARCODE" DataSetColumn="MATERIAL_BARCODE" />
+              <Mapping SourceColumn="MATERIAL_DESCRIPTION" DataSetColumn="MATERIAL_DESCRIPTION" />
+              <Mapping SourceColumn="QUANTITY_UNITS" DataSetColumn="QUANTITY_UNITS" />
+              <Mapping SourceColumn="CLIENT_OWNER" DataSetColumn="CLIENT_OWNER" />
+              <Mapping SourceColumn="CLIENT_NAME" DataSetColumn="CLIENT_NAME" />
+              <Mapping SourceColumn="CODIGO_POLIZA" DataSetColumn="CODIGO_POLIZA" />
+              <Mapping SourceColumn="NUMERO_ORDEN" DataSetColumn="NUMERO_ORDEN" />
+              <Mapping SourceColumn="WAVE_PICKING_ID" DataSetColumn="WAVE_PICKING_ID" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet_TransHistory" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DataSet_TransHistory" msprop:Generator_UserDSName="DataSet_TransHistory">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="OP_WMS_VIEW_INVENTORY_TRANS_HISTORY" msprop:Generator_TableClassName="OP_WMS_VIEW_INVENTORY_TRANS_HISTORYDataTable" msprop:Generator_TableVarName="tableOP_WMS_VIEW_INVENTORY_TRANS_HISTORY" msprop:Generator_TablePropName="OP_WMS_VIEW_INVENTORY_TRANS_HISTORY" msprop:Generator_RowDeletingName="OP_WMS_VIEW_INVENTORY_TRANS_HISTORYRowDeleting" msprop:Generator_UserTableName="OP_WMS_VIEW_INVENTORY_TRANS_HISTORY" msprop:Generator_RowChangingName="OP_WMS_VIEW_INVENTORY_TRANS_HISTORYRowChanging" msprop:Generator_RowEvHandlerName="OP_WMS_VIEW_INVENTORY_TRANS_HISTORYRowChangeEventHandler" msprop:Generator_RowDeletedName="OP_WMS_VIEW_INVENTORY_TRANS_HISTORYRowDeleted" msprop:Generator_RowEvArgName="OP_WMS_VIEW_INVENTORY_TRANS_HISTORYRowChangeEvent" msprop:Generator_RowChangedName="OP_WMS_VIEW_INVENTORY_TRANS_HISTORYRowChanged" msprop:Generator_RowClassName="OP_WMS_VIEW_INVENTORY_TRANS_HISTORYRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="REGIMEN" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnREGIMEN" msprop:Generator_ColumnPropNameInRow="REGIMEN" msprop:Generator_ColumnPropNameInTable="REGIMENColumn" msprop:Generator_UserColumnName="REGIMEN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TRANS_DATE" msprop:Generator_ColumnVarNameInTable="columnTRANS_DATE" msprop:Generator_ColumnPropNameInRow="TRANS_DATE" msprop:Generator_ColumnPropNameInTable="TRANS_DATEColumn" msprop:Generator_UserColumnName="TRANS_DATE" type="xs:dateTime" />
+              <xs:element name="LOGIN_NAME" msprop:Generator_ColumnVarNameInTable="columnLOGIN_NAME" msprop:Generator_ColumnPropNameInRow="LOGIN_NAME" msprop:Generator_ColumnPropNameInTable="LOGIN_NAMEColumn" msprop:Generator_UserColumnName="LOGIN_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TRANS_DESCRIPTION" msprop:Generator_ColumnVarNameInTable="columnTRANS_DESCRIPTION" msprop:Generator_ColumnPropNameInRow="TRANS_DESCRIPTION" msprop:Generator_ColumnPropNameInTable="TRANS_DESCRIPTIONColumn" msprop:Generator_UserColumnName="TRANS_DESCRIPTION">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SOURCE_LICENSE" msprop:Generator_ColumnVarNameInTable="columnSOURCE_LICENSE" msprop:Generator_ColumnPropNameInRow="SOURCE_LICENSE" msprop:Generator_ColumnPropNameInTable="SOURCE_LICENSEColumn" msprop:Generator_UserColumnName="SOURCE_LICENSE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TARGET_LICENSE" msprop:Generator_ColumnVarNameInTable="columnTARGET_LICENSE" msprop:Generator_ColumnPropNameInRow="TARGET_LICENSE" msprop:Generator_ColumnPropNameInTable="TARGET_LICENSEColumn" msprop:Generator_UserColumnName="TARGET_LICENSE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MATERIAL_CODE" msprop:Generator_ColumnVarNameInTable="columnMATERIAL_CODE" msprop:Generator_ColumnPropNameInRow="MATERIAL_CODE" msprop:Generator_ColumnPropNameInTable="MATERIAL_CODEColumn" msprop:Generator_UserColumnName="MATERIAL_CODE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MATERIAL_BARCODE" msprop:Generator_ColumnVarNameInTable="columnMATERIAL_BARCODE" msprop:Generator_ColumnPropNameInRow="MATERIAL_BARCODE" msprop:Generator_ColumnPropNameInTable="MATERIAL_BARCODEColumn" msprop:Generator_UserColumnName="MATERIAL_BARCODE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MATERIAL_DESCRIPTION" msprop:Generator_ColumnVarNameInTable="columnMATERIAL_DESCRIPTION" msprop:Generator_ColumnPropNameInRow="MATERIAL_DESCRIPTION" msprop:Generator_ColumnPropNameInTable="MATERIAL_DESCRIPTIONColumn" msprop:Generator_UserColumnName="MATERIAL_DESCRIPTION" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="QUANTITY_UNITS" msprop:Generator_ColumnVarNameInTable="columnQUANTITY_UNITS" msprop:Generator_ColumnPropNameInRow="QUANTITY_UNITS" msprop:Generator_ColumnPropNameInTable="QUANTITY_UNITSColumn" msprop:Generator_UserColumnName="QUANTITY_UNITS" type="xs:decimal" />
+              <xs:element name="CLIENT_OWNER" msprop:Generator_ColumnVarNameInTable="columnCLIENT_OWNER" msprop:Generator_ColumnPropNameInRow="CLIENT_OWNER" msprop:Generator_ColumnPropNameInTable="CLIENT_OWNERColumn" msprop:Generator_UserColumnName="CLIENT_OWNER" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CLIENT_NAME" msprop:Generator_ColumnVarNameInTable="columnCLIENT_NAME" msprop:Generator_ColumnPropNameInRow="CLIENT_NAME" msprop:Generator_ColumnPropNameInTable="CLIENT_NAMEColumn" msprop:Generator_UserColumnName="CLIENT_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CODIGO_POLIZA" msprop:Generator_ColumnVarNameInTable="columnCODIGO_POLIZA" msprop:Generator_ColumnPropNameInRow="CODIGO_POLIZA" msprop:Generator_ColumnPropNameInTable="CODIGO_POLIZAColumn" msprop:Generator_UserColumnName="CODIGO_POLIZA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NUMERO_ORDEN" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnNUMERO_ORDEN" msprop:Generator_ColumnPropNameInRow="NUMERO_ORDEN" msprop:Generator_ColumnPropNameInTable="NUMERO_ORDENColumn" msprop:Generator_UserColumnName="NUMERO_ORDEN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WAVE_PICKING_ID" msprop:Generator_ColumnVarNameInTable="columnWAVE_PICKING_ID" msprop:Generator_ColumnPropNameInRow="WAVE_PICKING_ID" msprop:Generator_ColumnPropNameInTable="WAVE_PICKING_IDColumn" msprop:Generator_UserColumnName="WAVE_PICKING_ID" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

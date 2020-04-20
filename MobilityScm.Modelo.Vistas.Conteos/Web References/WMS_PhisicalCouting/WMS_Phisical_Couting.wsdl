@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetMyCountingTask">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMyCountingTaskResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMyCountingTaskResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLocationsForCount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="taskId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLocationsForCountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLocationsForCountResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNextMaterialForCount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="taskId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="location" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNextMaterialForCountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetNextMaterialForCountResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertCountExecution">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="taskId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="location" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="licenseId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="materialId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="qtyScanned" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="expirationDet" nillable="true" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="batch" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="serial" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertCountExecutionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertCountExecutionResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RecountLocation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="taskId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="location" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RecountLocationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RecountLocationResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FinishLocation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="taskId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="location" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FinishLocationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FinishLocationResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidateScannedLocationForCountingTask">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="taskId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="location" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidateScannedLocationForCountingTaskResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ValidateScannedLocationForCountingTaskResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidateScannedMaterialForCountingTask">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="taskId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="location" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="licence" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="materialId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="batch" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="serial" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidateScannedMaterialForCountingTaskResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ValidateScannedMaterialForCountingTaskResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetScannedMaterial">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="licence" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="barcodeId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetScannedMaterialResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetScannedMaterialResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidateScannedLicence">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="licence" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidateScannedLicenceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ValidateScannedLicenceResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetMyCountingTaskSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMyCountingTask" />
+  </wsdl:message>
+  <wsdl:message name="GetMyCountingTaskSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMyCountingTaskResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLocationsForCountSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLocationsForCount" />
+  </wsdl:message>
+  <wsdl:message name="GetLocationsForCountSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLocationsForCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetNextMaterialForCountSoapIn">
+    <wsdl:part name="parameters" element="tns:GetNextMaterialForCount" />
+  </wsdl:message>
+  <wsdl:message name="GetNextMaterialForCountSoapOut">
+    <wsdl:part name="parameters" element="tns:GetNextMaterialForCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertCountExecutionSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertCountExecution" />
+  </wsdl:message>
+  <wsdl:message name="InsertCountExecutionSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertCountExecutionResponse" />
+  </wsdl:message>
+  <wsdl:message name="RecountLocationSoapIn">
+    <wsdl:part name="parameters" element="tns:RecountLocation" />
+  </wsdl:message>
+  <wsdl:message name="RecountLocationSoapOut">
+    <wsdl:part name="parameters" element="tns:RecountLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="FinishLocationSoapIn">
+    <wsdl:part name="parameters" element="tns:FinishLocation" />
+  </wsdl:message>
+  <wsdl:message name="FinishLocationSoapOut">
+    <wsdl:part name="parameters" element="tns:FinishLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ValidateScannedLocationForCountingTaskSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidateScannedLocationForCountingTask" />
+  </wsdl:message>
+  <wsdl:message name="ValidateScannedLocationForCountingTaskSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidateScannedLocationForCountingTaskResponse" />
+  </wsdl:message>
+  <wsdl:message name="ValidateScannedMaterialForCountingTaskSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidateScannedMaterialForCountingTask" />
+  </wsdl:message>
+  <wsdl:message name="ValidateScannedMaterialForCountingTaskSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidateScannedMaterialForCountingTaskResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetScannedMaterialSoapIn">
+    <wsdl:part name="parameters" element="tns:GetScannedMaterial" />
+  </wsdl:message>
+  <wsdl:message name="GetScannedMaterialSoapOut">
+    <wsdl:part name="parameters" element="tns:GetScannedMaterialResponse" />
+  </wsdl:message>
+  <wsdl:message name="ValidateScannedLicenceSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidateScannedLicence" />
+  </wsdl:message>
+  <wsdl:message name="ValidateScannedLicenceSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidateScannedLicenceResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WMS_Phisical_CoutingSoap">
+    <wsdl:operation name="GetMyCountingTask">
+      <wsdl:input message="tns:GetMyCountingTaskSoapIn" />
+      <wsdl:output message="tns:GetMyCountingTaskSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationsForCount">
+      <wsdl:input message="tns:GetLocationsForCountSoapIn" />
+      <wsdl:output message="tns:GetLocationsForCountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNextMaterialForCount">
+      <wsdl:input message="tns:GetNextMaterialForCountSoapIn" />
+      <wsdl:output message="tns:GetNextMaterialForCountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCountExecution">
+      <wsdl:input message="tns:InsertCountExecutionSoapIn" />
+      <wsdl:output message="tns:InsertCountExecutionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RecountLocation">
+      <wsdl:input message="tns:RecountLocationSoapIn" />
+      <wsdl:output message="tns:RecountLocationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FinishLocation">
+      <wsdl:input message="tns:FinishLocationSoapIn" />
+      <wsdl:output message="tns:FinishLocationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateScannedLocationForCountingTask">
+      <wsdl:input message="tns:ValidateScannedLocationForCountingTaskSoapIn" />
+      <wsdl:output message="tns:ValidateScannedLocationForCountingTaskSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateScannedMaterialForCountingTask">
+      <wsdl:input message="tns:ValidateScannedMaterialForCountingTaskSoapIn" />
+      <wsdl:output message="tns:ValidateScannedMaterialForCountingTaskSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetScannedMaterial">
+      <wsdl:input message="tns:GetScannedMaterialSoapIn" />
+      <wsdl:output message="tns:GetScannedMaterialSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateScannedLicence">
+      <wsdl:input message="tns:ValidateScannedLicenceSoapIn" />
+      <wsdl:output message="tns:ValidateScannedLicenceSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WMS_Phisical_CoutingSoap" type="tns:WMS_Phisical_CoutingSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetMyCountingTask">
+      <soap:operation soapAction="http://tempuri.org/GetMyCountingTask" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationsForCount">
+      <soap:operation soapAction="http://tempuri.org/GetLocationsForCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNextMaterialForCount">
+      <soap:operation soapAction="http://tempuri.org/GetNextMaterialForCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCountExecution">
+      <soap:operation soapAction="http://tempuri.org/InsertCountExecution" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecountLocation">
+      <soap:operation soapAction="http://tempuri.org/RecountLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinishLocation">
+      <soap:operation soapAction="http://tempuri.org/FinishLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateScannedLocationForCountingTask">
+      <soap:operation soapAction="http://tempuri.org/ValidateScannedLocationForCountingTask" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateScannedMaterialForCountingTask">
+      <soap:operation soapAction="http://tempuri.org/ValidateScannedMaterialForCountingTask" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetScannedMaterial">
+      <soap:operation soapAction="http://tempuri.org/GetScannedMaterial" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateScannedLicence">
+      <soap:operation soapAction="http://tempuri.org/ValidateScannedLicence" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WMS_Phisical_CoutingSoap12" type="tns:WMS_Phisical_CoutingSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetMyCountingTask">
+      <soap12:operation soapAction="http://tempuri.org/GetMyCountingTask" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationsForCount">
+      <soap12:operation soapAction="http://tempuri.org/GetLocationsForCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNextMaterialForCount">
+      <soap12:operation soapAction="http://tempuri.org/GetNextMaterialForCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCountExecution">
+      <soap12:operation soapAction="http://tempuri.org/InsertCountExecution" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecountLocation">
+      <soap12:operation soapAction="http://tempuri.org/RecountLocation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinishLocation">
+      <soap12:operation soapAction="http://tempuri.org/FinishLocation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateScannedLocationForCountingTask">
+      <soap12:operation soapAction="http://tempuri.org/ValidateScannedLocationForCountingTask" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateScannedMaterialForCountingTask">
+      <soap12:operation soapAction="http://tempuri.org/ValidateScannedMaterialForCountingTask" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetScannedMaterial">
+      <soap12:operation soapAction="http://tempuri.org/GetScannedMaterial" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateScannedLicence">
+      <soap12:operation soapAction="http://tempuri.org/ValidateScannedLicence" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WMS_Phisical_Couting">
+    <wsdl:port name="WMS_Phisical_CoutingSoap" binding="tns:WMS_Phisical_CoutingSoap">
+      <soap:address location="http://localhost:8088/WMSOnePlan_BusinessServices/Catalogues/WMS_Phisical_Couting.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WMS_Phisical_CoutingSoap12" binding="tns:WMS_Phisical_CoutingSoap12">
+      <soap12:address location="http://localhost:8088/WMSOnePlan_BusinessServices/Catalogues/WMS_Phisical_Couting.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

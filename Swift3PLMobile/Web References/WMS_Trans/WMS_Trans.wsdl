@@ -1,0 +1,1834 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="RegisterOccupancy">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pSOURCE_LOCATION" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLOGIN_ID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pOCCUPANCY_LEVEL" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegisterOccupancyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RegisterOccupancyResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetReceptionAuditSummary">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pCODIGO_POLIZA" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pQTY1" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="pQTY2" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="pQTY3" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="pQTY4" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLOGIN_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetReceptionAuditSummaryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SetReceptionAuditSummaryResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetTransWeigth">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pSERIAL_NUMBER" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pWEIGTH" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLOGIN_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetTransWeigthResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SetTransWeigthResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AuditCount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pAUDIT_ID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pMETHOD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCODIGO_POLIZA" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pBARCODE_ID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pQTY_INPUTED" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pSERIAL_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLOGIN_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pOPTION" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pBatch" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pDateExpirtacion" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AuditCountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AuditCountResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AuditStartCounting">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pLOGIN_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCODIGO_POLIZA" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCONTENEDOR" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pMETHOD" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pCREATED_AUDIT_ID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pOPTION" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AuditStartCountingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AuditStartCountingResult" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="pCREATED_AUDIT_ID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AuditFinishCounting">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pAUDIT_ID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLOGIN_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pOPTION" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AuditFinishCountingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AuditFinishCountingResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LicenseReAlloc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pLICENSE_ID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pNEW_LOCATION" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLOGIN_ID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pMt2" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paramName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LicenseReAllocResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="LicenseReAllocResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AuditResetCounting">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pAUDIT_ID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pBARCODE_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pOPTION" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AuditResetCountingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AuditResetCountingResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AllocLicense">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pLicenseID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pTargetLocation" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLoginID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AllocLicenseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AllocLicenseResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegisterTrans">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pTRADE_AGREEMENT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLOGIN_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pTRANS_TYPE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pTRANS_EXTRA_COMMENTS" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pMATERIAL_BARCODE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pMATERIAL_ID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pSOURCE_LICENSE" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pTARGET_LICENSE" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pSOURCE_LOCATION" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pTARGET_LOCATION" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCLIENT_OWNER" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pQUANTITY_UNITS" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="pSOURCE_WAREHOUSE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pTARGET_WAREHOUSE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pTRANS_SUBTYPE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCODIGO_POLIZA" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pLICENSE_ID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pSTATUS" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pWAVE_PICKING_ID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pSERIAL_NUMBER" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pTransMT2" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="pTipoUbicacion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pMt2" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="pVin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pTask_Id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pSerial" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLote" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pFechaLote" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegisterTransResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RegisterTransResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCODIGO_POLIZA" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateTypeChangeXLicense">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pLicenseID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pTypeCharge" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pQty" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLastUpdatedBy" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pTypeTrans" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateTypeChangeXLicenseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateTypeChangeXLicenseResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateStatusQuotaLetter">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pDocId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pStatus" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pUserId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateStatusQuotaLetterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateStatusQuotaLetterResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateAcuseRecibo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pPoliza" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pFob" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pDate" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCodigoTransportista" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pPlacaTransportista" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pNumeroContenedor" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pNumeroMarchamo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pUserId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pFoto1" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="pFoto2" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="pFoto3" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="pStatus" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateAcuseReciboResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateAcuseReciboResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateStatusSapService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pDocId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pStatus" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateStatusSapServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateStatusSapServiceResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActualizarEstadoTareaDeRecepcion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CodigoPoliza" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LogIn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Regimen" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Estatus" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="TaskId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActualizarEstadoTareaDeRecepcionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ActualizarEstadoTareaDeRecepcionResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RollBackALicencia">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="LicenceId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RollBackALicenciaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RollBackALicenciaResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExplodeMasterPack">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="LicenceId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="MaterialId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LastUpdateBy" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExplodeMasterPackResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ExplodeMasterPackResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMasterPackByLicense">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="licenceId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="MaterialId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMasterPackByLicenseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMasterPackByLicenseResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDetailMasterPackByLicense">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="licenceId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="materialId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDetailMasterPackByLicenseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDetailMasterPackByLicenseResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateLocationTargerTask">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="wevePickingId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="locationSpotTarget" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateLocationTargerTaskResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateLocationTargerTaskResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CancelPickingDetailLine">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="wavePickingId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="materialId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CancelPickingDetailLineResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CancelPickingDetailLineResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegisterTransReallocForReplenishment">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="materialId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="materialBarcode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="sourceLicence" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sourceLocation" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="qty" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="wavePickingId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="mt2" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="typeLocation" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="targetLocation" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="newLiceceId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegisterTransReallocForReplenishmentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RegisterTransReallocForReplenishmentResult" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="newLiceceId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegisterTransRelocateForNoImmediatePicking">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="materialId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="materialBarcode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="sourceLicence" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sourceLocation" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="qty" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="wavePickingId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="mt2" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="typeLocation" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="targetLocation" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="environmentName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="newLicenseId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegisterTransRelocateForNoImmediatePickingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RegisterTransRelocateForNoImmediatePickingResult" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="newLicenseId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateScannedSerialNumberToProcess">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serialNumber" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="licenseId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="wavePickingId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="materialId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="taskType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="environmentName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateScannedSerialNumberToProcessResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateScannedSerialNumberToProcessResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateSetActiveSerialNumber">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serialNumber" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="licenseId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="materialId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="wavePickingId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="taskType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="environmentName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateSetActiveSerialNumberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateSetActiveSerialNumberResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRequestedSerialNumberDiscretionalPickingByLicense">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="wavePickingId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="licenseId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="materialId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="environmentName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRequestedSerialNumberDiscretionalPickingByLicenseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRequestedSerialNumberDiscretionalPickingByLicenseResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RollbackSerialNumbersOnProcess">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="wavePickingId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="licenseId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="materialId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="taskType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="environmentName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RollbackSerialNumbersOnProcessResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RollbackSerialNumbersOnProcessResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidateScannedReceptionDocument">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="document" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="environmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidateScannedReceptionDocumentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ValidateScannedReceptionDocumentResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcessScannedDocument">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="document" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="enviromentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcessScannedDocumentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ProcessScannedDocumentResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertPickingLabel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loginId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="wavePickingId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="clientCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="enviromentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertPickingLabelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertPickingLabelResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatePickingLabel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="labelId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="clientCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="licenseId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="barcode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="qty" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="codigoPoliza" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sourceLocation" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="targetLocation" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="transitLocation" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="serialNumber" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="wavePicking" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="enviromentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatePickingLabelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdatePickingLabelResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeletePickingLabel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="labelId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="enviromentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeletePickingLabelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeletePickingLabelResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidateIfPickingLicenseIsAvailable">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="wavePickingId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="currentLocation" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="materialId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="licenseId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidateIfPickingLicenseIsAvailableResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ValidateIfPickingLicenseIsAvailableResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerMaterialesEnUnbicacionParaUnificar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="currentLocation" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="materialId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerMaterialesEnUnbicacionParaUnificarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtenerMaterialesEnUnbicacionParaUnificarResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UnificarLicenciasPorUbicacionYMaterial">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="currentLocation" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="materialId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UnificarLicenciasPorUbicacionYMaterialResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UnificarLicenciasPorUbicacionYMaterialResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="RegisterOccupancySoapIn">
+    <wsdl:part name="parameters" element="tns:RegisterOccupancy" />
+  </wsdl:message>
+  <wsdl:message name="RegisterOccupancySoapOut">
+    <wsdl:part name="parameters" element="tns:RegisterOccupancyResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetReceptionAuditSummarySoapIn">
+    <wsdl:part name="parameters" element="tns:SetReceptionAuditSummary" />
+  </wsdl:message>
+  <wsdl:message name="SetReceptionAuditSummarySoapOut">
+    <wsdl:part name="parameters" element="tns:SetReceptionAuditSummaryResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetTransWeigthSoapIn">
+    <wsdl:part name="parameters" element="tns:SetTransWeigth" />
+  </wsdl:message>
+  <wsdl:message name="SetTransWeigthSoapOut">
+    <wsdl:part name="parameters" element="tns:SetTransWeigthResponse" />
+  </wsdl:message>
+  <wsdl:message name="AuditCountSoapIn">
+    <wsdl:part name="parameters" element="tns:AuditCount" />
+  </wsdl:message>
+  <wsdl:message name="AuditCountSoapOut">
+    <wsdl:part name="parameters" element="tns:AuditCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="AuditStartCountingSoapIn">
+    <wsdl:part name="parameters" element="tns:AuditStartCounting" />
+  </wsdl:message>
+  <wsdl:message name="AuditStartCountingSoapOut">
+    <wsdl:part name="parameters" element="tns:AuditStartCountingResponse" />
+  </wsdl:message>
+  <wsdl:message name="AuditFinishCountingSoapIn">
+    <wsdl:part name="parameters" element="tns:AuditFinishCounting" />
+  </wsdl:message>
+  <wsdl:message name="AuditFinishCountingSoapOut">
+    <wsdl:part name="parameters" element="tns:AuditFinishCountingResponse" />
+  </wsdl:message>
+  <wsdl:message name="LicenseReAllocSoapIn">
+    <wsdl:part name="parameters" element="tns:LicenseReAlloc" />
+  </wsdl:message>
+  <wsdl:message name="LicenseReAllocSoapOut">
+    <wsdl:part name="parameters" element="tns:LicenseReAllocResponse" />
+  </wsdl:message>
+  <wsdl:message name="AuditResetCountingSoapIn">
+    <wsdl:part name="parameters" element="tns:AuditResetCounting" />
+  </wsdl:message>
+  <wsdl:message name="AuditResetCountingSoapOut">
+    <wsdl:part name="parameters" element="tns:AuditResetCountingResponse" />
+  </wsdl:message>
+  <wsdl:message name="AllocLicenseSoapIn">
+    <wsdl:part name="parameters" element="tns:AllocLicense" />
+  </wsdl:message>
+  <wsdl:message name="AllocLicenseSoapOut">
+    <wsdl:part name="parameters" element="tns:AllocLicenseResponse" />
+  </wsdl:message>
+  <wsdl:message name="RegisterTransSoapIn">
+    <wsdl:part name="parameters" element="tns:RegisterTrans" />
+  </wsdl:message>
+  <wsdl:message name="RegisterTransSoapOut">
+    <wsdl:part name="parameters" element="tns:RegisterTransResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateTypeChangeXLicenseSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateTypeChangeXLicense" />
+  </wsdl:message>
+  <wsdl:message name="CreateTypeChangeXLicenseSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateTypeChangeXLicenseResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateStatusQuotaLetterSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateStatusQuotaLetter" />
+  </wsdl:message>
+  <wsdl:message name="UpdateStatusQuotaLetterSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateStatusQuotaLetterResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateAcuseReciboSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateAcuseRecibo" />
+  </wsdl:message>
+  <wsdl:message name="CreateAcuseReciboSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateAcuseReciboResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateStatusSapServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateStatusSapService" />
+  </wsdl:message>
+  <wsdl:message name="UpdateStatusSapServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateStatusSapServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="ActualizarEstadoTareaDeRecepcionSoapIn">
+    <wsdl:part name="parameters" element="tns:ActualizarEstadoTareaDeRecepcion" />
+  </wsdl:message>
+  <wsdl:message name="ActualizarEstadoTareaDeRecepcionSoapOut">
+    <wsdl:part name="parameters" element="tns:ActualizarEstadoTareaDeRecepcionResponse" />
+  </wsdl:message>
+  <wsdl:message name="RollBackALicenciaSoapIn">
+    <wsdl:part name="parameters" element="tns:RollBackALicencia" />
+  </wsdl:message>
+  <wsdl:message name="RollBackALicenciaSoapOut">
+    <wsdl:part name="parameters" element="tns:RollBackALicenciaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExplodeMasterPackSoapIn">
+    <wsdl:part name="parameters" element="tns:ExplodeMasterPack" />
+  </wsdl:message>
+  <wsdl:message name="ExplodeMasterPackSoapOut">
+    <wsdl:part name="parameters" element="tns:ExplodeMasterPackResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMasterPackByLicenseSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMasterPackByLicense" />
+  </wsdl:message>
+  <wsdl:message name="GetMasterPackByLicenseSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMasterPackByLicenseResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDetailMasterPackByLicenseSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDetailMasterPackByLicense" />
+  </wsdl:message>
+  <wsdl:message name="GetDetailMasterPackByLicenseSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDetailMasterPackByLicenseResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateLocationTargerTaskSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateLocationTargerTask" />
+  </wsdl:message>
+  <wsdl:message name="UpdateLocationTargerTaskSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateLocationTargerTaskResponse" />
+  </wsdl:message>
+  <wsdl:message name="CancelPickingDetailLineSoapIn">
+    <wsdl:part name="parameters" element="tns:CancelPickingDetailLine" />
+  </wsdl:message>
+  <wsdl:message name="CancelPickingDetailLineSoapOut">
+    <wsdl:part name="parameters" element="tns:CancelPickingDetailLineResponse" />
+  </wsdl:message>
+  <wsdl:message name="RegisterTransReallocForReplenishmentSoapIn">
+    <wsdl:part name="parameters" element="tns:RegisterTransReallocForReplenishment" />
+  </wsdl:message>
+  <wsdl:message name="RegisterTransReallocForReplenishmentSoapOut">
+    <wsdl:part name="parameters" element="tns:RegisterTransReallocForReplenishmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="RegisterTransRelocateForNoImmediatePickingSoapIn">
+    <wsdl:part name="parameters" element="tns:RegisterTransRelocateForNoImmediatePicking" />
+  </wsdl:message>
+  <wsdl:message name="RegisterTransRelocateForNoImmediatePickingSoapOut">
+    <wsdl:part name="parameters" element="tns:RegisterTransRelocateForNoImmediatePickingResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateScannedSerialNumberToProcessSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateScannedSerialNumberToProcess" />
+  </wsdl:message>
+  <wsdl:message name="UpdateScannedSerialNumberToProcessSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateScannedSerialNumberToProcessResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateSetActiveSerialNumberSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateSetActiveSerialNumber" />
+  </wsdl:message>
+  <wsdl:message name="UpdateSetActiveSerialNumberSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateSetActiveSerialNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRequestedSerialNumberDiscretionalPickingByLicenseSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRequestedSerialNumberDiscretionalPickingByLicense" />
+  </wsdl:message>
+  <wsdl:message name="GetRequestedSerialNumberDiscretionalPickingByLicenseSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRequestedSerialNumberDiscretionalPickingByLicenseResponse" />
+  </wsdl:message>
+  <wsdl:message name="RollbackSerialNumbersOnProcessSoapIn">
+    <wsdl:part name="parameters" element="tns:RollbackSerialNumbersOnProcess" />
+  </wsdl:message>
+  <wsdl:message name="RollbackSerialNumbersOnProcessSoapOut">
+    <wsdl:part name="parameters" element="tns:RollbackSerialNumbersOnProcessResponse" />
+  </wsdl:message>
+  <wsdl:message name="ValidateScannedReceptionDocumentSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidateScannedReceptionDocument" />
+  </wsdl:message>
+  <wsdl:message name="ValidateScannedReceptionDocumentSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidateScannedReceptionDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProcessScannedDocumentSoapIn">
+    <wsdl:part name="parameters" element="tns:ProcessScannedDocument" />
+  </wsdl:message>
+  <wsdl:message name="ProcessScannedDocumentSoapOut">
+    <wsdl:part name="parameters" element="tns:ProcessScannedDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertPickingLabelSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertPickingLabel" />
+  </wsdl:message>
+  <wsdl:message name="InsertPickingLabelSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertPickingLabelResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePickingLabelSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdatePickingLabel" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePickingLabelSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdatePickingLabelResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeletePickingLabelSoapIn">
+    <wsdl:part name="parameters" element="tns:DeletePickingLabel" />
+  </wsdl:message>
+  <wsdl:message name="DeletePickingLabelSoapOut">
+    <wsdl:part name="parameters" element="tns:DeletePickingLabelResponse" />
+  </wsdl:message>
+  <wsdl:message name="ValidateIfPickingLicenseIsAvailableSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidateIfPickingLicenseIsAvailable" />
+  </wsdl:message>
+  <wsdl:message name="ValidateIfPickingLicenseIsAvailableSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidateIfPickingLicenseIsAvailableResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerMaterialesEnUnbicacionParaUnificarSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtenerMaterialesEnUnbicacionParaUnificar" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerMaterialesEnUnbicacionParaUnificarSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtenerMaterialesEnUnbicacionParaUnificarResponse" />
+  </wsdl:message>
+  <wsdl:message name="UnificarLicenciasPorUbicacionYMaterialSoapIn">
+    <wsdl:part name="parameters" element="tns:UnificarLicenciasPorUbicacionYMaterial" />
+  </wsdl:message>
+  <wsdl:message name="UnificarLicenciasPorUbicacionYMaterialSoapOut">
+    <wsdl:part name="parameters" element="tns:UnificarLicenciasPorUbicacionYMaterialResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WMS_TransSoap">
+    <wsdl:operation name="RegisterOccupancy">
+      <wsdl:input message="tns:RegisterOccupancySoapIn" />
+      <wsdl:output message="tns:RegisterOccupancySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetReceptionAuditSummary">
+      <wsdl:input message="tns:SetReceptionAuditSummarySoapIn" />
+      <wsdl:output message="tns:SetReceptionAuditSummarySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetTransWeigth">
+      <wsdl:input message="tns:SetTransWeigthSoapIn" />
+      <wsdl:output message="tns:SetTransWeigthSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AuditCount">
+      <wsdl:input message="tns:AuditCountSoapIn" />
+      <wsdl:output message="tns:AuditCountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AuditStartCounting">
+      <wsdl:input message="tns:AuditStartCountingSoapIn" />
+      <wsdl:output message="tns:AuditStartCountingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AuditFinishCounting">
+      <wsdl:input message="tns:AuditFinishCountingSoapIn" />
+      <wsdl:output message="tns:AuditFinishCountingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LicenseReAlloc">
+      <wsdl:input message="tns:LicenseReAllocSoapIn" />
+      <wsdl:output message="tns:LicenseReAllocSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AuditResetCounting">
+      <wsdl:input message="tns:AuditResetCountingSoapIn" />
+      <wsdl:output message="tns:AuditResetCountingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AllocLicense">
+      <wsdl:input message="tns:AllocLicenseSoapIn" />
+      <wsdl:output message="tns:AllocLicenseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterTrans">
+      <wsdl:input message="tns:RegisterTransSoapIn" />
+      <wsdl:output message="tns:RegisterTransSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateTypeChangeXLicense">
+      <wsdl:input message="tns:CreateTypeChangeXLicenseSoapIn" />
+      <wsdl:output message="tns:CreateTypeChangeXLicenseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStatusQuotaLetter">
+      <wsdl:input message="tns:UpdateStatusQuotaLetterSoapIn" />
+      <wsdl:output message="tns:UpdateStatusQuotaLetterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateAcuseRecibo">
+      <wsdl:input message="tns:CreateAcuseReciboSoapIn" />
+      <wsdl:output message="tns:CreateAcuseReciboSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStatusSapService">
+      <wsdl:input message="tns:UpdateStatusSapServiceSoapIn" />
+      <wsdl:output message="tns:UpdateStatusSapServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarEstadoTareaDeRecepcion">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Actualiza Estado tarea de recepcion.</wsdl:documentation>
+      <wsdl:input message="tns:ActualizarEstadoTareaDeRecepcionSoapIn" />
+      <wsdl:output message="tns:ActualizarEstadoTareaDeRecepcionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RollBackALicencia">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Realiza un rollback a la licencia.</wsdl:documentation>
+      <wsdl:input message="tns:RollBackALicenciaSoapIn" />
+      <wsdl:output message="tns:RollBackALicenciaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExplodeMasterPack">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Explota un master pack y genera un ExplodeIn y un ExplodeOut.</wsdl:documentation>
+      <wsdl:input message="tns:ExplodeMasterPackSoapIn" />
+      <wsdl:output message="tns:ExplodeMasterPackSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterPackByLicense">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtiene el master pack de la licencia.</wsdl:documentation>
+      <wsdl:input message="tns:GetMasterPackByLicenseSoapIn" />
+      <wsdl:output message="tns:GetMasterPackByLicenseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDetailMasterPackByLicense">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtiene el detalle del master pack de la licencia.</wsdl:documentation>
+      <wsdl:input message="tns:GetDetailMasterPackByLicenseSoapIn" />
+      <wsdl:output message="tns:GetDetailMasterPackByLicenseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLocationTargerTask">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Explota un master pack y genera un ExplodeIn y un ExplodeOut.</wsdl:documentation>
+      <wsdl:input message="tns:UpdateLocationTargerTaskSoapIn" />
+      <wsdl:output message="tns:UpdateLocationTargerTaskSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelPickingDetailLine">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Cancelar una linea de picking detalle</wsdl:documentation>
+      <wsdl:input message="tns:CancelPickingDetailLineSoapIn" />
+      <wsdl:output message="tns:CancelPickingDetailLineSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterTransReallocForReplenishment">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Registra la trancsaccion de re-abastecimiento</wsdl:documentation>
+      <wsdl:input message="tns:RegisterTransReallocForReplenishmentSoapIn" />
+      <wsdl:output message="tns:RegisterTransReallocForReplenishmentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterTransRelocateForNoImmediatePicking">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Registra la trasaccion por una tarea de reubicacion por entrega no inmediata.</wsdl:documentation>
+      <wsdl:input message="tns:RegisterTransRelocateForNoImmediatePickingSoapIn" />
+      <wsdl:output message="tns:RegisterTransRelocateForNoImmediatePickingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateScannedSerialNumberToProcess">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">UpdateScannedSerialNumberToProcess</wsdl:documentation>
+      <wsdl:input message="tns:UpdateScannedSerialNumberToProcessSoapIn" />
+      <wsdl:output message="tns:UpdateScannedSerialNumberToProcessSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSetActiveSerialNumber">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">UpdateSetActiveSerialNumber</wsdl:documentation>
+      <wsdl:input message="tns:UpdateSetActiveSerialNumberSoapIn" />
+      <wsdl:output message="tns:UpdateSetActiveSerialNumberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestedSerialNumberDiscretionalPickingByLicense">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">GetRequestedSerialNumberDiscretionalPickingByLicense</wsdl:documentation>
+      <wsdl:input message="tns:GetRequestedSerialNumberDiscretionalPickingByLicenseSoapIn" />
+      <wsdl:output message="tns:GetRequestedSerialNumberDiscretionalPickingByLicenseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RollbackSerialNumbersOnProcess">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">RollbackSerialNumbersOnProcess</wsdl:documentation>
+      <wsdl:input message="tns:RollbackSerialNumbersOnProcessSoapIn" />
+      <wsdl:output message="tns:RollbackSerialNumbersOnProcessSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateScannedReceptionDocument">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Valida si el ID del documento ingresado es correcto</wsdl:documentation>
+      <wsdl:input message="tns:ValidateScannedReceptionDocumentSoapIn" />
+      <wsdl:output message="tns:ValidateScannedReceptionDocumentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessScannedDocument">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Procesa el documento escaneado desde la HH para recepcion.</wsdl:documentation>
+      <wsdl:input message="tns:ProcessScannedDocumentSoapIn" />
+      <wsdl:output message="tns:ProcessScannedDocumentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertPickingLabel">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Inserta la informacion de una etiqueta generada en un picking.</wsdl:documentation>
+      <wsdl:input message="tns:InsertPickingLabelSoapIn" />
+      <wsdl:output message="tns:InsertPickingLabelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePickingLabel">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Inserta la informacion de una etiqueta generada en un picking.</wsdl:documentation>
+      <wsdl:input message="tns:UpdatePickingLabelSoapIn" />
+      <wsdl:output message="tns:UpdatePickingLabelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePickingLabel">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Inserta la informacion de una etiqueta generada en un picking.</wsdl:documentation>
+      <wsdl:input message="tns:DeletePickingLabelSoapIn" />
+      <wsdl:output message="tns:DeletePickingLabelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateIfPickingLicenseIsAvailable">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Valida si la licencia se puede utilizar para un picking</wsdl:documentation>
+      <wsdl:input message="tns:ValidateIfPickingLicenseIsAvailableSoapIn" />
+      <wsdl:output message="tns:ValidateIfPickingLicenseIsAvailableSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerMaterialesEnUnbicacionParaUnificar">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Consolida los productos de una ubicacion por material, lote y tono y calibre</wsdl:documentation>
+      <wsdl:input message="tns:ObtenerMaterialesEnUnbicacionParaUnificarSoapIn" />
+      <wsdl:output message="tns:ObtenerMaterialesEnUnbicacionParaUnificarSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UnificarLicenciasPorUbicacionYMaterial">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Unifica las licencias por ubicacion y material</wsdl:documentation>
+      <wsdl:input message="tns:UnificarLicenciasPorUbicacionYMaterialSoapIn" />
+      <wsdl:output message="tns:UnificarLicenciasPorUbicacionYMaterialSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WMS_TransSoap" type="tns:WMS_TransSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RegisterOccupancy">
+      <soap:operation soapAction="http://tempuri.org/RegisterOccupancy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetReceptionAuditSummary">
+      <soap:operation soapAction="http://tempuri.org/SetReceptionAuditSummary" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetTransWeigth">
+      <soap:operation soapAction="http://tempuri.org/SetTransWeigth" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AuditCount">
+      <soap:operation soapAction="http://tempuri.org/AuditCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AuditStartCounting">
+      <soap:operation soapAction="http://tempuri.org/AuditStartCounting" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AuditFinishCounting">
+      <soap:operation soapAction="http://tempuri.org/AuditFinishCounting" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LicenseReAlloc">
+      <soap:operation soapAction="http://tempuri.org/LicenseReAlloc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AuditResetCounting">
+      <soap:operation soapAction="http://tempuri.org/AuditResetCounting" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AllocLicense">
+      <soap:operation soapAction="http://tempuri.org/AllocLicense" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterTrans">
+      <soap:operation soapAction="http://tempuri.org/RegisterTrans" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateTypeChangeXLicense">
+      <soap:operation soapAction="http://tempuri.org/CreateTypeChangeXLicense" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStatusQuotaLetter">
+      <soap:operation soapAction="http://tempuri.org/UpdateStatusQuotaLetter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAcuseRecibo">
+      <soap:operation soapAction="http://tempuri.org/CreateAcuseRecibo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStatusSapService">
+      <soap:operation soapAction="http://tempuri.org/UpdateStatusSapService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarEstadoTareaDeRecepcion">
+      <soap:operation soapAction="http://tempuri.org/ActualizarEstadoTareaDeRecepcion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RollBackALicencia">
+      <soap:operation soapAction="http://tempuri.org/RollBackALicencia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExplodeMasterPack">
+      <soap:operation soapAction="http://tempuri.org/ExplodeMasterPack" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterPackByLicense">
+      <soap:operation soapAction="http://tempuri.org/GetMasterPackByLicense" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDetailMasterPackByLicense">
+      <soap:operation soapAction="http://tempuri.org/GetDetailMasterPackByLicense" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLocationTargerTask">
+      <soap:operation soapAction="http://tempuri.org/UpdateLocationTargerTask" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelPickingDetailLine">
+      <soap:operation soapAction="http://tempuri.org/CancelPickingDetailLine" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterTransReallocForReplenishment">
+      <soap:operation soapAction="http://tempuri.org/RegisterTransReallocForReplenishment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterTransRelocateForNoImmediatePicking">
+      <soap:operation soapAction="http://tempuri.org/RegisterTransRelocateForNoImmediatePicking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateScannedSerialNumberToProcess">
+      <soap:operation soapAction="http://tempuri.org/UpdateScannedSerialNumberToProcess" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSetActiveSerialNumber">
+      <soap:operation soapAction="http://tempuri.org/UpdateSetActiveSerialNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestedSerialNumberDiscretionalPickingByLicense">
+      <soap:operation soapAction="http://tempuri.org/GetRequestedSerialNumberDiscretionalPickingByLicense" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RollbackSerialNumbersOnProcess">
+      <soap:operation soapAction="http://tempuri.org/RollbackSerialNumbersOnProcess" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateScannedReceptionDocument">
+      <soap:operation soapAction="http://tempuri.org/ValidateScannedReceptionDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessScannedDocument">
+      <soap:operation soapAction="http://tempuri.org/ProcessScannedDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPickingLabel">
+      <soap:operation soapAction="http://tempuri.org/InsertPickingLabel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePickingLabel">
+      <soap:operation soapAction="http://tempuri.org/UpdatePickingLabel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePickingLabel">
+      <soap:operation soapAction="http://tempuri.org/DeletePickingLabel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateIfPickingLicenseIsAvailable">
+      <soap:operation soapAction="http://tempuri.org/ValidateIfPickingLicenseIsAvailable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerMaterialesEnUnbicacionParaUnificar">
+      <soap:operation soapAction="http://tempuri.org/ObtenerMaterialesEnUnbicacionParaUnificar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnificarLicenciasPorUbicacionYMaterial">
+      <soap:operation soapAction="http://tempuri.org/UnificarLicenciasPorUbicacionYMaterial" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WMS_TransSoap12" type="tns:WMS_TransSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RegisterOccupancy">
+      <soap12:operation soapAction="http://tempuri.org/RegisterOccupancy" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetReceptionAuditSummary">
+      <soap12:operation soapAction="http://tempuri.org/SetReceptionAuditSummary" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetTransWeigth">
+      <soap12:operation soapAction="http://tempuri.org/SetTransWeigth" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AuditCount">
+      <soap12:operation soapAction="http://tempuri.org/AuditCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AuditStartCounting">
+      <soap12:operation soapAction="http://tempuri.org/AuditStartCounting" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AuditFinishCounting">
+      <soap12:operation soapAction="http://tempuri.org/AuditFinishCounting" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LicenseReAlloc">
+      <soap12:operation soapAction="http://tempuri.org/LicenseReAlloc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AuditResetCounting">
+      <soap12:operation soapAction="http://tempuri.org/AuditResetCounting" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AllocLicense">
+      <soap12:operation soapAction="http://tempuri.org/AllocLicense" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterTrans">
+      <soap12:operation soapAction="http://tempuri.org/RegisterTrans" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateTypeChangeXLicense">
+      <soap12:operation soapAction="http://tempuri.org/CreateTypeChangeXLicense" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStatusQuotaLetter">
+      <soap12:operation soapAction="http://tempuri.org/UpdateStatusQuotaLetter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAcuseRecibo">
+      <soap12:operation soapAction="http://tempuri.org/CreateAcuseRecibo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStatusSapService">
+      <soap12:operation soapAction="http://tempuri.org/UpdateStatusSapService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarEstadoTareaDeRecepcion">
+      <soap12:operation soapAction="http://tempuri.org/ActualizarEstadoTareaDeRecepcion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RollBackALicencia">
+      <soap12:operation soapAction="http://tempuri.org/RollBackALicencia" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExplodeMasterPack">
+      <soap12:operation soapAction="http://tempuri.org/ExplodeMasterPack" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterPackByLicense">
+      <soap12:operation soapAction="http://tempuri.org/GetMasterPackByLicense" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDetailMasterPackByLicense">
+      <soap12:operation soapAction="http://tempuri.org/GetDetailMasterPackByLicense" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLocationTargerTask">
+      <soap12:operation soapAction="http://tempuri.org/UpdateLocationTargerTask" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelPickingDetailLine">
+      <soap12:operation soapAction="http://tempuri.org/CancelPickingDetailLine" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterTransReallocForReplenishment">
+      <soap12:operation soapAction="http://tempuri.org/RegisterTransReallocForReplenishment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterTransRelocateForNoImmediatePicking">
+      <soap12:operation soapAction="http://tempuri.org/RegisterTransRelocateForNoImmediatePicking" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateScannedSerialNumberToProcess">
+      <soap12:operation soapAction="http://tempuri.org/UpdateScannedSerialNumberToProcess" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSetActiveSerialNumber">
+      <soap12:operation soapAction="http://tempuri.org/UpdateSetActiveSerialNumber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestedSerialNumberDiscretionalPickingByLicense">
+      <soap12:operation soapAction="http://tempuri.org/GetRequestedSerialNumberDiscretionalPickingByLicense" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RollbackSerialNumbersOnProcess">
+      <soap12:operation soapAction="http://tempuri.org/RollbackSerialNumbersOnProcess" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateScannedReceptionDocument">
+      <soap12:operation soapAction="http://tempuri.org/ValidateScannedReceptionDocument" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessScannedDocument">
+      <soap12:operation soapAction="http://tempuri.org/ProcessScannedDocument" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPickingLabel">
+      <soap12:operation soapAction="http://tempuri.org/InsertPickingLabel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePickingLabel">
+      <soap12:operation soapAction="http://tempuri.org/UpdatePickingLabel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePickingLabel">
+      <soap12:operation soapAction="http://tempuri.org/DeletePickingLabel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateIfPickingLicenseIsAvailable">
+      <soap12:operation soapAction="http://tempuri.org/ValidateIfPickingLicenseIsAvailable" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerMaterialesEnUnbicacionParaUnificar">
+      <soap12:operation soapAction="http://tempuri.org/ObtenerMaterialesEnUnbicacionParaUnificar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnificarLicenciasPorUbicacionYMaterial">
+      <soap12:operation soapAction="http://tempuri.org/UnificarLicenciasPorUbicacionYMaterial" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WMS_Trans">
+    <wsdl:port name="WMS_TransSoap" binding="tns:WMS_TransSoap">
+      <soap:address location="http://localhost:8088/WMSOnePlan_BusinessServices/Trans/WMS_Trans.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WMS_TransSoap12" binding="tns:WMS_TransSoap12">
+      <soap12:address location="http://localhost:8088/WMSOnePlan_BusinessServices/Trans/WMS_Trans.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

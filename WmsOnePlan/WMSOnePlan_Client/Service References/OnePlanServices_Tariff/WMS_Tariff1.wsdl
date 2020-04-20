@@ -1,0 +1,1477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="CreateTypeChange">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pChange" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pDescription" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pWareHouseWeather" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pRegimen" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pComent" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pDayTrip" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pTypeService" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pToMovi" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateTypeChangeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateTypeChangeResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateTypeChange">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pTypeChangeId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pChange" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pDescription" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pWareHouseWeather" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pRegimen" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pComent" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pDayTrip" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pTypeService" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pToMovi" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateTypeChangeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateTypeChangeResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteTypeChange">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pTypeChangeId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteTypeChangeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteTypeChangeResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTypeChange">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTypeChangeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTypeChangeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTypeChangeXRegimenClima">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pRegimen" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pClima" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTypeChangeXRegimenClimaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTypeChangeXRegimenClimaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FillTypeChange">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pTypeChangeId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FillTypeChangeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FillTypeChangeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetServices">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetServicesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetServicesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateTarificadorHeader">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pAcuerdoComercialId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pAcuerdoComercialNombre" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pValidFrom" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pValidTo" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pExpires" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCurrency" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pStatus" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pWarehouseWeather" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pComments" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pRegimen" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pAuthorizer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateTarificadorHeaderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateTarificadorHeaderResult" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="pAcuerdoComercialId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateTarificadorHeader">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pAcuerdoComercialId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pAcuerdoComercialNombre" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pValidFrom" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pValidTo" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pExpires" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCurrency" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pStatus" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLastUpdatedBy" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pWarehouseWeather" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pComments" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pRegimen" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pAuthorizer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateTarificadorHeaderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateTarificadorHeaderResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteTarificadorHeader">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pAcuerdoComercialId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteTarificadorHeaderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteTarificadorHeaderResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTarifarioHeaer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTarifarioHeaerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTarifarioHeaerResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FillTarificadoHeader">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pAcuerdoComercialId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FillTarificadoHeaderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FillTarificadoHeaderResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateTarificadorDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pAcuerdoComercial" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pClientId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pTransName" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pUnitPrice" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCurrency" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pComments" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pBillingFrecuency" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pLimitTo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pUMeasure" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pTxSource" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pTypeMeause" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateTarificadorDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateTarificadorDetailResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateTarificadorDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pAcuerdoComercial" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pClientId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pSerialId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pTransName" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pUnitPrice" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCurrency" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLastUpdatedBy" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pComments" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pBillingFrecuency" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pLimitTo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pUMeasure" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pTxSource" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pTypeMeause" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateTarificadorDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateTarificadorDetailResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TarificadorDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pAcuerdoComercial" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pClientId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pSerialId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TarificadorDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TarificadorDetailResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteTarificadorDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pAcuerdoComercialId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pSerialId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteTarificadorDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteTarificadorDetailResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTarifarioDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pAcuerdoComercial" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTarifarioDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTarifarioDetailResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FillTarificadoDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pAcuerdoComercialId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pClienteId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pSerialId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FillTarificadoDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FillTarificadoDetailResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectMedidas">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pGroup" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectMedidasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectMedidasResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateAcuerdoXCliente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pAcuerdoComercial" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pClientId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateAcuerdoXClienteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateAcuerdoXClienteResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateAllAcuerdoXCliente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pClientId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateAllAcuerdoXClienteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateAllAcuerdoXClienteResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteAcuerdoXCliente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pAcuerdoComercial" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pClientId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteAcuerdoXClienteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteAcuerdoXClienteResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteAllAcuerdoXCliente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pClientId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteAllAcuerdoXClienteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteAllAcuerdoXClienteResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAssignedAcuerdo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pClienteId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pNameTable" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAssignedAcuerdoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAssignedAcuerdoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAviaableAcuerdo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pClienteId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pNameTable" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAviaableAcuerdoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAviaableAcuerdoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAcuerdoCliente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pNameTable" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAcuerdoClienteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAcuerdoClienteResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetReporteAcuerdoCliente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pClienteId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pAcuerdoComercialId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pNameTable" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetReporteAcuerdoClienteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetReporteAcuerdoClienteResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetClientSap">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetClientSapResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetClientSapResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CreateTypeChangeSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateTypeChange" />
+  </wsdl:message>
+  <wsdl:message name="CreateTypeChangeSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateTypeChangeResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateTypeChangeSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateTypeChange" />
+  </wsdl:message>
+  <wsdl:message name="UpdateTypeChangeSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateTypeChangeResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteTypeChangeSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteTypeChange" />
+  </wsdl:message>
+  <wsdl:message name="DeleteTypeChangeSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteTypeChangeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTypeChangeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTypeChange" />
+  </wsdl:message>
+  <wsdl:message name="GetTypeChangeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTypeChangeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTypeChangeXRegimenClimaSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTypeChangeXRegimenClima" />
+  </wsdl:message>
+  <wsdl:message name="GetTypeChangeXRegimenClimaSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTypeChangeXRegimenClimaResponse" />
+  </wsdl:message>
+  <wsdl:message name="FillTypeChangeSoapIn">
+    <wsdl:part name="parameters" element="tns:FillTypeChange" />
+  </wsdl:message>
+  <wsdl:message name="FillTypeChangeSoapOut">
+    <wsdl:part name="parameters" element="tns:FillTypeChangeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetServicesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetServices" />
+  </wsdl:message>
+  <wsdl:message name="GetServicesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetServicesResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateTarificadorHeaderSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateTarificadorHeader" />
+  </wsdl:message>
+  <wsdl:message name="CreateTarificadorHeaderSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateTarificadorHeaderResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateTarificadorHeaderSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateTarificadorHeader" />
+  </wsdl:message>
+  <wsdl:message name="UpdateTarificadorHeaderSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateTarificadorHeaderResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteTarificadorHeaderSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteTarificadorHeader" />
+  </wsdl:message>
+  <wsdl:message name="DeleteTarificadorHeaderSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteTarificadorHeaderResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTarifarioHeaerSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTarifarioHeaer" />
+  </wsdl:message>
+  <wsdl:message name="GetTarifarioHeaerSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTarifarioHeaerResponse" />
+  </wsdl:message>
+  <wsdl:message name="FillTarificadoHeaderSoapIn">
+    <wsdl:part name="parameters" element="tns:FillTarificadoHeader" />
+  </wsdl:message>
+  <wsdl:message name="FillTarificadoHeaderSoapOut">
+    <wsdl:part name="parameters" element="tns:FillTarificadoHeaderResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateTarificadorDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateTarificadorDetail" />
+  </wsdl:message>
+  <wsdl:message name="CreateTarificadorDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateTarificadorDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateTarificadorDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateTarificadorDetail" />
+  </wsdl:message>
+  <wsdl:message name="UpdateTarificadorDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateTarificadorDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="TarificadorDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:TarificadorDetail" />
+  </wsdl:message>
+  <wsdl:message name="TarificadorDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:TarificadorDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteTarificadorDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteTarificadorDetail" />
+  </wsdl:message>
+  <wsdl:message name="DeleteTarificadorDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteTarificadorDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTarifarioDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTarifarioDetail" />
+  </wsdl:message>
+  <wsdl:message name="GetTarifarioDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTarifarioDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="FillTarificadoDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:FillTarificadoDetail" />
+  </wsdl:message>
+  <wsdl:message name="FillTarificadoDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:FillTarificadoDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectMedidasSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectMedidas" />
+  </wsdl:message>
+  <wsdl:message name="SelectMedidasSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectMedidasResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateAcuerdoXClienteSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateAcuerdoXCliente" />
+  </wsdl:message>
+  <wsdl:message name="CreateAcuerdoXClienteSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateAcuerdoXClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateAllAcuerdoXClienteSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateAllAcuerdoXCliente" />
+  </wsdl:message>
+  <wsdl:message name="CreateAllAcuerdoXClienteSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateAllAcuerdoXClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteAcuerdoXClienteSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteAcuerdoXCliente" />
+  </wsdl:message>
+  <wsdl:message name="DeleteAcuerdoXClienteSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteAcuerdoXClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteAllAcuerdoXClienteSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteAllAcuerdoXCliente" />
+  </wsdl:message>
+  <wsdl:message name="DeleteAllAcuerdoXClienteSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteAllAcuerdoXClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAssignedAcuerdoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAssignedAcuerdo" />
+  </wsdl:message>
+  <wsdl:message name="GetAssignedAcuerdoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAssignedAcuerdoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAviaableAcuerdoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAviaableAcuerdo" />
+  </wsdl:message>
+  <wsdl:message name="GetAviaableAcuerdoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAviaableAcuerdoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAcuerdoClienteSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAcuerdoCliente" />
+  </wsdl:message>
+  <wsdl:message name="GetAcuerdoClienteSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAcuerdoClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetReporteAcuerdoClienteSoapIn">
+    <wsdl:part name="parameters" element="tns:GetReporteAcuerdoCliente" />
+  </wsdl:message>
+  <wsdl:message name="GetReporteAcuerdoClienteSoapOut">
+    <wsdl:part name="parameters" element="tns:GetReporteAcuerdoClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetClientSapSoapIn">
+    <wsdl:part name="parameters" element="tns:GetClientSap" />
+  </wsdl:message>
+  <wsdl:message name="GetClientSapSoapOut">
+    <wsdl:part name="parameters" element="tns:GetClientSapResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WMS_TariffSoap">
+    <wsdl:operation name="CreateTypeChange">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Create un Type Change</wsdl:documentation>
+      <wsdl:input message="tns:CreateTypeChangeSoapIn" />
+      <wsdl:output message="tns:CreateTypeChangeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTypeChange">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update un Type Change</wsdl:documentation>
+      <wsdl:input message="tns:UpdateTypeChangeSoapIn" />
+      <wsdl:output message="tns:UpdateTypeChangeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTypeChange">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete un Type Change</wsdl:documentation>
+      <wsdl:input message="tns:DeleteTypeChangeSoapIn" />
+      <wsdl:output message="tns:DeleteTypeChangeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTypeChange">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Type Change</wsdl:documentation>
+      <wsdl:input message="tns:GetTypeChangeSoapIn" />
+      <wsdl:output message="tns:GetTypeChangeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTypeChangeXRegimenClima">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Type Change</wsdl:documentation>
+      <wsdl:input message="tns:GetTypeChangeXRegimenClimaSoapIn" />
+      <wsdl:output message="tns:GetTypeChangeXRegimenClimaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FillTypeChange">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Fill Type Change</wsdl:documentation>
+      <wsdl:input message="tns:FillTypeChangeSoapIn" />
+      <wsdl:output message="tns:FillTypeChangeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetServices">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Services</wsdl:documentation>
+      <wsdl:input message="tns:GetServicesSoapIn" />
+      <wsdl:output message="tns:GetServicesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateTarificadorHeader">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Create un Tarificador Header</wsdl:documentation>
+      <wsdl:input message="tns:CreateTarificadorHeaderSoapIn" />
+      <wsdl:output message="tns:CreateTarificadorHeaderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTarificadorHeader">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update un Tarificador Header</wsdl:documentation>
+      <wsdl:input message="tns:UpdateTarificadorHeaderSoapIn" />
+      <wsdl:output message="tns:UpdateTarificadorHeaderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTarificadorHeader">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete un Tarificador Header</wsdl:documentation>
+      <wsdl:input message="tns:DeleteTarificadorHeaderSoapIn" />
+      <wsdl:output message="tns:DeleteTarificadorHeaderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTarifarioHeaer">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Tarifario Header</wsdl:documentation>
+      <wsdl:input message="tns:GetTarifarioHeaerSoapIn" />
+      <wsdl:output message="tns:GetTarifarioHeaerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FillTarificadoHeader">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Fill Tarificador Header</wsdl:documentation>
+      <wsdl:input message="tns:FillTarificadoHeaderSoapIn" />
+      <wsdl:output message="tns:FillTarificadoHeaderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateTarificadorDetail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Create un Tarificador Detail</wsdl:documentation>
+      <wsdl:input message="tns:CreateTarificadorDetailSoapIn" />
+      <wsdl:output message="tns:CreateTarificadorDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTarificadorDetail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update un Tarificador Detail</wsdl:documentation>
+      <wsdl:input message="tns:UpdateTarificadorDetailSoapIn" />
+      <wsdl:output message="tns:UpdateTarificadorDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TarificadorDetail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">U un Tarificador Detail</wsdl:documentation>
+      <wsdl:input message="tns:TarificadorDetailSoapIn" />
+      <wsdl:output message="tns:TarificadorDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTarificadorDetail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete un Tarificador Detail</wsdl:documentation>
+      <wsdl:input message="tns:DeleteTarificadorDetailSoapIn" />
+      <wsdl:output message="tns:DeleteTarificadorDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTarifarioDetail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Tarifario Detail</wsdl:documentation>
+      <wsdl:input message="tns:GetTarifarioDetailSoapIn" />
+      <wsdl:output message="tns:GetTarifarioDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FillTarificadoDetail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Fill Tarificador Detail</wsdl:documentation>
+      <wsdl:input message="tns:FillTarificadoDetailSoapIn" />
+      <wsdl:output message="tns:FillTarificadoDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectMedidas">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Search specific Clima location</wsdl:documentation>
+      <wsdl:input message="tns:SelectMedidasSoapIn" />
+      <wsdl:output message="tns:SelectMedidasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateAcuerdoXCliente">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Create un Acuerdo por Cliente</wsdl:documentation>
+      <wsdl:input message="tns:CreateAcuerdoXClienteSoapIn" />
+      <wsdl:output message="tns:CreateAcuerdoXClienteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateAllAcuerdoXCliente">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Create all Acuerdo por Cliente</wsdl:documentation>
+      <wsdl:input message="tns:CreateAllAcuerdoXClienteSoapIn" />
+      <wsdl:output message="tns:CreateAllAcuerdoXClienteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAcuerdoXCliente">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete un Acuerdo por Cliente</wsdl:documentation>
+      <wsdl:input message="tns:DeleteAcuerdoXClienteSoapIn" />
+      <wsdl:output message="tns:DeleteAcuerdoXClienteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAllAcuerdoXCliente">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete ALL Acuerdo por Cliente</wsdl:documentation>
+      <wsdl:input message="tns:DeleteAllAcuerdoXClienteSoapIn" />
+      <wsdl:output message="tns:DeleteAllAcuerdoXClienteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAssignedAcuerdo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get AssignedAcuerdo</wsdl:documentation>
+      <wsdl:input message="tns:GetAssignedAcuerdoSoapIn" />
+      <wsdl:output message="tns:GetAssignedAcuerdoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAviaableAcuerdo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get AssignedAcuerdo</wsdl:documentation>
+      <wsdl:input message="tns:GetAviaableAcuerdoSoapIn" />
+      <wsdl:output message="tns:GetAviaableAcuerdoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAcuerdoCliente">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Acuerdo por Cliente</wsdl:documentation>
+      <wsdl:input message="tns:GetAcuerdoClienteSoapIn" />
+      <wsdl:output message="tns:GetAcuerdoClienteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReporteAcuerdoCliente">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Report Acuerdo por Cliente</wsdl:documentation>
+      <wsdl:input message="tns:GetReporteAcuerdoClienteSoapIn" />
+      <wsdl:output message="tns:GetReporteAcuerdoClienteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClientSap">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Clienst Sap</wsdl:documentation>
+      <wsdl:input message="tns:GetClientSapSoapIn" />
+      <wsdl:output message="tns:GetClientSapSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WMS_TariffSoap" type="tns:WMS_TariffSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateTypeChange">
+      <soap:operation soapAction="http://tempuri.org/CreateTypeChange" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTypeChange">
+      <soap:operation soapAction="http://tempuri.org/UpdateTypeChange" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTypeChange">
+      <soap:operation soapAction="http://tempuri.org/DeleteTypeChange" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTypeChange">
+      <soap:operation soapAction="http://tempuri.org/GetTypeChange" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTypeChangeXRegimenClima">
+      <soap:operation soapAction="http://tempuri.org/GetTypeChangeXRegimenClima" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillTypeChange">
+      <soap:operation soapAction="http://tempuri.org/FillTypeChange" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServices">
+      <soap:operation soapAction="http://tempuri.org/GetServices" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateTarificadorHeader">
+      <soap:operation soapAction="http://tempuri.org/CreateTarificadorHeader" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTarificadorHeader">
+      <soap:operation soapAction="http://tempuri.org/UpdateTarificadorHeader" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTarificadorHeader">
+      <soap:operation soapAction="http://tempuri.org/DeleteTarificadorHeader" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTarifarioHeaer">
+      <soap:operation soapAction="http://tempuri.org/GetTarifarioHeaer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillTarificadoHeader">
+      <soap:operation soapAction="http://tempuri.org/FillTarificadoHeader" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateTarificadorDetail">
+      <soap:operation soapAction="http://tempuri.org/CreateTarificadorDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTarificadorDetail">
+      <soap:operation soapAction="http://tempuri.org/UpdateTarificadorDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TarificadorDetail">
+      <soap:operation soapAction="http://tempuri.org/TarificadorDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTarificadorDetail">
+      <soap:operation soapAction="http://tempuri.org/DeleteTarificadorDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTarifarioDetail">
+      <soap:operation soapAction="http://tempuri.org/GetTarifarioDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillTarificadoDetail">
+      <soap:operation soapAction="http://tempuri.org/FillTarificadoDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectMedidas">
+      <soap:operation soapAction="http://tempuri.org/SelectMedidas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAcuerdoXCliente">
+      <soap:operation soapAction="http://tempuri.org/CreateAcuerdoXCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAllAcuerdoXCliente">
+      <soap:operation soapAction="http://tempuri.org/CreateAllAcuerdoXCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAcuerdoXCliente">
+      <soap:operation soapAction="http://tempuri.org/DeleteAcuerdoXCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAllAcuerdoXCliente">
+      <soap:operation soapAction="http://tempuri.org/DeleteAllAcuerdoXCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssignedAcuerdo">
+      <soap:operation soapAction="http://tempuri.org/GetAssignedAcuerdo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAviaableAcuerdo">
+      <soap:operation soapAction="http://tempuri.org/GetAviaableAcuerdo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcuerdoCliente">
+      <soap:operation soapAction="http://tempuri.org/GetAcuerdoCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReporteAcuerdoCliente">
+      <soap:operation soapAction="http://tempuri.org/GetReporteAcuerdoCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientSap">
+      <soap:operation soapAction="http://tempuri.org/GetClientSap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WMS_TariffSoap12" type="tns:WMS_TariffSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateTypeChange">
+      <soap12:operation soapAction="http://tempuri.org/CreateTypeChange" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTypeChange">
+      <soap12:operation soapAction="http://tempuri.org/UpdateTypeChange" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTypeChange">
+      <soap12:operation soapAction="http://tempuri.org/DeleteTypeChange" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTypeChange">
+      <soap12:operation soapAction="http://tempuri.org/GetTypeChange" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTypeChangeXRegimenClima">
+      <soap12:operation soapAction="http://tempuri.org/GetTypeChangeXRegimenClima" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillTypeChange">
+      <soap12:operation soapAction="http://tempuri.org/FillTypeChange" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServices">
+      <soap12:operation soapAction="http://tempuri.org/GetServices" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateTarificadorHeader">
+      <soap12:operation soapAction="http://tempuri.org/CreateTarificadorHeader" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTarificadorHeader">
+      <soap12:operation soapAction="http://tempuri.org/UpdateTarificadorHeader" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTarificadorHeader">
+      <soap12:operation soapAction="http://tempuri.org/DeleteTarificadorHeader" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTarifarioHeaer">
+      <soap12:operation soapAction="http://tempuri.org/GetTarifarioHeaer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillTarificadoHeader">
+      <soap12:operation soapAction="http://tempuri.org/FillTarificadoHeader" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateTarificadorDetail">
+      <soap12:operation soapAction="http://tempuri.org/CreateTarificadorDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTarificadorDetail">
+      <soap12:operation soapAction="http://tempuri.org/UpdateTarificadorDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TarificadorDetail">
+      <soap12:operation soapAction="http://tempuri.org/TarificadorDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTarificadorDetail">
+      <soap12:operation soapAction="http://tempuri.org/DeleteTarificadorDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTarifarioDetail">
+      <soap12:operation soapAction="http://tempuri.org/GetTarifarioDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillTarificadoDetail">
+      <soap12:operation soapAction="http://tempuri.org/FillTarificadoDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectMedidas">
+      <soap12:operation soapAction="http://tempuri.org/SelectMedidas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAcuerdoXCliente">
+      <soap12:operation soapAction="http://tempuri.org/CreateAcuerdoXCliente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAllAcuerdoXCliente">
+      <soap12:operation soapAction="http://tempuri.org/CreateAllAcuerdoXCliente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAcuerdoXCliente">
+      <soap12:operation soapAction="http://tempuri.org/DeleteAcuerdoXCliente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAllAcuerdoXCliente">
+      <soap12:operation soapAction="http://tempuri.org/DeleteAllAcuerdoXCliente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssignedAcuerdo">
+      <soap12:operation soapAction="http://tempuri.org/GetAssignedAcuerdo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAviaableAcuerdo">
+      <soap12:operation soapAction="http://tempuri.org/GetAviaableAcuerdo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcuerdoCliente">
+      <soap12:operation soapAction="http://tempuri.org/GetAcuerdoCliente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReporteAcuerdoCliente">
+      <soap12:operation soapAction="http://tempuri.org/GetReporteAcuerdoCliente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientSap">
+      <soap12:operation soapAction="http://tempuri.org/GetClientSap" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WMS_Tariff">
+    <wsdl:port name="WMS_TariffSoap" binding="tns:WMS_TariffSoap">
+      <soap:address location="http://localhost/WMSOnePlan_BusinessServices/Catalogues/WMS_Tariff.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WMS_TariffSoap12" binding="tns:WMS_TariffSoap12">
+      <soap12:address location="http://localhost/WMSOnePlan_BusinessServices/Catalogues/WMS_Tariff.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AcuerdoComercialPorInventario" targetNamespace="http://tempuri.org/AcuerdoComercialPorInventario.xsd" xmlns:mstns="http://tempuri.org/AcuerdoComercialPorInventario.xsd" xmlns="http://tempuri.org/AcuerdoComercialPorInventario.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AcuerdoComercialPorInventario" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="AcuerdoComercialPorInventario" msprop:Generator_UserDSName="AcuerdoComercialPorInventario">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="AcuerdoComercialPorInventario" msprop:Generator_TableClassName="AcuerdoComercialPorInventarioDataTable" msprop:Generator_TableVarName="tableAcuerdoComercialPorInventario" msprop:Generator_TablePropName="_AcuerdoComercialPorInventario" msprop:Generator_RowDeletingName="AcuerdoComercialPorInventarioRowDeleting" msprop:Generator_RowChangingName="AcuerdoComercialPorInventarioRowChanging" msprop:Generator_RowEvHandlerName="AcuerdoComercialPorInventarioRowChangeEventHandler" msprop:Generator_RowDeletedName="AcuerdoComercialPorInventarioRowDeleted" msprop:Generator_UserTableName="AcuerdoComercialPorInventario" msprop:Generator_RowChangedName="AcuerdoComercialPorInventarioRowChanged" msprop:Generator_RowEvArgName="AcuerdoComercialPorInventarioRowChangeEvent" msprop:Generator_RowClassName="AcuerdoComercialPorInventarioRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CLIENT_CODE" msprop:Generator_ColumnVarNameInTable="columnCLIENT_CODE" msprop:Generator_ColumnPropNameInRow="CLIENT_CODE" msprop:Generator_ColumnPropNameInTable="CLIENT_CODEColumn" msprop:Generator_UserColumnName="CLIENT_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="CLIENT_NAME" msprop:Generator_ColumnVarNameInTable="columnCLIENT_NAME" msprop:Generator_ColumnPropNameInRow="CLIENT_NAME" msprop:Generator_ColumnPropNameInTable="CLIENT_NAMEColumn" msprop:Generator_UserColumnName="CLIENT_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="ACUERDO_COMERCIAL_ID" msprop:Generator_ColumnVarNameInTable="columnACUERDO_COMERCIAL_ID" msprop:Generator_ColumnPropNameInRow="ACUERDO_COMERCIAL_ID" msprop:Generator_ColumnPropNameInTable="ACUERDO_COMERCIAL_IDColumn" msprop:Generator_UserColumnName="ACUERDO_COMERCIAL_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="ACUERDO_COMERCIAL_NOMBRE" msprop:Generator_ColumnVarNameInTable="columnACUERDO_COMERCIAL_NOMBRE" msprop:Generator_ColumnPropNameInRow="ACUERDO_COMERCIAL_NOMBRE" msprop:Generator_ColumnPropNameInTable="ACUERDO_COMERCIAL_NOMBREColumn" msprop:Generator_UserColumnName="ACUERDO_COMERCIAL_NOMBRE" type="xs:string" minOccurs="0" />
+              <xs:element name="REGIMEN" msprop:Generator_ColumnVarNameInTable="columnREGIMEN" msprop:Generator_ColumnPropNameInRow="REGIMEN" msprop:Generator_ColumnPropNameInTable="REGIMENColumn" msprop:Generator_UserColumnName="REGIMEN" type="xs:string" minOccurs="0" />
+              <xs:element name="VALID_FROM" msprop:Generator_ColumnVarNameInTable="columnVALID_FROM" msprop:Generator_ColumnPropNameInRow="VALID_FROM" msprop:Generator_ColumnPropNameInTable="VALID_FROMColumn" msprop:Generator_UserColumnName="VALID_FROM" type="xs:string" minOccurs="0" />
+              <xs:element name="VALID_TO" msprop:Generator_ColumnVarNameInTable="columnVALID_TO" msprop:Generator_ColumnPropNameInRow="VALID_TO" msprop:Generator_ColumnPropNameInTable="VALID_TOColumn" msprop:Generator_UserColumnName="VALID_TO" type="xs:string" minOccurs="0" />
+              <xs:element name="STATUS" msprop:Generator_ColumnVarNameInTable="columnSTATUS" msprop:Generator_ColumnPropNameInRow="STATUS" msprop:Generator_ColumnPropNameInTable="STATUSColumn" msprop:Generator_UserColumnName="STATUS" type="xs:string" minOccurs="0" />
+              <xs:element name="INVENTORY_QTY" msprop:Generator_ColumnVarNameInTable="columnINVENTORY_QTY" msprop:Generator_ColumnPropNameInRow="INVENTORY_QTY" msprop:Generator_ColumnPropNameInTable="INVENTORY_QTYColumn" msprop:Generator_UserColumnName="INVENTORY_QTY" type="xs:string" minOccurs="0" />
+              <xs:element name="VALOR_TOTAL" msprop:Generator_ColumnVarNameInTable="columnVALOR_TOTAL" msprop:Generator_ColumnPropNameInRow="VALOR_TOTAL" msprop:Generator_ColumnPropNameInTable="VALOR_TOTALColumn" msprop:Generator_UserColumnName="VALOR_TOTAL" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

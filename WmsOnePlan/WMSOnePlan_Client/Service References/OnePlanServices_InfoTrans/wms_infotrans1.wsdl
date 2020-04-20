@@ -1,0 +1,3781 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetOccupancyLevel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pDateTo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOccupancyLevelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOccupancyLevelResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckIfPolizaHasReview">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pPoliza" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckIfPolizaHasReviewResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CheckIfPolizaHasReviewResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPickingVsAudit">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pSinceDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pToDate" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPickingVsAuditResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPickingVsAuditResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWavePickingDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pWAVE_ID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWavePickingDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetWavePickingDetailResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAuditLog">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pDateTo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAuditLogResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAuditLogResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAuditLogDispatch">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pDateTo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAuditLogDispatchResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAuditLogDispatchResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetImgAudi">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pCodePoliza" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetImgAudiResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetImgAudiResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAuditLabel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pItemName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAuditLabelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAuditLabelResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAuditSummary">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pCODIGO_POLIZA" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAuditSummaryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAuditSummaryResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAuditView">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pAuditID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pOPTION" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAuditViewResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAuditViewResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMyFirstTask">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pLoginID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pWaveID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCODIGO_POLIZA_SOURCE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pSKU" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMyFirstTaskResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMyFirstTaskResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsContainedOnWave">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pLoginID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLocationID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pWaveID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pSKU" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pLicenseID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCODIGO_POLIZA_SOURCE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pSERVICE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsContainedOnWaveResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IsContainedOnWaveResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMyTasks">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pLoginID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pRegimen" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMyTasksResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMyTasksResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetClient_CommercialAggrements">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pCLIENT_CODE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetClient_CommercialAggrementsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetClient_CommercialAggrementsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetServerDateTime">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetServerDateTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetServerDateTimeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMyLastLicense">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pCODIGO_POLIZA" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLOGIN_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMyLastLicenseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMyLastLicenseResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GET_LICENSE_DETAIL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pLICENSE_ID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GET_LICENSE_DETAILResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GET_LICENSE_DETAILResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_OP_WMS_POLIZA_HEADER">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pCodigoPoliza" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pRegimen" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pTipo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pOperador" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_OP_WMS_POLIZA_HEADERResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_OP_WMS_POLIZA_HEADERResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_OP_WMS_IMAGENES_POLIZA">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pCODIGO_BARRAS_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_OP_WMS_IMAGENES_POLIZAResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_OP_WMS_IMAGENES_POLIZAResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTransBasicView">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="plstUsers" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="plstTransTypes" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pSinceDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pToDate" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTransBasicViewResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTransBasicViewResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTransBasicView_ByClient">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pClientID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pSinceDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pToDate" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTransBasicView_ByClientResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTransBasicView_ByClientResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTasksBasicView">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="plstUsers" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="plstTasksTypes" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pSinceDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pToDate" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTasksBasicViewResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTasksBasicViewResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRepPolizaEgreso">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pCodigoPoliza" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRepPolizaEgresoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRepPolizaEgresoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTasksBasicView_Calendar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="plstUsers" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="plstTasksTypes" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pDates" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTasksBasicView_CalendarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTasksBasicView_CalendarResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDemandBasicView">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="plstUsers" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="plstTasksTypes" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pDateFilterType" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pSinceDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pToDate" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="pDates" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDemandBasicViewResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDemandBasicViewResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDemandBasicView_Calendar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="plstUsers" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="plstTasksTypes" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pDates" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDemandBasicView_CalendarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDemandBasicView_CalendarResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDemandAssignedView">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pSinceDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pToDate" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="pDateFilterType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pDates" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDemandAssignedViewResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDemandAssignedViewResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDemandAssignedView_Calendar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pDates" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDemandAssignedView_CalendarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDemandAssignedView_CalendarResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDemandVoidedView">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pSinceDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pToDate" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="pDateFilterType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pDates" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDemandVoidedViewResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDemandVoidedViewResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDemandPendingPickingView">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pSinceDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pToDate" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="pDateFilterType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pDates" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDemandPendingPickingViewResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDemandPendingPickingViewResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPendingTasks">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pTaskType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLoginID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pBIN" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPendingTasksResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPendingTasksResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPendingTasksByDoc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pERP_DOCUMENT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLoginID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPendingTasksByDocResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPendingTasksByDocResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPendingTasksByDocAndSKU">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pERP_DOCUMENT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pSKU" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLoginID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPendingTasksByDocAndSKUResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPendingTasksByDocAndSKUResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNextERP_DOC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pLinea" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pSector" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pRuta" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNextERP_DOCResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetNextERP_DOCResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetERP_DOC_By_BIN">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pBIN" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetERP_DOC_By_BINResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetERP_DOC_By_BINResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPendingReplenishmentTasks">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pTaskType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLoginID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPendingReplenishmentTasksResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPendingReplenishmentTasksResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPendingRelocationTasks">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pTaskType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLoginID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPendingRelocationTasksResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPendingRelocationTasksResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLastTrans_ByLocation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pWarehouseParent" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLocation" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pTopRows" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLastTrans_ByLocationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLastTrans_ByLocationResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCurrentDocOnDispatchInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pLine" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLogin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCurrentDocOnDispatchInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCurrentDocOnDispatchInfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPerc_DocOnDispatch">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pLine" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLogin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPerc_DocOnDispatchResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetPerc_DocOnDispatchResult" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AllowMaterialScann_DocOnDispatch">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pLine" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pMaterialID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pScannedQty" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLogin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AllowMaterialScann_DocOnDispatchResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AllowMaterialScann_DocOnDispatchResult" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTransDet_DocOnDispatch">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pLine" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLogin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTransDet_DocOnDispatchResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTransDet_DocOnDispatchResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetReplenishmentProdsBasicView">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetReplenishmentProdsBasicViewResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetReplenishmentProdsBasicViewResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetReplenishmentByUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pUser" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pWarehouse" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pTaskType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetReplenishmentByUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetReplenishmentByUserResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTransactionalBINInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pBinID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTransactionalBINInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTransactionalBINInfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTransactionalDOCInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pDocNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTransactionalDOCInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTransactionalDOCInfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPending_Docs">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pLinea" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pSector" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pRuta" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPending_DocsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPending_DocsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDocsReportBasicView">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pSinceDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pToDate" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="pDateFilterType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pDates" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDocsReportBasicViewResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDocsReportBasicViewResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLineBalancingBySector">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pSector" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pRuta" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pIncluyeAsignados" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLineBalancingBySectorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLineBalancingBySectorResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDemandBySizeForBalancing">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pSector" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pRuta" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pIncluyeAsignados" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pTamano" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDemandBySizeForBalancingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDemandBySizeForBalancingResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetClientRouteInfoByDoc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pDoc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetClientRouteInfoByDocResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetClientRouteInfoByDocResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNextPendingBIN">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pLogin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNextPendingBINResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetNextPendingBINResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPendingTasksByDoc_Kiosk">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pERP_DOCUMENT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLoginID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPendingTasksByDoc_KioskResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPendingTasksByDoc_KioskResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDocumentInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pDoc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDocumentInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDocumentInfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetConsolidationByDay">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pDate" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLoginID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetConsolidationByDayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetConsolidationByDayResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRutasPorSector">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pSector" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRutasPorSectorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRutasPorSectorResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLocationsByDocument">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pDoc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLocationsByDocumentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLocationsByDocumentResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFinishedDispatchAudit">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFinishedDispatchAuditResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFinishedDispatchAuditResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPassByPolizaAvailable">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPassByPolizaAvailableResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPassByPolizaAvailableResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPassByPolizaAssigned">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pPassId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPassByPolizaAssignedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPassByPolizaAssignedResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GET_LOCATION">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pLocation" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GET_LOCATIONResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GET_LOCATIONResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GET_POLIZA_ASSIGNEDTO">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pOperador" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pPolizaOpcion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pRegimen" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GET_POLIZA_ASSIGNEDTOResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GET_POLIZA_ASSIGNEDTOResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GET_TYPE_CHARGE_MOVIL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pLicenseId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GET_TYPE_CHARGE_MOVILResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GET_TYPE_CHARGE_MOVILResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchSkuAuditoriaDesp">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pBarcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pPoliza" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchSkuAuditoriaDespResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchSkuAuditoriaDespResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTaskIngGeneral">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pCodigoPoliza" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTaskIngGeneralResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTaskIngGeneralResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetQuotaLatter">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pStatus" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pStatus2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pStatus3" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pFechaInicio" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pFechaFinal" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetQuotaLatterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetQuotaLatterResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetQuotaLatterGarita">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pDocId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetQuotaLatterGaritaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetQuotaLatterGaritaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDocPolizaEnc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pDocId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCodigoPoliza" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pNumeroOrden" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDocPolizaEncResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDocPolizaEncResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLineasAvailable">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pDocId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLineasAvailableResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLineasAvailableResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAcuseRecibo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pFechaInicio" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pFechaFinal" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAcuseReciboResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAcuseReciboResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetOccupancyLevelSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOccupancyLevel" />
+  </wsdl:message>
+  <wsdl:message name="GetOccupancyLevelSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOccupancyLevelResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckIfPolizaHasReviewSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckIfPolizaHasReview" />
+  </wsdl:message>
+  <wsdl:message name="CheckIfPolizaHasReviewSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckIfPolizaHasReviewResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPickingVsAuditSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPickingVsAudit" />
+  </wsdl:message>
+  <wsdl:message name="GetPickingVsAuditSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPickingVsAuditResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetWavePickingDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:GetWavePickingDetail" />
+  </wsdl:message>
+  <wsdl:message name="GetWavePickingDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:GetWavePickingDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAuditLogSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAuditLog" />
+  </wsdl:message>
+  <wsdl:message name="GetAuditLogSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAuditLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAuditLogDispatchSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAuditLogDispatch" />
+  </wsdl:message>
+  <wsdl:message name="GetAuditLogDispatchSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAuditLogDispatchResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetImgAudiSoapIn">
+    <wsdl:part name="parameters" element="tns:GetImgAudi" />
+  </wsdl:message>
+  <wsdl:message name="GetImgAudiSoapOut">
+    <wsdl:part name="parameters" element="tns:GetImgAudiResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAuditLabelSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAuditLabel" />
+  </wsdl:message>
+  <wsdl:message name="GetAuditLabelSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAuditLabelResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAuditSummarySoapIn">
+    <wsdl:part name="parameters" element="tns:GetAuditSummary" />
+  </wsdl:message>
+  <wsdl:message name="GetAuditSummarySoapOut">
+    <wsdl:part name="parameters" element="tns:GetAuditSummaryResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAuditViewSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAuditView" />
+  </wsdl:message>
+  <wsdl:message name="GetAuditViewSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAuditViewResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMyFirstTaskSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMyFirstTask" />
+  </wsdl:message>
+  <wsdl:message name="GetMyFirstTaskSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMyFirstTaskResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsContainedOnWaveSoapIn">
+    <wsdl:part name="parameters" element="tns:IsContainedOnWave" />
+  </wsdl:message>
+  <wsdl:message name="IsContainedOnWaveSoapOut">
+    <wsdl:part name="parameters" element="tns:IsContainedOnWaveResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMyTasksSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMyTasks" />
+  </wsdl:message>
+  <wsdl:message name="GetMyTasksSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMyTasksResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetClient_CommercialAggrementsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetClient_CommercialAggrements" />
+  </wsdl:message>
+  <wsdl:message name="GetClient_CommercialAggrementsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetClient_CommercialAggrementsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetServerDateTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetServerDateTime" />
+  </wsdl:message>
+  <wsdl:message name="GetServerDateTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetServerDateTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMyLastLicenseSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMyLastLicense" />
+  </wsdl:message>
+  <wsdl:message name="GetMyLastLicenseSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMyLastLicenseResponse" />
+  </wsdl:message>
+  <wsdl:message name="GET_LICENSE_DETAILSoapIn">
+    <wsdl:part name="parameters" element="tns:GET_LICENSE_DETAIL" />
+  </wsdl:message>
+  <wsdl:message name="GET_LICENSE_DETAILSoapOut">
+    <wsdl:part name="parameters" element="tns:GET_LICENSE_DETAILResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_OP_WMS_POLIZA_HEADERSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_OP_WMS_POLIZA_HEADER" />
+  </wsdl:message>
+  <wsdl:message name="Get_OP_WMS_POLIZA_HEADERSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_OP_WMS_POLIZA_HEADERResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_OP_WMS_IMAGENES_POLIZASoapIn">
+    <wsdl:part name="parameters" element="tns:Get_OP_WMS_IMAGENES_POLIZA" />
+  </wsdl:message>
+  <wsdl:message name="Get_OP_WMS_IMAGENES_POLIZASoapOut">
+    <wsdl:part name="parameters" element="tns:Get_OP_WMS_IMAGENES_POLIZAResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTransBasicViewSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTransBasicView" />
+  </wsdl:message>
+  <wsdl:message name="GetTransBasicViewSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTransBasicViewResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTransBasicView_ByClientSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTransBasicView_ByClient" />
+  </wsdl:message>
+  <wsdl:message name="GetTransBasicView_ByClientSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTransBasicView_ByClientResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTasksBasicViewSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTasksBasicView" />
+  </wsdl:message>
+  <wsdl:message name="GetTasksBasicViewSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTasksBasicViewResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRepPolizaEgresoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRepPolizaEgreso" />
+  </wsdl:message>
+  <wsdl:message name="GetRepPolizaEgresoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRepPolizaEgresoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTasksBasicView_CalendarSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTasksBasicView_Calendar" />
+  </wsdl:message>
+  <wsdl:message name="GetTasksBasicView_CalendarSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTasksBasicView_CalendarResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDemandBasicViewSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDemandBasicView" />
+  </wsdl:message>
+  <wsdl:message name="GetDemandBasicViewSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDemandBasicViewResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDemandBasicView_CalendarSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDemandBasicView_Calendar" />
+  </wsdl:message>
+  <wsdl:message name="GetDemandBasicView_CalendarSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDemandBasicView_CalendarResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDemandAssignedViewSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDemandAssignedView" />
+  </wsdl:message>
+  <wsdl:message name="GetDemandAssignedViewSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDemandAssignedViewResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDemandAssignedView_CalendarSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDemandAssignedView_Calendar" />
+  </wsdl:message>
+  <wsdl:message name="GetDemandAssignedView_CalendarSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDemandAssignedView_CalendarResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDemandVoidedViewSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDemandVoidedView" />
+  </wsdl:message>
+  <wsdl:message name="GetDemandVoidedViewSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDemandVoidedViewResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDemandPendingPickingViewSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDemandPendingPickingView" />
+  </wsdl:message>
+  <wsdl:message name="GetDemandPendingPickingViewSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDemandPendingPickingViewResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPendingTasksSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPendingTasks" />
+  </wsdl:message>
+  <wsdl:message name="GetPendingTasksSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPendingTasksResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPendingTasksByDocSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPendingTasksByDoc" />
+  </wsdl:message>
+  <wsdl:message name="GetPendingTasksByDocSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPendingTasksByDocResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPendingTasksByDocAndSKUSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPendingTasksByDocAndSKU" />
+  </wsdl:message>
+  <wsdl:message name="GetPendingTasksByDocAndSKUSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPendingTasksByDocAndSKUResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetNextERP_DOCSoapIn">
+    <wsdl:part name="parameters" element="tns:GetNextERP_DOC" />
+  </wsdl:message>
+  <wsdl:message name="GetNextERP_DOCSoapOut">
+    <wsdl:part name="parameters" element="tns:GetNextERP_DOCResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetERP_DOC_By_BINSoapIn">
+    <wsdl:part name="parameters" element="tns:GetERP_DOC_By_BIN" />
+  </wsdl:message>
+  <wsdl:message name="GetERP_DOC_By_BINSoapOut">
+    <wsdl:part name="parameters" element="tns:GetERP_DOC_By_BINResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPendingReplenishmentTasksSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPendingReplenishmentTasks" />
+  </wsdl:message>
+  <wsdl:message name="GetPendingReplenishmentTasksSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPendingReplenishmentTasksResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPendingRelocationTasksSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPendingRelocationTasks" />
+  </wsdl:message>
+  <wsdl:message name="GetPendingRelocationTasksSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPendingRelocationTasksResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLastTrans_ByLocationSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLastTrans_ByLocation" />
+  </wsdl:message>
+  <wsdl:message name="GetLastTrans_ByLocationSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLastTrans_ByLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCurrentDocOnDispatchInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCurrentDocOnDispatchInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetCurrentDocOnDispatchInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCurrentDocOnDispatchInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPerc_DocOnDispatchSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPerc_DocOnDispatch" />
+  </wsdl:message>
+  <wsdl:message name="GetPerc_DocOnDispatchSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPerc_DocOnDispatchResponse" />
+  </wsdl:message>
+  <wsdl:message name="AllowMaterialScann_DocOnDispatchSoapIn">
+    <wsdl:part name="parameters" element="tns:AllowMaterialScann_DocOnDispatch" />
+  </wsdl:message>
+  <wsdl:message name="AllowMaterialScann_DocOnDispatchSoapOut">
+    <wsdl:part name="parameters" element="tns:AllowMaterialScann_DocOnDispatchResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTransDet_DocOnDispatchSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTransDet_DocOnDispatch" />
+  </wsdl:message>
+  <wsdl:message name="GetTransDet_DocOnDispatchSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTransDet_DocOnDispatchResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetReplenishmentProdsBasicViewSoapIn">
+    <wsdl:part name="parameters" element="tns:GetReplenishmentProdsBasicView" />
+  </wsdl:message>
+  <wsdl:message name="GetReplenishmentProdsBasicViewSoapOut">
+    <wsdl:part name="parameters" element="tns:GetReplenishmentProdsBasicViewResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetReplenishmentByUserSoapIn">
+    <wsdl:part name="parameters" element="tns:GetReplenishmentByUser" />
+  </wsdl:message>
+  <wsdl:message name="GetReplenishmentByUserSoapOut">
+    <wsdl:part name="parameters" element="tns:GetReplenishmentByUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTransactionalBINInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTransactionalBINInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetTransactionalBINInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTransactionalBINInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTransactionalDOCInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTransactionalDOCInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetTransactionalDOCInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTransactionalDOCInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPending_DocsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPending_Docs" />
+  </wsdl:message>
+  <wsdl:message name="GetPending_DocsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPending_DocsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDocsReportBasicViewSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDocsReportBasicView" />
+  </wsdl:message>
+  <wsdl:message name="GetDocsReportBasicViewSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDocsReportBasicViewResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLineBalancingBySectorSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLineBalancingBySector" />
+  </wsdl:message>
+  <wsdl:message name="GetLineBalancingBySectorSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLineBalancingBySectorResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDemandBySizeForBalancingSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDemandBySizeForBalancing" />
+  </wsdl:message>
+  <wsdl:message name="GetDemandBySizeForBalancingSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDemandBySizeForBalancingResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetClientRouteInfoByDocSoapIn">
+    <wsdl:part name="parameters" element="tns:GetClientRouteInfoByDoc" />
+  </wsdl:message>
+  <wsdl:message name="GetClientRouteInfoByDocSoapOut">
+    <wsdl:part name="parameters" element="tns:GetClientRouteInfoByDocResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetNextPendingBINSoapIn">
+    <wsdl:part name="parameters" element="tns:GetNextPendingBIN" />
+  </wsdl:message>
+  <wsdl:message name="GetNextPendingBINSoapOut">
+    <wsdl:part name="parameters" element="tns:GetNextPendingBINResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPendingTasksByDoc_KioskSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPendingTasksByDoc_Kiosk" />
+  </wsdl:message>
+  <wsdl:message name="GetPendingTasksByDoc_KioskSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPendingTasksByDoc_KioskResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDocumentInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDocumentInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetDocumentInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDocumentInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetConsolidationByDaySoapIn">
+    <wsdl:part name="parameters" element="tns:GetConsolidationByDay" />
+  </wsdl:message>
+  <wsdl:message name="GetConsolidationByDaySoapOut">
+    <wsdl:part name="parameters" element="tns:GetConsolidationByDayResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRutasPorSectorSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRutasPorSector" />
+  </wsdl:message>
+  <wsdl:message name="GetRutasPorSectorSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRutasPorSectorResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLocationsByDocumentSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLocationsByDocument" />
+  </wsdl:message>
+  <wsdl:message name="GetLocationsByDocumentSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLocationsByDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFinishedDispatchAuditSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFinishedDispatchAudit" />
+  </wsdl:message>
+  <wsdl:message name="GetFinishedDispatchAuditSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFinishedDispatchAuditResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPassByPolizaAvailableSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPassByPolizaAvailable" />
+  </wsdl:message>
+  <wsdl:message name="GetPassByPolizaAvailableSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPassByPolizaAvailableResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPassByPolizaAssignedSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPassByPolizaAssigned" />
+  </wsdl:message>
+  <wsdl:message name="GetPassByPolizaAssignedSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPassByPolizaAssignedResponse" />
+  </wsdl:message>
+  <wsdl:message name="GET_LOCATIONSoapIn">
+    <wsdl:part name="parameters" element="tns:GET_LOCATION" />
+  </wsdl:message>
+  <wsdl:message name="GET_LOCATIONSoapOut">
+    <wsdl:part name="parameters" element="tns:GET_LOCATIONResponse" />
+  </wsdl:message>
+  <wsdl:message name="GET_POLIZA_ASSIGNEDTOSoapIn">
+    <wsdl:part name="parameters" element="tns:GET_POLIZA_ASSIGNEDTO" />
+  </wsdl:message>
+  <wsdl:message name="GET_POLIZA_ASSIGNEDTOSoapOut">
+    <wsdl:part name="parameters" element="tns:GET_POLIZA_ASSIGNEDTOResponse" />
+  </wsdl:message>
+  <wsdl:message name="GET_TYPE_CHARGE_MOVILSoapIn">
+    <wsdl:part name="parameters" element="tns:GET_TYPE_CHARGE_MOVIL" />
+  </wsdl:message>
+  <wsdl:message name="GET_TYPE_CHARGE_MOVILSoapOut">
+    <wsdl:part name="parameters" element="tns:GET_TYPE_CHARGE_MOVILResponse" />
+  </wsdl:message>
+  <wsdl:message name="SearchSkuAuditoriaDespSoapIn">
+    <wsdl:part name="parameters" element="tns:SearchSkuAuditoriaDesp" />
+  </wsdl:message>
+  <wsdl:message name="SearchSkuAuditoriaDespSoapOut">
+    <wsdl:part name="parameters" element="tns:SearchSkuAuditoriaDespResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTaskIngGeneralSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTaskIngGeneral" />
+  </wsdl:message>
+  <wsdl:message name="GetTaskIngGeneralSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTaskIngGeneralResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetQuotaLatterSoapIn">
+    <wsdl:part name="parameters" element="tns:GetQuotaLatter" />
+  </wsdl:message>
+  <wsdl:message name="GetQuotaLatterSoapOut">
+    <wsdl:part name="parameters" element="tns:GetQuotaLatterResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetQuotaLatterGaritaSoapIn">
+    <wsdl:part name="parameters" element="tns:GetQuotaLatterGarita" />
+  </wsdl:message>
+  <wsdl:message name="GetQuotaLatterGaritaSoapOut">
+    <wsdl:part name="parameters" element="tns:GetQuotaLatterGaritaResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDocPolizaEncSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDocPolizaEnc" />
+  </wsdl:message>
+  <wsdl:message name="GetDocPolizaEncSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDocPolizaEncResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLineasAvailableSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLineasAvailable" />
+  </wsdl:message>
+  <wsdl:message name="GetLineasAvailableSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLineasAvailableResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAcuseReciboSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAcuseRecibo" />
+  </wsdl:message>
+  <wsdl:message name="GetAcuseReciboSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAcuseReciboResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WMS_InfoTransSoap">
+    <wsdl:operation name="GetOccupancyLevel">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Occupancy Level</wsdl:documentation>
+      <wsdl:input message="tns:GetOccupancyLevelSoapIn" />
+      <wsdl:output message="tns:GetOccupancyLevelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckIfPolizaHasReview">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">get occupancy level</wsdl:documentation>
+      <wsdl:input message="tns:CheckIfPolizaHasReviewSoapIn" />
+      <wsdl:output message="tns:CheckIfPolizaHasReviewSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPickingVsAudit">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">determine if the scanned location is contained on a given wave and sku </wsdl:documentation>
+      <wsdl:input message="tns:GetPickingVsAuditSoapIn" />
+      <wsdl:output message="tns:GetPickingVsAuditSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWavePickingDetail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">determine if the scanned location is contained on a given wave and sku </wsdl:documentation>
+      <wsdl:input message="tns:GetWavePickingDetailSoapIn" />
+      <wsdl:output message="tns:GetWavePickingDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAuditLog">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get my first task from a given wave and sku </wsdl:documentation>
+      <wsdl:input message="tns:GetAuditLogSoapIn" />
+      <wsdl:output message="tns:GetAuditLogSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAuditLogDispatch">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get my first task from a given wave and sku </wsdl:documentation>
+      <wsdl:input message="tns:GetAuditLogDispatchSoapIn" />
+      <wsdl:output message="tns:GetAuditLogDispatchSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetImgAudi">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get images audit </wsdl:documentation>
+      <wsdl:input message="tns:GetImgAudiSoapIn" />
+      <wsdl:output message="tns:GetImgAudiSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAuditLabel">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get my first task from a given wave and sku </wsdl:documentation>
+      <wsdl:input message="tns:GetAuditLabelSoapIn" />
+      <wsdl:output message="tns:GetAuditLabelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAuditSummary">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get my first task from a given wave and sku </wsdl:documentation>
+      <wsdl:input message="tns:GetAuditSummarySoapIn" />
+      <wsdl:output message="tns:GetAuditSummarySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAuditView">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get my first task from a given wave and sku </wsdl:documentation>
+      <wsdl:input message="tns:GetAuditViewSoapIn" />
+      <wsdl:output message="tns:GetAuditViewSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMyFirstTask">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get my first task from a given wave and sku </wsdl:documentation>
+      <wsdl:input message="tns:GetMyFirstTaskSoapIn" />
+      <wsdl:output message="tns:GetMyFirstTaskSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsContainedOnWave">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">determine if the scanned location is contained on a given wave and sku </wsdl:documentation>
+      <wsdl:input message="tns:IsContainedOnWaveSoapIn" />
+      <wsdl:output message="tns:IsContainedOnWaveSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMyTasks">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get my TODAY completed review tasks</wsdl:documentation>
+      <wsdl:input message="tns:GetMyTasksSoapIn" />
+      <wsdl:output message="tns:GetMyTasksSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClient_CommercialAggrements">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get GetMyLastLicense</wsdl:documentation>
+      <wsdl:input message="tns:GetClient_CommercialAggrementsSoapIn" />
+      <wsdl:output message="tns:GetClient_CommercialAggrementsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetServerDateTime">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get GetMyLastLicense</wsdl:documentation>
+      <wsdl:input message="tns:GetServerDateTimeSoapIn" />
+      <wsdl:output message="tns:GetServerDateTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMyLastLicense">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get GetMyLastLicense</wsdl:documentation>
+      <wsdl:input message="tns:GetMyLastLicenseSoapIn" />
+      <wsdl:output message="tns:GetMyLastLicenseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GET_LICENSE_DETAIL">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Inventory by License</wsdl:documentation>
+      <wsdl:input message="tns:GET_LICENSE_DETAILSoapIn" />
+      <wsdl:output message="tns:GET_LICENSE_DETAILSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_OP_WMS_POLIZA_HEADER">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Inventory by Warehouse</wsdl:documentation>
+      <wsdl:input message="tns:Get_OP_WMS_POLIZA_HEADERSoapIn" />
+      <wsdl:output message="tns:Get_OP_WMS_POLIZA_HEADERSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_OP_WMS_IMAGENES_POLIZA">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Inventory by Warehouse</wsdl:documentation>
+      <wsdl:input message="tns:Get_OP_WMS_IMAGENES_POLIZASoapIn" />
+      <wsdl:output message="tns:Get_OP_WMS_IMAGENES_POLIZASoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTransBasicView">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Inventory by Warehouse</wsdl:documentation>
+      <wsdl:input message="tns:GetTransBasicViewSoapIn" />
+      <wsdl:output message="tns:GetTransBasicViewSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTransBasicView_ByClient">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Inventory by client code in a date range</wsdl:documentation>
+      <wsdl:input message="tns:GetTransBasicView_ByClientSoapIn" />
+      <wsdl:output message="tns:GetTransBasicView_ByClientSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTasksBasicView">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Tasks</wsdl:documentation>
+      <wsdl:input message="tns:GetTasksBasicViewSoapIn" />
+      <wsdl:output message="tns:GetTasksBasicViewSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRepPolizaEgreso">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Tasks</wsdl:documentation>
+      <wsdl:input message="tns:GetRepPolizaEgresoSoapIn" />
+      <wsdl:output message="tns:GetRepPolizaEgresoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTasksBasicView_Calendar">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Tasks by specific dates</wsdl:documentation>
+      <wsdl:input message="tns:GetTasksBasicView_CalendarSoapIn" />
+      <wsdl:output message="tns:GetTasksBasicView_CalendarSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDemandBasicView">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Pending Demand from SAP</wsdl:documentation>
+      <wsdl:input message="tns:GetDemandBasicViewSoapIn" />
+      <wsdl:output message="tns:GetDemandBasicViewSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDemandBasicView_Calendar">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Tasks by specific dates</wsdl:documentation>
+      <wsdl:input message="tns:GetDemandBasicView_CalendarSoapIn" />
+      <wsdl:output message="tns:GetDemandBasicView_CalendarSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDemandAssignedView">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Assigned Demand from SAP to WMS</wsdl:documentation>
+      <wsdl:input message="tns:GetDemandAssignedViewSoapIn" />
+      <wsdl:output message="tns:GetDemandAssignedViewSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDemandAssignedView_Calendar">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Tasks by specific dates</wsdl:documentation>
+      <wsdl:input message="tns:GetDemandAssignedView_CalendarSoapIn" />
+      <wsdl:output message="tns:GetDemandAssignedView_CalendarSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDemandVoidedView">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Demand Voided in WMS</wsdl:documentation>
+      <wsdl:input message="tns:GetDemandVoidedViewSoapIn" />
+      <wsdl:output message="tns:GetDemandVoidedViewSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDemandPendingPickingView">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Pending Picking Demand in WMS</wsdl:documentation>
+      <wsdl:input message="tns:GetDemandPendingPickingViewSoapIn" />
+      <wsdl:output message="tns:GetDemandPendingPickingViewSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPendingTasks">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get pending Tasks to specific user</wsdl:documentation>
+      <wsdl:input message="tns:GetPendingTasksSoapIn" />
+      <wsdl:output message="tns:GetPendingTasksSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPendingTasksByDoc">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get pending Tasks to specific user</wsdl:documentation>
+      <wsdl:input message="tns:GetPendingTasksByDocSoapIn" />
+      <wsdl:output message="tns:GetPendingTasksByDocSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPendingTasksByDocAndSKU">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get pending Tasks to specific user</wsdl:documentation>
+      <wsdl:input message="tns:GetPendingTasksByDocAndSKUSoapIn" />
+      <wsdl:output message="tns:GetPendingTasksByDocAndSKUSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNextERP_DOC">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get next PO to be processed</wsdl:documentation>
+      <wsdl:input message="tns:GetNextERP_DOCSoapIn" />
+      <wsdl:output message="tns:GetNextERP_DOCSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetERP_DOC_By_BIN">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get ERP_DOCUMENT related with the BIN</wsdl:documentation>
+      <wsdl:input message="tns:GetERP_DOC_By_BINSoapIn" />
+      <wsdl:output message="tns:GetERP_DOC_By_BINSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPendingReplenishmentTasks">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get pending Replenishment Tasks to specific user</wsdl:documentation>
+      <wsdl:input message="tns:GetPendingReplenishmentTasksSoapIn" />
+      <wsdl:output message="tns:GetPendingReplenishmentTasksSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPendingRelocationTasks">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get pending Relocation Tasks to specific user</wsdl:documentation>
+      <wsdl:input message="tns:GetPendingRelocationTasksSoapIn" />
+      <wsdl:output message="tns:GetPendingRelocationTasksSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLastTrans_ByLocation">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Last 10 trans for a specific location</wsdl:documentation>
+      <wsdl:input message="tns:GetLastTrans_ByLocationSoapIn" />
+      <wsdl:output message="tns:GetLastTrans_ByLocationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentDocOnDispatchInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Current Doc on Dispatch</wsdl:documentation>
+      <wsdl:input message="tns:GetCurrentDocOnDispatchInfoSoapIn" />
+      <wsdl:output message="tns:GetCurrentDocOnDispatchInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPerc_DocOnDispatch">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Current Doc on Dispatch</wsdl:documentation>
+      <wsdl:input message="tns:GetPerc_DocOnDispatchSoapIn" />
+      <wsdl:output message="tns:GetPerc_DocOnDispatchSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AllowMaterialScann_DocOnDispatch">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Current Doc on Dispatch</wsdl:documentation>
+      <wsdl:input message="tns:AllowMaterialScann_DocOnDispatchSoapIn" />
+      <wsdl:output message="tns:AllowMaterialScann_DocOnDispatchSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTransDet_DocOnDispatch">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Current Doc on Dispatch</wsdl:documentation>
+      <wsdl:input message="tns:GetTransDet_DocOnDispatchSoapIn" />
+      <wsdl:output message="tns:GetTransDet_DocOnDispatchSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReplenishmentProdsBasicView">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Products ready for Replenishment</wsdl:documentation>
+      <wsdl:input message="tns:GetReplenishmentProdsBasicViewSoapIn" />
+      <wsdl:output message="tns:GetReplenishmentProdsBasicViewSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReplenishmentByUser">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Products ready for Replenishment by User Assigned to a location</wsdl:documentation>
+      <wsdl:input message="tns:GetReplenishmentByUserSoapIn" />
+      <wsdl:output message="tns:GetReplenishmentByUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactionalBINInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Transactional Info of a BIN</wsdl:documentation>
+      <wsdl:input message="tns:GetTransactionalBINInfoSoapIn" />
+      <wsdl:output message="tns:GetTransactionalBINInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactionalDOCInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Transactional Info of a Document</wsdl:documentation>
+      <wsdl:input message="tns:GetTransactionalDOCInfoSoapIn" />
+      <wsdl:output message="tns:GetTransactionalDOCInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPending_Docs">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get qty pending pedidos</wsdl:documentation>
+      <wsdl:input message="tns:GetPending_DocsSoapIn" />
+      <wsdl:output message="tns:GetPending_DocsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDocsReportBasicView">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Received vs Consolidated Docs Report </wsdl:documentation>
+      <wsdl:input message="tns:GetDocsReportBasicViewSoapIn" />
+      <wsdl:output message="tns:GetDocsReportBasicViewSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLineBalancingBySector">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Balanceo de Pedidos </wsdl:documentation>
+      <wsdl:input message="tns:GetLineBalancingBySectorSoapIn" />
+      <wsdl:output message="tns:GetLineBalancingBySectorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDemandBySizeForBalancing">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Balanceo de Pedidos Por Tamano</wsdl:documentation>
+      <wsdl:input message="tns:GetDemandBySizeForBalancingSoapIn" />
+      <wsdl:output message="tns:GetDemandBySizeForBalancingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClientRouteInfoByDoc">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Current Doc on Dispatch</wsdl:documentation>
+      <wsdl:input message="tns:GetClientRouteInfoByDocSoapIn" />
+      <wsdl:output message="tns:GetClientRouteInfoByDocSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNextPendingBIN">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Current Doc on Dispatch</wsdl:documentation>
+      <wsdl:input message="tns:GetNextPendingBINSoapIn" />
+      <wsdl:output message="tns:GetNextPendingBINSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPendingTasksByDoc_Kiosk">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get pending Tasks to specific user</wsdl:documentation>
+      <wsdl:input message="tns:GetPendingTasksByDoc_KioskSoapIn" />
+      <wsdl:output message="tns:GetPendingTasksByDoc_KioskSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDocumentInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get info of Document</wsdl:documentation>
+      <wsdl:input message="tns:GetDocumentInfoSoapIn" />
+      <wsdl:output message="tns:GetDocumentInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetConsolidationByDay">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Daily Consolidtion</wsdl:documentation>
+      <wsdl:input message="tns:GetConsolidationByDaySoapIn" />
+      <wsdl:output message="tns:GetConsolidationByDaySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRutasPorSector">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get RUTAS POR SECTOR</wsdl:documentation>
+      <wsdl:input message="tns:GetRutasPorSectorSoapIn" />
+      <wsdl:output message="tns:GetRutasPorSectorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationsByDocument">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Locations by document in line</wsdl:documentation>
+      <wsdl:input message="tns:GetLocationsByDocumentSoapIn" />
+      <wsdl:output message="tns:GetLocationsByDocumentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFinishedDispatchAudit">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get all finished dispatch control </wsdl:documentation>
+      <wsdl:input message="tns:GetFinishedDispatchAuditSoapIn" />
+      <wsdl:output message="tns:GetFinishedDispatchAuditSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPassByPolizaAvailable">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get all pass by poliza available </wsdl:documentation>
+      <wsdl:input message="tns:GetPassByPolizaAvailableSoapIn" />
+      <wsdl:output message="tns:GetPassByPolizaAvailableSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPassByPolizaAssigned">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get all pass by poliza assigned </wsdl:documentation>
+      <wsdl:input message="tns:GetPassByPolizaAssignedSoapIn" />
+      <wsdl:output message="tns:GetPassByPolizaAssignedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GET_LOCATION">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Lotacion</wsdl:documentation>
+      <wsdl:input message="tns:GET_LOCATIONSoapIn" />
+      <wsdl:output message="tns:GET_LOCATIONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GET_POLIZA_ASSIGNEDTO">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Poliza_Assignedto</wsdl:documentation>
+      <wsdl:input message="tns:GET_POLIZA_ASSIGNEDTOSoapIn" />
+      <wsdl:output message="tns:GET_POLIZA_ASSIGNEDTOSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GET_TYPE_CHARGE_MOVIL">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Poliza_Assignedto</wsdl:documentation>
+      <wsdl:input message="tns:GET_TYPE_CHARGE_MOVILSoapIn" />
+      <wsdl:output message="tns:GET_TYPE_CHARGE_MOVILSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchSkuAuditoriaDesp">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Poliza_Assignedto</wsdl:documentation>
+      <wsdl:input message="tns:SearchSkuAuditoriaDespSoapIn" />
+      <wsdl:output message="tns:SearchSkuAuditoriaDespSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTaskIngGeneral">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Tasks Ingreso General</wsdl:documentation>
+      <wsdl:input message="tns:GetTaskIngGeneralSoapIn" />
+      <wsdl:output message="tns:GetTaskIngGeneralSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetQuotaLatter">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get QuotaLatter</wsdl:documentation>
+      <wsdl:input message="tns:GetQuotaLatterSoapIn" />
+      <wsdl:output message="tns:GetQuotaLatterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetQuotaLatterGarita">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get QuotaLatter por Garita</wsdl:documentation>
+      <wsdl:input message="tns:GetQuotaLatterGaritaSoapIn" />
+      <wsdl:output message="tns:GetQuotaLatterGaritaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDocPolizaEnc">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Doc, Poliza and Num Order por Garita</wsdl:documentation>
+      <wsdl:input message="tns:GetDocPolizaEncSoapIn" />
+      <wsdl:output message="tns:GetDocPolizaEncSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLineasAvailable">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get QuotaLatter por Garita</wsdl:documentation>
+      <wsdl:input message="tns:GetLineasAvailableSoapIn" />
+      <wsdl:output message="tns:GetLineasAvailableSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAcuseRecibo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get AcuseRecibo</wsdl:documentation>
+      <wsdl:input message="tns:GetAcuseReciboSoapIn" />
+      <wsdl:output message="tns:GetAcuseReciboSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WMS_InfoTransSoap" type="tns:WMS_InfoTransSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetOccupancyLevel">
+      <soap:operation soapAction="http://tempuri.org/GetOccupancyLevel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckIfPolizaHasReview">
+      <soap:operation soapAction="http://tempuri.org/CheckIfPolizaHasReview" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPickingVsAudit">
+      <soap:operation soapAction="http://tempuri.org/GetPickingVsAudit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWavePickingDetail">
+      <soap:operation soapAction="http://tempuri.org/GetWavePickingDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAuditLog">
+      <soap:operation soapAction="http://tempuri.org/GetAuditLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAuditLogDispatch">
+      <soap:operation soapAction="http://tempuri.org/GetAuditLogDispatch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetImgAudi">
+      <soap:operation soapAction="http://tempuri.org/GetImgAudi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAuditLabel">
+      <soap:operation soapAction="http://tempuri.org/GetAuditLabel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAuditSummary">
+      <soap:operation soapAction="http://tempuri.org/GetAuditSummary" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAuditView">
+      <soap:operation soapAction="http://tempuri.org/GetAuditView" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMyFirstTask">
+      <soap:operation soapAction="http://tempuri.org/GetMyFirstTask" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsContainedOnWave">
+      <soap:operation soapAction="http://tempuri.org/IsContainedOnWave" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMyTasks">
+      <soap:operation soapAction="http://tempuri.org/GetMyTasks" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClient_CommercialAggrements">
+      <soap:operation soapAction="http://tempuri.org/GetClient_CommercialAggrements" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServerDateTime">
+      <soap:operation soapAction="http://tempuri.org/GetServerDateTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMyLastLicense">
+      <soap:operation soapAction="http://tempuri.org/GetMyLastLicense" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GET_LICENSE_DETAIL">
+      <soap:operation soapAction="http://tempuri.org/GET_LICENSE_DETAIL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_OP_WMS_POLIZA_HEADER">
+      <soap:operation soapAction="http://tempuri.org/Get_OP_WMS_POLIZA_HEADER" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_OP_WMS_IMAGENES_POLIZA">
+      <soap:operation soapAction="http://tempuri.org/Get_OP_WMS_IMAGENES_POLIZA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransBasicView">
+      <soap:operation soapAction="http://tempuri.org/GetTransBasicView" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransBasicView_ByClient">
+      <soap:operation soapAction="http://tempuri.org/GetTransBasicView_ByClient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTasksBasicView">
+      <soap:operation soapAction="http://tempuri.org/GetTasksBasicView" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRepPolizaEgreso">
+      <soap:operation soapAction="http://tempuri.org/GetRepPolizaEgreso" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTasksBasicView_Calendar">
+      <soap:operation soapAction="http://tempuri.org/GetTasksBasicView_Calendar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDemandBasicView">
+      <soap:operation soapAction="http://tempuri.org/GetDemandBasicView" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDemandBasicView_Calendar">
+      <soap:operation soapAction="http://tempuri.org/GetDemandBasicView_Calendar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDemandAssignedView">
+      <soap:operation soapAction="http://tempuri.org/GetDemandAssignedView" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDemandAssignedView_Calendar">
+      <soap:operation soapAction="http://tempuri.org/GetDemandAssignedView_Calendar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDemandVoidedView">
+      <soap:operation soapAction="http://tempuri.org/GetDemandVoidedView" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDemandPendingPickingView">
+      <soap:operation soapAction="http://tempuri.org/GetDemandPendingPickingView" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPendingTasks">
+      <soap:operation soapAction="http://tempuri.org/GetPendingTasks" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPendingTasksByDoc">
+      <soap:operation soapAction="http://tempuri.org/GetPendingTasksByDoc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPendingTasksByDocAndSKU">
+      <soap:operation soapAction="http://tempuri.org/GetPendingTasksByDocAndSKU" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNextERP_DOC">
+      <soap:operation soapAction="http://tempuri.org/GetNextERP_DOC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetERP_DOC_By_BIN">
+      <soap:operation soapAction="http://tempuri.org/GetERP_DOC_By_BIN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPendingReplenishmentTasks">
+      <soap:operation soapAction="http://tempuri.org/GetPendingReplenishmentTasks" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPendingRelocationTasks">
+      <soap:operation soapAction="http://tempuri.org/GetPendingRelocationTasks" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastTrans_ByLocation">
+      <soap:operation soapAction="http://tempuri.org/GetLastTrans_ByLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentDocOnDispatchInfo">
+      <soap:operation soapAction="http://tempuri.org/GetCurrentDocOnDispatchInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPerc_DocOnDispatch">
+      <soap:operation soapAction="http://tempuri.org/GetPerc_DocOnDispatch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AllowMaterialScann_DocOnDispatch">
+      <soap:operation soapAction="http://tempuri.org/AllowMaterialScann_DocOnDispatch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransDet_DocOnDispatch">
+      <soap:operation soapAction="http://tempuri.org/GetTransDet_DocOnDispatch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReplenishmentProdsBasicView">
+      <soap:operation soapAction="http://tempuri.org/GetReplenishmentProdsBasicView" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReplenishmentByUser">
+      <soap:operation soapAction="http://tempuri.org/GetReplenishmentByUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactionalBINInfo">
+      <soap:operation soapAction="http://tempuri.org/GetTransactionalBINInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactionalDOCInfo">
+      <soap:operation soapAction="http://tempuri.org/GetTransactionalDOCInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPending_Docs">
+      <soap:operation soapAction="http://tempuri.org/GetPending_Docs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDocsReportBasicView">
+      <soap:operation soapAction="http://tempuri.org/GetDocsReportBasicView" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLineBalancingBySector">
+      <soap:operation soapAction="http://tempuri.org/GetLineBalancingBySector" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDemandBySizeForBalancing">
+      <soap:operation soapAction="http://tempuri.org/GetDemandBySizeForBalancing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientRouteInfoByDoc">
+      <soap:operation soapAction="http://tempuri.org/GetClientRouteInfoByDoc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNextPendingBIN">
+      <soap:operation soapAction="http://tempuri.org/GetNextPendingBIN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPendingTasksByDoc_Kiosk">
+      <soap:operation soapAction="http://tempuri.org/GetPendingTasksByDoc_Kiosk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDocumentInfo">
+      <soap:operation soapAction="http://tempuri.org/GetDocumentInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetConsolidationByDay">
+      <soap:operation soapAction="http://tempuri.org/GetConsolidationByDay" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRutasPorSector">
+      <soap:operation soapAction="http://tempuri.org/GetRutasPorSector" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationsByDocument">
+      <soap:operation soapAction="http://tempuri.org/GetLocationsByDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFinishedDispatchAudit">
+      <soap:operation soapAction="http://tempuri.org/GetFinishedDispatchAudit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPassByPolizaAvailable">
+      <soap:operation soapAction="http://tempuri.org/GetPassByPolizaAvailable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPassByPolizaAssigned">
+      <soap:operation soapAction="http://tempuri.org/GetPassByPolizaAssigned" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GET_LOCATION">
+      <soap:operation soapAction="http://tempuri.org/GET_LOCATION" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GET_POLIZA_ASSIGNEDTO">
+      <soap:operation soapAction="http://tempuri.org/GET_POLIZA_ASSIGNEDTO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GET_TYPE_CHARGE_MOVIL">
+      <soap:operation soapAction="http://tempuri.org/GET_TYPE_CHARGE_MOVIL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchSkuAuditoriaDesp">
+      <soap:operation soapAction="http://tempuri.org/SearchSkuAuditoriaDesp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTaskIngGeneral">
+      <soap:operation soapAction="http://tempuri.org/GetTaskIngGeneral" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQuotaLatter">
+      <soap:operation soapAction="http://tempuri.org/GetQuotaLatter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQuotaLatterGarita">
+      <soap:operation soapAction="http://tempuri.org/GetQuotaLatterGarita" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDocPolizaEnc">
+      <soap:operation soapAction="http://tempuri.org/GetDocPolizaEnc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLineasAvailable">
+      <soap:operation soapAction="http://tempuri.org/GetLineasAvailable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcuseRecibo">
+      <soap:operation soapAction="http://tempuri.org/GetAcuseRecibo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WMS_InfoTransSoap12" type="tns:WMS_InfoTransSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetOccupancyLevel">
+      <soap12:operation soapAction="http://tempuri.org/GetOccupancyLevel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckIfPolizaHasReview">
+      <soap12:operation soapAction="http://tempuri.org/CheckIfPolizaHasReview" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPickingVsAudit">
+      <soap12:operation soapAction="http://tempuri.org/GetPickingVsAudit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWavePickingDetail">
+      <soap12:operation soapAction="http://tempuri.org/GetWavePickingDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAuditLog">
+      <soap12:operation soapAction="http://tempuri.org/GetAuditLog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAuditLogDispatch">
+      <soap12:operation soapAction="http://tempuri.org/GetAuditLogDispatch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetImgAudi">
+      <soap12:operation soapAction="http://tempuri.org/GetImgAudi" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAuditLabel">
+      <soap12:operation soapAction="http://tempuri.org/GetAuditLabel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAuditSummary">
+      <soap12:operation soapAction="http://tempuri.org/GetAuditSummary" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAuditView">
+      <soap12:operation soapAction="http://tempuri.org/GetAuditView" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMyFirstTask">
+      <soap12:operation soapAction="http://tempuri.org/GetMyFirstTask" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsContainedOnWave">
+      <soap12:operation soapAction="http://tempuri.org/IsContainedOnWave" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMyTasks">
+      <soap12:operation soapAction="http://tempuri.org/GetMyTasks" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClient_CommercialAggrements">
+      <soap12:operation soapAction="http://tempuri.org/GetClient_CommercialAggrements" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServerDateTime">
+      <soap12:operation soapAction="http://tempuri.org/GetServerDateTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMyLastLicense">
+      <soap12:operation soapAction="http://tempuri.org/GetMyLastLicense" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GET_LICENSE_DETAIL">
+      <soap12:operation soapAction="http://tempuri.org/GET_LICENSE_DETAIL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_OP_WMS_POLIZA_HEADER">
+      <soap12:operation soapAction="http://tempuri.org/Get_OP_WMS_POLIZA_HEADER" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_OP_WMS_IMAGENES_POLIZA">
+      <soap12:operation soapAction="http://tempuri.org/Get_OP_WMS_IMAGENES_POLIZA" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransBasicView">
+      <soap12:operation soapAction="http://tempuri.org/GetTransBasicView" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransBasicView_ByClient">
+      <soap12:operation soapAction="http://tempuri.org/GetTransBasicView_ByClient" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTasksBasicView">
+      <soap12:operation soapAction="http://tempuri.org/GetTasksBasicView" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRepPolizaEgreso">
+      <soap12:operation soapAction="http://tempuri.org/GetRepPolizaEgreso" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTasksBasicView_Calendar">
+      <soap12:operation soapAction="http://tempuri.org/GetTasksBasicView_Calendar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDemandBasicView">
+      <soap12:operation soapAction="http://tempuri.org/GetDemandBasicView" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDemandBasicView_Calendar">
+      <soap12:operation soapAction="http://tempuri.org/GetDemandBasicView_Calendar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDemandAssignedView">
+      <soap12:operation soapAction="http://tempuri.org/GetDemandAssignedView" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDemandAssignedView_Calendar">
+      <soap12:operation soapAction="http://tempuri.org/GetDemandAssignedView_Calendar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDemandVoidedView">
+      <soap12:operation soapAction="http://tempuri.org/GetDemandVoidedView" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDemandPendingPickingView">
+      <soap12:operation soapAction="http://tempuri.org/GetDemandPendingPickingView" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPendingTasks">
+      <soap12:operation soapAction="http://tempuri.org/GetPendingTasks" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPendingTasksByDoc">
+      <soap12:operation soapAction="http://tempuri.org/GetPendingTasksByDoc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPendingTasksByDocAndSKU">
+      <soap12:operation soapAction="http://tempuri.org/GetPendingTasksByDocAndSKU" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNextERP_DOC">
+      <soap12:operation soapAction="http://tempuri.org/GetNextERP_DOC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetERP_DOC_By_BIN">
+      <soap12:operation soapAction="http://tempuri.org/GetERP_DOC_By_BIN" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPendingReplenishmentTasks">
+      <soap12:operation soapAction="http://tempuri.org/GetPendingReplenishmentTasks" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPendingRelocationTasks">
+      <soap12:operation soapAction="http://tempuri.org/GetPendingRelocationTasks" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastTrans_ByLocation">
+      <soap12:operation soapAction="http://tempuri.org/GetLastTrans_ByLocation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentDocOnDispatchInfo">
+      <soap12:operation soapAction="http://tempuri.org/GetCurrentDocOnDispatchInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPerc_DocOnDispatch">
+      <soap12:operation soapAction="http://tempuri.org/GetPerc_DocOnDispatch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AllowMaterialScann_DocOnDispatch">
+      <soap12:operation soapAction="http://tempuri.org/AllowMaterialScann_DocOnDispatch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransDet_DocOnDispatch">
+      <soap12:operation soapAction="http://tempuri.org/GetTransDet_DocOnDispatch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReplenishmentProdsBasicView">
+      <soap12:operation soapAction="http://tempuri.org/GetReplenishmentProdsBasicView" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReplenishmentByUser">
+      <soap12:operation soapAction="http://tempuri.org/GetReplenishmentByUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactionalBINInfo">
+      <soap12:operation soapAction="http://tempuri.org/GetTransactionalBINInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactionalDOCInfo">
+      <soap12:operation soapAction="http://tempuri.org/GetTransactionalDOCInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPending_Docs">
+      <soap12:operation soapAction="http://tempuri.org/GetPending_Docs" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDocsReportBasicView">
+      <soap12:operation soapAction="http://tempuri.org/GetDocsReportBasicView" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLineBalancingBySector">
+      <soap12:operation soapAction="http://tempuri.org/GetLineBalancingBySector" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDemandBySizeForBalancing">
+      <soap12:operation soapAction="http://tempuri.org/GetDemandBySizeForBalancing" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientRouteInfoByDoc">
+      <soap12:operation soapAction="http://tempuri.org/GetClientRouteInfoByDoc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNextPendingBIN">
+      <soap12:operation soapAction="http://tempuri.org/GetNextPendingBIN" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPendingTasksByDoc_Kiosk">
+      <soap12:operation soapAction="http://tempuri.org/GetPendingTasksByDoc_Kiosk" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDocumentInfo">
+      <soap12:operation soapAction="http://tempuri.org/GetDocumentInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetConsolidationByDay">
+      <soap12:operation soapAction="http://tempuri.org/GetConsolidationByDay" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRutasPorSector">
+      <soap12:operation soapAction="http://tempuri.org/GetRutasPorSector" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationsByDocument">
+      <soap12:operation soapAction="http://tempuri.org/GetLocationsByDocument" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFinishedDispatchAudit">
+      <soap12:operation soapAction="http://tempuri.org/GetFinishedDispatchAudit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPassByPolizaAvailable">
+      <soap12:operation soapAction="http://tempuri.org/GetPassByPolizaAvailable" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPassByPolizaAssigned">
+      <soap12:operation soapAction="http://tempuri.org/GetPassByPolizaAssigned" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GET_LOCATION">
+      <soap12:operation soapAction="http://tempuri.org/GET_LOCATION" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GET_POLIZA_ASSIGNEDTO">
+      <soap12:operation soapAction="http://tempuri.org/GET_POLIZA_ASSIGNEDTO" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GET_TYPE_CHARGE_MOVIL">
+      <soap12:operation soapAction="http://tempuri.org/GET_TYPE_CHARGE_MOVIL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchSkuAuditoriaDesp">
+      <soap12:operation soapAction="http://tempuri.org/SearchSkuAuditoriaDesp" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTaskIngGeneral">
+      <soap12:operation soapAction="http://tempuri.org/GetTaskIngGeneral" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQuotaLatter">
+      <soap12:operation soapAction="http://tempuri.org/GetQuotaLatter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQuotaLatterGarita">
+      <soap12:operation soapAction="http://tempuri.org/GetQuotaLatterGarita" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDocPolizaEnc">
+      <soap12:operation soapAction="http://tempuri.org/GetDocPolizaEnc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLineasAvailable">
+      <soap12:operation soapAction="http://tempuri.org/GetLineasAvailable" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcuseRecibo">
+      <soap12:operation soapAction="http://tempuri.org/GetAcuseRecibo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WMS_InfoTrans">
+    <wsdl:port name="WMS_InfoTransSoap" binding="tns:WMS_InfoTransSoap">
+      <soap:address location="http://localhost/Alsersa/WMSOnePlan_BusinessServices/info/wms_infotrans.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WMS_InfoTransSoap12" binding="tns:WMS_InfoTransSoap12">
+      <soap12:address location="http://localhost/Alsersa/WMSOnePlan_BusinessServices/info/wms_infotrans.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,1272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetParamTypes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetParamTypesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetParamTypesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetParamsChilds">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pParamType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetParamsChildsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetParamsChildsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetParam_PartialSearch">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pParam_Partial_Caption" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetParam_PartialSearchResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetParam_PartialSearchResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetParam_ByParamID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pParamID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetParam_ByParamIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetParam_ByParamIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOccupancyLeveles">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOccupancyLevelesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOccupancyLevelesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetParam_ByParamKey">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pParamType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pParamGroup" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pParamId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetParam_ByParamKeyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetParam_ByParamKeyResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateParams">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pPARAM_TYPE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pPARAM_GROUP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pPARAM_GROUP_CAPTION" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pPARAM_NAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pPARAM_CAPTION" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pNUMERIC_VALUE" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pMONEY_VALUE" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="pTEXT_VALUE" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pDATE_VALUE" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pRANGE_NUM_START" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pRANGE_NUM_END" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pRANGE_DATE_START" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pRANGE_DATE_END" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="pSPARE1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pSPARE2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pDECIMAL_VALUE" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="pSPARE3" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pSPARE4" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pSPARE5" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCOLOR" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateParamsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateParamsResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateParams">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pPARAM_TYPE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pPARAM_GROUP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pPARAM_GROUP_CAPTION" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pPARAM_NAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pPARAM_CAPTION" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pNUMERIC_VALUE" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pMONEY_VALUE" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="pTEXT_VALUE" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pDATE_VALUE" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pRANGE_NUM_START" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pRANGE_NUM_END" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pRANGE_DATE_START" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pRANGE_DATE_END" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="pSPARE1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pSPARE2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pDECIMAL_VALUE" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="pSPARE3" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pSPARE4" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pSPARE5" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCOLOR" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateParamsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateParamsResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteParam">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pPARAM_TYPE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pPARAM_GROUP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pPARAM_NAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteParamResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteParamResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateGridLayouts">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pGRID_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLOGIN_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLAYOUT_XML" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLAYOUT_XML_APPERANCE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateGridLayoutsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateGridLayoutsResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetGridLayout">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pGRID_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLOGIN_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLAYOUT_XML" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetGridLayoutResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SetGridLayoutResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchByKeyGridLayouts">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pGRID_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLOGIN_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchByKeyGridLayoutsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchByKeyGridLayoutsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchLineBalancingBySize">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pSIZE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchLineBalancingBySizeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchLineBalancingBySizeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchPartialBalancingBySize">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pSIZE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pSIZE_DESCRIPTION" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchPartialBalancingBySizeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchPartialBalancingBySizeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateLineBalancing">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pSIZE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pSIZE_DESCRIPTION" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pINITIAL_RANGE" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="pFINAL_RANGE" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="pLINE_1_PERCENT" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="pLINE_2_PERCENT" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="pLINE_3_PERCENT" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateLineBalancingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateLineBalancingResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateLineBalancing">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pSIZE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pSIZE_DESCRIPTION" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pINITIAL_RANGE" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="pFINAL_RANGE" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="pLINE_1_PERCENT" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="pLINE_2_PERCENT" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="pLINE_3_PERCENT" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateLineBalancingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateLineBalancingResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteLineBalancing">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pSIZE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteLineBalancingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteLineBalancingResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLabelsSetup">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pLabelID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLabelsSetupResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLabelsSetupResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsLabelID_In_Line">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pLabelID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLineID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsLabelID_In_LineResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IsLabelID_In_LineResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RelateLabel_Line">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pLabelID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLineID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pClearAllRelationship" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RelateLabel_LineResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RelateLabel_LineResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateLabelSetup">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pLabelID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pZPLCommands" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLoginID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateLabelSetupResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateLabelSetupResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLabelID_In_Line">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pLineID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLabelID_In_LineResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLabelID_In_LineResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHHButtonSettings">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pModel" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pManufacturer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHHButtonSettingsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetHHButtonSettingsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetParameter">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="groupId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameterId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetParameterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetParameterResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetParamTypesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetParamTypes" />
+  </wsdl:message>
+  <wsdl:message name="GetParamTypesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetParamTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetParamsChildsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetParamsChilds" />
+  </wsdl:message>
+  <wsdl:message name="GetParamsChildsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetParamsChildsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetParam_PartialSearchSoapIn">
+    <wsdl:part name="parameters" element="tns:GetParam_PartialSearch" />
+  </wsdl:message>
+  <wsdl:message name="GetParam_PartialSearchSoapOut">
+    <wsdl:part name="parameters" element="tns:GetParam_PartialSearchResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetParam_ByParamIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetParam_ByParamID" />
+  </wsdl:message>
+  <wsdl:message name="GetParam_ByParamIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetParam_ByParamIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOccupancyLevelesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOccupancyLeveles" />
+  </wsdl:message>
+  <wsdl:message name="GetOccupancyLevelesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOccupancyLevelesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetParam_ByParamKeySoapIn">
+    <wsdl:part name="parameters" element="tns:GetParam_ByParamKey" />
+  </wsdl:message>
+  <wsdl:message name="GetParam_ByParamKeySoapOut">
+    <wsdl:part name="parameters" element="tns:GetParam_ByParamKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateParamsSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateParams" />
+  </wsdl:message>
+  <wsdl:message name="CreateParamsSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateParamsResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateParamsSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateParams" />
+  </wsdl:message>
+  <wsdl:message name="UpdateParamsSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateParamsResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteParamSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteParam" />
+  </wsdl:message>
+  <wsdl:message name="DeleteParamSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteParamResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateGridLayoutsSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateGridLayouts" />
+  </wsdl:message>
+  <wsdl:message name="CreateGridLayoutsSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateGridLayoutsResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetGridLayoutSoapIn">
+    <wsdl:part name="parameters" element="tns:SetGridLayout" />
+  </wsdl:message>
+  <wsdl:message name="SetGridLayoutSoapOut">
+    <wsdl:part name="parameters" element="tns:SetGridLayoutResponse" />
+  </wsdl:message>
+  <wsdl:message name="SearchByKeyGridLayoutsSoapIn">
+    <wsdl:part name="parameters" element="tns:SearchByKeyGridLayouts" />
+  </wsdl:message>
+  <wsdl:message name="SearchByKeyGridLayoutsSoapOut">
+    <wsdl:part name="parameters" element="tns:SearchByKeyGridLayoutsResponse" />
+  </wsdl:message>
+  <wsdl:message name="SearchLineBalancingBySizeSoapIn">
+    <wsdl:part name="parameters" element="tns:SearchLineBalancingBySize" />
+  </wsdl:message>
+  <wsdl:message name="SearchLineBalancingBySizeSoapOut">
+    <wsdl:part name="parameters" element="tns:SearchLineBalancingBySizeResponse" />
+  </wsdl:message>
+  <wsdl:message name="SearchPartialBalancingBySizeSoapIn">
+    <wsdl:part name="parameters" element="tns:SearchPartialBalancingBySize" />
+  </wsdl:message>
+  <wsdl:message name="SearchPartialBalancingBySizeSoapOut">
+    <wsdl:part name="parameters" element="tns:SearchPartialBalancingBySizeResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateLineBalancingSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateLineBalancing" />
+  </wsdl:message>
+  <wsdl:message name="CreateLineBalancingSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateLineBalancingResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateLineBalancingSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateLineBalancing" />
+  </wsdl:message>
+  <wsdl:message name="UpdateLineBalancingSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateLineBalancingResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteLineBalancingSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteLineBalancing" />
+  </wsdl:message>
+  <wsdl:message name="DeleteLineBalancingSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteLineBalancingResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLabelsSetupSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLabelsSetup" />
+  </wsdl:message>
+  <wsdl:message name="GetLabelsSetupSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLabelsSetupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsLabelID_In_LineSoapIn">
+    <wsdl:part name="parameters" element="tns:IsLabelID_In_Line" />
+  </wsdl:message>
+  <wsdl:message name="IsLabelID_In_LineSoapOut">
+    <wsdl:part name="parameters" element="tns:IsLabelID_In_LineResponse" />
+  </wsdl:message>
+  <wsdl:message name="RelateLabel_LineSoapIn">
+    <wsdl:part name="parameters" element="tns:RelateLabel_Line" />
+  </wsdl:message>
+  <wsdl:message name="RelateLabel_LineSoapOut">
+    <wsdl:part name="parameters" element="tns:RelateLabel_LineResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateLabelSetupSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateLabelSetup" />
+  </wsdl:message>
+  <wsdl:message name="UpdateLabelSetupSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateLabelSetupResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLabelID_In_LineSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLabelID_In_Line" />
+  </wsdl:message>
+  <wsdl:message name="GetLabelID_In_LineSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLabelID_In_LineResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetHHButtonSettingsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetHHButtonSettings" />
+  </wsdl:message>
+  <wsdl:message name="GetHHButtonSettingsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetHHButtonSettingsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetParameterSoapIn">
+    <wsdl:part name="parameters" element="tns:GetParameter" />
+  </wsdl:message>
+  <wsdl:message name="GetParameterSoapOut">
+    <wsdl:part name="parameters" element="tns:GetParameterResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WMS_SettingsSoap">
+    <wsdl:operation name="GetParamTypes">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns a dataset with the different params type from OP_WMS_CONFIGURATIONS table</wsdl:documentation>
+      <wsdl:input message="tns:GetParamTypesSoapIn" />
+      <wsdl:output message="tns:GetParamTypesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetParamsChilds">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns a dataset with the different params type from OP_WMS_CONFIGURATIONS table</wsdl:documentation>
+      <wsdl:input message="tns:GetParamsChildsSoapIn" />
+      <wsdl:output message="tns:GetParamsChildsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetParam_PartialSearch">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns a dataset with parameters based on a partial search for caption fields</wsdl:documentation>
+      <wsdl:input message="tns:GetParam_PartialSearchSoapIn" />
+      <wsdl:output message="tns:GetParam_PartialSearchSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetParam_ByParamID">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns a dataset based on an specific parameter ID</wsdl:documentation>
+      <wsdl:input message="tns:GetParam_ByParamIDSoapIn" />
+      <wsdl:output message="tns:GetParam_ByParamIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOccupancyLeveles">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns occupancy level pre-defined values</wsdl:documentation>
+      <wsdl:input message="tns:GetOccupancyLevelesSoapIn" />
+      <wsdl:output message="tns:GetOccupancyLevelesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetParam_ByParamKey">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns a dataset based on the parameters table key (type, group, id)</wsdl:documentation>
+      <wsdl:input message="tns:GetParam_ByParamKeySoapIn" />
+      <wsdl:output message="tns:GetParam_ByParamKeySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateParams">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Create parameters registry</wsdl:documentation>
+      <wsdl:input message="tns:CreateParamsSoapIn" />
+      <wsdl:output message="tns:CreateParamsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateParams">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update parameters based on key row</wsdl:documentation>
+      <wsdl:input message="tns:UpdateParamsSoapIn" />
+      <wsdl:output message="tns:UpdateParamsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteParam">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update parameters based on key row</wsdl:documentation>
+      <wsdl:input message="tns:DeleteParamSoapIn" />
+      <wsdl:output message="tns:DeleteParamSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateGridLayouts">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Create a GridLayout</wsdl:documentation>
+      <wsdl:input message="tns:CreateGridLayoutsSoapIn" />
+      <wsdl:output message="tns:CreateGridLayoutsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetGridLayout">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update a Grid Layout</wsdl:documentation>
+      <wsdl:input message="tns:SetGridLayoutSoapIn" />
+      <wsdl:output message="tns:SetGridLayoutSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchByKeyGridLayouts">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get a GridLayout</wsdl:documentation>
+      <wsdl:input message="tns:SearchByKeyGridLayoutsSoapIn" />
+      <wsdl:output message="tns:SearchByKeyGridLayoutsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchLineBalancingBySize">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get a Line Balancing Size</wsdl:documentation>
+      <wsdl:input message="tns:SearchLineBalancingBySizeSoapIn" />
+      <wsdl:output message="tns:SearchLineBalancingBySizeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchPartialBalancingBySize">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Line Balancing Sizes by partial search</wsdl:documentation>
+      <wsdl:input message="tns:SearchPartialBalancingBySizeSoapIn" />
+      <wsdl:output message="tns:SearchPartialBalancingBySizeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateLineBalancing">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Create a Line Balancing Size</wsdl:documentation>
+      <wsdl:input message="tns:CreateLineBalancingSoapIn" />
+      <wsdl:output message="tns:CreateLineBalancingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLineBalancing">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update a Line Balancing Size</wsdl:documentation>
+      <wsdl:input message="tns:UpdateLineBalancingSoapIn" />
+      <wsdl:output message="tns:UpdateLineBalancingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteLineBalancing">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete a Line Balancing Size</wsdl:documentation>
+      <wsdl:input message="tns:DeleteLineBalancingSoapIn" />
+      <wsdl:output message="tns:DeleteLineBalancingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLabelsSetup">
+      <wsdl:input message="tns:GetLabelsSetupSoapIn" />
+      <wsdl:output message="tns:GetLabelsSetupSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsLabelID_In_Line">
+      <wsdl:input message="tns:IsLabelID_In_LineSoapIn" />
+      <wsdl:output message="tns:IsLabelID_In_LineSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RelateLabel_Line">
+      <wsdl:input message="tns:RelateLabel_LineSoapIn" />
+      <wsdl:output message="tns:RelateLabel_LineSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLabelSetup">
+      <wsdl:input message="tns:UpdateLabelSetupSoapIn" />
+      <wsdl:output message="tns:UpdateLabelSetupSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLabelID_In_Line">
+      <wsdl:input message="tns:GetLabelID_In_LineSoapIn" />
+      <wsdl:output message="tns:GetLabelID_In_LineSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHHButtonSettings">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get handheld button configuration.</wsdl:documentation>
+      <wsdl:input message="tns:GetHHButtonSettingsSoapIn" />
+      <wsdl:output message="tns:GetHHButtonSettingsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetParameter">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtiene un paramtro.</wsdl:documentation>
+      <wsdl:input message="tns:GetParameterSoapIn" />
+      <wsdl:output message="tns:GetParameterSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WMS_SettingsSoap" type="tns:WMS_SettingsSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetParamTypes">
+      <soap:operation soapAction="http://tempuri.org/GetParamTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetParamsChilds">
+      <soap:operation soapAction="http://tempuri.org/GetParamsChilds" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetParam_PartialSearch">
+      <soap:operation soapAction="http://tempuri.org/GetParam_PartialSearch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetParam_ByParamID">
+      <soap:operation soapAction="http://tempuri.org/GetParam_ByParamID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOccupancyLeveles">
+      <soap:operation soapAction="http://tempuri.org/GetOccupancyLeveles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetParam_ByParamKey">
+      <soap:operation soapAction="http://tempuri.org/GetParam_ByParamKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateParams">
+      <soap:operation soapAction="http://tempuri.org/CreateParams" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateParams">
+      <soap:operation soapAction="http://tempuri.org/UpdateParams" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteParam">
+      <soap:operation soapAction="http://tempuri.org/DeleteParam" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateGridLayouts">
+      <soap:operation soapAction="http://tempuri.org/CreateGridLayouts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetGridLayout">
+      <soap:operation soapAction="http://tempuri.org/SetGridLayout" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchByKeyGridLayouts">
+      <soap:operation soapAction="http://tempuri.org/SearchByKeyGridLayouts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchLineBalancingBySize">
+      <soap:operation soapAction="http://tempuri.org/SearchLineBalancingBySize" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchPartialBalancingBySize">
+      <soap:operation soapAction="http://tempuri.org/SearchPartialBalancingBySize" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateLineBalancing">
+      <soap:operation soapAction="http://tempuri.org/CreateLineBalancing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLineBalancing">
+      <soap:operation soapAction="http://tempuri.org/UpdateLineBalancing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteLineBalancing">
+      <soap:operation soapAction="http://tempuri.org/DeleteLineBalancing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLabelsSetup">
+      <soap:operation soapAction="http://tempuri.org/GetLabelsSetup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsLabelID_In_Line">
+      <soap:operation soapAction="http://tempuri.org/IsLabelID_In_Line" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RelateLabel_Line">
+      <soap:operation soapAction="http://tempuri.org/RelateLabel_Line" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLabelSetup">
+      <soap:operation soapAction="http://tempuri.org/UpdateLabelSetup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLabelID_In_Line">
+      <soap:operation soapAction="http://tempuri.org/GetLabelID_In_Line" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHHButtonSettings">
+      <soap:operation soapAction="http://tempuri.org/GetHHButtonSettings" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetParameter">
+      <soap:operation soapAction="http://tempuri.org/GetParameter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WMS_SettingsSoap12" type="tns:WMS_SettingsSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetParamTypes">
+      <soap12:operation soapAction="http://tempuri.org/GetParamTypes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetParamsChilds">
+      <soap12:operation soapAction="http://tempuri.org/GetParamsChilds" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetParam_PartialSearch">
+      <soap12:operation soapAction="http://tempuri.org/GetParam_PartialSearch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetParam_ByParamID">
+      <soap12:operation soapAction="http://tempuri.org/GetParam_ByParamID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOccupancyLeveles">
+      <soap12:operation soapAction="http://tempuri.org/GetOccupancyLeveles" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetParam_ByParamKey">
+      <soap12:operation soapAction="http://tempuri.org/GetParam_ByParamKey" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateParams">
+      <soap12:operation soapAction="http://tempuri.org/CreateParams" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateParams">
+      <soap12:operation soapAction="http://tempuri.org/UpdateParams" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteParam">
+      <soap12:operation soapAction="http://tempuri.org/DeleteParam" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateGridLayouts">
+      <soap12:operation soapAction="http://tempuri.org/CreateGridLayouts" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetGridLayout">
+      <soap12:operation soapAction="http://tempuri.org/SetGridLayout" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchByKeyGridLayouts">
+      <soap12:operation soapAction="http://tempuri.org/SearchByKeyGridLayouts" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchLineBalancingBySize">
+      <soap12:operation soapAction="http://tempuri.org/SearchLineBalancingBySize" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchPartialBalancingBySize">
+      <soap12:operation soapAction="http://tempuri.org/SearchPartialBalancingBySize" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateLineBalancing">
+      <soap12:operation soapAction="http://tempuri.org/CreateLineBalancing" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLineBalancing">
+      <soap12:operation soapAction="http://tempuri.org/UpdateLineBalancing" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteLineBalancing">
+      <soap12:operation soapAction="http://tempuri.org/DeleteLineBalancing" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLabelsSetup">
+      <soap12:operation soapAction="http://tempuri.org/GetLabelsSetup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsLabelID_In_Line">
+      <soap12:operation soapAction="http://tempuri.org/IsLabelID_In_Line" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RelateLabel_Line">
+      <soap12:operation soapAction="http://tempuri.org/RelateLabel_Line" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLabelSetup">
+      <soap12:operation soapAction="http://tempuri.org/UpdateLabelSetup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLabelID_In_Line">
+      <soap12:operation soapAction="http://tempuri.org/GetLabelID_In_Line" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHHButtonSettings">
+      <soap12:operation soapAction="http://tempuri.org/GetHHButtonSettings" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetParameter">
+      <soap12:operation soapAction="http://tempuri.org/GetParameter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WMS_Settings">
+    <wsdl:port name="WMS_SettingsSoap" binding="tns:WMS_SettingsSoap">
+      <soap:address location="http://localhost:8088/WMSOnePlan_BusinessServices/catalogues/WMS_Settings.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WMS_SettingsSoap12" binding="tns:WMS_SettingsSoap12">
+      <soap12:address location="http://localhost:8088/WMSOnePlan_BusinessServices/catalogues/WMS_Settings.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

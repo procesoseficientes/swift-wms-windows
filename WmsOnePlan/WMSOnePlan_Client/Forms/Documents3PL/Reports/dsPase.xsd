@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsPase" targetNamespace="http://tempuri.org/dsPase.xsd" xmlns:mstns="http://tempuri.org/dsPase.xsd" xmlns="http://tempuri.org/dsPase.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsPase" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsPase" msprop:Generator_UserDSName="dsPase">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SALIDA_VEHICULO" msprop:Generator_TableClassName="SALIDA_VEHICULODataTable" msprop:Generator_TableVarName="tableSALIDA_VEHICULO" msprop:Generator_RowChangedName="SALIDA_VEHICULORowChanged" msprop:Generator_TablePropName="SALIDA_VEHICULO" msprop:Generator_RowDeletingName="SALIDA_VEHICULORowDeleting" msprop:Generator_RowChangingName="SALIDA_VEHICULORowChanging" msprop:Generator_RowEvHandlerName="SALIDA_VEHICULORowChangeEventHandler" msprop:Generator_RowDeletedName="SALIDA_VEHICULORowDeleted" msprop:Generator_RowClassName="SALIDA_VEHICULORow" msprop:Generator_UserTableName="SALIDA_VEHICULO" msprop:Generator_RowEvArgName="SALIDA_VEHICULORowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FECHA" msprop:Generator_ColumnVarNameInTable="columnFECHA" msprop:Generator_ColumnPropNameInRow="FECHA" msprop:Generator_ColumnPropNameInTable="FECHAColumn" msprop:Generator_UserColumnName="FECHA" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TIPO_VEHICULO" msprop:Generator_ColumnVarNameInTable="columnTIPO_VEHICULO" msprop:Generator_ColumnPropNameInRow="TIPO_VEHICULO" msprop:Generator_ColumnPropNameInTable="TIPO_VEHICULOColumn" msprop:Generator_UserColumnName="TIPO_VEHICULO" type="xs:string" minOccurs="0" />
+              <xs:element name="PLACAS" msprop:Generator_ColumnVarNameInTable="columnPLACAS" msprop:Generator_ColumnPropNameInRow="PLACAS" msprop:Generator_ColumnPropNameInTable="PLACASColumn" msprop:Generator_UserColumnName="PLACAS" type="xs:string" minOccurs="0" />
+              <xs:element name="EMPRESA" msprop:Generator_ColumnVarNameInTable="columnEMPRESA" msprop:Generator_ColumnPropNameInRow="EMPRESA" msprop:Generator_ColumnPropNameInTable="EMPRESAColumn" msprop:Generator_UserColumnName="EMPRESA" type="xs:string" minOccurs="0" />
+              <xs:element name="CONDUCTOR" msprop:Generator_ColumnVarNameInTable="columnCONDUCTOR" msprop:Generator_ColumnPropNameInRow="CONDUCTOR" msprop:Generator_ColumnPropNameInTable="CONDUCTORColumn" msprop:Generator_UserColumnName="CONDUCTOR" type="xs:string" minOccurs="0" />
+              <xs:element name="LICENCIA" msprop:Generator_ColumnVarNameInTable="columnLICENCIA" msprop:Generator_ColumnPropNameInRow="LICENCIA" msprop:Generator_ColumnPropNameInTable="LICENCIAColumn" msprop:Generator_UserColumnName="LICENCIA" type="xs:string" minOccurs="0" />
+              <xs:element name="CARGA" msprop:Generator_ColumnVarNameInTable="columnCARGA" msprop:Generator_ColumnPropNameInRow="CARGA" msprop:Generator_ColumnPropNameInTable="CARGAColumn" msprop:Generator_UserColumnName="CARGA" type="xs:string" minOccurs="0" />
+              <xs:element name="RETIRO" msprop:Generator_ColumnVarNameInTable="columnRETIRO" msprop:Generator_ColumnPropNameInRow="RETIRO" msprop:Generator_ColumnPropNameInTable="RETIROColumn" msprop:Generator_UserColumnName="RETIRO" type="xs:string" />
+              <xs:element name="ENTREGADO_POR" msprop:Generator_ColumnVarNameInTable="columnENTREGADO_POR" msprop:Generator_ColumnPropNameInRow="ENTREGADO_POR" msprop:Generator_ColumnPropNameInTable="ENTREGADO_PORColumn" msprop:Generator_UserColumnName="ENTREGADO_POR" type="xs:string" minOccurs="0" />
+              <xs:element name="OBSERVACIONES" msprop:Generator_ColumnVarNameInTable="columnOBSERVACIONES" msprop:Generator_ColumnPropNameInRow="OBSERVACIONES" msprop:Generator_ColumnPropNameInTable="OBSERVACIONESColumn" msprop:Generator_UserColumnName="OBSERVACIONES" type="xs:string" minOccurs="0" />
+              <xs:element name="TRANSPORTISTA" msprop:Generator_ColumnVarNameInTable="columnTRANSPORTISTA" msprop:Generator_ColumnPropNameInRow="TRANSPORTISTA" msprop:Generator_ColumnPropNameInTable="TRANSPORTISTAColumn" msprop:Generator_UserColumnName="TRANSPORTISTA" type="xs:string" minOccurs="0" />
+              <xs:element name="AUTORIZADO" msprop:Generator_ColumnVarNameInTable="columnAutorizado" msprop:Generator_ColumnPropNameInRow="Autorizado" msprop:Generator_ColumnPropNameInTable="AutorizadoColumn" msprop:Generator_UserColumnName="AUTORIZADO" type="xs:string" minOccurs="0" />
+              <xs:element name="ENTREGADO" msprop:Generator_ColumnVarNameInTable="columnENTREGADO" msprop:Generator_ColumnPropNameInRow="ENTREGADO" msprop:Generator_ColumnPropNameInTable="ENTREGADOColumn" msprop:Generator_UserColumnName="ENTREGADO" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RETIRO" msprop:Generator_TableClassName="RETIRODataTable" msprop:Generator_TableVarName="tableRETIRO" msprop:Generator_RowChangedName="RETIRORowChanged" msprop:Generator_TablePropName="RETIRO" msprop:Generator_RowDeletingName="RETIRORowDeleting" msprop:Generator_RowChangingName="RETIRORowChanging" msprop:Generator_RowEvHandlerName="RETIRORowChangeEventHandler" msprop:Generator_RowDeletedName="RETIRORowDeleted" msprop:Generator_RowClassName="RETIRORow" msprop:Generator_UserTableName="RETIRO" msprop:Generator_RowEvArgName="RETIRORowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RETIRO" msprop:Generator_ColumnVarNameInTable="columnRETIRO" msprop:Generator_ColumnPropNameInRow="RETIRO" msprop:Generator_ColumnPropNameInTable="RETIROColumn" msprop:Generator_UserColumnName="RETIRO" type="xs:string" />
+              <xs:element name="FECHA" msprop:Generator_ColumnVarNameInTable="columnFECHA" msprop:Generator_ColumnPropNameInRow="FECHA" msprop:Generator_ColumnPropNameInTable="FECHAColumn" msprop:Generator_UserColumnName="FECHA" type="xs:string" minOccurs="0" />
+              <xs:element name="CANTIDAD" msprop:Generator_ColumnVarNameInTable="columnCANTIDAD" msprop:Generator_ColumnPropNameInRow="CANTIDAD" msprop:Generator_ColumnPropNameInTable="CANTIDADColumn" msprop:Generator_UserColumnName="CANTIDAD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CODIGO" msprop:Generator_ColumnVarNameInTable="columnCODIGO" msprop:Generator_ColumnPropNameInRow="CODIGO" msprop:Generator_ColumnPropNameInTable="CODIGOColumn" msprop:Generator_UserColumnName="CODIGO" type="xs:string" minOccurs="0" />
+              <xs:element name="DESCRIPCION" msprop:Generator_ColumnVarNameInTable="columnDESCRIPCION" msprop:Generator_ColumnPropNameInRow="DESCRIPCION" msprop:Generator_ColumnPropNameInTable="DESCRIPCIONColumn" msprop:Generator_UserColumnName="DESCRIPCION" type="xs:string" minOccurs="0" />
+              <xs:element name="GT_QTY" msprop:Generator_ColumnVarNameInTable="columnGT_QTY" msprop:Generator_ColumnPropNameInRow="GT_QTY" msprop:Generator_ColumnPropNameInTable="GT_QTYColumn" msprop:Generator_UserColumnName="GT_QTY" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PASE_SALIDA_CON_MONTO" msprop:Generator_TableClassName="PASE_SALIDA_CON_MONTODataTable" msprop:Generator_TableVarName="tablePASE_SALIDA_CON_MONTO" msprop:Generator_TablePropName="PASE_SALIDA_CON_MONTO" msprop:Generator_RowDeletingName="PASE_SALIDA_CON_MONTORowDeleting" msprop:Generator_RowChangingName="PASE_SALIDA_CON_MONTORowChanging" msprop:Generator_RowEvHandlerName="PASE_SALIDA_CON_MONTORowChangeEventHandler" msprop:Generator_RowDeletedName="PASE_SALIDA_CON_MONTORowDeleted" msprop:Generator_UserTableName="PASE_SALIDA_CON_MONTO" msprop:Generator_RowChangedName="PASE_SALIDA_CON_MONTORowChanged" msprop:Generator_RowEvArgName="PASE_SALIDA_CON_MONTORowChangeEvent" msprop:Generator_RowClassName="PASE_SALIDA_CON_MONTORow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CODIGO_POLIZA" msprop:Generator_ColumnVarNameInTable="columnCODIGO_POLIZA" msprop:Generator_ColumnPropNameInRow="CODIGO_POLIZA" msprop:Generator_ColumnPropNameInTable="CODIGO_POLIZAColumn" msprop:Generator_UserColumnName="CODIGO_POLIZA" type="xs:string" minOccurs="0" />
+              <xs:element name="MATERIAL_ID" msprop:Generator_ColumnVarNameInTable="columnMATERIAL_ID" msprop:Generator_ColumnPropNameInRow="MATERIAL_ID" msprop:Generator_ColumnPropNameInTable="MATERIAL_IDColumn" msprop:Generator_UserColumnName="MATERIAL_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="BARCODE_ID" msprop:Generator_ColumnVarNameInTable="columnBARCODE_ID" msprop:Generator_ColumnPropNameInRow="BARCODE_ID" msprop:Generator_ColumnPropNameInTable="BARCODE_IDColumn" msprop:Generator_UserColumnName="BARCODE_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="MATERIAL_NAME" msprop:Generator_ColumnVarNameInTable="columnMATERIAL_NAME" msprop:Generator_ColumnPropNameInRow="MATERIAL_NAME" msprop:Generator_ColumnPropNameInTable="MATERIAL_NAMEColumn" msprop:Generator_UserColumnName="MATERIAL_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="NUMERO_ORDEN" msprop:Generator_ColumnVarNameInTable="columnNUMERO_ORDEN" msprop:Generator_ColumnPropNameInRow="NUMERO_ORDEN" msprop:Generator_ColumnPropNameInTable="NUMERO_ORDENColumn" msprop:Generator_UserColumnName="NUMERO_ORDEN" type="xs:string" minOccurs="0" />
+              <xs:element name="QTY" msprop:Generator_ColumnVarNameInTable="columnQTY" msprop:Generator_ColumnPropNameInRow="QTY" msprop:Generator_ColumnPropNameInTable="QTYColumn" msprop:Generator_UserColumnName="QTY" type="xs:string" minOccurs="0" />
+              <xs:element name="TIPO" msprop:Generator_ColumnVarNameInTable="columnTIPO" msprop:Generator_ColumnPropNameInRow="TIPO" msprop:Generator_ColumnPropNameInTable="TIPOColumn" msprop:Generator_UserColumnName="TIPO" type="xs:string" minOccurs="0" />
+              <xs:element name="PASS_ID" msprop:Generator_ColumnVarNameInTable="columnPASS_ID" msprop:Generator_ColumnPropNameInRow="PASS_ID" msprop:Generator_ColumnPropNameInTable="PASS_IDColumn" msprop:Generator_UserColumnName="PASS_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="UNIT_VALUE" msprop:Generator_ColumnVarNameInTable="columnUNIT_VALUE" msprop:Generator_ColumnPropNameInRow="UNIT_VALUE" msprop:Generator_ColumnPropNameInTable="UNIT_VALUEColumn" msprop:Generator_UserColumnName="UNIT_VALUE" type="xs:string" minOccurs="0" />
+              <xs:element name="TOTAL_LINE" msprop:Generator_ColumnVarNameInTable="columnTOTAL_LINE" msprop:Generator_ColumnPropNameInRow="TOTAL_LINE" msprop:Generator_ColumnPropNameInTable="TOTAL_LINEColumn" msprop:Generator_UserColumnName="TOTAL_LINE" type="xs:string" minOccurs="0" />
+              <xs:element name="CERTIFICATE_DEPOSIT_ID_HEADER" msprop:Generator_ColumnVarNameInTable="columnCERTIFICATE_DEPOSIT_ID_HEADER" msprop:Generator_ColumnPropNameInRow="CERTIFICATE_DEPOSIT_ID_HEADER" msprop:Generator_ColumnPropNameInTable="CERTIFICATE_DEPOSIT_ID_HEADERColumn" msprop:Generator_UserColumnName="CERTIFICATE_DEPOSIT_ID_HEADER" type="xs:string" minOccurs="0" />
+              <xs:element name="PACKING" msprop:Generator_ColumnVarNameInTable="columnPACKING" msprop:Generator_ColumnPropNameInRow="PACKING" msprop:Generator_ColumnPropNameInTable="PACKINGColumn" msprop:Generator_UserColumnName="PACKING" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SALIDA_VEHICULO" />
+      <xs:field xpath="mstns:RETIRO" />
+    </xs:unique>
+    <xs:unique name="RETIRO_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:RETIRO" />
+      <xs:field xpath="mstns:RETIRO" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="SALIDA_VEHICULO_RETIRO" msdata:parent="SALIDA_VEHICULO" msdata:child="RETIRO" msdata:parentkey="RETIRO" msdata:childkey="RETIRO" msprop:Generator_UserChildTable="RETIRO" msprop:Generator_ChildPropName="GetRETIRORows" msprop:Generator_UserRelationName="SALIDA_VEHICULO_RETIRO" msprop:Generator_RelationVarName="relationSALIDA_VEHICULO_RETIRO" msprop:Generator_UserParentTable="SALIDA_VEHICULO" msprop:Generator_ParentPropName="SALIDA_VEHICULORow" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

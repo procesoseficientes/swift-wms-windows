@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="CreateCertificate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pAddBond" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="pCertificateId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCreationBy" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pSupervisionId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="p3plWarenHouse" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pValidFrom" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pValidTo" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="pClientCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateCertificateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateCertificateResult" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="pCertificateId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCertificate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pCertificateId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLastUpdateBy" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pSupervisionId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="p3plWarenHouse" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCertificateStatus" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pValidFrom" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pValidTo" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="pClientCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pHasBond" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCertificateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateCertificateResult" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="pCertificateId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteCertificate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pCertificateId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteCertificateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteCertificateResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCertificateValid">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pCertificateId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pValidFrom" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pValidTo" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLastUpdateBy" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCertificateValidResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateCertificateValidResult" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="pCertificateId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCertificate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCertificateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCertificateResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FillCertificate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pCertificateId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FillCertificateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FillCertificateResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRepCertificateBond">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pNameTable" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRepCertificateBondResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRepCertificateBondResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateCertificateLog">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pCertificateId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pUpdateBy" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pOldValidFrom" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pOldValidTo" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pNewdValidFrom" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pNewValidTo" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="pAuthorizedBy" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pComment" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateCertificateLogResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateCertificateLogResult" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="pCertificateId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCertificateLOG">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pCertificateId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCertificateLOGResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCertificateLOGResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="pCertificateId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectCurrency">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectCurrencyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectCurrencyResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetKardexCertificate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pUsers" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pNameTable" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetKardexCertificateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetKardexCertificateResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetKardexConsultation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pCertificateId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pNameTable" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetKardexConsultationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetKardexConsultationResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertKardex">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pCertificateId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertKardexResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertKardexResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatedKardex">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pKardexId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pCurrentBalace" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatedKardexResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdatedKardexResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetKardexTxns">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pCertificateId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pFechaInicio" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pFechaFinal" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="pNameTable" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetKardexTxnsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetKardexTxnsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertKardexTxns">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pCertificateId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pTxDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pTxReceipts" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="pTxDispactil" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="pTxLastBalace" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="pTxCurrentBalance" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="pSku" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pSkuDescription" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pCost" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertKardexTxnsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertKardexTxnsResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CreateCertificateSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateCertificate" />
+  </wsdl:message>
+  <wsdl:message name="CreateCertificateSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateCertificateResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCertificateSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateCertificate" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCertificateSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateCertificateResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteCertificateSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteCertificate" />
+  </wsdl:message>
+  <wsdl:message name="DeleteCertificateSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteCertificateResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCertificateValidSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateCertificateValid" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCertificateValidSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateCertificateValidResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCertificateSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCertificate" />
+  </wsdl:message>
+  <wsdl:message name="GetCertificateSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCertificateResponse" />
+  </wsdl:message>
+  <wsdl:message name="FillCertificateSoapIn">
+    <wsdl:part name="parameters" element="tns:FillCertificate" />
+  </wsdl:message>
+  <wsdl:message name="FillCertificateSoapOut">
+    <wsdl:part name="parameters" element="tns:FillCertificateResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRepCertificateBondSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRepCertificateBond" />
+  </wsdl:message>
+  <wsdl:message name="GetRepCertificateBondSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRepCertificateBondResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateCertificateLogSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateCertificateLog" />
+  </wsdl:message>
+  <wsdl:message name="CreateCertificateLogSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateCertificateLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCertificateLOGSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCertificateLOG" />
+  </wsdl:message>
+  <wsdl:message name="GetCertificateLOGSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCertificateLOGResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectCurrencySoapIn">
+    <wsdl:part name="parameters" element="tns:SelectCurrency" />
+  </wsdl:message>
+  <wsdl:message name="SelectCurrencySoapOut">
+    <wsdl:part name="parameters" element="tns:SelectCurrencyResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetKardexCertificateSoapIn">
+    <wsdl:part name="parameters" element="tns:GetKardexCertificate" />
+  </wsdl:message>
+  <wsdl:message name="GetKardexCertificateSoapOut">
+    <wsdl:part name="parameters" element="tns:GetKardexCertificateResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetKardexConsultationSoapIn">
+    <wsdl:part name="parameters" element="tns:GetKardexConsultation" />
+  </wsdl:message>
+  <wsdl:message name="GetKardexConsultationSoapOut">
+    <wsdl:part name="parameters" element="tns:GetKardexConsultationResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertKardexSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertKardex" />
+  </wsdl:message>
+  <wsdl:message name="InsertKardexSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertKardexResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdatedKardexSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdatedKardex" />
+  </wsdl:message>
+  <wsdl:message name="UpdatedKardexSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdatedKardexResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetKardexTxnsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetKardexTxns" />
+  </wsdl:message>
+  <wsdl:message name="GetKardexTxnsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetKardexTxnsResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertKardexTxnsSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertKardexTxns" />
+  </wsdl:message>
+  <wsdl:message name="InsertKardexTxnsSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertKardexTxnsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WMS_CertificatesSoap">
+    <wsdl:operation name="CreateCertificate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Create a certificate</wsdl:documentation>
+      <wsdl:input message="tns:CreateCertificateSoapIn" />
+      <wsdl:output message="tns:CreateCertificateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCertificate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">UPDATE a certificate</wsdl:documentation>
+      <wsdl:input message="tns:UpdateCertificateSoapIn" />
+      <wsdl:output message="tns:UpdateCertificateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCertificate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">DELETE a certificate</wsdl:documentation>
+      <wsdl:input message="tns:DeleteCertificateSoapIn" />
+      <wsdl:output message="tns:DeleteCertificateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCertificateValid">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">UPDATE a certificate Valid</wsdl:documentation>
+      <wsdl:input message="tns:UpdateCertificateValidSoapIn" />
+      <wsdl:output message="tns:UpdateCertificateValidSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCertificate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get a certificate</wsdl:documentation>
+      <wsdl:input message="tns:GetCertificateSoapIn" />
+      <wsdl:output message="tns:GetCertificateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FillCertificate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Fill a Certificate</wsdl:documentation>
+      <wsdl:input message="tns:FillCertificateSoapIn" />
+      <wsdl:output message="tns:FillCertificateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRepCertificateBond">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Report certificate</wsdl:documentation>
+      <wsdl:input message="tns:GetRepCertificateBondSoapIn" />
+      <wsdl:output message="tns:GetRepCertificateBondSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateCertificateLog">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Create a certificate log</wsdl:documentation>
+      <wsdl:input message="tns:CreateCertificateLogSoapIn" />
+      <wsdl:output message="tns:CreateCertificateLogSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCertificateLOG">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Certificate Log</wsdl:documentation>
+      <wsdl:input message="tns:GetCertificateLOGSoapIn" />
+      <wsdl:output message="tns:GetCertificateLOGSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectCurrency">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Search specific Clima location</wsdl:documentation>
+      <wsdl:input message="tns:SelectCurrencySoapIn" />
+      <wsdl:output message="tns:SelectCurrencySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetKardexCertificate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Kardex Certificate</wsdl:documentation>
+      <wsdl:input message="tns:GetKardexCertificateSoapIn" />
+      <wsdl:output message="tns:GetKardexCertificateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetKardexConsultation">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Kardex Certificate</wsdl:documentation>
+      <wsdl:input message="tns:GetKardexConsultationSoapIn" />
+      <wsdl:output message="tns:GetKardexConsultationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertKardex">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Inserta un Kardex </wsdl:documentation>
+      <wsdl:input message="tns:InsertKardexSoapIn" />
+      <wsdl:output message="tns:InsertKardexSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatedKardex">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Actualiza un Kardex</wsdl:documentation>
+      <wsdl:input message="tns:UpdatedKardexSoapIn" />
+      <wsdl:output message="tns:UpdatedKardexSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetKardexTxns">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Kardex TXNS</wsdl:documentation>
+      <wsdl:input message="tns:GetKardexTxnsSoapIn" />
+      <wsdl:output message="tns:GetKardexTxnsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertKardexTxns">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Inserta un Kardex TXNS</wsdl:documentation>
+      <wsdl:input message="tns:InsertKardexTxnsSoapIn" />
+      <wsdl:output message="tns:InsertKardexTxnsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WMS_CertificatesSoap" type="tns:WMS_CertificatesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateCertificate">
+      <soap:operation soapAction="http://tempuri.org/CreateCertificate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCertificate">
+      <soap:operation soapAction="http://tempuri.org/UpdateCertificate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCertificate">
+      <soap:operation soapAction="http://tempuri.org/DeleteCertificate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCertificateValid">
+      <soap:operation soapAction="http://tempuri.org/UpdateCertificateValid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCertificate">
+      <soap:operation soapAction="http://tempuri.org/GetCertificate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillCertificate">
+      <soap:operation soapAction="http://tempuri.org/FillCertificate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRepCertificateBond">
+      <soap:operation soapAction="http://tempuri.org/GetRepCertificateBond" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateCertificateLog">
+      <soap:operation soapAction="http://tempuri.org/CreateCertificateLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCertificateLOG">
+      <soap:operation soapAction="http://tempuri.org/GetCertificateLOG" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectCurrency">
+      <soap:operation soapAction="http://tempuri.org/SelectCurrency" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetKardexCertificate">
+      <soap:operation soapAction="http://tempuri.org/GetKardexCertificate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetKardexConsultation">
+      <soap:operation soapAction="http://tempuri.org/GetKardexConsultation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertKardex">
+      <soap:operation soapAction="http://tempuri.org/InsertKardex" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatedKardex">
+      <soap:operation soapAction="http://tempuri.org/UpdatedKardex" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetKardexTxns">
+      <soap:operation soapAction="http://tempuri.org/GetKardexTxns" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertKardexTxns">
+      <soap:operation soapAction="http://tempuri.org/InsertKardexTxns" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WMS_CertificatesSoap12" type="tns:WMS_CertificatesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateCertificate">
+      <soap12:operation soapAction="http://tempuri.org/CreateCertificate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCertificate">
+      <soap12:operation soapAction="http://tempuri.org/UpdateCertificate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCertificate">
+      <soap12:operation soapAction="http://tempuri.org/DeleteCertificate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCertificateValid">
+      <soap12:operation soapAction="http://tempuri.org/UpdateCertificateValid" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCertificate">
+      <soap12:operation soapAction="http://tempuri.org/GetCertificate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillCertificate">
+      <soap12:operation soapAction="http://tempuri.org/FillCertificate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRepCertificateBond">
+      <soap12:operation soapAction="http://tempuri.org/GetRepCertificateBond" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateCertificateLog">
+      <soap12:operation soapAction="http://tempuri.org/CreateCertificateLog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCertificateLOG">
+      <soap12:operation soapAction="http://tempuri.org/GetCertificateLOG" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectCurrency">
+      <soap12:operation soapAction="http://tempuri.org/SelectCurrency" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetKardexCertificate">
+      <soap12:operation soapAction="http://tempuri.org/GetKardexCertificate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetKardexConsultation">
+      <soap12:operation soapAction="http://tempuri.org/GetKardexConsultation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertKardex">
+      <soap12:operation soapAction="http://tempuri.org/InsertKardex" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatedKardex">
+      <soap12:operation soapAction="http://tempuri.org/UpdatedKardex" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetKardexTxns">
+      <soap12:operation soapAction="http://tempuri.org/GetKardexTxns" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertKardexTxns">
+      <soap12:operation soapAction="http://tempuri.org/InsertKardexTxns" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WMS_Certificates">
+    <wsdl:port name="WMS_CertificatesSoap" binding="tns:WMS_CertificatesSoap">
+      <soap:address location="http://localhost/Alsersa/WMSOnePlan_BusinessServices/Catalogues/WMS_Certificates.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WMS_CertificatesSoap12" binding="tns:WMS_CertificatesSoap12">
+      <soap12:address location="http://localhost/Alsersa/WMSOnePlan_BusinessServices/Catalogues/WMS_Certificates.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
