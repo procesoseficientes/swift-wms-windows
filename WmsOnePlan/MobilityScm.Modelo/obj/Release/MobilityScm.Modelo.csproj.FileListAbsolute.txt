@@ -16,9 +16,7 @@ C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\MobilityScm.Modelo\bin\Rel
 C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\MobilityScm.Modelo\bin\Release\MobilityScm.Verticial.Excepciones.dll
 C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\MobilityScm.Modelo\bin\Release\MoreLinq.dll
 C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\MobilityScm.Modelo\bin\Release\Newtonsoft.Json.dll
-C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\MobilityScm.Modelo\bin\Release\System.ServiceModel.DomainServices.Server.dll
 C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\MobilityScm.Modelo\bin\Release\System.ValueTuple.dll
-C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\MobilityScm.Modelo\bin\Release\Telerik.OpenAccess.35.Extensions.dll
 C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\MobilityScm.Modelo\bin\Release\Telerik.OpenAccess.dll
 C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\MobilityScm.Modelo\bin\Release\Telerik.OpenAccess.Ria.Extensions.dll
 C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\MobilityScm.Modelo\bin\Release\DevExpress.XtraEditors.v19.2.dll
