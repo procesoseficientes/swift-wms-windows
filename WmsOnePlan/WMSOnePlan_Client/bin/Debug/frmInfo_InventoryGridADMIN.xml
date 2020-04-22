@@ -14,16 +14,16 @@
       <property name="Name">GridColumn_CurrentWH</property>
       <property name="VisibleIndex">1</property>
       <property name="Visible">true</property>
-      <property name="Width">114</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">101</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item2" isnull="true" iskey="true">
       <property name="Name">GridColumn_Linea</property>
       <property name="VisibleIndex">3</property>
       <property name="Visible">true</property>
-      <property name="Width">128</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">36</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
       <property name="Summary" iskey="true" value="1">
         <property name="Item1" isnull="true" iskey="true">
@@ -38,32 +38,32 @@
       <property name="Name">GridColumn_Ubicacion</property>
       <property name="VisibleIndex">4</property>
       <property name="Visible">true</property>
-      <property name="Width">166</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">221</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item4" isnull="true" iskey="true">
       <property name="Name">GridColumn_Prod</property>
       <property name="VisibleIndex">2</property>
       <property name="Visible">true</property>
-      <property name="Width">125</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">53</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item5" isnull="true" iskey="true">
       <property name="Name">GridColumn_Descripcion</property>
       <property name="VisibleIndex">5</property>
       <property name="Visible">true</property>
-      <property name="Width">31</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">36</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item6" isnull="true" iskey="true">
       <property name="Name">GridColumn_Unidades</property>
       <property name="VisibleIndex">8</property>
       <property name="Visible">true</property>
-      <property name="Width">63</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">109</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
       <property name="Summary" iskey="true" value="1">
         <property name="Item1" isnull="true" iskey="true">
@@ -78,192 +78,192 @@
       <property name="Name">GridColumnClientOwner</property>
       <property name="VisibleIndex">6</property>
       <property name="Visible">true</property>
-      <property name="Width">31</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">36</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item8" isnull="true" iskey="true">
       <property name="Name">GridColumnClientName</property>
       <property name="VisibleIndex">7</property>
       <property name="Visible">true</property>
-      <property name="Width">31</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">36</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item9" isnull="true" iskey="true">
       <property name="Name">GridColumnTermOfTrade</property>
-      <property name="Width">55</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">73</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item10" isnull="true" iskey="true">
       <property name="Name">GridColumnLastUpdatedBy</property>
-      <property name="Width">100</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">133</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item11" isnull="true" iskey="true">
       <property name="Name">GridColumnFechaLlegada</property>
       <property name="VisibleIndex">9</property>
       <property name="Visible">true</property>
-      <property name="Width">29</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">36</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item12" isnull="true" iskey="true">
       <property name="Name">GridColumnDUA</property>
-      <property name="Width">100</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">133</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item13" isnull="true" iskey="true">
       <property name="Name">GridColumnNumeroOrden</property>
-      <property name="Width">37</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">49</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item14" isnull="true" iskey="true">
       <property name="Name">GridColumnPoliza</property>
-      <property name="Width">100</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">133</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item15" isnull="true" iskey="true">
       <property name="Name">GridColumnRegimen</property>
       <property name="VisibleIndex">0</property>
       <property name="Visible">true</property>
-      <property name="Width">111</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">98</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item16" isnull="true" iskey="true">
       <property name="Name">colFECHA_DOCUMENTO</property>
-      <property name="Width">199</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">265</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item17" isnull="true" iskey="true">
       <property name="Name">colALTERNATE_BARCODE</property>
       <property name="VisibleIndex">10</property>
       <property name="Visible">true</property>
-      <property name="Width">29</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">36</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item18" isnull="true" iskey="true">
       <property name="Name">GridColumn_Serial</property>
-      <property name="Width">49</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">65</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item19" isnull="true" iskey="true">
       <property name="Name">GridColumn_FVOL</property>
       <property name="VisibleIndex">11</property>
       <property name="Visible">true</property>
-      <property name="Width">29</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">36</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item20" isnull="true" iskey="true">
       <property name="Name">colDATE_EXPIRATION</property>
       <property name="VisibleIndex">12</property>
       <property name="Visible">true</property>
-      <property name="Width">29</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">36</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item21" isnull="true" iskey="true">
       <property name="Name">GridColumn_CLASS</property>
-      <property name="Width">100</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">133</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item22" isnull="true" iskey="true">
       <property name="Name">colBATCH</property>
       <property name="VisibleIndex">13</property>
       <property name="Visible">true</property>
-      <property name="Width">29</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">36</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item23" isnull="true" iskey="true">
       <property name="Name">colDOC_ID</property>
-      <property name="Width">27</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">36</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item24" isnull="true" iskey="true">
       <property name="Name">colUSED_MT2</property>
-      <property name="Width">27</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">36</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item25" isnull="true" iskey="true">
       <property name="Name">GridColumn_VIN</property>
-      <property name="Width">27</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">36</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item26" isnull="true" iskey="true">
       <property name="Name">colPENDIENTE_RECTIFICACION</property>
       <property name="VisibleIndex">14</property>
       <property name="Visible">true</property>
-      <property name="Width">29</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">36</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item27" isnull="true" iskey="true">
       <property name="Name">colGRUPO_REGIMEN</property>
-      <property name="Width">27</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">36</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item28" isnull="true" iskey="true">
       <property name="Name">colREGIMEN_DOCUMENTO</property>
       <property name="VisibleIndex">15</property>
       <property name="Visible">true</property>
-      <property name="Width">29</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">36</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item29" isnull="true" iskey="true">
       <property name="Name">colCodigoProveedor</property>
       <property name="VisibleIndex">16</property>
       <property name="Visible">true</property>
-      <property name="Width">29</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">36</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item30" isnull="true" iskey="true">
       <property name="Name">colNombreProveedor</property>
       <property name="VisibleIndex">17</property>
       <property name="Visible">true</property>
-      <property name="Width">29</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">36</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item31" isnull="true" iskey="true">
       <property name="Name">colMATERIAL_ID</property>
       <property name="VisibleIndex">18</property>
       <property name="Visible">true</property>
-      <property name="Width">29</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">36</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item32" isnull="true" iskey="true">
       <property name="Name">colZONE</property>
       <property name="VisibleIndex">19</property>
       <property name="Visible">true</property>
-      <property name="Width">29</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">36</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item33" isnull="true" iskey="true">
       <property name="Name">colAVAILABLE_QTY</property>
       <property name="VisibleIndex">20</property>
       <property name="Visible">true</property>
-      <property name="Width">29</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">36</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
       <property name="Summary" iskey="true" value="1">
         <property name="Item1" isnull="true" iskey="true">
@@ -278,8 +278,8 @@
       <property name="Name">UiColValorUnitario</property>
       <property name="VisibleIndex">21</property>
       <property name="Visible">true</property>
-      <property name="Width">29</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">36</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
       <property name="Summary" iskey="true" value="1">
         <property name="Item1" isnull="true" iskey="true">
@@ -294,8 +294,8 @@
       <property name="Name">UiColValorTotal</property>
       <property name="VisibleIndex">22</property>
       <property name="Visible">true</property>
-      <property name="Width">29</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">36</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
       <property name="Summary" iskey="true" value="1">
         <property name="Item1" isnull="true" iskey="true">
@@ -310,178 +310,178 @@
       <property name="Name">UiColIntentarioExterno</property>
       <property name="VisibleIndex">23</property>
       <property name="Visible">true</property>
-      <property name="Width">29</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">36</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item37" isnull="true" iskey="true">
       <property name="Name">UiGridColSkuSerie</property>
-      <property name="Width">27</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">36</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item38" isnull="true" iskey="true">
       <property name="Name">UiColDiasRegimen</property>
-      <property name="Width">27</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">36</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item39" isnull="true" iskey="true">
       <property name="Name">UiColDiasVencimiento</property>
-      <property name="Width">27</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">36</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item40" isnull="true" iskey="true">
       <property name="Name">UiColFechaVencimientoRegimen</property>
-      <property name="Width">27</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">36</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item41" isnull="true" iskey="true">
       <property name="Name">UiColEstadoRegimen</property>
       <property name="VisibleIndex">24</property>
       <property name="Visible">true</property>
-      <property name="Width">29</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">36</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item42" isnull="true" iskey="true">
       <property name="Name">UiColNombreEstado</property>
       <property name="VisibleIndex">25</property>
       <property name="Visible">true</property>
-      <property name="Width">29</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">36</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item43" isnull="true" iskey="true">
       <property name="Name">UiColBloqueoInventario</property>
       <property name="VisibleIndex">26</property>
       <property name="Visible">true</property>
-      <property name="Width">29</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">36</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item44" isnull="true" iskey="true">
       <property name="Name">UiColColorEstado</property>
       <property name="VisibleIndex">27</property>
       <property name="Visible">true</property>
-      <property name="Width">29</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">36</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item45" isnull="true" iskey="true">
       <property name="Name">UiColTono</property>
-      <property name="Width">27</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">36</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item46" isnull="true" iskey="true">
       <property name="Name">UiColCalibre</property>
-      <property name="Width">27</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">36</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item47" isnull="true" iskey="true">
       <property name="Name">UiColOrdenDeVenta</property>
-      <property name="Width">27</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">36</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item48" isnull="true" iskey="true">
       <property name="Name">UiColProyecto</property>
-      <property name="Width">27</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">36</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item49" isnull="true" iskey="true">
       <property name="Name">UiColNombreCliente</property>
-      <property name="Width">27</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">36</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item50" isnull="true" iskey="true">
       <property name="Name">UiColBloqueoInterfaces</property>
       <property name="VisibleIndex">28</property>
       <property name="Visible">true</property>
-      <property name="Width">29</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">36</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item51" isnull="true" iskey="true">
       <property name="Name">UiColPeso</property>
       <property name="VisibleIndex">29</property>
       <property name="Visible">true</property>
-      <property name="Width">29</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">36</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item52" isnull="true" iskey="true">
       <property name="Name">UiColUnidadPeso</property>
-      <property name="Width">27</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">36</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item53" isnull="true" iskey="true">
       <property name="Name">UiColOlaPicking</property>
-      <property name="Width">27</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">36</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item54" isnull="true" iskey="true">
       <property name="Name">GridColumn_PK_LINE</property>
-      <property name="Width">100</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">133</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item55" isnull="true" iskey="true">
       <property name="Name">GridColumn_BATCH_REQUESTED</property>
-      <property name="Width">100</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">133</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item56" isnull="true" iskey="true">
       <property name="Name">GridColumn_STATUS_ID</property>
-      <property name="Width">100</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">133</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item57" isnull="true" iskey="true">
       <property name="Name">GridColumn_TONE_CALIBER_ID</property>
-      <property name="Width">100</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">133</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item58" isnull="true" iskey="true">
       <property name="Name">GridColumn_HANDLE_TONE</property>
-      <property name="Width">100</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">133</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item59" isnull="true" iskey="true">
       <property name="Name">GridColumn_HANDLE_CALIBER</property>
-      <property name="Width">100</property>
-      <property name="MinWidth">27</property>
+      <property name="Width">133</property>
+      <property name="MinWidth">36</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item60" isnull="true" iskey="true">
       <property name="Name">UiColCodigoProyecto</property>
-      <property name="Width">36</property>
-      <property name="MinWidth">36</property>
+      <property name="Width">48</property>
+      <property name="MinWidth">48</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item61" isnull="true" iskey="true">
       <property name="Name">UiColNombreProyecto</property>
-      <property name="Width">36</property>
-      <property name="MinWidth">36</property>
+      <property name="Width">48</property>
+      <property name="MinWidth">48</property>
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item62" isnull="true" iskey="true">
       <property name="Name">colTOTAL_POSITION</property>
       <property name="VisibleIndex">30</property>
       <property name="Visible">true</property>
-      <property name="Width">62</property>
-      <property name="MinWidth">33</property>
+      <property name="Width">44</property>
+      <property name="MinWidth">44</property>
       <property name="MaxWidth">0</property>
     </property>
   </property>

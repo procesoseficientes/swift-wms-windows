@@ -19,8 +19,6 @@ C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\MobilityScm.Modelo\bin\Deb
 C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\MobilityScm.Modelo\bin\Debug\MoreLinq.dll
 C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\MobilityScm.Modelo\bin\Debug\Newtonsoft.Json.dll
 C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\MobilityScm.Modelo\bin\Debug\System.ValueTuple.dll
-C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\MobilityScm.Modelo\bin\Debug\Telerik.OpenAccess.dll
-C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\MobilityScm.Modelo\bin\Debug\Telerik.OpenAccess.Ria.Extensions.dll
 C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\MobilityScm.Modelo\bin\Debug\DevExpress.XtraEditors.v19.2.dll
 C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\MobilityScm.Modelo\bin\Debug\DevExpress.Utils.v19.2.dll
 C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\MobilityScm.Modelo\bin\Debug\DevExpress.Printing.v19.2.Core.dll
@@ -116,3 +114,5 @@ C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\MobilityScm.Modelo\bin\Deb
 C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\MobilityScm.Modelo\obj\Debug\MobilityScm.Modelo.csproj.CopyComplete
 C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\MobilityScm.Modelo\obj\Debug\MobilityScm.Modelo.dll
 C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\MobilityScm.Modelo\obj\Debug\MobilityScm.Modelo.pdb
+C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\MobilityScm.Modelo\bin\Debug\Telerik.OpenAccess.dll
+C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\MobilityScm.Modelo\bin\Debug\Telerik.OpenAccess.Ria.Extensions.dll

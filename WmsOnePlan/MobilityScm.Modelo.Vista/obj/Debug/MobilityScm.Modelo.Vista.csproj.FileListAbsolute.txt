@@ -130,7 +130,6 @@ C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\MobilityScm.Modelo.Vista\b
 C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\MobilityScm.Modelo.Vista\bin\Debug\DevExpress.Snap.v19.2.Core.dll
 C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\MobilityScm.Modelo.Vista\bin\Debug\DevExpress.Pdf.v19.2.Drawing.dll
 C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\MobilityScm.Modelo.Vista\bin\Debug\DevExpress.Dialogs.v19.2.Core.dll
-C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\MobilityScm.Modelo.Vista\bin\Debug\System.ServiceModel.DomainServices.Server.dll
 C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\MobilityScm.Modelo.Vista\bin\Debug\System.ValueTuple.dll
 C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\MobilityScm.Modelo.Vista\bin\Debug\MobilityScm.Modelo.TipoYEstados.pdb
 C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\MobilityScm.Modelo.Vista\bin\Debug\MobilityScm.Utilerias.pdb
@@ -325,3 +324,4 @@ C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\MobilityScm.Modelo.Vista\b
 C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\MobilityScm.Modelo.Vista\obj\Debug\MobilityScm.Modelo.Vista.csproj.CopyComplete
 C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\MobilityScm.Modelo.Vista\obj\Debug\MobilityScm.Modelo.Vista.dll
 C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\MobilityScm.Modelo.Vista\obj\Debug\MobilityScm.Modelo.Vista.pdb
+C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\MobilityScm.Modelo.Vista\bin\Debug\System.ServiceModel.DomainServices.Server.dll

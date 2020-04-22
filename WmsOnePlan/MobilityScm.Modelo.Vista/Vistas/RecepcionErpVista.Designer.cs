@@ -231,21 +231,17 @@
             // 
             this.colDetIS_ASSIGNED.Caption = "Asignado";
             this.colDetIS_ASSIGNED.FieldName = "IS_ASSIGNED";
-            this.colDetIS_ASSIGNED.MinWidth = 40;
             this.colDetIS_ASSIGNED.Name = "colDetIS_ASSIGNED";
             this.colDetIS_ASSIGNED.OptionsColumn.AllowEdit = false;
             this.colDetIS_ASSIGNED.OptionsColumn.ShowInCustomizationForm = false;
-            this.colDetIS_ASSIGNED.Width = 150;
             // 
             // colDetIS_MISSING
             // 
             this.colDetIS_MISSING.Caption = "Es faltante";
             this.colDetIS_MISSING.FieldName = "IS_MISSING";
-            this.colDetIS_MISSING.MinWidth = 40;
             this.colDetIS_MISSING.Name = "colDetIS_MISSING";
             this.colDetIS_MISSING.OptionsColumn.AllowEdit = false;
             this.colDetIS_MISSING.OptionsColumn.ShowInCustomizationForm = false;
-            this.colDetIS_MISSING.Width = 150;
             // 
             // UiBarraContenedorPrincipal
             // 
@@ -419,35 +415,31 @@
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.UiBarraContenedorPrincipal;
-            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.barDockControlTop.Size = new System.Drawing.Size(2407, 46);
+            this.barDockControlTop.Size = new System.Drawing.Size(1375, 24);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 1315);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 684);
             this.barDockControlBottom.Manager = this.UiBarraContenedorPrincipal;
-            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.barDockControlBottom.Size = new System.Drawing.Size(2407, 0);
+            this.barDockControlBottom.Size = new System.Drawing.Size(1375, 0);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 46);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 24);
             this.barDockControlLeft.Manager = this.UiBarraContenedorPrincipal;
-            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 1269);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 660);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(2407, 46);
+            this.barDockControlRight.Location = new System.Drawing.Point(1375, 24);
             this.barDockControlRight.Manager = this.UiBarraContenedorPrincipal;
-            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 1269);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 660);
             // 
             // UiComboFuente
             // 
@@ -466,20 +458,18 @@
             // 
             // UiEtiquetaCliente
             // 
-            this.UiEtiquetaCliente.Location = new System.Drawing.Point(10, 50);
-            this.UiEtiquetaCliente.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.UiEtiquetaCliente.Location = new System.Drawing.Point(5, 26);
             this.UiEtiquetaCliente.Name = "UiEtiquetaCliente";
-            this.UiEtiquetaCliente.Size = new System.Drawing.Size(71, 25);
+            this.UiEtiquetaCliente.Size = new System.Drawing.Size(37, 13);
             this.UiEtiquetaCliente.TabIndex = 4;
             this.UiEtiquetaCliente.Text = "Cliente:";
             // 
             // UiListaCliente
             // 
-            this.UiListaCliente.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.UiListaCliente.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.UiListaCliente.EditValue = "CLIENT_CODE";
-            this.UiListaCliente.Location = new System.Drawing.Point(208, 44);
-            this.UiListaCliente.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.UiListaCliente.Location = new System.Drawing.Point(104, 23);
             this.UiListaCliente.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiListaCliente.Name = "UiListaCliente";
             editorButtonImageOptions5.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions5.Image")));
@@ -490,7 +480,7 @@
             this.UiListaCliente.Properties.PopupView = this.UiVistaCliente;
             this.UiListaCliente.Properties.ValueMember = "CLIENT_CODE";
             this.UiListaCliente.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
-            this.UiListaCliente.Size = new System.Drawing.Size(1217, 40);
+            this.UiListaCliente.Size = new System.Drawing.Size(780, 24);
             this.UiListaCliente.TabIndex = 9;
             this.UiListaCliente.EditValueChanged += new System.EventHandler(this.UiListaCliente_EditValueChanged);
             // 
@@ -532,19 +522,17 @@
             // 
             // UiEtiquetaERP
             // 
-            this.UiEtiquetaERP.Location = new System.Drawing.Point(10, 100);
-            this.UiEtiquetaERP.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.UiEtiquetaERP.Location = new System.Drawing.Point(5, 52);
             this.UiEtiquetaERP.Name = "UiEtiquetaERP";
-            this.UiEtiquetaERP.Size = new System.Drawing.Size(44, 25);
+            this.UiEtiquetaERP.Size = new System.Drawing.Size(23, 13);
             this.UiEtiquetaERP.TabIndex = 10;
             this.UiEtiquetaERP.Text = "ERP:";
             // 
             // UiListaErp
             // 
-            this.UiListaErp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.UiListaErp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.UiListaErp.Location = new System.Drawing.Point(208, 94);
-            this.UiListaErp.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.UiListaErp.Location = new System.Drawing.Point(104, 49);
             this.UiListaErp.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiListaErp.Name = "UiListaErp";
             editorButtonImageOptions6.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions6.Image")));
@@ -556,7 +544,7 @@
             this.UiListaErp.Properties.PopupView = this.UiVistaErpEncabezado;
             this.UiListaErp.Properties.ValueMember = "SAP_REFERENCE";
             this.UiListaErp.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
-            this.UiListaErp.Size = new System.Drawing.Size(1217, 40);
+            this.UiListaErp.Size = new System.Drawing.Size(780, 24);
             this.UiListaErp.TabIndex = 11;
             this.UiListaErp.CustomDisplayText += new DevExpress.XtraEditors.Controls.CustomDisplayTextEventHandler(this.UiListaErp_CustomDisplayText);
             // 
@@ -638,10 +626,9 @@
             // 
             // UiListaUbicacion
             // 
-            this.UiListaUbicacion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.UiListaUbicacion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.UiListaUbicacion.Location = new System.Drawing.Point(174, 94);
-            this.UiListaUbicacion.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.UiListaUbicacion.Location = new System.Drawing.Point(87, 49);
             this.UiListaUbicacion.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiListaUbicacion.Name = "UiListaUbicacion";
             editorButtonImageOptions3.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions3.Image")));
@@ -652,7 +639,7 @@
             this.UiListaUbicacion.Properties.PopupView = this.UiVistaDeListaUbicacion;
             this.UiListaUbicacion.Properties.ValueMember = "LOCATION_SPOT";
             this.UiListaUbicacion.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
-            this.UiListaUbicacion.Size = new System.Drawing.Size(738, 40);
+            this.UiListaUbicacion.Size = new System.Drawing.Size(369, 24);
             this.UiListaUbicacion.TabIndex = 15;
             // 
             // UiVistaDeListaUbicacion
@@ -705,19 +692,17 @@
             // 
             // UiEtiquetaUbicacion
             // 
-            this.UiEtiquetaUbicacion.Location = new System.Drawing.Point(10, 100);
-            this.UiEtiquetaUbicacion.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.UiEtiquetaUbicacion.Location = new System.Drawing.Point(5, 52);
             this.UiEtiquetaUbicacion.Name = "UiEtiquetaUbicacion";
-            this.UiEtiquetaUbicacion.Size = new System.Drawing.Size(97, 25);
+            this.UiEtiquetaUbicacion.Size = new System.Drawing.Size(49, 13);
             this.UiEtiquetaUbicacion.TabIndex = 14;
             this.UiEtiquetaUbicacion.Text = "Ubicación:";
             // 
             // UiListaOperador
             // 
-            this.UiListaOperador.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.UiListaOperador.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.UiListaOperador.Location = new System.Drawing.Point(174, 44);
-            this.UiListaOperador.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.UiListaOperador.Location = new System.Drawing.Point(87, 23);
             this.UiListaOperador.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiListaOperador.Name = "UiListaOperador";
             editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
@@ -728,7 +713,7 @@
             this.UiListaOperador.Properties.PopupView = this.UiVistaUsuario;
             this.UiListaOperador.Properties.ValueMember = "LOGIN_ID";
             this.UiListaOperador.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
-            this.UiListaOperador.Size = new System.Drawing.Size(738, 40);
+            this.UiListaOperador.Size = new System.Drawing.Size(369, 24);
             this.UiListaOperador.TabIndex = 13;
             // 
             // UiVistaUsuario
@@ -761,46 +746,41 @@
             // 
             // UiEtiquetaOperador
             // 
-            this.UiEtiquetaOperador.Location = new System.Drawing.Point(10, 50);
-            this.UiEtiquetaOperador.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.UiEtiquetaOperador.Location = new System.Drawing.Point(5, 26);
             this.UiEtiquetaOperador.Name = "UiEtiquetaOperador";
-            this.UiEtiquetaOperador.Size = new System.Drawing.Size(95, 25);
+            this.UiEtiquetaOperador.Size = new System.Drawing.Size(50, 13);
             this.UiEtiquetaOperador.TabIndex = 12;
             this.UiEtiquetaOperador.Text = "Operador:";
             // 
             // UiEtiqeutaTipoRecepcion
             // 
-            this.UiEtiqeutaTipoRecepcion.Location = new System.Drawing.Point(10, 206);
-            this.UiEtiqeutaTipoRecepcion.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.UiEtiqeutaTipoRecepcion.Location = new System.Drawing.Point(5, 107);
             this.UiEtiqeutaTipoRecepcion.Name = "UiEtiqeutaTipoRecepcion";
-            this.UiEtiqeutaTipoRecepcion.Size = new System.Drawing.Size(149, 25);
+            this.UiEtiqeutaTipoRecepcion.Size = new System.Drawing.Size(76, 13);
             this.UiEtiqeutaTipoRecepcion.TabIndex = 20;
             this.UiEtiqeutaTipoRecepcion.Text = "Tipo Recepción:";
             // 
             // UiEtiquetaAcuerdoComercial
             // 
-            this.UiEtiquetaAcuerdoComercial.Location = new System.Drawing.Point(10, 150);
-            this.UiEtiquetaAcuerdoComercial.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.UiEtiquetaAcuerdoComercial.Location = new System.Drawing.Point(5, 78);
             this.UiEtiquetaAcuerdoComercial.Name = "UiEtiquetaAcuerdoComercial";
-            this.UiEtiquetaAcuerdoComercial.Size = new System.Drawing.Size(183, 25);
+            this.UiEtiquetaAcuerdoComercial.Size = new System.Drawing.Size(93, 13);
             this.UiEtiquetaAcuerdoComercial.TabIndex = 21;
             this.UiEtiquetaAcuerdoComercial.Text = "Acuerdo Comercial:";
             // 
             // UiEtiquetaPolizaDeSeguro
             // 
-            this.UiEtiquetaPolizaDeSeguro.Location = new System.Drawing.Point(10, 200);
-            this.UiEtiquetaPolizaDeSeguro.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.UiEtiquetaPolizaDeSeguro.Location = new System.Drawing.Point(5, 104);
             this.UiEtiquetaPolizaDeSeguro.Name = "UiEtiquetaPolizaDeSeguro";
-            this.UiEtiquetaPolizaDeSeguro.Size = new System.Drawing.Size(163, 25);
+            this.UiEtiquetaPolizaDeSeguro.Size = new System.Drawing.Size(83, 13);
             this.UiEtiquetaPolizaDeSeguro.TabIndex = 22;
             this.UiEtiquetaPolizaDeSeguro.Text = "Poliza de Seguro:";
             // 
             // UiListaAcuerdoComercial
             // 
-            this.UiListaAcuerdoComercial.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.UiListaAcuerdoComercial.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.UiListaAcuerdoComercial.Location = new System.Drawing.Point(208, 144);
-            this.UiListaAcuerdoComercial.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.UiListaAcuerdoComercial.Location = new System.Drawing.Point(104, 75);
             this.UiListaAcuerdoComercial.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiListaAcuerdoComercial.Name = "UiListaAcuerdoComercial";
             editorButtonImageOptions9.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions9.Image")));
@@ -811,7 +791,7 @@
             this.UiListaAcuerdoComercial.Properties.PopupView = this.UiVistaAcuerdoComercial;
             this.UiListaAcuerdoComercial.Properties.ValueMember = "ACUERDO_COMERCIAL";
             this.UiListaAcuerdoComercial.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
-            this.UiListaAcuerdoComercial.Size = new System.Drawing.Size(1217, 40);
+            this.UiListaAcuerdoComercial.Size = new System.Drawing.Size(780, 24);
             this.UiListaAcuerdoComercial.TabIndex = 23;
             // 
             // UiVistaAcuerdoComercial
@@ -844,10 +824,9 @@
             // 
             // UiListaPolizasDeSeguro
             // 
-            this.UiListaPolizasDeSeguro.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.UiListaPolizasDeSeguro.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.UiListaPolizasDeSeguro.Location = new System.Drawing.Point(208, 194);
-            this.UiListaPolizasDeSeguro.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.UiListaPolizasDeSeguro.Location = new System.Drawing.Point(104, 101);
             this.UiListaPolizasDeSeguro.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiListaPolizasDeSeguro.Name = "UiListaPolizasDeSeguro";
             editorButtonImageOptions8.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions8.Image")));
@@ -857,7 +836,7 @@
             this.UiListaPolizasDeSeguro.Properties.DisplayMember = "POLIZA_INSURANCE";
             this.UiListaPolizasDeSeguro.Properties.PopupView = this.UiVistaPolizasSeguro;
             this.UiListaPolizasDeSeguro.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
-            this.UiListaPolizasDeSeguro.Size = new System.Drawing.Size(1217, 40);
+            this.UiListaPolizasDeSeguro.Size = new System.Drawing.Size(780, 24);
             this.UiListaPolizasDeSeguro.TabIndex = 24;
             // 
             // UiVistaPolizasSeguro
@@ -897,10 +876,9 @@
             // 
             // UiListaTipoRecepcion
             // 
-            this.UiListaTipoRecepcion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.UiListaTipoRecepcion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.UiListaTipoRecepcion.Location = new System.Drawing.Point(174, 200);
-            this.UiListaTipoRecepcion.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.UiListaTipoRecepcion.Location = new System.Drawing.Point(87, 104);
             this.UiListaTipoRecepcion.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiListaTipoRecepcion.Name = "UiListaTipoRecepcion";
             editorButtonImageOptions4.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions4.Image")));
@@ -911,7 +889,7 @@
             this.UiListaTipoRecepcion.Properties.PopupView = this.UiVistaTipoRecepcion;
             this.UiListaTipoRecepcion.Properties.ValueMember = "TEXT_VALUE";
             this.UiListaTipoRecepcion.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
-            this.UiListaTipoRecepcion.Size = new System.Drawing.Size(738, 40);
+            this.UiListaTipoRecepcion.Size = new System.Drawing.Size(369, 24);
             this.UiListaTipoRecepcion.TabIndex = 25;
             // 
             // UiVistaTipoRecepcion
@@ -934,19 +912,17 @@
             // 
             // UiEtiquetaPrioridad
             // 
-            this.UiEtiquetaPrioridad.Location = new System.Drawing.Point(10, 150);
-            this.UiEtiquetaPrioridad.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.UiEtiquetaPrioridad.Location = new System.Drawing.Point(5, 78);
             this.UiEtiquetaPrioridad.Name = "UiEtiquetaPrioridad";
-            this.UiEtiquetaPrioridad.Size = new System.Drawing.Size(91, 25);
+            this.UiEtiquetaPrioridad.Size = new System.Drawing.Size(46, 13);
             this.UiEtiquetaPrioridad.TabIndex = 26;
             this.UiEtiquetaPrioridad.Text = "Prioridad:";
             // 
             // UiListaPrioridad
             // 
-            this.UiListaPrioridad.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.UiListaPrioridad.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.UiListaPrioridad.Location = new System.Drawing.Point(174, 146);
-            this.UiListaPrioridad.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.UiListaPrioridad.Location = new System.Drawing.Point(87, 76);
             this.UiListaPrioridad.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiListaPrioridad.Name = "UiListaPrioridad";
             editorButtonImageOptions2.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions2.Image")));
@@ -957,7 +933,7 @@
             this.UiListaPrioridad.Properties.PopupView = this.gridView7;
             this.UiListaPrioridad.Properties.ValueMember = "NUMERIC_VALUE";
             this.UiListaPrioridad.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
-            this.UiListaPrioridad.Size = new System.Drawing.Size(738, 40);
+            this.UiListaPrioridad.Size = new System.Drawing.Size(369, 24);
             this.UiListaPrioridad.TabIndex = 27;
             // 
             // gridView7
@@ -979,17 +955,15 @@
             // 
             // UiContenedorVistaErp
             // 
-            this.UiContenedorVistaErp.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.UiContenedorVistaErp.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.UiContenedorVistaErp.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.UiContenedorVistaErp.Location = new System.Drawing.Point(24, 352);
+            this.UiContenedorVistaErp.Location = new System.Drawing.Point(12, 183);
             this.UiContenedorVistaErp.MainView = this.UiVistaErp;
-            this.UiContenedorVistaErp.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.UiContenedorVistaErp.Name = "UiContenedorVistaErp";
             this.UiContenedorVistaErp.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.UiBotonEliminarEncabezado});
-            this.UiContenedorVistaErp.Size = new System.Drawing.Size(2369, 940);
+            this.UiContenedorVistaErp.Size = new System.Drawing.Size(1356, 489);
             this.UiContenedorVistaErp.TabIndex = 28;
             this.UiContenedorVistaErp.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.UiVistaErp});
@@ -1024,8 +998,6 @@
             this.colOWNER_PROVIDER,
             this.colUNIT_DESCRIPTION,
             this.colUNIT});
-            this.UiVistaErp.DetailHeight = 673;
-            this.UiVistaErp.FixedLineWidth = 4;
             gridFormatRule1.ApplyToRow = true;
             gridFormatRule1.Name = "Format0";
             formatConditionRuleExpression1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
@@ -1096,11 +1068,9 @@
             // 
             this.colEnEliminar.Caption = "Eliminar";
             this.colEnEliminar.ColumnEdit = this.UiBotonEliminarEncabezado;
-            this.colEnEliminar.MinWidth = 40;
             this.colEnEliminar.Name = "colEnEliminar";
             this.colEnEliminar.Visible = true;
             this.colEnEliminar.VisibleIndex = 0;
-            this.colEnEliminar.Width = 150;
             // 
             // UiBotonEliminarEncabezado
             // 
@@ -1116,261 +1086,213 @@
             // 
             this.colDetSAP_RECEPTION_ID.Caption = "Num. Doc";
             this.colDetSAP_RECEPTION_ID.FieldName = "SAP_RECEPTION_ID";
-            this.colDetSAP_RECEPTION_ID.MinWidth = 40;
             this.colDetSAP_RECEPTION_ID.Name = "colDetSAP_RECEPTION_ID";
             this.colDetSAP_RECEPTION_ID.OptionsColumn.AllowEdit = false;
-            this.colDetSAP_RECEPTION_ID.Width = 150;
             // 
             // colDetERP_DOC
             // 
             this.colDetERP_DOC.Caption = "Doc";
             this.colDetERP_DOC.FieldName = "ERP_DOC";
-            this.colDetERP_DOC.MinWidth = 40;
             this.colDetERP_DOC.Name = "colDetERP_DOC";
             this.colDetERP_DOC.OptionsColumn.AllowEdit = false;
             this.colDetERP_DOC.Visible = true;
             this.colDetERP_DOC.VisibleIndex = 1;
-            this.colDetERP_DOC.Width = 150;
             // 
             // colDetPROVIDER_ID
             // 
             this.colDetPROVIDER_ID.Caption = "Código Proveedor";
             this.colDetPROVIDER_ID.FieldName = "PROVIDER_ID";
-            this.colDetPROVIDER_ID.MinWidth = 40;
             this.colDetPROVIDER_ID.Name = "colDetPROVIDER_ID";
             this.colDetPROVIDER_ID.OptionsColumn.AllowEdit = false;
             this.colDetPROVIDER_ID.Visible = true;
             this.colDetPROVIDER_ID.VisibleIndex = 1;
-            this.colDetPROVIDER_ID.Width = 150;
             // 
             // colDetPROVIDER_NAME
             // 
             this.colDetPROVIDER_NAME.Caption = "Nombre Proveedor";
             this.colDetPROVIDER_NAME.FieldName = "PROVIDER_NAME";
-            this.colDetPROVIDER_NAME.MinWidth = 40;
             this.colDetPROVIDER_NAME.Name = "colDetPROVIDER_NAME";
             this.colDetPROVIDER_NAME.OptionsColumn.AllowEdit = false;
             this.colDetPROVIDER_NAME.Visible = true;
             this.colDetPROVIDER_NAME.VisibleIndex = 2;
-            this.colDetPROVIDER_NAME.Width = 150;
             // 
             // colDetSKU
             // 
             this.colDetSKU.Caption = "Código Material";
             this.colDetSKU.FieldName = "SKU";
-            this.colDetSKU.MinWidth = 40;
             this.colDetSKU.Name = "colDetSKU";
             this.colDetSKU.OptionsColumn.AllowEdit = false;
             this.colDetSKU.Visible = true;
             this.colDetSKU.VisibleIndex = 3;
-            this.colDetSKU.Width = 150;
             // 
             // colDetSKU_DESCRIPTION
             // 
             this.colDetSKU_DESCRIPTION.Caption = "Descripción Material";
             this.colDetSKU_DESCRIPTION.FieldName = "SKU_DESCRIPTION";
-            this.colDetSKU_DESCRIPTION.MinWidth = 40;
             this.colDetSKU_DESCRIPTION.Name = "colDetSKU_DESCRIPTION";
             this.colDetSKU_DESCRIPTION.OptionsColumn.AllowEdit = false;
             this.colDetSKU_DESCRIPTION.Visible = true;
             this.colDetSKU_DESCRIPTION.VisibleIndex = 4;
-            this.colDetSKU_DESCRIPTION.Width = 150;
             // 
             // colDetTOTAL_QUANTITY
             // 
             this.colDetTOTAL_QUANTITY.Caption = "Cantidad Total";
             this.colDetTOTAL_QUANTITY.FieldName = "TOTAL_QUANTITY";
-            this.colDetTOTAL_QUANTITY.MinWidth = 40;
             this.colDetTOTAL_QUANTITY.Name = "colDetTOTAL_QUANTITY";
             this.colDetTOTAL_QUANTITY.OptionsColumn.AllowEdit = false;
             this.colDetTOTAL_QUANTITY.Visible = true;
             this.colDetTOTAL_QUANTITY.VisibleIndex = 15;
-            this.colDetTOTAL_QUANTITY.Width = 150;
             // 
             // colDetQTY
             // 
             this.colDetQTY.Caption = "Cantidad a Recibir";
             this.colDetQTY.FieldName = "QTY";
-            this.colDetQTY.MinWidth = 40;
             this.colDetQTY.Name = "colDetQTY";
             this.colDetQTY.OptionsColumn.AllowEdit = false;
             this.colDetQTY.Visible = true;
             this.colDetQTY.VisibleIndex = 5;
-            this.colDetQTY.Width = 150;
             // 
             // colDetRECEPTION_QUANTITY
             // 
             this.colDetRECEPTION_QUANTITY.Caption = "Cantidad Recibida";
             this.colDetRECEPTION_QUANTITY.FieldName = "RECEPTION_QUANTITY";
-            this.colDetRECEPTION_QUANTITY.MinWidth = 40;
             this.colDetRECEPTION_QUANTITY.Name = "colDetRECEPTION_QUANTITY";
             this.colDetRECEPTION_QUANTITY.OptionsColumn.AllowEdit = false;
             this.colDetRECEPTION_QUANTITY.Visible = true;
             this.colDetRECEPTION_QUANTITY.VisibleIndex = 17;
-            this.colDetRECEPTION_QUANTITY.Width = 150;
             // 
             // colDetOPEN_QUANTITY
             // 
             this.colDetOPEN_QUANTITY.Caption = "Cantidad Abierta ERP";
             this.colDetOPEN_QUANTITY.FieldName = "OPEN_QUANTITY";
-            this.colDetOPEN_QUANTITY.MinWidth = 40;
             this.colDetOPEN_QUANTITY.Name = "colDetOPEN_QUANTITY";
             this.colDetOPEN_QUANTITY.OptionsColumn.AllowEdit = false;
             this.colDetOPEN_QUANTITY.Visible = true;
             this.colDetOPEN_QUANTITY.VisibleIndex = 16;
-            this.colDetOPEN_QUANTITY.Width = 150;
             // 
             // colDetLINE_NUM
             // 
             this.colDetLINE_NUM.Caption = "Número de Línea";
             this.colDetLINE_NUM.FieldName = "LINE_NUM";
-            this.colDetLINE_NUM.MinWidth = 40;
             this.colDetLINE_NUM.Name = "colDetLINE_NUM";
             this.colDetLINE_NUM.OptionsColumn.AllowEdit = false;
             this.colDetLINE_NUM.Visible = true;
             this.colDetLINE_NUM.VisibleIndex = 6;
-            this.colDetLINE_NUM.Width = 150;
             // 
             // colDetCOMMENTS
             // 
             this.colDetCOMMENTS.Caption = "Comentario";
             this.colDetCOMMENTS.FieldName = "COMMENTS";
-            this.colDetCOMMENTS.MinWidth = 40;
             this.colDetCOMMENTS.Name = "colDetCOMMENTS";
             this.colDetCOMMENTS.OptionsColumn.AllowEdit = false;
             this.colDetCOMMENTS.Visible = true;
             this.colDetCOMMENTS.VisibleIndex = 7;
-            this.colDetCOMMENTS.Width = 150;
             // 
             // colDetLOGIN_ID
             // 
             this.colDetLOGIN_ID.Caption = "Operador";
             this.colDetLOGIN_ID.FieldName = "LOGIN_ID";
-            this.colDetLOGIN_ID.MinWidth = 40;
             this.colDetLOGIN_ID.Name = "colDetLOGIN_ID";
             this.colDetLOGIN_ID.OptionsColumn.AllowEdit = false;
             this.colDetLOGIN_ID.Visible = true;
             this.colDetLOGIN_ID.VisibleIndex = 8;
-            this.colDetLOGIN_ID.Width = 150;
             // 
             // colDetLOCATION_SPOT
             // 
             this.colDetLOCATION_SPOT.Caption = "Ubicación";
             this.colDetLOCATION_SPOT.FieldName = "LOCATION_SPOT";
-            this.colDetLOCATION_SPOT.MinWidth = 40;
             this.colDetLOCATION_SPOT.Name = "colDetLOCATION_SPOT";
             this.colDetLOCATION_SPOT.OptionsColumn.AllowEdit = false;
             this.colDetLOCATION_SPOT.Visible = true;
             this.colDetLOCATION_SPOT.VisibleIndex = 9;
-            this.colDetLOCATION_SPOT.Width = 150;
             // 
             // colDet
             // 
             this.colDet.Caption = "Tipo De Recepción";
             this.colDet.FieldName = "TYPE_RECEPCTION_DRESCRIPTION";
-            this.colDet.MinWidth = 40;
             this.colDet.Name = "colDet";
             this.colDet.OptionsColumn.AllowEdit = false;
             this.colDet.Visible = true;
             this.colDet.VisibleIndex = 10;
-            this.colDet.Width = 150;
             // 
             // colDetPRIORITY_DESCRIPTION
             // 
             this.colDetPRIORITY_DESCRIPTION.Caption = "Prioridad";
             this.colDetPRIORITY_DESCRIPTION.FieldName = "PRIORITY_DESCRIPTION";
-            this.colDetPRIORITY_DESCRIPTION.MinWidth = 40;
             this.colDetPRIORITY_DESCRIPTION.Name = "colDetPRIORITY_DESCRIPTION";
             this.colDetPRIORITY_DESCRIPTION.OptionsColumn.AllowEdit = false;
             this.colDetPRIORITY_DESCRIPTION.Visible = true;
             this.colDetPRIORITY_DESCRIPTION.VisibleIndex = 11;
-            this.colDetPRIORITY_DESCRIPTION.Width = 150;
             // 
             // colDetTRADE_AGREEMENT_DESCRIPTION
             // 
             this.colDetTRADE_AGREEMENT_DESCRIPTION.Caption = "Acuerdo Comercial";
             this.colDetTRADE_AGREEMENT_DESCRIPTION.FieldName = "TRADE_AGREEMENT_DESCRIPTION";
-            this.colDetTRADE_AGREEMENT_DESCRIPTION.MinWidth = 40;
             this.colDetTRADE_AGREEMENT_DESCRIPTION.Name = "colDetTRADE_AGREEMENT_DESCRIPTION";
             this.colDetTRADE_AGREEMENT_DESCRIPTION.OptionsColumn.AllowEdit = false;
             this.colDetTRADE_AGREEMENT_DESCRIPTION.Visible = true;
             this.colDetTRADE_AGREEMENT_DESCRIPTION.VisibleIndex = 12;
-            this.colDetTRADE_AGREEMENT_DESCRIPTION.Width = 150;
             // 
             // colDetCLIENT_CODE
             // 
             this.colDetCLIENT_CODE.Caption = "Cliente";
             this.colDetCLIENT_CODE.FieldName = "CLIENT_CODE";
-            this.colDetCLIENT_CODE.MinWidth = 40;
             this.colDetCLIENT_CODE.Name = "colDetCLIENT_CODE";
             this.colDetCLIENT_CODE.OptionsColumn.AllowEdit = false;
             this.colDetCLIENT_CODE.Visible = true;
             this.colDetCLIENT_CODE.VisibleIndex = 13;
-            this.colDetCLIENT_CODE.Width = 150;
             // 
             // colDetINSURANCE_DOC_DESCRIPTION
             // 
             this.colDetINSURANCE_DOC_DESCRIPTION.Caption = "Poliza de Seguro";
             this.colDetINSURANCE_DOC_DESCRIPTION.FieldName = "INSURANCE_DOC_DESCRIPTION";
-            this.colDetINSURANCE_DOC_DESCRIPTION.MinWidth = 40;
             this.colDetINSURANCE_DOC_DESCRIPTION.Name = "colDetINSURANCE_DOC_DESCRIPTION";
             this.colDetINSURANCE_DOC_DESCRIPTION.OptionsColumn.AllowEdit = false;
             this.colDetINSURANCE_DOC_DESCRIPTION.Visible = true;
             this.colDetINSURANCE_DOC_DESCRIPTION.VisibleIndex = 14;
-            this.colDetINSURANCE_DOC_DESCRIPTION.Width = 150;
             // 
             // colOWNER
             // 
             this.colOWNER.Caption = "Dueño";
             this.colOWNER.FieldName = "OWNER";
-            this.colOWNER.MinWidth = 40;
             this.colOWNER.Name = "colOWNER";
             this.colOWNER.OptionsColumn.AllowEdit = false;
-            this.colOWNER.Width = 150;
             // 
             // colMASTER_ID_PROVIDER
             // 
             this.colMASTER_ID_PROVIDER.Caption = "MasterId Proveedor";
             this.colMASTER_ID_PROVIDER.FieldName = "MASTER_ID_PROVIDER";
-            this.colMASTER_ID_PROVIDER.MinWidth = 40;
             this.colMASTER_ID_PROVIDER.Name = "colMASTER_ID_PROVIDER";
             this.colMASTER_ID_PROVIDER.OptionsColumn.AllowEdit = false;
-            this.colMASTER_ID_PROVIDER.Width = 150;
             // 
             // colOWNER_PROVIDER
             // 
             this.colOWNER_PROVIDER.Caption = "Dueño Proveedor";
             this.colOWNER_PROVIDER.FieldName = "OWNER_PROVIDER";
-            this.colOWNER_PROVIDER.MinWidth = 40;
             this.colOWNER_PROVIDER.Name = "colOWNER_PROVIDER";
             this.colOWNER_PROVIDER.OptionsColumn.AllowEdit = false;
             this.colOWNER_PROVIDER.Visible = true;
             this.colOWNER_PROVIDER.VisibleIndex = 18;
-            this.colOWNER_PROVIDER.Width = 150;
             // 
             // colUNIT_DESCRIPTION
             // 
             this.colUNIT_DESCRIPTION.Caption = "Unidad de medida";
             this.colUNIT_DESCRIPTION.FieldName = "UNIT_DESCRIPTION";
-            this.colUNIT_DESCRIPTION.MinWidth = 40;
             this.colUNIT_DESCRIPTION.Name = "colUNIT_DESCRIPTION";
             this.colUNIT_DESCRIPTION.OptionsColumn.AllowEdit = false;
             this.colUNIT_DESCRIPTION.Visible = true;
             this.colUNIT_DESCRIPTION.VisibleIndex = 19;
-            this.colUNIT_DESCRIPTION.Width = 150;
             // 
             // colUNIT
             // 
             this.colUNIT.Caption = "Unidad ERP";
             this.colUNIT.FieldName = "UNIT";
-            this.colUNIT.MinWidth = 40;
             this.colUNIT.Name = "colUNIT";
             this.colUNIT.OptionsColumn.AllowEdit = false;
-            this.colUNIT.Width = 150;
             // 
             // UiGrupoCliente
             // 
-            this.UiGrupoCliente.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.UiGrupoCliente.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.UiGrupoCliente.Controls.Add(this.UiTextoNumeroDeFactura);
             this.UiGrupoCliente.Controls.Add(this.UiEtiquetaCliente);
@@ -1381,27 +1303,25 @@
             this.UiGrupoCliente.Controls.Add(this.UiEtiquetaPolizaDeSeguro);
             this.UiGrupoCliente.Controls.Add(this.UiListaPolizasDeSeguro);
             this.UiGrupoCliente.Controls.Add(this.UiListaAcuerdoComercial);
-            this.UiGrupoCliente.Location = new System.Drawing.Point(24, 71);
-            this.UiGrupoCliente.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.UiGrupoCliente.Location = new System.Drawing.Point(12, 37);
             this.UiGrupoCliente.Name = "UiGrupoCliente";
-            this.UiGrupoCliente.Size = new System.Drawing.Size(1435, 269);
+            this.UiGrupoCliente.Size = new System.Drawing.Size(889, 140);
             this.UiGrupoCliente.TabIndex = 29;
             this.UiGrupoCliente.Text = "Datos de Cliente";
             // 
             // UiTextoNumeroDeFactura
             // 
-            this.UiTextoNumeroDeFactura.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.UiTextoNumeroDeFactura.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.UiTextoNumeroDeFactura.CausesValidation = false;
-            this.UiTextoNumeroDeFactura.Location = new System.Drawing.Point(208, 94);
-            this.UiTextoNumeroDeFactura.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.UiTextoNumeroDeFactura.Location = new System.Drawing.Point(104, 49);
             this.UiTextoNumeroDeFactura.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiTextoNumeroDeFactura.Name = "UiTextoNumeroDeFactura";
             this.UiTextoNumeroDeFactura.Properties.Mask.BeepOnError = true;
             this.UiTextoNumeroDeFactura.Properties.Mask.EditMask = "(0?\\d|1\\d|2[0-3])\\:[0-5]\\d";
             this.UiTextoNumeroDeFactura.Properties.Mask.IgnoreMaskBlank = false;
             this.UiTextoNumeroDeFactura.Properties.Mask.ShowPlaceHolders = false;
-            this.UiTextoNumeroDeFactura.Size = new System.Drawing.Size(1217, 40);
+            this.UiTextoNumeroDeFactura.Size = new System.Drawing.Size(780, 20);
             this.UiTextoNumeroDeFactura.TabIndex = 25;
             this.UiTextoNumeroDeFactura.ToolTip = "Ingrese el numero de factura";
             this.UiTextoNumeroDeFactura.Visible = false;
@@ -1418,10 +1338,9 @@
             this.UiGrupoTarea.Controls.Add(this.UiEtiquetaPrioridad);
             this.UiGrupoTarea.Controls.Add(this.UiEtiqeutaTipoRecepcion);
             this.UiGrupoTarea.Controls.Add(this.UiListaTipoRecepcion);
-            this.UiGrupoTarea.Location = new System.Drawing.Point(1471, 71);
-            this.UiGrupoTarea.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.UiGrupoTarea.Location = new System.Drawing.Point(907, 37);
             this.UiGrupoTarea.Name = "UiGrupoTarea";
-            this.UiGrupoTarea.Size = new System.Drawing.Size(922, 269);
+            this.UiGrupoTarea.Size = new System.Drawing.Size(461, 140);
             this.UiGrupoTarea.TabIndex = 30;
             this.UiGrupoTarea.Text = "Datos de Tarea";
             // 
@@ -1431,9 +1350,9 @@
             // 
             // RecepcionErpVista
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2407, 1315);
+            this.ClientSize = new System.Drawing.Size(1375, 684);
             this.Controls.Add(this.UiGrupoTarea);
             this.Controls.Add(this.UiGrupoCliente);
             this.Controls.Add(this.UiContenedorVistaErp);
@@ -1441,7 +1360,6 @@
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "RecepcionErpVista";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Recepcion ERP";

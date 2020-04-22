@@ -673,9 +673,6 @@ C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\WMSOnePlan_Client\bin\Debu
 C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\WMSOnePlan_Client\bin\Debug\System.Xml.dll
 C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\WMSOnePlan_Client\bin\Debug\System.Xml.Linq.dll
 C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\WMSOnePlan_Client\bin\Debug\Telerik.OpenAccess.35.Extensions.dll
-C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\WMSOnePlan_Client\bin\Debug\Telerik.OpenAccess.dll
-C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\WMSOnePlan_Client\bin\Debug\Telerik.OpenAccess.Ria.Extensions.dll
-C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\WMSOnePlan_Client\bin\Debug\Telerik.OpenAccess.Runtime.dll
 C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\WMSOnePlan_Client\bin\Debug\WebGrease.dll
 C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\WMSOnePlan_Client\bin\Debug\DevExpress.XtraMap.v19.2.dll
 C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\WMSOnePlan_Client\bin\Debug\DevExpress.Map.v19.2.Core.dll
@@ -900,3 +897,6 @@ C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\WMSOnePlan_Client\obj\Debu
 C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\WMSOnePlan_Client\obj\Debug\WMSOnePlan_Client.xml
 C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\WMSOnePlan_Client\obj\Debug\WMSOnePlan_Client.pdb
 C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\WMSOnePlan_Client\obj\Debug\WMSOnePlan_Client.exe.licenses
+C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\WMSOnePlan_Client\bin\Debug\Telerik.OpenAccess.Runtime.dll
+C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\WMSOnePlan_Client\bin\Debug\Telerik.OpenAccess.Ria.Extensions.dll
+C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\WMSOnePlan_Client\bin\Debug\Telerik.OpenAccess.dll

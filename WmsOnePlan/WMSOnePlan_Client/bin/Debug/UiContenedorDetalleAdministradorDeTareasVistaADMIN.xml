@@ -6,9 +6,9 @@
     <property name="ShowFooter">true</property>
   </property>
   <property name="ActiveFilterEnabled">true</property>
-  <property name="Columns" iskey="true" value="11">
+  <property name="Columns" iskey="true" value="6">
     <property name="Item1" isnull="true" iskey="true">
-      <property name="Name">UiColTareaDetallePicking</property>
+      <property name="Name">UiColTareaDetalleRecepcion</property>
       <property name="VisibleIndex">1</property>
       <property name="Visible">true</property>
       <property name="Width">75</property>
@@ -16,7 +16,7 @@
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item2" isnull="true" iskey="true">
-      <property name="Name">UiColOperadorDetallePicking</property>
+      <property name="Name">UiColCodigoMaterialRecepcion</property>
       <property name="VisibleIndex">2</property>
       <property name="Visible">true</property>
       <property name="Width">75</property>
@@ -24,8 +24,16 @@
       <property name="MaxWidth">0</property>
     </property>
     <property name="Item3" isnull="true" iskey="true">
-      <property name="Name">UiColCantidadPendienteDetallePicking</property>
+      <property name="Name">UiColNombreMaterialRecepcion</property>
       <property name="VisibleIndex">3</property>
+      <property name="Visible">true</property>
+      <property name="Width">75</property>
+      <property name="MinWidth">20</property>
+      <property name="MaxWidth">0</property>
+    </property>
+    <property name="Item4" isnull="true" iskey="true">
+      <property name="Name">UiColCantidadRecepcion</property>
+      <property name="VisibleIndex">4</property>
       <property name="Visible">true</property>
       <property name="Width">75</property>
       <property name="MinWidth">20</property>
@@ -39,24 +47,8 @@
         </property>
       </property>
     </property>
-    <property name="Item4" isnull="true" iskey="true">
-      <property name="Name">UiColCantidadDetallePicking</property>
-      <property name="VisibleIndex">4</property>
-      <property name="Visible">true</property>
-      <property name="Width">75</property>
-      <property name="MinWidth">20</property>
-      <property name="MaxWidth">0</property>
-      <property name="Summary" iskey="true" value="1">
-        <property name="Item1" isnull="true" iskey="true">
-          <property name="Tag" isnull="true" />
-          <property name="FieldName">QTY_DOC</property>
-          <property name="SummaryType">Sum</property>
-          <property name="DisplayFormat">{0:0.##}</property>
-        </property>
-      </property>
-    </property>
     <property name="Item5" isnull="true" iskey="true">
-      <property name="Name">UiColCantidadDocumento</property>
+      <property name="Name">UiColCantidadDocumentoRecepcion</property>
       <property name="Width">75</property>
       <property name="MinWidth">20</property>
       <property name="MaxWidth">0</property>
@@ -70,52 +62,18 @@
       </property>
     </property>
     <property name="Item6" isnull="true" iskey="true">
-      <property name="Name">UiColCodigoPolizaDestinoDetallePicking</property>
-      <property name="VisibleIndex">5</property>
-      <property name="Visible">true</property>
+      <property name="Name">UiColDiferenciaCantidadRecepcion</property>
       <property name="Width">75</property>
       <property name="MinWidth">20</property>
       <property name="MaxWidth">0</property>
-    </property>
-    <property name="Item7" isnull="true" iskey="true">
-      <property name="Name">UiColCodigoMaterialDetallePicking</property>
-      <property name="VisibleIndex">6</property>
-      <property name="Visible">true</property>
-      <property name="Width">75</property>
-      <property name="MinWidth">20</property>
-      <property name="MaxWidth">0</property>
-    </property>
-    <property name="Item8" isnull="true" iskey="true">
-      <property name="Name">UiColNombreMaterialDetallePicking</property>
-      <property name="VisibleIndex">7</property>
-      <property name="Visible">true</property>
-      <property name="Width">75</property>
-      <property name="MinWidth">20</property>
-      <property name="MaxWidth">0</property>
-    </property>
-    <property name="Item9" isnull="true" iskey="true">
-      <property name="Name">UiColCodigoBarraDetallePicking</property>
-      <property name="VisibleIndex">10</property>
-      <property name="Visible">true</property>
-      <property name="Width">75</property>
-      <property name="MinWidth">20</property>
-      <property name="MaxWidth">0</property>
-    </property>
-    <property name="Item10" isnull="true" iskey="true">
-      <property name="Name">UiColIsCompleted</property>
-      <property name="VisibleIndex">8</property>
-      <property name="Visible">true</property>
-      <property name="Width">75</property>
-      <property name="MinWidth">20</property>
-      <property name="MaxWidth">0</property>
-    </property>
-    <property name="Item11" isnull="true" iskey="true">
-      <property name="Name">UiColClassName</property>
-      <property name="VisibleIndex">9</property>
-      <property name="Visible">true</property>
-      <property name="Width">75</property>
-      <property name="MinWidth">20</property>
-      <property name="MaxWidth">0</property>
+      <property name="Summary" iskey="true" value="1">
+        <property name="Item1" isnull="true" iskey="true">
+          <property name="Tag" isnull="true" />
+          <property name="FieldName">QTY_DIFFERENCE</property>
+          <property name="SummaryType">Sum</property>
+          <property name="DisplayFormat">{0:0.##}</property>
+        </property>
+      </property>
     </property>
   </property>
   <property name="GroupSummary" iskey="true" value="0" />
