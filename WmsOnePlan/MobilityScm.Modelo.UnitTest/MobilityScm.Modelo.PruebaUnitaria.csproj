@@ -40,9 +40,46 @@
       <HintPath>..\packages\NBuilder.5.0.0\lib\net40\FizzWare.NBuilder.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="MobilityScm.Modelo.TipoYEstados, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MobilityScm.Modelo.TipoYEstados.1.0.2\lib\net40\MobilityScm.Modelo.TipoYEstados.dll</HintPath>
+    </Reference>
+    <Reference Include="MobilityScm.Utilerias, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MobilityScm.Utilerias.1.0.1\lib\net40\MobilityScm.Utilerias.dll</HintPath>
+    </Reference>
+    <Reference Include="MobilityScm.Utilerias.Win, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MobilityScm.Utilerias.Win.1.0.1\lib\net40\MobilityScm.Utilerias.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="MobilityScm.Vertical, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MobilityScm.Vertical.1.1.1\lib\net40\MobilityScm.Vertical.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel.DomainServices.Hosting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\RIAServices.Server.4.2.0\lib\Net40\System.ServiceModel.DomainServices.Hosting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.DomainServices.Server, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\RIAServices.Server.4.2.0\lib\Net40\System.ServiceModel.DomainServices.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
+    <Reference Include="Telerik.OpenAccess, Version=2018.0.1127.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Telerik.DataAccess.Core.2018.0.1127.1\lib\net40\Telerik.OpenAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.OpenAccess.35.Extensions, Version=2018.0.1127.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Telerik.DataAccess.Core.2018.0.1127.1\lib\net40\Telerik.OpenAccess.35.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.OpenAccess.40.Extensions, Version=2018.0.1127.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Telerik.DataAccess.Core.2018.0.1127.1\lib\net40\Telerik.OpenAccess.40.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.OpenAccess.Ria.Extensions, Version=2018.0.1127.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Telerik.DataAccess.Ria.Extensions.2018.0.1127.1\lib\net20\Telerik.OpenAccess.Ria.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.OpenAccess.Runtime, Version=2018.0.1127.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Telerik.DataAccess.Core.2018.0.1127.1\lib\net40\Telerik.OpenAccess.Runtime.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -69,26 +106,6 @@
     <Compile Include="Servicios\CumplimientoDeEntregaPrueba.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\MobilityScm.Modelo.TipoYEstados\MobilityScm.Modelo.TipoYEstados.csproj">
-      <Project>{7FA62357-7B1C-447A-9CF4-48D33DD92488}</Project>
-      <Name>MobilityScm.Modelo.TipoYEstados</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\MobilityScm.Utilerias\MobilityScm.Utilerias.csproj">
-      <Project>{2dc8c4bb-e781-4caa-add8-63ef554dbe22}</Project>
-      <Name>MobilityScm.Utilerias</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\MobilityScm.Vertical\MobilityScm.Vertical.csproj">
-      <Project>{4807256a-677e-4286-82e4-13f230a45337}</Project>
-      <Name>MobilityScm.Vertical</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\MobilityScm.Verticial.Excepciones\MobilityScm.Vertical.Excepciones.csproj">
-      <Project>{5a23436d-3bd2-4a22-a238-540e88c6fea0}</Project>
-      <Name>MobilityScm.Vertical.Excepciones</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\SwiftExpress\SwiftExpress\MobilityScm.Utilerias.Web\MobilityScm.Utilerias.Win.csproj">
-      <Project>{55f31ac8-0873-4680-a2c7-e934482d5530}</Project>
-      <Name>MobilityScm.Utilerias.Win</Name>
-    </ProjectReference>
     <ProjectReference Include="..\MobilityScm.Modelo.Entidades\MobilityScm.Modelo.Entidades.csproj">
       <Project>{0d4a97d7-6303-4c48-b3a6-1c4314f09c76}</Project>
       <Name>MobilityScm.Modelo.Entidades</Name>

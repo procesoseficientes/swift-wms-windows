@@ -36,6 +36,12 @@
     <Reference Include="DevExpress.Map.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraMap.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Web.ASPxPivotGrid.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="MobilityScm.Modelo.TipoYEstados, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MobilityScm.Modelo.TipoYEstados.1.0.1\lib\net40\MobilityScm.Modelo.TipoYEstados.dll</HintPath>
+    </Reference>
+    <Reference Include="MobilityScm.Vertical, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MobilityScm.Vertical.1.1.0\lib\net40\MobilityScm.Vertical.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -182,14 +188,7 @@
     <Content Include="CrearClasseDesdeSQL.sql" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\MobilityScm.Modelo.TipoYEstados\MobilityScm.Modelo.TipoYEstados.csproj">
-      <Project>{7fa62357-7b1c-447a-9cf4-48d33dd92488}</Project>
-      <Name>MobilityScm.Modelo.TipoYEstados</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\MobilityScm.Vertical\MobilityScm.Vertical.csproj">
-      <Project>{4807256A-677E-4286-82E4-13F230A45337}</Project>
-      <Name>MobilityScm.Vertical</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
