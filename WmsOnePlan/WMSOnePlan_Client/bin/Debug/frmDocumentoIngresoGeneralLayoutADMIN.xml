@@ -70,7 +70,7 @@
         <property name="RowDefinitions" iskey="true" value="0" />
         <property name="ColumnDefinitions" iskey="true" value="0" />
       </property>
-      <property name="Size">@4,Width=1026@3,Height=618</property>
+      <property name="Size">@4,Width=1074@3,Height=635</property>
       <property name="ExpandButtonVisible">false</property>
       <property name="ExpandButtonMode">Normal</property>
       <property name="HeaderButtonsLocation">Default</property>
@@ -262,7 +262,7 @@
       <property name="Spacing">0, 0, 0, 0</property>
       <property name="Padding">2, 2, 2, 2</property>
       <property name="Location">@1,X=0@1,Y=0</property>
-      <property name="Size">@3,Width=503@2,Height=24</property>
+      <property name="Size">@3,Width=527@2,Height=24</property>
       <property name="ShowInCustomizationForm">true</property>
       <property name="Text">Cliente</property>
       <property name="CustomizationFormText">Cliente</property>
@@ -347,7 +347,7 @@
       <property name="Spacing">0, 0, 0, 0</property>
       <property name="Padding">2, 2, 2, 2</property>
       <property name="Location">@1,X=0@2,Y=24</property>
-      <property name="Size">@3,Width=503@2,Height=24</property>
+      <property name="Size">@3,Width=527@2,Height=24</property>
       <property name="ShowInCustomizationForm">true</property>
       <property name="Text">Número Orden (Referencia)</property>
       <property name="CustomizationFormText">Número Orden (Referencia)</property>
@@ -431,8 +431,8 @@
       <property name="TextToControlDistance">12</property>
       <property name="Spacing">0, 0, 0, 0</property>
       <property name="Padding">2, 2, 2, 2</property>
-      <property name="Location">@3,X=503@2,Y=24</property>
-      <property name="Size">@3,Width=503@2,Height=24</property>
+      <property name="Location">@3,X=527@2,Y=24</property>
+      <property name="Size">@3,Width=527@2,Height=24</property>
       <property name="ShowInCustomizationForm">true</property>
       <property name="Text">Fecha Documento</property>
       <property name="CustomizationFormText">Fecha Documento</property>
@@ -517,7 +517,7 @@
       <property name="Spacing">0, 0, 0, 0</property>
       <property name="Padding">2, 2, 2, 2</property>
       <property name="Location">@1,X=0@3,Y=120</property>
-      <property name="Size">@3,Width=503@2,Height=24</property>
+      <property name="Size">@3,Width=527@2,Height=24</property>
       <property name="ShowInCustomizationForm">true</property>
       <property name="Text">Régimen Almacén</property>
       <property name="CustomizationFormText">Régimen Almacén</property>
@@ -601,8 +601,8 @@
       <property name="TextToControlDistance">12</property>
       <property name="Spacing">0, 0, 0, 0</property>
       <property name="Padding">2, 2, 2, 2</property>
-      <property name="Location">@3,X=503@1,Y=0</property>
-      <property name="Size">@3,Width=503@2,Height=24</property>
+      <property name="Location">@3,X=527@1,Y=0</property>
+      <property name="Size">@3,Width=527@2,Height=24</property>
       <property name="ShowInCustomizationForm">true</property>
       <property name="Text">Acuerdo Comercial</property>
       <property name="CustomizationFormText">Acuerdo Comercial</property>
@@ -687,7 +687,7 @@
       <property name="Spacing">0, 0, 0, 0</property>
       <property name="Padding">2, 2, 2, 2</property>
       <property name="Location">@1,X=0@3,Y=144</property>
-      <property name="Size">@3,Width=503@3,Height=454</property>
+      <property name="Size">@3,Width=527@3,Height=471</property>
       <property name="ShowInCustomizationForm">true</property>
       <property name="Text">Documento</property>
       <property name="CustomizationFormText">Documento</property>
@@ -771,8 +771,8 @@
       <property name="TextToControlDistance">12</property>
       <property name="Spacing">0, 0, 0, 0</property>
       <property name="Padding">2, 2, 2, 2</property>
-      <property name="Location">@3,X=503@3,Y=120</property>
-      <property name="Size">@3,Width=503@3,Height=478</property>
+      <property name="Location">@3,X=527@3,Y=120</property>
+      <property name="Size">@3,Width=527@3,Height=495</property>
       <property name="ShowInCustomizationForm">true</property>
       <property name="Text">Código Póliza</property>
       <property name="CustomizationFormText">Código Póliza</property>
@@ -857,7 +857,7 @@
       <property name="Spacing">0, 0, 0, 0</property>
       <property name="Padding">2, 2, 2, 2</property>
       <property name="Location">@1,X=0@2,Y=96</property>
-      <property name="Size">@3,Width=503@2,Height=24</property>
+      <property name="Size">@3,Width=527@2,Height=24</property>
       <property name="ShowInCustomizationForm">true</property>
       <property name="Text">Operador</property>
       <property name="CustomizationFormText">Operador</property>
@@ -941,8 +941,8 @@
       <property name="TextToControlDistance">12</property>
       <property name="Spacing">0, 0, 0, 0</property>
       <property name="Padding">2, 2, 2, 2</property>
-      <property name="Location">@3,X=503@2,Y=96</property>
-      <property name="Size">@3,Width=503@2,Height=24</property>
+      <property name="Location">@3,X=527@2,Y=96</property>
+      <property name="Size">@3,Width=527@2,Height=24</property>
       <property name="ShowInCustomizationForm">true</property>
       <property name="Text">Póliza Asegurada</property>
       <property name="CustomizationFormText">Póliza Asegurada</property>
@@ -1026,8 +1026,8 @@
       <property name="TextToControlDistance">12</property>
       <property name="Spacing">0, 0, 0, 0</property>
       <property name="Padding">2, 2, 2, 2</property>
-      <property name="Location">@3,X=503@2,Y=48</property>
-      <property name="Size">@3,Width=503@2,Height=48</property>
+      <property name="Location">@3,X=527@2,Y=48</property>
+      <property name="Size">@3,Width=527@2,Height=48</property>
       <property name="ShowInCustomizationForm">true</property>
       <property name="Text">Tipo Recepción</property>
       <property name="CustomizationFormText">Tipo Recepción</property>
@@ -1112,7 +1112,7 @@
       <property name="Spacing">0, 0, 0, 0</property>
       <property name="Padding">2, 2, 2, 2</property>
       <property name="Location">@1,X=0@2,Y=72</property>
-      <property name="Size">@3,Width=503@2,Height=24</property>
+      <property name="Size">@3,Width=527@2,Height=24</property>
       <property name="ShowInCustomizationForm">true</property>
       <property name="Text">Prioridad</property>
       <property name="CustomizationFormText">Prioridad</property>
@@ -1197,7 +1197,7 @@
       <property name="Spacing">0, 0, 0, 0</property>
       <property name="Padding">2, 2, 2, 2</property>
       <property name="Location">@1,X=0@2,Y=48</property>
-      <property name="Size">@3,Width=503@2,Height=24</property>
+      <property name="Size">@3,Width=527@2,Height=24</property>
       <property name="ShowInCustomizationForm">true</property>
       <property name="Text">Ticket</property>
       <property name="CustomizationFormText">Ticket</property>

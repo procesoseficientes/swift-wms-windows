@@ -30,3 +30,17 @@ C:\Users\fabrv\work\WmsOnePlan\WmsOnePlan\WMSOnePlan_BusinessServices\bin\Mobili
 C:\Users\fabrv\work\WmsOnePlan\WmsOnePlan\WMSOnePlan_BusinessServices\bin\MobilityScm.Utilerias.dll
 C:\Users\fabrv\work\WmsOnePlan\WmsOnePlan\WMSOnePlan_BusinessServices\bin\Newtonsoft.Json.dll
 C:\Users\fabrv\work\WmsOnePlan\WmsOnePlan\WMSOnePlan_BusinessServices\obj\Debug\WMSOnePlan_BusinessServices.vbproj.CopyComplete
+C:\Users\elgue\Documents\procesoseficientes\swift-wms-windows\WmsOnePlan\WMSOnePlan_BusinessServices\bin\WMSOnePlan_BusinessServices.dll.config
+C:\Users\elgue\Documents\procesoseficientes\swift-wms-windows\WmsOnePlan\WMSOnePlan_BusinessServices\bin\WMSOnePlan_BusinessServices.dll
+C:\Users\elgue\Documents\procesoseficientes\swift-wms-windows\WmsOnePlan\WMSOnePlan_BusinessServices\bin\WMSOnePlan_BusinessServices.pdb
+C:\Users\elgue\Documents\procesoseficientes\swift-wms-windows\WmsOnePlan\WMSOnePlan_BusinessServices\bin\WMSOnePlan_BusinessServices.xml
+C:\Users\elgue\Documents\procesoseficientes\swift-wms-windows\WmsOnePlan\WMSOnePlan_BusinessServices\bin\Newtonsoft.Json.dll
+C:\Users\elgue\Documents\procesoseficientes\swift-wms-windows\WmsOnePlan\WMSOnePlan_BusinessServices\obj\Debug\WMSOnePlan_BusinessServices.vbprojAssemblyReference.cache
+C:\Users\elgue\Documents\procesoseficientes\swift-wms-windows\WmsOnePlan\WMSOnePlan_BusinessServices\obj\Debug\WMSOnePlan_BusinessServices.Resources.resources
+C:\Users\elgue\Documents\procesoseficientes\swift-wms-windows\WmsOnePlan\WMSOnePlan_BusinessServices\obj\Debug\WMSOnePlan_BusinessServices.vbproj.GenerateResource.cache
+C:\Users\elgue\Documents\procesoseficientes\swift-wms-windows\WmsOnePlan\WMSOnePlan_BusinessServices\obj\Debug\WMSOnePlan_BusinessServices.vbproj.CopyComplete
+C:\Users\elgue\Documents\procesoseficientes\swift-wms-windows\WmsOnePlan\WMSOnePlan_BusinessServices\obj\Debug\WMSOnePlan_BusinessServices.dll
+C:\Users\elgue\Documents\procesoseficientes\swift-wms-windows\WmsOnePlan\WMSOnePlan_BusinessServices\obj\Debug\WMSOnePlan_BusinessServices.xml
+C:\Users\elgue\Documents\procesoseficientes\swift-wms-windows\WmsOnePlan\WMSOnePlan_BusinessServices\obj\Debug\WMSOnePlan_BusinessServices.pdb
+C:\Users\elgue\Documents\procesoseficientes\swift-wms-windows\WmsOnePlan\WMSOnePlan_BusinessServices\bin\MobilityScm.Modelo.TipoYEstados.dll
+C:\Users\elgue\Documents\procesoseficientes\swift-wms-windows\WmsOnePlan\WMSOnePlan_BusinessServices\bin\MobilityScm.Utilerias.dll
