@@ -1,7 +1,0 @@
-C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\Register\bin\Release\Register.exe.config
-C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\Register\bin\Release\Register.exe
-C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\Register\bin\Release\Register.pdb
-C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\Register\obj\Release\Register.csprojResolveAssemblyReference.cache
-C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\Register\obj\Release\Register.csproj.CoreCompileInputs.cache
-C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\Register\obj\Release\Register.exe
-C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\Register\obj\Release\Register.pdb
