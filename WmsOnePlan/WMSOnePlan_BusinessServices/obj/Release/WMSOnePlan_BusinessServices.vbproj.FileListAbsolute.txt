@@ -15,3 +15,17 @@ C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\WMSOnePlan_BusinessService
 C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\WMSOnePlan_BusinessServices\obj\Release\WMSOnePlan_BusinessServices.dll
 C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\WMSOnePlan_BusinessServices\obj\Release\WMSOnePlan_BusinessServices.xml
 C:\Users\fabrv\work\Development\WmsOnePlan\WmsOnePlan\WMSOnePlan_BusinessServices\obj\Release\WMSOnePlan_BusinessServices.pdb
+C:\Users\elgue\Documents\procesoseficientes\swift-wms-windows\WmsOnePlan\WMSOnePlan_BusinessServices\bin\WMSOnePlan_BusinessServices.dll.config
+C:\Users\elgue\Documents\procesoseficientes\swift-wms-windows\WmsOnePlan\WMSOnePlan_BusinessServices\bin\WMSOnePlan_BusinessServices.dll
+C:\Users\elgue\Documents\procesoseficientes\swift-wms-windows\WmsOnePlan\WMSOnePlan_BusinessServices\bin\WMSOnePlan_BusinessServices.pdb
+C:\Users\elgue\Documents\procesoseficientes\swift-wms-windows\WmsOnePlan\WMSOnePlan_BusinessServices\bin\WMSOnePlan_BusinessServices.xml
+C:\Users\elgue\Documents\procesoseficientes\swift-wms-windows\WmsOnePlan\WMSOnePlan_BusinessServices\bin\MobilityScm.Modelo.TipoYEstados.dll
+C:\Users\elgue\Documents\procesoseficientes\swift-wms-windows\WmsOnePlan\WMSOnePlan_BusinessServices\bin\MobilityScm.Utilerias.dll
+C:\Users\elgue\Documents\procesoseficientes\swift-wms-windows\WmsOnePlan\WMSOnePlan_BusinessServices\bin\Newtonsoft.Json.dll
+C:\Users\elgue\Documents\procesoseficientes\swift-wms-windows\WmsOnePlan\WMSOnePlan_BusinessServices\obj\Release\WMSOnePlan_BusinessServices.vbprojAssemblyReference.cache
+C:\Users\elgue\Documents\procesoseficientes\swift-wms-windows\WmsOnePlan\WMSOnePlan_BusinessServices\obj\Release\WMSOnePlan_BusinessServices.Resources.resources
+C:\Users\elgue\Documents\procesoseficientes\swift-wms-windows\WmsOnePlan\WMSOnePlan_BusinessServices\obj\Release\WMSOnePlan_BusinessServices.vbproj.GenerateResource.cache
+C:\Users\elgue\Documents\procesoseficientes\swift-wms-windows\WmsOnePlan\WMSOnePlan_BusinessServices\obj\Release\WMSOnePlan_BusinessServices.vbproj.CopyComplete
+C:\Users\elgue\Documents\procesoseficientes\swift-wms-windows\WmsOnePlan\WMSOnePlan_BusinessServices\obj\Release\WMSOnePlan_BusinessServices.dll
+C:\Users\elgue\Documents\procesoseficientes\swift-wms-windows\WmsOnePlan\WMSOnePlan_BusinessServices\obj\Release\WMSOnePlan_BusinessServices.xml
+C:\Users\elgue\Documents\procesoseficientes\swift-wms-windows\WmsOnePlan\WMSOnePlan_BusinessServices\obj\Release\WMSOnePlan_BusinessServices.pdb
