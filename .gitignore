@@ -341,3 +341,5 @@ healthchecksdb
 
 bin/
 obj/
+WmsOnePlan/WMSOnePlan_BusinessServices/Web.config
+WmsOnePlan/WMSOnePlan_Client/app.config
