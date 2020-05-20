@@ -62,6 +62,7 @@ ex.json -Username fabrv -Password 44919387f9b2817826024e137f9e271be51f3f65
 4. Probar correr programa con F5
 
 ### Configución con DB
+Los configs se pueden descargar desde el sharepoint desde [este link](https://procesoseficientescom.sharepoint.com/sites/Entregadehitorias/Documentos%20compartidos/Forms/AllItems.aspx?viewid=8a7d2a11%2Dc25f%2D46c7%2D8680%2D8ed6947371a5&id=%2Fsites%2FEntregadehitorias%2FDocumentos%20compartidos%2FConfiguracionAmbientes).  
 Los datos para configurar la DB en el backend está en `WMSOnePlan_BussinessServices/Web.config` en la llave `DESARROLLO`.
 
 `<add key="DESARROLLO" value="Server=`**`<ip del servidor deprueba>`**`,1433;Database=`**`<nombre de la DB deprueba>`**`;User=`**`<usuario>`**`;Pwd=`**`<SQ1MSCM!9>`**`"/>`
