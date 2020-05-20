@@ -88,6 +88,7 @@ Partial Class FrmAprobacionFiscal
         Me.gridLienas = New DevExpress.XtraGrid.GridControl()
         Me.gridViewLineas = New DevExpress.XtraGrid.Views.Grid.GridView()
         Me.colLINE_NUMBER = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.colMATERIAL_ID = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.colSKU_DESCRIPTION = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.colQTY = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.colBULTOS = New DevExpress.XtraGrid.Columns.GridColumn()
@@ -108,23 +109,6 @@ Partial Class FrmAprobacionFiscal
         Me.colQtyAso = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.colAsoDOC_ID = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.BarDockControl7 = New DevExpress.XtraBars.BarDockControl()
-        Me.BarDockControl8 = New DevExpress.XtraBars.BarDockControl()
-        Me.BarDockControl6 = New DevExpress.XtraBars.BarDockControl()
-        Me.BarDockControl5 = New DevExpress.XtraBars.BarDockControl()
-        Me.BarDockControl3 = New DevExpress.XtraBars.BarDockControl()
-        Me.BarDockControl4 = New DevExpress.XtraBars.BarDockControl()
-        Me.BarDockControl2 = New DevExpress.XtraBars.BarDockControl()
-        Me.BarDockControl1 = New DevExpress.XtraBars.BarDockControl()
-        Me.barManagerDet = New DevExpress.XtraBars.BarManager(Me.components)
-        Me.Bar1 = New DevExpress.XtraBars.Bar()
-        Me.btnEnlazar = New DevExpress.XtraBars.BarButtonItem()
-        Me.txtComentario3 = New DevExpress.XtraBars.BarEditItem()
-        Me.RepositoryItemMemoEdit3 = New DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit()
-        Me.BarButtonItem1 = New DevExpress.XtraBars.BarButtonItem()
-        Me.BarEditItem8 = New DevExpress.XtraBars.BarEditItem()
-        Me.RepositoryItemMemoExEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemMemoExEdit()
-        Me.txtComentario = New DevExpress.XtraBars.BarEditItem()
-        Me.RepositoryItemMemoEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit()
         Me.barManagerDetEnlazados = New DevExpress.XtraBars.BarManager(Me.components)
         Me.Bar2 = New DevExpress.XtraBars.Bar()
         Me.btnBorrorAso = New DevExpress.XtraBars.BarButtonItem()
@@ -132,13 +116,29 @@ Partial Class FrmAprobacionFiscal
         Me.btnContraerAsociados = New DevExpress.XtraBars.BarButtonItem()
         Me.barConfirAsociacion = New DevExpress.XtraBars.BarButtonItem()
         Me.btnCancelarAso = New DevExpress.XtraBars.BarButtonItem()
+        Me.BarDockControl5 = New DevExpress.XtraBars.BarDockControl()
+        Me.BarDockControl6 = New DevExpress.XtraBars.BarDockControl()
+        Me.BarDockControl8 = New DevExpress.XtraBars.BarDockControl()
         Me.BarEditItem3 = New DevExpress.XtraBars.BarEditItem()
         Me.RepositoryItemFontEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemFontEdit()
         Me.BarEditItem4 = New DevExpress.XtraBars.BarEditItem()
         Me.RepositoryItemImageEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemImageEdit()
         Me.txtComentario2 = New DevExpress.XtraBars.BarEditItem()
         Me.RepositoryItemMemoEdit2 = New DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit()
-        Me.colMATERIAL_ID = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.BarDockControl3 = New DevExpress.XtraBars.BarDockControl()
+        Me.barManagerDet = New DevExpress.XtraBars.BarManager(Me.components)
+        Me.Bar1 = New DevExpress.XtraBars.Bar()
+        Me.btnEnlazar = New DevExpress.XtraBars.BarButtonItem()
+        Me.txtComentario3 = New DevExpress.XtraBars.BarEditItem()
+        Me.RepositoryItemMemoEdit3 = New DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit()
+        Me.BarDockControl1 = New DevExpress.XtraBars.BarDockControl()
+        Me.BarDockControl2 = New DevExpress.XtraBars.BarDockControl()
+        Me.BarDockControl4 = New DevExpress.XtraBars.BarDockControl()
+        Me.BarButtonItem1 = New DevExpress.XtraBars.BarButtonItem()
+        Me.BarEditItem8 = New DevExpress.XtraBars.BarEditItem()
+        Me.RepositoryItemMemoExEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemMemoExEdit()
+        Me.txtComentario = New DevExpress.XtraBars.BarEditItem()
+        Me.RepositoryItemMemoEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit()
         CType(Me.RepositoryItemTextEdit5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tabPolizas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tabPolizas.SuspendLayout()
@@ -166,14 +166,14 @@ Partial Class FrmAprobacionFiscal
         CType(Me.gridViewLineas, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.gridEnlazados, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.gridViewEnlazados, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.barManagerDet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RepositoryItemMemoEdit3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RepositoryItemMemoExEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RepositoryItemMemoEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.barManagerDetEnlazados, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemFontEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemImageEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemMemoEdit2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.barManagerDet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemMemoEdit3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemMemoExEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemMemoEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'RepositoryItemTextEdit5
@@ -185,7 +185,7 @@ Partial Class FrmAprobacionFiscal
         '
         Me.tabPolizas.Dock = System.Windows.Forms.DockStyle.Fill
         Me.tabPolizas.Location = New System.Drawing.Point(0, 0)
-        Me.tabPolizas.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.tabPolizas.Margin = New System.Windows.Forms.Padding(6)
         Me.tabPolizas.Name = "tabPolizas"
         Me.tabPolizas.SelectedTabPage = Me.tabHeader
         Me.tabPolizas.Size = New System.Drawing.Size(2428, 1135)
@@ -199,7 +199,7 @@ Partial Class FrmAprobacionFiscal
         Me.tabHeader.Controls.Add(Me.barDockControlRight)
         Me.tabHeader.Controls.Add(Me.barDockControlBottom)
         Me.tabHeader.Controls.Add(Me.barDockControlTop)
-        Me.tabHeader.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.tabHeader.Margin = New System.Windows.Forms.Padding(6)
         Me.tabHeader.Name = "tabHeader"
         Me.tabHeader.Size = New System.Drawing.Size(2424, 1086)
         Me.tabHeader.Text = "Polizas"
@@ -208,10 +208,10 @@ Partial Class FrmAprobacionFiscal
         '
         Me.gridPolizas.Cursor = System.Windows.Forms.Cursors.Default
         Me.gridPolizas.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.gridPolizas.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.gridPolizas.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(6)
         Me.gridPolizas.Location = New System.Drawing.Point(0, 46)
         Me.gridPolizas.MainView = Me.gridViewPolizas
-        Me.gridPolizas.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.gridPolizas.Margin = New System.Windows.Forms.Padding(6)
         Me.gridPolizas.MenuManager = Me.barManagerHeader
         Me.gridPolizas.Name = "gridPolizas"
         Me.gridPolizas.Size = New System.Drawing.Size(2424, 1040)
@@ -539,7 +539,7 @@ Partial Class FrmAprobacionFiscal
         Me.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.barDockControlTop.Location = New System.Drawing.Point(0, 0)
         Me.barDockControlTop.Manager = Me.barManagerHeader
-        Me.barDockControlTop.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.barDockControlTop.Margin = New System.Windows.Forms.Padding(6)
         Me.barDockControlTop.Size = New System.Drawing.Size(2424, 46)
         '
         'barDockControlBottom
@@ -548,7 +548,7 @@ Partial Class FrmAprobacionFiscal
         Me.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.barDockControlBottom.Location = New System.Drawing.Point(0, 1086)
         Me.barDockControlBottom.Manager = Me.barManagerHeader
-        Me.barDockControlBottom.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.barDockControlBottom.Margin = New System.Windows.Forms.Padding(6)
         Me.barDockControlBottom.Size = New System.Drawing.Size(2424, 0)
         '
         'barDockControlLeft
@@ -557,7 +557,7 @@ Partial Class FrmAprobacionFiscal
         Me.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left
         Me.barDockControlLeft.Location = New System.Drawing.Point(0, 46)
         Me.barDockControlLeft.Manager = Me.barManagerHeader
-        Me.barDockControlLeft.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.barDockControlLeft.Margin = New System.Windows.Forms.Padding(6)
         Me.barDockControlLeft.Size = New System.Drawing.Size(0, 1040)
         '
         'barDockControlRight
@@ -566,7 +566,7 @@ Partial Class FrmAprobacionFiscal
         Me.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right
         Me.barDockControlRight.Location = New System.Drawing.Point(2424, 46)
         Me.barDockControlRight.Manager = Me.barManagerHeader
-        Me.barDockControlRight.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.barDockControlRight.Margin = New System.Windows.Forms.Padding(6)
         Me.barDockControlRight.Size = New System.Drawing.Size(0, 1040)
         '
         'BarEditItem5
@@ -633,7 +633,7 @@ Partial Class FrmAprobacionFiscal
         Me.tabDet.Controls.Add(Me.BarDockControl4)
         Me.tabDet.Controls.Add(Me.BarDockControl2)
         Me.tabDet.Controls.Add(Me.BarDockControl1)
-        Me.tabDet.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.tabDet.Margin = New System.Windows.Forms.Padding(6)
         Me.tabDet.Name = "tabDet"
         Me.tabDet.Size = New System.Drawing.Size(2424, 1086)
         Me.tabDet.Text = "Cuadre"
@@ -643,7 +643,7 @@ Partial Class FrmAprobacionFiscal
         Me.SplitContainerControl2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SplitContainerControl2.Horizontal = False
         Me.SplitContainerControl2.Location = New System.Drawing.Point(0, 46)
-        Me.SplitContainerControl2.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.SplitContainerControl2.Margin = New System.Windows.Forms.Padding(6)
         Me.SplitContainerControl2.Name = "SplitContainerControl2"
         Me.SplitContainerControl2.Panel1.Controls.Add(Me.SplitContainerControl1)
         Me.SplitContainerControl2.Panel1.Text = "Panel1"
@@ -663,7 +663,7 @@ Partial Class FrmAprobacionFiscal
         '
         Me.SplitContainerControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SplitContainerControl1.Location = New System.Drawing.Point(0, 0)
-        Me.SplitContainerControl1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.SplitContainerControl1.Margin = New System.Windows.Forms.Padding(6)
         Me.SplitContainerControl1.Name = "SplitContainerControl1"
         Me.SplitContainerControl1.Panel1.Controls.Add(Me.LabelControl1)
         Me.SplitContainerControl1.Panel1.Controls.Add(Me.gridLicencias)
@@ -679,7 +679,7 @@ Partial Class FrmAprobacionFiscal
         'LabelControl1
         '
         Me.LabelControl1.Location = New System.Drawing.Point(6, 12)
-        Me.LabelControl1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.LabelControl1.Margin = New System.Windows.Forms.Padding(6)
         Me.LabelControl1.Name = "LabelControl1"
         Me.LabelControl1.Size = New System.Drawing.Size(131, 25)
         Me.LabelControl1.TabIndex = 1
@@ -690,10 +690,10 @@ Partial Class FrmAprobacionFiscal
         Me.gridLicencias.AllowDrop = True
         Me.gridLicencias.Cursor = System.Windows.Forms.Cursors.Default
         Me.gridLicencias.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.gridLicencias.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.gridLicencias.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(6)
         Me.gridLicencias.Location = New System.Drawing.Point(0, 0)
         Me.gridLicencias.MainView = Me.gridViewLicencias
-        Me.gridLicencias.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.gridLicencias.Margin = New System.Windows.Forms.Padding(6)
         Me.gridLicencias.MenuManager = Me.barManagerHeader
         Me.gridLicencias.Name = "gridLicencias"
         Me.gridLicencias.Size = New System.Drawing.Size(1414, 538)
@@ -798,7 +798,7 @@ Partial Class FrmAprobacionFiscal
         'LabelControl2
         '
         Me.LabelControl2.Location = New System.Drawing.Point(0, 12)
-        Me.LabelControl2.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.LabelControl2.Margin = New System.Windows.Forms.Padding(6)
         Me.LabelControl2.Name = "LabelControl2"
         Me.LabelControl2.Size = New System.Drawing.Size(58, 25)
         Me.LabelControl2.TabIndex = 2
@@ -809,10 +809,10 @@ Partial Class FrmAprobacionFiscal
         Me.gridLienas.AllowDrop = True
         Me.gridLienas.Cursor = System.Windows.Forms.Cursors.Default
         Me.gridLienas.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.gridLienas.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.gridLienas.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(6)
         Me.gridLienas.Location = New System.Drawing.Point(0, 0)
         Me.gridLienas.MainView = Me.gridViewLineas
-        Me.gridLienas.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.gridLienas.Margin = New System.Windows.Forms.Padding(6)
         Me.gridLienas.MenuManager = Me.barManagerHeader
         Me.gridLienas.Name = "gridLienas"
         Me.gridLienas.Size = New System.Drawing.Size(990, 538)
@@ -839,6 +839,16 @@ Partial Class FrmAprobacionFiscal
         Me.colLINE_NUMBER.Visible = True
         Me.colLINE_NUMBER.VisibleIndex = 0
         Me.colLINE_NUMBER.Width = 150
+        '
+        'colMATERIAL_ID
+        '
+        Me.colMATERIAL_ID.Caption = "Código Material"
+        Me.colMATERIAL_ID.FieldName = "MATERIAL_ID"
+        Me.colMATERIAL_ID.MinWidth = 40
+        Me.colMATERIAL_ID.Name = "colMATERIAL_ID"
+        Me.colMATERIAL_ID.Visible = True
+        Me.colMATERIAL_ID.VisibleIndex = 1
+        Me.colMATERIAL_ID.Width = 300
         '
         'colSKU_DESCRIPTION
         '
@@ -903,7 +913,7 @@ Partial Class FrmAprobacionFiscal
         'LabelControl3
         '
         Me.LabelControl3.Location = New System.Drawing.Point(6, 67)
-        Me.LabelControl3.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.LabelControl3.Margin = New System.Windows.Forms.Padding(6)
         Me.LabelControl3.Name = "LabelControl3"
         Me.LabelControl3.Size = New System.Drawing.Size(92, 25)
         Me.LabelControl3.TabIndex = 5
@@ -913,10 +923,10 @@ Partial Class FrmAprobacionFiscal
         '
         Me.gridEnlazados.Cursor = System.Windows.Forms.Cursors.Default
         Me.gridEnlazados.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.gridEnlazados.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.gridEnlazados.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(6)
         Me.gridEnlazados.Location = New System.Drawing.Point(0, 46)
         Me.gridEnlazados.MainView = Me.gridViewEnlazados
-        Me.gridEnlazados.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.gridEnlazados.Margin = New System.Windows.Forms.Padding(6)
         Me.gridEnlazados.MenuManager = Me.barManagerHeader
         Me.gridEnlazados.Name = "gridEnlazados"
         Me.gridEnlazados.Size = New System.Drawing.Size(2424, 436)
@@ -1092,149 +1102,8 @@ Partial Class FrmAprobacionFiscal
         Me.BarDockControl7.Dock = System.Windows.Forms.DockStyle.Left
         Me.BarDockControl7.Location = New System.Drawing.Point(0, 46)
         Me.BarDockControl7.Manager = Me.barManagerDetEnlazados
-        Me.BarDockControl7.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.BarDockControl7.Margin = New System.Windows.Forms.Padding(6)
         Me.BarDockControl7.Size = New System.Drawing.Size(0, 436)
-        '
-        'BarDockControl8
-        '
-        Me.BarDockControl8.CausesValidation = False
-        Me.BarDockControl8.Dock = System.Windows.Forms.DockStyle.Right
-        Me.BarDockControl8.Location = New System.Drawing.Point(2424, 46)
-        Me.BarDockControl8.Manager = Me.barManagerDetEnlazados
-        Me.BarDockControl8.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.BarDockControl8.Size = New System.Drawing.Size(0, 436)
-        '
-        'BarDockControl6
-        '
-        Me.BarDockControl6.CausesValidation = False
-        Me.BarDockControl6.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.BarDockControl6.Location = New System.Drawing.Point(0, 482)
-        Me.BarDockControl6.Manager = Me.barManagerDetEnlazados
-        Me.BarDockControl6.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.BarDockControl6.Size = New System.Drawing.Size(2424, 0)
-        '
-        'BarDockControl5
-        '
-        Me.BarDockControl5.CausesValidation = False
-        Me.BarDockControl5.Dock = System.Windows.Forms.DockStyle.Top
-        Me.BarDockControl5.Location = New System.Drawing.Point(0, 0)
-        Me.BarDockControl5.Manager = Me.barManagerDetEnlazados
-        Me.BarDockControl5.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.BarDockControl5.Size = New System.Drawing.Size(2424, 46)
-        '
-        'BarDockControl3
-        '
-        Me.BarDockControl3.CausesValidation = False
-        Me.BarDockControl3.Dock = System.Windows.Forms.DockStyle.Left
-        Me.BarDockControl3.Location = New System.Drawing.Point(0, 46)
-        Me.BarDockControl3.Manager = Me.barManagerDet
-        Me.BarDockControl3.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.BarDockControl3.Size = New System.Drawing.Size(0, 1040)
-        '
-        'BarDockControl4
-        '
-        Me.BarDockControl4.CausesValidation = False
-        Me.BarDockControl4.Dock = System.Windows.Forms.DockStyle.Right
-        Me.BarDockControl4.Location = New System.Drawing.Point(2424, 46)
-        Me.BarDockControl4.Manager = Me.barManagerDet
-        Me.BarDockControl4.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.BarDockControl4.Size = New System.Drawing.Size(0, 1040)
-        '
-        'BarDockControl2
-        '
-        Me.BarDockControl2.CausesValidation = False
-        Me.BarDockControl2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.BarDockControl2.Location = New System.Drawing.Point(0, 1086)
-        Me.BarDockControl2.Manager = Me.barManagerDet
-        Me.BarDockControl2.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.BarDockControl2.Size = New System.Drawing.Size(2424, 0)
-        '
-        'BarDockControl1
-        '
-        Me.BarDockControl1.CausesValidation = False
-        Me.BarDockControl1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.BarDockControl1.Location = New System.Drawing.Point(0, 0)
-        Me.BarDockControl1.Manager = Me.barManagerDet
-        Me.BarDockControl1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.BarDockControl1.Size = New System.Drawing.Size(2424, 46)
-        '
-        'barManagerDet
-        '
-        Me.barManagerDet.Bars.AddRange(New DevExpress.XtraBars.Bar() {Me.Bar1})
-        Me.barManagerDet.DockControls.Add(Me.BarDockControl1)
-        Me.barManagerDet.DockControls.Add(Me.BarDockControl2)
-        Me.barManagerDet.DockControls.Add(Me.BarDockControl3)
-        Me.barManagerDet.DockControls.Add(Me.BarDockControl4)
-        Me.barManagerDet.Form = Me.tabDet
-        Me.barManagerDet.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.btnEnlazar, Me.BarButtonItem1, Me.BarEditItem8, Me.txtComentario, Me.txtComentario3})
-        Me.barManagerDet.MaxItemId = 5
-        Me.barManagerDet.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemMemoExEdit1, Me.RepositoryItemMemoEdit1, Me.RepositoryItemMemoEdit3})
-        '
-        'Bar1
-        '
-        Me.Bar1.BarName = "Herramientas"
-        Me.Bar1.DockCol = 0
-        Me.Bar1.DockRow = 0
-        Me.Bar1.DockStyle = DevExpress.XtraBars.BarDockStyle.Top
-        Me.Bar1.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {New DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, Me.btnEnlazar, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph), New DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, Me.txtComentario3, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)})
-        Me.Bar1.OptionsBar.AllowQuickCustomization = False
-        Me.Bar1.OptionsBar.DrawDragBorder = False
-        Me.Bar1.OptionsBar.UseWholeRow = True
-        Me.Bar1.Text = "Herramientas"
-        '
-        'btnEnlazar
-        '
-        Me.btnEnlazar.Caption = "Enlazar"
-        Me.btnEnlazar.Id = 0
-        Me.btnEnlazar.ImageOptions.Image = CType(resources.GetObject("btnEnlazar.ImageOptions.Image"), System.Drawing.Image)
-        Me.btnEnlazar.ImageOptions.LargeImage = CType(resources.GetObject("btnEnlazar.ImageOptions.LargeImage"), System.Drawing.Image)
-        Me.btnEnlazar.Name = "btnEnlazar"
-        '
-        'txtComentario3
-        '
-        Me.txtComentario3.Caption = "Comentario"
-        Me.txtComentario3.Edit = Me.RepositoryItemMemoEdit3
-        Me.txtComentario3.EditWidth = 800
-        Me.txtComentario3.Id = 4
-        Me.txtComentario3.ImageOptions.Image = CType(resources.GetObject("txtComentario3.ImageOptions.Image"), System.Drawing.Image)
-        Me.txtComentario3.ImageOptions.LargeImage = CType(resources.GetObject("txtComentario3.ImageOptions.LargeImage"), System.Drawing.Image)
-        Me.txtComentario3.Name = "txtComentario3"
-        '
-        'RepositoryItemMemoEdit3
-        '
-        Me.RepositoryItemMemoEdit3.Name = "RepositoryItemMemoEdit3"
-        '
-        'BarButtonItem1
-        '
-        Me.BarButtonItem1.Id = 1
-        Me.BarButtonItem1.Name = "BarButtonItem1"
-        '
-        'BarEditItem8
-        '
-        Me.BarEditItem8.Caption = "BarEditItem8"
-        Me.BarEditItem8.Edit = Me.RepositoryItemMemoExEdit1
-        Me.BarEditItem8.Id = 2
-        Me.BarEditItem8.Name = "BarEditItem8"
-        '
-        'RepositoryItemMemoExEdit1
-        '
-        Me.RepositoryItemMemoExEdit1.AutoHeight = False
-        Me.RepositoryItemMemoExEdit1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.RepositoryItemMemoExEdit1.Name = "RepositoryItemMemoExEdit1"
-        '
-        'txtComentario
-        '
-        Me.txtComentario.Caption = "Comentario"
-        Me.txtComentario.Edit = Me.RepositoryItemMemoEdit1
-        Me.txtComentario.EditWidth = 500
-        Me.txtComentario.Id = 3
-        Me.txtComentario.ImageOptions.Image = CType(resources.GetObject("txtComentario.ImageOptions.Image"), System.Drawing.Image)
-        Me.txtComentario.ImageOptions.LargeImage = CType(resources.GetObject("txtComentario.ImageOptions.LargeImage"), System.Drawing.Image)
-        Me.txtComentario.Name = "txtComentario"
-        '
-        'RepositoryItemMemoEdit1
-        '
-        Me.RepositoryItemMemoEdit1.Name = "RepositoryItemMemoEdit1"
         '
         'barManagerDetEnlazados
         '
@@ -1302,6 +1171,33 @@ Partial Class FrmAprobacionFiscal
         Me.btnCancelarAso.Name = "btnCancelarAso"
         Me.btnCancelarAso.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
         '
+        'BarDockControl5
+        '
+        Me.BarDockControl5.CausesValidation = False
+        Me.BarDockControl5.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BarDockControl5.Location = New System.Drawing.Point(0, 0)
+        Me.BarDockControl5.Manager = Me.barManagerDetEnlazados
+        Me.BarDockControl5.Margin = New System.Windows.Forms.Padding(6)
+        Me.BarDockControl5.Size = New System.Drawing.Size(2424, 46)
+        '
+        'BarDockControl6
+        '
+        Me.BarDockControl6.CausesValidation = False
+        Me.BarDockControl6.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.BarDockControl6.Location = New System.Drawing.Point(0, 482)
+        Me.BarDockControl6.Manager = Me.barManagerDetEnlazados
+        Me.BarDockControl6.Margin = New System.Windows.Forms.Padding(6)
+        Me.BarDockControl6.Size = New System.Drawing.Size(2424, 0)
+        '
+        'BarDockControl8
+        '
+        Me.BarDockControl8.CausesValidation = False
+        Me.BarDockControl8.Dock = System.Windows.Forms.DockStyle.Right
+        Me.BarDockControl8.Location = New System.Drawing.Point(2424, 46)
+        Me.BarDockControl8.Manager = Me.barManagerDetEnlazados
+        Me.BarDockControl8.Margin = New System.Windows.Forms.Padding(6)
+        Me.BarDockControl8.Size = New System.Drawing.Size(0, 436)
+        '
         'BarEditItem3
         '
         Me.BarEditItem3.Caption = "BarEditItem3"
@@ -1342,15 +1238,119 @@ Partial Class FrmAprobacionFiscal
         '
         Me.RepositoryItemMemoEdit2.Name = "RepositoryItemMemoEdit2"
         '
-        'colMATERIAL_ID
+        'BarDockControl3
         '
-        Me.colMATERIAL_ID.Caption = "ID Material"
-        Me.colMATERIAL_ID.MinWidth = 40
-        Me.colMATERIAL_ID.Name = "colMATERIAL_ID"
-        Me.colSKU_DESCRIPTION.FieldName = "MATERIAL_ID"
-        Me.colMATERIAL_ID.Visible = True
-        Me.colMATERIAL_ID.VisibleIndex = 1
-        Me.colMATERIAL_ID.Width = 300
+        Me.BarDockControl3.CausesValidation = False
+        Me.BarDockControl3.Dock = System.Windows.Forms.DockStyle.Left
+        Me.BarDockControl3.Location = New System.Drawing.Point(0, 46)
+        Me.BarDockControl3.Manager = Me.barManagerDet
+        Me.BarDockControl3.Margin = New System.Windows.Forms.Padding(6)
+        Me.BarDockControl3.Size = New System.Drawing.Size(0, 1040)
+        '
+        'barManagerDet
+        '
+        Me.barManagerDet.Bars.AddRange(New DevExpress.XtraBars.Bar() {Me.Bar1})
+        Me.barManagerDet.DockControls.Add(Me.BarDockControl1)
+        Me.barManagerDet.DockControls.Add(Me.BarDockControl2)
+        Me.barManagerDet.DockControls.Add(Me.BarDockControl3)
+        Me.barManagerDet.DockControls.Add(Me.BarDockControl4)
+        Me.barManagerDet.Form = Me.tabDet
+        Me.barManagerDet.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.btnEnlazar, Me.BarButtonItem1, Me.BarEditItem8, Me.txtComentario, Me.txtComentario3})
+        Me.barManagerDet.MaxItemId = 5
+        Me.barManagerDet.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemMemoExEdit1, Me.RepositoryItemMemoEdit1, Me.RepositoryItemMemoEdit3})
+        '
+        'Bar1
+        '
+        Me.Bar1.BarName = "Herramientas"
+        Me.Bar1.DockCol = 0
+        Me.Bar1.DockRow = 0
+        Me.Bar1.DockStyle = DevExpress.XtraBars.BarDockStyle.Top
+        Me.Bar1.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {New DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, Me.btnEnlazar, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph), New DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, Me.txtComentario3, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)})
+        Me.Bar1.OptionsBar.AllowQuickCustomization = False
+        Me.Bar1.OptionsBar.DrawDragBorder = False
+        Me.Bar1.OptionsBar.UseWholeRow = True
+        Me.Bar1.Text = "Herramientas"
+        '
+        'btnEnlazar
+        '
+        Me.btnEnlazar.Caption = "Enlazar"
+        Me.btnEnlazar.Id = 0
+        Me.btnEnlazar.ImageOptions.Image = CType(resources.GetObject("btnEnlazar.ImageOptions.Image"), System.Drawing.Image)
+        Me.btnEnlazar.ImageOptions.LargeImage = CType(resources.GetObject("btnEnlazar.ImageOptions.LargeImage"), System.Drawing.Image)
+        Me.btnEnlazar.Name = "btnEnlazar"
+        '
+        'txtComentario3
+        '
+        Me.txtComentario3.Caption = "Comentario"
+        Me.txtComentario3.Edit = Me.RepositoryItemMemoEdit3
+        Me.txtComentario3.EditWidth = 800
+        Me.txtComentario3.Id = 4
+        Me.txtComentario3.ImageOptions.Image = CType(resources.GetObject("txtComentario3.ImageOptions.Image"), System.Drawing.Image)
+        Me.txtComentario3.ImageOptions.LargeImage = CType(resources.GetObject("txtComentario3.ImageOptions.LargeImage"), System.Drawing.Image)
+        Me.txtComentario3.Name = "txtComentario3"
+        '
+        'RepositoryItemMemoEdit3
+        '
+        Me.RepositoryItemMemoEdit3.Name = "RepositoryItemMemoEdit3"
+        '
+        'BarDockControl1
+        '
+        Me.BarDockControl1.CausesValidation = False
+        Me.BarDockControl1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BarDockControl1.Location = New System.Drawing.Point(0, 0)
+        Me.BarDockControl1.Manager = Me.barManagerDet
+        Me.BarDockControl1.Margin = New System.Windows.Forms.Padding(6)
+        Me.BarDockControl1.Size = New System.Drawing.Size(2424, 46)
+        '
+        'BarDockControl2
+        '
+        Me.BarDockControl2.CausesValidation = False
+        Me.BarDockControl2.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.BarDockControl2.Location = New System.Drawing.Point(0, 1086)
+        Me.BarDockControl2.Manager = Me.barManagerDet
+        Me.BarDockControl2.Margin = New System.Windows.Forms.Padding(6)
+        Me.BarDockControl2.Size = New System.Drawing.Size(2424, 0)
+        '
+        'BarDockControl4
+        '
+        Me.BarDockControl4.CausesValidation = False
+        Me.BarDockControl4.Dock = System.Windows.Forms.DockStyle.Right
+        Me.BarDockControl4.Location = New System.Drawing.Point(2424, 46)
+        Me.BarDockControl4.Manager = Me.barManagerDet
+        Me.BarDockControl4.Margin = New System.Windows.Forms.Padding(6)
+        Me.BarDockControl4.Size = New System.Drawing.Size(0, 1040)
+        '
+        'BarButtonItem1
+        '
+        Me.BarButtonItem1.Id = 1
+        Me.BarButtonItem1.Name = "BarButtonItem1"
+        '
+        'BarEditItem8
+        '
+        Me.BarEditItem8.Caption = "BarEditItem8"
+        Me.BarEditItem8.Edit = Me.RepositoryItemMemoExEdit1
+        Me.BarEditItem8.Id = 2
+        Me.BarEditItem8.Name = "BarEditItem8"
+        '
+        'RepositoryItemMemoExEdit1
+        '
+        Me.RepositoryItemMemoExEdit1.AutoHeight = False
+        Me.RepositoryItemMemoExEdit1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.RepositoryItemMemoExEdit1.Name = "RepositoryItemMemoExEdit1"
+        '
+        'txtComentario
+        '
+        Me.txtComentario.Caption = "Comentario"
+        Me.txtComentario.Edit = Me.RepositoryItemMemoEdit1
+        Me.txtComentario.EditWidth = 500
+        Me.txtComentario.Id = 3
+        Me.txtComentario.ImageOptions.Image = CType(resources.GetObject("txtComentario.ImageOptions.Image"), System.Drawing.Image)
+        Me.txtComentario.ImageOptions.LargeImage = CType(resources.GetObject("txtComentario.ImageOptions.LargeImage"), System.Drawing.Image)
+        Me.txtComentario.Name = "txtComentario"
+        '
+        'RepositoryItemMemoEdit1
+        '
+        Me.RepositoryItemMemoEdit1.Name = "RepositoryItemMemoEdit1"
         '
         'FrmAprobacionFiscal
         '
@@ -1358,49 +1358,49 @@ Partial Class FrmAprobacionFiscal
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(2428, 1135)
         Me.Controls.Add(Me.tabPolizas)
-        Me.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Margin = New System.Windows.Forms.Padding(6)
         Me.Name = "FrmAprobacionFiscal"
         Me.Text = "Aprobacion Fiscal"
-        CType(Me.RepositoryItemTextEdit5,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.tabPolizas,System.ComponentModel.ISupportInitialize).EndInit
-        Me.tabPolizas.ResumeLayout(false)
-        Me.tabHeader.ResumeLayout(false)
-        Me.tabHeader.PerformLayout
-        CType(Me.gridPolizas,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.gridViewPolizas,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.barManagerHeader,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.RepositoryItemDateEdit1.CalendarTimeProperties,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.RepositoryItemDateEdit1,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.RepositoryItemDateEdit2.CalendarTimeProperties,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.RepositoryItemDateEdit2,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.RepositoryItemTextEdit1,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.RepositoryItemTextEdit2,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.RepositoryItemDateEdit3.CalendarTimeProperties,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.RepositoryItemDateEdit3,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.RepositoryItemTextEdit3,System.ComponentModel.ISupportInitialize).EndInit
-        Me.tabDet.ResumeLayout(false)
-        Me.tabDet.PerformLayout
-        CType(Me.SplitContainerControl2,System.ComponentModel.ISupportInitialize).EndInit
-        Me.SplitContainerControl2.ResumeLayout(false)
-        CType(Me.SplitContainerControl1,System.ComponentModel.ISupportInitialize).EndInit
-        Me.SplitContainerControl1.ResumeLayout(false)
-        CType(Me.gridLicencias,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.gridViewLicencias,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.gridLienas,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.gridViewLineas,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.gridEnlazados,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.gridViewEnlazados,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.barManagerDet,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.RepositoryItemMemoEdit3,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.RepositoryItemMemoExEdit1,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.RepositoryItemMemoEdit1,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.barManagerDetEnlazados,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.RepositoryItemFontEdit1,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.RepositoryItemImageEdit1,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.RepositoryItemMemoEdit2,System.ComponentModel.ISupportInitialize).EndInit
-        Me.ResumeLayout(false)
+        CType(Me.RepositoryItemTextEdit5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.tabPolizas, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.tabPolizas.ResumeLayout(False)
+        Me.tabHeader.ResumeLayout(False)
+        Me.tabHeader.PerformLayout()
+        CType(Me.gridPolizas, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.gridViewPolizas, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.barManagerHeader, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemDateEdit1.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemDateEdit1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemDateEdit2.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemDateEdit2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemTextEdit1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemTextEdit2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemDateEdit3.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemDateEdit3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemTextEdit3, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.tabDet.ResumeLayout(False)
+        Me.tabDet.PerformLayout()
+        CType(Me.SplitContainerControl2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.SplitContainerControl2.ResumeLayout(False)
+        CType(Me.SplitContainerControl1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.SplitContainerControl1.ResumeLayout(False)
+        CType(Me.gridLicencias, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.gridViewLicencias, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.gridLienas, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.gridViewLineas, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.gridEnlazados, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.gridViewEnlazados, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.barManagerDetEnlazados, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemFontEdit1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemImageEdit1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemMemoEdit2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.barManagerDet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemMemoEdit3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemMemoExEdit1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemMemoEdit1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
 
-End Sub
+    End Sub
     Friend WithEvents tabPolizas As DevExpress.XtraTab.XtraTabControl
     Friend WithEvents tabHeader As DevExpress.XtraTab.XtraTabPage
     Friend WithEvents tabDet As DevExpress.XtraTab.XtraTabPage

@@ -129,6 +129,9 @@ Public Class FrmAprobacionFiscal
             End If
             Dim dt As DataTable = dtS.Tables(0)
             dt.Columns.Add("TRANS_ASOCIADOS")
+            If dt.Rows.Count > 0 Then
+                Dim x = dt.Rows(0).Item("MATERIAL_ID")
+            End If
 
             For Each rowLineas As DataRow In dt.Rows
                 Dim enlazados As String = ""
@@ -319,6 +322,7 @@ Public Class FrmAprobacionFiscal
                                     newRowAso("MATERIAL_DESCRIPTION") = rowTrans("MATERIAL_DESCRIPTION")
                                     newRowAso("QTY_TRANS") = rowTrans("QUANTITY_UNITS")
                                     newRowAso("LINENO_POLIZA") = rowLinea("LINE_NUMBER")
+                                    newRowAso("MATERIAL_ID") = rowLinea("MATERIAL_ID")
                                     newRowAso("SKU_DESCRIPTION") = rowLinea("SKU_DESCRIPTION")
                                     newRowAso("QTY_POLIZA") = rowLinea("QTY")
                                     newRowAso("BULTOS_POLIZA") = rowLinea("BULTOS")
