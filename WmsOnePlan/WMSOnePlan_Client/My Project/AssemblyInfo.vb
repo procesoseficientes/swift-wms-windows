@@ -13,8 +13,8 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyTitle("Swift 3PL")> 
 <Assembly: AssemblyDescription("Backoffice WMS")> 
 <Assembly: AssemblyCompany("Mobility SCM")> 
-<Assembly: AssemblyProduct("WMSOnePlan_Client")> 
-<Assembly: AssemblyCopyright("Copyright ©  2009-2018")> 
+<Assembly: AssemblyProduct("WMSOnePlan_Client")>
+<Assembly: AssemblyCopyright("Copyright ©  2009-2020")>
 <Assembly: AssemblyTrademark("Mobility SCM©")> 
 
 <Assembly: ComVisible(False)> 
@@ -33,7 +33,7 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("2020.4.22.0")>
-<Assembly: AssemblyFileVersion("2020.4.22.0")>
+<Assembly: AssemblyVersion("2020.5.8.0")>
+<Assembly: AssemblyFileVersion("2020.5.8.0")>
 
 <Assembly: NeutralResourcesLanguageAttribute("en-US")> 

@@ -64,6 +64,8 @@ Module WMS_GlobalModule
                 Dim pUri As String = ConfigurationManager.AppSettings("WSHOST").ToString +
                                      "/Catalogues/WMS_Security.asmx"
                 Dim xserv As New WMS_SecuritySoapClient("WMS_SecuritySoap", pUri)
+                Dim x = Environment
+                Dim y = PublicLoginInfo
 
                 Dim xdata As DataSet = xserv.GetEnvironmentByKey("OP_WMS", Environment, pResult,
                                                                  PublicLoginInfo.Environment)

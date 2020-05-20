@@ -105,6 +105,7 @@ Public Class frmLogin
                 End If
 
                 Try
+                    Dim x = xdata.Tables(0).Rows(0)("ENVIRONMENT")
                     xdata1 = xserv.GetEnvironmentByKey("OP_WMS", xdata.Tables(0).Rows(0)("ENVIRONMENT").ToString, pResult, xdata.Tables(0).Rows(0)("ENVIRONMENT").ToString)
                     If pResult = "OK" Then
                         If xdata1.Tables(0).Rows(0)("STATUS") <> "ACTIVO" Then
