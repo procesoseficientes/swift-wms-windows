@@ -129,9 +129,6 @@ Public Class FrmAprobacionFiscal
             End If
             Dim dt As DataTable = dtS.Tables(0)
             dt.Columns.Add("TRANS_ASOCIADOS")
-            If dt.Rows.Count > 0 Then
-                Dim x = dt.Rows(0).Item("MATERIAL_ID")
-            End If
 
             For Each rowLineas As DataRow In dt.Rows
                 Dim enlazados As String = ""
