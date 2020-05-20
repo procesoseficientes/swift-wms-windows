@@ -200,12 +200,14 @@ Partial Class frmDocumentoIngresoGeneral
         Me.LayoutControl1.Name = "LayoutControl1"
         Me.LayoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New System.Drawing.Rectangle(2281, 319, 620, 522)
         Me.LayoutControl1.Root = Me.LayoutControlGroup1
-        Me.LayoutControl1.Size = New System.Drawing.Size(1026, 618)
+        Me.LayoutControl1.Size = New System.Drawing.Size(1074, 635)
         Me.LayoutControl1.TabIndex = 0
         Me.LayoutControl1.Text = "LayoutControl1"
         '
         'UiPopupComprobante
         '
+        Me.UiPopupComprobante.AutoSize = True
+        Me.UiPopupComprobante.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.UiPopupComprobante.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003
         Me.UiPopupComprobante.Controls.Add(Me.UiGridLookUpClientesComprobante)
         Me.UiPopupComprobante.Controls.Add(Me.UiBotonCerrarComprobante)
@@ -234,7 +236,8 @@ Partial Class frmDocumentoIngresoGeneral
         Me.UiPopupComprobante.Controls.Add(Me.UIEtiquetaNombreClienteComprobante)
         Me.UiPopupComprobante.Controls.Add(Me.LabelControl2)
         Me.UiPopupComprobante.Controls.Add(Me.LabelControl1)
-        Me.UiPopupComprobante.Location = New System.Drawing.Point(307, 81)
+        Me.UiPopupComprobante.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.UiPopupComprobante.Location = New System.Drawing.Point(256, 6)
         Me.UiPopupComprobante.Manager = Me.BarManager1
         Me.UiPopupComprobante.Name = "UiPopupComprobante"
         Me.UiPopupComprobante.ShowCloseButton = True
@@ -352,15 +355,15 @@ Partial Class frmDocumentoIngresoGeneral
         Me.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.barDockControlTop.Location = New System.Drawing.Point(0, 0)
         Me.barDockControlTop.Manager = Me.BarManager1
-        Me.barDockControlTop.Size = New System.Drawing.Size(1026, 56)
+        Me.barDockControlTop.Size = New System.Drawing.Size(1074, 56)
         '
         'barDockControlBottom
         '
         Me.barDockControlBottom.CausesValidation = False
         Me.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 674)
+        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 691)
         Me.barDockControlBottom.Manager = Me.BarManager1
-        Me.barDockControlBottom.Size = New System.Drawing.Size(1026, 0)
+        Me.barDockControlBottom.Size = New System.Drawing.Size(1074, 0)
         '
         'barDockControlLeft
         '
@@ -368,15 +371,15 @@ Partial Class frmDocumentoIngresoGeneral
         Me.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left
         Me.barDockControlLeft.Location = New System.Drawing.Point(0, 56)
         Me.barDockControlLeft.Manager = Me.BarManager1
-        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 618)
+        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 635)
         '
         'barDockControlRight
         '
         Me.barDockControlRight.CausesValidation = False
         Me.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right
-        Me.barDockControlRight.Location = New System.Drawing.Point(1026, 56)
+        Me.barDockControlRight.Location = New System.Drawing.Point(1074, 56)
         Me.barDockControlRight.Manager = Me.BarManager1
-        Me.barDockControlRight.Size = New System.Drawing.Size(0, 618)
+        Me.barDockControlRight.Size = New System.Drawing.Size(0, 635)
         '
         'GridView7
         '
@@ -705,7 +708,7 @@ Partial Class frmDocumentoIngresoGeneral
         Me.lookupPrioridad.Name = "lookupPrioridad"
         Me.lookupPrioridad.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.lookupPrioridad.Properties.PopupView = Me.GridView9
-        Me.lookupPrioridad.Size = New System.Drawing.Size(363, 20)
+        Me.lookupPrioridad.Size = New System.Drawing.Size(387, 20)
         Me.lookupPrioridad.StyleController = Me.LayoutControl1
         Me.lookupPrioridad.TabIndex = 54
         '
@@ -719,12 +722,12 @@ Partial Class frmDocumentoIngresoGeneral
         'lookupTipoRecepcion
         '
         Me.lookupTipoRecepcion.EditValue = ""
-        Me.lookupTipoRecepcion.Location = New System.Drawing.Point(651, 60)
+        Me.lookupTipoRecepcion.Location = New System.Drawing.Point(675, 60)
         Me.lookupTipoRecepcion.MenuManager = Me.BarManager1
         Me.lookupTipoRecepcion.Name = "lookupTipoRecepcion"
         Me.lookupTipoRecepcion.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.lookupTipoRecepcion.Properties.PopupView = Me.GridView8
-        Me.lookupTipoRecepcion.Size = New System.Drawing.Size(363, 20)
+        Me.lookupTipoRecepcion.Size = New System.Drawing.Size(387, 20)
         Me.lookupTipoRecepcion.StyleController = Me.LayoutControl1
         Me.lookupTipoRecepcion.TabIndex = 53
         '
@@ -737,7 +740,7 @@ Partial Class frmDocumentoIngresoGeneral
         '
         'cmbPolizaAsegurada
         '
-        Me.cmbPolizaAsegurada.Location = New System.Drawing.Point(651, 108)
+        Me.cmbPolizaAsegurada.Location = New System.Drawing.Point(675, 108)
         Me.cmbPolizaAsegurada.MenuManager = Me.BarManager1
         Me.cmbPolizaAsegurada.Name = "cmbPolizaAsegurada"
         Me.cmbPolizaAsegurada.Properties.Appearance.BackColor = System.Drawing.Color.White
@@ -748,7 +751,7 @@ Partial Class frmDocumentoIngresoGeneral
         Me.cmbPolizaAsegurada.Properties.PopupFormMinSize = New System.Drawing.Size(257, 0)
         Me.cmbPolizaAsegurada.Properties.PopupView = Me.GridView4
         Me.cmbPolizaAsegurada.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard
-        Me.cmbPolizaAsegurada.Size = New System.Drawing.Size(363, 20)
+        Me.cmbPolizaAsegurada.Size = New System.Drawing.Size(387, 20)
         Me.cmbPolizaAsegurada.StyleController = Me.LayoutControl1
         Me.cmbPolizaAsegurada.TabIndex = 51
         '
@@ -762,13 +765,13 @@ Partial Class frmDocumentoIngresoGeneral
         '
         'txtCodigoPoliza
         '
-        Me.txtCodigoPoliza.Location = New System.Drawing.Point(651, 132)
+        Me.txtCodigoPoliza.Location = New System.Drawing.Point(675, 132)
         Me.txtCodigoPoliza.MenuManager = Me.BarManager1
         Me.txtCodigoPoliza.Name = "txtCodigoPoliza"
         Me.txtCodigoPoliza.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(247, Byte), Integer))
         Me.txtCodigoPoliza.Properties.Appearance.Options.UseBackColor = True
         Me.txtCodigoPoliza.Properties.ReadOnly = True
-        Me.txtCodigoPoliza.Size = New System.Drawing.Size(363, 20)
+        Me.txtCodigoPoliza.Size = New System.Drawing.Size(387, 20)
         Me.txtCodigoPoliza.StyleController = Me.LayoutControl1
         Me.txtCodigoPoliza.TabIndex = 12
         '
@@ -779,7 +782,7 @@ Partial Class frmDocumentoIngresoGeneral
         Me.cmbBodegueros.Name = "cmbBodegueros"
         Me.cmbBodegueros.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.cmbBodegueros.Properties.PopupView = Me.GridView3
-        Me.cmbBodegueros.Size = New System.Drawing.Size(363, 20)
+        Me.cmbBodegueros.Size = New System.Drawing.Size(387, 20)
         Me.cmbBodegueros.StyleController = Me.LayoutControl1
         Me.cmbBodegueros.TabIndex = 11
         '
@@ -793,13 +796,13 @@ Partial Class frmDocumentoIngresoGeneral
         'cmbAcuerdo
         '
         Me.cmbAcuerdo.EditValue = "[EditValue is null]"
-        Me.cmbAcuerdo.Location = New System.Drawing.Point(651, 12)
+        Me.cmbAcuerdo.Location = New System.Drawing.Point(675, 12)
         Me.cmbAcuerdo.MenuManager = Me.BarManager1
         Me.cmbAcuerdo.Name = "cmbAcuerdo"
         Me.cmbAcuerdo.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.cmbAcuerdo.Properties.PopupFormMinSize = New System.Drawing.Size(600, 0)
         Me.cmbAcuerdo.Properties.PopupView = Me.GridView1
-        Me.cmbAcuerdo.Size = New System.Drawing.Size(363, 20)
+        Me.cmbAcuerdo.Size = New System.Drawing.Size(387, 20)
         Me.cmbAcuerdo.StyleController = Me.LayoutControl1
         Me.cmbAcuerdo.TabIndex = 5
         '
@@ -817,7 +820,7 @@ Partial Class frmDocumentoIngresoGeneral
         Me.txtDocid.MenuManager = Me.BarManager1
         Me.txtDocid.Name = "txtDocid"
         Me.txtDocid.Properties.ReadOnly = True
-        Me.txtDocid.Size = New System.Drawing.Size(363, 20)
+        Me.txtDocid.Size = New System.Drawing.Size(387, 20)
         Me.txtDocid.StyleController = Me.LayoutControl1
         Me.txtDocid.TabIndex = 10
         '
@@ -831,7 +834,7 @@ Partial Class frmDocumentoIngresoGeneral
         Me.cmbRegimen.Properties.NullText = "[Seleccione Régimen...]"
         Me.cmbRegimen.Properties.PopupView = Me.GridView2
         Me.cmbRegimen.Properties.ReadOnly = True
-        Me.cmbRegimen.Size = New System.Drawing.Size(363, 20)
+        Me.cmbRegimen.Size = New System.Drawing.Size(387, 20)
         Me.cmbRegimen.StyleController = Me.LayoutControl1
         Me.cmbRegimen.TabIndex = 8
         '
@@ -845,13 +848,13 @@ Partial Class frmDocumentoIngresoGeneral
         'dtDocumento
         '
         Me.dtDocumento.EditValue = Nothing
-        Me.dtDocumento.Location = New System.Drawing.Point(651, 36)
+        Me.dtDocumento.Location = New System.Drawing.Point(675, 36)
         Me.dtDocumento.MenuManager = Me.BarManager1
         Me.dtDocumento.Name = "dtDocumento"
         Me.dtDocumento.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.dtDocumento.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
         Me.dtDocumento.Properties.Mask.EditMask = "g"
-        Me.dtDocumento.Size = New System.Drawing.Size(363, 20)
+        Me.dtDocumento.Size = New System.Drawing.Size(387, 20)
         Me.dtDocumento.StyleController = Me.LayoutControl1
         Me.dtDocumento.TabIndex = 7
         '
@@ -860,7 +863,7 @@ Partial Class frmDocumentoIngresoGeneral
         Me.txtNumeroOrden.Location = New System.Drawing.Point(148, 36)
         Me.txtNumeroOrden.MenuManager = Me.BarManager1
         Me.txtNumeroOrden.Name = "txtNumeroOrden"
-        Me.txtNumeroOrden.Size = New System.Drawing.Size(363, 20)
+        Me.txtNumeroOrden.Size = New System.Drawing.Size(387, 20)
         Me.txtNumeroOrden.StyleController = Me.LayoutControl1
         Me.txtNumeroOrden.TabIndex = 6
         '
@@ -872,7 +875,7 @@ Partial Class frmDocumentoIngresoGeneral
         Me.cmbClientes.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.cmbClientes.Properties.PopupFormMinSize = New System.Drawing.Size(600, 0)
         Me.cmbClientes.Properties.PopupView = Me.GridLookUpEdit1View
-        Me.cmbClientes.Size = New System.Drawing.Size(363, 20)
+        Me.cmbClientes.Size = New System.Drawing.Size(387, 20)
         Me.cmbClientes.StyleController = Me.LayoutControl1
         Me.cmbClientes.TabIndex = 4
         '
@@ -891,7 +894,7 @@ Partial Class frmDocumentoIngresoGeneral
         Me.txtTicketNumber.Name = "txtTicketNumber"
         Me.txtTicketNumber.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtTicketNumber.Properties.Appearance.Options.UseBackColor = True
-        Me.txtTicketNumber.Size = New System.Drawing.Size(363, 20)
+        Me.txtTicketNumber.Size = New System.Drawing.Size(387, 20)
         Me.txtTicketNumber.StyleController = Me.LayoutControl1
         Me.txtTicketNumber.TabIndex = 55
         '
@@ -902,7 +905,7 @@ Partial Class frmDocumentoIngresoGeneral
         Me.LayoutControlGroup1.GroupBordersVisible = False
         Me.LayoutControlGroup1.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem1, Me.LayoutControlItem3, Me.LayoutControlItem4, Me.LayoutControlItem5, Me.LayoutControlItem2, Me.LayoutControlItem7, Me.LayoutControlItem10, Me.LayoutControlItem9, Me.LayoutControlItem11, Me.LayoutControlItem12, Me.LayoutControlItem6, Me.layoutTicket})
         Me.LayoutControlGroup1.Name = "Root"
-        Me.LayoutControlGroup1.Size = New System.Drawing.Size(1026, 618)
+        Me.LayoutControlGroup1.Size = New System.Drawing.Size(1074, 635)
         Me.LayoutControlGroup1.TextVisible = False
         '
         'LayoutControlItem1
@@ -911,7 +914,7 @@ Partial Class frmDocumentoIngresoGeneral
         Me.LayoutControlItem1.CustomizationFormText = "Cliente"
         Me.LayoutControlItem1.Location = New System.Drawing.Point(0, 0)
         Me.LayoutControlItem1.Name = "LayoutControlItem1"
-        Me.LayoutControlItem1.Size = New System.Drawing.Size(503, 24)
+        Me.LayoutControlItem1.Size = New System.Drawing.Size(527, 24)
         Me.LayoutControlItem1.Text = "Cliente"
         Me.LayoutControlItem1.TextSize = New System.Drawing.Size(133, 13)
         '
@@ -921,7 +924,7 @@ Partial Class frmDocumentoIngresoGeneral
         Me.LayoutControlItem3.CustomizationFormText = "Número Orden (Referencia)"
         Me.LayoutControlItem3.Location = New System.Drawing.Point(0, 24)
         Me.LayoutControlItem3.Name = "LayoutControlItem3"
-        Me.LayoutControlItem3.Size = New System.Drawing.Size(503, 24)
+        Me.LayoutControlItem3.Size = New System.Drawing.Size(527, 24)
         Me.LayoutControlItem3.Text = "Número Orden (Referencia)"
         Me.LayoutControlItem3.TextSize = New System.Drawing.Size(133, 13)
         '
@@ -929,9 +932,9 @@ Partial Class frmDocumentoIngresoGeneral
         '
         Me.LayoutControlItem4.Control = Me.dtDocumento
         Me.LayoutControlItem4.CustomizationFormText = "Fecha Documento"
-        Me.LayoutControlItem4.Location = New System.Drawing.Point(503, 24)
+        Me.LayoutControlItem4.Location = New System.Drawing.Point(527, 24)
         Me.LayoutControlItem4.Name = "LayoutControlItem4"
-        Me.LayoutControlItem4.Size = New System.Drawing.Size(503, 24)
+        Me.LayoutControlItem4.Size = New System.Drawing.Size(527, 24)
         Me.LayoutControlItem4.Text = "Fecha Documento"
         Me.LayoutControlItem4.TextSize = New System.Drawing.Size(133, 13)
         '
@@ -941,7 +944,7 @@ Partial Class frmDocumentoIngresoGeneral
         Me.LayoutControlItem5.CustomizationFormText = "Régimen Almacén"
         Me.LayoutControlItem5.Location = New System.Drawing.Point(0, 120)
         Me.LayoutControlItem5.Name = "LayoutControlItem5"
-        Me.LayoutControlItem5.Size = New System.Drawing.Size(503, 24)
+        Me.LayoutControlItem5.Size = New System.Drawing.Size(527, 24)
         Me.LayoutControlItem5.Text = "Régimen Almacén"
         Me.LayoutControlItem5.TextSize = New System.Drawing.Size(133, 13)
         '
@@ -949,9 +952,9 @@ Partial Class frmDocumentoIngresoGeneral
         '
         Me.LayoutControlItem2.Control = Me.cmbAcuerdo
         Me.LayoutControlItem2.CustomizationFormText = "Acuerdo Comercial"
-        Me.LayoutControlItem2.Location = New System.Drawing.Point(503, 0)
+        Me.LayoutControlItem2.Location = New System.Drawing.Point(527, 0)
         Me.LayoutControlItem2.Name = "LayoutControlItem2"
-        Me.LayoutControlItem2.Size = New System.Drawing.Size(503, 24)
+        Me.LayoutControlItem2.Size = New System.Drawing.Size(527, 24)
         Me.LayoutControlItem2.Text = "Acuerdo Comercial"
         Me.LayoutControlItem2.TextSize = New System.Drawing.Size(133, 13)
         '
@@ -961,7 +964,7 @@ Partial Class frmDocumentoIngresoGeneral
         Me.LayoutControlItem7.CustomizationFormText = "Documento"
         Me.LayoutControlItem7.Location = New System.Drawing.Point(0, 144)
         Me.LayoutControlItem7.Name = "LayoutControlItem7"
-        Me.LayoutControlItem7.Size = New System.Drawing.Size(503, 454)
+        Me.LayoutControlItem7.Size = New System.Drawing.Size(527, 471)
         Me.LayoutControlItem7.Text = "Documento"
         Me.LayoutControlItem7.TextSize = New System.Drawing.Size(133, 13)
         '
@@ -969,9 +972,9 @@ Partial Class frmDocumentoIngresoGeneral
         '
         Me.LayoutControlItem10.Control = Me.txtCodigoPoliza
         Me.LayoutControlItem10.CustomizationFormText = "Código Póliza"
-        Me.LayoutControlItem10.Location = New System.Drawing.Point(503, 120)
+        Me.LayoutControlItem10.Location = New System.Drawing.Point(527, 120)
         Me.LayoutControlItem10.Name = "LayoutControlItem10"
-        Me.LayoutControlItem10.Size = New System.Drawing.Size(503, 478)
+        Me.LayoutControlItem10.Size = New System.Drawing.Size(527, 495)
         Me.LayoutControlItem10.Text = "Código Póliza"
         Me.LayoutControlItem10.TextSize = New System.Drawing.Size(133, 13)
         '
@@ -981,7 +984,7 @@ Partial Class frmDocumentoIngresoGeneral
         Me.LayoutControlItem9.CustomizationFormText = "Operador"
         Me.LayoutControlItem9.Location = New System.Drawing.Point(0, 96)
         Me.LayoutControlItem9.Name = "LayoutControlItem9"
-        Me.LayoutControlItem9.Size = New System.Drawing.Size(503, 24)
+        Me.LayoutControlItem9.Size = New System.Drawing.Size(527, 24)
         Me.LayoutControlItem9.Text = "Operador"
         Me.LayoutControlItem9.TextSize = New System.Drawing.Size(133, 13)
         '
@@ -989,18 +992,18 @@ Partial Class frmDocumentoIngresoGeneral
         '
         Me.LayoutControlItem11.Control = Me.cmbPolizaAsegurada
         Me.LayoutControlItem11.CustomizationFormText = "Póliza Asegurada"
-        Me.LayoutControlItem11.Location = New System.Drawing.Point(503, 96)
+        Me.LayoutControlItem11.Location = New System.Drawing.Point(527, 96)
         Me.LayoutControlItem11.Name = "LayoutControlItem11"
-        Me.LayoutControlItem11.Size = New System.Drawing.Size(503, 24)
+        Me.LayoutControlItem11.Size = New System.Drawing.Size(527, 24)
         Me.LayoutControlItem11.Text = "Póliza Asegurada"
         Me.LayoutControlItem11.TextSize = New System.Drawing.Size(133, 13)
         '
         'LayoutControlItem12
         '
         Me.LayoutControlItem12.Control = Me.lookupTipoRecepcion
-        Me.LayoutControlItem12.Location = New System.Drawing.Point(503, 48)
+        Me.LayoutControlItem12.Location = New System.Drawing.Point(527, 48)
         Me.LayoutControlItem12.Name = "LayoutControlItem12"
-        Me.LayoutControlItem12.Size = New System.Drawing.Size(503, 48)
+        Me.LayoutControlItem12.Size = New System.Drawing.Size(527, 48)
         Me.LayoutControlItem12.Text = "Tipo Recepción"
         Me.LayoutControlItem12.TextSize = New System.Drawing.Size(133, 13)
         '
@@ -1009,7 +1012,7 @@ Partial Class frmDocumentoIngresoGeneral
         Me.LayoutControlItem6.Control = Me.lookupPrioridad
         Me.LayoutControlItem6.Location = New System.Drawing.Point(0, 72)
         Me.LayoutControlItem6.Name = "LayoutControlItem6"
-        Me.LayoutControlItem6.Size = New System.Drawing.Size(503, 24)
+        Me.LayoutControlItem6.Size = New System.Drawing.Size(527, 24)
         Me.LayoutControlItem6.Text = "Prioridad"
         Me.LayoutControlItem6.TextSize = New System.Drawing.Size(133, 13)
         '
@@ -1019,14 +1022,14 @@ Partial Class frmDocumentoIngresoGeneral
         Me.layoutTicket.HighlightFocusedItem = DevExpress.Utils.DefaultBoolean.[False]
         Me.layoutTicket.Location = New System.Drawing.Point(0, 48)
         Me.layoutTicket.Name = "layoutTicket"
-        Me.layoutTicket.Size = New System.Drawing.Size(503, 24)
+        Me.layoutTicket.Size = New System.Drawing.Size(527, 24)
         Me.layoutTicket.Text = "Ticket"
         Me.layoutTicket.TextSize = New System.Drawing.Size(133, 13)
         '
         'txtStatus
         '
         Me.txtStatus.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtStatus.Location = New System.Drawing.Point(765, 44)
+        Me.txtStatus.Location = New System.Drawing.Point(798, 44)
         Me.txtStatus.MenuManager = Me.BarManager1
         Me.txtStatus.Name = "txtStatus"
         Me.txtStatus.Properties.ReadOnly = True
@@ -1056,7 +1059,9 @@ Partial Class frmDocumentoIngresoGeneral
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1026, 674)
+        Me.AutoScroll = True
+        Me.AutoScrollMinSize = New System.Drawing.Size(1042, 600)
+        Me.ClientSize = New System.Drawing.Size(1074, 691)
         Me.Controls.Add(Me.LayoutControl1)
         Me.Controls.Add(Me.txtStatus)
         Me.Controls.Add(Me.barDockControlLeft)
@@ -1067,6 +1072,7 @@ Partial Class frmDocumentoIngresoGeneral
         Me.Text = "Ingreso Almacen General"
         CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.LayoutControl1.ResumeLayout(False)
+        Me.LayoutControl1.PerformLayout()
         CType(Me.UiPopupComprobante, System.ComponentModel.ISupportInitialize).EndInit()
         Me.UiPopupComprobante.ResumeLayout(False)
         Me.UiPopupComprobante.PerformLayout()
