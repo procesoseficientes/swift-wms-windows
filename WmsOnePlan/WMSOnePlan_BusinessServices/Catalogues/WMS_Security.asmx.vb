@@ -965,6 +965,8 @@ Public Class WMS_Security
         Dim sqldbConexion As SqlConnection
         Dim xconnstr As String = ""
         Try
+            Dim x As Integer = AppSettings.Count
+            Dim y = AppSettings.Get(pEnvironmentName)
             xconnstr = AppSettings(pEnvironmentName).ToString
             sqldbConexion = New SqlConnection(xconnstr)
         Catch ex As SqlException

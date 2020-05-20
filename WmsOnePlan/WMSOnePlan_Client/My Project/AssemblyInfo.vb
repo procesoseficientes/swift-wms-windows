@@ -13,8 +13,8 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyTitle("Swift 3PL")> 
 <Assembly: AssemblyDescription("Backoffice WMS")> 
 <Assembly: AssemblyCompany("Mobility SCM")> 
-<Assembly: AssemblyProduct("WMSOnePlan_Client")> 
-<Assembly: AssemblyCopyright("Copyright ©  2009-2018")> 
+<Assembly: AssemblyProduct("WMSOnePlan_Client")>
+<Assembly: AssemblyCopyright("Copyright ©  2009-2020")>
 <Assembly: AssemblyTrademark("Mobility SCM©")> 
 
 <Assembly: ComVisible(False)> 
