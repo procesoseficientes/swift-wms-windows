@@ -319,6 +319,7 @@ Public Class FrmAprobacionFiscal
                                     newRowAso("MATERIAL_DESCRIPTION") = rowTrans("MATERIAL_DESCRIPTION")
                                     newRowAso("QTY_TRANS") = rowTrans("QUANTITY_UNITS")
                                     newRowAso("LINENO_POLIZA") = rowLinea("LINE_NUMBER")
+                                    newRowAso("MATERIAL_ID") = rowLinea("MATERIAL_ID")
                                     newRowAso("SKU_DESCRIPTION") = rowLinea("SKU_DESCRIPTION")
                                     newRowAso("QTY_POLIZA") = rowLinea("QTY")
                                     newRowAso("BULTOS_POLIZA") = rowLinea("BULTOS")

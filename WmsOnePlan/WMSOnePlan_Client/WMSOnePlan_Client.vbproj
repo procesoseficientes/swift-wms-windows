@@ -1785,6 +1785,7 @@
     <EmbeddedResource Include="Framework\WaitForm1.resx">
       <DependentUpon>WaitForm1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
