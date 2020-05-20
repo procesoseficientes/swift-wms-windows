@@ -27,7 +27,7 @@ Este repoo inicia en el último commit del branch `G-Force@Paris`
 1. Descargar NuGet
 [https://www.nuget.org/downloads](https://www.nuget.org/downloads)
 2. Agregar el folder donde esté el ejecutable a la variable de ambiente `Path`
-3. Correr el siguiente comando 
+3. Correr el siguiente comando:
 ```bash
 nuget sources add -name "Github Packages" -Source https://nuget.pkg.github.com/procesoseficientes/ind
 ex.json -Username fabrv -Password 44919387f9b2817826024e137f9e271be51f3f65
