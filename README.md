@@ -19,9 +19,23 @@ El repositorio tiene tanto el código como los binarios del software.
 - IIS
 - .Net Extensibility 3.5 y 4.5+
 - ASP.NET 3.5 y 4.5+
+- NuGet
 
 Este repoo inicia en el último commit del branch `G-Force@Paris`
 ### Instalación
+## Instalar NuGet y agregar fuente
+1. Descargar NuGet
+[https://www.nuget.org/downloads](https://www.nuget.org/downloads)
+2. Agregar el folder donde esté el ejecutable a la variable de ambiente `Path`
+3. Crear un PAT (Personal Access Token)  
+[Aquí como generar uno](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line), el token tiene que todos los accesos a `repo` y `write:packages`, `read:packages`, y `delete:packages`.  
+*Este token es único y no vuele a salir, guardenlo bien*
+4. Correr el siguiente comando:
+```bash
+nuget sources add -name "Github Packages" -Source https://nuget.pkg.github.com/procesoseficientes/ind
+ex.json -Username <usuario de github> -Password <PAT>
+```
+
 #### Instalación de IIS y ASP.NET
 1. Navegar a:
 `Control Panel` -> `Programs and Features` -> `Turn Windows features on or off`
@@ -52,6 +66,7 @@ Este repoo inicia en el último commit del branch `G-Force@Paris`
 4. Probar correr programa con F5
 
 ### Configución con DB
+Los configs se pueden descargar desde el sharepoint desde [este link](https://procesoseficientescom.sharepoint.com/sites/Entregadehitorias/Documentos%20compartidos/Forms/AllItems.aspx?viewid=8a7d2a11%2Dc25f%2D46c7%2D8680%2D8ed6947371a5&id=%2Fsites%2FEntregadehitorias%2FDocumentos%20compartidos%2FConfiguracionAmbientes).  
 Los datos para configurar la DB en el backend está en `WMSOnePlan_BussinessServices/Web.config` en la llave `DESARROLLO`.
 
 `<add key="DESARROLLO" value="Server=`**`<ip del servidor deprueba>`**`,1433;Database=`**`<nombre de la DB deprueba>`**`;User=`**`<usuario>`**`;Pwd=`**`<SQ1MSCM!9>`**`"/>`
