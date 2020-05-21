@@ -700,7 +700,9 @@ Public Class frmDocumentoIngreso
                 Return
             End If
 
-            If (Not GetTicketById()) Then Return
+            If (ValidateEnterTicket()) Then
+                If (Not GetTicketById()) Then Return
+            End If
 
             _fechaDocumento = dtFechaDocumento.EditValue
 
