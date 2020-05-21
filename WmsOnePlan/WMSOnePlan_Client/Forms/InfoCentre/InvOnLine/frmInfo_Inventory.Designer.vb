@@ -136,12 +136,12 @@ Partial Class frmInfo_Inventory
         '
         Me.GridControl1.Cursor = System.Windows.Forms.Cursors.Default
         Me.GridControl1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GridControl1.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(4)
-        Me.GridControl1.Location = New System.Drawing.Point(0, 30)
+        Me.GridControl1.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(6)
+        Me.GridControl1.Location = New System.Drawing.Point(0, 46)
         Me.GridControl1.MainView = Me.GridView1
-        Me.GridControl1.Margin = New System.Windows.Forms.Padding(4)
+        Me.GridControl1.Margin = New System.Windows.Forms.Padding(6)
         Me.GridControl1.Name = "GridControl1"
-        Me.GridControl1.Size = New System.Drawing.Size(1617, 616)
+        Me.GridControl1.Size = New System.Drawing.Size(2426, 973)
         Me.GridControl1.TabIndex = 17
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
         '
@@ -149,12 +149,15 @@ Partial Class frmInfo_Inventory
         '
         Me.GridView1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat
         Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn_CurrentWH, Me.GridColumn_Linea, Me.GridColumn_Ubicacion, Me.GridColumn_Prod, Me.GridColumn_Descripcion, Me.GridColumn_Unidades, Me.GridColumnClientOwner, Me.GridColumnClientName, Me.GridColumnTermOfTrade, Me.GridColumnLastUpdatedBy, Me.GridColumnFechaLlegada, Me.GridColumnDUA, Me.GridColumnNumeroOrden, Me.GridColumnPoliza, Me.GridColumnRegimen, Me.colFECHA_DOCUMENTO, Me.colALTERNATE_BARCODE, Me.GridColumn_Serial, Me.GridColumn_FVOL, Me.colDATE_EXPIRATION, Me.GridColumn_CLASS, Me.colBATCH, Me.colDOC_ID, Me.colUSED_MT2, Me.GridColumn_VIN, Me.colPENDIENTE_RECTIFICACION, Me.colGRUPO_REGIMEN, Me.colREGIMEN_DOCUMENTO, Me.colCodigoProveedor, Me.colNombreProveedor, Me.colMATERIAL_ID, Me.colZONE, Me.colAVAILABLE_QTY, Me.UiColValorUnitario, Me.UiColValorTotal, Me.UiColIntentarioExterno, Me.UiGridColSkuSerie, Me.UiColDiasRegimen, Me.UiColDiasVencimiento, Me.UiColFechaVencimientoRegimen, Me.UiColEstadoRegimen, Me.UiColNombreEstado, Me.UiColBloqueoInventario, Me.UiColColorEstado, Me.UiColTono, Me.UiColCalibre, Me.UiColOrdenDeVenta, Me.UiColProyecto, Me.UiColNombreCliente, Me.UiColBloqueoInterfaces, Me.UiColPeso, Me.UiColUnidadPeso, Me.UiColOlaPicking, Me.GridColumn_PK_LINE, Me.GridColumn_BATCH_REQUESTED, Me.GridColumn_STATUS_ID, Me.GridColumn_TONE_CALIBER_ID, Me.GridColumn_HANDLE_TONE, Me.GridColumn_HANDLE_CALIBER, Me.UiColCodigoProyecto, Me.UiColNombreProyecto, Me.colTOTAL_POSITION})
+        Me.GridView1.DetailHeight = 547
+        Me.GridView1.FixedLineWidth = 3
         Me.GridView1.GridControl = Me.GridControl1
         Me.GridView1.GroupPanelText = "Organizar por columna"
         Me.GridView1.GroupSummary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridGroupSummaryItem(DevExpress.Data.SummaryItemType.Sum, "QTY", Nothing, ""), New DevExpress.XtraGrid.GridGroupSummaryItem(DevExpress.Data.SummaryItemType.Count, "MATERIAL_ID", Nothing, "")})
         Me.GridView1.Name = "GridView1"
         Me.GridView1.OptionsBehavior.Editable = False
         Me.GridView1.OptionsView.AnimationType = DevExpress.XtraGrid.Views.Base.GridAnimationType.AnimateFocusedItem
+        Me.GridView1.OptionsView.ColumnAutoWidth = False
         Me.GridView1.OptionsView.HeaderFilterButtonShowMode = DevExpress.XtraEditors.Controls.FilterButtonShowMode.Button
         Me.GridView1.OptionsView.ShowAutoFilterRow = True
         Me.GridView1.OptionsView.ShowFilterPanelMode = DevExpress.XtraGrid.Views.Base.ShowFilterPanelMode.ShowAlways
@@ -165,17 +168,19 @@ Partial Class frmInfo_Inventory
         '
         Me.GridColumn_CurrentWH.Caption = "Bodega"
         Me.GridColumn_CurrentWH.FieldName = "CURRENT_WAREHOUSE"
+        Me.GridColumn_CurrentWH.MinWidth = 30
         Me.GridColumn_CurrentWH.Name = "GridColumn_CurrentWH"
         Me.GridColumn_CurrentWH.OptionsColumn.AllowEdit = False
         Me.GridColumn_CurrentWH.OptionsColumn.AllowFocus = False
         Me.GridColumn_CurrentWH.Visible = True
         Me.GridColumn_CurrentWH.VisibleIndex = 1
-        Me.GridColumn_CurrentWH.Width = 21
+        Me.GridColumn_CurrentWH.Width = 91
         '
         'GridColumn_Linea
         '
         Me.GridColumn_Linea.Caption = "Licencia"
         Me.GridColumn_Linea.FieldName = "LICENSE_ID"
+        Me.GridColumn_Linea.MinWidth = 30
         Me.GridColumn_Linea.Name = "GridColumn_Linea"
         Me.GridColumn_Linea.OptionsColumn.AllowEdit = False
         Me.GridColumn_Linea.OptionsColumn.AllowFocus = False
@@ -183,46 +188,49 @@ Partial Class frmInfo_Inventory
         Me.GridColumn_Linea.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count, "LICENSE_ID", "Registros {0}")})
         Me.GridColumn_Linea.Visible = True
         Me.GridColumn_Linea.VisibleIndex = 2
-        Me.GridColumn_Linea.Width = 67
+        Me.GridColumn_Linea.Width = 101
         '
         'GridColumn_Ubicacion
         '
         Me.GridColumn_Ubicacion.Caption = "Ubicacion"
         Me.GridColumn_Ubicacion.FieldName = "CURRENT_LOCATION"
+        Me.GridColumn_Ubicacion.MinWidth = 30
         Me.GridColumn_Ubicacion.Name = "GridColumn_Ubicacion"
         Me.GridColumn_Ubicacion.OptionsColumn.AllowEdit = False
         Me.GridColumn_Ubicacion.OptionsColumn.FixedWidth = True
         Me.GridColumn_Ubicacion.OptionsColumn.ReadOnly = True
         Me.GridColumn_Ubicacion.Visible = True
         Me.GridColumn_Ubicacion.VisibleIndex = 3
-        Me.GridColumn_Ubicacion.Width = 42
+        Me.GridColumn_Ubicacion.Width = 63
         '
         'GridColumn_Prod
         '
         Me.GridColumn_Prod.Caption = "Codigo Barras"
         Me.GridColumn_Prod.FieldName = "BARCODE_ID"
+        Me.GridColumn_Prod.MinWidth = 30
         Me.GridColumn_Prod.Name = "GridColumn_Prod"
         Me.GridColumn_Prod.OptionsColumn.AllowEdit = False
         Me.GridColumn_Prod.OptionsColumn.ReadOnly = True
         Me.GridColumn_Prod.Visible = True
         Me.GridColumn_Prod.VisibleIndex = 4
-        Me.GridColumn_Prod.Width = 34
+        Me.GridColumn_Prod.Width = 49
         '
         'GridColumn_Descripcion
         '
         Me.GridColumn_Descripcion.Caption = "Descripcion"
         Me.GridColumn_Descripcion.FieldName = "MATERIAL_NAME"
+        Me.GridColumn_Descripcion.MinWidth = 30
         Me.GridColumn_Descripcion.Name = "GridColumn_Descripcion"
         Me.GridColumn_Descripcion.OptionsColumn.AllowEdit = False
         Me.GridColumn_Descripcion.OptionsColumn.ReadOnly = True
         Me.GridColumn_Descripcion.Visible = True
         Me.GridColumn_Descripcion.VisibleIndex = 5
-        Me.GridColumn_Descripcion.Width = 20
         '
         'GridColumn_Unidades
         '
         Me.GridColumn_Unidades.Caption = "Inv.Licencia"
         Me.GridColumn_Unidades.FieldName = "QTY"
+        Me.GridColumn_Unidades.MinWidth = 30
         Me.GridColumn_Unidades.Name = "GridColumn_Unidades"
         Me.GridColumn_Unidades.OptionsColumn.AllowEdit = False
         Me.GridColumn_Unidades.OptionsColumn.AllowFocus = False
@@ -231,47 +239,52 @@ Partial Class frmInfo_Inventory
         Me.GridColumn_Unidades.OptionsColumn.ReadOnly = True
         Me.GridColumn_Unidades.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "QTY", "{0:0.##}")})
         Me.GridColumn_Unidades.Visible = True
-        Me.GridColumn_Unidades.VisibleIndex = 8
-        Me.GridColumn_Unidades.Width = 62
+        Me.GridColumn_Unidades.VisibleIndex = 7
+        Me.GridColumn_Unidades.Width = 93
         '
         'GridColumnClientOwner
         '
         Me.GridColumnClientOwner.Caption = "Cliente"
         Me.GridColumnClientOwner.FieldName = "CLIENT_OWNER"
+        Me.GridColumnClientOwner.MinWidth = 30
         Me.GridColumnClientOwner.Name = "GridColumnClientOwner"
         Me.GridColumnClientOwner.OptionsColumn.AllowEdit = False
         Me.GridColumnClientOwner.OptionsFilter.AllowFilterModeChanging = DevExpress.Utils.DefaultBoolean.[True]
         Me.GridColumnClientOwner.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList
-        Me.GridColumnClientOwner.Visible = True
-        Me.GridColumnClientOwner.VisibleIndex = 6
-        Me.GridColumnClientOwner.Width = 20
+        Me.GridColumnClientOwner.Width = 39
         '
         'GridColumnClientName
         '
         Me.GridColumnClientName.Caption = "Nombre Cliente"
         Me.GridColumnClientName.FieldName = "CLIENT_NAME"
+        Me.GridColumnClientName.MinWidth = 30
         Me.GridColumnClientName.Name = "GridColumnClientName"
         Me.GridColumnClientName.OptionsColumn.AllowEdit = False
         Me.GridColumnClientName.OptionsFilter.AllowFilterModeChanging = DevExpress.Utils.DefaultBoolean.[True]
         Me.GridColumnClientName.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList
         Me.GridColumnClientName.Visible = True
-        Me.GridColumnClientName.VisibleIndex = 7
-        Me.GridColumnClientName.Width = 20
+        Me.GridColumnClientName.VisibleIndex = 6
+        Me.GridColumnClientName.Width = 100
         '
         'GridColumnTermOfTrade
         '
         Me.GridColumnTermOfTrade.Caption = "Acuerdo Comercial"
         Me.GridColumnTermOfTrade.FieldName = "TERMS_OF_TRADE"
+        Me.GridColumnTermOfTrade.MinWidth = 30
         Me.GridColumnTermOfTrade.Name = "GridColumnTermOfTrade"
         Me.GridColumnTermOfTrade.OptionsColumn.AllowEdit = False
-        Me.GridColumnTermOfTrade.Width = 41
+        Me.GridColumnTermOfTrade.Visible = True
+        Me.GridColumnTermOfTrade.VisibleIndex = 28
+        Me.GridColumnTermOfTrade.Width = 61
         '
         'GridColumnLastUpdatedBy
         '
         Me.GridColumnLastUpdatedBy.Caption = "Actualizado Por"
         Me.GridColumnLastUpdatedBy.FieldName = "LAST_UPDATED_BY"
+        Me.GridColumnLastUpdatedBy.MinWidth = 30
         Me.GridColumnLastUpdatedBy.Name = "GridColumnLastUpdatedBy"
         Me.GridColumnLastUpdatedBy.OptionsColumn.AllowEdit = False
+        Me.GridColumnLastUpdatedBy.Width = 112
         '
         'GridColumnFechaLlegada
         '
@@ -279,45 +292,52 @@ Partial Class frmInfo_Inventory
         Me.GridColumnFechaLlegada.DisplayFormat.FormatString = "dd/MM/yyyy HH:MM:tt"
         Me.GridColumnFechaLlegada.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom
         Me.GridColumnFechaLlegada.FieldName = "FECHA_LLEGADA"
+        Me.GridColumnFechaLlegada.MinWidth = 30
         Me.GridColumnFechaLlegada.Name = "GridColumnFechaLlegada"
         Me.GridColumnFechaLlegada.OptionsColumn.AllowEdit = False
         Me.GridColumnFechaLlegada.Visible = True
-        Me.GridColumnFechaLlegada.VisibleIndex = 9
-        Me.GridColumnFechaLlegada.Width = 20
+        Me.GridColumnFechaLlegada.VisibleIndex = 8
+        Me.GridColumnFechaLlegada.Width = 103
         '
         'GridColumnDUA
         '
         Me.GridColumnDUA.Caption = "Numero DUA"
         Me.GridColumnDUA.FieldName = "NUMERO_DUA"
+        Me.GridColumnDUA.MinWidth = 30
         Me.GridColumnDUA.Name = "GridColumnDUA"
         Me.GridColumnDUA.OptionsColumn.AllowEdit = False
+        Me.GridColumnDUA.Width = 112
         '
         'GridColumnNumeroOrden
         '
         Me.GridColumnNumeroOrden.Caption = "Numero Orden"
         Me.GridColumnNumeroOrden.FieldName = "NUMERO_ORDEN"
+        Me.GridColumnNumeroOrden.MinWidth = 30
         Me.GridColumnNumeroOrden.Name = "GridColumnNumeroOrden"
         Me.GridColumnNumeroOrden.OptionsColumn.AllowEdit = False
         Me.GridColumnNumeroOrden.Visible = True
-        Me.GridColumnNumeroOrden.VisibleIndex = 10
-        Me.GridColumnNumeroOrden.Width = 29
+        Me.GridColumnNumeroOrden.VisibleIndex = 9
+        Me.GridColumnNumeroOrden.Width = 95
         '
         'GridColumnPoliza
         '
         Me.GridColumnPoliza.Caption = "Poliza"
         Me.GridColumnPoliza.FieldName = "CODIGO_POLIZA"
+        Me.GridColumnPoliza.MinWidth = 30
         Me.GridColumnPoliza.Name = "GridColumnPoliza"
         Me.GridColumnPoliza.OptionsColumn.AllowEdit = False
+        Me.GridColumnPoliza.Width = 112
         '
         'GridColumnRegimen
         '
         Me.GridColumnRegimen.Caption = "Regimen"
         Me.GridColumnRegimen.FieldName = "REGIMEN"
+        Me.GridColumnRegimen.MinWidth = 30
         Me.GridColumnRegimen.Name = "GridColumnRegimen"
         Me.GridColumnRegimen.OptionsColumn.AllowEdit = False
         Me.GridColumnRegimen.Visible = True
         Me.GridColumnRegimen.VisibleIndex = 0
-        Me.GridColumnRegimen.Width = 58
+        Me.GridColumnRegimen.Width = 50
         '
         'colFECHA_DOCUMENTO
         '
@@ -325,44 +345,44 @@ Partial Class frmInfo_Inventory
         Me.colFECHA_DOCUMENTO.DisplayFormat.FormatString = "dd/MM/yyyy HH:MM"
         Me.colFECHA_DOCUMENTO.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom
         Me.colFECHA_DOCUMENTO.FieldName = "FECHA_DOCUMENTO"
+        Me.colFECHA_DOCUMENTO.MinWidth = 30
         Me.colFECHA_DOCUMENTO.Name = "colFECHA_DOCUMENTO"
         Me.colFECHA_DOCUMENTO.OptionsColumn.AllowEdit = False
-        Me.colFECHA_DOCUMENTO.Width = 149
+        Me.colFECHA_DOCUMENTO.Width = 223
         '
         'colALTERNATE_BARCODE
         '
         Me.colALTERNATE_BARCODE.Caption = "Codigo Alterno"
         Me.colALTERNATE_BARCODE.FieldName = "ALTERNATE_BARCODE"
+        Me.colALTERNATE_BARCODE.MinWidth = 30
         Me.colALTERNATE_BARCODE.Name = "colALTERNATE_BARCODE"
         Me.colALTERNATE_BARCODE.OptionsColumn.AllowEdit = False
-        Me.colALTERNATE_BARCODE.Visible = True
-        Me.colALTERNATE_BARCODE.VisibleIndex = 11
-        Me.colALTERNATE_BARCODE.Width = 32
+        Me.colALTERNATE_BARCODE.Width = 64
         '
         'GridColumn_Serial
         '
         Me.GridColumn_Serial.Caption = "Serial/Chasis"
         Me.GridColumn_Serial.CustomizationCaption = "Serial/Chasis"
         Me.GridColumn_Serial.FieldName = "SERIAL_NUMBER"
+        Me.GridColumn_Serial.MinWidth = 30
         Me.GridColumn_Serial.Name = "GridColumn_Serial"
         Me.GridColumn_Serial.OptionsColumn.AllowEdit = False
         Me.GridColumn_Serial.OptionsColumn.ReadOnly = True
         Me.GridColumn_Serial.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.List
-        Me.GridColumn_Serial.Visible = True
-        Me.GridColumn_Serial.VisibleIndex = 12
-        Me.GridColumn_Serial.Width = 39
+        Me.GridColumn_Serial.Width = 79
         '
         'GridColumn_FVOL
         '
         Me.GridColumn_FVOL.Caption = "FactorVol."
         Me.GridColumn_FVOL.CustomizationCaption = "FactorVolumen"
         Me.GridColumn_FVOL.FieldName = "VOLUME_FACTOR"
+        Me.GridColumn_FVOL.MinWidth = 30
         Me.GridColumn_FVOL.Name = "GridColumn_FVOL"
         Me.GridColumn_FVOL.OptionsColumn.AllowEdit = False
         Me.GridColumn_FVOL.OptionsColumn.ReadOnly = True
         Me.GridColumn_FVOL.Visible = True
-        Me.GridColumn_FVOL.VisibleIndex = 13
-        Me.GridColumn_FVOL.Width = 65
+        Me.GridColumn_FVOL.VisibleIndex = 12
+        Me.GridColumn_FVOL.Width = 98
         '
         'colDATE_EXPIRATION
         '
@@ -370,139 +390,134 @@ Partial Class frmInfo_Inventory
         Me.colDATE_EXPIRATION.DisplayFormat.FormatString = "dd/MM/yyyy"
         Me.colDATE_EXPIRATION.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom
         Me.colDATE_EXPIRATION.FieldName = "DATE_EXPIRATION"
+        Me.colDATE_EXPIRATION.MinWidth = 30
         Me.colDATE_EXPIRATION.Name = "colDATE_EXPIRATION"
         Me.colDATE_EXPIRATION.Visible = True
-        Me.colDATE_EXPIRATION.VisibleIndex = 14
-        Me.colDATE_EXPIRATION.Width = 55
+        Me.colDATE_EXPIRATION.VisibleIndex = 16
+        Me.colDATE_EXPIRATION.Width = 95
         '
         'GridColumn_CLASS
         '
         Me.GridColumn_CLASS.Caption = "Categoria"
         Me.GridColumn_CLASS.FieldName = "MATERIAL_CLASS"
+        Me.GridColumn_CLASS.MinWidth = 30
         Me.GridColumn_CLASS.Name = "GridColumn_CLASS"
         Me.GridColumn_CLASS.OptionsColumn.AllowEdit = False
         Me.GridColumn_CLASS.OptionsColumn.ReadOnly = True
         Me.GridColumn_CLASS.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList
+        Me.GridColumn_CLASS.Width = 112
         '
         'colBATCH
         '
         Me.colBATCH.Caption = "Numero de Lote"
         Me.colBATCH.FieldName = "BATCH"
+        Me.colBATCH.MinWidth = 30
         Me.colBATCH.Name = "colBATCH"
-        Me.colBATCH.Visible = True
-        Me.colBATCH.VisibleIndex = 15
-        Me.colBATCH.Width = 49
+        Me.colBATCH.Width = 54
         '
         'colDOC_ID
         '
         Me.colDOC_ID.Caption = "Codigo Documento"
         Me.colDOC_ID.FieldName = "DOC_ID"
+        Me.colDOC_ID.MinWidth = 30
         Me.colDOC_ID.Name = "colDOC_ID"
         Me.colDOC_ID.OptionsColumn.AllowEdit = False
-        Me.colDOC_ID.Visible = True
-        Me.colDOC_ID.VisibleIndex = 16
-        Me.colDOC_ID.Width = 20
+        Me.colDOC_ID.Width = 57
         '
         'colUSED_MT2
         '
         Me.colUSED_MT2.Caption = "Metros Cuatrados"
         Me.colUSED_MT2.FieldName = "USED_MT2"
+        Me.colUSED_MT2.MinWidth = 30
         Me.colUSED_MT2.Name = "colUSED_MT2"
         Me.colUSED_MT2.OptionsColumn.AllowEdit = False
-        Me.colUSED_MT2.Visible = True
-        Me.colUSED_MT2.VisibleIndex = 18
-        Me.colUSED_MT2.Width = 24
+        Me.colUSED_MT2.Width = 36
         '
         'GridColumn_VIN
         '
         Me.GridColumn_VIN.Caption = "VIN"
         Me.GridColumn_VIN.FieldName = "VIN"
+        Me.GridColumn_VIN.MinWidth = 30
         Me.GridColumn_VIN.Name = "GridColumn_VIN"
         Me.GridColumn_VIN.OptionsColumn.AllowEdit = False
-        Me.GridColumn_VIN.Visible = True
-        Me.GridColumn_VIN.VisibleIndex = 17
-        Me.GridColumn_VIN.Width = 44
+        Me.GridColumn_VIN.Width = 66
         '
         'colPENDIENTE_RECTIFICACION
         '
         Me.colPENDIENTE_RECTIFICACION.Caption = "Pendiente de Rectificar"
         Me.colPENDIENTE_RECTIFICACION.FieldName = "PENDIENTE_RECTIFICACION"
+        Me.colPENDIENTE_RECTIFICACION.MinWidth = 30
         Me.colPENDIENTE_RECTIFICACION.Name = "colPENDIENTE_RECTIFICACION"
         Me.colPENDIENTE_RECTIFICACION.OptionsColumn.AllowEdit = False
-        Me.colPENDIENTE_RECTIFICACION.Visible = True
-        Me.colPENDIENTE_RECTIFICACION.VisibleIndex = 20
-        Me.colPENDIENTE_RECTIFICACION.Width = 24
+        Me.colPENDIENTE_RECTIFICACION.Width = 37
         '
         'colGRUPO_REGIMEN
         '
         Me.colGRUPO_REGIMEN.Caption = "Grupo Régimen"
         Me.colGRUPO_REGIMEN.FieldName = "GRUPO_REGIMEN"
+        Me.colGRUPO_REGIMEN.MinWidth = 30
         Me.colGRUPO_REGIMEN.Name = "colGRUPO_REGIMEN"
         Me.colGRUPO_REGIMEN.OptionsColumn.AllowEdit = False
-        Me.colGRUPO_REGIMEN.Visible = True
-        Me.colGRUPO_REGIMEN.VisibleIndex = 19
-        Me.colGRUPO_REGIMEN.Width = 24
+        Me.colGRUPO_REGIMEN.Width = 37
         '
         'colREGIMEN_DOCUMENTO
         '
         Me.colREGIMEN_DOCUMENTO.Caption = "Régimen Doc."
         Me.colREGIMEN_DOCUMENTO.FieldName = "REGIMEN_DOCUMENTO"
+        Me.colREGIMEN_DOCUMENTO.MinWidth = 30
         Me.colREGIMEN_DOCUMENTO.Name = "colREGIMEN_DOCUMENTO"
         Me.colREGIMEN_DOCUMENTO.OptionsColumn.AllowEdit = False
-        Me.colREGIMEN_DOCUMENTO.Visible = True
-        Me.colREGIMEN_DOCUMENTO.VisibleIndex = 21
-        Me.colREGIMEN_DOCUMENTO.Width = 24
+        Me.colREGIMEN_DOCUMENTO.Width = 37
         '
         'colCodigoProveedor
         '
         Me.colCodigoProveedor.Caption = "Código Proveedor"
         Me.colCodigoProveedor.FieldName = "CODE_SUPPLIER"
+        Me.colCodigoProveedor.MinWidth = 30
         Me.colCodigoProveedor.Name = "colCodigoProveedor"
         Me.colCodigoProveedor.OptionsColumn.AllowEdit = False
-        Me.colCodigoProveedor.Visible = True
-        Me.colCodigoProveedor.VisibleIndex = 22
-        Me.colCodigoProveedor.Width = 20
+        Me.colCodigoProveedor.Width = 31
         '
         'colNombreProveedor
         '
         Me.colNombreProveedor.Caption = "Nombre Proveedor"
         Me.colNombreProveedor.FieldName = "NAME_SUPPLIER"
+        Me.colNombreProveedor.MinWidth = 30
         Me.colNombreProveedor.Name = "colNombreProveedor"
         Me.colNombreProveedor.OptionsColumn.AllowEdit = False
-        Me.colNombreProveedor.Visible = True
-        Me.colNombreProveedor.VisibleIndex = 23
-        Me.colNombreProveedor.Width = 23
+        Me.colNombreProveedor.Width = 36
         '
         'colMATERIAL_ID
         '
         Me.colMATERIAL_ID.Caption = "Código Material"
         Me.colMATERIAL_ID.FieldName = "MATERIAL_ID"
+        Me.colMATERIAL_ID.MinWidth = 30
         Me.colMATERIAL_ID.Name = "colMATERIAL_ID"
         Me.colMATERIAL_ID.OptionsColumn.AllowEdit = False
         Me.colMATERIAL_ID.Visible = True
-        Me.colMATERIAL_ID.VisibleIndex = 24
-        Me.colMATERIAL_ID.Width = 25
+        Me.colMATERIAL_ID.VisibleIndex = 10
+        Me.colMATERIAL_ID.Width = 96
         '
         'colZONE
         '
         Me.colZONE.Caption = "Zona"
         Me.colZONE.FieldName = "ZONE"
+        Me.colZONE.MinWidth = 30
         Me.colZONE.Name = "colZONE"
         Me.colZONE.OptionsColumn.AllowEdit = False
-        Me.colZONE.Visible = True
-        Me.colZONE.VisibleIndex = 25
-        Me.colZONE.Width = 24
+        Me.colZONE.Width = 37
         '
         'colAVAILABLE_QTY
         '
         Me.colAVAILABLE_QTY.Caption = "Inv.Disp."
         Me.colAVAILABLE_QTY.FieldName = "AVAILABLE_QTY"
+        Me.colAVAILABLE_QTY.MinWidth = 30
         Me.colAVAILABLE_QTY.Name = "colAVAILABLE_QTY"
         Me.colAVAILABLE_QTY.OptionsColumn.AllowEdit = False
         Me.colAVAILABLE_QTY.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "AVAILABLE_QTY", "{0:0.##}")})
         Me.colAVAILABLE_QTY.Visible = True
-        Me.colAVAILABLE_QTY.VisibleIndex = 26
-        Me.colAVAILABLE_QTY.Width = 24
+        Me.colAVAILABLE_QTY.VisibleIndex = 13
+        Me.colAVAILABLE_QTY.Width = 90
         '
         'UiColValorUnitario
         '
@@ -512,12 +527,13 @@ Partial Class frmInfo_Inventory
         Me.UiColValorUnitario.FieldName = "VALOR_UNITARIO"
         Me.UiColValorUnitario.GroupFormat.FormatString = "###,###,##0.00"
         Me.UiColValorUnitario.GroupFormat.FormatType = DevExpress.Utils.FormatType.Custom
+        Me.UiColValorUnitario.MinWidth = 30
         Me.UiColValorUnitario.Name = "UiColValorUnitario"
         Me.UiColValorUnitario.OptionsColumn.AllowEdit = False
         Me.UiColValorUnitario.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "VALOR_UNITARIO", "{0:###,###,##0.00}")})
         Me.UiColValorUnitario.Visible = True
-        Me.UiColValorUnitario.VisibleIndex = 27
-        Me.UiColValorUnitario.Width = 20
+        Me.UiColValorUnitario.VisibleIndex = 15
+        Me.UiColValorUnitario.Width = 98
         '
         'UiColValorTotal
         '
@@ -527,281 +543,296 @@ Partial Class frmInfo_Inventory
         Me.UiColValorTotal.FieldName = "TOTAL_VALOR"
         Me.UiColValorTotal.GroupFormat.FormatString = "###,###,##0.00"
         Me.UiColValorTotal.GroupFormat.FormatType = DevExpress.Utils.FormatType.Custom
+        Me.UiColValorTotal.MinWidth = 30
         Me.UiColValorTotal.Name = "UiColValorTotal"
         Me.UiColValorTotal.OptionsColumn.AllowFocus = False
         Me.UiColValorTotal.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "TOTAL_VALOR", "{0:###,###,##0.00}")})
         Me.UiColValorTotal.Visible = True
-        Me.UiColValorTotal.VisibleIndex = 28
-        Me.UiColValorTotal.Width = 20
+        Me.UiColValorTotal.VisibleIndex = 14
+        Me.UiColValorTotal.Width = 118
         '
         'UiColIntentarioExterno
         '
         Me.UiColIntentarioExterno.Caption = "Inventario Externo"
         Me.UiColIntentarioExterno.FieldName = "IS_EXTERNAL_INVENTORY"
+        Me.UiColIntentarioExterno.MinWidth = 30
         Me.UiColIntentarioExterno.Name = "UiColIntentarioExterno"
         Me.UiColIntentarioExterno.OptionsColumn.AllowEdit = False
-        Me.UiColIntentarioExterno.Visible = True
-        Me.UiColIntentarioExterno.VisibleIndex = 29
-        Me.UiColIntentarioExterno.Width = 20
+        Me.UiColIntentarioExterno.Width = 36
         '
         'UiGridColSkuSerie
         '
         Me.UiGridColSkuSerie.Caption = "# De Serie"
         Me.UiGridColSkuSerie.FieldName = "SKU_SERIE"
+        Me.UiGridColSkuSerie.MinWidth = 30
         Me.UiGridColSkuSerie.Name = "UiGridColSkuSerie"
         Me.UiGridColSkuSerie.OptionsColumn.AllowEdit = False
         Me.UiGridColSkuSerie.Visible = True
-        Me.UiGridColSkuSerie.VisibleIndex = 30
-        Me.UiGridColSkuSerie.Width = 20
+        Me.UiGridColSkuSerie.VisibleIndex = 11
+        Me.UiGridColSkuSerie.Width = 83
         '
         'UiColDiasRegimen
         '
         Me.UiColDiasRegimen.Caption = "Días Régimen"
         Me.UiColDiasRegimen.FieldName = "DIAS_REGIMEN"
+        Me.UiColDiasRegimen.MinWidth = 30
         Me.UiColDiasRegimen.Name = "UiColDiasRegimen"
         Me.UiColDiasRegimen.OptionsColumn.AllowEdit = False
-        Me.UiColDiasRegimen.Visible = True
-        Me.UiColDiasRegimen.VisibleIndex = 31
-        Me.UiColDiasRegimen.Width = 20
+        Me.UiColDiasRegimen.Width = 36
         '
         'UiColDiasVencimiento
         '
         Me.UiColDiasVencimiento.Caption = "Días para Vencimiento Régimen"
         Me.UiColDiasVencimiento.FieldName = "DIAS_PARA_VENCER"
+        Me.UiColDiasVencimiento.MinWidth = 30
         Me.UiColDiasVencimiento.Name = "UiColDiasVencimiento"
         Me.UiColDiasVencimiento.OptionsColumn.AllowEdit = False
-        Me.UiColDiasVencimiento.Visible = True
-        Me.UiColDiasVencimiento.VisibleIndex = 32
-        Me.UiColDiasVencimiento.Width = 20
+        Me.UiColDiasVencimiento.Width = 36
         '
         'UiColFechaVencimientoRegimen
         '
         Me.UiColFechaVencimientoRegimen.Caption = "Fecha Vencimiento Régimen"
         Me.UiColFechaVencimientoRegimen.FieldName = "FECHA_VENCIMIENTO"
+        Me.UiColFechaVencimientoRegimen.MinWidth = 30
         Me.UiColFechaVencimientoRegimen.Name = "UiColFechaVencimientoRegimen"
         Me.UiColFechaVencimientoRegimen.OptionsColumn.AllowEdit = False
         Me.UiColFechaVencimientoRegimen.Visible = True
-        Me.UiColFechaVencimientoRegimen.VisibleIndex = 33
-        Me.UiColFechaVencimientoRegimen.Width = 20
+        Me.UiColFechaVencimientoRegimen.VisibleIndex = 17
+        Me.UiColFechaVencimientoRegimen.Width = 82
         '
         'UiColEstadoRegimen
         '
         Me.UiColEstadoRegimen.Caption = "Estado Régimen"
         Me.UiColEstadoRegimen.FieldName = "ESTADO_REGIMEN"
+        Me.UiColEstadoRegimen.MinWidth = 30
         Me.UiColEstadoRegimen.Name = "UiColEstadoRegimen"
         Me.UiColEstadoRegimen.OptionsColumn.AllowEdit = False
         Me.UiColEstadoRegimen.Visible = True
-        Me.UiColEstadoRegimen.VisibleIndex = 34
-        Me.UiColEstadoRegimen.Width = 20
+        Me.UiColEstadoRegimen.VisibleIndex = 18
+        Me.UiColEstadoRegimen.Width = 68
         '
         'UiColNombreEstado
         '
         Me.UiColNombreEstado.Caption = "Estado"
         Me.UiColNombreEstado.ColumnEdit = Me.lookupEstados
         Me.UiColNombreEstado.FieldName = "STATUS_CODE"
+        Me.UiColNombreEstado.MinWidth = 30
         Me.UiColNombreEstado.Name = "UiColNombreEstado"
         Me.UiColNombreEstado.Visible = True
-        Me.UiColNombreEstado.VisibleIndex = 35
-        Me.UiColNombreEstado.Width = 20
+        Me.UiColNombreEstado.VisibleIndex = 19
+        Me.UiColNombreEstado.Width = 104
         '
         'UiColBloqueoInventario
         '
         Me.UiColBloqueoInventario.Caption = "Bloqueado"
         Me.UiColBloqueoInventario.FieldName = "BLOCKS_INVENTORY"
+        Me.UiColBloqueoInventario.MinWidth = 30
         Me.UiColBloqueoInventario.Name = "UiColBloqueoInventario"
         Me.UiColBloqueoInventario.OptionsColumn.AllowEdit = False
         Me.UiColBloqueoInventario.Visible = True
-        Me.UiColBloqueoInventario.VisibleIndex = 36
-        Me.UiColBloqueoInventario.Width = 20
+        Me.UiColBloqueoInventario.VisibleIndex = 20
+        Me.UiColBloqueoInventario.Width = 129
         '
         'UiColColorEstado
         '
         Me.UiColColorEstado.Caption = "Color De Estado"
         Me.UiColColorEstado.FieldName = "COLOR"
+        Me.UiColColorEstado.MinWidth = 30
         Me.UiColColorEstado.Name = "UiColColorEstado"
         Me.UiColColorEstado.OptionsColumn.AllowEdit = False
         Me.UiColColorEstado.Visible = True
-        Me.UiColColorEstado.VisibleIndex = 37
-        Me.UiColColorEstado.Width = 20
+        Me.UiColColorEstado.VisibleIndex = 21
+        Me.UiColColorEstado.Width = 97
         '
         'UiColTono
         '
         Me.UiColTono.Caption = "Tono"
         Me.UiColTono.FieldName = "TONE"
+        Me.UiColTono.MinWidth = 30
         Me.UiColTono.Name = "UiColTono"
         Me.UiColTono.OptionsColumn.ReadOnly = True
-        Me.UiColTono.Visible = True
-        Me.UiColTono.VisibleIndex = 38
-        Me.UiColTono.Width = 20
+        Me.UiColTono.Width = 30
         '
         'UiColCalibre
         '
         Me.UiColCalibre.Caption = "Calibre"
         Me.UiColCalibre.FieldName = "CALIBER"
+        Me.UiColCalibre.MinWidth = 30
         Me.UiColCalibre.Name = "UiColCalibre"
         Me.UiColCalibre.OptionsColumn.ReadOnly = True
         Me.UiColCalibre.Visible = True
-        Me.UiColCalibre.VisibleIndex = 39
-        Me.UiColCalibre.Width = 20
+        Me.UiColCalibre.VisibleIndex = 22
+        Me.UiColCalibre.Width = 112
         '
         'UiColOrdenDeVenta
         '
         Me.UiColOrdenDeVenta.Caption = "Orden De Venta"
         Me.UiColOrdenDeVenta.FieldName = "SALE_ORDER_ID"
+        Me.UiColOrdenDeVenta.MinWidth = 30
         Me.UiColOrdenDeVenta.Name = "UiColOrdenDeVenta"
         Me.UiColOrdenDeVenta.OptionsColumn.AllowEdit = False
         Me.UiColOrdenDeVenta.OptionsColumn.ReadOnly = True
         Me.UiColOrdenDeVenta.Visible = True
-        Me.UiColOrdenDeVenta.VisibleIndex = 40
-        Me.UiColOrdenDeVenta.Width = 20
+        Me.UiColOrdenDeVenta.VisibleIndex = 23
+        Me.UiColOrdenDeVenta.Width = 99
         '
         'UiColProyecto
         '
         Me.UiColProyecto.Caption = "Proyecto"
         Me.UiColProyecto.FieldName = "PROJECT"
+        Me.UiColProyecto.MinWidth = 30
         Me.UiColProyecto.Name = "UiColProyecto"
         Me.UiColProyecto.OptionsColumn.AllowEdit = False
         Me.UiColProyecto.OptionsColumn.ReadOnly = True
-        Me.UiColProyecto.Visible = True
-        Me.UiColProyecto.VisibleIndex = 41
-        Me.UiColProyecto.Width = 20
+        Me.UiColProyecto.Width = 30
         '
         'UiColNombreCliente
         '
         Me.UiColNombreCliente.Caption = "Cliente"
         Me.UiColNombreCliente.FieldName = "CUSTOMER_NAME"
+        Me.UiColNombreCliente.MinWidth = 30
         Me.UiColNombreCliente.Name = "UiColNombreCliente"
         Me.UiColNombreCliente.OptionsColumn.AllowEdit = False
         Me.UiColNombreCliente.OptionsColumn.ReadOnly = True
         Me.UiColNombreCliente.Visible = True
-        Me.UiColNombreCliente.VisibleIndex = 42
-        Me.UiColNombreCliente.Width = 20
+        Me.UiColNombreCliente.VisibleIndex = 24
+        Me.UiColNombreCliente.Width = 110
         '
         'UiColBloqueoInterfaces
         '
         Me.UiColBloqueoInterfaces.Caption = "Bloqueado Por Interfaz"
         Me.UiColBloqueoInterfaces.FieldName = "LOCKED_BY_INTERFACES"
+        Me.UiColBloqueoInterfaces.MinWidth = 30
         Me.UiColBloqueoInterfaces.Name = "UiColBloqueoInterfaces"
         Me.UiColBloqueoInterfaces.OptionsColumn.AllowEdit = False
         Me.UiColBloqueoInterfaces.OptionsColumn.ReadOnly = True
         Me.UiColBloqueoInterfaces.Visible = True
-        Me.UiColBloqueoInterfaces.VisibleIndex = 43
-        Me.UiColBloqueoInterfaces.Width = 20
+        Me.UiColBloqueoInterfaces.VisibleIndex = 25
+        Me.UiColBloqueoInterfaces.Width = 149
         '
         'UiColPeso
         '
         Me.UiColPeso.Caption = "Peso"
         Me.UiColPeso.FieldName = "WEIGTH"
+        Me.UiColPeso.MinWidth = 30
         Me.UiColPeso.Name = "UiColPeso"
         Me.UiColPeso.OptionsColumn.AllowEdit = False
         Me.UiColPeso.OptionsColumn.ReadOnly = True
         Me.UiColPeso.Visible = True
-        Me.UiColPeso.VisibleIndex = 44
-        Me.UiColPeso.Width = 20
+        Me.UiColPeso.VisibleIndex = 26
+        Me.UiColPeso.Width = 103
         '
         'UiColUnidadPeso
         '
         Me.UiColUnidadPeso.Caption = "Unidad de Peso"
         Me.UiColUnidadPeso.FieldName = "WEIGHT_MEASUREMENT"
+        Me.UiColUnidadPeso.MinWidth = 30
         Me.UiColUnidadPeso.Name = "UiColUnidadPeso"
         Me.UiColUnidadPeso.OptionsColumn.AllowEdit = False
         Me.UiColUnidadPeso.OptionsColumn.ReadOnly = True
         Me.UiColUnidadPeso.Visible = True
-        Me.UiColUnidadPeso.VisibleIndex = 45
-        Me.UiColUnidadPeso.Width = 20
+        Me.UiColUnidadPeso.VisibleIndex = 27
+        Me.UiColUnidadPeso.Width = 109
         '
         'UiColOlaPicking
         '
         Me.UiColOlaPicking.Caption = "Ola Picking"
         Me.UiColOlaPicking.FieldName = "WAVE_PICKING_ID"
+        Me.UiColOlaPicking.MinWidth = 30
         Me.UiColOlaPicking.Name = "UiColOlaPicking"
         Me.UiColOlaPicking.OptionsColumn.AllowEdit = False
-        Me.UiColOlaPicking.Visible = True
-        Me.UiColOlaPicking.VisibleIndex = 46
-        Me.UiColOlaPicking.Width = 20
+        Me.UiColOlaPicking.Width = 30
         '
         'GridColumn_PK_LINE
         '
         Me.GridColumn_PK_LINE.Caption = "LINE"
         Me.GridColumn_PK_LINE.FieldName = "PK_LINE"
+        Me.GridColumn_PK_LINE.MinWidth = 30
         Me.GridColumn_PK_LINE.Name = "GridColumn_PK_LINE"
         Me.GridColumn_PK_LINE.OptionsColumn.ReadOnly = True
         Me.GridColumn_PK_LINE.OptionsColumn.ShowInCustomizationForm = False
+        Me.GridColumn_PK_LINE.Width = 112
         '
         'GridColumn_BATCH_REQUESTED
         '
         Me.GridColumn_BATCH_REQUESTED.Caption = "Maneja Lote"
         Me.GridColumn_BATCH_REQUESTED.FieldName = "BATCH_REQUESTED"
+        Me.GridColumn_BATCH_REQUESTED.MinWidth = 30
         Me.GridColumn_BATCH_REQUESTED.Name = "GridColumn_BATCH_REQUESTED"
         Me.GridColumn_BATCH_REQUESTED.OptionsColumn.AllowEdit = False
         Me.GridColumn_BATCH_REQUESTED.OptionsColumn.ReadOnly = True
+        Me.GridColumn_BATCH_REQUESTED.Width = 112
         '
         'GridColumn_STATUS_ID
         '
         Me.GridColumn_STATUS_ID.Caption = "STATUS_ID"
         Me.GridColumn_STATUS_ID.FieldName = "STATUS_ID"
+        Me.GridColumn_STATUS_ID.MinWidth = 30
         Me.GridColumn_STATUS_ID.Name = "GridColumn_STATUS_ID"
         Me.GridColumn_STATUS_ID.OptionsColumn.AllowEdit = False
         Me.GridColumn_STATUS_ID.OptionsColumn.ReadOnly = True
         Me.GridColumn_STATUS_ID.OptionsColumn.ShowInCustomizationForm = False
+        Me.GridColumn_STATUS_ID.Width = 112
         '
         'GridColumn_TONE_CALIBER_ID
         '
         Me.GridColumn_TONE_CALIBER_ID.Caption = "TONE_AND_CALIBER_ID"
         Me.GridColumn_TONE_CALIBER_ID.FieldName = "TONE_AND_CALIBER_ID"
+        Me.GridColumn_TONE_CALIBER_ID.MinWidth = 30
         Me.GridColumn_TONE_CALIBER_ID.Name = "GridColumn_TONE_CALIBER_ID"
         Me.GridColumn_TONE_CALIBER_ID.OptionsColumn.AllowEdit = False
         Me.GridColumn_TONE_CALIBER_ID.OptionsColumn.ReadOnly = True
         Me.GridColumn_TONE_CALIBER_ID.OptionsColumn.ShowInCustomizationForm = False
+        Me.GridColumn_TONE_CALIBER_ID.Width = 112
         '
         'GridColumn_HANDLE_TONE
         '
         Me.GridColumn_HANDLE_TONE.Caption = "Maneja Tono"
         Me.GridColumn_HANDLE_TONE.FieldName = "HANDLE_TONE"
+        Me.GridColumn_HANDLE_TONE.MinWidth = 30
         Me.GridColumn_HANDLE_TONE.Name = "GridColumn_HANDLE_TONE"
         Me.GridColumn_HANDLE_TONE.OptionsColumn.AllowEdit = False
         Me.GridColumn_HANDLE_TONE.OptionsColumn.ReadOnly = True
+        Me.GridColumn_HANDLE_TONE.Width = 112
         '
         'GridColumn_HANDLE_CALIBER
         '
         Me.GridColumn_HANDLE_CALIBER.Caption = "Maneja Calibre"
         Me.GridColumn_HANDLE_CALIBER.FieldName = "HANDLE_CALIBER"
+        Me.GridColumn_HANDLE_CALIBER.MinWidth = 30
         Me.GridColumn_HANDLE_CALIBER.Name = "GridColumn_HANDLE_CALIBER"
         Me.GridColumn_HANDLE_CALIBER.OptionsColumn.AllowEdit = False
         Me.GridColumn_HANDLE_CALIBER.OptionsColumn.ReadOnly = True
+        Me.GridColumn_HANDLE_CALIBER.Width = 112
         '
         'UiColCodigoProyecto
         '
         Me.UiColCodigoProyecto.Caption = "Código Proyecto"
         Me.UiColCodigoProyecto.FieldName = "PROJECT_CODE"
-        Me.UiColCodigoProyecto.MinWidth = 27
+        Me.UiColCodigoProyecto.MinWidth = 40
         Me.UiColCodigoProyecto.Name = "UiColCodigoProyecto"
         Me.UiColCodigoProyecto.OptionsColumn.AllowEdit = False
-        Me.UiColCodigoProyecto.Visible = True
-        Me.UiColCodigoProyecto.VisibleIndex = 47
-        Me.UiColCodigoProyecto.Width = 29
+        Me.UiColCodigoProyecto.Width = 40
         '
         'UiColNombreProyecto
         '
         Me.UiColNombreProyecto.Caption = "Nombre Proyecto"
         Me.UiColNombreProyecto.FieldName = "PROJECT_SHORT_NAME"
-        Me.UiColNombreProyecto.MinWidth = 27
+        Me.UiColNombreProyecto.MinWidth = 40
         Me.UiColNombreProyecto.Name = "UiColNombreProyecto"
         Me.UiColNombreProyecto.OptionsColumn.AllowEdit = False
-        Me.UiColNombreProyecto.Visible = True
-        Me.UiColNombreProyecto.VisibleIndex = 48
-        Me.UiColNombreProyecto.Width = 29
+        Me.UiColNombreProyecto.Width = 40
         '
         'colTOTAL_POSITION
         '
         Me.colTOTAL_POSITION.Caption = "Posiciones Físicas"
         Me.colTOTAL_POSITION.FieldName = "TOTAL_POSITION"
-        Me.colTOTAL_POSITION.MinWidth = 25
-        Me.colTOTAL_POSITION.OptionsColumn.AllowEdit = False
+        Me.colTOTAL_POSITION.MinWidth = 37
         Me.colTOTAL_POSITION.Name = "colTOTAL_POSITION"
+        Me.colTOTAL_POSITION.OptionsColumn.AllowEdit = False
         Me.colTOTAL_POSITION.Visible = True
-        Me.colTOTAL_POSITION.VisibleIndex = 49
-        Me.colTOTAL_POSITION.Width = 29
+        Me.colTOTAL_POSITION.VisibleIndex = 29
+        Me.colTOTAL_POSITION.Width = 123
         '
         'PrintingSystem1
         '
@@ -907,35 +938,35 @@ Partial Class frmInfo_Inventory
         Me.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.barDockControlTop.Location = New System.Drawing.Point(0, 0)
         Me.barDockControlTop.Manager = Me.barOpciones
-        Me.barDockControlTop.Margin = New System.Windows.Forms.Padding(4)
-        Me.barDockControlTop.Size = New System.Drawing.Size(1617, 30)
+        Me.barDockControlTop.Margin = New System.Windows.Forms.Padding(6)
+        Me.barDockControlTop.Size = New System.Drawing.Size(2426, 46)
         '
         'barDockControlBottom
         '
         Me.barDockControlBottom.CausesValidation = False
         Me.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 646)
+        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 1019)
         Me.barDockControlBottom.Manager = Me.barOpciones
-        Me.barDockControlBottom.Margin = New System.Windows.Forms.Padding(4)
-        Me.barDockControlBottom.Size = New System.Drawing.Size(1617, 20)
+        Me.barDockControlBottom.Margin = New System.Windows.Forms.Padding(6)
+        Me.barDockControlBottom.Size = New System.Drawing.Size(2426, 22)
         '
         'barDockControlLeft
         '
         Me.barDockControlLeft.CausesValidation = False
         Me.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left
-        Me.barDockControlLeft.Location = New System.Drawing.Point(0, 30)
+        Me.barDockControlLeft.Location = New System.Drawing.Point(0, 46)
         Me.barDockControlLeft.Manager = Me.barOpciones
-        Me.barDockControlLeft.Margin = New System.Windows.Forms.Padding(4)
-        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 616)
+        Me.barDockControlLeft.Margin = New System.Windows.Forms.Padding(6)
+        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 973)
         '
         'barDockControlRight
         '
         Me.barDockControlRight.CausesValidation = False
         Me.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right
-        Me.barDockControlRight.Location = New System.Drawing.Point(1617, 30)
+        Me.barDockControlRight.Location = New System.Drawing.Point(2426, 46)
         Me.barDockControlRight.Manager = Me.barOpciones
-        Me.barDockControlRight.Margin = New System.Windows.Forms.Padding(4)
-        Me.barDockControlRight.Size = New System.Drawing.Size(0, 616)
+        Me.barDockControlRight.Margin = New System.Windows.Forms.Padding(6)
+        Me.barDockControlRight.Size = New System.Drawing.Size(0, 973)
         '
         'barBtnExel
         '
@@ -975,9 +1006,9 @@ Partial Class frmInfo_Inventory
         '
         'frmInfo_Inventory
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1617, 666)
+        Me.ClientSize = New System.Drawing.Size(2426, 1041)
         Me.Controls.Add(Me.GridControl1)
         Me.Controls.Add(Me.barDockControlLeft)
         Me.Controls.Add(Me.barDockControlRight)
@@ -985,7 +1016,7 @@ Partial Class frmInfo_Inventory
         Me.Controls.Add(Me.barDockControlTop)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(4)
+        Me.Margin = New System.Windows.Forms.Padding(6)
         Me.Name = "frmInfo_Inventory"
         Me.Text = "Consulta: Inventario en Linea"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
