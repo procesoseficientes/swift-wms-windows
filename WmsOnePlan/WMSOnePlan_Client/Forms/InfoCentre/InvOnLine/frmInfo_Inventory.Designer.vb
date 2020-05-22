@@ -112,6 +112,7 @@ Partial Class frmInfo_Inventory
         Me.UiBotonRefrescar = New DevExpress.XtraBars.BarButtonItem()
         Me.OP_WMS_VIEW_DETAIL_WAVEPICKINGTableAdapter1 = New WMSOnePlan_Client.DS_WaveReportTableAdapters.OP_WMS_VIEW_DETAIL_WAVEPICKINGTableAdapter()
         Me.BehaviorManager1 = New DevExpress.Utils.Behaviors.BehaviorManager(Me.components)
+        Me.loadLayoutTimer = New System.Windows.Forms.Timer(Me.components)
         CType(Me.lookupEstados, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -188,7 +189,7 @@ Partial Class frmInfo_Inventory
         Me.GridColumn_Linea.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count, "LICENSE_ID", "Registros {0}")})
         Me.GridColumn_Linea.Visible = True
         Me.GridColumn_Linea.VisibleIndex = 2
-        Me.GridColumn_Linea.Width = 101
+        Me.GridColumn_Linea.Width = 100
         '
         'GridColumn_Ubicacion
         '
@@ -284,7 +285,7 @@ Partial Class frmInfo_Inventory
         Me.GridColumnLastUpdatedBy.MinWidth = 30
         Me.GridColumnLastUpdatedBy.Name = "GridColumnLastUpdatedBy"
         Me.GridColumnLastUpdatedBy.OptionsColumn.AllowEdit = False
-        Me.GridColumnLastUpdatedBy.Width = 112
+        Me.GridColumnLastUpdatedBy.Width = 100
         '
         'GridColumnFechaLlegada
         '
@@ -297,7 +298,7 @@ Partial Class frmInfo_Inventory
         Me.GridColumnFechaLlegada.OptionsColumn.AllowEdit = False
         Me.GridColumnFechaLlegada.Visible = True
         Me.GridColumnFechaLlegada.VisibleIndex = 8
-        Me.GridColumnFechaLlegada.Width = 103
+        Me.GridColumnFechaLlegada.Width = 100
         '
         'GridColumnDUA
         '
@@ -306,7 +307,7 @@ Partial Class frmInfo_Inventory
         Me.GridColumnDUA.MinWidth = 30
         Me.GridColumnDUA.Name = "GridColumnDUA"
         Me.GridColumnDUA.OptionsColumn.AllowEdit = False
-        Me.GridColumnDUA.Width = 112
+        Me.GridColumnDUA.Width = 100
         '
         'GridColumnNumeroOrden
         '
@@ -326,7 +327,7 @@ Partial Class frmInfo_Inventory
         Me.GridColumnPoliza.MinWidth = 30
         Me.GridColumnPoliza.Name = "GridColumnPoliza"
         Me.GridColumnPoliza.OptionsColumn.AllowEdit = False
-        Me.GridColumnPoliza.Width = 112
+        Me.GridColumnPoliza.Width = 100
         '
         'GridColumnRegimen
         '
@@ -348,7 +349,7 @@ Partial Class frmInfo_Inventory
         Me.colFECHA_DOCUMENTO.MinWidth = 30
         Me.colFECHA_DOCUMENTO.Name = "colFECHA_DOCUMENTO"
         Me.colFECHA_DOCUMENTO.OptionsColumn.AllowEdit = False
-        Me.colFECHA_DOCUMENTO.Width = 223
+        Me.colFECHA_DOCUMENTO.Width = 100
         '
         'colALTERNATE_BARCODE
         '
@@ -405,7 +406,7 @@ Partial Class frmInfo_Inventory
         Me.GridColumn_CLASS.OptionsColumn.AllowEdit = False
         Me.GridColumn_CLASS.OptionsColumn.ReadOnly = True
         Me.GridColumn_CLASS.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList
-        Me.GridColumn_CLASS.Width = 112
+        Me.GridColumn_CLASS.Width = 100
         '
         'colBATCH
         '
@@ -854,7 +855,7 @@ Partial Class frmInfo_Inventory
         Me.barOpciones.DockControls.Add(Me.barDockControlRight)
         Me.barOpciones.Form = Me
         Me.barOpciones.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.barBtnAutomatica, Me.barBtnSave, Me.barBtnExel, Me.barBtnPrint, Me.BarBtnExcel, Me.BarBtnPDF, Me.btnRefresh, Me.btnSaveChanges})
-        Me.barOpciones.MaxItemId = 8
+        Me.barOpciones.MaxItemId = 9
         Me.barOpciones.StatusBar = Me.Bar3
         '
         'barToolOpciones
@@ -1004,6 +1005,10 @@ Partial Class frmInfo_Inventory
         '
         Me.OP_WMS_VIEW_DETAIL_WAVEPICKINGTableAdapter1.ClearBeforeFill = True
         '
+        'loadLayoutTimer
+        '
+        Me.loadLayoutTimer.Interval = 1000
+        '
         'frmInfo_Inventory
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
@@ -1118,4 +1123,5 @@ Partial Class frmInfo_Inventory
     Friend WithEvents OP_WMS_VIEW_DETAIL_WAVEPICKINGTableAdapter1 As DS_WaveReportTableAdapters.OP_WMS_VIEW_DETAIL_WAVEPICKINGTableAdapter
     Friend WithEvents colTOTAL_POSITION As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents BehaviorManager1 As DevExpress.Utils.Behaviors.BehaviorManager
+    Friend WithEvents loadLayoutTimer As Timer
 End Class
