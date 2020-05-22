@@ -830,7 +830,7 @@ Public Class frmDocumentoIngreso
             Double.TryParse(pctDAI.Text, _pctdai)
             Integer.TryParse(txtDocId.Text, _docid)
 
-            If cmbConsignatario.EditValue = Nothing Then
+            If cmbConsignatario.EditValue = Nothing Or cmbConsignatario.EditValue = "" Then
                 cmbConsignatario.EditValue = cmbCliente.EditValue
             End If
 
@@ -1342,6 +1342,7 @@ Public Class frmDocumentoIngreso
     End Sub
 
     Private Sub cmbCliente_EditValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmbCliente.EditValueChanged
+        cmbConsignatario.EditValue = cmbCliente.EditValue
         Try
             Dim dsTerms As New DataSet
             Dim dsCT As New DataSet
@@ -1736,10 +1737,6 @@ Public Class frmDocumentoIngreso
         Catch ex As Exception
             NotifyStatus(ex.Message, False, True)
         End Try
-    End Sub
-
-    Private Sub txtScanPoliza_ItemClick(sender As System.Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles txtScanPoliza.ItemClick
-
     End Sub
 
     Private Sub LlenarComboOperador()
