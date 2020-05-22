@@ -50,13 +50,6 @@ Public Class frmInfo_Inventory
                 strPath = String.Empty
             End If
 
-            'grabamos el layout del grid
-            strPath = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly.Location).ToString() & "\frmInfo_InventoryGrid" & PublicLoginInfo.LoginID & ".xml"
-            If File.Exists(strPath) Then
-                GridView1.RestoreLayoutFromXml(strPath)
-                strPath = String.Empty
-            End If
-
             Try
                 ShowInventory()
             Catch ex As Exception
@@ -90,6 +83,8 @@ Public Class frmInfo_Inventory
                 Me.GridControl1.DataSource = xDataSet.Tables(0)
                 dtTemp = xDataSet.Tables(0).Copy()
                 dtTemp.Rows.Clear()
+
+                loadLayoutTimer.Start()
             Else
                 MessageBox.Show(pResult)
                 RibbonForm1.Static_Message.Caption = Now.ToString + " " + pResult
@@ -578,6 +573,18 @@ Public Class frmInfo_Inventory
             MessageBox.Show(ex.Message)
         End Try
 
+    End Sub
+
+    Dim layoutLoadedinSession = False
+
+    Private Sub loadLayoutTimer_Tick(sender As Object, e As EventArgs) Handles loadLayoutTimer.Tick
+        If layoutLoadedinSession = False Then
+            layoutLoadedinSession = True
+            Dim strPath = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly.Location).ToString() & "\frmInfo_InventoryGrid" & PublicLoginInfo.LoginID & ".xml"
+            GridView1.RestoreLayoutFromXml(strPath)
+            GridView1.SaveLayoutToXml(strPath)
+        End If
+        loadLayoutTimer.Stop()
     End Sub
 
     Private Sub securityAccessPermissions()
