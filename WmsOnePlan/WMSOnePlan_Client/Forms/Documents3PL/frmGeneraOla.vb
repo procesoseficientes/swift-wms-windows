@@ -328,8 +328,8 @@ Public Class frmGeneraOla
 
     Private Sub GridPending_Click(sender As System.Object, e As System.EventArgs) Handles GridPending.Click
         Try
-
             Dim xdatarow As DataRow = GridViewPending.GetDataRow(GridViewPending.FocusedRowHandle)
+            ''MessageBox.Show(xdatarow("ORIGIN_LINE_NUMBER"))
             FN_LEE(Val(xdatarow("DOC_ID")), Val(xdatarow("ORIGIN_LINE_NUMBER")))
             ''FN_LEE(Val(xdatarow("ORIGIN_DOC_ID")), Val(xdatarow("ORIGIN_LINE_NUMBER")))
 
