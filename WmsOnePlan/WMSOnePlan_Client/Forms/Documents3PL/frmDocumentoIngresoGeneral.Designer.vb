@@ -1228,5 +1228,5 @@ End Sub
     Friend WithEvents txtTicketNumber As DevExpress.XtraEditors.TextEdit
     Public WithEvents layoutTicket As DevExpress.XtraLayout.LayoutControlItem
     Friend WithEvents BehaviorManager1 As DevExpress.Utils.Behaviors.BehaviorManager
-    Public WithEvents Bar2 As DevExpress.XtraBars.Bar
+    Friend WithEvents Bar2 As DevExpress.XtraBars.Bar
 End Class
