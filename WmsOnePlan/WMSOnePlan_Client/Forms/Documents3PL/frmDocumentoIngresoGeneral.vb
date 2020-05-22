@@ -888,4 +888,7 @@ Public Class frmDocumentoIngresoGeneral
 
     End Function
 
+    Private Sub UiPopupComprobante_Paint(sender As Object, e As PaintEventArgs) Handles UiPopupComprobante.Paint
+
+    End Sub
 End Class
