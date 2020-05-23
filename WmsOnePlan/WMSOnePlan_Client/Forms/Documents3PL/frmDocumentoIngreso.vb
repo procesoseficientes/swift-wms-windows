@@ -1899,7 +1899,7 @@ Public Class frmDocumentoIngreso
             End If
 
             dtFechaLlegada.EditValue = dateTicket.ToString
-            NotifyStatus("Fecha de llegada: " + dateTicket.ToString(), False, True)
+            NotifyStatus("Fecha de llegada: " + dateTicket.ToString(), False, False)
             Return True
 
         Catch ex As Exception

@@ -209,6 +209,8 @@ Public Class frmDocumentoEgresoFiscal
                 '-Cuando una poliza ya existe tambien debe darle valor al docid para continuar grabando items.
                 dblDoc_id = CDbl(txtDocId.Text)
 
+                NotifyStatus("Documento creado con ID: " + txtDocId.Text, False, False)
+
                 txtNumeroOrden.Text = xDataSetHead.Tables("OP_WMS_POLIZA_HEAD").Rows(0)("NUMERO_ORDEN").ToString
                 txtAduanaEntradaSalida.Text = xDataSetHead.Tables("OP_WMS_POLIZA_HEAD").Rows(0)("ADUANA_ENTRADA_SALIDA").ToString
                 txtNumeroDua.Text = xDataSetHead.Tables("OP_WMS_POLIZA_HEAD").Rows(0)("NUMERO_DUA").ToString

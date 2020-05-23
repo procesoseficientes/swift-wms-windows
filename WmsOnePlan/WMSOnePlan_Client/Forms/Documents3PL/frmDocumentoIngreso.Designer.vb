@@ -1724,6 +1724,7 @@ Partial Class frmDocumentoIngreso
         '
         'LayoutControlItem50
         '
+        Me.LayoutControlItem50.ContentVisible = False
         Me.LayoutControlItem50.Control = Me.GridDocRefencia
         Me.LayoutControlItem50.CustomizationFormText = "Documentos de Referencia"
         Me.LayoutControlItem50.Location = New System.Drawing.Point(0, 382)
@@ -2148,6 +2149,7 @@ Partial Class frmDocumentoIngreso
         '
         'LayoutControlItem77
         '
+        Me.LayoutControlItem77.ContentVisible = False
         Me.LayoutControlItem77.Control = Me.GridLookUpEdit1
         Me.LayoutControlItem77.Location = New System.Drawing.Point(0, 404)
         Me.LayoutControlItem77.Name = "LayoutControlItem77"
@@ -2156,6 +2158,7 @@ Partial Class frmDocumentoIngreso
         '
         'LayoutControlItem84
         '
+        Me.LayoutControlItem84.ContentVisible = False
         Me.LayoutControlItem84.Control = Me.GridLookUpEdit2
         Me.LayoutControlItem84.Location = New System.Drawing.Point(0, 426)
         Me.LayoutControlItem84.Name = "LayoutControlItem84"
@@ -2164,6 +2167,7 @@ Partial Class frmDocumentoIngreso
         '
         'LayoutControlItem85
         '
+        Me.LayoutControlItem85.ContentVisible = False
         Me.LayoutControlItem85.Control = Me.GridLookUpEdit3
         Me.LayoutControlItem85.Location = New System.Drawing.Point(0, 448)
         Me.LayoutControlItem85.Name = "LayoutControlItem85"
