@@ -534,19 +534,19 @@ Partial Class frmDocumentoIngreso
         '
         Me.XtraTabControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.XtraTabControl1.Location = New System.Drawing.Point(0, 106)
-        Me.XtraTabControl1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.XtraTabControl1.Margin = New System.Windows.Forms.Padding(6)
         Me.XtraTabControl1.Name = "XtraTabControl1"
         Me.XtraTabControl1.SelectedTabPage = Me.XtraTabHead
-        Me.XtraTabControl1.Size = New System.Drawing.Size(2418, 929)
+        Me.XtraTabControl1.Size = New System.Drawing.Size(2418, 1325)
         Me.XtraTabControl1.TabIndex = 0
         Me.XtraTabControl1.TabPages.AddRange(New DevExpress.XtraTab.XtraTabPage() {Me.XtraTabHead, Me.XtraTabDetail, Me.XtraTabServicios})
         '
         'XtraTabHead
         '
         Me.XtraTabHead.Controls.Add(Me.LayoutEncabezado)
-        Me.XtraTabHead.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.XtraTabHead.Margin = New System.Windows.Forms.Padding(6)
         Me.XtraTabHead.Name = "XtraTabHead"
-        Me.XtraTabHead.Size = New System.Drawing.Size(2414, 880)
+        Me.XtraTabHead.Size = New System.Drawing.Size(2414, 1276)
         Me.XtraTabHead.Text = "Encabezado Ingreso"
         '
         'LayoutEncabezado
@@ -609,18 +609,18 @@ Partial Class frmDocumentoIngreso
         Me.LayoutEncabezado.Controls.Add(Me.lookUpPrioridad)
         Me.LayoutEncabezado.Dock = System.Windows.Forms.DockStyle.Fill
         Me.LayoutEncabezado.Location = New System.Drawing.Point(0, 0)
-        Me.LayoutEncabezado.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.LayoutEncabezado.Margin = New System.Windows.Forms.Padding(6)
         Me.LayoutEncabezado.Name = "LayoutEncabezado"
         Me.LayoutEncabezado.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New System.Drawing.Rectangle(-1039, 248, 250, 350)
         Me.LayoutEncabezado.Root = Me.LayoutControlGroup1
-        Me.LayoutEncabezado.Size = New System.Drawing.Size(2414, 880)
+        Me.LayoutEncabezado.Size = New System.Drawing.Size(2414, 1276)
         Me.LayoutEncabezado.TabIndex = 0
         Me.LayoutEncabezado.Text = "Encabezado Ingreso"
         '
         'GridLookUpEdit3
         '
-        Me.GridLookUpEdit3.Location = New System.Drawing.Point(319, 978)
-        Me.GridLookUpEdit3.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.GridLookUpEdit3.Location = New System.Drawing.Point(304, 1224)
+        Me.GridLookUpEdit3.Margin = New System.Windows.Forms.Padding(6)
         Me.GridLookUpEdit3.MenuManager = Me.BarManager1
         Me.GridLookUpEdit3.Name = "GridLookUpEdit3"
         Me.GridLookUpEdit3.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
@@ -629,7 +629,7 @@ Partial Class frmDocumentoIngreso
         Me.GridLookUpEdit3.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.GridLookUpEdit3.Properties.NullText = "[Seleccione Regimen...]"
         Me.GridLookUpEdit3.Properties.PopupView = Me.GridView10
-        Me.GridLookUpEdit3.Size = New System.Drawing.Size(2037, 40)
+        Me.GridLookUpEdit3.Size = New System.Drawing.Size(2098, 40)
         Me.GridLookUpEdit3.StyleController = Me.LayoutEncabezado
         Me.GridLookUpEdit3.TabIndex = 60
         '
@@ -743,16 +743,16 @@ Partial Class frmDocumentoIngreso
         Me.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.barDockControlTop.Location = New System.Drawing.Point(0, 0)
         Me.barDockControlTop.Manager = Me.BarManager1
-        Me.barDockControlTop.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.barDockControlTop.Margin = New System.Windows.Forms.Padding(6)
         Me.barDockControlTop.Size = New System.Drawing.Size(2418, 106)
         '
         'barDockControlBottom
         '
         Me.barDockControlBottom.CausesValidation = False
         Me.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 1035)
+        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 1431)
         Me.barDockControlBottom.Manager = Me.BarManager1
-        Me.barDockControlBottom.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.barDockControlBottom.Margin = New System.Windows.Forms.Padding(6)
         Me.barDockControlBottom.Size = New System.Drawing.Size(2418, 0)
         '
         'barDockControlLeft
@@ -761,8 +761,8 @@ Partial Class frmDocumentoIngreso
         Me.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left
         Me.barDockControlLeft.Location = New System.Drawing.Point(0, 106)
         Me.barDockControlLeft.Manager = Me.BarManager1
-        Me.barDockControlLeft.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 929)
+        Me.barDockControlLeft.Margin = New System.Windows.Forms.Padding(6)
+        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 1325)
         '
         'barDockControlRight
         '
@@ -770,8 +770,8 @@ Partial Class frmDocumentoIngreso
         Me.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right
         Me.barDockControlRight.Location = New System.Drawing.Point(2418, 106)
         Me.barDockControlRight.Manager = Me.BarManager1
-        Me.barDockControlRight.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.barDockControlRight.Size = New System.Drawing.Size(0, 929)
+        Me.barDockControlRight.Margin = New System.Windows.Forms.Padding(6)
+        Me.barDockControlRight.Size = New System.Drawing.Size(0, 1325)
         '
         'btnRectify
         '
@@ -800,8 +800,8 @@ Partial Class frmDocumentoIngreso
         '
         'GridLookUpEdit2
         '
-        Me.GridLookUpEdit2.Location = New System.Drawing.Point(319, 930)
-        Me.GridLookUpEdit2.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.GridLookUpEdit2.Location = New System.Drawing.Point(304, 1180)
+        Me.GridLookUpEdit2.Margin = New System.Windows.Forms.Padding(6)
         Me.GridLookUpEdit2.MenuManager = Me.BarManager1
         Me.GridLookUpEdit2.Name = "GridLookUpEdit2"
         Me.GridLookUpEdit2.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
@@ -810,7 +810,7 @@ Partial Class frmDocumentoIngreso
         Me.GridLookUpEdit2.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.GridLookUpEdit2.Properties.NullText = "[Seleccione Regimen...]"
         Me.GridLookUpEdit2.Properties.PopupView = Me.GridView9
-        Me.GridLookUpEdit2.Size = New System.Drawing.Size(2037, 40)
+        Me.GridLookUpEdit2.Size = New System.Drawing.Size(2098, 40)
         Me.GridLookUpEdit2.StyleController = Me.LayoutEncabezado
         Me.GridLookUpEdit2.TabIndex = 59
         '
@@ -824,8 +824,8 @@ Partial Class frmDocumentoIngreso
         '
         'GridLookUpEdit1
         '
-        Me.GridLookUpEdit1.Location = New System.Drawing.Point(319, 882)
-        Me.GridLookUpEdit1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.GridLookUpEdit1.Location = New System.Drawing.Point(304, 1136)
+        Me.GridLookUpEdit1.Margin = New System.Windows.Forms.Padding(6)
         Me.GridLookUpEdit1.MenuManager = Me.BarManager1
         Me.GridLookUpEdit1.Name = "GridLookUpEdit1"
         Me.GridLookUpEdit1.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
@@ -834,7 +834,7 @@ Partial Class frmDocumentoIngreso
         Me.GridLookUpEdit1.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.GridLookUpEdit1.Properties.NullText = "[Seleccione Regimen...]"
         Me.GridLookUpEdit1.Properties.PopupView = Me.GridView7
-        Me.GridLookUpEdit1.Size = New System.Drawing.Size(2037, 40)
+        Me.GridLookUpEdit1.Size = New System.Drawing.Size(2098, 40)
         Me.GridLookUpEdit1.StyleController = Me.LayoutEncabezado
         Me.GridLookUpEdit1.TabIndex = 58
         '
@@ -848,15 +848,15 @@ Partial Class frmDocumentoIngreso
         '
         'cmbBodegueros
         '
-        Me.cmbBodegueros.Location = New System.Drawing.Point(1157, 781)
-        Me.cmbBodegueros.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.cmbBodegueros.Location = New System.Drawing.Point(1161, 710)
+        Me.cmbBodegueros.Margin = New System.Windows.Forms.Padding(6)
         Me.cmbBodegueros.MenuManager = Me.BarManager1
         Me.cmbBodegueros.Name = "cmbBodegueros"
         Me.cmbBodegueros.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.cmbBodegueros.Properties.Appearance.Options.UseBackColor = True
         Me.cmbBodegueros.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.cmbBodegueros.Properties.PopupView = Me.GridView2
-        Me.cmbBodegueros.Size = New System.Drawing.Size(1199, 40)
+        Me.cmbBodegueros.Size = New System.Drawing.Size(1241, 40)
         Me.cmbBodegueros.StyleController = Me.LayoutEncabezado
         Me.cmbBodegueros.TabIndex = 12
         '
@@ -869,8 +869,8 @@ Partial Class frmDocumentoIngreso
         '
         'cmbPolizaAsegurada
         '
-        Me.cmbPolizaAsegurada.Location = New System.Drawing.Point(319, 713)
-        Me.cmbPolizaAsegurada.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.cmbPolizaAsegurada.Location = New System.Drawing.Point(304, 646)
+        Me.cmbPolizaAsegurada.Margin = New System.Windows.Forms.Padding(6)
         Me.cmbPolizaAsegurada.MenuManager = Me.BarManager1
         Me.cmbPolizaAsegurada.Name = "cmbPolizaAsegurada"
         Me.cmbPolizaAsegurada.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
@@ -881,7 +881,7 @@ Partial Class frmDocumentoIngreso
         Me.cmbPolizaAsegurada.Properties.PopupFormMinSize = New System.Drawing.Size(600, 0)
         Me.cmbPolizaAsegurada.Properties.PopupView = Me.GridView1
         Me.cmbPolizaAsegurada.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard
-        Me.cmbPolizaAsegurada.Size = New System.Drawing.Size(515, 40)
+        Me.cmbPolizaAsegurada.Size = New System.Drawing.Size(541, 40)
         Me.cmbPolizaAsegurada.StyleController = Me.LayoutEncabezado
         Me.cmbPolizaAsegurada.TabIndex = 50
         '
@@ -895,8 +895,8 @@ Partial Class frmDocumentoIngreso
         '
         'cmbAcuerdoHead
         '
-        Me.cmbAcuerdoHead.Location = New System.Drawing.Point(1157, 733)
-        Me.cmbAcuerdoHead.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.cmbAcuerdoHead.Location = New System.Drawing.Point(1161, 666)
+        Me.cmbAcuerdoHead.Margin = New System.Windows.Forms.Padding(6)
         Me.cmbAcuerdoHead.MenuManager = Me.BarManager1
         Me.cmbAcuerdoHead.Name = "cmbAcuerdoHead"
         Me.cmbAcuerdoHead.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
@@ -904,7 +904,7 @@ Partial Class frmDocumentoIngreso
         Me.cmbAcuerdoHead.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.cmbAcuerdoHead.Properties.NullText = "[Seleccione Acuerdo...]"
         Me.cmbAcuerdoHead.Properties.PopupView = Me.GridLookUpEdit1View
-        Me.cmbAcuerdoHead.Size = New System.Drawing.Size(1199, 40)
+        Me.cmbAcuerdoHead.Size = New System.Drawing.Size(1241, 40)
         Me.cmbAcuerdoHead.StyleController = Me.LayoutEncabezado
         Me.cmbAcuerdoHead.TabIndex = 55
         '
@@ -917,53 +917,53 @@ Partial Class frmDocumentoIngreso
         '
         'txtCodigoPoliza
         '
-        Me.txtCodigoPoliza.Location = New System.Drawing.Point(319, 119)
-        Me.txtCodigoPoliza.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtCodigoPoliza.Location = New System.Drawing.Point(304, 100)
+        Me.txtCodigoPoliza.Margin = New System.Windows.Forms.Padding(6)
         Me.txtCodigoPoliza.MenuManager = Me.BarManager1
         Me.txtCodigoPoliza.Name = "txtCodigoPoliza"
         Me.txtCodigoPoliza.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtCodigoPoliza.Properties.Appearance.Options.UseBackColor = True
         Me.txtCodigoPoliza.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple
         Me.txtCodigoPoliza.Properties.MaxLength = 15
-        Me.txtCodigoPoliza.Size = New System.Drawing.Size(291, 38)
+        Me.txtCodigoPoliza.Size = New System.Drawing.Size(312, 38)
         Me.txtCodigoPoliza.StyleController = Me.LayoutEncabezado
         Me.txtCodigoPoliza.TabIndex = 54
         '
         'txtMarchamo
         '
-        Me.txtMarchamo.Location = New System.Drawing.Point(319, 761)
-        Me.txtMarchamo.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtMarchamo.Location = New System.Drawing.Point(304, 690)
+        Me.txtMarchamo.Margin = New System.Windows.Forms.Padding(6)
         Me.txtMarchamo.MenuManager = Me.BarManager1
         Me.txtMarchamo.Name = "txtMarchamo"
-        Me.txtMarchamo.Size = New System.Drawing.Size(515, 40)
+        Me.txtMarchamo.Size = New System.Drawing.Size(541, 40)
         Me.txtMarchamo.StyleController = Me.LayoutEncabezado
         Me.txtMarchamo.TabIndex = 48
         '
         'dtFechaLlegada
         '
         Me.dtFechaLlegada.EditValue = Nothing
-        Me.dtFechaLlegada.Location = New System.Drawing.Point(2155, 71)
-        Me.dtFechaLlegada.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.dtFechaLlegada.Location = New System.Drawing.Point(2182, 56)
+        Me.dtFechaLlegada.Margin = New System.Windows.Forms.Padding(6)
         Me.dtFechaLlegada.MenuManager = Me.BarManager1
         Me.dtFechaLlegada.Name = "dtFechaLlegada"
         Me.dtFechaLlegada.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.dtFechaLlegada.Properties.Appearance.Options.UseBackColor = True
         Me.dtFechaLlegada.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.dtFechaLlegada.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
-        Me.dtFechaLlegada.Size = New System.Drawing.Size(201, 40)
+        Me.dtFechaLlegada.Size = New System.Drawing.Size(220, 40)
         Me.dtFechaLlegada.StyleController = Me.LayoutEncabezado
         Me.dtFechaLlegada.TabIndex = 47
         '
         'GridDocRefencia
         '
-        Me.GridDocRefencia.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.GridDocRefencia.Location = New System.Drawing.Point(319, 849)
+        Me.GridDocRefencia.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(6)
+        Me.GridDocRefencia.Location = New System.Drawing.Point(304, 774)
         Me.GridDocRefencia.MainView = Me.GridViewDocReferencia
-        Me.GridDocRefencia.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.GridDocRefencia.Margin = New System.Windows.Forms.Padding(6)
         Me.GridDocRefencia.MenuManager = Me.BarManager1
         Me.GridDocRefencia.Name = "GridDocRefencia"
         Me.GridDocRefencia.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.dtFechaDocumentoRef, Me.cmbTipoDocRef})
-        Me.GridDocRefencia.Size = New System.Drawing.Size(2037, 25)
+        Me.GridDocRefencia.Size = New System.Drawing.Size(2098, 358)
         Me.GridDocRefencia.TabIndex = 53
         Me.GridDocRefencia.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridViewDocReferencia})
         '
@@ -1077,460 +1077,460 @@ Partial Class frmDocumentoIngreso
         '
         'txtStatus
         '
-        Me.txtStatus.Location = New System.Drawing.Point(933, 311)
-        Me.txtStatus.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtStatus.Location = New System.Drawing.Point(932, 276)
+        Me.txtStatus.Margin = New System.Windows.Forms.Padding(6)
         Me.txtStatus.MenuManager = Me.BarManager1
         Me.txtStatus.Name = "txtStatus"
-        Me.txtStatus.Size = New System.Drawing.Size(289, 40)
+        Me.txtStatus.Size = New System.Drawing.Size(310, 40)
         Me.txtStatus.StyleController = Me.LayoutEncabezado
         Me.txtStatus.TabIndex = 46
         '
         'txtNumeroSat
         '
-        Me.txtNumeroSat.Location = New System.Drawing.Point(1545, 455)
-        Me.txtNumeroSat.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtNumeroSat.Location = New System.Drawing.Point(1558, 408)
+        Me.txtNumeroSat.Margin = New System.Windows.Forms.Padding(6)
         Me.txtNumeroSat.MenuManager = Me.BarManager1
         Me.txtNumeroSat.Name = "txtNumeroSat"
-        Me.txtNumeroSat.Size = New System.Drawing.Size(287, 40)
+        Me.txtNumeroSat.Size = New System.Drawing.Size(308, 40)
         Me.txtNumeroSat.StyleController = Me.LayoutEncabezado
         Me.txtNumeroSat.TabIndex = 45
         '
         'txtDomicilioRepresentante
         '
-        Me.txtDomicilioRepresentante.Location = New System.Drawing.Point(1157, 665)
-        Me.txtDomicilioRepresentante.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtDomicilioRepresentante.Location = New System.Drawing.Point(1161, 602)
+        Me.txtDomicilioRepresentante.Margin = New System.Windows.Forms.Padding(6)
         Me.txtDomicilioRepresentante.MenuManager = Me.BarManager1
         Me.txtDomicilioRepresentante.Name = "txtDomicilioRepresentante"
-        Me.txtDomicilioRepresentante.Size = New System.Drawing.Size(1199, 40)
+        Me.txtDomicilioRepresentante.Size = New System.Drawing.Size(1241, 40)
         Me.txtDomicilioRepresentante.StyleController = Me.LayoutEncabezado
         Me.txtDomicilioRepresentante.TabIndex = 44
         '
         'txtTipoDeclaranteRepresentante
         '
-        Me.txtTipoDeclaranteRepresentante.Location = New System.Drawing.Point(2155, 407)
-        Me.txtTipoDeclaranteRepresentante.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtTipoDeclaranteRepresentante.Location = New System.Drawing.Point(2182, 364)
+        Me.txtTipoDeclaranteRepresentante.Margin = New System.Windows.Forms.Padding(6)
         Me.txtTipoDeclaranteRepresentante.MenuManager = Me.BarManager1
         Me.txtTipoDeclaranteRepresentante.Name = "txtTipoDeclaranteRepresentante"
-        Me.txtTipoDeclaranteRepresentante.Size = New System.Drawing.Size(201, 40)
+        Me.txtTipoDeclaranteRepresentante.Size = New System.Drawing.Size(220, 40)
         Me.txtTipoDeclaranteRepresentante.StyleController = Me.LayoutEncabezado
         Me.txtTipoDeclaranteRepresentante.TabIndex = 43
         '
         'txtPaisImportador
         '
-        Me.txtPaisImportador.Location = New System.Drawing.Point(933, 455)
-        Me.txtPaisImportador.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtPaisImportador.Location = New System.Drawing.Point(932, 408)
+        Me.txtPaisImportador.Margin = New System.Windows.Forms.Padding(6)
         Me.txtPaisImportador.MenuManager = Me.BarManager1
         Me.txtPaisImportador.Name = "txtPaisImportador"
-        Me.txtPaisImportador.Size = New System.Drawing.Size(289, 40)
+        Me.txtPaisImportador.Size = New System.Drawing.Size(310, 40)
         Me.txtPaisImportador.StyleController = Me.LayoutEncabezado
         Me.txtPaisImportador.TabIndex = 42
         '
         'txtPaisRepresentante
         '
-        Me.txtPaisRepresentante.Location = New System.Drawing.Point(2155, 455)
-        Me.txtPaisRepresentante.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtPaisRepresentante.Location = New System.Drawing.Point(2182, 408)
+        Me.txtPaisRepresentante.Margin = New System.Windows.Forms.Padding(6)
         Me.txtPaisRepresentante.MenuManager = Me.BarManager1
         Me.txtPaisRepresentante.Name = "txtPaisRepresentante"
-        Me.txtPaisRepresentante.Size = New System.Drawing.Size(201, 40)
+        Me.txtPaisRepresentante.Size = New System.Drawing.Size(220, 40)
         Me.txtPaisRepresentante.StyleController = Me.LayoutEncabezado
         Me.txtPaisRepresentante.TabIndex = 41
         '
         'txtRazonSocialRepresentante
         '
-        Me.txtRazonSocialRepresentante.Location = New System.Drawing.Point(933, 551)
-        Me.txtRazonSocialRepresentante.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtRazonSocialRepresentante.Location = New System.Drawing.Point(932, 496)
+        Me.txtRazonSocialRepresentante.Margin = New System.Windows.Forms.Padding(6)
         Me.txtRazonSocialRepresentante.MenuManager = Me.BarManager1
         Me.txtRazonSocialRepresentante.Name = "txtRazonSocialRepresentante"
-        Me.txtRazonSocialRepresentante.Size = New System.Drawing.Size(289, 40)
+        Me.txtRazonSocialRepresentante.Size = New System.Drawing.Size(310, 40)
         Me.txtRazonSocialRepresentante.StyleController = Me.LayoutEncabezado
         Me.txtRazonSocialRepresentante.TabIndex = 40
         '
         'txtIdTributariaRepresentante
         '
-        Me.txtIdTributariaRepresentante.Location = New System.Drawing.Point(1545, 407)
-        Me.txtIdTributariaRepresentante.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtIdTributariaRepresentante.Location = New System.Drawing.Point(1558, 364)
+        Me.txtIdTributariaRepresentante.Margin = New System.Windows.Forms.Padding(6)
         Me.txtIdTributariaRepresentante.MenuManager = Me.BarManager1
         Me.txtIdTributariaRepresentante.Name = "txtIdTributariaRepresentante"
-        Me.txtIdTributariaRepresentante.Size = New System.Drawing.Size(287, 40)
+        Me.txtIdTributariaRepresentante.Size = New System.Drawing.Size(308, 40)
         Me.txtIdTributariaRepresentante.StyleController = Me.LayoutEncabezado
         Me.txtIdTributariaRepresentante.TabIndex = 39
         '
         'txtTipoRepresentante
         '
-        Me.txtTipoRepresentante.Location = New System.Drawing.Point(1545, 359)
-        Me.txtTipoRepresentante.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtTipoRepresentante.Location = New System.Drawing.Point(1558, 320)
+        Me.txtTipoRepresentante.Margin = New System.Windows.Forms.Padding(6)
         Me.txtTipoRepresentante.MenuManager = Me.BarManager1
         Me.txtTipoRepresentante.Name = "txtTipoRepresentante"
-        Me.txtTipoRepresentante.Size = New System.Drawing.Size(287, 40)
+        Me.txtTipoRepresentante.Size = New System.Drawing.Size(308, 40)
         Me.txtTipoRepresentante.StyleController = Me.LayoutEncabezado
         Me.txtTipoRepresentante.TabIndex = 38
         '
         'txtModo
         '
-        Me.txtModo.Location = New System.Drawing.Point(1545, 71)
-        Me.txtModo.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtModo.Location = New System.Drawing.Point(1558, 56)
+        Me.txtModo.Margin = New System.Windows.Forms.Padding(6)
         Me.txtModo.MenuManager = Me.BarManager1
         Me.txtModo.Name = "txtModo"
         Me.txtModo.Properties.Mask.EditMask = "n"
         Me.txtModo.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtModo.Size = New System.Drawing.Size(287, 40)
+        Me.txtModo.Size = New System.Drawing.Size(308, 40)
         Me.txtModo.StyleController = Me.LayoutEncabezado
         Me.txtModo.TabIndex = 37
         '
         'txtTipoImportador
         '
-        Me.txtTipoImportador.Location = New System.Drawing.Point(319, 549)
-        Me.txtTipoImportador.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtTipoImportador.Location = New System.Drawing.Point(304, 494)
+        Me.txtTipoImportador.Margin = New System.Windows.Forms.Padding(6)
         Me.txtTipoImportador.MenuManager = Me.BarManager1
         Me.txtTipoImportador.Name = "txtTipoImportador"
-        Me.txtTipoImportador.Size = New System.Drawing.Size(291, 40)
+        Me.txtTipoImportador.Size = New System.Drawing.Size(312, 40)
         Me.txtTipoImportador.StyleController = Me.LayoutEncabezado
         Me.txtTipoImportador.TabIndex = 35
         '
         'txtNaturalezaTrans
         '
-        Me.txtNaturalezaTrans.Location = New System.Drawing.Point(2155, 311)
-        Me.txtNaturalezaTrans.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtNaturalezaTrans.Location = New System.Drawing.Point(2182, 276)
+        Me.txtNaturalezaTrans.Margin = New System.Windows.Forms.Padding(6)
         Me.txtNaturalezaTrans.MenuManager = Me.BarManager1
         Me.txtNaturalezaTrans.Name = "txtNaturalezaTrans"
-        Me.txtNaturalezaTrans.Size = New System.Drawing.Size(201, 40)
+        Me.txtNaturalezaTrans.Size = New System.Drawing.Size(220, 40)
         Me.txtNaturalezaTrans.StyleController = Me.LayoutEncabezado
         Me.txtNaturalezaTrans.TabIndex = 34
         '
         'txtDepositoFiscalZf
         '
-        Me.txtDepositoFiscalZf.Location = New System.Drawing.Point(933, 407)
-        Me.txtDepositoFiscalZf.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtDepositoFiscalZf.Location = New System.Drawing.Point(932, 364)
+        Me.txtDepositoFiscalZf.Margin = New System.Windows.Forms.Padding(6)
         Me.txtDepositoFiscalZf.MenuManager = Me.BarManager1
         Me.txtDepositoFiscalZf.Name = "txtDepositoFiscalZf"
-        Me.txtDepositoFiscalZf.Size = New System.Drawing.Size(289, 40)
+        Me.txtDepositoFiscalZf.Size = New System.Drawing.Size(310, 40)
         Me.txtDepositoFiscalZf.StyleController = Me.LayoutEncabezado
         Me.txtDepositoFiscalZf.TabIndex = 33
         '
         'txtRazonSocialImportador
         '
-        Me.txtRazonSocialImportador.Location = New System.Drawing.Point(933, 503)
-        Me.txtRazonSocialImportador.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtRazonSocialImportador.Location = New System.Drawing.Point(932, 452)
+        Me.txtRazonSocialImportador.Margin = New System.Windows.Forms.Padding(6)
         Me.txtRazonSocialImportador.MenuManager = Me.BarManager1
         Me.txtRazonSocialImportador.Name = "txtRazonSocialImportador"
-        Me.txtRazonSocialImportador.Size = New System.Drawing.Size(289, 40)
+        Me.txtRazonSocialImportador.Size = New System.Drawing.Size(310, 40)
         Me.txtRazonSocialImportador.StyleController = Me.LayoutEncabezado
         Me.txtRazonSocialImportador.TabIndex = 32
         '
         'txtDomicilioImportador
         '
-        Me.txtDomicilioImportador.Location = New System.Drawing.Point(1545, 503)
-        Me.txtDomicilioImportador.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtDomicilioImportador.Location = New System.Drawing.Point(1558, 452)
+        Me.txtDomicilioImportador.Margin = New System.Windows.Forms.Padding(6)
         Me.txtDomicilioImportador.MenuManager = Me.BarManager1
         Me.txtDomicilioImportador.Name = "txtDomicilioImportador"
-        Me.txtDomicilioImportador.Size = New System.Drawing.Size(811, 40)
+        Me.txtDomicilioImportador.Size = New System.Drawing.Size(844, 40)
         Me.txtDomicilioImportador.StyleController = Me.LayoutEncabezado
         Me.txtDomicilioImportador.TabIndex = 36
         '
         'txtIdTributariaImportador
         '
-        Me.txtIdTributariaImportador.Location = New System.Drawing.Point(319, 597)
-        Me.txtIdTributariaImportador.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtIdTributariaImportador.Location = New System.Drawing.Point(304, 538)
+        Me.txtIdTributariaImportador.Margin = New System.Windows.Forms.Padding(6)
         Me.txtIdTributariaImportador.MenuManager = Me.BarManager1
         Me.txtIdTributariaImportador.Name = "txtIdTributariaImportador"
-        Me.txtIdTributariaImportador.Size = New System.Drawing.Size(291, 40)
+        Me.txtIdTributariaImportador.Size = New System.Drawing.Size(312, 40)
         Me.txtIdTributariaImportador.StyleController = Me.LayoutEncabezado
         Me.txtIdTributariaImportador.TabIndex = 31
         '
         'txtAduanaEntradaSalida
         '
-        Me.txtAduanaEntradaSalida.Location = New System.Drawing.Point(1545, 263)
-        Me.txtAduanaEntradaSalida.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtAduanaEntradaSalida.Location = New System.Drawing.Point(1558, 232)
+        Me.txtAduanaEntradaSalida.Margin = New System.Windows.Forms.Padding(6)
         Me.txtAduanaEntradaSalida.MenuManager = Me.BarManager1
         Me.txtAduanaEntradaSalida.Name = "txtAduanaEntradaSalida"
-        Me.txtAduanaEntradaSalida.Size = New System.Drawing.Size(287, 40)
+        Me.txtAduanaEntradaSalida.Size = New System.Drawing.Size(308, 40)
         Me.txtAduanaEntradaSalida.StyleController = Me.LayoutEncabezado
         Me.txtAduanaEntradaSalida.TabIndex = 30
         '
         'txtClase
         '
-        Me.txtClase.Location = New System.Drawing.Point(319, 453)
-        Me.txtClase.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtClase.Location = New System.Drawing.Point(304, 406)
+        Me.txtClase.Margin = New System.Windows.Forms.Padding(6)
         Me.txtClase.MenuManager = Me.BarManager1
         Me.txtClase.Name = "txtClase"
-        Me.txtClase.Size = New System.Drawing.Size(291, 40)
+        Me.txtClase.Size = New System.Drawing.Size(312, 40)
         Me.txtClase.StyleController = Me.LayoutEncabezado
         Me.txtClase.TabIndex = 29
         '
         'txtNumeroContenedor
         '
-        Me.txtNumeroContenedor.Location = New System.Drawing.Point(1545, 311)
-        Me.txtNumeroContenedor.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtNumeroContenedor.Location = New System.Drawing.Point(1558, 276)
+        Me.txtNumeroContenedor.Margin = New System.Windows.Forms.Padding(6)
         Me.txtNumeroContenedor.MenuManager = Me.BarManager1
         Me.txtNumeroContenedor.Name = "txtNumeroContenedor"
-        Me.txtNumeroContenedor.Size = New System.Drawing.Size(287, 40)
+        Me.txtNumeroContenedor.Size = New System.Drawing.Size(308, 40)
         Me.txtNumeroContenedor.StyleController = Me.LayoutEncabezado
         Me.txtNumeroContenedor.TabIndex = 28
         '
         'txtEntidadContenedor
         '
-        Me.txtEntidadContenedor.Location = New System.Drawing.Point(2155, 359)
-        Me.txtEntidadContenedor.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtEntidadContenedor.Location = New System.Drawing.Point(2182, 320)
+        Me.txtEntidadContenedor.Margin = New System.Windows.Forms.Padding(6)
         Me.txtEntidadContenedor.MenuManager = Me.BarManager1
         Me.txtEntidadContenedor.Name = "txtEntidadContenedor"
-        Me.txtEntidadContenedor.Size = New System.Drawing.Size(201, 40)
+        Me.txtEntidadContenedor.Size = New System.Drawing.Size(220, 40)
         Me.txtEntidadContenedor.StyleController = Me.LayoutEncabezado
         Me.txtEntidadContenedor.TabIndex = 27
         '
         'txtTipoContenedor
         '
-        Me.txtTipoContenedor.Location = New System.Drawing.Point(933, 359)
-        Me.txtTipoContenedor.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtTipoContenedor.Location = New System.Drawing.Point(932, 320)
+        Me.txtTipoContenedor.Margin = New System.Windows.Forms.Padding(6)
         Me.txtTipoContenedor.MenuManager = Me.BarManager1
         Me.txtTipoContenedor.Name = "txtTipoContenedor"
-        Me.txtTipoContenedor.Size = New System.Drawing.Size(289, 40)
+        Me.txtTipoContenedor.Size = New System.Drawing.Size(310, 40)
         Me.txtTipoContenedor.StyleController = Me.LayoutEncabezado
         Me.txtTipoContenedor.TabIndex = 26
         '
         'txtAduanaDespachoDestino
         '
-        Me.txtAduanaDespachoDestino.Location = New System.Drawing.Point(2155, 263)
-        Me.txtAduanaDespachoDestino.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtAduanaDespachoDestino.Location = New System.Drawing.Point(2182, 232)
+        Me.txtAduanaDespachoDestino.Margin = New System.Windows.Forms.Padding(6)
         Me.txtAduanaDespachoDestino.MenuManager = Me.BarManager1
         Me.txtAduanaDespachoDestino.Name = "txtAduanaDespachoDestino"
-        Me.txtAduanaDespachoDestino.Size = New System.Drawing.Size(201, 40)
+        Me.txtAduanaDespachoDestino.Size = New System.Drawing.Size(220, 40)
         Me.txtAduanaDespachoDestino.StyleController = Me.LayoutEncabezado
         Me.txtAduanaDespachoDestino.TabIndex = 25
         '
         'txtPaisProcedencia
         '
-        Me.txtPaisProcedencia.Location = New System.Drawing.Point(319, 501)
-        Me.txtPaisProcedencia.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtPaisProcedencia.Location = New System.Drawing.Point(304, 450)
+        Me.txtPaisProcedencia.Margin = New System.Windows.Forms.Padding(6)
         Me.txtPaisProcedencia.MenuManager = Me.BarManager1
         Me.txtPaisProcedencia.Name = "txtPaisProcedencia"
-        Me.txtPaisProcedencia.Size = New System.Drawing.Size(291, 40)
+        Me.txtPaisProcedencia.Size = New System.Drawing.Size(312, 40)
         Me.txtPaisProcedencia.StyleController = Me.LayoutEncabezado
         Me.txtPaisProcedencia.TabIndex = 24
         '
         'txtTotalPesoBrutoKg
         '
-        Me.txtTotalPesoBrutoKg.Location = New System.Drawing.Point(2155, 215)
-        Me.txtTotalPesoBrutoKg.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtTotalPesoBrutoKg.Location = New System.Drawing.Point(2182, 188)
+        Me.txtTotalPesoBrutoKg.Margin = New System.Windows.Forms.Padding(6)
         Me.txtTotalPesoBrutoKg.MenuManager = Me.BarManager1
         Me.txtTotalPesoBrutoKg.Name = "txtTotalPesoBrutoKg"
         Me.txtTotalPesoBrutoKg.Properties.Mask.EditMask = "n2"
         Me.txtTotalPesoBrutoKg.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtTotalPesoBrutoKg.Size = New System.Drawing.Size(201, 40)
+        Me.txtTotalPesoBrutoKg.Size = New System.Drawing.Size(220, 40)
         Me.txtTotalPesoBrutoKg.StyleController = Me.LayoutEncabezado
         Me.txtTotalPesoBrutoKg.TabIndex = 23
         '
         'txtTotalBultos
         '
-        Me.txtTotalBultos.Location = New System.Drawing.Point(1545, 215)
-        Me.txtTotalBultos.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtTotalBultos.Location = New System.Drawing.Point(1558, 188)
+        Me.txtTotalBultos.Margin = New System.Windows.Forms.Padding(6)
         Me.txtTotalBultos.MenuManager = Me.BarManager1
         Me.txtTotalBultos.Name = "txtTotalBultos"
         Me.txtTotalBultos.Properties.Mask.EditMask = "n0"
         Me.txtTotalBultos.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtTotalBultos.Size = New System.Drawing.Size(287, 40)
+        Me.txtTotalBultos.Size = New System.Drawing.Size(308, 40)
         Me.txtTotalBultos.StyleController = Me.LayoutEncabezado
         Me.txtTotalBultos.TabIndex = 22
         '
         'txtTotalLineas
         '
-        Me.txtTotalLineas.Location = New System.Drawing.Point(319, 405)
-        Me.txtTotalLineas.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtTotalLineas.Location = New System.Drawing.Point(304, 362)
+        Me.txtTotalLineas.Margin = New System.Windows.Forms.Padding(6)
         Me.txtTotalLineas.MenuManager = Me.BarManager1
         Me.txtTotalLineas.Name = "txtTotalLineas"
         Me.txtTotalLineas.Properties.Mask.EditMask = "n0"
         Me.txtTotalLineas.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtTotalLineas.Size = New System.Drawing.Size(291, 40)
+        Me.txtTotalLineas.Size = New System.Drawing.Size(312, 40)
         Me.txtTotalLineas.StyleController = Me.LayoutEncabezado
         Me.txtTotalLineas.TabIndex = 21
         '
         'txtNumeroOrden
         '
-        Me.txtNumeroOrden.Location = New System.Drawing.Point(319, 261)
-        Me.txtNumeroOrden.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtNumeroOrden.Location = New System.Drawing.Point(304, 230)
+        Me.txtNumeroOrden.Margin = New System.Windows.Forms.Padding(6)
         Me.txtNumeroOrden.MenuManager = Me.BarManager1
         Me.txtNumeroOrden.Name = "txtNumeroOrden"
         Me.txtNumeroOrden.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtNumeroOrden.Properties.Appearance.Options.UseBackColor = True
-        Me.txtNumeroOrden.Size = New System.Drawing.Size(291, 40)
+        Me.txtNumeroOrden.Size = New System.Drawing.Size(312, 40)
         Me.txtNumeroOrden.StyleController = Me.LayoutEncabezado
         Me.txtNumeroOrden.TabIndex = 20
         '
         'txtDocumentoPadre
         '
-        Me.txtDocumentoPadre.Location = New System.Drawing.Point(2155, 23)
-        Me.txtDocumentoPadre.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtDocumentoPadre.Location = New System.Drawing.Point(2182, 12)
+        Me.txtDocumentoPadre.Margin = New System.Windows.Forms.Padding(6)
         Me.txtDocumentoPadre.MenuManager = Me.BarManager1
         Me.txtDocumentoPadre.Name = "txtDocumentoPadre"
         Me.txtDocumentoPadre.Properties.Mask.EditMask = "n"
         Me.txtDocumentoPadre.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
         Me.txtDocumentoPadre.Properties.ReadOnly = True
-        Me.txtDocumentoPadre.Size = New System.Drawing.Size(201, 40)
+        Me.txtDocumentoPadre.Size = New System.Drawing.Size(220, 40)
         Me.txtDocumentoPadre.StyleController = Me.LayoutEncabezado
         Me.txtDocumentoPadre.TabIndex = 19
         '
         'txtTotalOtrosUsd
         '
-        Me.txtTotalOtrosUsd.Location = New System.Drawing.Point(319, 357)
-        Me.txtTotalOtrosUsd.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtTotalOtrosUsd.Location = New System.Drawing.Point(304, 318)
+        Me.txtTotalOtrosUsd.Margin = New System.Windows.Forms.Padding(6)
         Me.txtTotalOtrosUsd.MenuManager = Me.BarManager1
         Me.txtTotalOtrosUsd.Name = "txtTotalOtrosUsd"
         Me.txtTotalOtrosUsd.Properties.Mask.EditMask = "n2"
         Me.txtTotalOtrosUsd.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtTotalOtrosUsd.Size = New System.Drawing.Size(291, 40)
+        Me.txtTotalOtrosUsd.Size = New System.Drawing.Size(312, 40)
         Me.txtTotalOtrosUsd.StyleController = Me.LayoutEncabezado
         Me.txtTotalOtrosUsd.TabIndex = 18
         '
         'txtTotalSeguroUsd
         '
-        Me.txtTotalSeguroUsd.Location = New System.Drawing.Point(933, 119)
-        Me.txtTotalSeguroUsd.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtTotalSeguroUsd.Location = New System.Drawing.Point(932, 100)
+        Me.txtTotalSeguroUsd.Margin = New System.Windows.Forms.Padding(6)
         Me.txtTotalSeguroUsd.MenuManager = Me.BarManager1
         Me.txtTotalSeguroUsd.Name = "txtTotalSeguroUsd"
         Me.txtTotalSeguroUsd.Properties.Mask.EditMask = "n2"
         Me.txtTotalSeguroUsd.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtTotalSeguroUsd.Size = New System.Drawing.Size(289, 40)
+        Me.txtTotalSeguroUsd.Size = New System.Drawing.Size(310, 40)
         Me.txtTotalSeguroUsd.StyleController = Me.LayoutEncabezado
         Me.txtTotalSeguroUsd.TabIndex = 17
         '
         'txtTotalFleteUsd
         '
-        Me.txtTotalFleteUsd.Location = New System.Drawing.Point(1545, 119)
-        Me.txtTotalFleteUsd.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtTotalFleteUsd.Location = New System.Drawing.Point(1558, 100)
+        Me.txtTotalFleteUsd.Margin = New System.Windows.Forms.Padding(6)
         Me.txtTotalFleteUsd.MenuManager = Me.BarManager1
         Me.txtTotalFleteUsd.Name = "txtTotalFleteUsd"
         Me.txtTotalFleteUsd.Properties.Mask.EditMask = "n2"
         Me.txtTotalFleteUsd.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtTotalFleteUsd.Size = New System.Drawing.Size(287, 40)
+        Me.txtTotalFleteUsd.Size = New System.Drawing.Size(308, 40)
         Me.txtTotalFleteUsd.StyleController = Me.LayoutEncabezado
         Me.txtTotalFleteUsd.TabIndex = 16
         '
         'dtFechaAceptacion
         '
         Me.dtFechaAceptacion.EditValue = Nothing
-        Me.dtFechaAceptacion.Location = New System.Drawing.Point(933, 263)
-        Me.dtFechaAceptacion.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.dtFechaAceptacion.Location = New System.Drawing.Point(932, 232)
+        Me.dtFechaAceptacion.Margin = New System.Windows.Forms.Padding(6)
         Me.dtFechaAceptacion.MenuManager = Me.BarManager1
         Me.dtFechaAceptacion.Name = "dtFechaAceptacion"
         Me.dtFechaAceptacion.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.dtFechaAceptacion.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
-        Me.dtFechaAceptacion.Size = New System.Drawing.Size(289, 40)
+        Me.dtFechaAceptacion.Size = New System.Drawing.Size(310, 40)
         Me.dtFechaAceptacion.StyleController = Me.LayoutEncabezado
         Me.dtFechaAceptacion.TabIndex = 15
         '
         'txtNumeroDua
         '
-        Me.txtNumeroDua.Location = New System.Drawing.Point(933, 23)
-        Me.txtNumeroDua.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtNumeroDua.Location = New System.Drawing.Point(932, 12)
+        Me.txtNumeroDua.Margin = New System.Windows.Forms.Padding(6)
         Me.txtNumeroDua.MenuManager = Me.BarManager1
         Me.txtNumeroDua.Name = "txtNumeroDua"
-        Me.txtNumeroDua.Size = New System.Drawing.Size(289, 40)
+        Me.txtNumeroDua.Size = New System.Drawing.Size(310, 40)
         Me.txtNumeroDua.StyleController = Me.LayoutEncabezado
         Me.txtNumeroDua.TabIndex = 14
         '
         'txtTotalGeneral
         '
-        Me.txtTotalGeneral.Location = New System.Drawing.Point(1545, 167)
-        Me.txtTotalGeneral.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtTotalGeneral.Location = New System.Drawing.Point(1558, 144)
+        Me.txtTotalGeneral.Margin = New System.Windows.Forms.Padding(6)
         Me.txtTotalGeneral.MenuManager = Me.BarManager1
         Me.txtTotalGeneral.Name = "txtTotalGeneral"
         Me.txtTotalGeneral.Properties.Mask.EditMask = "n2"
         Me.txtTotalGeneral.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtTotalGeneral.Size = New System.Drawing.Size(287, 40)
+        Me.txtTotalGeneral.Size = New System.Drawing.Size(308, 40)
         Me.txtTotalGeneral.StyleController = Me.LayoutEncabezado
         Me.txtTotalGeneral.TabIndex = 13
         '
         'txtTotalOtros
         '
-        Me.txtTotalOtros.Location = New System.Drawing.Point(933, 215)
-        Me.txtTotalOtros.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtTotalOtros.Location = New System.Drawing.Point(932, 188)
+        Me.txtTotalOtros.Margin = New System.Windows.Forms.Padding(6)
         Me.txtTotalOtros.MenuManager = Me.BarManager1
         Me.txtTotalOtros.Name = "txtTotalOtros"
         Me.txtTotalOtros.Properties.Mask.EditMask = "n2"
         Me.txtTotalOtros.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtTotalOtros.Size = New System.Drawing.Size(289, 40)
+        Me.txtTotalOtros.Size = New System.Drawing.Size(310, 40)
         Me.txtTotalOtros.StyleController = Me.LayoutEncabezado
         Me.txtTotalOtros.TabIndex = 12
         '
         'txtTotalLiquidar
         '
-        Me.txtTotalLiquidar.Location = New System.Drawing.Point(933, 167)
-        Me.txtTotalLiquidar.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtTotalLiquidar.Location = New System.Drawing.Point(932, 144)
+        Me.txtTotalLiquidar.Margin = New System.Windows.Forms.Padding(6)
         Me.txtTotalLiquidar.MenuManager = Me.BarManager1
         Me.txtTotalLiquidar.Name = "txtTotalLiquidar"
         Me.txtTotalLiquidar.Properties.Mask.EditMask = "n2"
         Me.txtTotalLiquidar.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtTotalLiquidar.Size = New System.Drawing.Size(289, 40)
+        Me.txtTotalLiquidar.Size = New System.Drawing.Size(310, 40)
         Me.txtTotalLiquidar.StyleController = Me.LayoutEncabezado
         Me.txtTotalLiquidar.TabIndex = 11
         '
         'dtFechaDocumento
         '
         Me.dtFechaDocumento.EditValue = Nothing
-        Me.dtFechaDocumento.Location = New System.Drawing.Point(933, 71)
-        Me.dtFechaDocumento.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.dtFechaDocumento.Location = New System.Drawing.Point(932, 56)
+        Me.dtFechaDocumento.Margin = New System.Windows.Forms.Padding(6)
         Me.dtFechaDocumento.MenuManager = Me.BarManager1
         Me.dtFechaDocumento.Name = "dtFechaDocumento"
         Me.dtFechaDocumento.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.dtFechaDocumento.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
         Me.dtFechaDocumento.Properties.Mask.EditMask = "g"
-        Me.dtFechaDocumento.Size = New System.Drawing.Size(289, 40)
+        Me.dtFechaDocumento.Size = New System.Drawing.Size(310, 40)
         Me.dtFechaDocumento.StyleController = Me.LayoutEncabezado
         Me.dtFechaDocumento.TabIndex = 10
         '
         'txtDocId
         '
-        Me.txtDocId.Location = New System.Drawing.Point(319, 71)
-        Me.txtDocId.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtDocId.Location = New System.Drawing.Point(304, 56)
+        Me.txtDocId.Margin = New System.Windows.Forms.Padding(6)
         Me.txtDocId.MenuManager = Me.BarManager1
         Me.txtDocId.Name = "txtDocId"
         Me.txtDocId.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Redo, "", -1, True, False, False, EditorButtonImageOptions1, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject1, SerializableAppearanceObject2, SerializableAppearanceObject3, SerializableAppearanceObject4, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
         Me.txtDocId.Properties.Mask.EditMask = "n0"
         Me.txtDocId.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
         Me.txtDocId.Properties.ReadOnly = True
-        Me.txtDocId.Size = New System.Drawing.Size(291, 40)
+        Me.txtDocId.Size = New System.Drawing.Size(312, 40)
         Me.txtDocId.StyleController = Me.LayoutEncabezado
         Me.txtDocId.TabIndex = 9
         '
         'txtTotalFobUsd
         '
-        Me.txtTotalFobUsd.Location = New System.Drawing.Point(319, 309)
-        Me.txtTotalFobUsd.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtTotalFobUsd.Location = New System.Drawing.Point(304, 274)
+        Me.txtTotalFobUsd.Margin = New System.Windows.Forms.Padding(6)
         Me.txtTotalFobUsd.MenuManager = Me.BarManager1
         Me.txtTotalFobUsd.Name = "txtTotalFobUsd"
         Me.txtTotalFobUsd.Properties.Mask.EditMask = "n2"
         Me.txtTotalFobUsd.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtTotalFobUsd.Size = New System.Drawing.Size(291, 40)
+        Me.txtTotalFobUsd.Size = New System.Drawing.Size(312, 40)
         Me.txtTotalFobUsd.StyleController = Me.LayoutEncabezado
         Me.txtTotalFobUsd.TabIndex = 8
         '
         'txtTotalValorAduana
         '
-        Me.txtTotalValorAduana.Location = New System.Drawing.Point(2155, 167)
-        Me.txtTotalValorAduana.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtTotalValorAduana.Location = New System.Drawing.Point(2182, 144)
+        Me.txtTotalValorAduana.Margin = New System.Windows.Forms.Padding(6)
         Me.txtTotalValorAduana.MenuManager = Me.BarManager1
         Me.txtTotalValorAduana.Name = "txtTotalValorAduana"
         Me.txtTotalValorAduana.Properties.Mask.EditMask = "n2"
         Me.txtTotalValorAduana.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtTotalValorAduana.Size = New System.Drawing.Size(201, 40)
+        Me.txtTotalValorAduana.Size = New System.Drawing.Size(220, 40)
         Me.txtTotalValorAduana.StyleController = Me.LayoutEncabezado
         Me.txtTotalValorAduana.TabIndex = 7
         '
         'txtTipoCambio
         '
-        Me.txtTipoCambio.Location = New System.Drawing.Point(2155, 119)
-        Me.txtTipoCambio.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtTipoCambio.Location = New System.Drawing.Point(2182, 100)
+        Me.txtTipoCambio.Margin = New System.Windows.Forms.Padding(6)
         Me.txtTipoCambio.MenuManager = Me.BarManager1
         Me.txtTipoCambio.Name = "txtTipoCambio"
         Me.txtTipoCambio.Properties.Mask.EditMask = "n4"
         Me.txtTipoCambio.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtTipoCambio.Size = New System.Drawing.Size(201, 40)
+        Me.txtTipoCambio.Size = New System.Drawing.Size(220, 40)
         Me.txtTipoCambio.StyleController = Me.LayoutEncabezado
         Me.txtTipoCambio.TabIndex = 6
         '
         'cmbRegimenPoliza
         '
-        Me.cmbRegimenPoliza.Location = New System.Drawing.Point(1545, 23)
-        Me.cmbRegimenPoliza.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.cmbRegimenPoliza.Location = New System.Drawing.Point(1558, 12)
+        Me.cmbRegimenPoliza.Margin = New System.Windows.Forms.Padding(6)
         Me.cmbRegimenPoliza.MenuManager = Me.BarManager1
         Me.cmbRegimenPoliza.Name = "cmbRegimenPoliza"
         Me.cmbRegimenPoliza.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
@@ -1539,7 +1539,7 @@ Partial Class frmDocumentoIngreso
         Me.cmbRegimenPoliza.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.cmbRegimenPoliza.Properties.NullText = "[Seleccione Regimen...]"
         Me.cmbRegimenPoliza.Properties.PopupView = Me.GridViewCmbRegimen
-        Me.cmbRegimenPoliza.Size = New System.Drawing.Size(287, 40)
+        Me.cmbRegimenPoliza.Size = New System.Drawing.Size(308, 40)
         Me.cmbRegimenPoliza.StyleController = Me.LayoutEncabezado
         Me.cmbRegimenPoliza.TabIndex = 5
         '
@@ -1554,8 +1554,8 @@ Partial Class frmDocumentoIngreso
         'cmbRegimen
         '
         Me.cmbRegimen.EditValue = "[Seleccione Regimen...]"
-        Me.cmbRegimen.Location = New System.Drawing.Point(319, 23)
-        Me.cmbRegimen.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.cmbRegimen.Location = New System.Drawing.Point(304, 12)
+        Me.cmbRegimen.Margin = New System.Windows.Forms.Padding(6)
         Me.cmbRegimen.MenuManager = Me.BarManager1
         Me.cmbRegimen.Name = "cmbRegimen"
         Me.cmbRegimen.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
@@ -1563,7 +1563,7 @@ Partial Class frmDocumentoIngreso
         Me.cmbRegimen.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.cmbRegimen.Properties.NullText = "[Seleccione Regimen...]"
         Me.cmbRegimen.Properties.PopupView = Me.GridViewCmbRegimenAlmacen
-        Me.cmbRegimen.Size = New System.Drawing.Size(291, 40)
+        Me.cmbRegimen.Size = New System.Drawing.Size(312, 40)
         Me.cmbRegimen.StyleController = Me.LayoutEncabezado
         Me.cmbRegimen.TabIndex = 4
         '
@@ -1576,8 +1576,8 @@ Partial Class frmDocumentoIngreso
         '
         'cmbCliente
         '
-        Me.cmbCliente.Location = New System.Drawing.Point(319, 665)
-        Me.cmbCliente.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.cmbCliente.Location = New System.Drawing.Point(304, 602)
+        Me.cmbCliente.Margin = New System.Windows.Forms.Padding(6)
         Me.cmbCliente.MenuManager = Me.BarManager1
         Me.cmbCliente.Name = "cmbCliente"
         Me.cmbCliente.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
@@ -1587,7 +1587,7 @@ Partial Class frmDocumentoIngreso
         Me.cmbCliente.Properties.NullText = ""
         Me.cmbCliente.Properties.PopupView = Me.GridViewCliente
         Me.cmbCliente.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard
-        Me.cmbCliente.Size = New System.Drawing.Size(515, 40)
+        Me.cmbCliente.Size = New System.Drawing.Size(541, 40)
         Me.cmbCliente.StyleController = Me.LayoutEncabezado
         Me.cmbCliente.TabIndex = 49
         '
@@ -1601,27 +1601,27 @@ Partial Class frmDocumentoIngreso
         '
         'txtTicketNumber
         '
-        Me.txtTicketNumber.Location = New System.Drawing.Point(319, 165)
-        Me.txtTicketNumber.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtTicketNumber.Location = New System.Drawing.Point(304, 142)
+        Me.txtTicketNumber.Margin = New System.Windows.Forms.Padding(6)
         Me.txtTicketNumber.MenuManager = Me.BarManager1
         Me.txtTicketNumber.Name = "txtTicketNumber"
         Me.txtTicketNumber.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtTicketNumber.Properties.Appearance.Options.UseBackColor = True
-        Me.txtTicketNumber.Size = New System.Drawing.Size(291, 40)
+        Me.txtTicketNumber.Size = New System.Drawing.Size(312, 40)
         Me.txtTicketNumber.StyleController = Me.LayoutEncabezado
         Me.txtTicketNumber.TabIndex = 56
         '
         'lookUpPrioridad
         '
-        Me.lookUpPrioridad.Location = New System.Drawing.Point(319, 213)
-        Me.lookUpPrioridad.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.lookUpPrioridad.Location = New System.Drawing.Point(304, 186)
+        Me.lookUpPrioridad.Margin = New System.Windows.Forms.Padding(6)
         Me.lookUpPrioridad.MenuManager = Me.BarManager1
         Me.lookUpPrioridad.Name = "lookUpPrioridad"
         Me.lookUpPrioridad.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.lookUpPrioridad.Properties.ImmediatePopup = True
         Me.lookUpPrioridad.Properties.NullText = ""
         Me.lookUpPrioridad.Properties.PopupView = Me.GridLookUpEdit4View
-        Me.lookUpPrioridad.Size = New System.Drawing.Size(291, 40)
+        Me.lookUpPrioridad.Size = New System.Drawing.Size(312, 40)
         Me.lookUpPrioridad.StyleController = Me.LayoutEncabezado
         Me.lookUpPrioridad.TabIndex = 57
         '
@@ -1639,16 +1639,16 @@ Partial Class frmDocumentoIngreso
         Me.LayoutControlGroup1.GroupBordersVisible = False
         Me.LayoutControlGroup1.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem2, Me.LayoutControlItem3, Me.LayoutControlItem4, Me.LayoutControlItem9, Me.LayoutControlItem1, Me.LayoutControlItem5, Me.LayoutControlItem18, Me.LayoutControlItem22, Me.LayoutControlItem23, Me.LayoutControlItem24, Me.LayoutControlItem11, Me.LayoutControlItem8, Me.LayoutControlItem12, Me.LayoutControlItem27, Me.LayoutControlItem25, Me.LayoutControlItem28, Me.LayoutControlItem50, Me.LayoutControlItem14, Me.LayoutControlItem15, Me.LayoutControlItem7, Me.LayoutControlItem34, Me.LayoutControlItem13, Me.LayoutControlItem10, Me.LayoutControlItem20, Me.LayoutControlItem19, Me.LayoutControlItem21, Me.LayoutControlItem26, Me.LayoutControlItem43, Me.LayoutControlItem16, Me.LayoutControlItem44, Me.LayoutControlItem31, Me.LayoutControlItem39, Me.LayoutControlItem36, Me.LayoutControlItem38, Me.LayoutControlItem32, Me.LayoutControlItem30, Me.LayoutControlItem35, Me.LayoutControlItem40, Me.SplitterItem2, Me.SplitterItem3, Me.SplitterItem4, Me.SplitterItem6, Me.LayoutControlItem46, Me.LayoutControlItem45, Me.SplitterItem1, Me.SplitterItem7, Me.LayoutControlItem29, Me.LayoutControlItem41, Me.LayoutControlItem33, Me.SplitterItem5, Me.LayoutControlItem80, Me.LayoutControlItem42, Me.lblPolizaAsegurada, Me.LayoutControlItem82, Me.LayoutControlItem79, Me.LayoutControlItem17, Me.LayoutControlItem37, Me.LayoutControlItem6, Me.layoutTicketFiscal, Me.LayoutControlItem83, Me.LayoutControlItem77, Me.LayoutControlItem84, Me.LayoutControlItem85})
         Me.LayoutControlGroup1.Name = "Root"
-        Me.LayoutControlGroup1.Size = New System.Drawing.Size(2380, 1041)
+        Me.LayoutControlGroup1.Size = New System.Drawing.Size(2414, 1276)
         Me.LayoutControlGroup1.TextVisible = False
         '
         'LayoutControlItem2
         '
         Me.LayoutControlItem2.Control = Me.cmbRegimenPoliza
         Me.LayoutControlItem2.CustomizationFormText = "Regimen"
-        Me.LayoutControlItem2.Location = New System.Drawing.Point(1226, 0)
+        Me.LayoutControlItem2.Location = New System.Drawing.Point(1254, 0)
         Me.LayoutControlItem2.Name = "LayoutControlItem2"
-        Me.LayoutControlItem2.Size = New System.Drawing.Size(590, 48)
+        Me.LayoutControlItem2.Size = New System.Drawing.Size(604, 44)
         Me.LayoutControlItem2.Text = "Regimen"
         Me.LayoutControlItem2.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -1656,9 +1656,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem3.Control = Me.txtTipoCambio
         Me.LayoutControlItem3.CustomizationFormText = "Tipo Cambio"
-        Me.LayoutControlItem3.Location = New System.Drawing.Point(1836, 96)
+        Me.LayoutControlItem3.Location = New System.Drawing.Point(1878, 88)
         Me.LayoutControlItem3.Name = "LayoutControlItem3"
-        Me.LayoutControlItem3.Size = New System.Drawing.Size(504, 48)
+        Me.LayoutControlItem3.Size = New System.Drawing.Size(516, 44)
         Me.LayoutControlItem3.Text = "Tipo Cambio"
         Me.LayoutControlItem3.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -1666,9 +1666,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem4.Control = Me.txtTotalValorAduana
         Me.LayoutControlItem4.CustomizationFormText = "Total Valor Aduana"
-        Me.LayoutControlItem4.Location = New System.Drawing.Point(1836, 144)
+        Me.LayoutControlItem4.Location = New System.Drawing.Point(1878, 132)
         Me.LayoutControlItem4.Name = "LayoutControlItem4"
-        Me.LayoutControlItem4.Size = New System.Drawing.Size(504, 48)
+        Me.LayoutControlItem4.Size = New System.Drawing.Size(516, 44)
         Me.LayoutControlItem4.Text = "Total Valor Aduana"
         Me.LayoutControlItem4.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -1676,9 +1676,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem9.Control = Me.txtTotalOtros
         Me.LayoutControlItem9.CustomizationFormText = "Total Otros"
-        Me.LayoutControlItem9.Location = New System.Drawing.Point(614, 192)
+        Me.LayoutControlItem9.Location = New System.Drawing.Point(628, 176)
         Me.LayoutControlItem9.Name = "LayoutControlItem9"
-        Me.LayoutControlItem9.Size = New System.Drawing.Size(592, 48)
+        Me.LayoutControlItem9.Size = New System.Drawing.Size(606, 44)
         Me.LayoutControlItem9.Text = "Total Otros"
         Me.LayoutControlItem9.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -1688,7 +1688,7 @@ Partial Class frmDocumentoIngreso
         Me.LayoutControlItem1.CustomizationFormText = "Regimen Almacen"
         Me.LayoutControlItem1.Location = New System.Drawing.Point(0, 0)
         Me.LayoutControlItem1.Name = "LayoutControlItem1"
-        Me.LayoutControlItem1.Size = New System.Drawing.Size(594, 48)
+        Me.LayoutControlItem1.Size = New System.Drawing.Size(608, 44)
         Me.LayoutControlItem1.Text = "Regimen Almacen"
         Me.LayoutControlItem1.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -1696,9 +1696,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem5.Control = Me.txtTotalFobUsd
         Me.LayoutControlItem5.CustomizationFormText = "Total FOB USD"
-        Me.LayoutControlItem5.Location = New System.Drawing.Point(0, 286)
+        Me.LayoutControlItem5.Location = New System.Drawing.Point(0, 262)
         Me.LayoutControlItem5.Name = "LayoutControlItem5"
-        Me.LayoutControlItem5.Size = New System.Drawing.Size(594, 48)
+        Me.LayoutControlItem5.Size = New System.Drawing.Size(608, 44)
         Me.LayoutControlItem5.Text = "Total FOB USD"
         Me.LayoutControlItem5.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -1706,9 +1706,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem18.Control = Me.txtTotalLineas
         Me.LayoutControlItem18.CustomizationFormText = "Total Lineas"
-        Me.LayoutControlItem18.Location = New System.Drawing.Point(0, 382)
+        Me.LayoutControlItem18.Location = New System.Drawing.Point(0, 350)
         Me.LayoutControlItem18.Name = "LayoutControlItem18"
-        Me.LayoutControlItem18.Size = New System.Drawing.Size(594, 48)
+        Me.LayoutControlItem18.Size = New System.Drawing.Size(608, 44)
         Me.LayoutControlItem18.Text = "Total Lineas"
         Me.LayoutControlItem18.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -1716,9 +1716,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem22.Control = Me.txtAduanaDespachoDestino
         Me.LayoutControlItem22.CustomizationFormText = "Aduana Despacho o Destino"
-        Me.LayoutControlItem22.Location = New System.Drawing.Point(1836, 240)
+        Me.LayoutControlItem22.Location = New System.Drawing.Point(1878, 220)
         Me.LayoutControlItem22.Name = "LayoutControlItem22"
-        Me.LayoutControlItem22.Size = New System.Drawing.Size(504, 48)
+        Me.LayoutControlItem22.Size = New System.Drawing.Size(516, 44)
         Me.LayoutControlItem22.Text = "Aduana Despacho o Destino"
         Me.LayoutControlItem22.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -1726,9 +1726,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem23.Control = Me.txtTipoContenedor
         Me.LayoutControlItem23.CustomizationFormText = "Tipo Contenedor"
-        Me.LayoutControlItem23.Location = New System.Drawing.Point(614, 336)
+        Me.LayoutControlItem23.Location = New System.Drawing.Point(628, 308)
         Me.LayoutControlItem23.Name = "LayoutControlItem23"
-        Me.LayoutControlItem23.Size = New System.Drawing.Size(592, 48)
+        Me.LayoutControlItem23.Size = New System.Drawing.Size(606, 44)
         Me.LayoutControlItem23.Text = "Tipo Contenedor"
         Me.LayoutControlItem23.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -1736,9 +1736,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem24.Control = Me.txtEntidadContenedor
         Me.LayoutControlItem24.CustomizationFormText = "Entidad Contenedor"
-        Me.LayoutControlItem24.Location = New System.Drawing.Point(1836, 336)
+        Me.LayoutControlItem24.Location = New System.Drawing.Point(1878, 308)
         Me.LayoutControlItem24.Name = "LayoutControlItem24"
-        Me.LayoutControlItem24.Size = New System.Drawing.Size(504, 48)
+        Me.LayoutControlItem24.Size = New System.Drawing.Size(516, 44)
         Me.LayoutControlItem24.Text = "Entidad Contenedor"
         Me.LayoutControlItem24.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -1746,9 +1746,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem11.Control = Me.txtNumeroDua
         Me.LayoutControlItem11.CustomizationFormText = "Numero DUA"
-        Me.LayoutControlItem11.Location = New System.Drawing.Point(614, 0)
+        Me.LayoutControlItem11.Location = New System.Drawing.Point(628, 0)
         Me.LayoutControlItem11.Name = "LayoutControlItem11"
-        Me.LayoutControlItem11.Size = New System.Drawing.Size(592, 48)
+        Me.LayoutControlItem11.Size = New System.Drawing.Size(606, 44)
         Me.LayoutControlItem11.Text = "Numero DUA"
         Me.LayoutControlItem11.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -1756,9 +1756,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem8.Control = Me.txtTotalLiquidar
         Me.LayoutControlItem8.CustomizationFormText = "Total Liquidar"
-        Me.LayoutControlItem8.Location = New System.Drawing.Point(614, 144)
+        Me.LayoutControlItem8.Location = New System.Drawing.Point(628, 132)
         Me.LayoutControlItem8.Name = "LayoutControlItem8"
-        Me.LayoutControlItem8.Size = New System.Drawing.Size(592, 48)
+        Me.LayoutControlItem8.Size = New System.Drawing.Size(606, 44)
         Me.LayoutControlItem8.Text = "Total Liquidar"
         Me.LayoutControlItem8.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -1766,9 +1766,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem12.Control = Me.dtFechaAceptacion
         Me.LayoutControlItem12.CustomizationFormText = "Fecha Aceptacion"
-        Me.LayoutControlItem12.Location = New System.Drawing.Point(614, 240)
+        Me.LayoutControlItem12.Location = New System.Drawing.Point(628, 220)
         Me.LayoutControlItem12.Name = "LayoutControlItem12"
-        Me.LayoutControlItem12.Size = New System.Drawing.Size(592, 48)
+        Me.LayoutControlItem12.Size = New System.Drawing.Size(606, 44)
         Me.LayoutControlItem12.Text = "Fecha Aceptacion"
         Me.LayoutControlItem12.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -1776,9 +1776,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem27.Control = Me.txtAduanaEntradaSalida
         Me.LayoutControlItem27.CustomizationFormText = "Aduana Entrada o Salida"
-        Me.LayoutControlItem27.Location = New System.Drawing.Point(1226, 240)
+        Me.LayoutControlItem27.Location = New System.Drawing.Point(1254, 220)
         Me.LayoutControlItem27.Name = "LayoutControlItem27"
-        Me.LayoutControlItem27.Size = New System.Drawing.Size(590, 48)
+        Me.LayoutControlItem27.Size = New System.Drawing.Size(604, 44)
         Me.LayoutControlItem27.Text = "Aduana Entrada o Salida"
         Me.LayoutControlItem27.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -1786,9 +1786,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem25.Control = Me.txtNumeroContenedor
         Me.LayoutControlItem25.CustomizationFormText = "Numero Contenedor"
-        Me.LayoutControlItem25.Location = New System.Drawing.Point(1226, 288)
+        Me.LayoutControlItem25.Location = New System.Drawing.Point(1254, 264)
         Me.LayoutControlItem25.Name = "LayoutControlItem25"
-        Me.LayoutControlItem25.Size = New System.Drawing.Size(590, 48)
+        Me.LayoutControlItem25.Size = New System.Drawing.Size(604, 44)
         Me.LayoutControlItem25.Text = "Numero Contenedor"
         Me.LayoutControlItem25.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -1796,19 +1796,20 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem28.Control = Me.txtIdTributariaImportador
         Me.LayoutControlItem28.CustomizationFormText = "Id Tributaria Importador"
-        Me.LayoutControlItem28.Location = New System.Drawing.Point(0, 574)
+        Me.LayoutControlItem28.Location = New System.Drawing.Point(0, 526)
         Me.LayoutControlItem28.Name = "LayoutControlItem28"
-        Me.LayoutControlItem28.Size = New System.Drawing.Size(594, 48)
+        Me.LayoutControlItem28.Size = New System.Drawing.Size(608, 44)
         Me.LayoutControlItem28.Text = "Id Tributaria Importador"
         Me.LayoutControlItem28.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem50
         '
+        Me.LayoutControlItem50.ContentVisible = False
         Me.LayoutControlItem50.Control = Me.GridDocRefencia
         Me.LayoutControlItem50.CustomizationFormText = "Documentos de Referencia"
-        Me.LayoutControlItem50.Location = New System.Drawing.Point(0, 826)
+        Me.LayoutControlItem50.Location = New System.Drawing.Point(0, 762)
         Me.LayoutControlItem50.Name = "LayoutControlItem50"
-        Me.LayoutControlItem50.Size = New System.Drawing.Size(2340, 33)
+        Me.LayoutControlItem50.Size = New System.Drawing.Size(2394, 362)
         Me.LayoutControlItem50.Text = "Documentos de Referencia"
         Me.LayoutControlItem50.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -1816,9 +1817,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem14.Control = Me.txtTotalSeguroUsd
         Me.LayoutControlItem14.CustomizationFormText = "Total Seguro USD"
-        Me.LayoutControlItem14.Location = New System.Drawing.Point(614, 96)
+        Me.LayoutControlItem14.Location = New System.Drawing.Point(628, 88)
         Me.LayoutControlItem14.Name = "LayoutControlItem14"
-        Me.LayoutControlItem14.Size = New System.Drawing.Size(592, 48)
+        Me.LayoutControlItem14.Size = New System.Drawing.Size(606, 44)
         Me.LayoutControlItem14.Text = "Total Seguro USD"
         Me.LayoutControlItem14.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -1826,9 +1827,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem15.Control = Me.txtTotalOtrosUsd
         Me.LayoutControlItem15.CustomizationFormText = "Total Otros USD"
-        Me.LayoutControlItem15.Location = New System.Drawing.Point(0, 334)
+        Me.LayoutControlItem15.Location = New System.Drawing.Point(0, 306)
         Me.LayoutControlItem15.Name = "LayoutControlItem15"
-        Me.LayoutControlItem15.Size = New System.Drawing.Size(594, 48)
+        Me.LayoutControlItem15.Size = New System.Drawing.Size(608, 44)
         Me.LayoutControlItem15.Text = "Total Otros USD"
         Me.LayoutControlItem15.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -1836,9 +1837,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem7.Control = Me.dtFechaDocumento
         Me.LayoutControlItem7.CustomizationFormText = "Fecha Documento"
-        Me.LayoutControlItem7.Location = New System.Drawing.Point(614, 48)
+        Me.LayoutControlItem7.Location = New System.Drawing.Point(628, 44)
         Me.LayoutControlItem7.Name = "LayoutControlItem7"
-        Me.LayoutControlItem7.Size = New System.Drawing.Size(592, 48)
+        Me.LayoutControlItem7.Size = New System.Drawing.Size(606, 44)
         Me.LayoutControlItem7.Text = "Fecha Documento"
         Me.LayoutControlItem7.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -1846,9 +1847,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem34.Control = Me.txtModo
         Me.LayoutControlItem34.CustomizationFormText = "Modo"
-        Me.LayoutControlItem34.Location = New System.Drawing.Point(1226, 48)
+        Me.LayoutControlItem34.Location = New System.Drawing.Point(1254, 44)
         Me.LayoutControlItem34.Name = "LayoutControlItem34"
-        Me.LayoutControlItem34.Size = New System.Drawing.Size(590, 48)
+        Me.LayoutControlItem34.Size = New System.Drawing.Size(604, 44)
         Me.LayoutControlItem34.Text = "Modo"
         Me.LayoutControlItem34.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -1856,9 +1857,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem13.Control = Me.txtTotalFleteUsd
         Me.LayoutControlItem13.CustomizationFormText = "Total Flete USD"
-        Me.LayoutControlItem13.Location = New System.Drawing.Point(1226, 96)
+        Me.LayoutControlItem13.Location = New System.Drawing.Point(1254, 88)
         Me.LayoutControlItem13.Name = "LayoutControlItem13"
-        Me.LayoutControlItem13.Size = New System.Drawing.Size(590, 48)
+        Me.LayoutControlItem13.Size = New System.Drawing.Size(604, 44)
         Me.LayoutControlItem13.Text = "Total Flete USD"
         Me.LayoutControlItem13.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -1866,9 +1867,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem10.Control = Me.txtTotalGeneral
         Me.LayoutControlItem10.CustomizationFormText = "Total General"
-        Me.LayoutControlItem10.Location = New System.Drawing.Point(1226, 144)
+        Me.LayoutControlItem10.Location = New System.Drawing.Point(1254, 132)
         Me.LayoutControlItem10.Name = "LayoutControlItem10"
-        Me.LayoutControlItem10.Size = New System.Drawing.Size(590, 48)
+        Me.LayoutControlItem10.Size = New System.Drawing.Size(604, 44)
         Me.LayoutControlItem10.Text = "Total General"
         Me.LayoutControlItem10.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -1876,9 +1877,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem20.Control = Me.txtTotalPesoBrutoKg
         Me.LayoutControlItem20.CustomizationFormText = "Total Peso Bruto KG"
-        Me.LayoutControlItem20.Location = New System.Drawing.Point(1836, 192)
+        Me.LayoutControlItem20.Location = New System.Drawing.Point(1878, 176)
         Me.LayoutControlItem20.Name = "LayoutControlItem20"
-        Me.LayoutControlItem20.Size = New System.Drawing.Size(504, 48)
+        Me.LayoutControlItem20.Size = New System.Drawing.Size(516, 44)
         Me.LayoutControlItem20.Text = "Total Peso Bruto KG"
         Me.LayoutControlItem20.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -1886,9 +1887,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem19.Control = Me.txtTotalBultos
         Me.LayoutControlItem19.CustomizationFormText = "Total Bultos"
-        Me.LayoutControlItem19.Location = New System.Drawing.Point(1226, 192)
+        Me.LayoutControlItem19.Location = New System.Drawing.Point(1254, 176)
         Me.LayoutControlItem19.Name = "LayoutControlItem19"
-        Me.LayoutControlItem19.Size = New System.Drawing.Size(590, 48)
+        Me.LayoutControlItem19.Size = New System.Drawing.Size(604, 44)
         Me.LayoutControlItem19.Text = "Total Bultos"
         Me.LayoutControlItem19.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -1896,9 +1897,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem21.Control = Me.txtPaisProcedencia
         Me.LayoutControlItem21.CustomizationFormText = "Pais Procedencia"
-        Me.LayoutControlItem21.Location = New System.Drawing.Point(0, 478)
+        Me.LayoutControlItem21.Location = New System.Drawing.Point(0, 438)
         Me.LayoutControlItem21.Name = "LayoutControlItem21"
-        Me.LayoutControlItem21.Size = New System.Drawing.Size(594, 48)
+        Me.LayoutControlItem21.Size = New System.Drawing.Size(608, 44)
         Me.LayoutControlItem21.Text = "Pais Procedencia"
         Me.LayoutControlItem21.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -1906,9 +1907,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem26.Control = Me.txtClase
         Me.LayoutControlItem26.CustomizationFormText = "Clase"
-        Me.LayoutControlItem26.Location = New System.Drawing.Point(0, 430)
+        Me.LayoutControlItem26.Location = New System.Drawing.Point(0, 394)
         Me.LayoutControlItem26.Name = "LayoutControlItem26"
-        Me.LayoutControlItem26.Size = New System.Drawing.Size(594, 48)
+        Me.LayoutControlItem26.Size = New System.Drawing.Size(608, 44)
         Me.LayoutControlItem26.Text = "Clase"
         Me.LayoutControlItem26.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -1916,9 +1917,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem43.Control = Me.txtStatus
         Me.LayoutControlItem43.CustomizationFormText = "Status"
-        Me.LayoutControlItem43.Location = New System.Drawing.Point(614, 288)
+        Me.LayoutControlItem43.Location = New System.Drawing.Point(628, 264)
         Me.LayoutControlItem43.Name = "LayoutControlItem43"
-        Me.LayoutControlItem43.Size = New System.Drawing.Size(592, 48)
+        Me.LayoutControlItem43.Size = New System.Drawing.Size(606, 44)
         Me.LayoutControlItem43.Text = "Status"
         Me.LayoutControlItem43.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -1926,9 +1927,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem16.Control = Me.txtDocumentoPadre
         Me.LayoutControlItem16.CustomizationFormText = "Documento Padre"
-        Me.LayoutControlItem16.Location = New System.Drawing.Point(1836, 0)
+        Me.LayoutControlItem16.Location = New System.Drawing.Point(1878, 0)
         Me.LayoutControlItem16.Name = "LayoutControlItem16"
-        Me.LayoutControlItem16.Size = New System.Drawing.Size(504, 48)
+        Me.LayoutControlItem16.Size = New System.Drawing.Size(516, 44)
         Me.LayoutControlItem16.Text = "Documento Padre"
         Me.LayoutControlItem16.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -1936,9 +1937,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem44.Control = Me.dtFechaLlegada
         Me.LayoutControlItem44.CustomizationFormText = "Fecha Llegada"
-        Me.LayoutControlItem44.Location = New System.Drawing.Point(1836, 48)
+        Me.LayoutControlItem44.Location = New System.Drawing.Point(1878, 44)
         Me.LayoutControlItem44.Name = "LayoutControlItem44"
-        Me.LayoutControlItem44.Size = New System.Drawing.Size(504, 48)
+        Me.LayoutControlItem44.Size = New System.Drawing.Size(516, 44)
         Me.LayoutControlItem44.Text = "Fecha Llegada"
         Me.LayoutControlItem44.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -1946,9 +1947,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem31.Control = Me.txtNaturalezaTrans
         Me.LayoutControlItem31.CustomizationFormText = "Naturaleza Transaccion"
-        Me.LayoutControlItem31.Location = New System.Drawing.Point(1836, 288)
+        Me.LayoutControlItem31.Location = New System.Drawing.Point(1878, 264)
         Me.LayoutControlItem31.Name = "LayoutControlItem31"
-        Me.LayoutControlItem31.Size = New System.Drawing.Size(504, 48)
+        Me.LayoutControlItem31.Size = New System.Drawing.Size(516, 44)
         Me.LayoutControlItem31.Text = "Naturaleza Transaccion"
         Me.LayoutControlItem31.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -1956,9 +1957,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem39.Control = Me.txtPaisImportador
         Me.LayoutControlItem39.CustomizationFormText = "Pais Importador"
-        Me.LayoutControlItem39.Location = New System.Drawing.Point(614, 432)
+        Me.LayoutControlItem39.Location = New System.Drawing.Point(628, 396)
         Me.LayoutControlItem39.Name = "LayoutControlItem39"
-        Me.LayoutControlItem39.Size = New System.Drawing.Size(592, 48)
+        Me.LayoutControlItem39.Size = New System.Drawing.Size(606, 44)
         Me.LayoutControlItem39.Text = "Pais Importador"
         Me.LayoutControlItem39.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -1966,9 +1967,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem36.Control = Me.txtIdTributariaRepresentante
         Me.LayoutControlItem36.CustomizationFormText = "Id Tributaria Representante"
-        Me.LayoutControlItem36.Location = New System.Drawing.Point(1226, 384)
+        Me.LayoutControlItem36.Location = New System.Drawing.Point(1254, 352)
         Me.LayoutControlItem36.Name = "LayoutControlItem36"
-        Me.LayoutControlItem36.Size = New System.Drawing.Size(590, 48)
+        Me.LayoutControlItem36.Size = New System.Drawing.Size(604, 44)
         Me.LayoutControlItem36.Text = "Id Tributaria Representante"
         Me.LayoutControlItem36.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -1976,9 +1977,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem38.Control = Me.txtPaisRepresentante
         Me.LayoutControlItem38.CustomizationFormText = "Pais Representante"
-        Me.LayoutControlItem38.Location = New System.Drawing.Point(1836, 432)
+        Me.LayoutControlItem38.Location = New System.Drawing.Point(1878, 396)
         Me.LayoutControlItem38.Name = "LayoutControlItem38"
-        Me.LayoutControlItem38.Size = New System.Drawing.Size(504, 48)
+        Me.LayoutControlItem38.Size = New System.Drawing.Size(516, 44)
         Me.LayoutControlItem38.Text = "Pais Representante"
         Me.LayoutControlItem38.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -1986,9 +1987,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem32.Control = Me.txtTipoImportador
         Me.LayoutControlItem32.CustomizationFormText = "Tipo Importador"
-        Me.LayoutControlItem32.Location = New System.Drawing.Point(0, 526)
+        Me.LayoutControlItem32.Location = New System.Drawing.Point(0, 482)
         Me.LayoutControlItem32.Name = "LayoutControlItem32"
-        Me.LayoutControlItem32.Size = New System.Drawing.Size(594, 48)
+        Me.LayoutControlItem32.Size = New System.Drawing.Size(608, 44)
         Me.LayoutControlItem32.Text = "Tipo Importador"
         Me.LayoutControlItem32.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -1996,9 +1997,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem30.Control = Me.txtDepositoFiscalZf
         Me.LayoutControlItem30.CustomizationFormText = "Deposito Fiscal ZF"
-        Me.LayoutControlItem30.Location = New System.Drawing.Point(614, 384)
+        Me.LayoutControlItem30.Location = New System.Drawing.Point(628, 352)
         Me.LayoutControlItem30.Name = "LayoutControlItem30"
-        Me.LayoutControlItem30.Size = New System.Drawing.Size(592, 48)
+        Me.LayoutControlItem30.Size = New System.Drawing.Size(606, 44)
         Me.LayoutControlItem30.Text = "Deposito Fiscal ZF"
         Me.LayoutControlItem30.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -2006,9 +2007,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem35.Control = Me.txtTipoRepresentante
         Me.LayoutControlItem35.CustomizationFormText = "Tipo Representante"
-        Me.LayoutControlItem35.Location = New System.Drawing.Point(1226, 336)
+        Me.LayoutControlItem35.Location = New System.Drawing.Point(1254, 308)
         Me.LayoutControlItem35.Name = "LayoutControlItem35"
-        Me.LayoutControlItem35.Size = New System.Drawing.Size(590, 48)
+        Me.LayoutControlItem35.Size = New System.Drawing.Size(604, 44)
         Me.LayoutControlItem35.Text = "Tipo Representante"
         Me.LayoutControlItem35.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -2016,9 +2017,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem40.Control = Me.txtTipoDeclaranteRepresentante
         Me.LayoutControlItem40.CustomizationFormText = "Tipo Declarante Representante"
-        Me.LayoutControlItem40.Location = New System.Drawing.Point(1836, 384)
+        Me.LayoutControlItem40.Location = New System.Drawing.Point(1878, 352)
         Me.LayoutControlItem40.Name = "LayoutControlItem40"
-        Me.LayoutControlItem40.Size = New System.Drawing.Size(504, 48)
+        Me.LayoutControlItem40.Size = New System.Drawing.Size(516, 44)
         Me.LayoutControlItem40.Text = "Tipo Declarante Representante"
         Me.LayoutControlItem40.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -2026,41 +2027,41 @@ Partial Class frmDocumentoIngreso
         '
         Me.SplitterItem2.AllowHotTrack = True
         Me.SplitterItem2.CustomizationFormText = "SplitterItem2"
-        Me.SplitterItem2.Location = New System.Drawing.Point(0, 622)
+        Me.SplitterItem2.Location = New System.Drawing.Point(0, 570)
         Me.SplitterItem2.Name = "SplitterItem2"
-        Me.SplitterItem2.Size = New System.Drawing.Size(2340, 20)
+        Me.SplitterItem2.Size = New System.Drawing.Size(2394, 20)
         '
         'SplitterItem3
         '
         Me.SplitterItem3.AllowHotTrack = True
         Me.SplitterItem3.CustomizationFormText = "SplitterItem3"
-        Me.SplitterItem3.Location = New System.Drawing.Point(0, 806)
+        Me.SplitterItem3.Location = New System.Drawing.Point(0, 742)
         Me.SplitterItem3.Name = "SplitterItem3"
-        Me.SplitterItem3.Size = New System.Drawing.Size(2340, 20)
+        Me.SplitterItem3.Size = New System.Drawing.Size(2394, 20)
         '
         'SplitterItem4
         '
         Me.SplitterItem4.AllowHotTrack = True
         Me.SplitterItem4.CustomizationFormText = "SplitterItem4"
-        Me.SplitterItem4.Location = New System.Drawing.Point(594, 0)
+        Me.SplitterItem4.Location = New System.Drawing.Point(608, 0)
         Me.SplitterItem4.Name = "SplitterItem4"
-        Me.SplitterItem4.Size = New System.Drawing.Size(20, 622)
+        Me.SplitterItem4.Size = New System.Drawing.Size(20, 570)
         '
         'SplitterItem6
         '
         Me.SplitterItem6.AllowHotTrack = True
         Me.SplitterItem6.CustomizationFormText = "SplitterItem6"
-        Me.SplitterItem6.Location = New System.Drawing.Point(1816, 0)
+        Me.SplitterItem6.Location = New System.Drawing.Point(1858, 0)
         Me.SplitterItem6.Name = "SplitterItem6"
-        Me.SplitterItem6.Size = New System.Drawing.Size(20, 480)
+        Me.SplitterItem6.Size = New System.Drawing.Size(20, 440)
         '
         'LayoutControlItem46
         '
         Me.LayoutControlItem46.Control = Me.cmbCliente
         Me.LayoutControlItem46.CustomizationFormText = "Cliente"
-        Me.LayoutControlItem46.Location = New System.Drawing.Point(0, 642)
+        Me.LayoutControlItem46.Location = New System.Drawing.Point(0, 590)
         Me.LayoutControlItem46.Name = "LayoutControlItem46"
-        Me.LayoutControlItem46.Size = New System.Drawing.Size(818, 48)
+        Me.LayoutControlItem46.Size = New System.Drawing.Size(837, 44)
         Me.LayoutControlItem46.Text = "Cliente"
         Me.LayoutControlItem46.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -2068,9 +2069,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem45.Control = Me.txtMarchamo
         Me.LayoutControlItem45.CustomizationFormText = "Numero Marchamo"
-        Me.LayoutControlItem45.Location = New System.Drawing.Point(0, 738)
+        Me.LayoutControlItem45.Location = New System.Drawing.Point(0, 678)
         Me.LayoutControlItem45.Name = "LayoutControlItem45"
-        Me.LayoutControlItem45.Size = New System.Drawing.Size(818, 68)
+        Me.LayoutControlItem45.Size = New System.Drawing.Size(837, 64)
         Me.LayoutControlItem45.Text = "Numero Marchamo"
         Me.LayoutControlItem45.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -2078,25 +2079,25 @@ Partial Class frmDocumentoIngreso
         '
         Me.SplitterItem1.AllowHotTrack = True
         Me.SplitterItem1.CustomizationFormText = "SplitterItem1"
-        Me.SplitterItem1.Location = New System.Drawing.Point(818, 642)
+        Me.SplitterItem1.Location = New System.Drawing.Point(837, 590)
         Me.SplitterItem1.Name = "SplitterItem1"
-        Me.SplitterItem1.Size = New System.Drawing.Size(20, 164)
+        Me.SplitterItem1.Size = New System.Drawing.Size(20, 152)
         '
         'SplitterItem7
         '
         Me.SplitterItem7.AllowHotTrack = True
         Me.SplitterItem7.CustomizationFormText = "SplitterItem7"
-        Me.SplitterItem7.Location = New System.Drawing.Point(838, 690)
+        Me.SplitterItem7.Location = New System.Drawing.Point(857, 634)
         Me.SplitterItem7.Name = "SplitterItem7"
-        Me.SplitterItem7.Size = New System.Drawing.Size(1502, 20)
+        Me.SplitterItem7.Size = New System.Drawing.Size(1537, 20)
         '
         'LayoutControlItem29
         '
         Me.LayoutControlItem29.Control = Me.txtRazonSocialImportador
         Me.LayoutControlItem29.CustomizationFormText = "Razon Social Importador"
-        Me.LayoutControlItem29.Location = New System.Drawing.Point(614, 480)
+        Me.LayoutControlItem29.Location = New System.Drawing.Point(628, 440)
         Me.LayoutControlItem29.Name = "LayoutControlItem29"
-        Me.LayoutControlItem29.Size = New System.Drawing.Size(592, 48)
+        Me.LayoutControlItem29.Size = New System.Drawing.Size(606, 44)
         Me.LayoutControlItem29.Text = "Razon Social Importador"
         Me.LayoutControlItem29.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -2104,9 +2105,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem41.Control = Me.txtDomicilioRepresentante
         Me.LayoutControlItem41.CustomizationFormText = "Domicilio Representante"
-        Me.LayoutControlItem41.Location = New System.Drawing.Point(838, 642)
+        Me.LayoutControlItem41.Location = New System.Drawing.Point(857, 590)
         Me.LayoutControlItem41.Name = "LayoutControlItem41"
-        Me.LayoutControlItem41.Size = New System.Drawing.Size(1502, 48)
+        Me.LayoutControlItem41.Size = New System.Drawing.Size(1537, 44)
         Me.LayoutControlItem41.Text = "Domicilio Representante"
         Me.LayoutControlItem41.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -2114,9 +2115,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem33.Control = Me.txtDomicilioImportador
         Me.LayoutControlItem33.CustomizationFormText = "Domicilio Importador"
-        Me.LayoutControlItem33.Location = New System.Drawing.Point(1226, 480)
+        Me.LayoutControlItem33.Location = New System.Drawing.Point(1254, 440)
         Me.LayoutControlItem33.Name = "LayoutControlItem33"
-        Me.LayoutControlItem33.Size = New System.Drawing.Size(1114, 142)
+        Me.LayoutControlItem33.Size = New System.Drawing.Size(1140, 130)
         Me.LayoutControlItem33.Text = "Domicilio Importador"
         Me.LayoutControlItem33.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -2124,17 +2125,17 @@ Partial Class frmDocumentoIngreso
         '
         Me.SplitterItem5.AllowHotTrack = True
         Me.SplitterItem5.CustomizationFormText = "SplitterItem5"
-        Me.SplitterItem5.Location = New System.Drawing.Point(1206, 0)
+        Me.SplitterItem5.Location = New System.Drawing.Point(1234, 0)
         Me.SplitterItem5.Name = "SplitterItem5"
-        Me.SplitterItem5.Size = New System.Drawing.Size(20, 622)
+        Me.SplitterItem5.Size = New System.Drawing.Size(20, 570)
         '
         'LayoutControlItem80
         '
         Me.LayoutControlItem80.Control = Me.cmbAcuerdoHead
         Me.LayoutControlItem80.CustomizationFormText = "Acuerdo Comercial"
-        Me.LayoutControlItem80.Location = New System.Drawing.Point(838, 710)
+        Me.LayoutControlItem80.Location = New System.Drawing.Point(857, 654)
         Me.LayoutControlItem80.Name = "LayoutControlItem80"
-        Me.LayoutControlItem80.Size = New System.Drawing.Size(1502, 48)
+        Me.LayoutControlItem80.Size = New System.Drawing.Size(1537, 44)
         Me.LayoutControlItem80.Text = "Acuerdo Comercial"
         Me.LayoutControlItem80.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -2142,9 +2143,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem42.Control = Me.txtNumeroSat
         Me.LayoutControlItem42.CustomizationFormText = "Numero SAT"
-        Me.LayoutControlItem42.Location = New System.Drawing.Point(1226, 432)
+        Me.LayoutControlItem42.Location = New System.Drawing.Point(1254, 396)
         Me.LayoutControlItem42.Name = "LayoutControlItem42"
-        Me.LayoutControlItem42.Size = New System.Drawing.Size(590, 48)
+        Me.LayoutControlItem42.Size = New System.Drawing.Size(604, 44)
         Me.LayoutControlItem42.Text = "Numero SAT"
         Me.LayoutControlItem42.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -2152,9 +2153,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.lblPolizaAsegurada.Control = Me.cmbPolizaAsegurada
         Me.lblPolizaAsegurada.CustomizationFormText = "Poliza Asegurada"
-        Me.lblPolizaAsegurada.Location = New System.Drawing.Point(0, 690)
+        Me.lblPolizaAsegurada.Location = New System.Drawing.Point(0, 634)
         Me.lblPolizaAsegurada.Name = "lblPolizaAsegurada"
-        Me.lblPolizaAsegurada.Size = New System.Drawing.Size(818, 48)
+        Me.lblPolizaAsegurada.Size = New System.Drawing.Size(837, 44)
         Me.lblPolizaAsegurada.Text = "Poliza Asegurada"
         Me.lblPolizaAsegurada.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -2162,9 +2163,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem82.Control = Me.cmbBodegueros
         Me.LayoutControlItem82.CustomizationFormText = "Operador"
-        Me.LayoutControlItem82.Location = New System.Drawing.Point(838, 758)
+        Me.LayoutControlItem82.Location = New System.Drawing.Point(857, 698)
         Me.LayoutControlItem82.Name = "LayoutControlItem82"
-        Me.LayoutControlItem82.Size = New System.Drawing.Size(1502, 48)
+        Me.LayoutControlItem82.Size = New System.Drawing.Size(1537, 44)
         Me.LayoutControlItem82.Text = "Operador"
         Me.LayoutControlItem82.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -2172,9 +2173,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem79.Control = Me.txtCodigoPoliza
         Me.LayoutControlItem79.CustomizationFormText = "Codigo Poliza"
-        Me.LayoutControlItem79.Location = New System.Drawing.Point(0, 96)
+        Me.LayoutControlItem79.Location = New System.Drawing.Point(0, 88)
         Me.LayoutControlItem79.Name = "LayoutControlItem79"
-        Me.LayoutControlItem79.Size = New System.Drawing.Size(594, 46)
+        Me.LayoutControlItem79.Size = New System.Drawing.Size(608, 42)
         Me.LayoutControlItem79.Text = "Codigo Poliza"
         Me.LayoutControlItem79.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -2182,9 +2183,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem17.Control = Me.txtNumeroOrden
         Me.LayoutControlItem17.CustomizationFormText = "Numero Orden"
-        Me.LayoutControlItem17.Location = New System.Drawing.Point(0, 238)
+        Me.LayoutControlItem17.Location = New System.Drawing.Point(0, 218)
         Me.LayoutControlItem17.Name = "LayoutControlItem17"
-        Me.LayoutControlItem17.Size = New System.Drawing.Size(594, 48)
+        Me.LayoutControlItem17.Size = New System.Drawing.Size(608, 44)
         Me.LayoutControlItem17.Text = "Numero Orden"
         Me.LayoutControlItem17.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -2192,9 +2193,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem37.Control = Me.txtRazonSocialRepresentante
         Me.LayoutControlItem37.CustomizationFormText = "Razon Social Representante"
-        Me.LayoutControlItem37.Location = New System.Drawing.Point(614, 528)
+        Me.LayoutControlItem37.Location = New System.Drawing.Point(628, 484)
         Me.LayoutControlItem37.Name = "LayoutControlItem37"
-        Me.LayoutControlItem37.Size = New System.Drawing.Size(592, 94)
+        Me.LayoutControlItem37.Size = New System.Drawing.Size(606, 86)
         Me.LayoutControlItem37.Text = "Razon Social Representante"
         Me.LayoutControlItem37.TextSize = New System.Drawing.Size(289, 25)
         '
@@ -2202,58 +2203,61 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem6.Control = Me.txtDocId
         Me.LayoutControlItem6.CustomizationFormText = "Numero Documento"
-        Me.LayoutControlItem6.Location = New System.Drawing.Point(0, 48)
+        Me.LayoutControlItem6.Location = New System.Drawing.Point(0, 44)
         Me.LayoutControlItem6.Name = "LayoutControlItem6"
-        Me.LayoutControlItem6.Size = New System.Drawing.Size(594, 48)
+        Me.LayoutControlItem6.Size = New System.Drawing.Size(608, 44)
         Me.LayoutControlItem6.Text = "Numero Documento"
         Me.LayoutControlItem6.TextSize = New System.Drawing.Size(289, 25)
         '
         'layoutTicketFiscal
         '
         Me.layoutTicketFiscal.Control = Me.txtTicketNumber
-        Me.layoutTicketFiscal.Location = New System.Drawing.Point(0, 142)
+        Me.layoutTicketFiscal.Location = New System.Drawing.Point(0, 130)
         Me.layoutTicketFiscal.Name = "layoutTicketFiscal"
-        Me.layoutTicketFiscal.Size = New System.Drawing.Size(594, 48)
+        Me.layoutTicketFiscal.Size = New System.Drawing.Size(608, 44)
         Me.layoutTicketFiscal.Text = "Ticket"
         Me.layoutTicketFiscal.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem83
         '
         Me.LayoutControlItem83.Control = Me.lookUpPrioridad
-        Me.LayoutControlItem83.Location = New System.Drawing.Point(0, 190)
+        Me.LayoutControlItem83.Location = New System.Drawing.Point(0, 174)
         Me.LayoutControlItem83.Name = "LayoutControlItem83"
-        Me.LayoutControlItem83.Size = New System.Drawing.Size(594, 48)
+        Me.LayoutControlItem83.Size = New System.Drawing.Size(608, 44)
         Me.LayoutControlItem83.Text = "Prioridad"
         Me.LayoutControlItem83.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem77
         '
+        Me.LayoutControlItem77.ContentVisible = False
         Me.LayoutControlItem77.Control = Me.GridLookUpEdit1
-        Me.LayoutControlItem77.Location = New System.Drawing.Point(0, 859)
+        Me.LayoutControlItem77.Location = New System.Drawing.Point(0, 1124)
         Me.LayoutControlItem77.Name = "LayoutControlItem77"
-        Me.LayoutControlItem77.Size = New System.Drawing.Size(2340, 48)
+        Me.LayoutControlItem77.Size = New System.Drawing.Size(2394, 44)
         Me.LayoutControlItem77.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem84
         '
+        Me.LayoutControlItem84.ContentVisible = False
         Me.LayoutControlItem84.Control = Me.GridLookUpEdit2
-        Me.LayoutControlItem84.Location = New System.Drawing.Point(0, 907)
+        Me.LayoutControlItem84.Location = New System.Drawing.Point(0, 1168)
         Me.LayoutControlItem84.Name = "LayoutControlItem84"
-        Me.LayoutControlItem84.Size = New System.Drawing.Size(2340, 48)
+        Me.LayoutControlItem84.Size = New System.Drawing.Size(2394, 44)
         Me.LayoutControlItem84.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem85
         '
+        Me.LayoutControlItem85.ContentVisible = False
         Me.LayoutControlItem85.Control = Me.GridLookUpEdit3
-        Me.LayoutControlItem85.Location = New System.Drawing.Point(0, 955)
+        Me.LayoutControlItem85.Location = New System.Drawing.Point(0, 1212)
         Me.LayoutControlItem85.Name = "LayoutControlItem85"
-        Me.LayoutControlItem85.Size = New System.Drawing.Size(2340, 48)
+        Me.LayoutControlItem85.Size = New System.Drawing.Size(2394, 44)
         Me.LayoutControlItem85.TextSize = New System.Drawing.Size(289, 25)
         '
         'XtraTabDetail
         '
         Me.XtraTabDetail.Controls.Add(Me.LayoutDetalle)
-        Me.XtraTabDetail.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.XtraTabDetail.Margin = New System.Windows.Forms.Padding(6)
         Me.XtraTabDetail.Name = "XtraTabDetail"
         Me.XtraTabDetail.Size = New System.Drawing.Size(2414, 880)
         Me.XtraTabDetail.Text = "Detalle Ingreso"
@@ -2294,7 +2298,7 @@ Partial Class frmDocumentoIngreso
         Me.LayoutDetalle.Controls.Add(Me.txtDescripcionSku)
         Me.LayoutDetalle.Dock = System.Windows.Forms.DockStyle.Fill
         Me.LayoutDetalle.Location = New System.Drawing.Point(0, 0)
-        Me.LayoutDetalle.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.LayoutDetalle.Margin = New System.Windows.Forms.Padding(6)
         Me.LayoutDetalle.Name = "LayoutDetalle"
         Me.LayoutDetalle.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New System.Drawing.Rectangle(163, 352, 250, 350)
         Me.LayoutDetalle.Root = Me.LayoutControlGroup2
@@ -2304,15 +2308,15 @@ Partial Class frmDocumentoIngreso
         '
         'UiListaImpuesto
         '
-        Me.UiListaImpuesto.Location = New System.Drawing.Point(1499, 71)
-        Me.UiListaImpuesto.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.UiListaImpuesto.Location = New System.Drawing.Point(1494, 56)
+        Me.UiListaImpuesto.Margin = New System.Windows.Forms.Padding(6)
         Me.UiListaImpuesto.MenuManager = Me.BarManager1
         Me.UiListaImpuesto.Name = "UiListaImpuesto"
         Me.UiListaImpuesto.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.UiListaImpuesto.Properties.DisplayMember = "PARAM_CAPTION"
         Me.UiListaImpuesto.Properties.PopupView = Me.UiListaVistaImpuesto
         Me.UiListaImpuesto.Properties.ValueMember = "MONEY_VALUE"
-        Me.UiListaImpuesto.Size = New System.Drawing.Size(891, 40)
+        Me.UiListaImpuesto.Size = New System.Drawing.Size(908, 40)
         Me.UiListaImpuesto.StyleController = Me.LayoutDetalle
         Me.UiListaImpuesto.TabIndex = 36
         '
@@ -2334,159 +2338,159 @@ Partial Class frmDocumentoIngreso
         '
         'txtPolizaOrigen
         '
-        Me.txtPolizaOrigen.Location = New System.Drawing.Point(2007, 503)
-        Me.txtPolizaOrigen.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtPolizaOrigen.Location = New System.Drawing.Point(2007, 452)
+        Me.txtPolizaOrigen.Margin = New System.Windows.Forms.Padding(6)
         Me.txtPolizaOrigen.MenuManager = Me.BarManager1
         Me.txtPolizaOrigen.Name = "txtPolizaOrigen"
-        Me.txtPolizaOrigen.Size = New System.Drawing.Size(383, 40)
+        Me.txtPolizaOrigen.Size = New System.Drawing.Size(395, 40)
         Me.txtPolizaOrigen.StyleController = Me.LayoutDetalle
         Me.txtPolizaOrigen.TabIndex = 32
         '
         'txtDocumentoOrigen
         '
-        Me.txtDocumentoOrigen.Location = New System.Drawing.Point(841, 455)
-        Me.txtDocumentoOrigen.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtDocumentoOrigen.Location = New System.Drawing.Point(831, 408)
+        Me.txtDocumentoOrigen.Margin = New System.Windows.Forms.Padding(6)
         Me.txtDocumentoOrigen.MenuManager = Me.BarManager1
         Me.txtDocumentoOrigen.Name = "txtDocumentoOrigen"
-        Me.txtDocumentoOrigen.Size = New System.Drawing.Size(427, 40)
+        Me.txtDocumentoOrigen.Size = New System.Drawing.Size(439, 40)
         Me.txtDocumentoOrigen.StyleController = Me.LayoutDetalle
         Me.txtDocumentoOrigen.TabIndex = 31
         '
         'txtActualizadaEl
         '
-        Me.txtActualizadaEl.Location = New System.Drawing.Point(841, 359)
-        Me.txtActualizadaEl.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtActualizadaEl.Location = New System.Drawing.Point(831, 320)
+        Me.txtActualizadaEl.Margin = New System.Windows.Forms.Padding(6)
         Me.txtActualizadaEl.MenuManager = Me.BarManager1
         Me.txtActualizadaEl.Name = "txtActualizadaEl"
-        Me.txtActualizadaEl.Size = New System.Drawing.Size(427, 40)
+        Me.txtActualizadaEl.Size = New System.Drawing.Size(439, 40)
         Me.txtActualizadaEl.StyleController = Me.LayoutDetalle
         Me.txtActualizadaEl.TabIndex = 30
         '
         'txtActualizadaPor
         '
-        Me.txtActualizadaPor.Location = New System.Drawing.Point(1499, 407)
-        Me.txtActualizadaPor.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtActualizadaPor.Location = New System.Drawing.Point(1494, 364)
+        Me.txtActualizadaPor.Margin = New System.Windows.Forms.Padding(6)
         Me.txtActualizadaPor.MenuManager = Me.BarManager1
         Me.txtActualizadaPor.Name = "txtActualizadaPor"
-        Me.txtActualizadaPor.Size = New System.Drawing.Size(891, 40)
+        Me.txtActualizadaPor.Size = New System.Drawing.Size(908, 40)
         Me.txtActualizadaPor.StyleController = Me.LayoutDetalle
         Me.txtActualizadaPor.TabIndex = 29
         '
         'txtPolizaRelacionada
         '
-        Me.txtPolizaRelacionada.Location = New System.Drawing.Point(1413, 503)
-        Me.txtPolizaRelacionada.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtPolizaRelacionada.Location = New System.Drawing.Point(1408, 452)
+        Me.txtPolizaRelacionada.Margin = New System.Windows.Forms.Padding(6)
         Me.txtPolizaRelacionada.MenuManager = Me.BarManager1
         Me.txtPolizaRelacionada.Name = "txtPolizaRelacionada"
-        Me.txtPolizaRelacionada.Size = New System.Drawing.Size(383, 40)
+        Me.txtPolizaRelacionada.Size = New System.Drawing.Size(395, 40)
         Me.txtPolizaRelacionada.StyleController = Me.LayoutDetalle
         Me.txtPolizaRelacionada.TabIndex = 28
         '
         'txtAcuerdo2
         '
-        Me.txtAcuerdo2.Location = New System.Drawing.Point(841, 407)
-        Me.txtAcuerdo2.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtAcuerdo2.Location = New System.Drawing.Point(831, 364)
+        Me.txtAcuerdo2.Margin = New System.Windows.Forms.Padding(6)
         Me.txtAcuerdo2.MenuManager = Me.BarManager1
         Me.txtAcuerdo2.Name = "txtAcuerdo2"
-        Me.txtAcuerdo2.Size = New System.Drawing.Size(427, 40)
+        Me.txtAcuerdo2.Size = New System.Drawing.Size(439, 40)
         Me.txtAcuerdo2.StyleController = Me.LayoutDetalle
         Me.txtAcuerdo2.TabIndex = 27
         '
         'txtAcuerdo1
         '
-        Me.txtAcuerdo1.Location = New System.Drawing.Point(227, 455)
-        Me.txtAcuerdo1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtAcuerdo1.Location = New System.Drawing.Point(212, 408)
+        Me.txtAcuerdo1.Margin = New System.Windows.Forms.Padding(6)
         Me.txtAcuerdo1.MenuManager = Me.BarManager1
         Me.txtAcuerdo1.Name = "txtAcuerdo1"
-        Me.txtAcuerdo1.Size = New System.Drawing.Size(383, 40)
+        Me.txtAcuerdo1.Size = New System.Drawing.Size(395, 40)
         Me.txtAcuerdo1.StyleController = Me.LayoutDetalle
         Me.txtAcuerdo1.TabIndex = 26
         '
         'txtRegionCp
         '
-        Me.txtRegionCp.Location = New System.Drawing.Point(227, 407)
-        Me.txtRegionCp.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtRegionCp.Location = New System.Drawing.Point(212, 364)
+        Me.txtRegionCp.Margin = New System.Windows.Forms.Padding(6)
         Me.txtRegionCp.MenuManager = Me.BarManager1
         Me.txtRegionCp.Name = "txtRegionCp"
-        Me.txtRegionCp.Size = New System.Drawing.Size(383, 40)
+        Me.txtRegionCp.Size = New System.Drawing.Size(395, 40)
         Me.txtRegionCp.StyleController = Me.LayoutDetalle
         Me.txtRegionCp.TabIndex = 25
         '
         'txtSeguroUsd
         '
-        Me.txtSeguroUsd.Location = New System.Drawing.Point(1499, 359)
-        Me.txtSeguroUsd.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtSeguroUsd.Location = New System.Drawing.Point(1494, 320)
+        Me.txtSeguroUsd.Margin = New System.Windows.Forms.Padding(6)
         Me.txtSeguroUsd.MenuManager = Me.BarManager1
         Me.txtSeguroUsd.Name = "txtSeguroUsd"
-        Me.txtSeguroUsd.Size = New System.Drawing.Size(891, 40)
+        Me.txtSeguroUsd.Size = New System.Drawing.Size(908, 40)
         Me.txtSeguroUsd.StyleController = Me.LayoutDetalle
         Me.txtSeguroUsd.TabIndex = 24
         '
         'txtFleteUsd
         '
-        Me.txtFleteUsd.Location = New System.Drawing.Point(841, 311)
-        Me.txtFleteUsd.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtFleteUsd.Location = New System.Drawing.Point(831, 276)
+        Me.txtFleteUsd.Margin = New System.Windows.Forms.Padding(6)
         Me.txtFleteUsd.MenuManager = Me.BarManager1
         Me.txtFleteUsd.Name = "txtFleteUsd"
-        Me.txtFleteUsd.Size = New System.Drawing.Size(427, 40)
+        Me.txtFleteUsd.Size = New System.Drawing.Size(439, 40)
         Me.txtFleteUsd.StyleController = Me.LayoutDetalle
         Me.txtFleteUsd.TabIndex = 23
         '
         'txtFobUsd
         '
-        Me.txtFobUsd.Location = New System.Drawing.Point(227, 359)
-        Me.txtFobUsd.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtFobUsd.Location = New System.Drawing.Point(212, 320)
+        Me.txtFobUsd.Margin = New System.Windows.Forms.Padding(6)
         Me.txtFobUsd.MenuManager = Me.BarManager1
         Me.txtFobUsd.Name = "txtFobUsd"
         Me.txtFobUsd.Properties.Mask.EditMask = "n2"
         Me.txtFobUsd.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtFobUsd.Size = New System.Drawing.Size(383, 40)
+        Me.txtFobUsd.Size = New System.Drawing.Size(395, 40)
         Me.txtFobUsd.StyleController = Me.LayoutDetalle
         Me.txtFobUsd.TabIndex = 22
         '
         'txtPaisOrigen
         '
-        Me.txtPaisOrigen.Location = New System.Drawing.Point(1499, 311)
-        Me.txtPaisOrigen.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtPaisOrigen.Location = New System.Drawing.Point(1494, 276)
+        Me.txtPaisOrigen.Margin = New System.Windows.Forms.Padding(6)
         Me.txtPaisOrigen.MenuManager = Me.BarManager1
         Me.txtPaisOrigen.Name = "txtPaisOrigen"
-        Me.txtPaisOrigen.Size = New System.Drawing.Size(891, 40)
+        Me.txtPaisOrigen.Size = New System.Drawing.Size(908, 40)
         Me.txtPaisOrigen.StyleController = Me.LayoutDetalle
         Me.txtPaisOrigen.TabIndex = 21
         '
         'txtGastosVarios
         '
-        Me.txtGastosVarios.Location = New System.Drawing.Point(841, 263)
-        Me.txtGastosVarios.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtGastosVarios.Location = New System.Drawing.Point(831, 232)
+        Me.txtGastosVarios.Margin = New System.Windows.Forms.Padding(6)
         Me.txtGastosVarios.MenuManager = Me.BarManager1
         Me.txtGastosVarios.Name = "txtGastosVarios"
         Me.txtGastosVarios.Properties.Mask.EditMask = "n2"
         Me.txtGastosVarios.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtGastosVarios.Size = New System.Drawing.Size(427, 40)
+        Me.txtGastosVarios.Size = New System.Drawing.Size(439, 40)
         Me.txtGastosVarios.StyleController = Me.LayoutDetalle
         Me.txtGastosVarios.TabIndex = 20
         '
         'txtImpuestosVarios
         '
-        Me.txtImpuestosVarios.Location = New System.Drawing.Point(227, 311)
-        Me.txtImpuestosVarios.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtImpuestosVarios.Location = New System.Drawing.Point(212, 276)
+        Me.txtImpuestosVarios.Margin = New System.Windows.Forms.Padding(6)
         Me.txtImpuestosVarios.MenuManager = Me.BarManager1
         Me.txtImpuestosVarios.Name = "txtImpuestosVarios"
         Me.txtImpuestosVarios.Properties.Mask.EditMask = "n2"
         Me.txtImpuestosVarios.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtImpuestosVarios.Size = New System.Drawing.Size(383, 40)
+        Me.txtImpuestosVarios.Size = New System.Drawing.Size(395, 40)
         Me.txtImpuestosVarios.StyleController = Me.LayoutDetalle
         Me.txtImpuestosVarios.TabIndex = 19
         '
         'GridDetalle
         '
-        Me.GridDetalle.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.GridDetalle.Location = New System.Drawing.Point(227, 551)
+        Me.GridDetalle.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(6)
+        Me.GridDetalle.Location = New System.Drawing.Point(212, 496)
         Me.GridDetalle.MainView = Me.GridViewDetalle
-        Me.GridDetalle.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.GridDetalle.Margin = New System.Windows.Forms.Padding(6)
         Me.GridDetalle.MenuManager = Me.BarManager1
         Me.GridDetalle.Name = "GridDetalle"
-        Me.GridDetalle.Size = New System.Drawing.Size(2163, 306)
+        Me.GridDetalle.Size = New System.Drawing.Size(2190, 372)
         Me.GridDetalle.TabIndex = 18
         Me.GridDetalle.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridViewDetalle})
         '
@@ -2816,79 +2820,79 @@ Partial Class frmDocumentoIngreso
         '
         'txtValorIva
         '
-        Me.txtValorIva.Location = New System.Drawing.Point(1499, 167)
-        Me.txtValorIva.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtValorIva.Location = New System.Drawing.Point(1494, 144)
+        Me.txtValorIva.Margin = New System.Windows.Forms.Padding(6)
         Me.txtValorIva.MenuManager = Me.BarManager1
         Me.txtValorIva.Name = "txtValorIva"
         Me.txtValorIva.Properties.DisplayFormat.FormatString = "G7"
         Me.txtValorIva.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom
         Me.txtValorIva.Properties.Mask.EditMask = "n6"
         Me.txtValorIva.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtValorIva.Size = New System.Drawing.Size(891, 40)
+        Me.txtValorIva.Size = New System.Drawing.Size(908, 40)
         Me.txtValorIva.StyleController = Me.LayoutDetalle
         Me.txtValorIva.TabIndex = 17
         '
         'txtDai
         '
-        Me.txtDai.Location = New System.Drawing.Point(841, 119)
-        Me.txtDai.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtDai.Location = New System.Drawing.Point(831, 100)
+        Me.txtDai.Margin = New System.Windows.Forms.Padding(6)
         Me.txtDai.MenuManager = Me.BarManager1
         Me.txtDai.Name = "txtDai"
         Me.txtDai.Properties.Mask.EditMask = "n6"
         Me.txtDai.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtDai.Size = New System.Drawing.Size(427, 40)
+        Me.txtDai.Size = New System.Drawing.Size(439, 40)
         Me.txtDai.StyleController = Me.LayoutDetalle
         Me.txtDai.TabIndex = 16
         '
         'txtVolumen
         '
-        Me.txtVolumen.Location = New System.Drawing.Point(227, 263)
-        Me.txtVolumen.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtVolumen.Location = New System.Drawing.Point(212, 232)
+        Me.txtVolumen.Margin = New System.Windows.Forms.Padding(6)
         Me.txtVolumen.MenuManager = Me.BarManager1
         Me.txtVolumen.Name = "txtVolumen"
         Me.txtVolumen.Properties.Mask.EditMask = "n6"
         Me.txtVolumen.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtVolumen.Size = New System.Drawing.Size(383, 40)
+        Me.txtVolumen.Size = New System.Drawing.Size(395, 40)
         Me.txtVolumen.StyleController = Me.LayoutDetalle
         Me.txtVolumen.TabIndex = 14
         '
         'txtValorAduana
         '
         Me.txtValorAduana.EditValue = "0"
-        Me.txtValorAduana.Location = New System.Drawing.Point(227, 119)
-        Me.txtValorAduana.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtValorAduana.Location = New System.Drawing.Point(212, 100)
+        Me.txtValorAduana.Margin = New System.Windows.Forms.Padding(6)
         Me.txtValorAduana.MenuManager = Me.BarManager1
         Me.txtValorAduana.Name = "txtValorAduana"
         Me.txtValorAduana.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtValorAduana.Properties.Appearance.Options.UseBackColor = True
         Me.txtValorAduana.Properties.Mask.EditMask = "n2"
         Me.txtValorAduana.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtValorAduana.Size = New System.Drawing.Size(383, 40)
+        Me.txtValorAduana.Size = New System.Drawing.Size(395, 40)
         Me.txtValorAduana.StyleController = Me.LayoutDetalle
         Me.txtValorAduana.TabIndex = 12
         '
         'txtCantidad
         '
-        Me.txtCantidad.Location = New System.Drawing.Point(841, 71)
-        Me.txtCantidad.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtCantidad.Location = New System.Drawing.Point(831, 56)
+        Me.txtCantidad.Margin = New System.Windows.Forms.Padding(6)
         Me.txtCantidad.MenuManager = Me.BarManager1
         Me.txtCantidad.Name = "txtCantidad"
         Me.txtCantidad.Properties.Mask.EditMask = "n4"
         Me.txtCantidad.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtCantidad.Size = New System.Drawing.Size(427, 40)
+        Me.txtCantidad.Size = New System.Drawing.Size(439, 40)
         Me.txtCantidad.StyleController = Me.LayoutDetalle
         Me.txtCantidad.TabIndex = 11
         '
         'cmbUnidadPeso
         '
-        Me.cmbUnidadPeso.Location = New System.Drawing.Point(1499, 215)
-        Me.cmbUnidadPeso.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.cmbUnidadPeso.Location = New System.Drawing.Point(1494, 188)
+        Me.cmbUnidadPeso.Margin = New System.Windows.Forms.Padding(6)
         Me.cmbUnidadPeso.MenuManager = Me.BarManager1
         Me.cmbUnidadPeso.Name = "cmbUnidadPeso"
         Me.cmbUnidadPeso.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.cmbUnidadPeso.Properties.NullText = "[Seleccione Unidad...]"
         Me.cmbUnidadPeso.Properties.PopupView = Me.GridView4
-        Me.cmbUnidadPeso.Size = New System.Drawing.Size(891, 40)
+        Me.cmbUnidadPeso.Size = New System.Drawing.Size(908, 40)
         Me.cmbUnidadPeso.StyleController = Me.LayoutDetalle
         Me.cmbUnidadPeso.TabIndex = 10
         '
@@ -2901,48 +2905,48 @@ Partial Class frmDocumentoIngreso
         '
         'txtPesoNeto
         '
-        Me.txtPesoNeto.Location = New System.Drawing.Point(841, 167)
-        Me.txtPesoNeto.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtPesoNeto.Location = New System.Drawing.Point(831, 144)
+        Me.txtPesoNeto.Margin = New System.Windows.Forms.Padding(6)
         Me.txtPesoNeto.MenuManager = Me.BarManager1
         Me.txtPesoNeto.Name = "txtPesoNeto"
         Me.txtPesoNeto.Properties.Mask.EditMask = "n6"
         Me.txtPesoNeto.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtPesoNeto.Size = New System.Drawing.Size(427, 40)
+        Me.txtPesoNeto.Size = New System.Drawing.Size(439, 40)
         Me.txtPesoNeto.StyleController = Me.LayoutDetalle
         Me.txtPesoNeto.TabIndex = 9
         '
         'txtClaseLinea
         '
-        Me.txtClaseLinea.Location = New System.Drawing.Point(227, 215)
-        Me.txtClaseLinea.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtClaseLinea.Location = New System.Drawing.Point(212, 188)
+        Me.txtClaseLinea.Margin = New System.Windows.Forms.Padding(6)
         Me.txtClaseLinea.MenuManager = Me.BarManager1
         Me.txtClaseLinea.Name = "txtClaseLinea"
-        Me.txtClaseLinea.Size = New System.Drawing.Size(383, 40)
+        Me.txtClaseLinea.Size = New System.Drawing.Size(395, 40)
         Me.txtClaseLinea.StyleController = Me.LayoutDetalle
         Me.txtClaseLinea.TabIndex = 8
         '
         'txtBultos
         '
-        Me.txtBultos.Location = New System.Drawing.Point(227, 71)
-        Me.txtBultos.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtBultos.Location = New System.Drawing.Point(212, 56)
+        Me.txtBultos.Margin = New System.Windows.Forms.Padding(6)
         Me.txtBultos.MenuManager = Me.BarManager1
         Me.txtBultos.Name = "txtBultos"
         Me.txtBultos.Properties.Mask.EditMask = "n4"
         Me.txtBultos.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtBultos.Size = New System.Drawing.Size(383, 40)
+        Me.txtBultos.Size = New System.Drawing.Size(395, 40)
         Me.txtBultos.StyleController = Me.LayoutDetalle
         Me.txtBultos.TabIndex = 7
         '
         'cmbSacCode
         '
-        Me.cmbSacCode.Location = New System.Drawing.Point(1499, 263)
-        Me.cmbSacCode.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.cmbSacCode.Location = New System.Drawing.Point(1494, 232)
+        Me.cmbSacCode.Margin = New System.Windows.Forms.Padding(6)
         Me.cmbSacCode.MenuManager = Me.BarManager1
         Me.cmbSacCode.Name = "cmbSacCode"
         Me.cmbSacCode.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.cmbSacCode.Properties.NullText = "[Seleccione SAC...]"
         Me.cmbSacCode.Properties.PopupView = Me.GridView3
-        Me.cmbSacCode.Size = New System.Drawing.Size(891, 40)
+        Me.cmbSacCode.Size = New System.Drawing.Size(908, 40)
         Me.cmbSacCode.StyleController = Me.LayoutDetalle
         Me.cmbSacCode.TabIndex = 6
         '
@@ -2955,27 +2959,27 @@ Partial Class frmDocumentoIngreso
         '
         'txtNumeroLinea
         '
-        Me.txtNumeroLinea.Location = New System.Drawing.Point(227, 23)
-        Me.txtNumeroLinea.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtNumeroLinea.Location = New System.Drawing.Point(212, 12)
+        Me.txtNumeroLinea.Margin = New System.Windows.Forms.Padding(6)
         Me.txtNumeroLinea.MenuManager = Me.BarManager1
         Me.txtNumeroLinea.Name = "txtNumeroLinea"
         Me.txtNumeroLinea.Properties.Mask.EditMask = "n0"
         Me.txtNumeroLinea.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
         Me.txtNumeroLinea.Properties.ReadOnly = True
-        Me.txtNumeroLinea.Size = New System.Drawing.Size(383, 40)
+        Me.txtNumeroLinea.Size = New System.Drawing.Size(395, 40)
         Me.txtNumeroLinea.StyleController = Me.LayoutDetalle
         Me.txtNumeroLinea.TabIndex = 4
         '
         'cmbUnidadCantidad
         '
-        Me.cmbUnidadCantidad.Location = New System.Drawing.Point(1499, 119)
-        Me.cmbUnidadCantidad.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.cmbUnidadCantidad.Location = New System.Drawing.Point(1494, 100)
+        Me.cmbUnidadCantidad.Margin = New System.Windows.Forms.Padding(6)
         Me.cmbUnidadCantidad.MenuManager = Me.BarManager1
         Me.cmbUnidadCantidad.Name = "cmbUnidadCantidad"
         Me.cmbUnidadCantidad.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.cmbUnidadCantidad.Properties.NullText = "[Seleccione Unidad...]"
         Me.cmbUnidadCantidad.Properties.PopupView = Me.GridView5
-        Me.cmbUnidadCantidad.Size = New System.Drawing.Size(891, 40)
+        Me.cmbUnidadCantidad.Size = New System.Drawing.Size(908, 40)
         Me.cmbUnidadCantidad.StyleController = Me.LayoutDetalle
         Me.cmbUnidadCantidad.TabIndex = 13
         '
@@ -2988,14 +2992,14 @@ Partial Class frmDocumentoIngreso
         '
         'cmbUnidadVolumen
         '
-        Me.cmbUnidadVolumen.Location = New System.Drawing.Point(841, 215)
-        Me.cmbUnidadVolumen.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.cmbUnidadVolumen.Location = New System.Drawing.Point(831, 188)
+        Me.cmbUnidadVolumen.Margin = New System.Windows.Forms.Padding(6)
         Me.cmbUnidadVolumen.MenuManager = Me.BarManager1
         Me.cmbUnidadVolumen.Name = "cmbUnidadVolumen"
         Me.cmbUnidadVolumen.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.cmbUnidadVolumen.Properties.NullText = ""
         Me.cmbUnidadVolumen.Properties.PopupView = Me.GridView6
-        Me.cmbUnidadVolumen.Size = New System.Drawing.Size(427, 40)
+        Me.cmbUnidadVolumen.Size = New System.Drawing.Size(439, 40)
         Me.cmbUnidadVolumen.StyleController = Me.LayoutDetalle
         Me.cmbUnidadVolumen.TabIndex = 15
         '
@@ -3008,15 +3012,15 @@ Partial Class frmDocumentoIngreso
         '
         'cmbConsignatario
         '
-        Me.cmbConsignatario.Location = New System.Drawing.Point(227, 503)
-        Me.cmbConsignatario.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.cmbConsignatario.Location = New System.Drawing.Point(212, 452)
+        Me.cmbConsignatario.Margin = New System.Windows.Forms.Padding(6)
         Me.cmbConsignatario.MenuManager = Me.BarManager1
         Me.cmbConsignatario.Name = "cmbConsignatario"
         Me.cmbConsignatario.Properties.BestFitMode = DevExpress.XtraEditors.Controls.BestFitMode.BestFitResizePopup
         Me.cmbConsignatario.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.cmbConsignatario.Properties.NullText = "[Seleccione Consignatario...]"
         Me.cmbConsignatario.Properties.PopupView = Me.GridView8
-        Me.cmbConsignatario.Size = New System.Drawing.Size(975, 40)
+        Me.cmbConsignatario.Size = New System.Drawing.Size(992, 40)
         Me.cmbConsignatario.StyleController = Me.LayoutDetalle
         Me.cmbConsignatario.TabIndex = 34
         '
@@ -3031,21 +3035,21 @@ Partial Class frmDocumentoIngreso
         'pctDAI
         '
         Me.pctDAI.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
-        Me.pctDAI.Location = New System.Drawing.Point(227, 167)
-        Me.pctDAI.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.pctDAI.Location = New System.Drawing.Point(212, 144)
+        Me.pctDAI.Margin = New System.Windows.Forms.Padding(6)
         Me.pctDAI.MenuManager = Me.BarManager1
         Me.pctDAI.Name = "pctDAI"
         Me.pctDAI.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
         Me.pctDAI.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.[Default]
         Me.pctDAI.Properties.Mask.EditMask = "f3"
-        Me.pctDAI.Size = New System.Drawing.Size(383, 40)
+        Me.pctDAI.Size = New System.Drawing.Size(395, 40)
         Me.pctDAI.StyleController = Me.LayoutDetalle
         Me.pctDAI.TabIndex = 35
         '
         'txtDescripcionSku
         '
-        Me.txtDescripcionSku.Location = New System.Drawing.Point(841, 23)
-        Me.txtDescripcionSku.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtDescripcionSku.Location = New System.Drawing.Point(831, 12)
+        Me.txtDescripcionSku.Margin = New System.Windows.Forms.Padding(6)
         Me.txtDescripcionSku.MenuManager = Me.BarManager1
         Me.txtDescripcionSku.Name = "txtDescripcionSku"
         Me.txtDescripcionSku.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
@@ -3053,7 +3057,7 @@ Partial Class frmDocumentoIngreso
         Me.txtDescripcionSku.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.txtDescripcionSku.Properties.NullText = ""
         Me.txtDescripcionSku.Properties.PopupSizeable = False
-        Me.txtDescripcionSku.Size = New System.Drawing.Size(1549, 40)
+        Me.txtDescripcionSku.Size = New System.Drawing.Size(1571, 40)
         Me.txtDescripcionSku.StyleController = Me.LayoutDetalle
         Me.txtDescripcionSku.TabIndex = 5
         '
@@ -3073,7 +3077,7 @@ Partial Class frmDocumentoIngreso
         Me.LayoutControlItem47.CustomizationFormText = "Numero Linea"
         Me.LayoutControlItem47.Location = New System.Drawing.Point(0, 0)
         Me.LayoutControlItem47.Name = "LayoutControlItem47"
-        Me.LayoutControlItem47.Size = New System.Drawing.Size(594, 48)
+        Me.LayoutControlItem47.Size = New System.Drawing.Size(599, 44)
         Me.LayoutControlItem47.Text = "Numero Linea"
         Me.LayoutControlItem47.TextSize = New System.Drawing.Size(197, 25)
         '
@@ -3081,9 +3085,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem52.Control = Me.txtClaseLinea
         Me.LayoutControlItem52.CustomizationFormText = "Clase"
-        Me.LayoutControlItem52.Location = New System.Drawing.Point(0, 192)
+        Me.LayoutControlItem52.Location = New System.Drawing.Point(0, 176)
         Me.LayoutControlItem52.Name = "LayoutControlItem52"
-        Me.LayoutControlItem52.Size = New System.Drawing.Size(594, 48)
+        Me.LayoutControlItem52.Size = New System.Drawing.Size(599, 44)
         Me.LayoutControlItem52.Text = "Clase"
         Me.LayoutControlItem52.TextSize = New System.Drawing.Size(197, 25)
         '
@@ -3091,9 +3095,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem58.Control = Me.txtVolumen
         Me.LayoutControlItem58.CustomizationFormText = "Volumen"
-        Me.LayoutControlItem58.Location = New System.Drawing.Point(0, 240)
+        Me.LayoutControlItem58.Location = New System.Drawing.Point(0, 220)
         Me.LayoutControlItem58.Name = "LayoutControlItem58"
-        Me.LayoutControlItem58.Size = New System.Drawing.Size(594, 48)
+        Me.LayoutControlItem58.Size = New System.Drawing.Size(599, 44)
         Me.LayoutControlItem58.Text = "Volumen"
         Me.LayoutControlItem58.TextSize = New System.Drawing.Size(197, 25)
         '
@@ -3101,9 +3105,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem48.Control = Me.txtDescripcionSku
         Me.LayoutControlItem48.CustomizationFormText = "Descripcion Producto"
-        Me.LayoutControlItem48.Location = New System.Drawing.Point(614, 0)
+        Me.LayoutControlItem48.Location = New System.Drawing.Point(619, 0)
         Me.LayoutControlItem48.Name = "LayoutControlItem48"
-        Me.LayoutControlItem48.Size = New System.Drawing.Size(1760, 48)
+        Me.LayoutControlItem48.Size = New System.Drawing.Size(1775, 44)
         Me.LayoutControlItem48.Text = "Descripcion Producto"
         Me.LayoutControlItem48.TextSize = New System.Drawing.Size(197, 25)
         '
@@ -3111,9 +3115,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem51.Control = Me.txtBultos
         Me.LayoutControlItem51.CustomizationFormText = "Bultos"
-        Me.LayoutControlItem51.Location = New System.Drawing.Point(0, 48)
+        Me.LayoutControlItem51.Location = New System.Drawing.Point(0, 44)
         Me.LayoutControlItem51.Name = "LayoutControlItem51"
-        Me.LayoutControlItem51.Size = New System.Drawing.Size(594, 48)
+        Me.LayoutControlItem51.Size = New System.Drawing.Size(599, 44)
         Me.LayoutControlItem51.Text = "Bultos"
         Me.LayoutControlItem51.TextSize = New System.Drawing.Size(197, 25)
         '
@@ -3121,9 +3125,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem56.Control = Me.txtValorAduana
         Me.LayoutControlItem56.CustomizationFormText = "Valor Aduana"
-        Me.LayoutControlItem56.Location = New System.Drawing.Point(0, 96)
+        Me.LayoutControlItem56.Location = New System.Drawing.Point(0, 88)
         Me.LayoutControlItem56.Name = "LayoutControlItem56"
-        Me.LayoutControlItem56.Size = New System.Drawing.Size(594, 48)
+        Me.LayoutControlItem56.Size = New System.Drawing.Size(599, 44)
         Me.LayoutControlItem56.Text = "Valor Aduana"
         Me.LayoutControlItem56.TextSize = New System.Drawing.Size(197, 25)
         '
@@ -3131,9 +3135,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem60.Control = Me.txtDai
         Me.LayoutControlItem60.CustomizationFormText = "Valor DAI"
-        Me.LayoutControlItem60.Location = New System.Drawing.Point(614, 96)
+        Me.LayoutControlItem60.Location = New System.Drawing.Point(619, 88)
         Me.LayoutControlItem60.Name = "LayoutControlItem60"
-        Me.LayoutControlItem60.Size = New System.Drawing.Size(638, 48)
+        Me.LayoutControlItem60.Size = New System.Drawing.Size(643, 44)
         Me.LayoutControlItem60.Text = "Valor DAI"
         Me.LayoutControlItem60.TextSize = New System.Drawing.Size(197, 25)
         '
@@ -3141,9 +3145,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem55.Control = Me.txtCantidad
         Me.LayoutControlItem55.CustomizationFormText = "Cantidad"
-        Me.LayoutControlItem55.Location = New System.Drawing.Point(614, 48)
+        Me.LayoutControlItem55.Location = New System.Drawing.Point(619, 44)
         Me.LayoutControlItem55.Name = "LayoutControlItem55"
-        Me.LayoutControlItem55.Size = New System.Drawing.Size(638, 48)
+        Me.LayoutControlItem55.Size = New System.Drawing.Size(643, 44)
         Me.LayoutControlItem55.Text = "Cantidad"
         Me.LayoutControlItem55.TextSize = New System.Drawing.Size(197, 25)
         '
@@ -3151,9 +3155,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem61.Control = Me.txtValorIva
         Me.LayoutControlItem61.CustomizationFormText = "Valor IVA"
-        Me.LayoutControlItem61.Location = New System.Drawing.Point(1272, 144)
+        Me.LayoutControlItem61.Location = New System.Drawing.Point(1282, 132)
         Me.LayoutControlItem61.Name = "LayoutControlItem61"
-        Me.LayoutControlItem61.Size = New System.Drawing.Size(1102, 48)
+        Me.LayoutControlItem61.Size = New System.Drawing.Size(1112, 44)
         Me.LayoutControlItem61.Text = "Valor IVA"
         Me.LayoutControlItem61.TextSize = New System.Drawing.Size(197, 25)
         '
@@ -3161,9 +3165,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem53.Control = Me.txtPesoNeto
         Me.LayoutControlItem53.CustomizationFormText = "Peso Neto"
-        Me.LayoutControlItem53.Location = New System.Drawing.Point(614, 144)
+        Me.LayoutControlItem53.Location = New System.Drawing.Point(619, 132)
         Me.LayoutControlItem53.Name = "LayoutControlItem53"
-        Me.LayoutControlItem53.Size = New System.Drawing.Size(638, 48)
+        Me.LayoutControlItem53.Size = New System.Drawing.Size(643, 44)
         Me.LayoutControlItem53.Text = "Peso Neto"
         Me.LayoutControlItem53.TextSize = New System.Drawing.Size(197, 25)
         '
@@ -3171,9 +3175,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem54.Control = Me.cmbUnidadPeso
         Me.LayoutControlItem54.CustomizationFormText = "Unidad Peso"
-        Me.LayoutControlItem54.Location = New System.Drawing.Point(1272, 192)
+        Me.LayoutControlItem54.Location = New System.Drawing.Point(1282, 176)
         Me.LayoutControlItem54.Name = "LayoutControlItem54"
-        Me.LayoutControlItem54.Size = New System.Drawing.Size(1102, 48)
+        Me.LayoutControlItem54.Size = New System.Drawing.Size(1112, 44)
         Me.LayoutControlItem54.Text = "Unidad Peso"
         Me.LayoutControlItem54.TextSize = New System.Drawing.Size(197, 25)
         '
@@ -3181,9 +3185,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem59.Control = Me.cmbUnidadVolumen
         Me.LayoutControlItem59.CustomizationFormText = "Unidad Volumen"
-        Me.LayoutControlItem59.Location = New System.Drawing.Point(614, 192)
+        Me.LayoutControlItem59.Location = New System.Drawing.Point(619, 176)
         Me.LayoutControlItem59.Name = "LayoutControlItem59"
-        Me.LayoutControlItem59.Size = New System.Drawing.Size(638, 48)
+        Me.LayoutControlItem59.Size = New System.Drawing.Size(643, 44)
         Me.LayoutControlItem59.Text = "Unidad Volumen"
         Me.LayoutControlItem59.TextSize = New System.Drawing.Size(197, 25)
         '
@@ -3191,9 +3195,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem49.Control = Me.cmbSacCode
         Me.LayoutControlItem49.CustomizationFormText = "Codigo SAC"
-        Me.LayoutControlItem49.Location = New System.Drawing.Point(1272, 240)
+        Me.LayoutControlItem49.Location = New System.Drawing.Point(1282, 220)
         Me.LayoutControlItem49.Name = "LayoutControlItem49"
-        Me.LayoutControlItem49.Size = New System.Drawing.Size(1102, 48)
+        Me.LayoutControlItem49.Size = New System.Drawing.Size(1112, 44)
         Me.LayoutControlItem49.Text = "Codigo SAC"
         Me.LayoutControlItem49.TextSize = New System.Drawing.Size(197, 25)
         '
@@ -3201,17 +3205,17 @@ Partial Class frmDocumentoIngreso
         '
         Me.SplitterItem8.AllowHotTrack = True
         Me.SplitterItem8.CustomizationFormText = "SplitterItem8"
-        Me.SplitterItem8.Location = New System.Drawing.Point(594, 0)
+        Me.SplitterItem8.Location = New System.Drawing.Point(599, 0)
         Me.SplitterItem8.Name = "SplitterItem8"
-        Me.SplitterItem8.Size = New System.Drawing.Size(20, 480)
+        Me.SplitterItem8.Size = New System.Drawing.Size(20, 440)
         '
         'LayoutControlItem62
         '
         Me.LayoutControlItem62.Control = Me.GridDetalle
         Me.LayoutControlItem62.CustomizationFormText = "Detalle Documento"
-        Me.LayoutControlItem62.Location = New System.Drawing.Point(0, 528)
+        Me.LayoutControlItem62.Location = New System.Drawing.Point(0, 484)
         Me.LayoutControlItem62.Name = "LayoutControlItem62"
-        Me.LayoutControlItem62.Size = New System.Drawing.Size(2374, 314)
+        Me.LayoutControlItem62.Size = New System.Drawing.Size(2394, 376)
         Me.LayoutControlItem62.Text = "Detalle Documento"
         Me.LayoutControlItem62.TextSize = New System.Drawing.Size(197, 25)
         '
@@ -3219,9 +3223,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem63.Control = Me.txtImpuestosVarios
         Me.LayoutControlItem63.CustomizationFormText = "Impuestos Varios"
-        Me.LayoutControlItem63.Location = New System.Drawing.Point(0, 288)
+        Me.LayoutControlItem63.Location = New System.Drawing.Point(0, 264)
         Me.LayoutControlItem63.Name = "LayoutControlItem63"
-        Me.LayoutControlItem63.Size = New System.Drawing.Size(594, 48)
+        Me.LayoutControlItem63.Size = New System.Drawing.Size(599, 44)
         Me.LayoutControlItem63.Text = "Impuestos Varios"
         Me.LayoutControlItem63.TextSize = New System.Drawing.Size(197, 25)
         '
@@ -3229,9 +3233,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem64.Control = Me.txtGastosVarios
         Me.LayoutControlItem64.CustomizationFormText = "Gastos Varios"
-        Me.LayoutControlItem64.Location = New System.Drawing.Point(614, 240)
+        Me.LayoutControlItem64.Location = New System.Drawing.Point(619, 220)
         Me.LayoutControlItem64.Name = "LayoutControlItem64"
-        Me.LayoutControlItem64.Size = New System.Drawing.Size(638, 48)
+        Me.LayoutControlItem64.Size = New System.Drawing.Size(643, 44)
         Me.LayoutControlItem64.Text = "Gastos Varios"
         Me.LayoutControlItem64.TextSize = New System.Drawing.Size(197, 25)
         '
@@ -3239,9 +3243,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem65.Control = Me.txtPaisOrigen
         Me.LayoutControlItem65.CustomizationFormText = "Pais Origen"
-        Me.LayoutControlItem65.Location = New System.Drawing.Point(1272, 288)
+        Me.LayoutControlItem65.Location = New System.Drawing.Point(1282, 264)
         Me.LayoutControlItem65.Name = "LayoutControlItem65"
-        Me.LayoutControlItem65.Size = New System.Drawing.Size(1102, 48)
+        Me.LayoutControlItem65.Size = New System.Drawing.Size(1112, 44)
         Me.LayoutControlItem65.Text = "Pais Origen"
         Me.LayoutControlItem65.TextSize = New System.Drawing.Size(197, 25)
         '
@@ -3249,9 +3253,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem66.Control = Me.txtFobUsd
         Me.LayoutControlItem66.CustomizationFormText = "FOB USD"
-        Me.LayoutControlItem66.Location = New System.Drawing.Point(0, 336)
+        Me.LayoutControlItem66.Location = New System.Drawing.Point(0, 308)
         Me.LayoutControlItem66.Name = "LayoutControlItem66"
-        Me.LayoutControlItem66.Size = New System.Drawing.Size(594, 48)
+        Me.LayoutControlItem66.Size = New System.Drawing.Size(599, 44)
         Me.LayoutControlItem66.Text = "FOB USD"
         Me.LayoutControlItem66.TextSize = New System.Drawing.Size(197, 25)
         '
@@ -3259,9 +3263,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem67.Control = Me.txtFleteUsd
         Me.LayoutControlItem67.CustomizationFormText = "Flete USD"
-        Me.LayoutControlItem67.Location = New System.Drawing.Point(614, 288)
+        Me.LayoutControlItem67.Location = New System.Drawing.Point(619, 264)
         Me.LayoutControlItem67.Name = "LayoutControlItem67"
-        Me.LayoutControlItem67.Size = New System.Drawing.Size(638, 48)
+        Me.LayoutControlItem67.Size = New System.Drawing.Size(643, 44)
         Me.LayoutControlItem67.Text = "Flete USD"
         Me.LayoutControlItem67.TextSize = New System.Drawing.Size(197, 25)
         '
@@ -3269,9 +3273,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem68.Control = Me.txtSeguroUsd
         Me.LayoutControlItem68.CustomizationFormText = "Seguro USD"
-        Me.LayoutControlItem68.Location = New System.Drawing.Point(1272, 336)
+        Me.LayoutControlItem68.Location = New System.Drawing.Point(1282, 308)
         Me.LayoutControlItem68.Name = "LayoutControlItem68"
-        Me.LayoutControlItem68.Size = New System.Drawing.Size(1102, 48)
+        Me.LayoutControlItem68.Size = New System.Drawing.Size(1112, 44)
         Me.LayoutControlItem68.Text = "Seguro USD"
         Me.LayoutControlItem68.TextSize = New System.Drawing.Size(197, 25)
         '
@@ -3279,9 +3283,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem69.Control = Me.txtRegionCp
         Me.LayoutControlItem69.CustomizationFormText = "Region CP"
-        Me.LayoutControlItem69.Location = New System.Drawing.Point(0, 384)
+        Me.LayoutControlItem69.Location = New System.Drawing.Point(0, 352)
         Me.LayoutControlItem69.Name = "LayoutControlItem69"
-        Me.LayoutControlItem69.Size = New System.Drawing.Size(594, 48)
+        Me.LayoutControlItem69.Size = New System.Drawing.Size(599, 44)
         Me.LayoutControlItem69.Text = "Region CP"
         Me.LayoutControlItem69.TextSize = New System.Drawing.Size(197, 25)
         '
@@ -3289,9 +3293,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem78.Control = Me.cmbConsignatario
         Me.LayoutControlItem78.CustomizationFormText = "Consignatario"
-        Me.LayoutControlItem78.Location = New System.Drawing.Point(0, 480)
+        Me.LayoutControlItem78.Location = New System.Drawing.Point(0, 440)
         Me.LayoutControlItem78.Name = "LayoutControlItem78"
-        Me.LayoutControlItem78.Size = New System.Drawing.Size(1186, 48)
+        Me.LayoutControlItem78.Size = New System.Drawing.Size(1196, 44)
         Me.LayoutControlItem78.Text = "Consignatario"
         Me.LayoutControlItem78.TextSize = New System.Drawing.Size(197, 25)
         '
@@ -3299,9 +3303,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem74.Control = Me.txtActualizadaEl
         Me.LayoutControlItem74.CustomizationFormText = "Actualizada El"
-        Me.LayoutControlItem74.Location = New System.Drawing.Point(614, 336)
+        Me.LayoutControlItem74.Location = New System.Drawing.Point(619, 308)
         Me.LayoutControlItem74.Name = "LayoutControlItem74"
-        Me.LayoutControlItem74.Size = New System.Drawing.Size(638, 48)
+        Me.LayoutControlItem74.Size = New System.Drawing.Size(643, 44)
         Me.LayoutControlItem74.Text = "Actualizada El"
         Me.LayoutControlItem74.TextSize = New System.Drawing.Size(197, 25)
         '
@@ -3309,9 +3313,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem72.Control = Me.txtPolizaRelacionada
         Me.LayoutControlItem72.CustomizationFormText = "Poliza Relacionada"
-        Me.LayoutControlItem72.Location = New System.Drawing.Point(1186, 480)
+        Me.LayoutControlItem72.Location = New System.Drawing.Point(1196, 440)
         Me.LayoutControlItem72.Name = "LayoutControlItem72"
-        Me.LayoutControlItem72.Size = New System.Drawing.Size(594, 48)
+        Me.LayoutControlItem72.Size = New System.Drawing.Size(599, 44)
         Me.LayoutControlItem72.Text = "Poliza Relacionada"
         Me.LayoutControlItem72.TextSize = New System.Drawing.Size(197, 25)
         '
@@ -3319,9 +3323,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem76.Control = Me.txtPolizaOrigen
         Me.LayoutControlItem76.CustomizationFormText = "Poliza Origen"
-        Me.LayoutControlItem76.Location = New System.Drawing.Point(1780, 480)
+        Me.LayoutControlItem76.Location = New System.Drawing.Point(1795, 440)
         Me.LayoutControlItem76.Name = "LayoutControlItem76"
-        Me.LayoutControlItem76.Size = New System.Drawing.Size(594, 48)
+        Me.LayoutControlItem76.Size = New System.Drawing.Size(599, 44)
         Me.LayoutControlItem76.Text = "Poliza Origen"
         Me.LayoutControlItem76.TextSize = New System.Drawing.Size(197, 25)
         '
@@ -3329,9 +3333,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem73.Control = Me.txtActualizadaPor
         Me.LayoutControlItem73.CustomizationFormText = "Actualizada Por"
-        Me.LayoutControlItem73.Location = New System.Drawing.Point(1272, 384)
+        Me.LayoutControlItem73.Location = New System.Drawing.Point(1282, 352)
         Me.LayoutControlItem73.Name = "LayoutControlItem73"
-        Me.LayoutControlItem73.Size = New System.Drawing.Size(1102, 96)
+        Me.LayoutControlItem73.Size = New System.Drawing.Size(1112, 88)
         Me.LayoutControlItem73.Text = "Actualizada Por"
         Me.LayoutControlItem73.TextSize = New System.Drawing.Size(197, 25)
         '
@@ -3339,17 +3343,17 @@ Partial Class frmDocumentoIngreso
         '
         Me.SplitterItem9.AllowHotTrack = True
         Me.SplitterItem9.CustomizationFormText = "SplitterItem9"
-        Me.SplitterItem9.Location = New System.Drawing.Point(1252, 48)
+        Me.SplitterItem9.Location = New System.Drawing.Point(1262, 44)
         Me.SplitterItem9.Name = "SplitterItem9"
-        Me.SplitterItem9.Size = New System.Drawing.Size(20, 432)
+        Me.SplitterItem9.Size = New System.Drawing.Size(20, 396)
         '
         'LayoutControlItem70
         '
         Me.LayoutControlItem70.Control = Me.txtAcuerdo1
         Me.LayoutControlItem70.CustomizationFormText = "Acuerdo1"
-        Me.LayoutControlItem70.Location = New System.Drawing.Point(0, 432)
+        Me.LayoutControlItem70.Location = New System.Drawing.Point(0, 396)
         Me.LayoutControlItem70.Name = "LayoutControlItem70"
-        Me.LayoutControlItem70.Size = New System.Drawing.Size(594, 48)
+        Me.LayoutControlItem70.Size = New System.Drawing.Size(599, 44)
         Me.LayoutControlItem70.Text = "Acuerdo1"
         Me.LayoutControlItem70.TextSize = New System.Drawing.Size(197, 25)
         '
@@ -3357,9 +3361,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem71.Control = Me.txtAcuerdo2
         Me.LayoutControlItem71.CustomizationFormText = "Acuerdo2"
-        Me.LayoutControlItem71.Location = New System.Drawing.Point(614, 384)
+        Me.LayoutControlItem71.Location = New System.Drawing.Point(619, 352)
         Me.LayoutControlItem71.Name = "LayoutControlItem71"
-        Me.LayoutControlItem71.Size = New System.Drawing.Size(638, 48)
+        Me.LayoutControlItem71.Size = New System.Drawing.Size(643, 44)
         Me.LayoutControlItem71.Text = "Acuerdo2"
         Me.LayoutControlItem71.TextSize = New System.Drawing.Size(197, 25)
         '
@@ -3367,9 +3371,9 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem81.Control = Me.pctDAI
         Me.LayoutControlItem81.CustomizationFormText = "pct DAI"
-        Me.LayoutControlItem81.Location = New System.Drawing.Point(0, 144)
+        Me.LayoutControlItem81.Location = New System.Drawing.Point(0, 132)
         Me.LayoutControlItem81.Name = "LayoutControlItem81"
-        Me.LayoutControlItem81.Size = New System.Drawing.Size(594, 48)
+        Me.LayoutControlItem81.Size = New System.Drawing.Size(599, 44)
         Me.LayoutControlItem81.Text = "pct DAI"
         Me.LayoutControlItem81.TextSize = New System.Drawing.Size(197, 25)
         '
@@ -3377,18 +3381,18 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem75.Control = Me.txtDocumentoOrigen
         Me.LayoutControlItem75.CustomizationFormText = "Documento Origen"
-        Me.LayoutControlItem75.Location = New System.Drawing.Point(614, 432)
+        Me.LayoutControlItem75.Location = New System.Drawing.Point(619, 396)
         Me.LayoutControlItem75.Name = "LayoutControlItem75"
-        Me.LayoutControlItem75.Size = New System.Drawing.Size(638, 48)
+        Me.LayoutControlItem75.Size = New System.Drawing.Size(643, 44)
         Me.LayoutControlItem75.Text = "Documento Origen"
         Me.LayoutControlItem75.TextSize = New System.Drawing.Size(197, 25)
         '
         'UiLayoutControlImpuesto
         '
         Me.UiLayoutControlImpuesto.Control = Me.UiListaImpuesto
-        Me.UiLayoutControlImpuesto.Location = New System.Drawing.Point(1272, 48)
+        Me.UiLayoutControlImpuesto.Location = New System.Drawing.Point(1282, 44)
         Me.UiLayoutControlImpuesto.Name = "UiLayoutControlImpuesto"
-        Me.UiLayoutControlImpuesto.Size = New System.Drawing.Size(1102, 48)
+        Me.UiLayoutControlImpuesto.Size = New System.Drawing.Size(1112, 44)
         Me.UiLayoutControlImpuesto.Text = "Impuesto"
         Me.UiLayoutControlImpuesto.TextSize = New System.Drawing.Size(197, 25)
         '
@@ -3396,16 +3400,16 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutControlItem57.Control = Me.cmbUnidadCantidad
         Me.LayoutControlItem57.CustomizationFormText = "Unidad de Cantidad"
-        Me.LayoutControlItem57.Location = New System.Drawing.Point(1272, 96)
+        Me.LayoutControlItem57.Location = New System.Drawing.Point(1282, 88)
         Me.LayoutControlItem57.Name = "LayoutControlItem57"
-        Me.LayoutControlItem57.Size = New System.Drawing.Size(1102, 48)
+        Me.LayoutControlItem57.Size = New System.Drawing.Size(1112, 44)
         Me.LayoutControlItem57.Text = "Unidad de Cantidad"
         Me.LayoutControlItem57.TextSize = New System.Drawing.Size(197, 25)
         '
         'XtraTabServicios
         '
         Me.XtraTabServicios.Controls.Add(Me.LayoutServicios)
-        Me.XtraTabServicios.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.XtraTabServicios.Margin = New System.Windows.Forms.Padding(6)
         Me.XtraTabServicios.Name = "XtraTabServicios"
         Me.XtraTabServicios.PageVisible = False
         Me.XtraTabServicios.Size = New System.Drawing.Size(2414, 880)
@@ -3415,7 +3419,7 @@ Partial Class frmDocumentoIngreso
         '
         Me.LayoutServicios.Dock = System.Windows.Forms.DockStyle.Fill
         Me.LayoutServicios.Location = New System.Drawing.Point(0, 0)
-        Me.LayoutServicios.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.LayoutServicios.Margin = New System.Windows.Forms.Padding(6)
         Me.LayoutServicios.Name = "LayoutServicios"
         Me.LayoutServicios.Root = Me.LayoutControlGroup3
         Me.LayoutServicios.Size = New System.Drawing.Size(2414, 880)
@@ -3444,13 +3448,13 @@ Partial Class frmDocumentoIngreso
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(2418, 1035)
+        Me.ClientSize = New System.Drawing.Size(2418, 1431)
         Me.Controls.Add(Me.XtraTabControl1)
         Me.Controls.Add(Me.barDockControlLeft)
         Me.Controls.Add(Me.barDockControlRight)
         Me.Controls.Add(Me.barDockControlBottom)
         Me.Controls.Add(Me.barDockControlTop)
-        Me.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Margin = New System.Windows.Forms.Padding(6)
         Me.Name = "frmDocumentoIngreso"
         Me.Text = "Documento Ingreso"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized

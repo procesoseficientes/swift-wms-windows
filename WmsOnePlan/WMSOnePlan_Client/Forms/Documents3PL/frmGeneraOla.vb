@@ -569,6 +569,8 @@ Public Class frmGeneraOla
 
             If pQty > 0 Then
                 GenerarTareaRecepcionAuto(pOlaPicking, pMaterialId, pQty, pQtyP)
+            Else
+                MessageBox.Show("Tarea de recepción generada")
             End If
 
         Catch ex As Exception
