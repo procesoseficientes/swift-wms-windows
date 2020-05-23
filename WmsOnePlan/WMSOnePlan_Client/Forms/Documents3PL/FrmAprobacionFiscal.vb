@@ -420,6 +420,7 @@ Public Class FrmAprobacionFiscal
             gridEnlazados.DataSource = Nothing
             tabDet.Text = "Cuadre"
             LlenarGridPolizas()
+            NotifyStatus("Licencia asociada exitosamente", False, False)
         Catch ex As Exception
             NotifyStatus(ex.Message, False, True)
         End Try

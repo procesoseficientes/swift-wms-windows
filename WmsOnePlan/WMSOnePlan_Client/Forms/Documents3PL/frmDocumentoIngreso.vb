@@ -588,7 +588,7 @@ Public Class frmDocumentoIngreso
             lookUpPrioridad.EditValue = 1
 
             'FRM - ESTO ES SOLO MIENTRAS SE DETERMINA UN VALOR DEFAULT POR USUARIO
-            cmbConsignatario.EditValue = "1"
+            'cmbConsignatario.EditValue = "1"
             cmbUnidadCantidad.EditValue = "UN"
             LlenarComboOperador()
         Catch ex As Exception
@@ -830,7 +830,7 @@ Public Class frmDocumentoIngreso
             Double.TryParse(pctDAI.Text, _pctdai)
             Integer.TryParse(txtDocId.Text, _docid)
 
-            If cmbConsignatario.EditValue = Nothing Then
+            If cmbConsignatario.EditValue = Nothing Or cmbConsignatario.EditValue = "" Then
                 cmbConsignatario.EditValue = cmbCliente.EditValue
             End If
 
@@ -1342,6 +1342,7 @@ Public Class frmDocumentoIngreso
     End Sub
 
     Private Sub cmbCliente_EditValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmbCliente.EditValueChanged
+        cmbConsignatario.EditValue = cmbCliente.EditValue
         Try
             Dim dsTerms As New DataSet
             Dim dsCT As New DataSet
@@ -1738,10 +1739,6 @@ Public Class frmDocumentoIngreso
         End Try
     End Sub
 
-    Private Sub txtScanPoliza_ItemClick(sender As System.Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles txtScanPoliza.ItemClick
-
-    End Sub
-
     Private Sub LlenarComboOperador()
         Try
             Dim xSecurity As New OnePlanServices_Security.WMS_SecuritySoapClient("WMS_SecuritySoap", PublicLoginInfo.WSHost + "/Catalogues/wms_Security.asmx")
@@ -1902,7 +1899,7 @@ Public Class frmDocumentoIngreso
             End If
 
             dtFechaLlegada.EditValue = dateTicket.ToString
-            NotifyStatus("Fecha de llegada: " + dateTicket.ToString(), False, True)
+            NotifyStatus("Fecha de llegada: " + dateTicket.ToString(), False, False)
             Return True
 
         Catch ex As Exception

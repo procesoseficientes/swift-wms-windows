@@ -304,6 +304,7 @@ Public Class frmGeneraOla
                             GridAssigned.DataSource = dt
                             GridAssigned.Refresh()
                             GridViewAssigned.BestFitColumns()
+                            NotifyStatus("Inventario fiscal por licencia cargado exitosamente", False, False)
                         Else
                             GridAssigned.DataSource = Nothing
                             GridAssigned.Refresh()
@@ -328,8 +329,8 @@ Public Class frmGeneraOla
 
     Private Sub GridPending_Click(sender As System.Object, e As System.EventArgs) Handles GridPending.Click
         Try
-
             Dim xdatarow As DataRow = GridViewPending.GetDataRow(GridViewPending.FocusedRowHandle)
+            ''MessageBox.Show(xdatarow("ORIGIN_LINE_NUMBER"))
             FN_LEE(Val(xdatarow("DOC_ID")), Val(xdatarow("ORIGIN_LINE_NUMBER")))
             ''FN_LEE(Val(xdatarow("ORIGIN_DOC_ID")), Val(xdatarow("ORIGIN_LINE_NUMBER")))
 
@@ -438,6 +439,7 @@ Public Class frmGeneraOla
                 Else
                     _olaPicking = 0
                     LlenarGridPendientes()
+                    NotifyStatus("Orden generada exitosamente", True, False)
                 End If
             Else
                 NotifyStatus(pResult, True, True)
@@ -569,6 +571,8 @@ Public Class frmGeneraOla
 
             If pQty > 0 Then
                 GenerarTareaRecepcionAuto(pOlaPicking, pMaterialId, pQty, pQtyP)
+            Else
+                MessageBox.Show("Tarea de recepción generada")
             End If
 
         Catch ex As Exception
