@@ -588,7 +588,7 @@ Public Class frmDocumentoIngreso
             lookUpPrioridad.EditValue = 1
 
             'FRM - ESTO ES SOLO MIENTRAS SE DETERMINA UN VALOR DEFAULT POR USUARIO
-            cmbConsignatario.EditValue = "1"
+            'cmbConsignatario.EditValue = "1"
             cmbUnidadCantidad.EditValue = "UN"
             LlenarComboOperador()
         Catch ex As Exception
