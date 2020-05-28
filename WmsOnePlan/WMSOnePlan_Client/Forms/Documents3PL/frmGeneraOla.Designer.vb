@@ -120,7 +120,7 @@ Partial Class frmGeneraOla
         'cmbRegimen
         '
         Me.cmbRegimen.Location = New System.Drawing.Point(136, 71)
-        Me.cmbRegimen.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.cmbRegimen.Margin = New System.Windows.Forms.Padding(6)
         Me.cmbRegimen.Name = "cmbRegimen"
         Me.cmbRegimen.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.cmbRegimen.Properties.PopupView = Me.GridView1
@@ -137,7 +137,7 @@ Partial Class frmGeneraOla
         'cmbCliente
         '
         Me.cmbCliente.Location = New System.Drawing.Point(136, 121)
-        Me.cmbCliente.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.cmbCliente.Margin = New System.Windows.Forms.Padding(6)
         Me.cmbCliente.Name = "cmbCliente"
         Me.cmbCliente.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.cmbCliente.Properties.PopupFormSize = New System.Drawing.Size(1200, 0)
@@ -158,10 +158,10 @@ Partial Class frmGeneraOla
         '
         Me.GridAssigned.Cursor = System.Windows.Forms.Cursors.Default
         Me.GridAssigned.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GridAssigned.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.GridAssigned.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(6)
         Me.GridAssigned.Location = New System.Drawing.Point(0, 0)
         Me.GridAssigned.MainView = Me.GridViewAssigned
-        Me.GridAssigned.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.GridAssigned.Margin = New System.Windows.Forms.Padding(6)
         Me.GridAssigned.Name = "GridAssigned"
         Me.GridAssigned.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemCalcEdit1})
         Me.GridAssigned.Size = New System.Drawing.Size(1110, 879)
@@ -189,6 +189,7 @@ Partial Class frmGeneraOla
         Me.GridViewAssigned.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition1})
         Me.GridViewAssigned.GridControl = Me.GridAssigned
         Me.GridViewAssigned.Name = "GridViewAssigned"
+        Me.GridViewAssigned.OptionsView.ColumnAutoWidth = False
         Me.GridViewAssigned.OptionsView.ShowAutoFilterRow = True
         Me.GridViewAssigned.OptionsView.ShowFooter = True
         Me.GridViewAssigned.OptionsView.ShowGroupPanel = False
@@ -329,7 +330,7 @@ Partial Class frmGeneraOla
         'cmbUsuarios
         '
         Me.cmbUsuarios.Location = New System.Drawing.Point(910, 71)
-        Me.cmbUsuarios.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.cmbUsuarios.Margin = New System.Windows.Forms.Padding(6)
         Me.cmbUsuarios.Name = "cmbUsuarios"
         Me.cmbUsuarios.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.cmbUsuarios.Properties.PopupFormSize = New System.Drawing.Size(1000, 0)
@@ -350,10 +351,10 @@ Partial Class frmGeneraOla
         '
         Me.GridPending.Cursor = System.Windows.Forms.Cursors.Default
         Me.GridPending.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GridPending.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.GridPending.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(6)
         Me.GridPending.Location = New System.Drawing.Point(0, 0)
         Me.GridPending.MainView = Me.GridViewPending
-        Me.GridPending.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.GridPending.Margin = New System.Windows.Forms.Padding(6)
         Me.GridPending.Name = "GridPending"
         Me.GridPending.Size = New System.Drawing.Size(978, 879)
         Me.GridPending.TabIndex = 3
@@ -546,7 +547,7 @@ Partial Class frmGeneraOla
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.SplitContainerControl1.Location = New System.Drawing.Point(24, 192)
-        Me.SplitContainerControl1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.SplitContainerControl1.Margin = New System.Windows.Forms.Padding(6)
         Me.SplitContainerControl1.Name = "SplitContainerControl1"
         Me.SplitContainerControl1.Panel1.Controls.Add(Me.GridPending)
         Me.SplitContainerControl1.Panel1.Text = "Panel1"
@@ -564,7 +565,7 @@ Partial Class frmGeneraOla
         'LabelControl1
         '
         Me.LabelControl1.Location = New System.Drawing.Point(24, 77)
-        Me.LabelControl1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.LabelControl1.Margin = New System.Windows.Forms.Padding(6)
         Me.LabelControl1.Name = "LabelControl1"
         Me.LabelControl1.Size = New System.Drawing.Size(58, 25)
         Me.LabelControl1.TabIndex = 10
@@ -573,7 +574,7 @@ Partial Class frmGeneraOla
         'LabelControl2
         '
         Me.LabelControl2.Location = New System.Drawing.Point(798, 77)
-        Me.LabelControl2.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.LabelControl2.Margin = New System.Windows.Forms.Padding(6)
         Me.LabelControl2.Name = "LabelControl2"
         Me.LabelControl2.Size = New System.Drawing.Size(95, 25)
         Me.LabelControl2.TabIndex = 11
@@ -582,7 +583,7 @@ Partial Class frmGeneraOla
         'LabelControl3
         '
         Me.LabelControl3.Location = New System.Drawing.Point(24, 127)
-        Me.LabelControl3.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.LabelControl3.Margin = New System.Windows.Forms.Padding(6)
         Me.LabelControl3.Name = "LabelControl3"
         Me.LabelControl3.Size = New System.Drawing.Size(71, 25)
         Me.LabelControl3.TabIndex = 12
@@ -650,7 +651,7 @@ Partial Class frmGeneraOla
         Me.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.barDockControlTop.Location = New System.Drawing.Point(0, 0)
         Me.barDockControlTop.Manager = Me.BarManager1
-        Me.barDockControlTop.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.barDockControlTop.Margin = New System.Windows.Forms.Padding(6)
         Me.barDockControlTop.Size = New System.Drawing.Size(2156, 46)
         '
         'barDockControlBottom
@@ -659,7 +660,7 @@ Partial Class frmGeneraOla
         Me.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.barDockControlBottom.Location = New System.Drawing.Point(0, 1094)
         Me.barDockControlBottom.Manager = Me.BarManager1
-        Me.barDockControlBottom.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.barDockControlBottom.Margin = New System.Windows.Forms.Padding(6)
         Me.barDockControlBottom.Size = New System.Drawing.Size(2156, 0)
         '
         'barDockControlLeft
@@ -668,7 +669,7 @@ Partial Class frmGeneraOla
         Me.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left
         Me.barDockControlLeft.Location = New System.Drawing.Point(0, 46)
         Me.barDockControlLeft.Manager = Me.BarManager1
-        Me.barDockControlLeft.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.barDockControlLeft.Margin = New System.Windows.Forms.Padding(6)
         Me.barDockControlLeft.Size = New System.Drawing.Size(0, 1048)
         '
         'barDockControlRight
@@ -677,7 +678,7 @@ Partial Class frmGeneraOla
         Me.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right
         Me.barDockControlRight.Location = New System.Drawing.Point(2156, 46)
         Me.barDockControlRight.Manager = Me.BarManager1
-        Me.barDockControlRight.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.barDockControlRight.Margin = New System.Windows.Forms.Padding(6)
         Me.barDockControlRight.Size = New System.Drawing.Size(0, 1048)
         '
         'BarButtonItem1
@@ -702,7 +703,7 @@ Partial Class frmGeneraOla
         Me.Controls.Add(Me.barDockControlRight)
         Me.Controls.Add(Me.barDockControlBottom)
         Me.Controls.Add(Me.barDockControlTop)
-        Me.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Margin = New System.Windows.Forms.Padding(6)
         Me.Name = "frmGeneraOla"
         Me.Text = "Generar Orden de preparado para despacho"
         CType(Me.RepositoryItemCalcEdit1,System.ComponentModel.ISupportInitialize).EndInit
