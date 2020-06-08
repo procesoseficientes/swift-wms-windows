@@ -605,7 +605,14 @@
       <s:element name="set_picking_statusResponse">
         <s:complexType>
           <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="set_picking_statusResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="set_picking_statusResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
             <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
           </s:sequence>
         </s:complexType>

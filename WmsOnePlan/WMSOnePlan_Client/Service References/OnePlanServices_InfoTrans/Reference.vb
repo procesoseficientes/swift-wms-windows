@@ -18,1049 +18,1057 @@ Namespace OnePlanServices_InfoTrans
     <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),  _
      System.ServiceModel.ServiceContractAttribute(ConfigurationName:="OnePlanServices_InfoTrans.WMS_InfoTransSoap")>  _
     Public Interface WMS_InfoTransSoap
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetQuotaLatterGarita", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function GetQuotaLatterGarita(ByVal pDocId As Integer, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetDocPolizaEnc", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function GetDocPolizaEnc(ByVal pDocId As Integer, ByVal pCodigoPoliza As String, ByVal pNumeroOrden As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetLineasAvailable", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function GetLineasAvailable(ByVal pDocId As Integer, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetAcuseRecibo", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function GetAcuseRecibo(ByVal pFechaInicio As Date, ByVal pFechaFinal As Date, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/ObtenerTareasRecepcionAsignadasUsuario", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function ObtenerTareasRecepcionAsignadasUsuario(ByVal Regimen As String, ByVal SerialNumber As String, ByVal AssignedTo As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/DistribuirTareasATodosLosOperadores", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function DistribuirTareasATodosLosOperadores(ByVal login As String, ByVal pEnvironmentName As String) As System.Data.DataTable
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/DistribuirTareasATodosLosOperadoresSinTareas", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function DistribuirTareasATodosLosOperadoresSinTareas(ByVal login As String, ByRef result As String, ByVal pEnvironmentName As String) As System.Data.DataTable
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/LicenceHasInventory", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function LicenceHasInventory(ByVal IdLicence As Integer, ByVal pEnvironmentName As String) As Boolean
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/AuthorizeErpReceptionDocument", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function AuthorizeErpReceptionDocument(ByVal ErpReceptionDocumentId As Integer, ByVal LastUpdateBy As String, ByVal pEnvironmentName As String, ByRef pResult As String) As Boolean
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetReceptionTag", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function GetReceptionTag(ByVal taskId As Integer, ByVal login As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetPickingTag", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function GetPickingTag(ByVal wavePickingId As Integer, ByVal login As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetLabel", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function GetLabel(ByVal labelId As Integer, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/AuthorizeErpPickingDocument", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function AuthorizeErpPickingDocument(ByVal ErpPickingDocumentId As Integer, ByVal LastUpdateBy As String, ByVal pEnvironmentName As String, ByRef pResult As String) As Boolean
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetTaskDetailForPicking", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function GetTaskDetailForPicking(ByVal wavePickingId As Integer, ByVal login As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetTaskDetailForReception", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function GetTaskDetailForReception(ByVal serialNUmber As Integer, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetTaskDetailForRealloc", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function GetTaskDetailForRealloc(ByVal wavePickingId As Integer, ByVal login As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetTaskDetailForCount", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function GetTaskDetailForCount(ByVal taskId As Integer, ByVal login As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/UpdateAssignedOperatorToCountDetail", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function UpdateAssignedOperatorToCountDetail(ByVal physicalCountDetailId As Integer, ByVal assignedTo As String, ByRef pResult As String, ByVal pEnvironmentName As String) As Boolean
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetOperatorAssignedToDistributionCenterByUser", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function GetOperatorAssignedToDistributionCenterByUser(ByVal login As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetOperatorsGraphicsTask", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function GetOperatorsGraphicsTask(ByVal plstUsers As String, ByVal plstTasksTypes As String, ByVal pSinceDate As Date, ByVal pToDate As Date, ByVal login As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataTable
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetTaskPending", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function GetTaskPending(ByVal wavePickingId As Integer, ByVal login As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataTable
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetLocation", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function GetLocation(ByVal location As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataTable
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetMaterial", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function GetMaterial(ByVal codeMaterial As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataTable
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetCanReallocOperatorAssignedToDistributionCenterByUser", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function GetCanReallocOperatorAssignedToDistributionCenterByUser(ByVal login As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/ValidateTaskStatus", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function ValidateTaskStatus(ByVal login As String, ByVal serialNumber As Integer, ByVal taskId As Integer, ByVal wavePickingId As Integer, ByVal materialId As String, ByVal taskType As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/ValidateStatusInMaterialsLicense", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function ValidateStatusInMaterialsLicense(ByVal license As Integer, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetSupplierByDocument", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function GetSupplierByDocument(ByVal taskId As Integer, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/ObtenerDetalleDeRecepcionPorDevolucionPorTarea", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function ObtenerDetalleDeRecepcionPorDevolucionPorTarea(ByVal taskId As Integer, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/ObtenerTipoDeRecepcion", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function ObtenerTipoDeRecepcion(ByVal taskId As Integer, ByVal pEnvironmentName As String, ByRef pResult As String) As String
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/ObtenerParametros", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function ObtenerParametros(ByVal grupoParametro As String, ByVal idParametro As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/ValidarEtiqueta", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function ValidarEtiqueta(ByVal labelId As Integer, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/ObtenerInformacionPickingNoInmediato", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function ObtenerInformacionPickingNoInmediato(ByVal olaPicking As Integer, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/ObtenerValorProyectoEnBaseALicencia", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function ObtenerValorProyectoEnBaseALicencia(ByVal licenseId As Integer, ByVal environmentName As String) As String
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetTaskByLocation", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function GetTaskByLocation(ByVal loginId As String, ByVal regimen As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/ObtenerListadoConsultasDinamicas", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function ObtenerListadoConsultasDinamicas(ByVal login As String, ByVal environmentName As String) As System.Data.DataTable
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/ObtenerConsultaSeleccionada", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function ObtenerConsultaSeleccionada(ByVal idConsulta As Integer, ByVal sufijo As String, ByVal login As String, ByVal environmentName As String, ByVal startDate As Date, ByVal endDate As Date) As System.Data.DataTable
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GuardarElLayoutDeLaVistaDeQueryList", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function GuardarElLayoutDeLaVistaDeQueryList(ByVal idQueryList As Integer, ByVal loginId As String, ByVal layoutxml As String, ByVal environmentName As String) As System.Data.DataTable
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/ObtenerLayoutDeLaVistaDeQueryList", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function ObtenerLayoutDeLaVistaDeQueryList(ByVal idQueryList As Integer, ByVal loginId As String, ByVal environmentName As String) As System.Data.DataTable
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetOccupancyLevel", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetOccupancyLevel", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetOccupancyLevel(ByVal pDate As String, ByVal pDateTo As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/CheckIfPolizaHasReview", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/CheckIfPolizaHasReview", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function CheckIfPolizaHasReview(ByVal pPoliza As String, ByRef pResult As String, ByVal pEnvironmentName As String) As Boolean
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetPickingVsAudit", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetPickingVsAudit", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetPickingVsAudit(ByVal pSinceDate As Date, ByVal pToDate As Date, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetWavePickingDetail", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetWavePickingDetail", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetWavePickingDetail(ByVal pWAVE_ID As Integer, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetAuditLog", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetAuditLog", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetAuditLog(ByVal pDate As String, ByVal pDateTo As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetAuditLogDispatch", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetAuditLogDispatch", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetAuditLogDispatch(ByVal pDate As String, ByVal pDateTo As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetImgAudi", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetImgAudi", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetImgAudi(ByVal pCodePoliza As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetAuditLabel", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetAuditLabel", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetAuditLabel(ByVal pItemName As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetAuditSummary", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetAuditSummary", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetAuditSummary(ByVal pCODIGO_POLIZA As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetAuditView", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetAuditView", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetAuditView(ByVal pAuditID As Integer, ByVal pOPTION As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetMyFirstTask", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetMyFirstTask", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetMyFirstTask(ByVal pLoginID As String, ByVal pWaveID As Integer, ByVal pCODIGO_POLIZA_SOURCE As String, ByVal pSKU As String, ByVal LocationSpotTarget As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IsContainedOnWave", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IsContainedOnWave", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function IsContainedOnWave(ByVal pLoginID As String, ByVal pLocationID As String, ByVal pWaveID As Integer, ByVal pSKU As String, ByVal pLicenseID As Integer, ByVal pCODIGO_POLIZA_SOURCE As String, ByVal pSERVICE As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetMyTasks", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetMyTasks", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetMyTasks(ByVal pLoginID As String, ByVal pRegimen As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetClient_CommercialAggrements", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetClient_CommercialAggrements", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetClient_CommercialAggrements(ByVal pCLIENT_CODE As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetServerDateTime", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetServerDateTime", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetServerDateTime() As String
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetMyLastLicense", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetMyLastLicense", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetMyLastLicense(ByVal pCODIGO_POLIZA As String, ByVal pLOGIN_ID As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GET_LICENSE_DETAIL", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GET_LICENSE_DETAIL", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GET_LICENSE_DETAIL(ByVal pLICENSE_ID As Integer, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/Get_OP_WMS_POLIZA_HEADER", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/Get_OP_WMS_POLIZA_HEADER", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function Get_OP_WMS_POLIZA_HEADER(ByVal pCodigoPoliza As String, ByVal pNumeroOrden As String, ByVal pRegimen As String, ByVal pTipo As String, ByVal pOperador As String, ByVal validarOperador As Boolean, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/Get_OP_WMS_IMAGENES_POLIZA", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/Get_OP_WMS_IMAGENES_POLIZA", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function Get_OP_WMS_IMAGENES_POLIZA(ByVal pCODIGO_BARRAS_ID As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetTransBasicView", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetTransBasicView", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetTransBasicView(ByVal UserLogged As String, ByVal plstUsers As String, ByVal plstTransTypes As String, ByVal pSinceDate As Date, ByVal pToDate As Date, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetTransBasicView_ByClient", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetTransBasicView_ByClient", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetTransBasicView_ByClient(ByVal pClientID As String, ByVal pSinceDate As Date, ByVal pToDate As Date, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetTasksBasicView", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetTasksBasicView", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetTasksBasicView(ByVal plstUsers As String, ByVal plstTasksTypes As String, ByVal pSinceDate As Date, ByVal pToDate As Date, ByVal login As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetRepPolizaEgreso", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetRepPolizaEgreso", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetRepPolizaEgreso(ByVal pCodigoPoliza As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetRepPolizaFiscal", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetRepPolizaFiscal", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetRepPolizaFiscal(ByVal pCodigoPoliza As String, ByVal pRegimen As String, ByVal pTipo As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetTasksBasicView_Calendar", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetTasksBasicView_Calendar", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetTasksBasicView_Calendar(ByVal plstUsers As String, ByVal plstTasksTypes As String, ByVal pDates As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetDemandBasicView", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetDemandBasicView", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetDemandBasicView(ByVal plstUsers As String, ByVal plstTasksTypes As String, ByVal pDateFilterType As String, ByVal pSinceDate As Date, ByVal pToDate As Date, ByVal pDates As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetDemandBasicView_Calendar", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetDemandBasicView_Calendar", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetDemandBasicView_Calendar(ByVal plstUsers As String, ByVal plstTasksTypes As String, ByVal pDates As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetDemandAssignedView", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetDemandAssignedView", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetDemandAssignedView(ByVal pSinceDate As Date, ByVal pToDate As Date, ByVal pDateFilterType As String, ByVal pDates As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetDemandAssignedView_Calendar", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetDemandAssignedView_Calendar", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetDemandAssignedView_Calendar(ByVal pDates As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetDemandVoidedView", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetDemandVoidedView", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetDemandVoidedView(ByVal pSinceDate As Date, ByVal pToDate As Date, ByVal pDateFilterType As String, ByVal pDates As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetDemandPendingPickingView", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetDemandPendingPickingView", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetDemandPendingPickingView(ByVal pSinceDate As Date, ByVal pToDate As Date, ByVal pDateFilterType As String, ByVal pDates As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetPendingTasks", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetPendingTasks", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetPendingTasks(ByVal pTaskType As String, ByVal pLoginID As String, ByVal pBIN As Integer, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetPendingTasksByDoc", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetPendingTasksByDoc", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetPendingTasksByDoc(ByVal pERP_DOCUMENT As String, ByVal pLoginID As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetPendingTasksByDocAndSKU", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetPendingTasksByDocAndSKU", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetPendingTasksByDocAndSKU(ByVal pERP_DOCUMENT As String, ByVal pSKU As String, ByVal pLoginID As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetNextERP_DOC", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetNextERP_DOC", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetNextERP_DOC(ByVal pLinea As String, ByVal pSector As String, ByVal pRuta As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetERP_DOC_By_BIN", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetERP_DOC_By_BIN", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetERP_DOC_By_BIN(ByVal pBIN As Integer, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetPendingReplenishmentTasks", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetPendingReplenishmentTasks", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetPendingReplenishmentTasks(ByVal pTaskType As String, ByVal pLoginID As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetPendingRelocationTasks", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetPendingRelocationTasks", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetPendingRelocationTasks(ByVal pTaskType As String, ByVal pLoginID As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetLastTrans_ByLocation", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetLastTrans_ByLocation", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetLastTrans_ByLocation(ByVal pWarehouseParent As String, ByVal pLocation As String, ByVal pTopRows As Integer, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetCurrentDocOnDispatchInfo", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetCurrentDocOnDispatchInfo", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetCurrentDocOnDispatchInfo(ByVal pLine As String, ByVal pLogin As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetPerc_DocOnDispatch", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetPerc_DocOnDispatch", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetPerc_DocOnDispatch(ByVal pLine As String, ByVal pLogin As String, ByVal pEnvironmentName As String, ByRef pResult As String) As Double
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/AllowMaterialScann_DocOnDispatch", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/AllowMaterialScann_DocOnDispatch", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function AllowMaterialScann_DocOnDispatch(ByVal pLine As String, ByVal pMaterialID As String, ByVal pScannedQty As Double, ByVal pLogin As String, ByVal pEnvironmentName As String, ByRef pResult As String) As Double
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetTransDet_DocOnDispatch", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetTransDet_DocOnDispatch", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetTransDet_DocOnDispatch(ByVal pLine As String, ByVal pLogin As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetReplenishmentProdsBasicView", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetReplenishmentProdsBasicView", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetReplenishmentProdsBasicView(ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetReplenishmentByUser", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetReplenishmentByUser", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetReplenishmentByUser(ByVal pUser As String, ByVal pWarehouse As String, ByVal pTaskType As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetTransactionalBINInfo", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetTransactionalBINInfo", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetTransactionalBINInfo(ByVal pBinID As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetTransactionalDOCInfo", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetTransactionalDOCInfo", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetTransactionalDOCInfo(ByVal pDocNumber As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetPending_Docs", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetPending_Docs", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetPending_Docs(ByVal pLinea As String, ByVal pSector As String, ByVal pRuta As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetDocsReportBasicView", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetDocsReportBasicView", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetDocsReportBasicView(ByVal pSinceDate As Date, ByVal pToDate As Date, ByVal pDateFilterType As String, ByVal pDates As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetLineBalancingBySector", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetLineBalancingBySector", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetLineBalancingBySector(ByVal pSector As String, ByVal pRuta As String, ByVal pIncluyeAsignados As Boolean, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetDemandBySizeForBalancing", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetDemandBySizeForBalancing", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetDemandBySizeForBalancing(ByVal pSector As String, ByVal pRuta As String, ByVal pIncluyeAsignados As Boolean, ByVal pTamano As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetClientRouteInfoByDoc", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetClientRouteInfoByDoc", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetClientRouteInfoByDoc(ByVal pDoc As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetNextPendingBIN", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetNextPendingBIN", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetNextPendingBIN(ByVal pLogin As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetPendingTasksByDoc_Kiosk", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetPendingTasksByDoc_Kiosk", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetPendingTasksByDoc_Kiosk(ByVal pERP_DOCUMENT As String, ByVal pLoginID As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetDocumentInfo", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetDocumentInfo", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetDocumentInfo(ByVal pDoc As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetConsolidationByDay", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetConsolidationByDay", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetConsolidationByDay(ByVal pDate As Date, ByVal pLoginID As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetRutasPorSector", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetRutasPorSector", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetRutasPorSector(ByVal pSector As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetLocationsByDocument", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetLocationsByDocument", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetLocationsByDocument(ByVal pDoc As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetFinishedDispatchAudit", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetFinishedDispatchAudit", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetFinishedDispatchAudit(ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetPassByPolizaAvailable", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetPassByPolizaAvailable", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetPassByPolizaAvailable(ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetPassByPolizaAssigned", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetPassByPolizaAssigned", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetPassByPolizaAssigned(ByVal pPassId As Integer, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GET_LOCATION", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GET_LOCATION", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GET_LOCATION(ByVal pLocation As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GET_POLIZA_ASSIGNEDTO", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GET_POLIZA_ASSIGNEDTO", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GET_POLIZA_ASSIGNEDTO(ByVal pOperador As String, ByVal pPolizaOpcion As String, ByVal pRegimen As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GET_TYPE_CHARGE_MOVIL", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GET_TYPE_CHARGE_MOVIL", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GET_TYPE_CHARGE_MOVIL(ByVal pLicenseId As Integer, ByVal pTypeTrans As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/SearchSkuAuditoriaDesp", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/SearchSkuAuditoriaDesp", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function SearchSkuAuditoriaDesp(ByVal pBarcode As String, ByVal pPoliza As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetTaskIngGeneral", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetTaskIngGeneral", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetTaskIngGeneral(ByVal pCodigoPoliza As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/UpdatePoliza", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/UpdatePoliza", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function UpdatePoliza(ByVal pPOLIZA_SEGURO As String, ByVal pUSER As String, ByVal pRPOLIZA As String, ByVal pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/AddMaterial", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/AddMaterial", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function AddMaterial(ByVal pCODE_SKU As String, ByVal pSKU_DESCRIPTION As String, ByVal pCUSTOMER As String, ByVal pUSER As String, ByVal pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/AddPolizaHeader", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/AddPolizaHeader", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function AddPolizaHeader(ByVal pNumeroPoliza As Integer, ByVal pCUSTOMER As String, ByVal pCUSTOMER_NAME As String, ByVal pUSER As String, ByVal pTIPO As String, ByVal pPOLASEGURADORA As String, ByVal pACUERDO_COMERCIAL As String, ByVal pIDENTITY As String, ByVal pResult As String, ByVal pEnvironmentName As String) As String
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/AddLicense", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/AddLicense", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function AddLicense(ByVal pCUSTOMER As String, ByVal pWAREHOUSE As String, ByVal pLOCATION As String, ByVal pUSER As String, ByVal pFECHA As Date, ByVal pIDENTITY As String, ByVal pResult As String, ByVal pEnvironmentName As String) As String
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/AddPolizaDetail", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/AddPolizaDetail", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function AddPolizaDetail(ByVal pHEADER As String, ByVal pLINE As String, ByVal pCUSTOMER As String, ByVal pCUSTOMER_NAME As String, ByVal pUSER As String, ByVal pSKU_DESCRIPTION As String, ByVal pUNIT_MEASURE As String, ByVal pQTY As String, ByVal pTOTAL As String, ByVal pUNIT_PRICE As String, ByVal pFECHA As Date, ByVal pResult As String, ByVal pEnvironmentName As String) As String
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/AddInventory", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function AddInventory( _
-                    ByVal pcodeSku As String,  _
-                    ByVal pskudes As String,  _
-                    ByVal pumesure As String,  _
-                    ByVal pqty As Integer,  _
-                    ByVal ptotal As Decimal,  _
-                    ByVal puprice As Decimal,  _
-                    ByVal pcustomer As String,  _
-                    ByVal pcustomername As String,  _
-                    ByVal puser As String,  _
-                    ByVal pwh As String,  _
-                    ByVal psigno As String,  _
-                    ByVal plocation As String,  _
-                    ByVal pheader As String,  _
-                    ByVal pfecha As Date,  _
-                    ByVal pacuerdo As String,  _
-                    ByVal pRESULTADO As String,  _
-                    ByVal pResult As String,  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/AddInventory", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function AddInventory(
+                    ByVal pcodeSku As String,
+                    ByVal pskudes As String,
+                    ByVal pumesure As String,
+                    ByVal pqty As Integer,
+                    ByVal ptotal As Decimal,
+                    ByVal puprice As Decimal,
+                    ByVal pcustomer As String,
+                    ByVal pcustomername As String,
+                    ByVal puser As String,
+                    ByVal pwh As String,
+                    ByVal psigno As String,
+                    ByVal plocation As String,
+                    ByVal pheader As String,
+                    ByVal pfecha As Date,
+                    ByVal pacuerdo As String,
+                    ByVal pRESULTADO As String,
+                    ByVal pResult As String,
                     ByVal pEnvironmentName As String) As String
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/AddGeneralData", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/AddGeneralData", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function AddGeneralData(ByVal pcustomer As String, ByVal pcustomername As String, ByVal puser As String, ByVal pwh As String, ByVal plocation As String, ByVal pseguro As String, ByVal pacuerdo As String, ByVal pfecha As Date, ByVal pResult As String, ByVal pEnvironmentName As String) As String
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/ResultProcessDispatchExternal", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/ResultProcessDispatchExternal", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function ResultProcessDispatchExternal(ByVal pEnvironmentName As String, ByVal FechaDocumento As Date) As String
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/ReceiveInventoryFromFile", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/ReceiveInventoryFromFile", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function ReceiveInventoryFromFile(ByVal pDATA As System.Data.DataSet, ByVal pEnvironmentName As String) As String
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/ReceiveInventoryFromFileExcel", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/ReceiveInventoryFromFileExcel", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function ReceiveInventoryFromFileExcel(ByVal pDATA As System.Data.DataTable, ByVal pLOGIN As String, ByVal pCLIENT As String, ByVal pEnvironmentName As String) As String
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/AddDataToReviewAddExternal", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/AddDataToReviewAddExternal", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function AddDataToReviewAddExternal(ByVal pDATA As System.Data.DataTable, ByVal pLOGIN As String, ByVal pCLIENT As String, ByVal pEnvironmentName As String) As String
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetReviewDispatchForExternal", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetReviewDispatchForExternal", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetReviewDispatchForExternal(ByVal pEnvironmentName As String) As System.Data.DataTable
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetReviewDispatchForExternalUpdate", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetReviewDispatchForExternalUpdate", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetReviewDispatchForExternalUpdate(ByVal pEnvironmentName As String) As System.Data.DataTable
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetWarehouseForExt", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetWarehouseForExt", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetWarehouseForExt(ByVal pEnvironmentName As String) As System.Data.DataTable
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetInsuranceAvilable", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetInsuranceAvilable", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetInsuranceAvilable(ByVal pPoliza As String, ByVal pUser As String, ByVal pRpoliza As Integer, ByVal pResult As String, ByVal pEnvironmentName As String) As String
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/updateInventory", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/updateInventory", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function updateInventory(ByVal pcode As String, ByVal pqty As Integer, ByVal pcustomer As String, ByVal presultado As String, ByVal pResult As String, ByVal pEnvironmentName As String) As String
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/UpdateQuotaLatter", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/UpdateQuotaLatter", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function UpdateQuotaLatter(ByVal pCarta As String, ByVal pRegimen As String, ByVal pMedida As String, ByVal pFirma As String, ByVal pClave As String, ByVal positionPerson As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
-        
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetQuotaLatter", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetQuotaLatter", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function GetQuotaLatter(ByVal pStatus As String, ByVal pStatus2 As String, ByVal pStatus3 As String, ByVal pFechaInicio As Date, ByVal pFechaFinal As Date, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetQuotaLatterGarita", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function GetQuotaLatterGarita(ByVal pDocId As Integer, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetDocPolizaEnc", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function GetDocPolizaEnc(ByVal pDocId As Integer, ByVal pCodigoPoliza As String, ByVal pNumeroOrden As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetLineasAvailable", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function GetLineasAvailable(ByVal pDocId As Integer, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetAcuseRecibo", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function GetAcuseRecibo(ByVal pFechaInicio As Date, ByVal pFechaFinal As Date, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/ObtenerTareasRecepcionAsignadasUsuario", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function ObtenerTareasRecepcionAsignadasUsuario(ByVal Regimen As String, ByVal SerialNumber As String, ByVal AssignedTo As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/DistribuirTareasATodosLosOperadores", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function DistribuirTareasATodosLosOperadores(ByVal login As String, ByVal pEnvironmentName As String) As System.Data.DataTable
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/DistribuirTareasATodosLosOperadoresSinTareas", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function DistribuirTareasATodosLosOperadoresSinTareas(ByVal login As String, ByRef result As String, ByVal pEnvironmentName As String) As System.Data.DataTable
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/LicenceHasInventory", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function LicenceHasInventory(ByVal IdLicence As Integer, ByVal pEnvironmentName As String) As Boolean
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/AuthorizeErpReceptionDocument", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function AuthorizeErpReceptionDocument(ByVal ErpReceptionDocumentId As Integer, ByVal LastUpdateBy As String, ByVal pEnvironmentName As String, ByRef pResult As String) As Boolean
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetReceptionTag", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function GetReceptionTag(ByVal taskId As Integer, ByVal login As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetPickingTag", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function GetPickingTag(ByVal wavePickingId As Integer, ByVal login As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetLabel", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function GetLabel(ByVal labelId As Integer, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/AuthorizeErpPickingDocument", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function AuthorizeErpPickingDocument(ByVal ErpPickingDocumentId As Integer, ByVal LastUpdateBy As String, ByVal pEnvironmentName As String, ByRef pResult As String) As Boolean
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetTaskDetailForPicking", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function GetTaskDetailForPicking(ByVal wavePickingId As Integer, ByVal login As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetTaskDetailForReception", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function GetTaskDetailForReception(ByVal serialNUmber As Integer, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetTaskDetailForRealloc", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function GetTaskDetailForRealloc(ByVal wavePickingId As Integer, ByVal login As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetTaskDetailForCount", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function GetTaskDetailForCount(ByVal taskId As Integer, ByVal login As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/UpdateAssignedOperatorToCountDetail", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function UpdateAssignedOperatorToCountDetail(ByVal physicalCountDetailId As Integer, ByVal assignedTo As String, ByRef pResult As String, ByVal pEnvironmentName As String) As Boolean
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetOperatorAssignedToDistributionCenterByUser", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function GetOperatorAssignedToDistributionCenterByUser(ByVal login As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetOperatorsGraphicsTask", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function GetOperatorsGraphicsTask(ByVal plstUsers As String, ByVal plstTasksTypes As String, ByVal pSinceDate As Date, ByVal pToDate As Date, ByVal login As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataTable
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetTaskPending", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function GetTaskPending(ByVal wavePickingId As Integer, ByVal login As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataTable
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetLocation", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function GetLocation(ByVal location As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataTable
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetMaterial", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function GetMaterial(ByVal codeMaterial As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataTable
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetCanReallocOperatorAssignedToDistributionCenterByUser", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function GetCanReallocOperatorAssignedToDistributionCenterByUser(ByVal login As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/ValidateTaskStatus", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function ValidateTaskStatus(ByVal login As String, ByVal serialNumber As Integer, ByVal taskId As Integer, ByVal wavePickingId As Integer, ByVal materialId As String, ByVal taskType As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/ValidateStatusInMaterialsLicense", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function ValidateStatusInMaterialsLicense(ByVal license As Integer, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetSupplierByDocument", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function GetSupplierByDocument(ByVal taskId As Integer, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/ObtenerDetalleDeRecepcionPorDevolucionPorTarea", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function ObtenerDetalleDeRecepcionPorDevolucionPorTarea(ByVal taskId As Integer, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataSet
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/ObtenerTipoDeRecepcion", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function ObtenerTipoDeRecepcion(ByVal taskId As Integer, ByVal pEnvironmentName As String, ByRef pResult As String) As String
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/ObtenerParametros", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function ObtenerParametros(ByVal grupoParametro As String, ByVal idParametro As String, ByVal pEnvironmentName As String) As System.Data.DataSet
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/ValidarEtiqueta", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function ValidarEtiqueta(ByVal labelId As Integer, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/ObtenerInformacionPickingNoInmediato", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function ObtenerInformacionPickingNoInmediato(ByVal olaPicking As Integer, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/ObtenerValorProyectoEnBaseALicencia", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function ObtenerValorProyectoEnBaseALicencia(ByVal licenseId As Integer, ByVal environmentName As String) As String
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetTaskByLocation", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function GetTaskByLocation(ByVal loginId As String, ByVal regimen As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/ObtenerListadoConsultasDinamicas", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function ObtenerListadoConsultasDinamicas(ByVal login As String, ByVal environmentName As String) As System.Data.DataTable
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/ObtenerConsultaSeleccionada", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function ObtenerConsultaSeleccionada(ByVal idConsulta As Integer, ByVal sufijo As String, ByVal login As String, ByVal environmentName As String, ByVal startDate As Date, ByVal endDate As Date) As System.Data.DataTable
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GuardarElLayoutDeLaVistaDeQueryList", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function GuardarElLayoutDeLaVistaDeQueryList(ByVal idQueryList As Integer, ByVal loginId As String, ByVal layoutxml As String, ByVal environmentName As String) As System.Data.DataTable
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/ObtenerLayoutDeLaVistaDeQueryList", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function ObtenerLayoutDeLaVistaDeQueryList(ByVal idQueryList As Integer, ByVal loginId As String, ByVal environmentName As String) As System.Data.DataTable
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetLastTaskOrderNumber", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function GetLastTaskOrderNumber(ByRef pResult As String, ByVal penvironmentName As String) As System.Data.DataSet
     End Interface
-    
-    <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")>  _
+
+    <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")>
     Public Interface WMS_InfoTransSoapChannel
         Inherits OnePlanServices_InfoTrans.WMS_InfoTransSoap, System.ServiceModel.IClientChannel
     End Interface
-    
-    <System.Diagnostics.DebuggerStepThroughAttribute(),  _
-     System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")>  _
+
+    <System.Diagnostics.DebuggerStepThroughAttribute(),
+     System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")>
     Partial Public Class WMS_InfoTransSoapClient
         Inherits System.ServiceModel.ClientBase(Of OnePlanServices_InfoTrans.WMS_InfoTransSoap)
         Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap
-        
+
         Public Sub New()
             MyBase.New
         End Sub
-        
+
         Public Sub New(ByVal endpointConfigurationName As String)
             MyBase.New(endpointConfigurationName)
         End Sub
-        
+
         Public Sub New(ByVal endpointConfigurationName As String, ByVal remoteAddress As String)
             MyBase.New(endpointConfigurationName, remoteAddress)
         End Sub
-        
+
         Public Sub New(ByVal endpointConfigurationName As String, ByVal remoteAddress As System.ServiceModel.EndpointAddress)
             MyBase.New(endpointConfigurationName, remoteAddress)
         End Sub
-        
+
         Public Sub New(ByVal binding As System.ServiceModel.Channels.Binding, ByVal remoteAddress As System.ServiceModel.EndpointAddress)
             MyBase.New(binding, remoteAddress)
         End Sub
-        
-        Public Function GetQuotaLatterGarita(ByVal pDocId As Integer, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetQuotaLatterGarita
-            Return MyBase.Channel.GetQuotaLatterGarita(pDocId, pResult, pEnvironmentName)
-        End Function
-        
-        Public Function GetDocPolizaEnc(ByVal pDocId As Integer, ByVal pCodigoPoliza As String, ByVal pNumeroOrden As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetDocPolizaEnc
-            Return MyBase.Channel.GetDocPolizaEnc(pDocId, pCodigoPoliza, pNumeroOrden, pResult, pEnvironmentName)
-        End Function
-        
-        Public Function GetLineasAvailable(ByVal pDocId As Integer, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetLineasAvailable
-            Return MyBase.Channel.GetLineasAvailable(pDocId, pResult, pEnvironmentName)
-        End Function
-        
-        Public Function GetAcuseRecibo(ByVal pFechaInicio As Date, ByVal pFechaFinal As Date, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetAcuseRecibo
-            Return MyBase.Channel.GetAcuseRecibo(pFechaInicio, pFechaFinal, pResult, pEnvironmentName)
-        End Function
-        
-        Public Function ObtenerTareasRecepcionAsignadasUsuario(ByVal Regimen As String, ByVal SerialNumber As String, ByVal AssignedTo As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.ObtenerTareasRecepcionAsignadasUsuario
-            Return MyBase.Channel.ObtenerTareasRecepcionAsignadasUsuario(Regimen, SerialNumber, AssignedTo, pEnvironmentName, pResult)
-        End Function
-        
-        Public Function DistribuirTareasATodosLosOperadores(ByVal login As String, ByVal pEnvironmentName As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.DistribuirTareasATodosLosOperadores
-            Return MyBase.Channel.DistribuirTareasATodosLosOperadores(login, pEnvironmentName)
-        End Function
-        
-        Public Function DistribuirTareasATodosLosOperadoresSinTareas(ByVal login As String, ByRef result As String, ByVal pEnvironmentName As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.DistribuirTareasATodosLosOperadoresSinTareas
-            Return MyBase.Channel.DistribuirTareasATodosLosOperadoresSinTareas(login, result, pEnvironmentName)
-        End Function
-        
-        Public Function LicenceHasInventory(ByVal IdLicence As Integer, ByVal pEnvironmentName As String) As Boolean Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.LicenceHasInventory
-            Return MyBase.Channel.LicenceHasInventory(IdLicence, pEnvironmentName)
-        End Function
-        
-        Public Function AuthorizeErpReceptionDocument(ByVal ErpReceptionDocumentId As Integer, ByVal LastUpdateBy As String, ByVal pEnvironmentName As String, ByRef pResult As String) As Boolean Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.AuthorizeErpReceptionDocument
-            Return MyBase.Channel.AuthorizeErpReceptionDocument(ErpReceptionDocumentId, LastUpdateBy, pEnvironmentName, pResult)
-        End Function
-        
-        Public Function GetReceptionTag(ByVal taskId As Integer, ByVal login As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetReceptionTag
-            Return MyBase.Channel.GetReceptionTag(taskId, login, pEnvironmentName, pResult)
-        End Function
-        
-        Public Function GetPickingTag(ByVal wavePickingId As Integer, ByVal login As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetPickingTag
-            Return MyBase.Channel.GetPickingTag(wavePickingId, login, pEnvironmentName, pResult)
-        End Function
-        
-        Public Function GetLabel(ByVal labelId As Integer, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetLabel
-            Return MyBase.Channel.GetLabel(labelId, pEnvironmentName, pResult)
-        End Function
-        
-        Public Function AuthorizeErpPickingDocument(ByVal ErpPickingDocumentId As Integer, ByVal LastUpdateBy As String, ByVal pEnvironmentName As String, ByRef pResult As String) As Boolean Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.AuthorizeErpPickingDocument
-            Return MyBase.Channel.AuthorizeErpPickingDocument(ErpPickingDocumentId, LastUpdateBy, pEnvironmentName, pResult)
-        End Function
-        
-        Public Function GetTaskDetailForPicking(ByVal wavePickingId As Integer, ByVal login As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetTaskDetailForPicking
-            Return MyBase.Channel.GetTaskDetailForPicking(wavePickingId, login, pEnvironmentName, pResult)
-        End Function
-        
-        Public Function GetTaskDetailForReception(ByVal serialNUmber As Integer, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetTaskDetailForReception
-            Return MyBase.Channel.GetTaskDetailForReception(serialNUmber, pEnvironmentName, pResult)
-        End Function
-        
-        Public Function GetTaskDetailForRealloc(ByVal wavePickingId As Integer, ByVal login As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetTaskDetailForRealloc
-            Return MyBase.Channel.GetTaskDetailForRealloc(wavePickingId, login, pEnvironmentName, pResult)
-        End Function
-        
-        Public Function GetTaskDetailForCount(ByVal taskId As Integer, ByVal login As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetTaskDetailForCount
-            Return MyBase.Channel.GetTaskDetailForCount(taskId, login, pEnvironmentName, pResult)
-        End Function
-        
-        Public Function UpdateAssignedOperatorToCountDetail(ByVal physicalCountDetailId As Integer, ByVal assignedTo As String, ByRef pResult As String, ByVal pEnvironmentName As String) As Boolean Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.UpdateAssignedOperatorToCountDetail
-            Return MyBase.Channel.UpdateAssignedOperatorToCountDetail(physicalCountDetailId, assignedTo, pResult, pEnvironmentName)
-        End Function
-        
-        Public Function GetOperatorAssignedToDistributionCenterByUser(ByVal login As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetOperatorAssignedToDistributionCenterByUser
-            Return MyBase.Channel.GetOperatorAssignedToDistributionCenterByUser(login, pEnvironmentName, pResult)
-        End Function
-        
-        Public Function GetOperatorsGraphicsTask(ByVal plstUsers As String, ByVal plstTasksTypes As String, ByVal pSinceDate As Date, ByVal pToDate As Date, ByVal login As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetOperatorsGraphicsTask
-            Return MyBase.Channel.GetOperatorsGraphicsTask(plstUsers, plstTasksTypes, pSinceDate, pToDate, login, pResult, pEnvironmentName)
-        End Function
-        
-        Public Function GetTaskPending(ByVal wavePickingId As Integer, ByVal login As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetTaskPending
-            Return MyBase.Channel.GetTaskPending(wavePickingId, login, pResult, pEnvironmentName)
-        End Function
-        
-        Public Function GetLocation(ByVal location As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetLocation
-            Return MyBase.Channel.GetLocation(location, pResult, pEnvironmentName)
-        End Function
-        
-        Public Function GetMaterial(ByVal codeMaterial As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetMaterial
-            Return MyBase.Channel.GetMaterial(codeMaterial, pResult, pEnvironmentName)
-        End Function
-        
-        Public Function GetCanReallocOperatorAssignedToDistributionCenterByUser(ByVal login As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetCanReallocOperatorAssignedToDistributionCenterByUser
-            Return MyBase.Channel.GetCanReallocOperatorAssignedToDistributionCenterByUser(login, pEnvironmentName, pResult)
-        End Function
-        
-        Public Function ValidateTaskStatus(ByVal login As String, ByVal serialNumber As Integer, ByVal taskId As Integer, ByVal wavePickingId As Integer, ByVal materialId As String, ByVal taskType As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.ValidateTaskStatus
-            Return MyBase.Channel.ValidateTaskStatus(login, serialNumber, taskId, wavePickingId, materialId, taskType, pEnvironmentName, pResult)
-        End Function
-        
-        Public Function ValidateStatusInMaterialsLicense(ByVal license As Integer, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.ValidateStatusInMaterialsLicense
-            Return MyBase.Channel.ValidateStatusInMaterialsLicense(license, pEnvironmentName, pResult)
-        End Function
-        
-        Public Function GetSupplierByDocument(ByVal taskId As Integer, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetSupplierByDocument
-            Return MyBase.Channel.GetSupplierByDocument(taskId, pEnvironmentName, pResult)
-        End Function
-        
-        Public Function ObtenerDetalleDeRecepcionPorDevolucionPorTarea(ByVal taskId As Integer, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.ObtenerDetalleDeRecepcionPorDevolucionPorTarea
-            Return MyBase.Channel.ObtenerDetalleDeRecepcionPorDevolucionPorTarea(taskId, pEnvironmentName, pResult)
-        End Function
-        
-        Public Function ObtenerTipoDeRecepcion(ByVal taskId As Integer, ByVal pEnvironmentName As String, ByRef pResult As String) As String Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.ObtenerTipoDeRecepcion
-            Return MyBase.Channel.ObtenerTipoDeRecepcion(taskId, pEnvironmentName, pResult)
-        End Function
-        
-        Public Function ObtenerParametros(ByVal grupoParametro As String, ByVal idParametro As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.ObtenerParametros
-            Return MyBase.Channel.ObtenerParametros(grupoParametro, idParametro, pEnvironmentName)
-        End Function
-        
-        Public Function ValidarEtiqueta(ByVal labelId As Integer, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.ValidarEtiqueta
-            Return MyBase.Channel.ValidarEtiqueta(labelId, pEnvironmentName, pResult)
-        End Function
-        
-        Public Function ObtenerInformacionPickingNoInmediato(ByVal olaPicking As Integer, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.ObtenerInformacionPickingNoInmediato
-            Return MyBase.Channel.ObtenerInformacionPickingNoInmediato(olaPicking, pEnvironmentName, pResult)
-        End Function
-        
-        Public Function ObtenerValorProyectoEnBaseALicencia(ByVal licenseId As Integer, ByVal environmentName As String) As String Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.ObtenerValorProyectoEnBaseALicencia
-            Return MyBase.Channel.ObtenerValorProyectoEnBaseALicencia(licenseId, environmentName)
-        End Function
-        
-        Public Function GetTaskByLocation(ByVal loginId As String, ByVal regimen As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetTaskByLocation
-            Return MyBase.Channel.GetTaskByLocation(loginId, regimen, pResult, pEnvironmentName)
-        End Function
-        
-        Public Function ObtenerListadoConsultasDinamicas(ByVal login As String, ByVal environmentName As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.ObtenerListadoConsultasDinamicas
-            Return MyBase.Channel.ObtenerListadoConsultasDinamicas(login, environmentName)
-        End Function
-        
-        Public Function ObtenerConsultaSeleccionada(ByVal idConsulta As Integer, ByVal sufijo As String, ByVal login As String, ByVal environmentName As String, ByVal startDate As Date, ByVal endDate As Date) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.ObtenerConsultaSeleccionada
-            Return MyBase.Channel.ObtenerConsultaSeleccionada(idConsulta, sufijo, login, environmentName, startDate, endDate)
-        End Function
-        
-        Public Function GuardarElLayoutDeLaVistaDeQueryList(ByVal idQueryList As Integer, ByVal loginId As String, ByVal layoutxml As String, ByVal environmentName As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GuardarElLayoutDeLaVistaDeQueryList
-            Return MyBase.Channel.GuardarElLayoutDeLaVistaDeQueryList(idQueryList, loginId, layoutxml, environmentName)
-        End Function
-        
-        Public Function ObtenerLayoutDeLaVistaDeQueryList(ByVal idQueryList As Integer, ByVal loginId As String, ByVal environmentName As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.ObtenerLayoutDeLaVistaDeQueryList
-            Return MyBase.Channel.ObtenerLayoutDeLaVistaDeQueryList(idQueryList, loginId, environmentName)
-        End Function
-        
+
         Public Function GetOccupancyLevel(ByVal pDate As String, ByVal pDateTo As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetOccupancyLevel
             Return MyBase.Channel.GetOccupancyLevel(pDate, pDateTo, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function CheckIfPolizaHasReview(ByVal pPoliza As String, ByRef pResult As String, ByVal pEnvironmentName As String) As Boolean Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.CheckIfPolizaHasReview
             Return MyBase.Channel.CheckIfPolizaHasReview(pPoliza, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetPickingVsAudit(ByVal pSinceDate As Date, ByVal pToDate As Date, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetPickingVsAudit
             Return MyBase.Channel.GetPickingVsAudit(pSinceDate, pToDate, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetWavePickingDetail(ByVal pWAVE_ID As Integer, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetWavePickingDetail
             Return MyBase.Channel.GetWavePickingDetail(pWAVE_ID, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetAuditLog(ByVal pDate As String, ByVal pDateTo As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetAuditLog
             Return MyBase.Channel.GetAuditLog(pDate, pDateTo, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetAuditLogDispatch(ByVal pDate As String, ByVal pDateTo As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetAuditLogDispatch
             Return MyBase.Channel.GetAuditLogDispatch(pDate, pDateTo, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetImgAudi(ByVal pCodePoliza As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetImgAudi
             Return MyBase.Channel.GetImgAudi(pCodePoliza, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetAuditLabel(ByVal pItemName As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetAuditLabel
             Return MyBase.Channel.GetAuditLabel(pItemName, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetAuditSummary(ByVal pCODIGO_POLIZA As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetAuditSummary
             Return MyBase.Channel.GetAuditSummary(pCODIGO_POLIZA, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetAuditView(ByVal pAuditID As Integer, ByVal pOPTION As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetAuditView
             Return MyBase.Channel.GetAuditView(pAuditID, pOPTION, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetMyFirstTask(ByVal pLoginID As String, ByVal pWaveID As Integer, ByVal pCODIGO_POLIZA_SOURCE As String, ByVal pSKU As String, ByVal LocationSpotTarget As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetMyFirstTask
             Return MyBase.Channel.GetMyFirstTask(pLoginID, pWaveID, pCODIGO_POLIZA_SOURCE, pSKU, LocationSpotTarget, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function IsContainedOnWave(ByVal pLoginID As String, ByVal pLocationID As String, ByVal pWaveID As Integer, ByVal pSKU As String, ByVal pLicenseID As Integer, ByVal pCODIGO_POLIZA_SOURCE As String, ByVal pSERVICE As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.IsContainedOnWave
             Return MyBase.Channel.IsContainedOnWave(pLoginID, pLocationID, pWaveID, pSKU, pLicenseID, pCODIGO_POLIZA_SOURCE, pSERVICE, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetMyTasks(ByVal pLoginID As String, ByVal pRegimen As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetMyTasks
             Return MyBase.Channel.GetMyTasks(pLoginID, pRegimen, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetClient_CommercialAggrements(ByVal pCLIENT_CODE As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetClient_CommercialAggrements
             Return MyBase.Channel.GetClient_CommercialAggrements(pCLIENT_CODE, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetServerDateTime() As String Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetServerDateTime
             Return MyBase.Channel.GetServerDateTime
         End Function
-        
+
         Public Function GetMyLastLicense(ByVal pCODIGO_POLIZA As String, ByVal pLOGIN_ID As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetMyLastLicense
             Return MyBase.Channel.GetMyLastLicense(pCODIGO_POLIZA, pLOGIN_ID, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GET_LICENSE_DETAIL(ByVal pLICENSE_ID As Integer, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GET_LICENSE_DETAIL
             Return MyBase.Channel.GET_LICENSE_DETAIL(pLICENSE_ID, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function Get_OP_WMS_POLIZA_HEADER(ByVal pCodigoPoliza As String, ByVal pNumeroOrden As String, ByVal pRegimen As String, ByVal pTipo As String, ByVal pOperador As String, ByVal validarOperador As Boolean, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.Get_OP_WMS_POLIZA_HEADER
             Return MyBase.Channel.Get_OP_WMS_POLIZA_HEADER(pCodigoPoliza, pNumeroOrden, pRegimen, pTipo, pOperador, validarOperador, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function Get_OP_WMS_IMAGENES_POLIZA(ByVal pCODIGO_BARRAS_ID As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.Get_OP_WMS_IMAGENES_POLIZA
             Return MyBase.Channel.Get_OP_WMS_IMAGENES_POLIZA(pCODIGO_BARRAS_ID, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetTransBasicView(ByVal UserLogged As String, ByVal plstUsers As String, ByVal plstTransTypes As String, ByVal pSinceDate As Date, ByVal pToDate As Date, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetTransBasicView
             Return MyBase.Channel.GetTransBasicView(UserLogged, plstUsers, plstTransTypes, pSinceDate, pToDate, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetTransBasicView_ByClient(ByVal pClientID As String, ByVal pSinceDate As Date, ByVal pToDate As Date, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetTransBasicView_ByClient
             Return MyBase.Channel.GetTransBasicView_ByClient(pClientID, pSinceDate, pToDate, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetTasksBasicView(ByVal plstUsers As String, ByVal plstTasksTypes As String, ByVal pSinceDate As Date, ByVal pToDate As Date, ByVal login As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetTasksBasicView
             Return MyBase.Channel.GetTasksBasicView(plstUsers, plstTasksTypes, pSinceDate, pToDate, login, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetRepPolizaEgreso(ByVal pCodigoPoliza As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetRepPolizaEgreso
             Return MyBase.Channel.GetRepPolizaEgreso(pCodigoPoliza, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetRepPolizaFiscal(ByVal pCodigoPoliza As String, ByVal pRegimen As String, ByVal pTipo As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetRepPolizaFiscal
             Return MyBase.Channel.GetRepPolizaFiscal(pCodigoPoliza, pRegimen, pTipo, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetTasksBasicView_Calendar(ByVal plstUsers As String, ByVal plstTasksTypes As String, ByVal pDates As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetTasksBasicView_Calendar
             Return MyBase.Channel.GetTasksBasicView_Calendar(plstUsers, plstTasksTypes, pDates, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetDemandBasicView(ByVal plstUsers As String, ByVal plstTasksTypes As String, ByVal pDateFilterType As String, ByVal pSinceDate As Date, ByVal pToDate As Date, ByVal pDates As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetDemandBasicView
             Return MyBase.Channel.GetDemandBasicView(plstUsers, plstTasksTypes, pDateFilterType, pSinceDate, pToDate, pDates, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetDemandBasicView_Calendar(ByVal plstUsers As String, ByVal plstTasksTypes As String, ByVal pDates As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetDemandBasicView_Calendar
             Return MyBase.Channel.GetDemandBasicView_Calendar(plstUsers, plstTasksTypes, pDates, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetDemandAssignedView(ByVal pSinceDate As Date, ByVal pToDate As Date, ByVal pDateFilterType As String, ByVal pDates As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetDemandAssignedView
             Return MyBase.Channel.GetDemandAssignedView(pSinceDate, pToDate, pDateFilterType, pDates, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetDemandAssignedView_Calendar(ByVal pDates As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetDemandAssignedView_Calendar
             Return MyBase.Channel.GetDemandAssignedView_Calendar(pDates, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetDemandVoidedView(ByVal pSinceDate As Date, ByVal pToDate As Date, ByVal pDateFilterType As String, ByVal pDates As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetDemandVoidedView
             Return MyBase.Channel.GetDemandVoidedView(pSinceDate, pToDate, pDateFilterType, pDates, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetDemandPendingPickingView(ByVal pSinceDate As Date, ByVal pToDate As Date, ByVal pDateFilterType As String, ByVal pDates As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetDemandPendingPickingView
             Return MyBase.Channel.GetDemandPendingPickingView(pSinceDate, pToDate, pDateFilterType, pDates, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetPendingTasks(ByVal pTaskType As String, ByVal pLoginID As String, ByVal pBIN As Integer, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetPendingTasks
             Return MyBase.Channel.GetPendingTasks(pTaskType, pLoginID, pBIN, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetPendingTasksByDoc(ByVal pERP_DOCUMENT As String, ByVal pLoginID As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetPendingTasksByDoc
             Return MyBase.Channel.GetPendingTasksByDoc(pERP_DOCUMENT, pLoginID, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetPendingTasksByDocAndSKU(ByVal pERP_DOCUMENT As String, ByVal pSKU As String, ByVal pLoginID As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetPendingTasksByDocAndSKU
             Return MyBase.Channel.GetPendingTasksByDocAndSKU(pERP_DOCUMENT, pSKU, pLoginID, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetNextERP_DOC(ByVal pLinea As String, ByVal pSector As String, ByVal pRuta As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetNextERP_DOC
             Return MyBase.Channel.GetNextERP_DOC(pLinea, pSector, pRuta, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetERP_DOC_By_BIN(ByVal pBIN As Integer, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetERP_DOC_By_BIN
             Return MyBase.Channel.GetERP_DOC_By_BIN(pBIN, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetPendingReplenishmentTasks(ByVal pTaskType As String, ByVal pLoginID As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetPendingReplenishmentTasks
             Return MyBase.Channel.GetPendingReplenishmentTasks(pTaskType, pLoginID, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetPendingRelocationTasks(ByVal pTaskType As String, ByVal pLoginID As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetPendingRelocationTasks
             Return MyBase.Channel.GetPendingRelocationTasks(pTaskType, pLoginID, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetLastTrans_ByLocation(ByVal pWarehouseParent As String, ByVal pLocation As String, ByVal pTopRows As Integer, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetLastTrans_ByLocation
             Return MyBase.Channel.GetLastTrans_ByLocation(pWarehouseParent, pLocation, pTopRows, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetCurrentDocOnDispatchInfo(ByVal pLine As String, ByVal pLogin As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetCurrentDocOnDispatchInfo
             Return MyBase.Channel.GetCurrentDocOnDispatchInfo(pLine, pLogin, pEnvironmentName, pResult)
         End Function
-        
+
         Public Function GetPerc_DocOnDispatch(ByVal pLine As String, ByVal pLogin As String, ByVal pEnvironmentName As String, ByRef pResult As String) As Double Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetPerc_DocOnDispatch
             Return MyBase.Channel.GetPerc_DocOnDispatch(pLine, pLogin, pEnvironmentName, pResult)
         End Function
-        
+
         Public Function AllowMaterialScann_DocOnDispatch(ByVal pLine As String, ByVal pMaterialID As String, ByVal pScannedQty As Double, ByVal pLogin As String, ByVal pEnvironmentName As String, ByRef pResult As String) As Double Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.AllowMaterialScann_DocOnDispatch
             Return MyBase.Channel.AllowMaterialScann_DocOnDispatch(pLine, pMaterialID, pScannedQty, pLogin, pEnvironmentName, pResult)
         End Function
-        
+
         Public Function GetTransDet_DocOnDispatch(ByVal pLine As String, ByVal pLogin As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetTransDet_DocOnDispatch
             Return MyBase.Channel.GetTransDet_DocOnDispatch(pLine, pLogin, pEnvironmentName, pResult)
         End Function
-        
+
         Public Function GetReplenishmentProdsBasicView(ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetReplenishmentProdsBasicView
             Return MyBase.Channel.GetReplenishmentProdsBasicView(pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetReplenishmentByUser(ByVal pUser As String, ByVal pWarehouse As String, ByVal pTaskType As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetReplenishmentByUser
             Return MyBase.Channel.GetReplenishmentByUser(pUser, pWarehouse, pTaskType, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetTransactionalBINInfo(ByVal pBinID As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetTransactionalBINInfo
             Return MyBase.Channel.GetTransactionalBINInfo(pBinID, pEnvironmentName, pResult)
         End Function
-        
+
         Public Function GetTransactionalDOCInfo(ByVal pDocNumber As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetTransactionalDOCInfo
             Return MyBase.Channel.GetTransactionalDOCInfo(pDocNumber, pEnvironmentName, pResult)
         End Function
-        
+
         Public Function GetPending_Docs(ByVal pLinea As String, ByVal pSector As String, ByVal pRuta As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetPending_Docs
             Return MyBase.Channel.GetPending_Docs(pLinea, pSector, pRuta, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetDocsReportBasicView(ByVal pSinceDate As Date, ByVal pToDate As Date, ByVal pDateFilterType As String, ByVal pDates As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetDocsReportBasicView
             Return MyBase.Channel.GetDocsReportBasicView(pSinceDate, pToDate, pDateFilterType, pDates, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetLineBalancingBySector(ByVal pSector As String, ByVal pRuta As String, ByVal pIncluyeAsignados As Boolean, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetLineBalancingBySector
             Return MyBase.Channel.GetLineBalancingBySector(pSector, pRuta, pIncluyeAsignados, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetDemandBySizeForBalancing(ByVal pSector As String, ByVal pRuta As String, ByVal pIncluyeAsignados As Boolean, ByVal pTamano As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetDemandBySizeForBalancing
             Return MyBase.Channel.GetDemandBySizeForBalancing(pSector, pRuta, pIncluyeAsignados, pTamano, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetClientRouteInfoByDoc(ByVal pDoc As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetClientRouteInfoByDoc
             Return MyBase.Channel.GetClientRouteInfoByDoc(pDoc, pEnvironmentName, pResult)
         End Function
-        
+
         Public Function GetNextPendingBIN(ByVal pLogin As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetNextPendingBIN
             Return MyBase.Channel.GetNextPendingBIN(pLogin, pEnvironmentName, pResult)
         End Function
-        
+
         Public Function GetPendingTasksByDoc_Kiosk(ByVal pERP_DOCUMENT As String, ByVal pLoginID As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetPendingTasksByDoc_Kiosk
             Return MyBase.Channel.GetPendingTasksByDoc_Kiosk(pERP_DOCUMENT, pLoginID, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetDocumentInfo(ByVal pDoc As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetDocumentInfo
             Return MyBase.Channel.GetDocumentInfo(pDoc, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetConsolidationByDay(ByVal pDate As Date, ByVal pLoginID As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetConsolidationByDay
             Return MyBase.Channel.GetConsolidationByDay(pDate, pLoginID, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetRutasPorSector(ByVal pSector As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetRutasPorSector
             Return MyBase.Channel.GetRutasPorSector(pSector, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetLocationsByDocument(ByVal pDoc As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetLocationsByDocument
             Return MyBase.Channel.GetLocationsByDocument(pDoc, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetFinishedDispatchAudit(ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetFinishedDispatchAudit
             Return MyBase.Channel.GetFinishedDispatchAudit(pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetPassByPolizaAvailable(ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetPassByPolizaAvailable
             Return MyBase.Channel.GetPassByPolizaAvailable(pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetPassByPolizaAssigned(ByVal pPassId As Integer, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetPassByPolizaAssigned
             Return MyBase.Channel.GetPassByPolizaAssigned(pPassId, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GET_LOCATION(ByVal pLocation As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GET_LOCATION
             Return MyBase.Channel.GET_LOCATION(pLocation, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GET_POLIZA_ASSIGNEDTO(ByVal pOperador As String, ByVal pPolizaOpcion As String, ByVal pRegimen As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GET_POLIZA_ASSIGNEDTO
             Return MyBase.Channel.GET_POLIZA_ASSIGNEDTO(pOperador, pPolizaOpcion, pRegimen, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GET_TYPE_CHARGE_MOVIL(ByVal pLicenseId As Integer, ByVal pTypeTrans As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GET_TYPE_CHARGE_MOVIL
             Return MyBase.Channel.GET_TYPE_CHARGE_MOVIL(pLicenseId, pTypeTrans, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function SearchSkuAuditoriaDesp(ByVal pBarcode As String, ByVal pPoliza As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.SearchSkuAuditoriaDesp
             Return MyBase.Channel.SearchSkuAuditoriaDesp(pBarcode, pPoliza, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetTaskIngGeneral(ByVal pCodigoPoliza As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetTaskIngGeneral
             Return MyBase.Channel.GetTaskIngGeneral(pCodigoPoliza, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function UpdatePoliza(ByVal pPOLIZA_SEGURO As String, ByVal pUSER As String, ByVal pRPOLIZA As String, ByVal pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.UpdatePoliza
             Return MyBase.Channel.UpdatePoliza(pPOLIZA_SEGURO, pUSER, pRPOLIZA, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function AddMaterial(ByVal pCODE_SKU As String, ByVal pSKU_DESCRIPTION As String, ByVal pCUSTOMER As String, ByVal pUSER As String, ByVal pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.AddMaterial
             Return MyBase.Channel.AddMaterial(pCODE_SKU, pSKU_DESCRIPTION, pCUSTOMER, pUSER, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function AddPolizaHeader(ByVal pNumeroPoliza As Integer, ByVal pCUSTOMER As String, ByVal pCUSTOMER_NAME As String, ByVal pUSER As String, ByVal pTIPO As String, ByVal pPOLASEGURADORA As String, ByVal pACUERDO_COMERCIAL As String, ByVal pIDENTITY As String, ByVal pResult As String, ByVal pEnvironmentName As String) As String Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.AddPolizaHeader
             Return MyBase.Channel.AddPolizaHeader(pNumeroPoliza, pCUSTOMER, pCUSTOMER_NAME, pUSER, pTIPO, pPOLASEGURADORA, pACUERDO_COMERCIAL, pIDENTITY, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function AddLicense(ByVal pCUSTOMER As String, ByVal pWAREHOUSE As String, ByVal pLOCATION As String, ByVal pUSER As String, ByVal pFECHA As Date, ByVal pIDENTITY As String, ByVal pResult As String, ByVal pEnvironmentName As String) As String Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.AddLicense
             Return MyBase.Channel.AddLicense(pCUSTOMER, pWAREHOUSE, pLOCATION, pUSER, pFECHA, pIDENTITY, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function AddPolizaDetail(ByVal pHEADER As String, ByVal pLINE As String, ByVal pCUSTOMER As String, ByVal pCUSTOMER_NAME As String, ByVal pUSER As String, ByVal pSKU_DESCRIPTION As String, ByVal pUNIT_MEASURE As String, ByVal pQTY As String, ByVal pTOTAL As String, ByVal pUNIT_PRICE As String, ByVal pFECHA As Date, ByVal pResult As String, ByVal pEnvironmentName As String) As String Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.AddPolizaDetail
             Return MyBase.Channel.AddPolizaDetail(pHEADER, pLINE, pCUSTOMER, pCUSTOMER_NAME, pUSER, pSKU_DESCRIPTION, pUNIT_MEASURE, pQTY, pTOTAL, pUNIT_PRICE, pFECHA, pResult, pEnvironmentName)
         End Function
-        
-        Public Function AddInventory( _
-                    ByVal pcodeSku As String,  _
-                    ByVal pskudes As String,  _
-                    ByVal pumesure As String,  _
-                    ByVal pqty As Integer,  _
-                    ByVal ptotal As Decimal,  _
-                    ByVal puprice As Decimal,  _
-                    ByVal pcustomer As String,  _
-                    ByVal pcustomername As String,  _
-                    ByVal puser As String,  _
-                    ByVal pwh As String,  _
-                    ByVal psigno As String,  _
-                    ByVal plocation As String,  _
-                    ByVal pheader As String,  _
-                    ByVal pfecha As Date,  _
-                    ByVal pacuerdo As String,  _
-                    ByVal pRESULTADO As String,  _
-                    ByVal pResult As String,  _
+
+        Public Function AddInventory(
+                    ByVal pcodeSku As String,
+                    ByVal pskudes As String,
+                    ByVal pumesure As String,
+                    ByVal pqty As Integer,
+                    ByVal ptotal As Decimal,
+                    ByVal puprice As Decimal,
+                    ByVal pcustomer As String,
+                    ByVal pcustomername As String,
+                    ByVal puser As String,
+                    ByVal pwh As String,
+                    ByVal psigno As String,
+                    ByVal plocation As String,
+                    ByVal pheader As String,
+                    ByVal pfecha As Date,
+                    ByVal pacuerdo As String,
+                    ByVal pRESULTADO As String,
+                    ByVal pResult As String,
                     ByVal pEnvironmentName As String) As String Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.AddInventory
             Return MyBase.Channel.AddInventory(pcodeSku, pskudes, pumesure, pqty, ptotal, puprice, pcustomer, pcustomername, puser, pwh, psigno, plocation, pheader, pfecha, pacuerdo, pRESULTADO, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function AddGeneralData(ByVal pcustomer As String, ByVal pcustomername As String, ByVal puser As String, ByVal pwh As String, ByVal plocation As String, ByVal pseguro As String, ByVal pacuerdo As String, ByVal pfecha As Date, ByVal pResult As String, ByVal pEnvironmentName As String) As String Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.AddGeneralData
             Return MyBase.Channel.AddGeneralData(pcustomer, pcustomername, puser, pwh, plocation, pseguro, pacuerdo, pfecha, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function ResultProcessDispatchExternal(ByVal pEnvironmentName As String, ByVal FechaDocumento As Date) As String Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.ResultProcessDispatchExternal
             Return MyBase.Channel.ResultProcessDispatchExternal(pEnvironmentName, FechaDocumento)
         End Function
-        
+
         Public Function ReceiveInventoryFromFile(ByVal pDATA As System.Data.DataSet, ByVal pEnvironmentName As String) As String Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.ReceiveInventoryFromFile
             Return MyBase.Channel.ReceiveInventoryFromFile(pDATA, pEnvironmentName)
         End Function
-        
+
         Public Function ReceiveInventoryFromFileExcel(ByVal pDATA As System.Data.DataTable, ByVal pLOGIN As String, ByVal pCLIENT As String, ByVal pEnvironmentName As String) As String Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.ReceiveInventoryFromFileExcel
             Return MyBase.Channel.ReceiveInventoryFromFileExcel(pDATA, pLOGIN, pCLIENT, pEnvironmentName)
         End Function
-        
+
         Public Function AddDataToReviewAddExternal(ByVal pDATA As System.Data.DataTable, ByVal pLOGIN As String, ByVal pCLIENT As String, ByVal pEnvironmentName As String) As String Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.AddDataToReviewAddExternal
             Return MyBase.Channel.AddDataToReviewAddExternal(pDATA, pLOGIN, pCLIENT, pEnvironmentName)
         End Function
-        
+
         Public Function GetReviewDispatchForExternal(ByVal pEnvironmentName As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetReviewDispatchForExternal
             Return MyBase.Channel.GetReviewDispatchForExternal(pEnvironmentName)
         End Function
-        
+
         Public Function GetReviewDispatchForExternalUpdate(ByVal pEnvironmentName As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetReviewDispatchForExternalUpdate
             Return MyBase.Channel.GetReviewDispatchForExternalUpdate(pEnvironmentName)
         End Function
-        
+
         Public Function GetWarehouseForExt(ByVal pEnvironmentName As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetWarehouseForExt
             Return MyBase.Channel.GetWarehouseForExt(pEnvironmentName)
         End Function
-        
+
         Public Function GetInsuranceAvilable(ByVal pPoliza As String, ByVal pUser As String, ByVal pRpoliza As Integer, ByVal pResult As String, ByVal pEnvironmentName As String) As String Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetInsuranceAvilable
             Return MyBase.Channel.GetInsuranceAvilable(pPoliza, pUser, pRpoliza, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function updateInventory(ByVal pcode As String, ByVal pqty As Integer, ByVal pcustomer As String, ByVal presultado As String, ByVal pResult As String, ByVal pEnvironmentName As String) As String Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.updateInventory
             Return MyBase.Channel.updateInventory(pcode, pqty, pcustomer, presultado, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function UpdateQuotaLatter(ByVal pCarta As String, ByVal pRegimen As String, ByVal pMedida As String, ByVal pFirma As String, ByVal pClave As String, ByVal positionPerson As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.UpdateQuotaLatter
             Return MyBase.Channel.UpdateQuotaLatter(pCarta, pRegimen, pMedida, pFirma, pClave, positionPerson, pResult, pEnvironmentName)
         End Function
-        
+
         Public Function GetQuotaLatter(ByVal pStatus As String, ByVal pStatus2 As String, ByVal pStatus3 As String, ByVal pFechaInicio As Date, ByVal pFechaFinal As Date, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetQuotaLatter
             Return MyBase.Channel.GetQuotaLatter(pStatus, pStatus2, pStatus3, pFechaInicio, pFechaFinal, pResult, pEnvironmentName)
+        End Function
+
+        Public Function GetQuotaLatterGarita(ByVal pDocId As Integer, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetQuotaLatterGarita
+            Return MyBase.Channel.GetQuotaLatterGarita(pDocId, pResult, pEnvironmentName)
+        End Function
+
+        Public Function GetDocPolizaEnc(ByVal pDocId As Integer, ByVal pCodigoPoliza As String, ByVal pNumeroOrden As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetDocPolizaEnc
+            Return MyBase.Channel.GetDocPolizaEnc(pDocId, pCodigoPoliza, pNumeroOrden, pResult, pEnvironmentName)
+        End Function
+
+        Public Function GetLineasAvailable(ByVal pDocId As Integer, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetLineasAvailable
+            Return MyBase.Channel.GetLineasAvailable(pDocId, pResult, pEnvironmentName)
+        End Function
+
+        Public Function GetAcuseRecibo(ByVal pFechaInicio As Date, ByVal pFechaFinal As Date, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetAcuseRecibo
+            Return MyBase.Channel.GetAcuseRecibo(pFechaInicio, pFechaFinal, pResult, pEnvironmentName)
+        End Function
+
+        Public Function ObtenerTareasRecepcionAsignadasUsuario(ByVal Regimen As String, ByVal SerialNumber As String, ByVal AssignedTo As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.ObtenerTareasRecepcionAsignadasUsuario
+            Return MyBase.Channel.ObtenerTareasRecepcionAsignadasUsuario(Regimen, SerialNumber, AssignedTo, pEnvironmentName, pResult)
+        End Function
+
+        Public Function DistribuirTareasATodosLosOperadores(ByVal login As String, ByVal pEnvironmentName As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.DistribuirTareasATodosLosOperadores
+            Return MyBase.Channel.DistribuirTareasATodosLosOperadores(login, pEnvironmentName)
+        End Function
+
+        Public Function DistribuirTareasATodosLosOperadoresSinTareas(ByVal login As String, ByRef result As String, ByVal pEnvironmentName As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.DistribuirTareasATodosLosOperadoresSinTareas
+            Return MyBase.Channel.DistribuirTareasATodosLosOperadoresSinTareas(login, result, pEnvironmentName)
+        End Function
+
+        Public Function LicenceHasInventory(ByVal IdLicence As Integer, ByVal pEnvironmentName As String) As Boolean Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.LicenceHasInventory
+            Return MyBase.Channel.LicenceHasInventory(IdLicence, pEnvironmentName)
+        End Function
+
+        Public Function AuthorizeErpReceptionDocument(ByVal ErpReceptionDocumentId As Integer, ByVal LastUpdateBy As String, ByVal pEnvironmentName As String, ByRef pResult As String) As Boolean Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.AuthorizeErpReceptionDocument
+            Return MyBase.Channel.AuthorizeErpReceptionDocument(ErpReceptionDocumentId, LastUpdateBy, pEnvironmentName, pResult)
+        End Function
+
+        Public Function GetReceptionTag(ByVal taskId As Integer, ByVal login As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetReceptionTag
+            Return MyBase.Channel.GetReceptionTag(taskId, login, pEnvironmentName, pResult)
+        End Function
+
+        Public Function GetPickingTag(ByVal wavePickingId As Integer, ByVal login As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetPickingTag
+            Return MyBase.Channel.GetPickingTag(wavePickingId, login, pEnvironmentName, pResult)
+        End Function
+
+        Public Function GetLabel(ByVal labelId As Integer, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetLabel
+            Return MyBase.Channel.GetLabel(labelId, pEnvironmentName, pResult)
+        End Function
+
+        Public Function AuthorizeErpPickingDocument(ByVal ErpPickingDocumentId As Integer, ByVal LastUpdateBy As String, ByVal pEnvironmentName As String, ByRef pResult As String) As Boolean Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.AuthorizeErpPickingDocument
+            Return MyBase.Channel.AuthorizeErpPickingDocument(ErpPickingDocumentId, LastUpdateBy, pEnvironmentName, pResult)
+        End Function
+
+        Public Function GetTaskDetailForPicking(ByVal wavePickingId As Integer, ByVal login As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetTaskDetailForPicking
+            Return MyBase.Channel.GetTaskDetailForPicking(wavePickingId, login, pEnvironmentName, pResult)
+        End Function
+
+        Public Function GetTaskDetailForReception(ByVal serialNUmber As Integer, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetTaskDetailForReception
+            Return MyBase.Channel.GetTaskDetailForReception(serialNUmber, pEnvironmentName, pResult)
+        End Function
+
+        Public Function GetTaskDetailForRealloc(ByVal wavePickingId As Integer, ByVal login As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetTaskDetailForRealloc
+            Return MyBase.Channel.GetTaskDetailForRealloc(wavePickingId, login, pEnvironmentName, pResult)
+        End Function
+
+        Public Function GetTaskDetailForCount(ByVal taskId As Integer, ByVal login As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetTaskDetailForCount
+            Return MyBase.Channel.GetTaskDetailForCount(taskId, login, pEnvironmentName, pResult)
+        End Function
+
+        Public Function UpdateAssignedOperatorToCountDetail(ByVal physicalCountDetailId As Integer, ByVal assignedTo As String, ByRef pResult As String, ByVal pEnvironmentName As String) As Boolean Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.UpdateAssignedOperatorToCountDetail
+            Return MyBase.Channel.UpdateAssignedOperatorToCountDetail(physicalCountDetailId, assignedTo, pResult, pEnvironmentName)
+        End Function
+
+        Public Function GetOperatorAssignedToDistributionCenterByUser(ByVal login As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetOperatorAssignedToDistributionCenterByUser
+            Return MyBase.Channel.GetOperatorAssignedToDistributionCenterByUser(login, pEnvironmentName, pResult)
+        End Function
+
+        Public Function GetOperatorsGraphicsTask(ByVal plstUsers As String, ByVal plstTasksTypes As String, ByVal pSinceDate As Date, ByVal pToDate As Date, ByVal login As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetOperatorsGraphicsTask
+            Return MyBase.Channel.GetOperatorsGraphicsTask(plstUsers, plstTasksTypes, pSinceDate, pToDate, login, pResult, pEnvironmentName)
+        End Function
+
+        Public Function GetTaskPending(ByVal wavePickingId As Integer, ByVal login As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetTaskPending
+            Return MyBase.Channel.GetTaskPending(wavePickingId, login, pResult, pEnvironmentName)
+        End Function
+
+        Public Function GetLocation(ByVal location As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetLocation
+            Return MyBase.Channel.GetLocation(location, pResult, pEnvironmentName)
+        End Function
+
+        Public Function GetMaterial(ByVal codeMaterial As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetMaterial
+            Return MyBase.Channel.GetMaterial(codeMaterial, pResult, pEnvironmentName)
+        End Function
+
+        Public Function GetCanReallocOperatorAssignedToDistributionCenterByUser(ByVal login As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetCanReallocOperatorAssignedToDistributionCenterByUser
+            Return MyBase.Channel.GetCanReallocOperatorAssignedToDistributionCenterByUser(login, pEnvironmentName, pResult)
+        End Function
+
+        Public Function ValidateTaskStatus(ByVal login As String, ByVal serialNumber As Integer, ByVal taskId As Integer, ByVal wavePickingId As Integer, ByVal materialId As String, ByVal taskType As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.ValidateTaskStatus
+            Return MyBase.Channel.ValidateTaskStatus(login, serialNumber, taskId, wavePickingId, materialId, taskType, pEnvironmentName, pResult)
+        End Function
+
+        Public Function ValidateStatusInMaterialsLicense(ByVal license As Integer, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.ValidateStatusInMaterialsLicense
+            Return MyBase.Channel.ValidateStatusInMaterialsLicense(license, pEnvironmentName, pResult)
+        End Function
+
+        Public Function GetSupplierByDocument(ByVal taskId As Integer, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetSupplierByDocument
+            Return MyBase.Channel.GetSupplierByDocument(taskId, pEnvironmentName, pResult)
+        End Function
+
+        Public Function ObtenerDetalleDeRecepcionPorDevolucionPorTarea(ByVal taskId As Integer, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.ObtenerDetalleDeRecepcionPorDevolucionPorTarea
+            Return MyBase.Channel.ObtenerDetalleDeRecepcionPorDevolucionPorTarea(taskId, pEnvironmentName, pResult)
+        End Function
+
+        Public Function ObtenerTipoDeRecepcion(ByVal taskId As Integer, ByVal pEnvironmentName As String, ByRef pResult As String) As String Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.ObtenerTipoDeRecepcion
+            Return MyBase.Channel.ObtenerTipoDeRecepcion(taskId, pEnvironmentName, pResult)
+        End Function
+
+        Public Function ObtenerParametros(ByVal grupoParametro As String, ByVal idParametro As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.ObtenerParametros
+            Return MyBase.Channel.ObtenerParametros(grupoParametro, idParametro, pEnvironmentName)
+        End Function
+
+        Public Function ValidarEtiqueta(ByVal labelId As Integer, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.ValidarEtiqueta
+            Return MyBase.Channel.ValidarEtiqueta(labelId, pEnvironmentName, pResult)
+        End Function
+
+        Public Function ObtenerInformacionPickingNoInmediato(ByVal olaPicking As Integer, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.ObtenerInformacionPickingNoInmediato
+            Return MyBase.Channel.ObtenerInformacionPickingNoInmediato(olaPicking, pEnvironmentName, pResult)
+        End Function
+
+        Public Function ObtenerValorProyectoEnBaseALicencia(ByVal licenseId As Integer, ByVal environmentName As String) As String Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.ObtenerValorProyectoEnBaseALicencia
+            Return MyBase.Channel.ObtenerValorProyectoEnBaseALicencia(licenseId, environmentName)
+        End Function
+
+        Public Function GetTaskByLocation(ByVal loginId As String, ByVal regimen As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetTaskByLocation
+            Return MyBase.Channel.GetTaskByLocation(loginId, regimen, pResult, pEnvironmentName)
+        End Function
+
+        Public Function ObtenerListadoConsultasDinamicas(ByVal login As String, ByVal environmentName As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.ObtenerListadoConsultasDinamicas
+            Return MyBase.Channel.ObtenerListadoConsultasDinamicas(login, environmentName)
+        End Function
+
+        Public Function ObtenerConsultaSeleccionada(ByVal idConsulta As Integer, ByVal sufijo As String, ByVal login As String, ByVal environmentName As String, ByVal startDate As Date, ByVal endDate As Date) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.ObtenerConsultaSeleccionada
+            Return MyBase.Channel.ObtenerConsultaSeleccionada(idConsulta, sufijo, login, environmentName, startDate, endDate)
+        End Function
+
+        Public Function GuardarElLayoutDeLaVistaDeQueryList(ByVal idQueryList As Integer, ByVal loginId As String, ByVal layoutxml As String, ByVal environmentName As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GuardarElLayoutDeLaVistaDeQueryList
+            Return MyBase.Channel.GuardarElLayoutDeLaVistaDeQueryList(idQueryList, loginId, layoutxml, environmentName)
+        End Function
+
+        Public Function ObtenerLayoutDeLaVistaDeQueryList(ByVal idQueryList As Integer, ByVal loginId As String, ByVal environmentName As String) As System.Data.DataTable Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.ObtenerLayoutDeLaVistaDeQueryList
+            Return MyBase.Channel.ObtenerLayoutDeLaVistaDeQueryList(idQueryList, loginId, environmentName)
+        End Function
+
+        Public Function GetLastTaskOrderNumber(ByRef pResult As String, ByVal penvironmentName As String) As System.Data.DataSet Implements OnePlanServices_InfoTrans.WMS_InfoTransSoap.GetLastTaskOrderNumber
+            Return MyBase.Channel.GetLastTaskOrderNumber(pResult, penvironmentName)
         End Function
     End Class
 End Namespace

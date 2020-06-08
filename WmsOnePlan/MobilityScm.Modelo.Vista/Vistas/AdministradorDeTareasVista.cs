@@ -1569,21 +1569,13 @@ namespace MobilityScm.Modelo.Vistas
         {
             try
             {
-                var parametro = this.ParametrosAutorizacionTraslado.FirstOrDefault(p => p.GROUP_ID == Enums.GetStringValue(GrupoParametro.DemandaDePicking) && p.PARAMETER_ID == Enums.GetStringValue(IdParametro.AutorizacionEnvioErpTraslado));
-                if (parametro != null && parametro.VALUE != null && parametro.VALUE == "1")
-                {
-                    if (!Tarea.ToList().Exists(t => t.IS_SELECTED
-                                               && ((t.TASK_TYPE.ToUpper().Equals("TAREA_PICKING") && !t.TASK_SUBTYPE.Equals("DESPACHO_WT")) || t.TASK_TYPE.ToUpper().Equals("TAREA_RECEPCION"))
-                                               && (t.IS_FROM_ERP.ToUpper().Equals("SI") || t.IS_FROM_SONDA.ToUpper().Equals("SI") || t.TASK_SUBTYPE == "RECEPCION_TRASLADO")
-                                               && t.IS_COMPLETED.ToUpper().Equals("COMPLETA")
-                                               && t.DetalleErp.Exists(td => td.IS_POSTED_ERP != 1 || td.ATTEMPTED_WITH_ERROR == td.MAX_ATTEMPTS)
-                                              )) return;
-                    UsuarioDeseaAutorizarDocumentoErp?.Invoke(null, null);
-                }
-                else
-                {
-                    InteraccionConUsuarioServicio.Mensaje("Actualmente el sistema no tiene configurado el envío de solicitudes de traslado");
-                }
+                if (!Tarea.ToList().Exists(t => t.IS_SELECTED
+                                            && ((t.TASK_TYPE.ToUpper().Equals("TAREA_PICKING") && !t.TASK_SUBTYPE.Equals("DESPACHO_WT")) || t.TASK_TYPE.ToUpper().Equals("TAREA_RECEPCION"))
+                                            && (t.IS_FROM_ERP.ToUpper().Equals("SI") || t.IS_FROM_SONDA.ToUpper().Equals("SI") || t.TASK_SUBTYPE == "RECEPCION_TRASLADO")
+                                            && t.IS_COMPLETED.ToUpper().Equals("COMPLETA")
+                                            && t.DetalleErp.Exists(td => td.IS_POSTED_ERP != 1 || td.ATTEMPTED_WITH_ERROR == td.MAX_ATTEMPTS)
+                                            )) return;
+                UsuarioDeseaAutorizarDocumentoErp?.Invoke(null, null);
             }
             catch (Exception exception)
             {

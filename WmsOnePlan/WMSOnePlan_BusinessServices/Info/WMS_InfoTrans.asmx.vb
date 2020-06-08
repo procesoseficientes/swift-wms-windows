@@ -4775,4 +4775,38 @@ Public Class WMS_InfoTrans
         End Try
     End Function
 
+    <WebMethod(Description:="Obtiene el número de orden de la última tarea hecha")>
+    Public Function GetLastTaskOrderNumber(ByRef pResult As String, penvironmentName As String) As DataSet
+        Dim sqldb_conexion As SqlConnection
+        sqldb_conexion = New SqlConnection(AppSettings(penvironmentName).ToString)
+        Dim SQL As String = ""
+        Dim pDebugInfo As String = ""
+        sqldb_conexion.Open()
+
+        Try
+            SQL = "SELECT TOP 1 ORDER_NUMBER FROM " + DefaultSchema + "OP_WMS_TASK_LIST ORDER BY ASSIGNED_DATE DESC;"
+
+
+            Dim miscDA As SqlDataAdapter = New SqlDataAdapter(SQL, sqldb_conexion)
+            Dim miscDS As DataSet = New DataSet()
+
+            miscDA.Fill(miscDS, "GetOccupancyLevel")
+
+            If miscDS.Tables(0).Rows.Count <= 0 Then
+                pResult = "ERROR, No hay registros"
+                Return Nothing
+            Else
+                pResult = "OK"
+                Return miscDS
+            End If
+
+        Catch ex As Exception
+            pResult = "ERROR, (GetLastTaskOrderNumber) " + ex.Message
+            Return Nothing
+        Finally
+            sqldb_conexion.Dispose()
+            sqldb_conexion = Nothing
+        End Try
+    End Function
+
 End Class

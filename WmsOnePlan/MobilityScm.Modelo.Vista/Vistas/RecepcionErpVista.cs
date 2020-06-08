@@ -783,52 +783,7 @@ namespace MobilityScm.Modelo.Vistas
             {
                 if (e.KeyCode == Keys.Enter)
                 {
-                    UiError.SetError(UiListaCliente, "", ErrorType.None);
-
-                    if (!ValidarAlAgregarDocDet(false))
-                    {
-                        UsuarioDeseaObtenerFacturaParaDevolucion?.Invoke(sender,
-                            new DocumentoRecepcionERPArgumento
-                            {
-                                DocumentoRecepcionERP =
-                                    new DocumentoRecepcionErpEncabezado
-                                    {
-                                        DOC_NUM = UiTextoNumeroDeFactura.Text,
-                                        EXTERNAL_SOURCE_ID =
-                                            FuenteExterna.First(fe => fe.CLIENT_CODE == UiListaCliente.EditValue.ToString())
-                                                .EXTERNAL_SOURCE_ID,
-                                        OWNER = UiListaCliente.EditValue.ToString()
-                                    }
-                                ,
-                                DocumentoRecepcionErpDetalle = new DocumentoRecepcionErpDetalle
-                                {
-                                    LOGIN_ID = UiListaOperador.EditValue?.ToString() ?? ""
-                                    ,
-                                    LOCATION_SPOT = UiListaUbicacion.EditValue?.ToString() ?? ""
-                                    ,
-                                    TYPE_RECEPCTION = (Enums.GetStringValue((FuenteDeRecepcionDeErp)UiBarFuente.EditValue) == Enums.GetStringValue(FuenteDeRecepcionDeErp.OrdenDeCompra) ? UiListaTipoRecepcion.EditValue.ToString() : "DEVOLUCION_FACTURA")
-                                    ,
-                                    TYPE_RECEPCTION_DRESCRIPTION = (Enums.GetStringValue((FuenteDeRecepcionDeErp)UiBarFuente.EditValue) == Enums.GetStringValue(FuenteDeRecepcionDeErp.OrdenDeCompra) ? UiListaTipoRecepcion.Text : "DEVOLUCION_FACTURA")
-                                    ,
-                                    PRIORITY = Convert.ToInt32(UiListaPrioridad.EditValue)
-                                    ,
-                                    PRIORITY_DESCRIPTION = UiListaPrioridad.Text
-                                    ,
-                                    TRADE_AGREEMENT_ID = Convert.ToInt32(UiListaAcuerdoComercial.EditValue)
-                                    ,
-                                    TRADE_AGREEMENT_DESCRIPTION = UiListaAcuerdoComercial.Text
-                                    ,
-                                    CLIENT_CODE = UiListaCliente.EditValue.ToString()
-                                    ,
-                                    INSURANCE_DOC_ID = UiListaPolizasDeSeguro.EditValue.ToString()
-                                    ,
-                                    INSURANCE_DOC_DESCRIPTION = UiListaPolizasDeSeguro.Text
-                                    ,
-                                    SOURCE = Enums.GetStringValue((FuenteDeRecepcionDeErp)UiBarFuente.EditValue)
-                                }
-                            });
-                        UiTextoNumeroDeFactura.Text = "";
-                    }
+                    GetFactura(sender);
                 }
             }
             catch (Exception ex)
@@ -837,6 +792,59 @@ namespace MobilityScm.Modelo.Vistas
             }
         }
 
-        
+        public void GetFactura (object sender)
+        {
+            UiError.SetError(UiListaCliente, "", ErrorType.None);
+
+            if (!ValidarAlAgregarDocDet(false))
+            {
+                UsuarioDeseaObtenerFacturaParaDevolucion?.Invoke(sender,
+                    new DocumentoRecepcionERPArgumento
+                    {
+                        DocumentoRecepcionERP =
+                            new DocumentoRecepcionErpEncabezado
+                            {
+                                DOC_NUM = UiTextoNumeroDeFactura.Text,
+                                EXTERNAL_SOURCE_ID =
+                                    FuenteExterna.First(fe => fe.CLIENT_CODE == UiListaCliente.EditValue.ToString())
+                                        .EXTERNAL_SOURCE_ID,
+                                OWNER = UiListaCliente.EditValue.ToString()
+                            }
+                        ,
+                        DocumentoRecepcionErpDetalle = new DocumentoRecepcionErpDetalle
+                        {
+                            LOGIN_ID = UiListaOperador.EditValue?.ToString() ?? ""
+                            ,
+                            LOCATION_SPOT = UiListaUbicacion.EditValue?.ToString() ?? ""
+                            ,
+                            TYPE_RECEPCTION = (Enums.GetStringValue((FuenteDeRecepcionDeErp)UiBarFuente.EditValue) == Enums.GetStringValue(FuenteDeRecepcionDeErp.OrdenDeCompra) ? UiListaTipoRecepcion.EditValue.ToString() : "DEVOLUCION_FACTURA")
+                            ,
+                            TYPE_RECEPCTION_DRESCRIPTION = (Enums.GetStringValue((FuenteDeRecepcionDeErp)UiBarFuente.EditValue) == Enums.GetStringValue(FuenteDeRecepcionDeErp.OrdenDeCompra) ? UiListaTipoRecepcion.Text : "DEVOLUCION_FACTURA")
+                            ,
+                            PRIORITY = Convert.ToInt32(UiListaPrioridad.EditValue)
+                            ,
+                            PRIORITY_DESCRIPTION = UiListaPrioridad.Text
+                            ,
+                            TRADE_AGREEMENT_ID = Convert.ToInt32(UiListaAcuerdoComercial.EditValue)
+                            ,
+                            TRADE_AGREEMENT_DESCRIPTION = UiListaAcuerdoComercial.Text
+                            ,
+                            CLIENT_CODE = UiListaCliente.EditValue.ToString()
+                            ,
+                            INSURANCE_DOC_ID = UiListaPolizasDeSeguro.EditValue.ToString()
+                            ,
+                            INSURANCE_DOC_DESCRIPTION = UiListaPolizasDeSeguro.Text
+                            ,
+                            SOURCE = Enums.GetStringValue((FuenteDeRecepcionDeErp)UiBarFuente.EditValue)
+                        }
+                    });
+                UiTextoNumeroDeFactura.Text = "";
+            }
+        }
+
+        private void UiTextoNumeroDeFactura_Leave(object sender, EventArgs e)
+        {
+            GetFactura(sender);
+        }
     }
 }
