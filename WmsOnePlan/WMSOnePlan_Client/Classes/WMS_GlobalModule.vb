@@ -70,7 +70,7 @@ Module WMS_GlobalModule
                 If pResult = "OK" Then
 #If DEBUG Then
                     'WSHost = "http://localhost:8088/WMSOnePlan_BusinessServices/"
-                    WSHost = "http://192.168.0.5:9999"
+                    WSHost = "http://172.16.20.11:8088"
 #End If
 #If Not DEBUG Then
                     WSHost = xdata.Tables(0).Rows(0)("WS_HOST").ToString
