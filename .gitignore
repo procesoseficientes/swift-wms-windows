@@ -341,4 +341,3 @@ healthchecksdb
 
 bin/
 obj/
-*.config
