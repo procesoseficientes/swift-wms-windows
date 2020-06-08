@@ -433,13 +433,15 @@ Public Class frmGeneraOla
                 btnOLaPicking.Caption = String.Format("Nueva Ola de Picking(Actual {0})", _olaPicking)
 
                 pResult = String.Empty
-                xserv.set_picking_status(GridViewPending.GetFocusedRowCellValue("DOC_ID"), GridViewPending.GetFocusedRowCellValue("LINE_NUMBER"), "ASSIGNED", PublicLoginInfo.Environment, pResult)
+                Dim xset As DataSet = xserv.set_picking_status(GridViewPending.GetFocusedRowCellValue("DOC_ID"), GridViewPending.GetFocusedRowCellValue("LINE_NUMBER"), "ASSIGNED", PublicLoginInfo.Environment, pResult)
                 If Not pResult = "OK" Then
                     NotifyStatus(pResult, True, True)
                 Else
                     _olaPicking = 0
                     LlenarGridPendientes()
-                    NotifyStatus("Orden generada exitosamente", True, False)
+
+                    Dim noOrden As String = xset.Tables(0).Rows(0)(0).ToString()
+                    NotifyStatus("Orden no." + noOrden + " generada exitosamente", True, False)
                 End If
             Else
                 NotifyStatus(pResult, True, True)

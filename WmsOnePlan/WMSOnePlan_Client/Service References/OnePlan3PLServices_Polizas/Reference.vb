@@ -201,7 +201,7 @@ Namespace OnePlan3PLServices_Polizas
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/set_picking_status", ReplyAction:="*"),  _
          System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function set_picking_status(ByVal pDOC_ID As Integer, ByVal pLINE_NUMBER As Integer, ByVal pSTATUS As String, ByVal pEnvironmentName As String, ByRef pResult As String) As Boolean
+        Function set_picking_status(ByVal pDOC_ID As Integer, ByVal pLINE_NUMBER As Integer, ByVal pSTATUS As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataSet
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/get_skus_match", ReplyAction:="*"),  _
          System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
@@ -738,7 +738,7 @@ Namespace OnePlan3PLServices_Polizas
             Return MyBase.Channel.get_pending_picking(pWHERE, pEnvironmentName, pResult)
         End Function
         
-        Public Function set_picking_status(ByVal pDOC_ID As Integer, ByVal pLINE_NUMBER As Integer, ByVal pSTATUS As String, ByVal pEnvironmentName As String, ByRef pResult As String) As Boolean Implements OnePlan3PLServices_Polizas._3PL_PolizasSoap.set_picking_status
+        Public Function set_picking_status(ByVal pDOC_ID As Integer, ByVal pLINE_NUMBER As Integer, ByVal pSTATUS As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataSet Implements OnePlan3PLServices_Polizas._3PL_PolizasSoap.set_picking_status
             Return MyBase.Channel.set_picking_status(pDOC_ID, pLINE_NUMBER, pSTATUS, pEnvironmentName, pResult)
         End Function
         
