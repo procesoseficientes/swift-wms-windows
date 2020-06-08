@@ -953,8 +953,7 @@ Public Class _3PL_Polizas
             miscDA.Fill(miscDS, "OP_WMS3PL_PENDING")
             pResult = "OK"
             Return miscDS
-        Catch ex As Exception
-            pResult = ex.Message
+        Catch ex As Exception            
             pResult = "ERROR," + ex.Message
             Return Nothing
 
@@ -962,7 +961,7 @@ Public Class _3PL_Polizas
     End Function
 
     <WebMethod(Description:=" actualiza picking en proceso")>
-    Public Function set_picking_status(ByVal pDOC_ID As Integer, ByVal pLINE_NUMBER As Integer, ByVal pSTATUS As String, ByVal pEnvironmentName As String, ByRef pResult As String) As Boolean
+    Public Function set_picking_status(ByVal pDOC_ID As Integer, ByVal pLINE_NUMBER As Integer, ByVal pSTATUS As String, ByVal pEnvironmentName As String, ByRef pResult As String) As DataSet
         Dim XSQL As String
 
         Try
@@ -970,15 +969,27 @@ Public Class _3PL_Polizas
             ExecuteSqlTransaction(AppSettings(pEnvironmentName).ToString, XSQL, pResult)
 
             If pResult = "OK" Then
-                Return True
+                XSQL = "SELECT TOP 1 WAVE_PICKING_ID FROM " + DefaultSchema + "OP_WMS_TASK_LIST ORDER BY ASSIGNED_DATE DESC;"
+                Dim sqldb_conexion As SqlConnection
+                Try
+                    sqldb_conexion = New SqlConnection(AppSettings(pEnvironmentName).ToString)
+                    Dim miscDA As SqlDataAdapter = New SqlDataAdapter(XSQL, sqldb_conexion)
+                    Dim miscDS As DataSet = New DataSet()
+                    miscDA.Fill(miscDS, "OP_WMS_TASK_LIST")
+                    pResult = "OK"
+                    Return miscDS
+                Catch ex As Exception
+                    pResult = "ERROR," + ex.Message + ex.StackTrace
+                    Return Nothing
+                End Try
             Else
-                Return False
+                pResult = "ERROR"
+                Return Nothing
             End If
 
         Catch ex As Exception
-            pResult = ex.Message
-
-            Return False
+            pResult = "ERROR," + ex.Message
+            Return Nothing
         End Try
     End Function
 
