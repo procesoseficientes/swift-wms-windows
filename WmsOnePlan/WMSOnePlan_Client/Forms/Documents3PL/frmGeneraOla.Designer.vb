@@ -20,7 +20,7 @@ Partial Class frmGeneraOla
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim StyleFormatCondition1 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition()
+        Dim StyleFormatCondition2 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmGeneraOla))
         Me.UiColCantidadTransaccion = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.RepositoryItemCalcEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit()
@@ -78,6 +78,7 @@ Partial Class frmGeneraOla
         Me.barDockControlLeft = New DevExpress.XtraBars.BarDockControl()
         Me.barDockControlRight = New DevExpress.XtraBars.BarDockControl()
         Me.BarButtonItem1 = New DevExpress.XtraBars.BarButtonItem()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         CType(Me.RepositoryItemCalcEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cmbRegimen.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -93,6 +94,7 @@ Partial Class frmGeneraOla
         Me.SplitContainerControl1.SuspendLayout()
         CType(Me.dxError, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BarManager1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'UiColCantidadTransaccion
@@ -119,7 +121,7 @@ Partial Class frmGeneraOla
         '
         'cmbRegimen
         '
-        Me.cmbRegimen.Location = New System.Drawing.Point(136, 71)
+        Me.cmbRegimen.Location = New System.Drawing.Point(123, 11)
         Me.cmbRegimen.Margin = New System.Windows.Forms.Padding(6)
         Me.cmbRegimen.Name = "cmbRegimen"
         Me.cmbRegimen.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
@@ -136,7 +138,7 @@ Partial Class frmGeneraOla
         '
         'cmbCliente
         '
-        Me.cmbCliente.Location = New System.Drawing.Point(136, 121)
+        Me.cmbCliente.Location = New System.Drawing.Point(123, 61)
         Me.cmbCliente.Margin = New System.Windows.Forms.Padding(6)
         Me.cmbCliente.Name = "cmbCliente"
         Me.cmbCliente.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
@@ -164,7 +166,7 @@ Partial Class frmGeneraOla
         Me.GridAssigned.Margin = New System.Windows.Forms.Padding(6)
         Me.GridAssigned.Name = "GridAssigned"
         Me.GridAssigned.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemCalcEdit1})
-        Me.GridAssigned.Size = New System.Drawing.Size(1110, 879)
+        Me.GridAssigned.Size = New System.Drawing.Size(1158, 693)
         Me.GridAssigned.TabIndex = 4
         Me.GridAssigned.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridViewAssigned})
         '
@@ -173,20 +175,20 @@ Partial Class frmGeneraOla
         Me.GridViewAssigned.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.UiColLicencia, Me.UiColMaterialCodigo, Me.UiColMaterialDescripcion, Me.UiColCodigoBarras, Me.UiColLote, Me.UiColFechaExpiracion, Me.UiColVin, Me.UiColCantidadDisponible, Me.UiColCantidadTransaccion, Me.colGrabo, Me.UiColEstado, Me.UiColBloqueado, Me.UiColColor})
         Me.GridViewAssigned.DetailHeight = 673
         Me.GridViewAssigned.FixedLineWidth = 4
-        StyleFormatCondition1.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition1.Appearance.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        StyleFormatCondition1.Appearance.BorderColor = System.Drawing.Color.Blue
-        StyleFormatCondition1.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        StyleFormatCondition1.Appearance.ForeColor = System.Drawing.SystemColors.ControlText
-        StyleFormatCondition1.Appearance.Options.UseBackColor = True
-        StyleFormatCondition1.Appearance.Options.UseBorderColor = True
-        StyleFormatCondition1.Appearance.Options.UseFont = True
-        StyleFormatCondition1.Appearance.Options.UseForeColor = True
-        StyleFormatCondition1.ApplyToRow = True
-        StyleFormatCondition1.Column = Me.UiColCantidadTransaccion
-        StyleFormatCondition1.Condition = DevExpress.XtraGrid.FormatConditionEnum.Expression
-        StyleFormatCondition1.Expression = "[grabo] != 'NO'"
-        Me.GridViewAssigned.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition1})
+        StyleFormatCondition2.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition2.Appearance.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        StyleFormatCondition2.Appearance.BorderColor = System.Drawing.Color.Blue
+        StyleFormatCondition2.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        StyleFormatCondition2.Appearance.ForeColor = System.Drawing.SystemColors.ControlText
+        StyleFormatCondition2.Appearance.Options.UseBackColor = True
+        StyleFormatCondition2.Appearance.Options.UseBorderColor = True
+        StyleFormatCondition2.Appearance.Options.UseFont = True
+        StyleFormatCondition2.Appearance.Options.UseForeColor = True
+        StyleFormatCondition2.ApplyToRow = True
+        StyleFormatCondition2.Column = Me.UiColCantidadTransaccion
+        StyleFormatCondition2.Condition = DevExpress.XtraGrid.FormatConditionEnum.Expression
+        StyleFormatCondition2.Expression = "[grabo] != 'NO'"
+        Me.GridViewAssigned.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition2})
         Me.GridViewAssigned.GridControl = Me.GridAssigned
         Me.GridViewAssigned.Name = "GridViewAssigned"
         Me.GridViewAssigned.OptionsView.ColumnAutoWidth = False
@@ -329,7 +331,7 @@ Partial Class frmGeneraOla
         '
         'cmbUsuarios
         '
-        Me.cmbUsuarios.Location = New System.Drawing.Point(910, 71)
+        Me.cmbUsuarios.Location = New System.Drawing.Point(897, 11)
         Me.cmbUsuarios.Margin = New System.Windows.Forms.Padding(6)
         Me.cmbUsuarios.Name = "cmbUsuarios"
         Me.cmbUsuarios.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
@@ -356,7 +358,7 @@ Partial Class frmGeneraOla
         Me.GridPending.MainView = Me.GridViewPending
         Me.GridPending.Margin = New System.Windows.Forms.Padding(6)
         Me.GridPending.Name = "GridPending"
-        Me.GridPending.Size = New System.Drawing.Size(978, 879)
+        Me.GridPending.Size = New System.Drawing.Size(978, 693)
         Me.GridPending.TabIndex = 3
         Me.GridPending.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridViewPending})
         '
@@ -543,17 +545,15 @@ Partial Class frmGeneraOla
         '
         'SplitContainerControl1
         '
-        Me.SplitContainerControl1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.SplitContainerControl1.Location = New System.Drawing.Point(24, 192)
+        Me.SplitContainerControl1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.SplitContainerControl1.Location = New System.Drawing.Point(0, 184)
         Me.SplitContainerControl1.Margin = New System.Windows.Forms.Padding(6)
         Me.SplitContainerControl1.Name = "SplitContainerControl1"
         Me.SplitContainerControl1.Panel1.Controls.Add(Me.GridPending)
         Me.SplitContainerControl1.Panel1.Text = "Panel1"
         Me.SplitContainerControl1.Panel2.Controls.Add(Me.GridAssigned)
         Me.SplitContainerControl1.Panel2.Text = "Panel2"
-        Me.SplitContainerControl1.Size = New System.Drawing.Size(2108, 879)
+        Me.SplitContainerControl1.Size = New System.Drawing.Size(2156, 693)
         Me.SplitContainerControl1.SplitterPosition = 978
         Me.SplitContainerControl1.TabIndex = 8
         Me.SplitContainerControl1.Text = "SplitContainerControl1"
@@ -564,7 +564,7 @@ Partial Class frmGeneraOla
         '
         'LabelControl1
         '
-        Me.LabelControl1.Location = New System.Drawing.Point(24, 77)
+        Me.LabelControl1.Location = New System.Drawing.Point(11, 17)
         Me.LabelControl1.Margin = New System.Windows.Forms.Padding(6)
         Me.LabelControl1.Name = "LabelControl1"
         Me.LabelControl1.Size = New System.Drawing.Size(58, 25)
@@ -573,7 +573,7 @@ Partial Class frmGeneraOla
         '
         'LabelControl2
         '
-        Me.LabelControl2.Location = New System.Drawing.Point(798, 77)
+        Me.LabelControl2.Location = New System.Drawing.Point(785, 17)
         Me.LabelControl2.Margin = New System.Windows.Forms.Padding(6)
         Me.LabelControl2.Name = "LabelControl2"
         Me.LabelControl2.Size = New System.Drawing.Size(95, 25)
@@ -582,7 +582,7 @@ Partial Class frmGeneraOla
         '
         'LabelControl3
         '
-        Me.LabelControl3.Location = New System.Drawing.Point(24, 127)
+        Me.LabelControl3.Location = New System.Drawing.Point(11, 67)
         Me.LabelControl3.Margin = New System.Windows.Forms.Padding(6)
         Me.LabelControl3.Name = "LabelControl3"
         Me.LabelControl3.Size = New System.Drawing.Size(71, 25)
@@ -658,7 +658,7 @@ Partial Class frmGeneraOla
         '
         Me.barDockControlBottom.CausesValidation = False
         Me.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 1094)
+        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 877)
         Me.barDockControlBottom.Manager = Me.BarManager1
         Me.barDockControlBottom.Margin = New System.Windows.Forms.Padding(6)
         Me.barDockControlBottom.Size = New System.Drawing.Size(2156, 0)
@@ -670,7 +670,7 @@ Partial Class frmGeneraOla
         Me.barDockControlLeft.Location = New System.Drawing.Point(0, 46)
         Me.barDockControlLeft.Manager = Me.BarManager1
         Me.barDockControlLeft.Margin = New System.Windows.Forms.Padding(6)
-        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 1048)
+        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 831)
         '
         'barDockControlRight
         '
@@ -679,7 +679,7 @@ Partial Class frmGeneraOla
         Me.barDockControlRight.Location = New System.Drawing.Point(2156, 46)
         Me.barDockControlRight.Manager = Me.BarManager1
         Me.barDockControlRight.Margin = New System.Windows.Forms.Padding(6)
-        Me.barDockControlRight.Size = New System.Drawing.Size(0, 1048)
+        Me.barDockControlRight.Size = New System.Drawing.Size(0, 831)
         '
         'BarButtonItem1
         '
@@ -687,18 +687,27 @@ Partial Class frmGeneraOla
         Me.BarButtonItem1.Id = 1
         Me.BarButtonItem1.Name = "BarButtonItem1"
         '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.LabelControl3)
+        Me.Panel1.Controls.Add(Me.LabelControl2)
+        Me.Panel1.Controls.Add(Me.LabelControl1)
+        Me.Panel1.Controls.Add(Me.cmbCliente)
+        Me.Panel1.Controls.Add(Me.cmbUsuarios)
+        Me.Panel1.Controls.Add(Me.cmbRegimen)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 46)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(2156, 138)
+        Me.Panel1.TabIndex = 17
+        '
         'frmGeneraOla
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(2156, 1094)
-        Me.Controls.Add(Me.LabelControl3)
-        Me.Controls.Add(Me.LabelControl2)
-        Me.Controls.Add(Me.LabelControl1)
+        Me.ClientSize = New System.Drawing.Size(2156, 877)
         Me.Controls.Add(Me.SplitContainerControl1)
-        Me.Controls.Add(Me.cmbCliente)
-        Me.Controls.Add(Me.cmbUsuarios)
-        Me.Controls.Add(Me.cmbRegimen)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.barDockControlLeft)
         Me.Controls.Add(Me.barDockControlRight)
         Me.Controls.Add(Me.barDockControlBottom)
@@ -706,22 +715,24 @@ Partial Class frmGeneraOla
         Me.Margin = New System.Windows.Forms.Padding(6)
         Me.Name = "frmGeneraOla"
         Me.Text = "Generar Orden de preparado para despacho"
-        CType(Me.RepositoryItemCalcEdit1,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.cmbRegimen.Properties,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.GridView1,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.cmbCliente.Properties,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.GridViewClientes,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.GridAssigned,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.GridViewAssigned,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.cmbUsuarios.Properties,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.GridLookUpEdit1View,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.GridPending,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.GridViewPending,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.SplitContainerControl1,System.ComponentModel.ISupportInitialize).EndInit
-        Me.SplitContainerControl1.ResumeLayout(false)
-        CType(Me.dxError,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.BarManager1,System.ComponentModel.ISupportInitialize).EndInit
-        Me.ResumeLayout(false)
+        CType(Me.RepositoryItemCalcEdit1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.cmbRegimen.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.cmbCliente.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GridViewClientes, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GridAssigned, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GridViewAssigned, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.cmbUsuarios.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GridLookUpEdit1View, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GridPending, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GridViewPending, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SplitContainerControl1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.SplitContainerControl1.ResumeLayout(False)
+        CType(Me.dxError, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BarManager1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        Me.ResumeLayout(False)
         Me.PerformLayout
 
 End Sub
@@ -781,4 +792,5 @@ End Sub
     Friend WithEvents UiColEstado As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents UiColBloqueado As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents UiColColor As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents Panel1 As Panel
 End Class
