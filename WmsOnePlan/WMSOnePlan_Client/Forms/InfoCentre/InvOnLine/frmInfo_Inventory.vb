@@ -581,8 +581,10 @@ Public Class frmInfo_Inventory
         If layoutLoadedinSession = False Then
             layoutLoadedinSession = True
             Dim strPath = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly.Location).ToString() & "\frmInfo_InventoryGrid" & PublicLoginInfo.LoginID & ".xml"
-            GridView1.RestoreLayoutFromXml(strPath)
-            GridView1.SaveLayoutToXml(strPath)
+            If File.Exists(strPath) Then
+                GridView1.RestoreLayoutFromXml(strPath)
+                GridView1.SaveLayoutToXml(strPath)
+            End If
         End If
         loadLayoutTimer.Stop()
     End Sub
