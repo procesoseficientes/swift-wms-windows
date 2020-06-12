@@ -1926,7 +1926,7 @@ namespace MobilityScm.Modelo.Vistas
             try
             {
                 registroConfirmacionRecepcion = ultimoRegistro;
-                if (registroConfirmacionRecepcion.IS_COMPLETED == Enums.GetStringValue(EstadoTarea.Completa) && registroConfirmacionRecepcion.TASK_TYPE == "TAREA_RECEPCION")
+                if (registroConfirmacionRecepcion.IS_COMPLETED == Enums.GetStringValue(EstadoTarea.Completa) && registroConfirmacionRecepcion.TASK_TYPE == "TAREA_RECEPCION" && registroConfirmacionRecepcion.IS_FROM_ERP == "Si" )
                 {
                     UITabOlaPicking.Text = "Ola de Picking";
                     UiColQtyConfirmado.OptionsColumn.AllowEdit = UiColERP_BODEGA.OptionsColumn.AllowEdit = UIBtnReAbrirTask.Enabled = UIBotonRefrescarConfirmacionSerie.Enabled = UIBotonGuardarConfirmacionSerie.Enabled = UiBotonRefrescarConfirmacionRecepcion.Enabled = UiBotonGuardarConfirmacionRecepcion.Enabled = UIBotonAsignarTodo.Enabled = (registroConfirmacionRecepcion.IS_AUTHORIZED != 1);

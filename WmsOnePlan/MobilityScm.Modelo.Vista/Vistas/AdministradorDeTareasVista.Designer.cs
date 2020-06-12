@@ -365,6 +365,7 @@
             this.UIColOlaTone = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UIColOlaCaliber = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UIColOlaStatus = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.UIColOlaPicking = new DevExpress.XtraGrid.Columns.GridColumn();
             this.barDockControl15 = new DevExpress.XtraBars.BarDockControl();
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.bar16 = new DevExpress.XtraBars.Bar();
@@ -389,7 +390,6 @@
             this.UiDialogoParaGuardar = new System.Windows.Forms.SaveFileDialog();
             this.bar12 = new DevExpress.XtraBars.Bar();
             this.bar13 = new DevExpress.XtraBars.Bar();
-            this.UIColOlaPicking = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.UiVistaDetalleErpEncabezado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiContenedorVistaTareasEncabezado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiVistaEncabezadoConDetalle)).BeginInit();
@@ -559,7 +559,7 @@
             this.UiContenedorVistaTareasEncabezado.Name = "UiContenedorVistaTareasEncabezado";
             this.UiContenedorVistaTareasEncabezado.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.UiListaOperadoresEncabezado});
-            this.UiContenedorVistaTareasEncabezado.Size = new System.Drawing.Size(1421, 382);
+            this.UiContenedorVistaTareasEncabezado.Size = new System.Drawing.Size(1425, 382);
             this.UiContenedorVistaTareasEncabezado.TabIndex = 0;
             this.UiContenedorVistaTareasEncabezado.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.UiVistaEncabezadoConDetalle,
@@ -1387,31 +1387,31 @@
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.UiContendorDeBarras;
-            this.barDockControlTop.Size = new System.Drawing.Size(1671, 33);
+            this.barDockControlTop.Size = new System.Drawing.Size(1675, 24);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 647);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 650);
             this.barDockControlBottom.Manager = this.UiContendorDeBarras;
-            this.barDockControlBottom.Size = new System.Drawing.Size(1671, 0);
+            this.barDockControlBottom.Size = new System.Drawing.Size(1675, 0);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 33);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 24);
             this.barDockControlLeft.Manager = this.UiContendorDeBarras;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 614);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 626);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(1671, 33);
+            this.barDockControlRight.Location = new System.Drawing.Point(1675, 24);
             this.barDockControlRight.Manager = this.UiContendorDeBarras;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 614);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 626);
             // 
             // UiTabTareas
             // 
@@ -1423,7 +1423,7 @@
             this.UiTabTareas.Controls.Add(this.barDockControlTop);
             this.UiTabTareas.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiTabTareas.ImageOptions.Image")));
             this.UiTabTareas.Name = "UiTabTareas";
-            this.UiTabTareas.Size = new System.Drawing.Size(1671, 647);
+            this.UiTabTareas.Size = new System.Drawing.Size(1675, 650);
             this.UiTabTareas.Text = "Tareas";
             // 
             // UiSplitControlTareas
@@ -1431,13 +1431,13 @@
             this.UiSplitControlTareas.CollapsePanel = DevExpress.XtraEditors.SplitCollapsePanel.Panel2;
             this.UiSplitControlTareas.Dock = System.Windows.Forms.DockStyle.Fill;
             this.UiSplitControlTareas.Horizontal = false;
-            this.UiSplitControlTareas.Location = new System.Drawing.Point(250, 33);
+            this.UiSplitControlTareas.Location = new System.Drawing.Point(250, 24);
             this.UiSplitControlTareas.Name = "UiSplitControlTareas";
             this.UiSplitControlTareas.Panel1.Controls.Add(this.UiContenedorVistaTareasEncabezado);
             this.UiSplitControlTareas.Panel1.Text = "Panel1";
             this.UiSplitControlTareas.Panel2.Controls.Add(this.UiContenedorDetalle);
             this.UiSplitControlTareas.Panel2.Text = "Panel2";
-            this.UiSplitControlTareas.Size = new System.Drawing.Size(1421, 614);
+            this.UiSplitControlTareas.Size = new System.Drawing.Size(1425, 626);
             this.UiSplitControlTareas.SplitterPosition = 382;
             this.UiSplitControlTareas.TabIndex = 9;
             this.UiSplitControlTareas.Text = "splitContainerControl1";
@@ -1460,7 +1460,7 @@
             this.UiListaOperadoresParaPickingDetalle,
             this.UiListaOperadoresParaReubicacionDetalle,
             this.UiListaOperadoresParaConteo});
-            this.UiContenedorDetalle.Size = new System.Drawing.Size(1421, 227);
+            this.UiContenedorDetalle.Size = new System.Drawing.Size(1425, 234);
             this.UiContenedorDetalle.TabIndex = 1;
             this.UiContenedorDetalle.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.UiVistaDetalleCounting,
@@ -2055,11 +2055,11 @@
             this.UiControDeHeramientas.Caption = "";
             this.UiControDeHeramientas.Controls.Add(this.UiNavegacionPaginasPricipal);
             this.UiControDeHeramientas.Dock = System.Windows.Forms.DockStyle.Left;
-            this.UiControDeHeramientas.Location = new System.Drawing.Point(0, 33);
+            this.UiControDeHeramientas.Location = new System.Drawing.Point(0, 24);
             this.UiControDeHeramientas.Name = "UiControDeHeramientas";
             this.UiControDeHeramientas.OptionsView.ShowMenuButton = false;
             this.UiControDeHeramientas.OptionsView.ShowSearchPanel = false;
-            this.UiControDeHeramientas.Size = new System.Drawing.Size(250, 614);
+            this.UiControDeHeramientas.Size = new System.Drawing.Size(250, 626);
             this.UiControDeHeramientas.TabIndex = 4;
             // 
             // UiNavegacionPaginasPricipal
@@ -2074,9 +2074,9 @@
             this.UiNavegacionPaginasPricipal.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
             this.UiPaginaFecha,
             this.UiPaginaUsuarios});
-            this.UiNavegacionPaginasPricipal.RegularSize = new System.Drawing.Size(250, 614);
+            this.UiNavegacionPaginasPricipal.RegularSize = new System.Drawing.Size(250, 626);
             this.UiNavegacionPaginasPricipal.SelectedPage = this.UiPaginaFecha;
-            this.UiNavegacionPaginasPricipal.Size = new System.Drawing.Size(250, 614);
+            this.UiNavegacionPaginasPricipal.Size = new System.Drawing.Size(250, 626);
             this.UiNavegacionPaginasPricipal.TabIndex = 3;
             this.UiNavegacionPaginasPricipal.Text = "navigationPane1";
             // 
@@ -2097,7 +2097,7 @@
             this.UiPaginaFecha.Controls.Add(this.UiGrupoRadioFechas);
             this.UiPaginaFecha.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiPaginaFecha.ImageOptions.Image")));
             this.UiPaginaFecha.Name = "UiPaginaFecha";
-            this.UiPaginaFecha.Size = new System.Drawing.Size(200, 568);
+            this.UiPaginaFecha.Size = new System.Drawing.Size(179, 562);
             // 
             // UiListaDeClases
             // 
@@ -2114,7 +2114,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", "UiBotonRefrescar-Operadores", null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.UiListaDeClases.Properties.PopupView = this.UiVistaClases;
             this.UiListaDeClases.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UILista_Properties_ButtonClick);
-            this.UiListaDeClases.Size = new System.Drawing.Size(185, 22);
+            this.UiListaDeClases.Size = new System.Drawing.Size(185, 24);
             this.UiListaDeClases.TabIndex = 11;
             this.UiListaDeClases.CustomDisplayText += new DevExpress.XtraEditors.Controls.CustomDisplayTextEventHandler(this.UiListaDeClases_CustomDisplayText);
             // 
@@ -2177,7 +2177,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", "UiBotonRefrescar-Operadores", null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.UiListaDeOperadores.Properties.PopupView = this.UiListaVistaDeOperadores;
             this.UiListaDeOperadores.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UILista_Properties_ButtonClick);
-            this.UiListaDeOperadores.Size = new System.Drawing.Size(185, 22);
+            this.UiListaDeOperadores.Size = new System.Drawing.Size(185, 24);
             this.UiListaDeOperadores.TabIndex = 9;
             this.UiListaDeOperadores.EditValueChanged += new System.EventHandler(this.UiListaDeOperadores_EditValueChanged);
             this.UiListaDeOperadores.CustomDisplayText += new DevExpress.XtraEditors.Controls.CustomDisplayTextEventHandler(this.UiListaDeOperadores_CustomDisplayText);
@@ -2496,19 +2496,19 @@
             this.UiTabGraficas.Controls.Add(this.barDockControl1);
             this.UiTabGraficas.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiTabGraficas.ImageOptions.Image")));
             this.UiTabGraficas.Name = "UiTabGraficas";
-            this.UiTabGraficas.Size = new System.Drawing.Size(1671, 647);
+            this.UiTabGraficas.Size = new System.Drawing.Size(1675, 650);
             this.UiTabGraficas.Text = "Gráficas";
             // 
             // UiSplitGraficas
             // 
             this.UiSplitGraficas.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.UiSplitGraficas.Location = new System.Drawing.Point(0, 31);
+            this.UiSplitGraficas.Location = new System.Drawing.Point(0, 24);
             this.UiSplitGraficas.Name = "UiSplitGraficas";
             this.UiSplitGraficas.Panel1.Controls.Add(this.UiChartTareasPorOperador);
             this.UiSplitGraficas.Panel1.Text = "Panel1";
             this.UiSplitGraficas.Panel2.Controls.Add(this.UiChartTiposTareas);
             this.UiSplitGraficas.Panel2.Text = "Panel2";
-            this.UiSplitGraficas.Size = new System.Drawing.Size(1671, 616);
+            this.UiSplitGraficas.Size = new System.Drawing.Size(1675, 626);
             this.UiSplitGraficas.SplitterPosition = 520;
             this.UiSplitGraficas.TabIndex = 1;
             this.UiSplitGraficas.Text = "UiSplitGraficas";
@@ -2540,9 +2540,8 @@
             series1.View = pieSeriesView1;
             this.UiChartTareasPorOperador.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series1};
-            this.UiChartTareasPorOperador.SeriesTemplate.SeriesColorizer = null;
             this.UiChartTareasPorOperador.SeriesTemplate.View = pieSeriesView2;
-            this.UiChartTareasPorOperador.Size = new System.Drawing.Size(520, 616);
+            this.UiChartTareasPorOperador.Size = new System.Drawing.Size(520, 626);
             this.UiChartTareasPorOperador.TabIndex = 0;
             chartTitle1.Text = "Tareas por operador";
             this.UiChartTareasPorOperador.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
@@ -2572,11 +2571,10 @@
             this.UiChartTiposTareas.SeriesTemplate.Label = sideBySideBarSeriesLabel1;
             this.UiChartTiposTareas.SeriesTemplate.NumericSummaryOptions.SummaryFunction = "AVERAGE([TIME])";
             this.UiChartTiposTareas.SeriesTemplate.QualitativeSummaryOptions.SummaryFunction = "AVERAGE([TIME])";
-            this.UiChartTiposTareas.SeriesTemplate.SeriesColorizer = null;
             this.UiChartTiposTareas.SeriesTemplate.SeriesDataMember = "TASK_ASSIGNEDTO";
             this.UiChartTiposTareas.SeriesTemplate.ToolTipEnabled = DevExpress.Utils.DefaultBoolean.True;
             this.UiChartTiposTareas.SeriesTemplate.ToolTipSeriesPattern = "{V:#.00}";
-            this.UiChartTiposTareas.Size = new System.Drawing.Size(1146, 616);
+            this.UiChartTiposTareas.Size = new System.Drawing.Size(1145, 626);
             this.UiChartTiposTareas.TabIndex = 1;
             chartTitle2.Text = "Tiempo promedio de tareas";
             this.UiChartTiposTareas.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
@@ -2590,9 +2588,9 @@
             // 
             this.barDockControl3.CausesValidation = false;
             this.barDockControl3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControl3.Location = new System.Drawing.Point(0, 31);
+            this.barDockControl3.Location = new System.Drawing.Point(0, 24);
             this.barDockControl3.Manager = this.UiBarManagerGraficas;
-            this.barDockControl3.Size = new System.Drawing.Size(0, 616);
+            this.barDockControl3.Size = new System.Drawing.Size(0, 626);
             // 
             // UiBarManagerGraficas
             // 
@@ -2664,23 +2662,23 @@
             this.barDockControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControl1.Location = new System.Drawing.Point(0, 0);
             this.barDockControl1.Manager = this.UiBarManagerGraficas;
-            this.barDockControl1.Size = new System.Drawing.Size(1671, 31);
+            this.barDockControl1.Size = new System.Drawing.Size(1675, 24);
             // 
             // barDockControl2
             // 
             this.barDockControl2.CausesValidation = false;
             this.barDockControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl2.Location = new System.Drawing.Point(0, 647);
+            this.barDockControl2.Location = new System.Drawing.Point(0, 650);
             this.barDockControl2.Manager = this.UiBarManagerGraficas;
-            this.barDockControl2.Size = new System.Drawing.Size(1671, 0);
+            this.barDockControl2.Size = new System.Drawing.Size(1675, 0);
             // 
             // barDockControl4
             // 
             this.barDockControl4.CausesValidation = false;
             this.barDockControl4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl4.Location = new System.Drawing.Point(1671, 31);
+            this.barDockControl4.Location = new System.Drawing.Point(1675, 24);
             this.barDockControl4.Manager = this.UiBarManagerGraficas;
-            this.barDockControl4.Size = new System.Drawing.Size(0, 616);
+            this.barDockControl4.Size = new System.Drawing.Size(0, 626);
             // 
             // UITabConfirmarRecepcion
             // 
@@ -2690,19 +2688,19 @@
             this.UITabConfirmarRecepcion.Controls.Add(this.barDockControl6);
             this.UITabConfirmarRecepcion.Controls.Add(this.barDockControl5);
             this.UITabConfirmarRecepcion.Name = "UITabConfirmarRecepcion";
-            this.UITabConfirmarRecepcion.Size = new System.Drawing.Size(1671, 647);
+            this.UITabConfirmarRecepcion.Size = new System.Drawing.Size(1675, 650);
             this.UITabConfirmarRecepcion.Text = "Confirmación Recepción";
             // 
             // splitContainerControl1
             // 
             this.splitContainerControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainerControl1.Location = new System.Drawing.Point(0, 31);
+            this.splitContainerControl1.Location = new System.Drawing.Point(0, 24);
             this.splitContainerControl1.Name = "splitContainerControl1";
             this.splitContainerControl1.Panel1.Controls.Add(this.UiContenedorVistaConfirmacionDetalleRecepcion);
             this.splitContainerControl1.Panel1.Text = "Panel1";
             this.splitContainerControl1.Panel2.Controls.Add(this.UiContenedorVistaConfirmacionOrdenDeCompra);
             this.splitContainerControl1.Panel2.Text = "Panel2";
-            this.splitContainerControl1.Size = new System.Drawing.Size(1671, 616);
+            this.splitContainerControl1.Size = new System.Drawing.Size(1675, 626);
             this.splitContainerControl1.SplitterPosition = 706;
             this.splitContainerControl1.TabIndex = 10;
             this.splitContainerControl1.Text = "splitContainerControl1";
@@ -2714,7 +2712,7 @@
             this.UiContenedorVistaConfirmacionDetalleRecepcion.MainView = this.UIVistaConfirmacionDetalleRecepcion;
             this.UiContenedorVistaConfirmacionDetalleRecepcion.MenuManager = this.UiContendorDeBarras;
             this.UiContenedorVistaConfirmacionDetalleRecepcion.Name = "UiContenedorVistaConfirmacionDetalleRecepcion";
-            this.UiContenedorVistaConfirmacionDetalleRecepcion.Size = new System.Drawing.Size(706, 616);
+            this.UiContenedorVistaConfirmacionDetalleRecepcion.Size = new System.Drawing.Size(706, 626);
             this.UiContenedorVistaConfirmacionDetalleRecepcion.TabIndex = 4;
             this.UiContenedorVistaConfirmacionDetalleRecepcion.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.UIVistaConfirmacionDetalleRecepcion});
@@ -2833,7 +2831,7 @@
             this.UiContenedorVistaConfirmacionOrdenDeCompra.Name = "UiContenedorVistaConfirmacionOrdenDeCompra";
             this.UiContenedorVistaConfirmacionOrdenDeCompra.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.UiLookUpEditBodegaERP});
-            this.UiContenedorVistaConfirmacionOrdenDeCompra.Size = new System.Drawing.Size(960, 616);
+            this.UiContenedorVistaConfirmacionOrdenDeCompra.Size = new System.Drawing.Size(959, 626);
             this.UiContenedorVistaConfirmacionOrdenDeCompra.TabIndex = 5;
             this.UiContenedorVistaConfirmacionOrdenDeCompra.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.UIVistaConfirmacionOrdenDeCompra});
@@ -3011,9 +3009,9 @@
             // 
             this.barDockControl7.CausesValidation = false;
             this.barDockControl7.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControl7.Location = new System.Drawing.Point(0, 31);
+            this.barDockControl7.Location = new System.Drawing.Point(0, 24);
             this.barDockControl7.Manager = this.UIBarManagerConfirmarRecepcion;
-            this.barDockControl7.Size = new System.Drawing.Size(0, 616);
+            this.barDockControl7.Size = new System.Drawing.Size(0, 626);
             // 
             // UIBarManagerConfirmarRecepcion
             // 
@@ -3132,23 +3130,23 @@
             this.barDockControl5.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControl5.Location = new System.Drawing.Point(0, 0);
             this.barDockControl5.Manager = this.UIBarManagerConfirmarRecepcion;
-            this.barDockControl5.Size = new System.Drawing.Size(1671, 31);
+            this.barDockControl5.Size = new System.Drawing.Size(1675, 24);
             // 
             // barDockControl6
             // 
             this.barDockControl6.CausesValidation = false;
             this.barDockControl6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl6.Location = new System.Drawing.Point(0, 647);
+            this.barDockControl6.Location = new System.Drawing.Point(0, 650);
             this.barDockControl6.Manager = this.UIBarManagerConfirmarRecepcion;
-            this.barDockControl6.Size = new System.Drawing.Size(1671, 0);
+            this.barDockControl6.Size = new System.Drawing.Size(1675, 0);
             // 
             // barDockControl8
             // 
             this.barDockControl8.CausesValidation = false;
             this.barDockControl8.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl8.Location = new System.Drawing.Point(1671, 31);
+            this.barDockControl8.Location = new System.Drawing.Point(1675, 24);
             this.barDockControl8.Manager = this.UIBarManagerConfirmarRecepcion;
-            this.barDockControl8.Size = new System.Drawing.Size(0, 616);
+            this.barDockControl8.Size = new System.Drawing.Size(0, 626);
             // 
             // barButtonItem1
             // 
@@ -3165,17 +3163,17 @@
             this.UITabConfirmarSeries.Controls.Add(this.barDockControl9);
             this.UITabConfirmarSeries.Name = "UITabConfirmarSeries";
             this.UITabConfirmarSeries.PageVisible = false;
-            this.UITabConfirmarSeries.Size = new System.Drawing.Size(1671, 647);
+            this.UITabConfirmarSeries.Size = new System.Drawing.Size(1675, 650);
             this.UITabConfirmarSeries.Text = "Confirmación Series";
             // 
             // UIContenedorVistaConfirmacionSeries
             // 
             this.UIContenedorVistaConfirmacionSeries.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.UIContenedorVistaConfirmacionSeries.Location = new System.Drawing.Point(0, 31);
+            this.UIContenedorVistaConfirmacionSeries.Location = new System.Drawing.Point(0, 24);
             this.UIContenedorVistaConfirmacionSeries.MainView = this.UIVistaConfirmacionSeries;
             this.UIContenedorVistaConfirmacionSeries.MenuManager = this.UiContendorDeBarras;
             this.UIContenedorVistaConfirmacionSeries.Name = "UIContenedorVistaConfirmacionSeries";
-            this.UIContenedorVistaConfirmacionSeries.Size = new System.Drawing.Size(1671, 616);
+            this.UIContenedorVistaConfirmacionSeries.Size = new System.Drawing.Size(1675, 626);
             this.UIContenedorVistaConfirmacionSeries.TabIndex = 5;
             this.UIContenedorVistaConfirmacionSeries.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.UIVistaConfirmacionSeries});
@@ -3288,9 +3286,9 @@
             // 
             this.barDockControl11.CausesValidation = false;
             this.barDockControl11.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControl11.Location = new System.Drawing.Point(0, 31);
+            this.barDockControl11.Location = new System.Drawing.Point(0, 24);
             this.barDockControl11.Manager = this.UIBarManagerConfirmacionSeries;
-            this.barDockControl11.Size = new System.Drawing.Size(0, 616);
+            this.barDockControl11.Size = new System.Drawing.Size(0, 626);
             // 
             // UIBarManagerConfirmacionSeries
             // 
@@ -3387,23 +3385,23 @@
             this.barDockControl9.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControl9.Location = new System.Drawing.Point(0, 0);
             this.barDockControl9.Manager = this.UIBarManagerConfirmacionSeries;
-            this.barDockControl9.Size = new System.Drawing.Size(1671, 31);
+            this.barDockControl9.Size = new System.Drawing.Size(1675, 24);
             // 
             // barDockControl10
             // 
             this.barDockControl10.CausesValidation = false;
             this.barDockControl10.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl10.Location = new System.Drawing.Point(0, 647);
+            this.barDockControl10.Location = new System.Drawing.Point(0, 650);
             this.barDockControl10.Manager = this.UIBarManagerConfirmacionSeries;
-            this.barDockControl10.Size = new System.Drawing.Size(1671, 0);
+            this.barDockControl10.Size = new System.Drawing.Size(1675, 0);
             // 
             // barDockControl12
             // 
             this.barDockControl12.CausesValidation = false;
             this.barDockControl12.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl12.Location = new System.Drawing.Point(1671, 31);
+            this.barDockControl12.Location = new System.Drawing.Point(1675, 24);
             this.barDockControl12.Manager = this.UIBarManagerConfirmacionSeries;
-            this.barDockControl12.Size = new System.Drawing.Size(0, 616);
+            this.barDockControl12.Size = new System.Drawing.Size(0, 626);
             // 
             // UITabOlaPicking
             // 
@@ -3413,7 +3411,7 @@
             this.UITabOlaPicking.Controls.Add(this.barDockControl14);
             this.UITabOlaPicking.Controls.Add(this.barDockControl13);
             this.UITabOlaPicking.Name = "UITabOlaPicking";
-            this.UITabOlaPicking.Size = new System.Drawing.Size(1671, 647);
+            this.UITabOlaPicking.Size = new System.Drawing.Size(1675, 650);
             this.UITabOlaPicking.Text = "Ola de Picking";
             // 
             // UIContenedorOla
@@ -3423,7 +3421,7 @@
             this.UIContenedorOla.MainView = this.UIViewOlaPicking;
             this.UIContenedorOla.MenuManager = this.UiContendorDeBarras;
             this.UIContenedorOla.Name = "UIContenedorOla";
-            this.UIContenedorOla.Size = new System.Drawing.Size(1671, 600);
+            this.UIContenedorOla.Size = new System.Drawing.Size(1675, 606);
             this.UIContenedorOla.TabIndex = 5;
             this.UIContenedorOla.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.UIViewOlaPicking});
@@ -3618,13 +3616,21 @@
             this.UIColOlaStatus.Visible = true;
             this.UIColOlaStatus.VisibleIndex = 18;
             // 
+            // UIColOlaPicking
+            // 
+            this.UIColOlaPicking.Caption = "Ola de Picking";
+            this.UIColOlaPicking.FieldName = "WAVE_PICKING_ID";
+            this.UIColOlaPicking.Name = "UIColOlaPicking";
+            this.UIColOlaPicking.Visible = true;
+            this.UIColOlaPicking.VisibleIndex = 1;
+            // 
             // barDockControl15
             // 
             this.barDockControl15.CausesValidation = false;
             this.barDockControl15.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControl15.Location = new System.Drawing.Point(0, 24);
             this.barDockControl15.Manager = this.barManager1;
-            this.barDockControl15.Size = new System.Drawing.Size(0, 600);
+            this.barDockControl15.Size = new System.Drawing.Size(0, 606);
             // 
             // barManager1
             // 
@@ -3682,23 +3688,23 @@
             this.barDockControl13.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControl13.Location = new System.Drawing.Point(0, 0);
             this.barDockControl13.Manager = this.barManager1;
-            this.barDockControl13.Size = new System.Drawing.Size(1671, 24);
+            this.barDockControl13.Size = new System.Drawing.Size(1675, 24);
             // 
             // barDockControl14
             // 
             this.barDockControl14.CausesValidation = false;
             this.barDockControl14.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl14.Location = new System.Drawing.Point(0, 624);
+            this.barDockControl14.Location = new System.Drawing.Point(0, 630);
             this.barDockControl14.Manager = this.barManager1;
-            this.barDockControl14.Size = new System.Drawing.Size(1671, 23);
+            this.barDockControl14.Size = new System.Drawing.Size(1675, 20);
             // 
             // barDockControl16
             // 
             this.barDockControl16.CausesValidation = false;
             this.barDockControl16.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl16.Location = new System.Drawing.Point(1671, 24);
+            this.barDockControl16.Location = new System.Drawing.Point(1675, 24);
             this.barDockControl16.Manager = this.barManager1;
-            this.barDockControl16.Size = new System.Drawing.Size(0, 600);
+            this.barDockControl16.Size = new System.Drawing.Size(0, 606);
             // 
             // bar2
             // 
@@ -3797,14 +3803,6 @@
             this.bar13.OptionsBar.DrawDragBorder = false;
             this.bar13.OptionsBar.UseWholeRow = true;
             this.bar13.Text = "Tools";
-            // 
-            // UIColOlaPicking
-            // 
-            this.UIColOlaPicking.Caption = "Ola de Picking";
-            this.UIColOlaPicking.FieldName = "WAVE_PICKING_ID";
-            this.UIColOlaPicking.Name = "UIColOlaPicking";
-            this.UIColOlaPicking.Visible = true;
-            this.UIColOlaPicking.VisibleIndex = 1;
             // 
             // AdministradorDeTareasVista
             // 
