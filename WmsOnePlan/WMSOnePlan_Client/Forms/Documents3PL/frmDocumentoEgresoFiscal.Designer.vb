@@ -20,11 +20,11 @@ Partial Class frmDocumentoEgresoFiscal
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim SerializableAppearanceObject5 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim SerializableAppearanceObject6 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim SerializableAppearanceObject7 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim SerializableAppearanceObject8 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmDocumentoEgresoFiscal))
+        Dim EditorButtonImageOptions1 As DevExpress.XtraEditors.Controls.EditorButtonImageOptions = New DevExpress.XtraEditors.Controls.EditorButtonImageOptions()
+        Dim SerializableAppearanceObject1 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject2 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject3 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject4 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Me.XtraTabControl1 = New DevExpress.XtraTab.XtraTabControl()
         Me.XtraTabHead = New DevExpress.XtraTab.XtraTabPage()
         Me.LayoutEncabezado = New DevExpress.XtraLayout.LayoutControl()
@@ -282,228 +282,230 @@ Partial Class frmDocumentoEgresoFiscal
         Me.XtraTabServicios = New DevExpress.XtraTab.XtraTabPage()
         Me.LayoutServicios = New DevExpress.XtraLayout.LayoutControl()
         Me.LayoutControlGroup3 = New DevExpress.XtraLayout.LayoutControlGroup()
-        CType(Me.XtraTabControl1,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.XtraTabControl1.SuspendLayout
-        Me.XtraTabHead.SuspendLayout
-        CType(Me.LayoutEncabezado,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.LayoutEncabezado.SuspendLayout
-        CType(Me.cmbAcuerdoHead.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.GridLookUpEdit1View,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtCodigoPoliza.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtMarchamo.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.dtFechaLlegada.Properties.CalendarTimeProperties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.dtFechaLlegada.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtStatus.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtNumeroSat.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtDomicilioRepresentante.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtTipoDeclaranteRepresentante.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtPaisImportador.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtPaisRepresentante.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtRazonSocialRepresentante.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtIdTributariaRepresentante.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtTipoRepresentante.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtModo.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtTipoImportador.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtNaturalezaTrans.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtDepositoFiscalZf.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtRazonSocialImportador.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtDomicilioImportador.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtIdTributariaImportador.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtAduanaEntradaSalida.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtClase.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtNumeroContenedor.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtEntidadContenedor.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtTipoContenedor.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtAduanaDespachoDestino.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtPaisProcedencia.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtTotalPesoBrutoKg.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtTotalBultos.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtTotalLineas.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtNumeroOrden.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtDocumentoPadre.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtTotalOtrosUsd.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtTotalSeguroUsd.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtTotalFleteUsd.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.dtFechaAceptacion.Properties.CalendarTimeProperties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.dtFechaAceptacion.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtNumeroDua.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtTotalGeneral.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtTotalOtros.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtTotalLiquidar.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.dtFechaDocumento.Properties.CalendarTimeProperties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.dtFechaDocumento.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtDocId.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtTotalFobUsd.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtTotalValorAduana.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtTipoCambio.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.cmbRegimenPoliza.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.GridViewCmbRegimen,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.cmbRegimen.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.GridViewCmbRegimenAlmacen,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.cmbCliente.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.GridViewCliente,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlGroup1,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem2,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem3,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem4,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem9,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem1,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem5,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem18,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem22,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem23,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem24,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem11,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem8,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem12,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem27,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem25,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem28,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem14,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem15,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem6,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem7,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem34,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem13,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem10,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem20,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem19,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem21,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem26,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem43,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem16,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem44,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem31,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem39,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem36,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem38,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem32,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem30,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem35,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem40,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.SplitterItem2,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.SplitterItem4,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.SplitterItem6,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem46,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem45,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.SplitterItem1,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.SplitterItem7,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem29,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem41,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem33,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.SplitterItem5,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem80,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem42,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem79,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem17,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem37,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.XtraTabDetail.SuspendLayout
-        CType(Me.LayoutDetalle,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.LayoutDetalle.SuspendLayout
-        CType(Me.UiListaImpuesto.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.BarManager1,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtScanEdit,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.RepositoryItemToggleSwitch2,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.RepositoryItemToggleSwitch1,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.RepositoryItemTextEdit1,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.RepositoryItemTextEdit2,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.UiListaVistaImpuesto,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtOrigenNumOrden.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtPolizaOrigen.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtDocumentoOrigen.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.cmbLineas.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.pctDAI.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtActualizadaEl.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtActualizadaPor.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtPolizaRelacionada.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtAcuerdo2.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtAcuerdo1.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtRegionCp.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtSeguroUsd.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtFleteUsd.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtFobUsd.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtPaisOrigen.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtGastosVarios.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtImpuestosVarios.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.GridDetalle,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.GridViewDetalle,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtValorIva.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtDai.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtVolumen.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtValorAduana.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtCantidad.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.cmbUnidadPeso.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.GridView4,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtPesoNeto.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtClaseLinea.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtBultos.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.cmbSacCode.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.GridView3,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtNumeroLinea.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.cmbUnidadCantidad.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.GridView5,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.cmbUnidadVolumen.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.GridView6,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.cmbConsignatario.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.GridView8,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtDescripcionSku.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlGroup2,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem47,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem52,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem58,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem48,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem51,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem56,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem60,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem55,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem61,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem53,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem54,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem59,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem49,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.SplitterItem8,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem62,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem63,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem64,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem65,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem66,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem67,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem68,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem69,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem74,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem73,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.SplitterItem9,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem70,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem81,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem72,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem77,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem71,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem78,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem50,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem75,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem76,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.UILayoutControlImpuesto,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem57,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.XtraTabServicios.SuspendLayout
-        CType(Me.LayoutServicios,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlGroup3,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.SuspendLayout
+        CType(Me.XtraTabControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.XtraTabControl1.SuspendLayout()
+        Me.XtraTabHead.SuspendLayout()
+        CType(Me.LayoutEncabezado, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.LayoutEncabezado.SuspendLayout()
+        CType(Me.cmbAcuerdoHead.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GridLookUpEdit1View, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtCodigoPoliza.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtMarchamo.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dtFechaLlegada.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dtFechaLlegada.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtStatus.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtNumeroSat.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtDomicilioRepresentante.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtTipoDeclaranteRepresentante.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtPaisImportador.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtPaisRepresentante.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtRazonSocialRepresentante.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtIdTributariaRepresentante.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtTipoRepresentante.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtModo.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtTipoImportador.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtNaturalezaTrans.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtDepositoFiscalZf.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtRazonSocialImportador.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtDomicilioImportador.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtIdTributariaImportador.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtAduanaEntradaSalida.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtClase.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtNumeroContenedor.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtEntidadContenedor.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtTipoContenedor.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtAduanaDespachoDestino.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtPaisProcedencia.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtTotalPesoBrutoKg.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtTotalBultos.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtTotalLineas.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtNumeroOrden.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtDocumentoPadre.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtTotalOtrosUsd.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtTotalSeguroUsd.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtTotalFleteUsd.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dtFechaAceptacion.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dtFechaAceptacion.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtNumeroDua.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtTotalGeneral.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtTotalOtros.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtTotalLiquidar.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dtFechaDocumento.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dtFechaDocumento.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtDocId.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtTotalFobUsd.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtTotalValorAduana.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtTipoCambio.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.cmbRegimenPoliza.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GridViewCmbRegimen, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.cmbRegimen.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GridViewCmbRegimenAlmacen, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.cmbCliente.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GridViewCliente, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlGroup1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem18, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem22, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem23, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem24, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem11, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem12, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem27, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem25, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem28, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem14, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem15, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem34, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem13, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem10, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem20, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem19, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem21, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem26, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem43, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem16, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem44, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem31, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem39, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem36, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem38, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem32, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem30, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem35, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem40, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SplitterItem2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SplitterItem4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SplitterItem6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem46, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem45, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SplitterItem1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SplitterItem7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem29, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem41, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem33, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SplitterItem5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem80, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem42, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem79, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem17, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem37, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.XtraTabDetail.SuspendLayout()
+        CType(Me.LayoutDetalle, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.LayoutDetalle.SuspendLayout()
+        CType(Me.UiListaImpuesto.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BarManager1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtScanEdit, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemToggleSwitch2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemToggleSwitch1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemTextEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemTextEdit2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.UiListaVistaImpuesto, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtOrigenNumOrden.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtPolizaOrigen.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtDocumentoOrigen.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.cmbLineas.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pctDAI.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtActualizadaEl.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtActualizadaPor.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtPolizaRelacionada.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtAcuerdo2.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtAcuerdo1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtRegionCp.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtSeguroUsd.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtFleteUsd.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtFobUsd.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtPaisOrigen.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtGastosVarios.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtImpuestosVarios.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GridDetalle, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GridViewDetalle, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtValorIva.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtDai.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtVolumen.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtValorAduana.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtCantidad.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.cmbUnidadPeso.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GridView4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtPesoNeto.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtClaseLinea.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtBultos.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.cmbSacCode.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GridView3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtNumeroLinea.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.cmbUnidadCantidad.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GridView5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.cmbUnidadVolumen.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GridView6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.cmbConsignatario.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GridView8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtDescripcionSku.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlGroup2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem47, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem52, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem58, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem48, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem51, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem56, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem60, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem55, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem61, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem53, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem54, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem59, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem49, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SplitterItem8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem62, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem63, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem64, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem65, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem66, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem67, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem68, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem69, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem74, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem73, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SplitterItem9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem70, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem81, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem72, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem77, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem71, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem78, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem50, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem75, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem76, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.UILayoutControlImpuesto, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem57, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.XtraTabServicios.SuspendLayout()
+        CType(Me.LayoutServicios, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlGroup3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
         '
         'XtraTabControl1
         '
         Me.XtraTabControl1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.XtraTabControl1.Location = New System.Drawing.Point(0, 58)
+        Me.XtraTabControl1.Location = New System.Drawing.Point(0, 106)
+        Me.XtraTabControl1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.XtraTabControl1.Name = "XtraTabControl1"
         Me.XtraTabControl1.SelectedTabPage = Me.XtraTabHead
-        Me.XtraTabControl1.Size = New System.Drawing.Size(1146, 608)
+        Me.XtraTabControl1.Size = New System.Drawing.Size(2292, 1175)
         Me.XtraTabControl1.TabIndex = 1
         Me.XtraTabControl1.TabPages.AddRange(New DevExpress.XtraTab.XtraTabPage() {Me.XtraTabHead, Me.XtraTabDetail, Me.XtraTabServicios})
         '
         'XtraTabHead
         '
         Me.XtraTabHead.Controls.Add(Me.LayoutEncabezado)
+        Me.XtraTabHead.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.XtraTabHead.Name = "XtraTabHead"
-        Me.XtraTabHead.Size = New System.Drawing.Size(1140, 580)
+        Me.XtraTabHead.Size = New System.Drawing.Size(2288, 1126)
         Me.XtraTabHead.Text = "Encabezado Egreso"
         '
         'LayoutEncabezado
@@ -558,23 +560,25 @@ Partial Class frmDocumentoEgresoFiscal
         Me.LayoutEncabezado.Controls.Add(Me.cmbCliente)
         Me.LayoutEncabezado.Dock = System.Windows.Forms.DockStyle.Fill
         Me.LayoutEncabezado.Location = New System.Drawing.Point(0, 0)
+        Me.LayoutEncabezado.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.LayoutEncabezado.Name = "LayoutEncabezado"
         Me.LayoutEncabezado.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New System.Drawing.Rectangle(47, 19, 250, 350)
         Me.LayoutEncabezado.Root = Me.LayoutControlGroup1
-        Me.LayoutEncabezado.Size = New System.Drawing.Size(1140, 580)
+        Me.LayoutEncabezado.Size = New System.Drawing.Size(2288, 1126)
         Me.LayoutEncabezado.TabIndex = 0
         Me.LayoutEncabezado.Text = "Encabezado Ingreso"
         '
         'cmbAcuerdoHead
         '
-        Me.cmbAcuerdoHead.Location = New System.Drawing.Point(716, 334)
+        Me.cmbAcuerdoHead.Location = New System.Drawing.Point(1435, 687)
+        Me.cmbAcuerdoHead.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.cmbAcuerdoHead.Name = "cmbAcuerdoHead"
-        Me.cmbAcuerdoHead.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(192,Byte),Integer))
-        Me.cmbAcuerdoHead.Properties.Appearance.Options.UseBackColor = true
+        Me.cmbAcuerdoHead.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.cmbAcuerdoHead.Properties.Appearance.Options.UseBackColor = True
         Me.cmbAcuerdoHead.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.cmbAcuerdoHead.Properties.NullText = "[Seleccione Acuerdo...]"
-        Me.cmbAcuerdoHead.Properties.View = Me.GridLookUpEdit1View
-        Me.cmbAcuerdoHead.Size = New System.Drawing.Size(412, 20)
+        Me.cmbAcuerdoHead.Properties.PopupView = Me.GridLookUpEdit1View
+        Me.cmbAcuerdoHead.Size = New System.Drawing.Size(829, 40)
         Me.cmbAcuerdoHead.StyleController = Me.LayoutEncabezado
         Me.cmbAcuerdoHead.TabIndex = 55
         '
@@ -582,419 +586,464 @@ Partial Class frmDocumentoEgresoFiscal
         '
         Me.GridLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
         Me.GridLookUpEdit1View.Name = "GridLookUpEdit1View"
-        Me.GridLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false
-        Me.GridLookUpEdit1View.OptionsView.ShowGroupPanel = false
+        Me.GridLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = False
+        Me.GridLookUpEdit1View.OptionsView.ShowGroupPanel = False
         '
         'txtCodigoPoliza
         '
-        Me.txtCodigoPoliza.Location = New System.Drawing.Point(165, 60)
+        Me.txtCodigoPoliza.Location = New System.Drawing.Point(319, 119)
+        Me.txtCodigoPoliza.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtCodigoPoliza.Name = "txtCodigoPoliza"
-        Me.txtCodigoPoliza.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(192,Byte),Integer))
-        Me.txtCodigoPoliza.Properties.Appearance.Options.UseBackColor = true
-        Me.txtCodigoPoliza.Size = New System.Drawing.Size(127, 20)
+        Me.txtCodigoPoliza.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.txtCodigoPoliza.Properties.Appearance.Options.UseBackColor = True
+        Me.txtCodigoPoliza.Size = New System.Drawing.Size(267, 40)
         Me.txtCodigoPoliza.StyleController = Me.LayoutEncabezado
         Me.txtCodigoPoliza.TabIndex = 54
         '
         'txtMarchamo
         '
-        Me.txtMarchamo.Location = New System.Drawing.Point(165, 329)
+        Me.txtMarchamo.Location = New System.Drawing.Point(319, 667)
+        Me.txtMarchamo.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtMarchamo.Name = "txtMarchamo"
-        Me.txtMarchamo.Size = New System.Drawing.Size(389, 20)
+        Me.txtMarchamo.Size = New System.Drawing.Size(793, 40)
         Me.txtMarchamo.StyleController = Me.LayoutEncabezado
         Me.txtMarchamo.TabIndex = 48
         '
         'dtFechaLlegada
         '
         Me.dtFechaLlegada.EditValue = Nothing
-        Me.dtFechaLlegada.Location = New System.Drawing.Point(1009, 36)
+        Me.dtFechaLlegada.Location = New System.Drawing.Point(2031, 71)
+        Me.dtFechaLlegada.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.dtFechaLlegada.Name = "dtFechaLlegada"
-        Me.dtFechaLlegada.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(192,Byte),Integer))
-        Me.dtFechaLlegada.Properties.Appearance.Options.UseBackColor = true
+        Me.dtFechaLlegada.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.dtFechaLlegada.Properties.Appearance.Options.UseBackColor = True
         Me.dtFechaLlegada.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.dtFechaLlegada.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
-        Me.dtFechaLlegada.Size = New System.Drawing.Size(119, 20)
+        Me.dtFechaLlegada.Size = New System.Drawing.Size(233, 40)
         Me.dtFechaLlegada.StyleController = Me.LayoutEncabezado
         Me.dtFechaLlegada.TabIndex = 47
         '
         'txtStatus
         '
-        Me.txtStatus.Location = New System.Drawing.Point(454, 156)
+        Me.txtStatus.Location = New System.Drawing.Point(909, 311)
+        Me.txtStatus.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtStatus.Name = "txtStatus"
-        Me.txtStatus.Size = New System.Drawing.Size(101, 20)
+        Me.txtStatus.Size = New System.Drawing.Size(212, 40)
         Me.txtStatus.StyleController = Me.LayoutEncabezado
         Me.txtStatus.TabIndex = 46
         '
         'txtNumeroSat
         '
-        Me.txtNumeroSat.Location = New System.Drawing.Point(717, 228)
+        Me.txtNumeroSat.Location = New System.Drawing.Point(1444, 455)
+        Me.txtNumeroSat.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtNumeroSat.Name = "txtNumeroSat"
-        Me.txtNumeroSat.Size = New System.Drawing.Size(130, 20)
+        Me.txtNumeroSat.Size = New System.Drawing.Size(264, 40)
         Me.txtNumeroSat.StyleController = Me.LayoutEncabezado
         Me.txtNumeroSat.TabIndex = 45
         '
         'txtDomicilioRepresentante
         '
-        Me.txtDomicilioRepresentante.Location = New System.Drawing.Point(716, 305)
+        Me.txtDomicilioRepresentante.Location = New System.Drawing.Point(1435, 619)
+        Me.txtDomicilioRepresentante.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtDomicilioRepresentante.Name = "txtDomicilioRepresentante"
-        Me.txtDomicilioRepresentante.Size = New System.Drawing.Size(412, 20)
+        Me.txtDomicilioRepresentante.Size = New System.Drawing.Size(829, 40)
         Me.txtDomicilioRepresentante.StyleController = Me.LayoutEncabezado
         Me.txtDomicilioRepresentante.TabIndex = 44
         '
         'txtTipoDeclaranteRepresentante
         '
-        Me.txtTipoDeclaranteRepresentante.Location = New System.Drawing.Point(1009, 204)
+        Me.txtTipoDeclaranteRepresentante.Location = New System.Drawing.Point(2031, 407)
+        Me.txtTipoDeclaranteRepresentante.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtTipoDeclaranteRepresentante.Name = "txtTipoDeclaranteRepresentante"
-        Me.txtTipoDeclaranteRepresentante.Size = New System.Drawing.Size(119, 20)
+        Me.txtTipoDeclaranteRepresentante.Size = New System.Drawing.Size(233, 40)
         Me.txtTipoDeclaranteRepresentante.StyleController = Me.LayoutEncabezado
         Me.txtTipoDeclaranteRepresentante.TabIndex = 43
         '
         'txtPaisImportador
         '
-        Me.txtPaisImportador.Location = New System.Drawing.Point(454, 228)
+        Me.txtPaisImportador.Location = New System.Drawing.Point(909, 455)
+        Me.txtPaisImportador.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtPaisImportador.Name = "txtPaisImportador"
-        Me.txtPaisImportador.Size = New System.Drawing.Size(101, 20)
+        Me.txtPaisImportador.Size = New System.Drawing.Size(212, 40)
         Me.txtPaisImportador.StyleController = Me.LayoutEncabezado
         Me.txtPaisImportador.TabIndex = 42
         '
         'txtPaisRepresentante
         '
-        Me.txtPaisRepresentante.Location = New System.Drawing.Point(1009, 228)
+        Me.txtPaisRepresentante.Location = New System.Drawing.Point(2031, 455)
+        Me.txtPaisRepresentante.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtPaisRepresentante.Name = "txtPaisRepresentante"
-        Me.txtPaisRepresentante.Size = New System.Drawing.Size(119, 20)
+        Me.txtPaisRepresentante.Size = New System.Drawing.Size(233, 40)
         Me.txtPaisRepresentante.StyleController = Me.LayoutEncabezado
         Me.txtPaisRepresentante.TabIndex = 41
         '
         'txtRazonSocialRepresentante
         '
-        Me.txtRazonSocialRepresentante.Location = New System.Drawing.Point(454, 276)
+        Me.txtRazonSocialRepresentante.Location = New System.Drawing.Point(909, 551)
+        Me.txtRazonSocialRepresentante.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtRazonSocialRepresentante.Name = "txtRazonSocialRepresentante"
-        Me.txtRazonSocialRepresentante.Size = New System.Drawing.Size(101, 20)
+        Me.txtRazonSocialRepresentante.Size = New System.Drawing.Size(212, 40)
         Me.txtRazonSocialRepresentante.StyleController = Me.LayoutEncabezado
         Me.txtRazonSocialRepresentante.TabIndex = 40
         '
         'txtIdTributariaRepresentante
         '
-        Me.txtIdTributariaRepresentante.Location = New System.Drawing.Point(717, 204)
+        Me.txtIdTributariaRepresentante.Location = New System.Drawing.Point(1444, 407)
+        Me.txtIdTributariaRepresentante.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtIdTributariaRepresentante.Name = "txtIdTributariaRepresentante"
-        Me.txtIdTributariaRepresentante.Size = New System.Drawing.Size(130, 20)
+        Me.txtIdTributariaRepresentante.Size = New System.Drawing.Size(264, 40)
         Me.txtIdTributariaRepresentante.StyleController = Me.LayoutEncabezado
         Me.txtIdTributariaRepresentante.TabIndex = 39
         '
         'txtTipoRepresentante
         '
-        Me.txtTipoRepresentante.Location = New System.Drawing.Point(717, 180)
+        Me.txtTipoRepresentante.Location = New System.Drawing.Point(1444, 359)
+        Me.txtTipoRepresentante.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtTipoRepresentante.Name = "txtTipoRepresentante"
-        Me.txtTipoRepresentante.Size = New System.Drawing.Size(130, 20)
+        Me.txtTipoRepresentante.Size = New System.Drawing.Size(264, 40)
         Me.txtTipoRepresentante.StyleController = Me.LayoutEncabezado
         Me.txtTipoRepresentante.TabIndex = 38
         '
         'txtModo
         '
-        Me.txtModo.Location = New System.Drawing.Point(717, 36)
+        Me.txtModo.Location = New System.Drawing.Point(1444, 71)
+        Me.txtModo.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtModo.Name = "txtModo"
         Me.txtModo.Properties.Mask.EditMask = "n"
         Me.txtModo.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtModo.Size = New System.Drawing.Size(130, 20)
+        Me.txtModo.Size = New System.Drawing.Size(264, 40)
         Me.txtModo.StyleController = Me.LayoutEncabezado
         Me.txtModo.TabIndex = 37
         '
         'txtTipoImportador
         '
-        Me.txtTipoImportador.Location = New System.Drawing.Point(165, 228)
+        Me.txtTipoImportador.Location = New System.Drawing.Point(319, 455)
+        Me.txtTipoImportador.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtTipoImportador.Name = "txtTipoImportador"
-        Me.txtTipoImportador.Size = New System.Drawing.Size(127, 20)
+        Me.txtTipoImportador.Size = New System.Drawing.Size(267, 40)
         Me.txtTipoImportador.StyleController = Me.LayoutEncabezado
         Me.txtTipoImportador.TabIndex = 35
         '
         'txtNaturalezaTrans
         '
-        Me.txtNaturalezaTrans.Location = New System.Drawing.Point(1009, 156)
+        Me.txtNaturalezaTrans.Location = New System.Drawing.Point(2031, 311)
+        Me.txtNaturalezaTrans.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtNaturalezaTrans.Name = "txtNaturalezaTrans"
-        Me.txtNaturalezaTrans.Size = New System.Drawing.Size(119, 20)
+        Me.txtNaturalezaTrans.Size = New System.Drawing.Size(233, 40)
         Me.txtNaturalezaTrans.StyleController = Me.LayoutEncabezado
         Me.txtNaturalezaTrans.TabIndex = 34
         '
         'txtDepositoFiscalZf
         '
-        Me.txtDepositoFiscalZf.Location = New System.Drawing.Point(454, 204)
+        Me.txtDepositoFiscalZf.Location = New System.Drawing.Point(909, 407)
+        Me.txtDepositoFiscalZf.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtDepositoFiscalZf.Name = "txtDepositoFiscalZf"
-        Me.txtDepositoFiscalZf.Size = New System.Drawing.Size(101, 20)
+        Me.txtDepositoFiscalZf.Size = New System.Drawing.Size(212, 40)
         Me.txtDepositoFiscalZf.StyleController = Me.LayoutEncabezado
         Me.txtDepositoFiscalZf.TabIndex = 33
         '
         'txtRazonSocialImportador
         '
-        Me.txtRazonSocialImportador.Location = New System.Drawing.Point(454, 252)
+        Me.txtRazonSocialImportador.Location = New System.Drawing.Point(909, 503)
+        Me.txtRazonSocialImportador.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtRazonSocialImportador.Name = "txtRazonSocialImportador"
-        Me.txtRazonSocialImportador.Size = New System.Drawing.Size(101, 20)
+        Me.txtRazonSocialImportador.Size = New System.Drawing.Size(212, 40)
         Me.txtRazonSocialImportador.StyleController = Me.LayoutEncabezado
         Me.txtRazonSocialImportador.TabIndex = 32
         '
         'txtDomicilioImportador
         '
-        Me.txtDomicilioImportador.Location = New System.Drawing.Point(717, 252)
+        Me.txtDomicilioImportador.Location = New System.Drawing.Point(1444, 503)
+        Me.txtDomicilioImportador.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtDomicilioImportador.Name = "txtDomicilioImportador"
-        Me.txtDomicilioImportador.Size = New System.Drawing.Size(411, 20)
+        Me.txtDomicilioImportador.Size = New System.Drawing.Size(820, 40)
         Me.txtDomicilioImportador.StyleController = Me.LayoutEncabezado
         Me.txtDomicilioImportador.TabIndex = 36
         '
         'txtIdTributariaImportador
         '
-        Me.txtIdTributariaImportador.Location = New System.Drawing.Point(165, 252)
+        Me.txtIdTributariaImportador.Location = New System.Drawing.Point(319, 503)
+        Me.txtIdTributariaImportador.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtIdTributariaImportador.Name = "txtIdTributariaImportador"
-        Me.txtIdTributariaImportador.Size = New System.Drawing.Size(127, 20)
+        Me.txtIdTributariaImportador.Size = New System.Drawing.Size(267, 40)
         Me.txtIdTributariaImportador.StyleController = Me.LayoutEncabezado
         Me.txtIdTributariaImportador.TabIndex = 31
         '
         'txtAduanaEntradaSalida
         '
-        Me.txtAduanaEntradaSalida.Location = New System.Drawing.Point(717, 132)
+        Me.txtAduanaEntradaSalida.Location = New System.Drawing.Point(1444, 263)
+        Me.txtAduanaEntradaSalida.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtAduanaEntradaSalida.Name = "txtAduanaEntradaSalida"
-        Me.txtAduanaEntradaSalida.Size = New System.Drawing.Size(130, 20)
+        Me.txtAduanaEntradaSalida.Size = New System.Drawing.Size(264, 40)
         Me.txtAduanaEntradaSalida.StyleController = Me.LayoutEncabezado
         Me.txtAduanaEntradaSalida.TabIndex = 30
         '
         'txtClase
         '
-        Me.txtClase.Location = New System.Drawing.Point(165, 180)
+        Me.txtClase.Location = New System.Drawing.Point(319, 359)
+        Me.txtClase.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtClase.Name = "txtClase"
-        Me.txtClase.Size = New System.Drawing.Size(127, 20)
+        Me.txtClase.Size = New System.Drawing.Size(267, 40)
         Me.txtClase.StyleController = Me.LayoutEncabezado
         Me.txtClase.TabIndex = 29
         '
         'txtNumeroContenedor
         '
-        Me.txtNumeroContenedor.Location = New System.Drawing.Point(717, 156)
+        Me.txtNumeroContenedor.Location = New System.Drawing.Point(1444, 311)
+        Me.txtNumeroContenedor.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtNumeroContenedor.Name = "txtNumeroContenedor"
-        Me.txtNumeroContenedor.Size = New System.Drawing.Size(130, 20)
+        Me.txtNumeroContenedor.Size = New System.Drawing.Size(264, 40)
         Me.txtNumeroContenedor.StyleController = Me.LayoutEncabezado
         Me.txtNumeroContenedor.TabIndex = 28
         '
         'txtEntidadContenedor
         '
-        Me.txtEntidadContenedor.Location = New System.Drawing.Point(1009, 180)
+        Me.txtEntidadContenedor.Location = New System.Drawing.Point(2031, 359)
+        Me.txtEntidadContenedor.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtEntidadContenedor.Name = "txtEntidadContenedor"
-        Me.txtEntidadContenedor.Size = New System.Drawing.Size(119, 20)
+        Me.txtEntidadContenedor.Size = New System.Drawing.Size(233, 40)
         Me.txtEntidadContenedor.StyleController = Me.LayoutEncabezado
         Me.txtEntidadContenedor.TabIndex = 27
         '
         'txtTipoContenedor
         '
-        Me.txtTipoContenedor.Location = New System.Drawing.Point(454, 180)
+        Me.txtTipoContenedor.Location = New System.Drawing.Point(909, 359)
+        Me.txtTipoContenedor.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtTipoContenedor.Name = "txtTipoContenedor"
-        Me.txtTipoContenedor.Size = New System.Drawing.Size(101, 20)
+        Me.txtTipoContenedor.Size = New System.Drawing.Size(212, 40)
         Me.txtTipoContenedor.StyleController = Me.LayoutEncabezado
         Me.txtTipoContenedor.TabIndex = 26
         '
         'txtAduanaDespachoDestino
         '
-        Me.txtAduanaDespachoDestino.Location = New System.Drawing.Point(1009, 132)
+        Me.txtAduanaDespachoDestino.Location = New System.Drawing.Point(2031, 263)
+        Me.txtAduanaDespachoDestino.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtAduanaDespachoDestino.Name = "txtAduanaDespachoDestino"
-        Me.txtAduanaDespachoDestino.Size = New System.Drawing.Size(119, 20)
+        Me.txtAduanaDespachoDestino.Size = New System.Drawing.Size(233, 40)
         Me.txtAduanaDespachoDestino.StyleController = Me.LayoutEncabezado
         Me.txtAduanaDespachoDestino.TabIndex = 25
         '
         'txtPaisProcedencia
         '
-        Me.txtPaisProcedencia.Location = New System.Drawing.Point(165, 204)
+        Me.txtPaisProcedencia.Location = New System.Drawing.Point(319, 407)
+        Me.txtPaisProcedencia.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtPaisProcedencia.Name = "txtPaisProcedencia"
-        Me.txtPaisProcedencia.Size = New System.Drawing.Size(127, 20)
+        Me.txtPaisProcedencia.Size = New System.Drawing.Size(267, 40)
         Me.txtPaisProcedencia.StyleController = Me.LayoutEncabezado
         Me.txtPaisProcedencia.TabIndex = 24
         '
         'txtTotalPesoBrutoKg
         '
-        Me.txtTotalPesoBrutoKg.Location = New System.Drawing.Point(1009, 108)
+        Me.txtTotalPesoBrutoKg.Location = New System.Drawing.Point(2031, 215)
+        Me.txtTotalPesoBrutoKg.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtTotalPesoBrutoKg.Name = "txtTotalPesoBrutoKg"
         Me.txtTotalPesoBrutoKg.Properties.Mask.EditMask = "n2"
         Me.txtTotalPesoBrutoKg.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtTotalPesoBrutoKg.Size = New System.Drawing.Size(119, 20)
+        Me.txtTotalPesoBrutoKg.Size = New System.Drawing.Size(233, 40)
         Me.txtTotalPesoBrutoKg.StyleController = Me.LayoutEncabezado
         Me.txtTotalPesoBrutoKg.TabIndex = 23
         '
         'txtTotalBultos
         '
-        Me.txtTotalBultos.Location = New System.Drawing.Point(717, 108)
+        Me.txtTotalBultos.Location = New System.Drawing.Point(1444, 215)
+        Me.txtTotalBultos.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtTotalBultos.Name = "txtTotalBultos"
         Me.txtTotalBultos.Properties.Mask.EditMask = "n0"
         Me.txtTotalBultos.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtTotalBultos.Size = New System.Drawing.Size(130, 20)
+        Me.txtTotalBultos.Size = New System.Drawing.Size(264, 40)
         Me.txtTotalBultos.StyleController = Me.LayoutEncabezado
         Me.txtTotalBultos.TabIndex = 22
         '
         'txtTotalLineas
         '
-        Me.txtTotalLineas.Location = New System.Drawing.Point(165, 156)
+        Me.txtTotalLineas.Location = New System.Drawing.Point(319, 311)
+        Me.txtTotalLineas.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtTotalLineas.Name = "txtTotalLineas"
         Me.txtTotalLineas.Properties.Mask.EditMask = "n0"
         Me.txtTotalLineas.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtTotalLineas.Size = New System.Drawing.Size(127, 20)
+        Me.txtTotalLineas.Size = New System.Drawing.Size(267, 40)
         Me.txtTotalLineas.StyleController = Me.LayoutEncabezado
         Me.txtTotalLineas.TabIndex = 21
         '
         'txtNumeroOrden
         '
-        Me.txtNumeroOrden.Location = New System.Drawing.Point(165, 84)
+        Me.txtNumeroOrden.Location = New System.Drawing.Point(319, 167)
+        Me.txtNumeroOrden.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtNumeroOrden.Name = "txtNumeroOrden"
-        Me.txtNumeroOrden.Size = New System.Drawing.Size(127, 20)
+        Me.txtNumeroOrden.Size = New System.Drawing.Size(267, 40)
         Me.txtNumeroOrden.StyleController = Me.LayoutEncabezado
         Me.txtNumeroOrden.TabIndex = 20
         '
         'txtDocumentoPadre
         '
-        Me.txtDocumentoPadre.Location = New System.Drawing.Point(1009, 12)
+        Me.txtDocumentoPadre.Location = New System.Drawing.Point(2031, 23)
+        Me.txtDocumentoPadre.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtDocumentoPadre.Name = "txtDocumentoPadre"
         Me.txtDocumentoPadre.Properties.Mask.EditMask = "n"
         Me.txtDocumentoPadre.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtDocumentoPadre.Properties.ReadOnly = true
-        Me.txtDocumentoPadre.Size = New System.Drawing.Size(119, 20)
+        Me.txtDocumentoPadre.Properties.ReadOnly = True
+        Me.txtDocumentoPadre.Size = New System.Drawing.Size(233, 40)
         Me.txtDocumentoPadre.StyleController = Me.LayoutEncabezado
         Me.txtDocumentoPadre.TabIndex = 19
         '
         'txtTotalOtrosUsd
         '
-        Me.txtTotalOtrosUsd.Location = New System.Drawing.Point(165, 132)
+        Me.txtTotalOtrosUsd.Location = New System.Drawing.Point(319, 263)
+        Me.txtTotalOtrosUsd.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtTotalOtrosUsd.Name = "txtTotalOtrosUsd"
         Me.txtTotalOtrosUsd.Properties.Mask.EditMask = "n2"
         Me.txtTotalOtrosUsd.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtTotalOtrosUsd.Size = New System.Drawing.Size(127, 20)
+        Me.txtTotalOtrosUsd.Size = New System.Drawing.Size(267, 40)
         Me.txtTotalOtrosUsd.StyleController = Me.LayoutEncabezado
         Me.txtTotalOtrosUsd.TabIndex = 18
         '
         'txtTotalSeguroUsd
         '
-        Me.txtTotalSeguroUsd.Location = New System.Drawing.Point(454, 60)
+        Me.txtTotalSeguroUsd.Location = New System.Drawing.Point(909, 119)
+        Me.txtTotalSeguroUsd.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtTotalSeguroUsd.Name = "txtTotalSeguroUsd"
         Me.txtTotalSeguroUsd.Properties.Mask.EditMask = "n2"
         Me.txtTotalSeguroUsd.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtTotalSeguroUsd.Size = New System.Drawing.Size(101, 20)
+        Me.txtTotalSeguroUsd.Size = New System.Drawing.Size(212, 40)
         Me.txtTotalSeguroUsd.StyleController = Me.LayoutEncabezado
         Me.txtTotalSeguroUsd.TabIndex = 17
         '
         'txtTotalFleteUsd
         '
-        Me.txtTotalFleteUsd.Location = New System.Drawing.Point(717, 60)
+        Me.txtTotalFleteUsd.Location = New System.Drawing.Point(1444, 119)
+        Me.txtTotalFleteUsd.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtTotalFleteUsd.Name = "txtTotalFleteUsd"
         Me.txtTotalFleteUsd.Properties.Mask.EditMask = "n2"
         Me.txtTotalFleteUsd.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtTotalFleteUsd.Size = New System.Drawing.Size(130, 20)
+        Me.txtTotalFleteUsd.Size = New System.Drawing.Size(264, 40)
         Me.txtTotalFleteUsd.StyleController = Me.LayoutEncabezado
         Me.txtTotalFleteUsd.TabIndex = 16
         '
         'dtFechaAceptacion
         '
         Me.dtFechaAceptacion.EditValue = Nothing
-        Me.dtFechaAceptacion.Location = New System.Drawing.Point(454, 132)
+        Me.dtFechaAceptacion.Location = New System.Drawing.Point(909, 263)
+        Me.dtFechaAceptacion.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.dtFechaAceptacion.Name = "dtFechaAceptacion"
         Me.dtFechaAceptacion.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.dtFechaAceptacion.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
-        Me.dtFechaAceptacion.Size = New System.Drawing.Size(101, 20)
+        Me.dtFechaAceptacion.Size = New System.Drawing.Size(212, 40)
         Me.dtFechaAceptacion.StyleController = Me.LayoutEncabezado
         Me.dtFechaAceptacion.TabIndex = 15
         '
         'txtNumeroDua
         '
-        Me.txtNumeroDua.Location = New System.Drawing.Point(454, 12)
+        Me.txtNumeroDua.Location = New System.Drawing.Point(909, 23)
+        Me.txtNumeroDua.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtNumeroDua.Name = "txtNumeroDua"
-        Me.txtNumeroDua.Size = New System.Drawing.Size(101, 20)
+        Me.txtNumeroDua.Size = New System.Drawing.Size(212, 40)
         Me.txtNumeroDua.StyleController = Me.LayoutEncabezado
         Me.txtNumeroDua.TabIndex = 14
         '
         'txtTotalGeneral
         '
-        Me.txtTotalGeneral.Location = New System.Drawing.Point(717, 84)
+        Me.txtTotalGeneral.Location = New System.Drawing.Point(1444, 167)
+        Me.txtTotalGeneral.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtTotalGeneral.Name = "txtTotalGeneral"
         Me.txtTotalGeneral.Properties.Mask.EditMask = "n2"
         Me.txtTotalGeneral.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtTotalGeneral.Size = New System.Drawing.Size(130, 20)
+        Me.txtTotalGeneral.Size = New System.Drawing.Size(264, 40)
         Me.txtTotalGeneral.StyleController = Me.LayoutEncabezado
         Me.txtTotalGeneral.TabIndex = 13
         '
         'txtTotalOtros
         '
-        Me.txtTotalOtros.Location = New System.Drawing.Point(454, 108)
+        Me.txtTotalOtros.Location = New System.Drawing.Point(909, 215)
+        Me.txtTotalOtros.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtTotalOtros.Name = "txtTotalOtros"
         Me.txtTotalOtros.Properties.Mask.EditMask = "n2"
         Me.txtTotalOtros.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtTotalOtros.Size = New System.Drawing.Size(101, 20)
+        Me.txtTotalOtros.Size = New System.Drawing.Size(212, 40)
         Me.txtTotalOtros.StyleController = Me.LayoutEncabezado
         Me.txtTotalOtros.TabIndex = 12
         '
         'txtTotalLiquidar
         '
-        Me.txtTotalLiquidar.Location = New System.Drawing.Point(454, 84)
+        Me.txtTotalLiquidar.Location = New System.Drawing.Point(909, 167)
+        Me.txtTotalLiquidar.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtTotalLiquidar.Name = "txtTotalLiquidar"
         Me.txtTotalLiquidar.Properties.Mask.EditMask = "n2"
         Me.txtTotalLiquidar.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtTotalLiquidar.Size = New System.Drawing.Size(101, 20)
+        Me.txtTotalLiquidar.Size = New System.Drawing.Size(212, 40)
         Me.txtTotalLiquidar.StyleController = Me.LayoutEncabezado
         Me.txtTotalLiquidar.TabIndex = 11
         '
         'dtFechaDocumento
         '
         Me.dtFechaDocumento.EditValue = Nothing
-        Me.dtFechaDocumento.Location = New System.Drawing.Point(454, 36)
+        Me.dtFechaDocumento.Location = New System.Drawing.Point(909, 71)
+        Me.dtFechaDocumento.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.dtFechaDocumento.Name = "dtFechaDocumento"
         Me.dtFechaDocumento.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.dtFechaDocumento.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
         Me.dtFechaDocumento.Properties.Mask.EditMask = "g"
-        Me.dtFechaDocumento.Size = New System.Drawing.Size(101, 20)
+        Me.dtFechaDocumento.Size = New System.Drawing.Size(212, 40)
         Me.dtFechaDocumento.StyleController = Me.LayoutEncabezado
         Me.dtFechaDocumento.TabIndex = 10
         '
         'txtDocId
         '
-        Me.txtDocId.Location = New System.Drawing.Point(165, 36)
+        Me.txtDocId.Location = New System.Drawing.Point(319, 71)
+        Me.txtDocId.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtDocId.Name = "txtDocId"
-        Me.txtDocId.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Redo, "", -1, true, false, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, Nothing, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject5, SerializableAppearanceObject6, SerializableAppearanceObject7, SerializableAppearanceObject8, "", Nothing, Nothing, true)})
+        Me.txtDocId.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Redo, "", -1, True, False, False, EditorButtonImageOptions1, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject1, SerializableAppearanceObject2, SerializableAppearanceObject3, SerializableAppearanceObject4, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
         Me.txtDocId.Properties.Mask.EditMask = "n0"
         Me.txtDocId.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtDocId.Properties.ReadOnly = true
-        Me.txtDocId.Size = New System.Drawing.Size(127, 20)
+        Me.txtDocId.Properties.ReadOnly = True
+        Me.txtDocId.Size = New System.Drawing.Size(267, 40)
         Me.txtDocId.StyleController = Me.LayoutEncabezado
         Me.txtDocId.TabIndex = 9
         '
         'txtTotalFobUsd
         '
-        Me.txtTotalFobUsd.Location = New System.Drawing.Point(165, 108)
+        Me.txtTotalFobUsd.Location = New System.Drawing.Point(319, 215)
+        Me.txtTotalFobUsd.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtTotalFobUsd.Name = "txtTotalFobUsd"
         Me.txtTotalFobUsd.Properties.Mask.EditMask = "n2"
         Me.txtTotalFobUsd.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtTotalFobUsd.Size = New System.Drawing.Size(127, 20)
+        Me.txtTotalFobUsd.Size = New System.Drawing.Size(267, 40)
         Me.txtTotalFobUsd.StyleController = Me.LayoutEncabezado
         Me.txtTotalFobUsd.TabIndex = 8
         '
         'txtTotalValorAduana
         '
-        Me.txtTotalValorAduana.Location = New System.Drawing.Point(1009, 84)
+        Me.txtTotalValorAduana.Location = New System.Drawing.Point(2031, 167)
+        Me.txtTotalValorAduana.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtTotalValorAduana.Name = "txtTotalValorAduana"
         Me.txtTotalValorAduana.Properties.Mask.EditMask = "n2"
         Me.txtTotalValorAduana.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtTotalValorAduana.Size = New System.Drawing.Size(119, 20)
+        Me.txtTotalValorAduana.Size = New System.Drawing.Size(233, 40)
         Me.txtTotalValorAduana.StyleController = Me.LayoutEncabezado
         Me.txtTotalValorAduana.TabIndex = 7
         '
         'txtTipoCambio
         '
-        Me.txtTipoCambio.Location = New System.Drawing.Point(1009, 60)
+        Me.txtTipoCambio.Location = New System.Drawing.Point(2031, 119)
+        Me.txtTipoCambio.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtTipoCambio.Name = "txtTipoCambio"
         Me.txtTipoCambio.Properties.Mask.EditMask = "n4"
         Me.txtTipoCambio.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtTipoCambio.Size = New System.Drawing.Size(119, 20)
+        Me.txtTipoCambio.Size = New System.Drawing.Size(233, 40)
         Me.txtTipoCambio.StyleController = Me.LayoutEncabezado
         Me.txtTipoCambio.TabIndex = 6
         '
         'cmbRegimenPoliza
         '
-        Me.cmbRegimenPoliza.Location = New System.Drawing.Point(717, 12)
+        Me.cmbRegimenPoliza.Location = New System.Drawing.Point(1444, 23)
+        Me.cmbRegimenPoliza.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.cmbRegimenPoliza.Name = "cmbRegimenPoliza"
-        Me.cmbRegimenPoliza.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(192,Byte),Integer))
-        Me.cmbRegimenPoliza.Properties.Appearance.Options.UseBackColor = true
+        Me.cmbRegimenPoliza.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.cmbRegimenPoliza.Properties.Appearance.Options.UseBackColor = True
         Me.cmbRegimenPoliza.Properties.BestFitMode = DevExpress.XtraEditors.Controls.BestFitMode.BestFitResizePopup
         Me.cmbRegimenPoliza.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.cmbRegimenPoliza.Properties.NullText = "[Seleccione Regimen...]"
-        Me.cmbRegimenPoliza.Properties.View = Me.GridViewCmbRegimen
-        Me.cmbRegimenPoliza.Size = New System.Drawing.Size(130, 20)
+        Me.cmbRegimenPoliza.Properties.PopupView = Me.GridViewCmbRegimen
+        Me.cmbRegimenPoliza.Size = New System.Drawing.Size(264, 40)
         Me.cmbRegimenPoliza.StyleController = Me.LayoutEncabezado
         Me.cmbRegimenPoliza.TabIndex = 5
         '
@@ -1002,21 +1051,22 @@ Partial Class frmDocumentoEgresoFiscal
         '
         Me.GridViewCmbRegimen.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
         Me.GridViewCmbRegimen.Name = "GridViewCmbRegimen"
-        Me.GridViewCmbRegimen.OptionsSelection.EnableAppearanceFocusedCell = false
-        Me.GridViewCmbRegimen.OptionsView.ShowAutoFilterRow = true
-        Me.GridViewCmbRegimen.OptionsView.ShowGroupPanel = false
+        Me.GridViewCmbRegimen.OptionsSelection.EnableAppearanceFocusedCell = False
+        Me.GridViewCmbRegimen.OptionsView.ShowAutoFilterRow = True
+        Me.GridViewCmbRegimen.OptionsView.ShowGroupPanel = False
         '
         'cmbRegimen
         '
         Me.cmbRegimen.EditValue = "[Seleccione Regimen...]"
-        Me.cmbRegimen.Location = New System.Drawing.Point(165, 12)
+        Me.cmbRegimen.Location = New System.Drawing.Point(319, 23)
+        Me.cmbRegimen.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.cmbRegimen.Name = "cmbRegimen"
-        Me.cmbRegimen.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(192,Byte),Integer))
-        Me.cmbRegimen.Properties.Appearance.Options.UseBackColor = true
+        Me.cmbRegimen.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.cmbRegimen.Properties.Appearance.Options.UseBackColor = True
         Me.cmbRegimen.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.cmbRegimen.Properties.NullText = "[Seleccione Regimen...]"
-        Me.cmbRegimen.Properties.View = Me.GridViewCmbRegimenAlmacen
-        Me.cmbRegimen.Size = New System.Drawing.Size(127, 20)
+        Me.cmbRegimen.Properties.PopupView = Me.GridViewCmbRegimenAlmacen
+        Me.cmbRegimen.Size = New System.Drawing.Size(267, 40)
         Me.cmbRegimen.StyleController = Me.LayoutEncabezado
         Me.cmbRegimen.TabIndex = 4
         '
@@ -1024,21 +1074,22 @@ Partial Class frmDocumentoEgresoFiscal
         '
         Me.GridViewCmbRegimenAlmacen.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
         Me.GridViewCmbRegimenAlmacen.Name = "GridViewCmbRegimenAlmacen"
-        Me.GridViewCmbRegimenAlmacen.OptionsSelection.EnableAppearanceFocusedCell = false
-        Me.GridViewCmbRegimenAlmacen.OptionsView.ShowGroupPanel = false
+        Me.GridViewCmbRegimenAlmacen.OptionsSelection.EnableAppearanceFocusedCell = False
+        Me.GridViewCmbRegimenAlmacen.OptionsView.ShowGroupPanel = False
         '
         'cmbCliente
         '
-        Me.cmbCliente.Location = New System.Drawing.Point(165, 305)
+        Me.cmbCliente.Location = New System.Drawing.Point(319, 619)
+        Me.cmbCliente.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.cmbCliente.Name = "cmbCliente"
-        Me.cmbCliente.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(192,Byte),Integer))
-        Me.cmbCliente.Properties.Appearance.Options.UseBackColor = true
+        Me.cmbCliente.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.cmbCliente.Properties.Appearance.Options.UseBackColor = True
         Me.cmbCliente.Properties.BestFitMode = DevExpress.XtraEditors.Controls.BestFitMode.BestFitResizePopup
         Me.cmbCliente.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.cmbCliente.Properties.NullText = ""
+        Me.cmbCliente.Properties.PopupView = Me.GridViewCliente
         Me.cmbCliente.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard
-        Me.cmbCliente.Properties.View = Me.GridViewCliente
-        Me.cmbCliente.Size = New System.Drawing.Size(389, 20)
+        Me.cmbCliente.Size = New System.Drawing.Size(793, 40)
         Me.cmbCliente.StyleController = Me.LayoutEncabezado
         Me.cmbCliente.TabIndex = 49
         '
@@ -1046,60 +1097,59 @@ Partial Class frmDocumentoEgresoFiscal
         '
         Me.GridViewCliente.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
         Me.GridViewCliente.Name = "GridViewCliente"
-        Me.GridViewCliente.OptionsSelection.EnableAppearanceFocusedCell = false
-        Me.GridViewCliente.OptionsView.ShowAutoFilterRow = true
-        Me.GridViewCliente.OptionsView.ShowGroupPanel = false
+        Me.GridViewCliente.OptionsSelection.EnableAppearanceFocusedCell = False
+        Me.GridViewCliente.OptionsView.ShowAutoFilterRow = True
+        Me.GridViewCliente.OptionsView.ShowGroupPanel = False
         '
         'LayoutControlGroup1
         '
         Me.LayoutControlGroup1.CustomizationFormText = "Root"
         Me.LayoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.[True]
-        Me.LayoutControlGroup1.GroupBordersVisible = false
+        Me.LayoutControlGroup1.GroupBordersVisible = False
         Me.LayoutControlGroup1.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem2, Me.LayoutControlItem3, Me.LayoutControlItem4, Me.LayoutControlItem9, Me.LayoutControlItem1, Me.LayoutControlItem5, Me.LayoutControlItem18, Me.LayoutControlItem22, Me.LayoutControlItem23, Me.LayoutControlItem24, Me.LayoutControlItem11, Me.LayoutControlItem8, Me.LayoutControlItem12, Me.LayoutControlItem27, Me.LayoutControlItem25, Me.LayoutControlItem28, Me.LayoutControlItem14, Me.LayoutControlItem15, Me.LayoutControlItem6, Me.LayoutControlItem7, Me.LayoutControlItem34, Me.LayoutControlItem13, Me.LayoutControlItem10, Me.LayoutControlItem20, Me.LayoutControlItem19, Me.LayoutControlItem21, Me.LayoutControlItem26, Me.LayoutControlItem43, Me.LayoutControlItem16, Me.LayoutControlItem44, Me.LayoutControlItem31, Me.LayoutControlItem39, Me.LayoutControlItem36, Me.LayoutControlItem38, Me.LayoutControlItem32, Me.LayoutControlItem30, Me.LayoutControlItem35, Me.LayoutControlItem40, Me.SplitterItem2, Me.SplitterItem4, Me.SplitterItem6, Me.LayoutControlItem46, Me.LayoutControlItem45, Me.SplitterItem1, Me.SplitterItem7, Me.LayoutControlItem29, Me.LayoutControlItem41, Me.LayoutControlItem33, Me.SplitterItem5, Me.LayoutControlItem80, Me.LayoutControlItem42, Me.LayoutControlItem79, Me.LayoutControlItem17, Me.LayoutControlItem37})
-        Me.LayoutControlGroup1.Location = New System.Drawing.Point(0, 0)
         Me.LayoutControlGroup1.Name = "Root"
-        Me.LayoutControlGroup1.Size = New System.Drawing.Size(1140, 580)
-        Me.LayoutControlGroup1.TextVisible = false
+        Me.LayoutControlGroup1.Size = New System.Drawing.Size(2288, 1126)
+        Me.LayoutControlGroup1.TextVisible = False
         '
         'LayoutControlItem2
         '
         Me.LayoutControlItem2.Control = Me.cmbRegimenPoliza
         Me.LayoutControlItem2.CustomizationFormText = "Regimen"
-        Me.LayoutControlItem2.Location = New System.Drawing.Point(552, 0)
+        Me.LayoutControlItem2.Location = New System.Drawing.Point(1125, 0)
         Me.LayoutControlItem2.Name = "LayoutControlItem2"
-        Me.LayoutControlItem2.Size = New System.Drawing.Size(287, 24)
+        Me.LayoutControlItem2.Size = New System.Drawing.Size(567, 48)
         Me.LayoutControlItem2.Text = "Regimen"
-        Me.LayoutControlItem2.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem2.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem3
         '
         Me.LayoutControlItem3.Control = Me.txtTipoCambio
         Me.LayoutControlItem3.CustomizationFormText = "Tipo Cambio"
-        Me.LayoutControlItem3.Location = New System.Drawing.Point(844, 48)
+        Me.LayoutControlItem3.Location = New System.Drawing.Point(1712, 96)
         Me.LayoutControlItem3.Name = "LayoutControlItem3"
-        Me.LayoutControlItem3.Size = New System.Drawing.Size(276, 24)
+        Me.LayoutControlItem3.Size = New System.Drawing.Size(536, 48)
         Me.LayoutControlItem3.Text = "Tipo Cambio"
-        Me.LayoutControlItem3.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem3.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem4
         '
         Me.LayoutControlItem4.Control = Me.txtTotalValorAduana
         Me.LayoutControlItem4.CustomizationFormText = "Total Valor Aduana"
-        Me.LayoutControlItem4.Location = New System.Drawing.Point(844, 72)
+        Me.LayoutControlItem4.Location = New System.Drawing.Point(1712, 144)
         Me.LayoutControlItem4.Name = "LayoutControlItem4"
-        Me.LayoutControlItem4.Size = New System.Drawing.Size(276, 24)
+        Me.LayoutControlItem4.Size = New System.Drawing.Size(536, 48)
         Me.LayoutControlItem4.Text = "Total Valor Aduana"
-        Me.LayoutControlItem4.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem4.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem9
         '
         Me.LayoutControlItem9.Control = Me.txtTotalOtros
         Me.LayoutControlItem9.CustomizationFormText = "Total Otros"
-        Me.LayoutControlItem9.Location = New System.Drawing.Point(289, 96)
+        Me.LayoutControlItem9.Location = New System.Drawing.Point(590, 192)
         Me.LayoutControlItem9.Name = "LayoutControlItem9"
-        Me.LayoutControlItem9.Size = New System.Drawing.Size(258, 24)
+        Me.LayoutControlItem9.Size = New System.Drawing.Size(515, 48)
         Me.LayoutControlItem9.Text = "Total Otros"
-        Me.LayoutControlItem9.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem9.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem1
         '
@@ -1107,493 +1157,494 @@ Partial Class frmDocumentoEgresoFiscal
         Me.LayoutControlItem1.CustomizationFormText = "Regimen Almacen"
         Me.LayoutControlItem1.Location = New System.Drawing.Point(0, 0)
         Me.LayoutControlItem1.Name = "LayoutControlItem1"
-        Me.LayoutControlItem1.Size = New System.Drawing.Size(284, 24)
+        Me.LayoutControlItem1.Size = New System.Drawing.Size(570, 48)
         Me.LayoutControlItem1.Text = "Regimen Almacen"
-        Me.LayoutControlItem1.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem1.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem5
         '
         Me.LayoutControlItem5.Control = Me.txtTotalFobUsd
         Me.LayoutControlItem5.CustomizationFormText = "Total FOB USD"
-        Me.LayoutControlItem5.Location = New System.Drawing.Point(0, 96)
+        Me.LayoutControlItem5.Location = New System.Drawing.Point(0, 192)
         Me.LayoutControlItem5.Name = "LayoutControlItem5"
-        Me.LayoutControlItem5.Size = New System.Drawing.Size(284, 24)
+        Me.LayoutControlItem5.Size = New System.Drawing.Size(570, 48)
         Me.LayoutControlItem5.Text = "Total FOB USD"
-        Me.LayoutControlItem5.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem5.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem18
         '
         Me.LayoutControlItem18.Control = Me.txtTotalLineas
         Me.LayoutControlItem18.CustomizationFormText = "Total Lineas"
-        Me.LayoutControlItem18.Location = New System.Drawing.Point(0, 144)
+        Me.LayoutControlItem18.Location = New System.Drawing.Point(0, 288)
         Me.LayoutControlItem18.Name = "LayoutControlItem18"
-        Me.LayoutControlItem18.Size = New System.Drawing.Size(284, 24)
+        Me.LayoutControlItem18.Size = New System.Drawing.Size(570, 48)
         Me.LayoutControlItem18.Text = "Total Lineas"
-        Me.LayoutControlItem18.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem18.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem22
         '
         Me.LayoutControlItem22.Control = Me.txtAduanaDespachoDestino
         Me.LayoutControlItem22.CustomizationFormText = "Aduana Despacho o Destino"
-        Me.LayoutControlItem22.Location = New System.Drawing.Point(844, 120)
+        Me.LayoutControlItem22.Location = New System.Drawing.Point(1712, 240)
         Me.LayoutControlItem22.Name = "LayoutControlItem22"
-        Me.LayoutControlItem22.Size = New System.Drawing.Size(276, 24)
+        Me.LayoutControlItem22.Size = New System.Drawing.Size(536, 48)
         Me.LayoutControlItem22.Text = "Aduana Despacho o Destino"
-        Me.LayoutControlItem22.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem22.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem23
         '
         Me.LayoutControlItem23.Control = Me.txtTipoContenedor
         Me.LayoutControlItem23.CustomizationFormText = "Tipo Contenedor"
-        Me.LayoutControlItem23.Location = New System.Drawing.Point(289, 168)
+        Me.LayoutControlItem23.Location = New System.Drawing.Point(590, 336)
         Me.LayoutControlItem23.Name = "LayoutControlItem23"
-        Me.LayoutControlItem23.Size = New System.Drawing.Size(258, 24)
+        Me.LayoutControlItem23.Size = New System.Drawing.Size(515, 48)
         Me.LayoutControlItem23.Text = "Tipo Contenedor"
-        Me.LayoutControlItem23.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem23.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem24
         '
         Me.LayoutControlItem24.Control = Me.txtEntidadContenedor
         Me.LayoutControlItem24.CustomizationFormText = "Entidad Contenedor"
-        Me.LayoutControlItem24.Location = New System.Drawing.Point(844, 168)
+        Me.LayoutControlItem24.Location = New System.Drawing.Point(1712, 336)
         Me.LayoutControlItem24.Name = "LayoutControlItem24"
-        Me.LayoutControlItem24.Size = New System.Drawing.Size(276, 24)
+        Me.LayoutControlItem24.Size = New System.Drawing.Size(536, 48)
         Me.LayoutControlItem24.Text = "Entidad Contenedor"
-        Me.LayoutControlItem24.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem24.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem11
         '
         Me.LayoutControlItem11.Control = Me.txtNumeroDua
         Me.LayoutControlItem11.CustomizationFormText = "Numero DUA"
-        Me.LayoutControlItem11.Location = New System.Drawing.Point(289, 0)
+        Me.LayoutControlItem11.Location = New System.Drawing.Point(590, 0)
         Me.LayoutControlItem11.Name = "LayoutControlItem11"
-        Me.LayoutControlItem11.Size = New System.Drawing.Size(258, 24)
+        Me.LayoutControlItem11.Size = New System.Drawing.Size(515, 48)
         Me.LayoutControlItem11.Text = "Numero DUA"
-        Me.LayoutControlItem11.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem11.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem8
         '
         Me.LayoutControlItem8.Control = Me.txtTotalLiquidar
         Me.LayoutControlItem8.CustomizationFormText = "Total Liquidar"
-        Me.LayoutControlItem8.Location = New System.Drawing.Point(289, 72)
+        Me.LayoutControlItem8.Location = New System.Drawing.Point(590, 144)
         Me.LayoutControlItem8.Name = "LayoutControlItem8"
-        Me.LayoutControlItem8.Size = New System.Drawing.Size(258, 24)
+        Me.LayoutControlItem8.Size = New System.Drawing.Size(515, 48)
         Me.LayoutControlItem8.Text = "Total Liquidar"
-        Me.LayoutControlItem8.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem8.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem12
         '
         Me.LayoutControlItem12.Control = Me.dtFechaAceptacion
         Me.LayoutControlItem12.CustomizationFormText = "Fecha Aceptacion"
-        Me.LayoutControlItem12.Location = New System.Drawing.Point(289, 120)
+        Me.LayoutControlItem12.Location = New System.Drawing.Point(590, 240)
         Me.LayoutControlItem12.Name = "LayoutControlItem12"
-        Me.LayoutControlItem12.Size = New System.Drawing.Size(258, 24)
+        Me.LayoutControlItem12.Size = New System.Drawing.Size(515, 48)
         Me.LayoutControlItem12.Text = "Fecha Aceptacion"
-        Me.LayoutControlItem12.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem12.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem27
         '
         Me.LayoutControlItem27.Control = Me.txtAduanaEntradaSalida
         Me.LayoutControlItem27.CustomizationFormText = "Aduana Entrada o Salida"
-        Me.LayoutControlItem27.Location = New System.Drawing.Point(552, 120)
+        Me.LayoutControlItem27.Location = New System.Drawing.Point(1125, 240)
         Me.LayoutControlItem27.Name = "LayoutControlItem27"
-        Me.LayoutControlItem27.Size = New System.Drawing.Size(287, 24)
+        Me.LayoutControlItem27.Size = New System.Drawing.Size(567, 48)
         Me.LayoutControlItem27.Text = "Aduana Entrada o Salida"
-        Me.LayoutControlItem27.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem27.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem25
         '
         Me.LayoutControlItem25.Control = Me.txtNumeroContenedor
         Me.LayoutControlItem25.CustomizationFormText = "Numero Contenedor"
-        Me.LayoutControlItem25.Location = New System.Drawing.Point(552, 144)
+        Me.LayoutControlItem25.Location = New System.Drawing.Point(1125, 288)
         Me.LayoutControlItem25.Name = "LayoutControlItem25"
-        Me.LayoutControlItem25.Size = New System.Drawing.Size(287, 24)
+        Me.LayoutControlItem25.Size = New System.Drawing.Size(567, 48)
         Me.LayoutControlItem25.Text = "Numero Contenedor"
-        Me.LayoutControlItem25.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem25.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem28
         '
         Me.LayoutControlItem28.Control = Me.txtIdTributariaImportador
         Me.LayoutControlItem28.CustomizationFormText = "Id Tributaria Importador"
-        Me.LayoutControlItem28.Location = New System.Drawing.Point(0, 240)
+        Me.LayoutControlItem28.Location = New System.Drawing.Point(0, 480)
         Me.LayoutControlItem28.Name = "LayoutControlItem28"
-        Me.LayoutControlItem28.Size = New System.Drawing.Size(284, 48)
+        Me.LayoutControlItem28.Size = New System.Drawing.Size(570, 96)
         Me.LayoutControlItem28.Text = "Id Tributaria Importador"
-        Me.LayoutControlItem28.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem28.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem14
         '
         Me.LayoutControlItem14.Control = Me.txtTotalSeguroUsd
         Me.LayoutControlItem14.CustomizationFormText = "Total Seguro USD"
-        Me.LayoutControlItem14.Location = New System.Drawing.Point(289, 48)
+        Me.LayoutControlItem14.Location = New System.Drawing.Point(590, 96)
         Me.LayoutControlItem14.Name = "LayoutControlItem14"
-        Me.LayoutControlItem14.Size = New System.Drawing.Size(258, 24)
+        Me.LayoutControlItem14.Size = New System.Drawing.Size(515, 48)
         Me.LayoutControlItem14.Text = "Total Seguro USD"
-        Me.LayoutControlItem14.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem14.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem15
         '
         Me.LayoutControlItem15.Control = Me.txtTotalOtrosUsd
         Me.LayoutControlItem15.CustomizationFormText = "Total Otros USD"
-        Me.LayoutControlItem15.Location = New System.Drawing.Point(0, 120)
+        Me.LayoutControlItem15.Location = New System.Drawing.Point(0, 240)
         Me.LayoutControlItem15.Name = "LayoutControlItem15"
-        Me.LayoutControlItem15.Size = New System.Drawing.Size(284, 24)
+        Me.LayoutControlItem15.Size = New System.Drawing.Size(570, 48)
         Me.LayoutControlItem15.Text = "Total Otros USD"
-        Me.LayoutControlItem15.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem15.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem6
         '
         Me.LayoutControlItem6.Control = Me.txtDocId
         Me.LayoutControlItem6.CustomizationFormText = "Numero Documento"
-        Me.LayoutControlItem6.Location = New System.Drawing.Point(0, 24)
+        Me.LayoutControlItem6.Location = New System.Drawing.Point(0, 48)
         Me.LayoutControlItem6.Name = "LayoutControlItem6"
-        Me.LayoutControlItem6.Size = New System.Drawing.Size(284, 24)
+        Me.LayoutControlItem6.Size = New System.Drawing.Size(570, 48)
         Me.LayoutControlItem6.Text = "Numero Documento"
-        Me.LayoutControlItem6.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem6.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem7
         '
         Me.LayoutControlItem7.Control = Me.dtFechaDocumento
         Me.LayoutControlItem7.CustomizationFormText = "Fecha Documento"
-        Me.LayoutControlItem7.Location = New System.Drawing.Point(289, 24)
+        Me.LayoutControlItem7.Location = New System.Drawing.Point(590, 48)
         Me.LayoutControlItem7.Name = "LayoutControlItem7"
-        Me.LayoutControlItem7.Size = New System.Drawing.Size(258, 24)
+        Me.LayoutControlItem7.Size = New System.Drawing.Size(515, 48)
         Me.LayoutControlItem7.Text = "Fecha Documento"
-        Me.LayoutControlItem7.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem7.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem34
         '
         Me.LayoutControlItem34.Control = Me.txtModo
         Me.LayoutControlItem34.CustomizationFormText = "Modo"
-        Me.LayoutControlItem34.Location = New System.Drawing.Point(552, 24)
+        Me.LayoutControlItem34.Location = New System.Drawing.Point(1125, 48)
         Me.LayoutControlItem34.Name = "LayoutControlItem34"
-        Me.LayoutControlItem34.Size = New System.Drawing.Size(287, 24)
+        Me.LayoutControlItem34.Size = New System.Drawing.Size(567, 48)
         Me.LayoutControlItem34.Text = "Modo"
-        Me.LayoutControlItem34.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem34.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem13
         '
         Me.LayoutControlItem13.Control = Me.txtTotalFleteUsd
         Me.LayoutControlItem13.CustomizationFormText = "Total Flete USD"
-        Me.LayoutControlItem13.Location = New System.Drawing.Point(552, 48)
+        Me.LayoutControlItem13.Location = New System.Drawing.Point(1125, 96)
         Me.LayoutControlItem13.Name = "LayoutControlItem13"
-        Me.LayoutControlItem13.Size = New System.Drawing.Size(287, 24)
+        Me.LayoutControlItem13.Size = New System.Drawing.Size(567, 48)
         Me.LayoutControlItem13.Text = "Total Flete USD"
-        Me.LayoutControlItem13.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem13.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem10
         '
         Me.LayoutControlItem10.Control = Me.txtTotalGeneral
         Me.LayoutControlItem10.CustomizationFormText = "Total General"
-        Me.LayoutControlItem10.Location = New System.Drawing.Point(552, 72)
+        Me.LayoutControlItem10.Location = New System.Drawing.Point(1125, 144)
         Me.LayoutControlItem10.Name = "LayoutControlItem10"
-        Me.LayoutControlItem10.Size = New System.Drawing.Size(287, 24)
+        Me.LayoutControlItem10.Size = New System.Drawing.Size(567, 48)
         Me.LayoutControlItem10.Text = "Total General"
-        Me.LayoutControlItem10.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem10.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem20
         '
         Me.LayoutControlItem20.Control = Me.txtTotalPesoBrutoKg
         Me.LayoutControlItem20.CustomizationFormText = "Total Peso Bruto KG"
-        Me.LayoutControlItem20.Location = New System.Drawing.Point(844, 96)
+        Me.LayoutControlItem20.Location = New System.Drawing.Point(1712, 192)
         Me.LayoutControlItem20.Name = "LayoutControlItem20"
-        Me.LayoutControlItem20.Size = New System.Drawing.Size(276, 24)
+        Me.LayoutControlItem20.Size = New System.Drawing.Size(536, 48)
         Me.LayoutControlItem20.Text = "Total Peso Bruto KG"
-        Me.LayoutControlItem20.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem20.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem19
         '
         Me.LayoutControlItem19.Control = Me.txtTotalBultos
         Me.LayoutControlItem19.CustomizationFormText = "Total Bultos"
-        Me.LayoutControlItem19.Location = New System.Drawing.Point(552, 96)
+        Me.LayoutControlItem19.Location = New System.Drawing.Point(1125, 192)
         Me.LayoutControlItem19.Name = "LayoutControlItem19"
-        Me.LayoutControlItem19.Size = New System.Drawing.Size(287, 24)
+        Me.LayoutControlItem19.Size = New System.Drawing.Size(567, 48)
         Me.LayoutControlItem19.Text = "Total Bultos"
-        Me.LayoutControlItem19.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem19.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem21
         '
         Me.LayoutControlItem21.Control = Me.txtPaisProcedencia
         Me.LayoutControlItem21.CustomizationFormText = "Pais Procedencia"
-        Me.LayoutControlItem21.Location = New System.Drawing.Point(0, 192)
+        Me.LayoutControlItem21.Location = New System.Drawing.Point(0, 384)
         Me.LayoutControlItem21.Name = "LayoutControlItem21"
-        Me.LayoutControlItem21.Size = New System.Drawing.Size(284, 24)
+        Me.LayoutControlItem21.Size = New System.Drawing.Size(570, 48)
         Me.LayoutControlItem21.Text = "Pais Procedencia"
-        Me.LayoutControlItem21.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem21.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem26
         '
         Me.LayoutControlItem26.Control = Me.txtClase
         Me.LayoutControlItem26.CustomizationFormText = "Clase"
-        Me.LayoutControlItem26.Location = New System.Drawing.Point(0, 168)
+        Me.LayoutControlItem26.Location = New System.Drawing.Point(0, 336)
         Me.LayoutControlItem26.Name = "LayoutControlItem26"
-        Me.LayoutControlItem26.Size = New System.Drawing.Size(284, 24)
+        Me.LayoutControlItem26.Size = New System.Drawing.Size(570, 48)
         Me.LayoutControlItem26.Text = "Clase"
-        Me.LayoutControlItem26.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem26.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem43
         '
         Me.LayoutControlItem43.Control = Me.txtStatus
         Me.LayoutControlItem43.CustomizationFormText = "Status"
-        Me.LayoutControlItem43.Location = New System.Drawing.Point(289, 144)
+        Me.LayoutControlItem43.Location = New System.Drawing.Point(590, 288)
         Me.LayoutControlItem43.Name = "LayoutControlItem43"
-        Me.LayoutControlItem43.Size = New System.Drawing.Size(258, 24)
+        Me.LayoutControlItem43.Size = New System.Drawing.Size(515, 48)
         Me.LayoutControlItem43.Text = "Status"
-        Me.LayoutControlItem43.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem43.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem16
         '
         Me.LayoutControlItem16.Control = Me.txtDocumentoPadre
         Me.LayoutControlItem16.CustomizationFormText = "Documento Padre"
-        Me.LayoutControlItem16.Location = New System.Drawing.Point(844, 0)
+        Me.LayoutControlItem16.Location = New System.Drawing.Point(1712, 0)
         Me.LayoutControlItem16.Name = "LayoutControlItem16"
-        Me.LayoutControlItem16.Size = New System.Drawing.Size(276, 24)
+        Me.LayoutControlItem16.Size = New System.Drawing.Size(536, 48)
         Me.LayoutControlItem16.Text = "Documento Padre"
-        Me.LayoutControlItem16.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem16.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem44
         '
         Me.LayoutControlItem44.Control = Me.dtFechaLlegada
         Me.LayoutControlItem44.CustomizationFormText = "Fecha Salida"
-        Me.LayoutControlItem44.Location = New System.Drawing.Point(844, 24)
+        Me.LayoutControlItem44.Location = New System.Drawing.Point(1712, 48)
         Me.LayoutControlItem44.Name = "LayoutControlItem44"
-        Me.LayoutControlItem44.Size = New System.Drawing.Size(276, 24)
+        Me.LayoutControlItem44.Size = New System.Drawing.Size(536, 48)
         Me.LayoutControlItem44.Text = "Fecha Salida"
-        Me.LayoutControlItem44.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem44.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem31
         '
         Me.LayoutControlItem31.Control = Me.txtNaturalezaTrans
         Me.LayoutControlItem31.CustomizationFormText = "Naturaleza Transaccion"
-        Me.LayoutControlItem31.Location = New System.Drawing.Point(844, 144)
+        Me.LayoutControlItem31.Location = New System.Drawing.Point(1712, 288)
         Me.LayoutControlItem31.Name = "LayoutControlItem31"
-        Me.LayoutControlItem31.Size = New System.Drawing.Size(276, 24)
+        Me.LayoutControlItem31.Size = New System.Drawing.Size(536, 48)
         Me.LayoutControlItem31.Text = "Naturaleza Transaccion"
-        Me.LayoutControlItem31.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem31.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem39
         '
         Me.LayoutControlItem39.Control = Me.txtPaisImportador
         Me.LayoutControlItem39.CustomizationFormText = "Pais Importador"
-        Me.LayoutControlItem39.Location = New System.Drawing.Point(289, 216)
+        Me.LayoutControlItem39.Location = New System.Drawing.Point(590, 432)
         Me.LayoutControlItem39.Name = "LayoutControlItem39"
-        Me.LayoutControlItem39.Size = New System.Drawing.Size(258, 24)
+        Me.LayoutControlItem39.Size = New System.Drawing.Size(515, 48)
         Me.LayoutControlItem39.Text = "Pais Importador"
-        Me.LayoutControlItem39.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem39.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem36
         '
         Me.LayoutControlItem36.Control = Me.txtIdTributariaRepresentante
         Me.LayoutControlItem36.CustomizationFormText = "Id Tributaria Representante"
-        Me.LayoutControlItem36.Location = New System.Drawing.Point(552, 192)
+        Me.LayoutControlItem36.Location = New System.Drawing.Point(1125, 384)
         Me.LayoutControlItem36.Name = "LayoutControlItem36"
-        Me.LayoutControlItem36.Size = New System.Drawing.Size(287, 24)
+        Me.LayoutControlItem36.Size = New System.Drawing.Size(567, 48)
         Me.LayoutControlItem36.Text = "Id Tributaria Representante"
-        Me.LayoutControlItem36.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem36.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem38
         '
         Me.LayoutControlItem38.Control = Me.txtPaisRepresentante
         Me.LayoutControlItem38.CustomizationFormText = "Pais Representante"
-        Me.LayoutControlItem38.Location = New System.Drawing.Point(844, 216)
+        Me.LayoutControlItem38.Location = New System.Drawing.Point(1712, 432)
         Me.LayoutControlItem38.Name = "LayoutControlItem38"
-        Me.LayoutControlItem38.Size = New System.Drawing.Size(276, 24)
+        Me.LayoutControlItem38.Size = New System.Drawing.Size(536, 48)
         Me.LayoutControlItem38.Text = "Pais Representante"
-        Me.LayoutControlItem38.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem38.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem32
         '
         Me.LayoutControlItem32.Control = Me.txtTipoImportador
         Me.LayoutControlItem32.CustomizationFormText = "Tipo Importador"
-        Me.LayoutControlItem32.Location = New System.Drawing.Point(0, 216)
+        Me.LayoutControlItem32.Location = New System.Drawing.Point(0, 432)
         Me.LayoutControlItem32.Name = "LayoutControlItem32"
-        Me.LayoutControlItem32.Size = New System.Drawing.Size(284, 24)
+        Me.LayoutControlItem32.Size = New System.Drawing.Size(570, 48)
         Me.LayoutControlItem32.Text = "Tipo Importador"
-        Me.LayoutControlItem32.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem32.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem30
         '
         Me.LayoutControlItem30.Control = Me.txtDepositoFiscalZf
         Me.LayoutControlItem30.CustomizationFormText = "Deposito Fiscal ZF"
-        Me.LayoutControlItem30.Location = New System.Drawing.Point(289, 192)
+        Me.LayoutControlItem30.Location = New System.Drawing.Point(590, 384)
         Me.LayoutControlItem30.Name = "LayoutControlItem30"
-        Me.LayoutControlItem30.Size = New System.Drawing.Size(258, 24)
+        Me.LayoutControlItem30.Size = New System.Drawing.Size(515, 48)
         Me.LayoutControlItem30.Text = "Deposito Fiscal ZF"
-        Me.LayoutControlItem30.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem30.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem35
         '
         Me.LayoutControlItem35.Control = Me.txtTipoRepresentante
         Me.LayoutControlItem35.CustomizationFormText = "Tipo Representante"
-        Me.LayoutControlItem35.Location = New System.Drawing.Point(552, 168)
+        Me.LayoutControlItem35.Location = New System.Drawing.Point(1125, 336)
         Me.LayoutControlItem35.Name = "LayoutControlItem35"
-        Me.LayoutControlItem35.Size = New System.Drawing.Size(287, 24)
+        Me.LayoutControlItem35.Size = New System.Drawing.Size(567, 48)
         Me.LayoutControlItem35.Text = "Tipo Representante"
-        Me.LayoutControlItem35.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem35.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem40
         '
         Me.LayoutControlItem40.Control = Me.txtTipoDeclaranteRepresentante
         Me.LayoutControlItem40.CustomizationFormText = "Tipo Declarante Representante"
-        Me.LayoutControlItem40.Location = New System.Drawing.Point(844, 192)
+        Me.LayoutControlItem40.Location = New System.Drawing.Point(1712, 384)
         Me.LayoutControlItem40.Name = "LayoutControlItem40"
-        Me.LayoutControlItem40.Size = New System.Drawing.Size(276, 24)
+        Me.LayoutControlItem40.Size = New System.Drawing.Size(536, 48)
         Me.LayoutControlItem40.Text = "Tipo Declarante Representante"
-        Me.LayoutControlItem40.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem40.TextSize = New System.Drawing.Size(289, 25)
         '
         'SplitterItem2
         '
-        Me.SplitterItem2.AllowHotTrack = true
+        Me.SplitterItem2.AllowHotTrack = True
         Me.SplitterItem2.CustomizationFormText = "SplitterItem2"
-        Me.SplitterItem2.Location = New System.Drawing.Point(0, 288)
+        Me.SplitterItem2.Location = New System.Drawing.Point(0, 576)
         Me.SplitterItem2.Name = "SplitterItem2"
-        Me.SplitterItem2.Size = New System.Drawing.Size(1120, 5)
+        Me.SplitterItem2.Size = New System.Drawing.Size(2248, 20)
         '
         'SplitterItem4
         '
-        Me.SplitterItem4.AllowHotTrack = true
+        Me.SplitterItem4.AllowHotTrack = True
         Me.SplitterItem4.CustomizationFormText = "SplitterItem4"
-        Me.SplitterItem4.Location = New System.Drawing.Point(284, 0)
+        Me.SplitterItem4.Location = New System.Drawing.Point(570, 0)
         Me.SplitterItem4.Name = "SplitterItem4"
-        Me.SplitterItem4.Size = New System.Drawing.Size(5, 288)
+        Me.SplitterItem4.Size = New System.Drawing.Size(20, 576)
         '
         'SplitterItem6
         '
-        Me.SplitterItem6.AllowHotTrack = true
+        Me.SplitterItem6.AllowHotTrack = True
         Me.SplitterItem6.CustomizationFormText = "SplitterItem6"
-        Me.SplitterItem6.Location = New System.Drawing.Point(839, 0)
+        Me.SplitterItem6.Location = New System.Drawing.Point(1692, 0)
         Me.SplitterItem6.Name = "SplitterItem6"
-        Me.SplitterItem6.Size = New System.Drawing.Size(5, 240)
+        Me.SplitterItem6.Size = New System.Drawing.Size(20, 480)
         '
         'LayoutControlItem46
         '
         Me.LayoutControlItem46.Control = Me.cmbCliente
         Me.LayoutControlItem46.CustomizationFormText = "Cliente"
-        Me.LayoutControlItem46.Location = New System.Drawing.Point(0, 293)
+        Me.LayoutControlItem46.Location = New System.Drawing.Point(0, 596)
         Me.LayoutControlItem46.Name = "LayoutControlItem46"
-        Me.LayoutControlItem46.Size = New System.Drawing.Size(546, 24)
+        Me.LayoutControlItem46.Size = New System.Drawing.Size(1096, 48)
         Me.LayoutControlItem46.Text = "Cliente"
-        Me.LayoutControlItem46.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem46.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem45
         '
         Me.LayoutControlItem45.Control = Me.txtMarchamo
         Me.LayoutControlItem45.CustomizationFormText = "Numero Marchamo"
-        Me.LayoutControlItem45.Location = New System.Drawing.Point(0, 317)
+        Me.LayoutControlItem45.Location = New System.Drawing.Point(0, 644)
         Me.LayoutControlItem45.Name = "LayoutControlItem45"
-        Me.LayoutControlItem45.Size = New System.Drawing.Size(546, 243)
+        Me.LayoutControlItem45.Size = New System.Drawing.Size(1096, 444)
         Me.LayoutControlItem45.Text = "Numero Marchamo"
-        Me.LayoutControlItem45.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem45.TextSize = New System.Drawing.Size(289, 25)
         '
         'SplitterItem1
         '
-        Me.SplitterItem1.AllowHotTrack = true
+        Me.SplitterItem1.AllowHotTrack = True
         Me.SplitterItem1.CustomizationFormText = "SplitterItem1"
-        Me.SplitterItem1.Location = New System.Drawing.Point(546, 293)
+        Me.SplitterItem1.Location = New System.Drawing.Point(1096, 596)
         Me.SplitterItem1.Name = "SplitterItem1"
-        Me.SplitterItem1.Size = New System.Drawing.Size(5, 267)
+        Me.SplitterItem1.Size = New System.Drawing.Size(20, 492)
         '
         'SplitterItem7
         '
-        Me.SplitterItem7.AllowHotTrack = true
+        Me.SplitterItem7.AllowHotTrack = True
         Me.SplitterItem7.CustomizationFormText = "SplitterItem7"
-        Me.SplitterItem7.Location = New System.Drawing.Point(551, 317)
+        Me.SplitterItem7.Location = New System.Drawing.Point(1116, 644)
         Me.SplitterItem7.Name = "SplitterItem7"
-        Me.SplitterItem7.Size = New System.Drawing.Size(569, 5)
+        Me.SplitterItem7.Size = New System.Drawing.Size(1132, 20)
         '
         'LayoutControlItem29
         '
         Me.LayoutControlItem29.Control = Me.txtRazonSocialImportador
         Me.LayoutControlItem29.CustomizationFormText = "Razon Social Importador"
-        Me.LayoutControlItem29.Location = New System.Drawing.Point(289, 240)
+        Me.LayoutControlItem29.Location = New System.Drawing.Point(590, 480)
         Me.LayoutControlItem29.Name = "LayoutControlItem29"
-        Me.LayoutControlItem29.Size = New System.Drawing.Size(258, 24)
+        Me.LayoutControlItem29.Size = New System.Drawing.Size(515, 48)
         Me.LayoutControlItem29.Text = "Razon Social Importador"
-        Me.LayoutControlItem29.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem29.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem41
         '
         Me.LayoutControlItem41.Control = Me.txtDomicilioRepresentante
         Me.LayoutControlItem41.CustomizationFormText = "Domicilio Representante"
-        Me.LayoutControlItem41.Location = New System.Drawing.Point(551, 293)
+        Me.LayoutControlItem41.Location = New System.Drawing.Point(1116, 596)
         Me.LayoutControlItem41.Name = "LayoutControlItem41"
-        Me.LayoutControlItem41.Size = New System.Drawing.Size(569, 24)
+        Me.LayoutControlItem41.Size = New System.Drawing.Size(1132, 48)
         Me.LayoutControlItem41.Text = "Domicilio Representante"
-        Me.LayoutControlItem41.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem41.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem33
         '
         Me.LayoutControlItem33.Control = Me.txtDomicilioImportador
         Me.LayoutControlItem33.CustomizationFormText = "Domicilio Importador"
-        Me.LayoutControlItem33.Location = New System.Drawing.Point(552, 240)
+        Me.LayoutControlItem33.Location = New System.Drawing.Point(1125, 480)
         Me.LayoutControlItem33.Name = "LayoutControlItem33"
-        Me.LayoutControlItem33.Size = New System.Drawing.Size(568, 48)
+        Me.LayoutControlItem33.Size = New System.Drawing.Size(1123, 96)
         Me.LayoutControlItem33.Text = "Domicilio Importador"
-        Me.LayoutControlItem33.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem33.TextSize = New System.Drawing.Size(289, 25)
         '
         'SplitterItem5
         '
-        Me.SplitterItem5.AllowHotTrack = true
+        Me.SplitterItem5.AllowHotTrack = True
         Me.SplitterItem5.CustomizationFormText = "SplitterItem5"
-        Me.SplitterItem5.Location = New System.Drawing.Point(547, 0)
+        Me.SplitterItem5.Location = New System.Drawing.Point(1105, 0)
         Me.SplitterItem5.Name = "SplitterItem5"
-        Me.SplitterItem5.Size = New System.Drawing.Size(5, 288)
+        Me.SplitterItem5.Size = New System.Drawing.Size(20, 576)
         '
         'LayoutControlItem80
         '
         Me.LayoutControlItem80.Control = Me.cmbAcuerdoHead
         Me.LayoutControlItem80.CustomizationFormText = "Acuerdo Comercial"
-        Me.LayoutControlItem80.Location = New System.Drawing.Point(551, 322)
+        Me.LayoutControlItem80.Location = New System.Drawing.Point(1116, 664)
         Me.LayoutControlItem80.Name = "LayoutControlItem80"
-        Me.LayoutControlItem80.Size = New System.Drawing.Size(569, 238)
+        Me.LayoutControlItem80.Size = New System.Drawing.Size(1132, 424)
         Me.LayoutControlItem80.Text = "Acuerdo Comercial"
-        Me.LayoutControlItem80.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem80.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem42
         '
         Me.LayoutControlItem42.Control = Me.txtNumeroSat
         Me.LayoutControlItem42.CustomizationFormText = "Numero SAT"
-        Me.LayoutControlItem42.Location = New System.Drawing.Point(552, 216)
+        Me.LayoutControlItem42.Location = New System.Drawing.Point(1125, 432)
         Me.LayoutControlItem42.Name = "LayoutControlItem42"
-        Me.LayoutControlItem42.Size = New System.Drawing.Size(287, 24)
+        Me.LayoutControlItem42.Size = New System.Drawing.Size(567, 48)
         Me.LayoutControlItem42.Text = "Numero SAT"
-        Me.LayoutControlItem42.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem42.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem79
         '
         Me.LayoutControlItem79.Control = Me.txtCodigoPoliza
         Me.LayoutControlItem79.CustomizationFormText = "Codigo Poliza"
-        Me.LayoutControlItem79.Location = New System.Drawing.Point(0, 48)
+        Me.LayoutControlItem79.Location = New System.Drawing.Point(0, 96)
         Me.LayoutControlItem79.Name = "LayoutControlItem79"
-        Me.LayoutControlItem79.Size = New System.Drawing.Size(284, 24)
+        Me.LayoutControlItem79.Size = New System.Drawing.Size(570, 48)
         Me.LayoutControlItem79.Text = "Codigo Poliza"
-        Me.LayoutControlItem79.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem79.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem17
         '
         Me.LayoutControlItem17.Control = Me.txtNumeroOrden
         Me.LayoutControlItem17.CustomizationFormText = "Numero Orden"
-        Me.LayoutControlItem17.Location = New System.Drawing.Point(0, 72)
+        Me.LayoutControlItem17.Location = New System.Drawing.Point(0, 144)
         Me.LayoutControlItem17.Name = "LayoutControlItem17"
-        Me.LayoutControlItem17.Size = New System.Drawing.Size(284, 24)
+        Me.LayoutControlItem17.Size = New System.Drawing.Size(570, 48)
         Me.LayoutControlItem17.Text = "Numero Orden"
-        Me.LayoutControlItem17.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem17.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem37
         '
         Me.LayoutControlItem37.Control = Me.txtRazonSocialRepresentante
         Me.LayoutControlItem37.CustomizationFormText = "Razon Social Representante"
-        Me.LayoutControlItem37.Location = New System.Drawing.Point(289, 264)
+        Me.LayoutControlItem37.Location = New System.Drawing.Point(590, 528)
         Me.LayoutControlItem37.Name = "LayoutControlItem37"
-        Me.LayoutControlItem37.Size = New System.Drawing.Size(258, 24)
+        Me.LayoutControlItem37.Size = New System.Drawing.Size(515, 48)
         Me.LayoutControlItem37.Text = "Razon Social Representante"
-        Me.LayoutControlItem37.TextSize = New System.Drawing.Size(150, 13)
+        Me.LayoutControlItem37.TextSize = New System.Drawing.Size(289, 25)
         '
         'XtraTabDetail
         '
         Me.XtraTabDetail.Controls.Add(Me.LayoutDetalle)
+        Me.XtraTabDetail.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.XtraTabDetail.Name = "XtraTabDetail"
-        Me.XtraTabDetail.Size = New System.Drawing.Size(1140, 580)
+        Me.XtraTabDetail.Size = New System.Drawing.Size(2288, 1126)
         Me.XtraTabDetail.Text = "Detalle Egreso"
         '
         'LayoutDetalle
@@ -1634,23 +1685,25 @@ Partial Class frmDocumentoEgresoFiscal
         Me.LayoutDetalle.Controls.Add(Me.txtDescripcionSku)
         Me.LayoutDetalle.Dock = System.Windows.Forms.DockStyle.Fill
         Me.LayoutDetalle.Location = New System.Drawing.Point(0, 0)
+        Me.LayoutDetalle.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.LayoutDetalle.Name = "LayoutDetalle"
         Me.LayoutDetalle.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New System.Drawing.Rectangle(93, 201, 677, 584)
         Me.LayoutDetalle.Root = Me.LayoutControlGroup2
-        Me.LayoutDetalle.Size = New System.Drawing.Size(1140, 580)
+        Me.LayoutDetalle.Size = New System.Drawing.Size(2288, 1126)
         Me.LayoutDetalle.TabIndex = 0
         Me.LayoutDetalle.Text = "Detalle"
         '
         'UiListaImpuesto
         '
-        Me.UiListaImpuesto.Location = New System.Drawing.Point(709, 36)
+        Me.UiListaImpuesto.Location = New System.Drawing.Point(1436, 71)
+        Me.UiListaImpuesto.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.UiListaImpuesto.MenuManager = Me.BarManager1
         Me.UiListaImpuesto.Name = "UiListaImpuesto"
         Me.UiListaImpuesto.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.UiListaImpuesto.Properties.DisplayMember = "PARAM_CAPTION"
+        Me.UiListaImpuesto.Properties.PopupView = Me.UiListaVistaImpuesto
         Me.UiListaImpuesto.Properties.ValueMember = "MONEY_VALUE"
-        Me.UiListaImpuesto.Properties.View = Me.UiListaVistaImpuesto
-        Me.UiListaImpuesto.Size = New System.Drawing.Size(419, 20)
+        Me.UiListaImpuesto.Size = New System.Drawing.Size(828, 40)
         Me.UiListaImpuesto.StyleController = Me.LayoutDetalle
         Me.UiListaImpuesto.TabIndex = 37
         '
@@ -1673,9 +1726,9 @@ Partial Class frmDocumentoEgresoFiscal
         Me.Bar2.DockCol = 0
         Me.Bar2.DockRow = 0
         Me.Bar2.DockStyle = DevExpress.XtraBars.BarDockStyle.Top
-        Me.Bar2.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {New DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, Me.txtScanPoliza, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph), New DevExpress.XtraBars.LinkPersistInfo(Me.btnScan), New DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, Me.btnSave, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph), New DevExpress.XtraBars.LinkPersistInfo(CType((DevExpress.XtraBars.BarLinkUserDefines.PaintStyle Or DevExpress.XtraBars.BarLinkUserDefines.KeyTip),DevExpress.XtraBars.BarLinkUserDefines), Me.btnAddLine, "", false, true, true, 0, Nothing, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph, "", ""), New DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, Me.btnSaveChanges, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph), New DevExpress.XtraBars.LinkPersistInfo(CType((DevExpress.XtraBars.BarLinkUserDefines.PaintStyle Or DevExpress.XtraBars.BarLinkUserDefines.KeyTip),DevExpress.XtraBars.BarLinkUserDefines), Me.btnPrint, "", false, true, true, 0, Nothing, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph, "P", ""), New DevExpress.XtraBars.LinkPersistInfo(CType((DevExpress.XtraBars.BarLinkUserDefines.PaintStyle Or DevExpress.XtraBars.BarLinkUserDefines.KeyTip),DevExpress.XtraBars.BarLinkUserDefines), Me.btnRestore, "", false, true, true, 0, Nothing, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph, "T", ""), New DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, Me.btnClean, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph), New DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, Me.switchTraslado2, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)})
-        Me.Bar2.OptionsBar.MultiLine = true
-        Me.Bar2.OptionsBar.UseWholeRow = true
+        Me.Bar2.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {New DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, Me.txtScanPoliza, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph), New DevExpress.XtraBars.LinkPersistInfo(Me.btnScan), New DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, Me.btnSave, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph), New DevExpress.XtraBars.LinkPersistInfo(CType((DevExpress.XtraBars.BarLinkUserDefines.PaintStyle Or DevExpress.XtraBars.BarLinkUserDefines.KeyTip), DevExpress.XtraBars.BarLinkUserDefines), Me.btnAddLine, "", False, True, True, 0, Nothing, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph, "", ""), New DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, Me.btnSaveChanges, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph), New DevExpress.XtraBars.LinkPersistInfo(CType((DevExpress.XtraBars.BarLinkUserDefines.PaintStyle Or DevExpress.XtraBars.BarLinkUserDefines.KeyTip), DevExpress.XtraBars.BarLinkUserDefines), Me.btnPrint, "", False, True, True, 0, Nothing, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph, "P", ""), New DevExpress.XtraBars.LinkPersistInfo(CType((DevExpress.XtraBars.BarLinkUserDefines.PaintStyle Or DevExpress.XtraBars.BarLinkUserDefines.KeyTip), DevExpress.XtraBars.BarLinkUserDefines), Me.btnRestore, "", False, True, True, 0, Nothing, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph, "T", ""), New DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, Me.btnClean, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph), New DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, Me.switchTraslado2, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)})
+        Me.Bar2.OptionsBar.MultiLine = True
+        Me.Bar2.OptionsBar.UseWholeRow = True
         Me.Bar2.Text = "Main menu"
         '
         'txtScanPoliza
@@ -1687,7 +1740,7 @@ Partial Class frmDocumentoEgresoFiscal
         '
         'txtScanEdit
         '
-        Me.txtScanEdit.AutoHeight = false
+        Me.txtScanEdit.AutoHeight = False
         Me.txtScanEdit.Name = "txtScanEdit"
         '
         'btnScan
@@ -1695,8 +1748,8 @@ Partial Class frmDocumentoEgresoFiscal
         Me.btnScan.Caption = "&Escanear"
         Me.btnScan.CaptionAlignment = DevExpress.XtraBars.BarItemCaptionAlignment.Right
         Me.btnScan.Id = 2
+        Me.btnScan.ImageOptions.LargeImage = Global.WMSOnePlan_Client.My.Resources.Resources.shapes080
         Me.btnScan.ItemShortcut = New DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.E))
-        Me.btnScan.LargeGlyph = Global.WMSOnePlan_Client.My.Resources.Resources.shapes080
         Me.btnScan.Name = "btnScan"
         Me.btnScan.ShortcutKeyDisplayString = "Ctrl+E"
         '
@@ -1704,16 +1757,16 @@ Partial Class frmDocumentoEgresoFiscal
         '
         Me.btnSave.Caption = "&Grabar"
         Me.btnSave.Id = 1
+        Me.btnSave.ImageOptions.LargeImage = Global.WMSOnePlan_Client.My.Resources.Resources.save_large
         Me.btnSave.ItemShortcut = New DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.G))
-        Me.btnSave.LargeGlyph = Global.WMSOnePlan_Client.My.Resources.Resources.save_large
         Me.btnSave.Name = "btnSave"
         Me.btnSave.ShortcutKeyDisplayString = "Ctrl+G"
         '
         'btnAddLine
         '
         Me.btnAddLine.Caption = "&Agregar Linea"
-        Me.btnAddLine.Glyph = Global.WMSOnePlan_Client.My.Resources.Resources.size_vertical
         Me.btnAddLine.Id = 6
+        Me.btnAddLine.ImageOptions.Image = Global.WMSOnePlan_Client.My.Resources.Resources.size_vertical
         Me.btnAddLine.ItemShortcut = New DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.A))
         Me.btnAddLine.Name = "btnAddLine"
         Me.btnAddLine.ShortcutKeyDisplayString = "Ctrl+A"
@@ -1722,15 +1775,15 @@ Partial Class frmDocumentoEgresoFiscal
         '
         Me.btnSaveChanges.Caption = "Grabar Linea"
         Me.btnSaveChanges.Id = 10
-        Me.btnSaveChanges.LargeGlyph = Global.WMSOnePlan_Client.My.Resources.Resources.save
+        Me.btnSaveChanges.ImageOptions.LargeImage = Global.WMSOnePlan_Client.My.Resources.Resources.save
         Me.btnSaveChanges.Name = "btnSaveChanges"
         '
         'btnPrint
         '
         Me.btnPrint.Caption = "Im&primir"
         Me.btnPrint.Id = 4
+        Me.btnPrint.ImageOptions.LargeImage = Global.WMSOnePlan_Client.My.Resources.Resources.print_large
         Me.btnPrint.ItemShortcut = New DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.P))
-        Me.btnPrint.LargeGlyph = Global.WMSOnePlan_Client.My.Resources.Resources.print_large
         Me.btnPrint.Name = "btnPrint"
         Me.btnPrint.ShortcutKeyDisplayString = "Ctrl+P"
         '
@@ -1738,26 +1791,24 @@ Partial Class frmDocumentoEgresoFiscal
         '
         Me.btnRestore.Caption = "Res&tablecer"
         Me.btnRestore.Id = 5
+        Me.btnRestore.ImageOptions.LargeImage = Global.WMSOnePlan_Client.My.Resources.Resources.MarkAsFinal_Large
         Me.btnRestore.ItemShortcut = New DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.T))
-        Me.btnRestore.LargeGlyph = Global.WMSOnePlan_Client.My.Resources.Resources.MarkAsFinal_Large
         Me.btnRestore.Name = "btnRestore"
         Me.btnRestore.ShortcutKeyDisplayString = "Ctrl+T"
         '
         'btnClean
         '
         Me.btnClean.Caption = "Limpiar Campos"
-        Me.btnClean.Glyph = Global.WMSOnePlan_Client.My.Resources.Resources.application_side_list
         Me.btnClean.Id = 9
+        Me.btnClean.ImageOptions.Image = Global.WMSOnePlan_Client.My.Resources.Resources.application_side_list
         Me.btnClean.Name = "btnClean"
         '
         'switchTraslado2
         '
         Me.switchTraslado2.Caption = "Hacer Traslado"
         Me.switchTraslado2.Edit = Me.RepositoryItemToggleSwitch2
-        Me.switchTraslado2.EditValue = false
-        Me.switchTraslado2.Glyph = CType(resources.GetObject("switchTraslado2.Glyph"),System.Drawing.Image)
+        Me.switchTraslado2.EditValue = False
         Me.switchTraslado2.Id = 16
-        Me.switchTraslado2.LargeGlyph = CType(resources.GetObject("switchTraslado2.LargeGlyph"),System.Drawing.Image)
         Me.switchTraslado2.Name = "switchTraslado2"
         '
         'RepositoryItemToggleSwitch2
@@ -1769,46 +1820,54 @@ Partial Class frmDocumentoEgresoFiscal
         '
         'barDockControlTop
         '
-        Me.barDockControlTop.CausesValidation = false
+        Me.barDockControlTop.CausesValidation = False
         Me.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.barDockControlTop.Location = New System.Drawing.Point(0, 0)
-        Me.barDockControlTop.Size = New System.Drawing.Size(1146, 58)
+        Me.barDockControlTop.Manager = Me.BarManager1
+        Me.barDockControlTop.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.barDockControlTop.Size = New System.Drawing.Size(2292, 106)
         '
         'barDockControlBottom
         '
-        Me.barDockControlBottom.CausesValidation = false
+        Me.barDockControlBottom.CausesValidation = False
         Me.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 666)
-        Me.barDockControlBottom.Size = New System.Drawing.Size(1146, 0)
+        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 1281)
+        Me.barDockControlBottom.Manager = Me.BarManager1
+        Me.barDockControlBottom.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.barDockControlBottom.Size = New System.Drawing.Size(2292, 0)
         '
         'barDockControlLeft
         '
-        Me.barDockControlLeft.CausesValidation = false
+        Me.barDockControlLeft.CausesValidation = False
         Me.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left
-        Me.barDockControlLeft.Location = New System.Drawing.Point(0, 58)
-        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 608)
+        Me.barDockControlLeft.Location = New System.Drawing.Point(0, 106)
+        Me.barDockControlLeft.Manager = Me.BarManager1
+        Me.barDockControlLeft.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 1175)
         '
         'barDockControlRight
         '
-        Me.barDockControlRight.CausesValidation = false
+        Me.barDockControlRight.CausesValidation = False
         Me.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right
-        Me.barDockControlRight.Location = New System.Drawing.Point(1146, 58)
-        Me.barDockControlRight.Size = New System.Drawing.Size(0, 608)
+        Me.barDockControlRight.Location = New System.Drawing.Point(2292, 106)
+        Me.barDockControlRight.Manager = Me.BarManager1
+        Me.barDockControlRight.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.barDockControlRight.Size = New System.Drawing.Size(0, 1175)
         '
         'btnRectify
         '
         Me.btnRectify.Caption = "&Rectificacion"
         Me.btnRectify.Id = 3
+        Me.btnRectify.ImageOptions.LargeImage = Global.WMSOnePlan_Client.My.Resources.Resources.Prepare_Large
         Me.btnRectify.ItemShortcut = New DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.R))
-        Me.btnRectify.LargeGlyph = Global.WMSOnePlan_Client.My.Resources.Resources.Prepare_Large
         Me.btnRectify.Name = "btnRectify"
         Me.btnRectify.ShortcutKeyDisplayString = "Ctrl+R"
         '
         'btnEnviar
         '
         Me.btnEnviar.Caption = "&Enviar SAT"
-        Me.btnEnviar.Glyph = Global.WMSOnePlan_Client.My.Resources.Resources.transmit_go
         Me.btnEnviar.Id = 7
+        Me.btnEnviar.ImageOptions.Image = Global.WMSOnePlan_Client.My.Resources.Resources.transmit_go
         Me.btnEnviar.ItemShortcut = New DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.E))
         Me.btnEnviar.Name = "btnEnviar"
         '
@@ -1816,9 +1875,7 @@ Partial Class frmDocumentoEgresoFiscal
         '
         Me.switchTraslado.Caption = "Hacer Traslado"
         Me.switchTraslado.Edit = Me.RepositoryItemToggleSwitch1
-        Me.switchTraslado.Glyph = CType(resources.GetObject("switchTraslado.Glyph"),System.Drawing.Image)
         Me.switchTraslado.Id = 11
-        Me.switchTraslado.LargeGlyph = CType(resources.GetObject("switchTraslado.LargeGlyph"),System.Drawing.Image)
         Me.switchTraslado.Name = "switchTraslado"
         '
         'RepositoryItemToggleSwitch1
@@ -1831,17 +1888,13 @@ Partial Class frmDocumentoEgresoFiscal
         'BarButtonItem1
         '
         Me.BarButtonItem1.Caption = "BarButtonItem1"
-        Me.BarButtonItem1.Glyph = CType(resources.GetObject("BarButtonItem1.Glyph"),System.Drawing.Image)
         Me.BarButtonItem1.Id = 12
-        Me.BarButtonItem1.LargeGlyph = CType(resources.GetObject("BarButtonItem1.LargeGlyph"),System.Drawing.Image)
         Me.BarButtonItem1.Name = "BarButtonItem1"
         '
         'switchTraslado1
         '
         Me.switchTraslado1.Caption = "Hacer Traslado"
-        Me.switchTraslado1.Glyph = CType(resources.GetObject("switchTraslado1.Glyph"),System.Drawing.Image)
         Me.switchTraslado1.Id = 13
-        Me.switchTraslado1.LargeGlyph = CType(resources.GetObject("switchTraslado1.LargeGlyph"),System.Drawing.Image)
         Me.switchTraslado1.Name = "switchTraslado1"
         '
         'BarEditItem1
@@ -1853,7 +1906,7 @@ Partial Class frmDocumentoEgresoFiscal
         '
         'RepositoryItemTextEdit1
         '
-        Me.RepositoryItemTextEdit1.AutoHeight = false
+        Me.RepositoryItemTextEdit1.AutoHeight = False
         Me.RepositoryItemTextEdit1.Name = "RepositoryItemTextEdit1"
         '
         'BarEditItem2
@@ -1865,7 +1918,7 @@ Partial Class frmDocumentoEgresoFiscal
         '
         'RepositoryItemTextEdit2
         '
-        Me.RepositoryItemTextEdit2.AutoHeight = false
+        Me.RepositoryItemTextEdit2.AutoHeight = False
         Me.RepositoryItemTextEdit2.Name = "RepositoryItemTextEdit2"
         '
         'UiListaVistaImpuesto
@@ -1873,196 +1926,217 @@ Partial Class frmDocumentoEgresoFiscal
         Me.UiListaVistaImpuesto.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.UiColDescripcionImpuesto})
         Me.UiListaVistaImpuesto.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
         Me.UiListaVistaImpuesto.Name = "UiListaVistaImpuesto"
-        Me.UiListaVistaImpuesto.OptionsSelection.EnableAppearanceFocusedCell = false
-        Me.UiListaVistaImpuesto.OptionsView.ShowGroupPanel = false
+        Me.UiListaVistaImpuesto.OptionsSelection.EnableAppearanceFocusedCell = False
+        Me.UiListaVistaImpuesto.OptionsView.ShowGroupPanel = False
         '
         'UiColDescripcionImpuesto
         '
         Me.UiColDescripcionImpuesto.Caption = "Descripcion"
         Me.UiColDescripcionImpuesto.FieldName = "PARAM_CAPTION"
         Me.UiColDescripcionImpuesto.Name = "UiColDescripcionImpuesto"
-        Me.UiColDescripcionImpuesto.Visible = true
+        Me.UiColDescripcionImpuesto.Visible = True
         Me.UiColDescripcionImpuesto.VisibleIndex = 0
         '
         'txtOrigenNumOrden
         '
-        Me.txtOrigenNumOrden.Location = New System.Drawing.Point(709, 276)
+        Me.txtOrigenNumOrden.Location = New System.Drawing.Point(1436, 551)
+        Me.txtOrigenNumOrden.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtOrigenNumOrden.MenuManager = Me.BarManager1
         Me.txtOrigenNumOrden.Name = "txtOrigenNumOrden"
         Me.txtOrigenNumOrden.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
-        Me.txtOrigenNumOrden.Size = New System.Drawing.Size(207, 20)
+        Me.txtOrigenNumOrden.Size = New System.Drawing.Size(409, 40)
         Me.txtOrigenNumOrden.StyleController = Me.LayoutDetalle
         Me.txtOrigenNumOrden.TabIndex = 36
         '
         'txtPolizaOrigen
         '
-        Me.txtPolizaOrigen.Location = New System.Drawing.Point(1023, 252)
+        Me.txtPolizaOrigen.Location = New System.Drawing.Point(2056, 503)
+        Me.txtPolizaOrigen.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtPolizaOrigen.MenuManager = Me.BarManager1
         Me.txtPolizaOrigen.Name = "txtPolizaOrigen"
         Me.txtPolizaOrigen.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
-        Me.txtPolizaOrigen.Size = New System.Drawing.Size(105, 20)
+        Me.txtPolizaOrigen.Size = New System.Drawing.Size(208, 40)
         Me.txtPolizaOrigen.StyleController = Me.LayoutDetalle
         Me.txtPolizaOrigen.TabIndex = 35
         '
         'txtDocumentoOrigen
         '
-        Me.txtDocumentoOrigen.Location = New System.Drawing.Point(709, 252)
+        Me.txtDocumentoOrigen.Location = New System.Drawing.Point(1436, 503)
+        Me.txtDocumentoOrigen.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtDocumentoOrigen.MenuManager = Me.BarManager1
         Me.txtDocumentoOrigen.Name = "txtDocumentoOrigen"
         Me.txtDocumentoOrigen.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
-        Me.txtDocumentoOrigen.Size = New System.Drawing.Size(207, 20)
+        Me.txtDocumentoOrigen.Size = New System.Drawing.Size(409, 40)
         Me.txtDocumentoOrigen.StyleController = Me.LayoutDetalle
         Me.txtDocumentoOrigen.TabIndex = 34
         '
         'cmbLineas
         '
-        Me.cmbLineas.Location = New System.Drawing.Point(1023, 276)
+        Me.cmbLineas.Location = New System.Drawing.Point(2056, 551)
+        Me.cmbLineas.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.cmbLineas.MenuManager = Me.BarManager1
         Me.cmbLineas.Name = "cmbLineas"
         Me.cmbLineas.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.cmbLineas.Size = New System.Drawing.Size(105, 20)
+        Me.cmbLineas.Size = New System.Drawing.Size(208, 40)
         Me.cmbLineas.StyleController = Me.LayoutDetalle
         Me.cmbLineas.TabIndex = 33
         '
         'pctDAI
         '
-        Me.pctDAI.Location = New System.Drawing.Point(401, 60)
+        Me.pctDAI.Location = New System.Drawing.Point(811, 119)
+        Me.pctDAI.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.pctDAI.Name = "pctDAI"
         Me.pctDAI.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.pctDAI.Properties.Mask.EditMask = "f3"
-        Me.pctDAI.Size = New System.Drawing.Size(196, 20)
+        Me.pctDAI.Size = New System.Drawing.Size(394, 40)
         Me.pctDAI.StyleController = Me.LayoutDetalle
         Me.pctDAI.TabIndex = 6
         '
         'txtActualizadaEl
         '
-        Me.txtActualizadaEl.Location = New System.Drawing.Point(401, 204)
+        Me.txtActualizadaEl.Location = New System.Drawing.Point(811, 407)
+        Me.txtActualizadaEl.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtActualizadaEl.Name = "txtActualizadaEl"
-        Me.txtActualizadaEl.Size = New System.Drawing.Size(196, 20)
+        Me.txtActualizadaEl.Size = New System.Drawing.Size(394, 40)
         Me.txtActualizadaEl.StyleController = Me.LayoutDetalle
         Me.txtActualizadaEl.TabIndex = 24
         '
         'txtActualizadaPor
         '
-        Me.txtActualizadaPor.Location = New System.Drawing.Point(709, 204)
+        Me.txtActualizadaPor.Location = New System.Drawing.Point(1436, 407)
+        Me.txtActualizadaPor.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtActualizadaPor.Name = "txtActualizadaPor"
-        Me.txtActualizadaPor.Size = New System.Drawing.Size(419, 20)
+        Me.txtActualizadaPor.Size = New System.Drawing.Size(828, 40)
         Me.txtActualizadaPor.StyleController = Me.LayoutDetalle
         Me.txtActualizadaPor.TabIndex = 22
         '
         'txtPolizaRelacionada
         '
-        Me.txtPolizaRelacionada.Location = New System.Drawing.Point(709, 228)
+        Me.txtPolizaRelacionada.Location = New System.Drawing.Point(1436, 455)
+        Me.txtPolizaRelacionada.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtPolizaRelacionada.Name = "txtPolizaRelacionada"
-        Me.txtPolizaRelacionada.Size = New System.Drawing.Size(419, 20)
+        Me.txtPolizaRelacionada.Size = New System.Drawing.Size(828, 40)
         Me.txtPolizaRelacionada.StyleController = Me.LayoutDetalle
         Me.txtPolizaRelacionada.TabIndex = 25
         '
         'txtAcuerdo2
         '
-        Me.txtAcuerdo2.Location = New System.Drawing.Point(115, 228)
+        Me.txtAcuerdo2.Location = New System.Drawing.Point(227, 455)
+        Me.txtAcuerdo2.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtAcuerdo2.Name = "txtAcuerdo2"
-        Me.txtAcuerdo2.Size = New System.Drawing.Size(174, 20)
+        Me.txtAcuerdo2.Size = New System.Drawing.Size(353, 40)
         Me.txtAcuerdo2.StyleController = Me.LayoutDetalle
         Me.txtAcuerdo2.TabIndex = 27
         '
         'txtAcuerdo1
         '
-        Me.txtAcuerdo1.Location = New System.Drawing.Point(115, 204)
+        Me.txtAcuerdo1.Location = New System.Drawing.Point(227, 407)
+        Me.txtAcuerdo1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtAcuerdo1.Name = "txtAcuerdo1"
-        Me.txtAcuerdo1.Size = New System.Drawing.Size(174, 20)
+        Me.txtAcuerdo1.Size = New System.Drawing.Size(353, 40)
         Me.txtAcuerdo1.StyleController = Me.LayoutDetalle
         Me.txtAcuerdo1.TabIndex = 26
         '
         'txtRegionCp
         '
-        Me.txtRegionCp.Location = New System.Drawing.Point(115, 180)
+        Me.txtRegionCp.Location = New System.Drawing.Point(227, 359)
+        Me.txtRegionCp.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtRegionCp.Name = "txtRegionCp"
-        Me.txtRegionCp.Size = New System.Drawing.Size(174, 20)
+        Me.txtRegionCp.Size = New System.Drawing.Size(353, 40)
         Me.txtRegionCp.StyleController = Me.LayoutDetalle
         Me.txtRegionCp.TabIndex = 20
         '
         'txtSeguroUsd
         '
-        Me.txtSeguroUsd.Location = New System.Drawing.Point(709, 180)
+        Me.txtSeguroUsd.Location = New System.Drawing.Point(1436, 359)
+        Me.txtSeguroUsd.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtSeguroUsd.Name = "txtSeguroUsd"
-        Me.txtSeguroUsd.Size = New System.Drawing.Size(419, 20)
+        Me.txtSeguroUsd.Size = New System.Drawing.Size(828, 40)
         Me.txtSeguroUsd.StyleController = Me.LayoutDetalle
         Me.txtSeguroUsd.TabIndex = 19
         '
         'txtFleteUsd
         '
-        Me.txtFleteUsd.Location = New System.Drawing.Point(401, 180)
+        Me.txtFleteUsd.Location = New System.Drawing.Point(811, 359)
+        Me.txtFleteUsd.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtFleteUsd.Name = "txtFleteUsd"
-        Me.txtFleteUsd.Size = New System.Drawing.Size(196, 20)
+        Me.txtFleteUsd.Size = New System.Drawing.Size(394, 40)
         Me.txtFleteUsd.StyleController = Me.LayoutDetalle
         Me.txtFleteUsd.TabIndex = 21
         '
         'txtFobUsd
         '
-        Me.txtFobUsd.Location = New System.Drawing.Point(115, 156)
+        Me.txtFobUsd.Location = New System.Drawing.Point(227, 311)
+        Me.txtFobUsd.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtFobUsd.Name = "txtFobUsd"
         Me.txtFobUsd.Properties.Mask.EditMask = "n2"
         Me.txtFobUsd.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtFobUsd.Size = New System.Drawing.Size(174, 20)
+        Me.txtFobUsd.Size = New System.Drawing.Size(353, 40)
         Me.txtFobUsd.StyleController = Me.LayoutDetalle
         Me.txtFobUsd.TabIndex = 17
         '
         'txtPaisOrigen
         '
-        Me.txtPaisOrigen.Location = New System.Drawing.Point(709, 156)
+        Me.txtPaisOrigen.Location = New System.Drawing.Point(1436, 311)
+        Me.txtPaisOrigen.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtPaisOrigen.Name = "txtPaisOrigen"
-        Me.txtPaisOrigen.Size = New System.Drawing.Size(419, 20)
+        Me.txtPaisOrigen.Size = New System.Drawing.Size(828, 40)
         Me.txtPaisOrigen.StyleController = Me.LayoutDetalle
         Me.txtPaisOrigen.TabIndex = 16
         '
         'txtGastosVarios
         '
-        Me.txtGastosVarios.Location = New System.Drawing.Point(401, 156)
+        Me.txtGastosVarios.Location = New System.Drawing.Point(811, 311)
+        Me.txtGastosVarios.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtGastosVarios.Name = "txtGastosVarios"
         Me.txtGastosVarios.Properties.Mask.EditMask = "n2"
         Me.txtGastosVarios.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtGastosVarios.Size = New System.Drawing.Size(196, 20)
+        Me.txtGastosVarios.Size = New System.Drawing.Size(394, 40)
         Me.txtGastosVarios.StyleController = Me.LayoutDetalle
         Me.txtGastosVarios.TabIndex = 18
         '
         'txtImpuestosVarios
         '
-        Me.txtImpuestosVarios.Location = New System.Drawing.Point(115, 132)
+        Me.txtImpuestosVarios.Location = New System.Drawing.Point(227, 263)
+        Me.txtImpuestosVarios.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtImpuestosVarios.Name = "txtImpuestosVarios"
         Me.txtImpuestosVarios.Properties.Mask.EditMask = "n2"
         Me.txtImpuestosVarios.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtImpuestosVarios.Size = New System.Drawing.Size(174, 20)
+        Me.txtImpuestosVarios.Size = New System.Drawing.Size(353, 40)
         Me.txtImpuestosVarios.StyleController = Me.LayoutDetalle
         Me.txtImpuestosVarios.TabIndex = 14
         '
         'GridDetalle
         '
         Me.GridDetalle.Cursor = System.Windows.Forms.Cursors.Default
-        Me.GridDetalle.Location = New System.Drawing.Point(115, 300)
+        Me.GridDetalle.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.GridDetalle.Location = New System.Drawing.Point(227, 599)
         Me.GridDetalle.MainView = Me.GridViewDetalle
+        Me.GridDetalle.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.GridDetalle.Name = "GridDetalle"
-        Me.GridDetalle.Size = New System.Drawing.Size(1013, 268)
+        Me.GridDetalle.Size = New System.Drawing.Size(2037, 504)
         Me.GridDetalle.TabIndex = 32
         Me.GridDetalle.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridViewDetalle})
         '
         'GridViewDetalle
         '
-        Me.GridViewDetalle.Appearance.FooterPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(192,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(192,Byte),Integer))
-        Me.GridViewDetalle.Appearance.FooterPanel.Options.UseBackColor = true
+        Me.GridViewDetalle.Appearance.FooterPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.GridViewDetalle.Appearance.FooterPanel.Options.UseBackColor = True
         Me.GridViewDetalle.Bands.AddRange(New DevExpress.XtraGrid.Views.BandedGrid.GridBand() {Me.GridBand1})
         Me.GridViewDetalle.Columns.AddRange(New DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn() {Me.colNUMEROLINEA, Me.colDESCRIPCIONPRODUCTO, Me.colBULTOS, Me.colCANTIDAD, Me.colCLIENT_CODED, Me.colCONSIGNATARIO_NAMED, Me.colUNIDADCANTIDAD, Me.colVALORADUANA, Me.colVALORDAI, Me.colVALORIVA, Me.colCLASE, Me.colPESONETO, Me.colUNIDADPESO, Me.colVOLUMEN, Me.colUNIDADVOLUMEN, Me.colCODIGOSAC, Me.colIMPUESTOSVARIOS, Me.colGASTOSVARIOS, Me.colPAISORIGEN, Me.colFOBUSD, Me.colFLETEUSD, Me.colSEGUROUSD, Me.colREGIONCP, Me.colACUERDO1, Me.colACUERDO2, Me.colPOLIZARELACIONADA, Me.colACTUALIZADAPOR, Me.colACTUALIZADAEL, Me.colDOCUMENTOORIGEN, Me.colPOLIZAORIGEN, Me.colACUERDOCOMERCIAL, Me.colCONSIGNATARIO, Me.colPCTDAI, Me.colORIGIN_LINE_NUMBER, Me.colNUMEROODERORIGEN})
-        Me.GridViewDetalle.CustomizationFormBounds = New System.Drawing.Rectangle(980, 605, 216, 208)
+        Me.GridViewDetalle.CustomizationFormBounds = New System.Drawing.Rectangle(980, 605, 432, 400)
+        Me.GridViewDetalle.DetailHeight = 673
+        Me.GridViewDetalle.FixedLineWidth = 4
         Me.GridViewDetalle.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
         Me.GridViewDetalle.GridControl = Me.GridDetalle
         Me.GridViewDetalle.GroupSummary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridGroupSummaryItem(DevExpress.Data.SummaryItemType.Sum, "CUSTOMS_AMOUNT", Me.colVALORADUANA, "(Total Aduana = {0:c2})"), New DevExpress.XtraGrid.GridGroupSummaryItem(DevExpress.Data.SummaryItemType.Sum, "DAI", Me.colVALORDAI, "(Total DAI = {0:c2})"), New DevExpress.XtraGrid.GridGroupSummaryItem(DevExpress.Data.SummaryItemType.Sum, "IVA", Me.colVALORIVA, "(Total IVA = {0:c2})")})
         Me.GridViewDetalle.Name = "GridViewDetalle"
-        Me.GridViewDetalle.OptionsBehavior.Editable = false
-        Me.GridViewDetalle.OptionsSelection.MultiSelect = true
+        Me.GridViewDetalle.OptionsBehavior.Editable = False
+        Me.GridViewDetalle.OptionsSelection.MultiSelect = True
         Me.GridViewDetalle.OptionsView.GroupFooterShowMode = DevExpress.XtraGrid.Views.Grid.GroupFooterShowMode.VisibleAlways
-        Me.GridViewDetalle.OptionsView.ShowAutoFilterRow = true
-        Me.GridViewDetalle.OptionsView.ShowFooter = true
-        Me.GridViewDetalle.OptionsView.ShowGroupPanel = false
+        Me.GridViewDetalle.OptionsView.ShowAutoFilterRow = True
+        Me.GridViewDetalle.OptionsView.ShowFooter = True
+        Me.GridViewDetalle.OptionsView.ShowGroupPanel = False
         '
         'GridBand1
         '
@@ -2078,354 +2152,397 @@ Partial Class frmDocumentoEgresoFiscal
         Me.GridBand1.Columns.Add(Me.colVALORADUANA)
         Me.GridBand1.Columns.Add(Me.colVALORIVA)
         Me.GridBand1.Columns.Add(Me.colVALORDAI)
-        Me.GridBand1.MinWidth = 20
+        Me.GridBand1.MinWidth = 40
         Me.GridBand1.Name = "GridBand1"
         Me.GridBand1.VisibleIndex = 0
-        Me.GridBand1.Width = 919
+        Me.GridBand1.Width = 1838
         '
         'colNUMEROLINEA
         '
         Me.colNUMEROLINEA.Caption = "NUMERO LINEA"
         Me.colNUMEROLINEA.FieldName = "LINE_NUMBER"
+        Me.colNUMEROLINEA.MinWidth = 40
         Me.colNUMEROLINEA.Name = "colNUMEROLINEA"
-        Me.colNUMEROLINEA.Visible = true
-        Me.colNUMEROLINEA.Width = 106
+        Me.colNUMEROLINEA.Visible = True
+        Me.colNUMEROLINEA.Width = 212
         '
         'colDESCRIPCIONPRODUCTO
         '
         Me.colDESCRIPCIONPRODUCTO.Caption = "DESCRIPCION PRODUCTO"
         Me.colDESCRIPCIONPRODUCTO.FieldName = "SKU_DESCRIPTION"
+        Me.colDESCRIPCIONPRODUCTO.MinWidth = 40
         Me.colDESCRIPCIONPRODUCTO.Name = "colDESCRIPCIONPRODUCTO"
-        Me.colDESCRIPCIONPRODUCTO.Visible = true
-        Me.colDESCRIPCIONPRODUCTO.Width = 168
+        Me.colDESCRIPCIONPRODUCTO.Visible = True
+        Me.colDESCRIPCIONPRODUCTO.Width = 336
         '
         'colBULTOS
         '
         Me.colBULTOS.Caption = "BULTOS"
         Me.colBULTOS.FieldName = "BULTOS"
+        Me.colBULTOS.MinWidth = 40
         Me.colBULTOS.Name = "colBULTOS"
         Me.colBULTOS.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "BULTOS", "(Total Bultos = {0:n2})")})
-        Me.colBULTOS.Visible = true
-        Me.colBULTOS.Width = 137
+        Me.colBULTOS.Visible = True
+        Me.colBULTOS.Width = 274
         '
         'colPOLIZAORIGEN
         '
         Me.colPOLIZAORIGEN.Caption = "POLIZA ORIGEN"
         Me.colPOLIZAORIGEN.FieldName = "CODIGO_POLIZA_ORIGEN"
+        Me.colPOLIZAORIGEN.MinWidth = 40
         Me.colPOLIZAORIGEN.Name = "colPOLIZAORIGEN"
-        Me.colPOLIZAORIGEN.Visible = true
-        Me.colPOLIZAORIGEN.Width = 93
+        Me.colPOLIZAORIGEN.Visible = True
+        Me.colPOLIZAORIGEN.Width = 186
         '
         'colDOCUMENTOORIGEN
         '
         Me.colDOCUMENTOORIGEN.Caption = "DOCUMENTO ORIGEN"
         Me.colDOCUMENTOORIGEN.FieldName = "ORIGIN_DOC_ID"
+        Me.colDOCUMENTOORIGEN.MinWidth = 40
         Me.colDOCUMENTOORIGEN.Name = "colDOCUMENTOORIGEN"
-        Me.colDOCUMENTOORIGEN.Visible = true
-        Me.colDOCUMENTOORIGEN.Width = 130
+        Me.colDOCUMENTOORIGEN.Visible = True
+        Me.colDOCUMENTOORIGEN.Width = 260
         '
         'colORIGIN_LINE_NUMBER
         '
         Me.colORIGIN_LINE_NUMBER.Caption = "LINEA ORIGEN"
         Me.colORIGIN_LINE_NUMBER.FieldName = "ORIGIN_LINE_NUMBER"
+        Me.colORIGIN_LINE_NUMBER.MinWidth = 40
         Me.colORIGIN_LINE_NUMBER.Name = "colORIGIN_LINE_NUMBER"
-        Me.colORIGIN_LINE_NUMBER.Visible = true
-        Me.colORIGIN_LINE_NUMBER.Width = 106
+        Me.colORIGIN_LINE_NUMBER.Visible = True
+        Me.colORIGIN_LINE_NUMBER.Width = 212
         '
         'colCLIENT_CODED
         '
         Me.colCLIENT_CODED.Caption = "Código Consignatario"
         Me.colCLIENT_CODED.FieldName = "CLIENT_CODE"
+        Me.colCLIENT_CODED.MinWidth = 40
         Me.colCLIENT_CODED.Name = "colCLIENT_CODED"
-        Me.colCLIENT_CODED.OptionsColumn.AllowEdit = false
-        Me.colCLIENT_CODED.Visible = true
-        Me.colCLIENT_CODED.Width = 86
+        Me.colCLIENT_CODED.OptionsColumn.AllowEdit = False
+        Me.colCLIENT_CODED.Visible = True
+        Me.colCLIENT_CODED.Width = 172
         '
         'colCONSIGNATARIO_NAMED
         '
         Me.colCONSIGNATARIO_NAMED.Caption = "Nombre Consignatario"
         Me.colCONSIGNATARIO_NAMED.FieldName = "CONSIGNATARIO_NAME"
+        Me.colCONSIGNATARIO_NAMED.MinWidth = 40
         Me.colCONSIGNATARIO_NAMED.Name = "colCONSIGNATARIO_NAMED"
-        Me.colCONSIGNATARIO_NAMED.Visible = true
-        Me.colCONSIGNATARIO_NAMED.Width = 93
+        Me.colCONSIGNATARIO_NAMED.Visible = True
+        Me.colCONSIGNATARIO_NAMED.Width = 186
         '
         'colVALORADUANA
         '
         Me.colVALORADUANA.Caption = "VALOR ADUANA"
         Me.colVALORADUANA.FieldName = "CUSTOMS_AMOUNT"
+        Me.colVALORADUANA.MinWidth = 40
         Me.colVALORADUANA.Name = "colVALORADUANA"
-        Me.colVALORADUANA.OptionsColumn.ShowInCustomizationForm = false
+        Me.colVALORADUANA.OptionsColumn.ShowInCustomizationForm = False
         Me.colVALORADUANA.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "CUSTOMS_AMOUNT", "(Total Aduana = {0:c2})")})
-        Me.colVALORADUANA.Width = 129
+        Me.colVALORADUANA.Width = 258
         '
         'colVALORIVA
         '
         Me.colVALORIVA.Caption = "VALOR IVA"
         Me.colVALORIVA.FieldName = "IVA"
+        Me.colVALORIVA.MinWidth = 40
         Me.colVALORIVA.Name = "colVALORIVA"
-        Me.colVALORIVA.OptionsColumn.ShowInCustomizationForm = false
+        Me.colVALORIVA.OptionsColumn.ShowInCustomizationForm = False
         Me.colVALORIVA.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "IVA", "(Total IVA = {0:c2})")})
-        Me.colVALORIVA.Width = 109
+        Me.colVALORIVA.Width = 218
         '
         'colVALORDAI
         '
         Me.colVALORDAI.Caption = "VALOR DAI"
         Me.colVALORDAI.FieldName = "DAI"
+        Me.colVALORDAI.MinWidth = 40
         Me.colVALORDAI.Name = "colVALORDAI"
-        Me.colVALORDAI.OptionsColumn.ShowInCustomizationForm = false
+        Me.colVALORDAI.OptionsColumn.ShowInCustomizationForm = False
         Me.colVALORDAI.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "DAI", "(Total DAI = {0:c2})")})
-        Me.colVALORDAI.Width = 323
+        Me.colVALORDAI.Width = 646
         '
         'colCANTIDAD
         '
         Me.colCANTIDAD.Caption = "CANTIDAD"
         Me.colCANTIDAD.FieldName = "CANTIDAD"
+        Me.colCANTIDAD.MinWidth = 40
         Me.colCANTIDAD.Name = "colCANTIDAD"
-        Me.colCANTIDAD.OptionsColumn.ShowInCustomizationForm = false
-        Me.colCANTIDAD.Visible = true
-        Me.colCANTIDAD.Width = 61
+        Me.colCANTIDAD.OptionsColumn.ShowInCustomizationForm = False
+        Me.colCANTIDAD.Visible = True
+        Me.colCANTIDAD.Width = 122
         '
         'colUNIDADCANTIDAD
         '
         Me.colUNIDADCANTIDAD.Caption = "UNIDAD CANTIDAD"
         Me.colUNIDADCANTIDAD.FieldName = "QTY_UNIT"
+        Me.colUNIDADCANTIDAD.MinWidth = 40
         Me.colUNIDADCANTIDAD.Name = "colUNIDADCANTIDAD"
-        Me.colUNIDADCANTIDAD.OptionsColumn.ShowInCustomizationForm = false
-        Me.colUNIDADCANTIDAD.Width = 103
+        Me.colUNIDADCANTIDAD.OptionsColumn.ShowInCustomizationForm = False
+        Me.colUNIDADCANTIDAD.Width = 206
         '
         'colCLASE
         '
         Me.colCLASE.Caption = "CLASE"
         Me.colCLASE.FieldName = "CLASE"
+        Me.colCLASE.MinWidth = 40
         Me.colCLASE.Name = "colCLASE"
-        Me.colCLASE.OptionsColumn.ShowInCustomizationForm = false
-        Me.colCLASE.Width = 40
+        Me.colCLASE.OptionsColumn.ShowInCustomizationForm = False
+        Me.colCLASE.Width = 80
         '
         'colPESONETO
         '
         Me.colPESONETO.Caption = "PESO NETO"
         Me.colPESONETO.FieldName = "NET_WEIGTH"
+        Me.colPESONETO.MinWidth = 40
         Me.colPESONETO.Name = "colPESONETO"
-        Me.colPESONETO.OptionsColumn.ShowInCustomizationForm = false
-        Me.colPESONETO.Width = 65
+        Me.colPESONETO.OptionsColumn.ShowInCustomizationForm = False
+        Me.colPESONETO.Width = 130
         '
         'colUNIDADPESO
         '
         Me.colUNIDADPESO.Caption = "UNIDAD PESO"
         Me.colUNIDADPESO.FieldName = "WEIGTH_UNIT"
+        Me.colUNIDADPESO.MinWidth = 40
         Me.colUNIDADPESO.Name = "colUNIDADPESO"
-        Me.colUNIDADPESO.OptionsColumn.ShowInCustomizationForm = false
-        Me.colUNIDADPESO.Width = 77
+        Me.colUNIDADPESO.OptionsColumn.ShowInCustomizationForm = False
+        Me.colUNIDADPESO.Width = 154
         '
         'colVOLUMEN
         '
         Me.colVOLUMEN.Caption = "VOLUMEN"
         Me.colVOLUMEN.FieldName = "VOLUME"
+        Me.colVOLUMEN.MinWidth = 40
         Me.colVOLUMEN.Name = "colVOLUMEN"
-        Me.colVOLUMEN.OptionsColumn.ShowInCustomizationForm = false
-        Me.colVOLUMEN.Width = 56
+        Me.colVOLUMEN.OptionsColumn.ShowInCustomizationForm = False
+        Me.colVOLUMEN.Width = 112
         '
         'colUNIDADVOLUMEN
         '
         Me.colUNIDADVOLUMEN.Caption = "UNIDAD VOLUMEN"
         Me.colUNIDADVOLUMEN.FieldName = "VOLUME_UNIT"
+        Me.colUNIDADVOLUMEN.MinWidth = 40
         Me.colUNIDADVOLUMEN.Name = "colUNIDADVOLUMEN"
-        Me.colUNIDADVOLUMEN.OptionsColumn.ShowInCustomizationForm = false
-        Me.colUNIDADVOLUMEN.Width = 98
+        Me.colUNIDADVOLUMEN.OptionsColumn.ShowInCustomizationForm = False
+        Me.colUNIDADVOLUMEN.Width = 196
         '
         'colCODIGOSAC
         '
         Me.colCODIGOSAC.Caption = "CODIGO SAC"
         Me.colCODIGOSAC.FieldName = "SAC_CODE"
+        Me.colCODIGOSAC.MinWidth = 40
         Me.colCODIGOSAC.Name = "colCODIGOSAC"
-        Me.colCODIGOSAC.OptionsColumn.ShowInCustomizationForm = false
-        Me.colCODIGOSAC.Width = 73
+        Me.colCODIGOSAC.OptionsColumn.ShowInCustomizationForm = False
+        Me.colCODIGOSAC.Width = 146
         '
         'colIMPUESTOSVARIOS
         '
         Me.colIMPUESTOSVARIOS.Caption = "IMPUESTOS VARIOS"
         Me.colIMPUESTOSVARIOS.FieldName = "MISC_TAXES"
+        Me.colIMPUESTOSVARIOS.MinWidth = 40
         Me.colIMPUESTOSVARIOS.Name = "colIMPUESTOSVARIOS"
-        Me.colIMPUESTOSVARIOS.OptionsColumn.ShowInCustomizationForm = false
-        Me.colIMPUESTOSVARIOS.Width = 107
+        Me.colIMPUESTOSVARIOS.OptionsColumn.ShowInCustomizationForm = False
+        Me.colIMPUESTOSVARIOS.Width = 214
         '
         'colGASTOSVARIOS
         '
         Me.colGASTOSVARIOS.Caption = "GASTOS VARIOS"
         Me.colGASTOSVARIOS.FieldName = "MISC_EXPENSES"
+        Me.colGASTOSVARIOS.MinWidth = 40
         Me.colGASTOSVARIOS.Name = "colGASTOSVARIOS"
-        Me.colGASTOSVARIOS.OptionsColumn.ShowInCustomizationForm = false
-        Me.colGASTOSVARIOS.Width = 90
+        Me.colGASTOSVARIOS.OptionsColumn.ShowInCustomizationForm = False
+        Me.colGASTOSVARIOS.Width = 180
         '
         'colPAISORIGEN
         '
         Me.colPAISORIGEN.Caption = "PAIS ORIGEN"
         Me.colPAISORIGEN.FieldName = "ORIGIN_COUNTRY"
+        Me.colPAISORIGEN.MinWidth = 40
         Me.colPAISORIGEN.Name = "colPAISORIGEN"
-        Me.colPAISORIGEN.OptionsColumn.ShowInCustomizationForm = false
-        Me.colPAISORIGEN.Width = 74
+        Me.colPAISORIGEN.OptionsColumn.ShowInCustomizationForm = False
+        Me.colPAISORIGEN.Width = 148
         '
         'colFOBUSD
         '
         Me.colFOBUSD.Caption = "FOB USD"
         Me.colFOBUSD.FieldName = "FOB_USD"
+        Me.colFOBUSD.MinWidth = 40
         Me.colFOBUSD.Name = "colFOBUSD"
-        Me.colFOBUSD.OptionsColumn.ShowInCustomizationForm = false
-        Me.colFOBUSD.Width = 52
+        Me.colFOBUSD.OptionsColumn.ShowInCustomizationForm = False
+        Me.colFOBUSD.Width = 104
         '
         'colFLETEUSD
         '
         Me.colFLETEUSD.Caption = "FLETE USD"
         Me.colFLETEUSD.FieldName = "FREIGTH_USD"
+        Me.colFLETEUSD.MinWidth = 40
         Me.colFLETEUSD.Name = "colFLETEUSD"
-        Me.colFLETEUSD.OptionsColumn.ShowInCustomizationForm = false
-        Me.colFLETEUSD.Width = 61
+        Me.colFLETEUSD.OptionsColumn.ShowInCustomizationForm = False
+        Me.colFLETEUSD.Width = 122
         '
         'colSEGUROUSD
         '
         Me.colSEGUROUSD.Caption = "SEGURO USD"
         Me.colSEGUROUSD.FieldName = "INSURANCE_USD"
+        Me.colSEGUROUSD.MinWidth = 40
         Me.colSEGUROUSD.Name = "colSEGUROUSD"
-        Me.colSEGUROUSD.OptionsColumn.ShowInCustomizationForm = false
-        Me.colSEGUROUSD.Width = 73
+        Me.colSEGUROUSD.OptionsColumn.ShowInCustomizationForm = False
+        Me.colSEGUROUSD.Width = 146
         '
         'colREGIONCP
         '
         Me.colREGIONCP.Caption = "REGION CP"
         Me.colREGIONCP.FieldName = "REGION_CP"
+        Me.colREGIONCP.MinWidth = 40
         Me.colREGIONCP.Name = "colREGIONCP"
-        Me.colREGIONCP.OptionsColumn.ShowInCustomizationForm = false
-        Me.colREGIONCP.Width = 64
+        Me.colREGIONCP.OptionsColumn.ShowInCustomizationForm = False
+        Me.colREGIONCP.Width = 128
         '
         'colACUERDO1
         '
         Me.colACUERDO1.Caption = "ACUERDO1"
         Me.colACUERDO1.FieldName = "AGREEMENT_1"
+        Me.colACUERDO1.MinWidth = 40
         Me.colACUERDO1.Name = "colACUERDO1"
-        Me.colACUERDO1.OptionsColumn.ShowInCustomizationForm = false
-        Me.colACUERDO1.Width = 64
+        Me.colACUERDO1.OptionsColumn.ShowInCustomizationForm = False
+        Me.colACUERDO1.Width = 128
         '
         'colACUERDO2
         '
         Me.colACUERDO2.Caption = "ACUERDO2"
         Me.colACUERDO2.FieldName = "AGREEMENT_2"
+        Me.colACUERDO2.MinWidth = 40
         Me.colACUERDO2.Name = "colACUERDO2"
-        Me.colACUERDO2.OptionsColumn.ShowInCustomizationForm = false
-        Me.colACUERDO2.Width = 64
+        Me.colACUERDO2.OptionsColumn.ShowInCustomizationForm = False
+        Me.colACUERDO2.Width = 128
         '
         'colPOLIZARELACIONADA
         '
         Me.colPOLIZARELACIONADA.Caption = "POLIZA RELACIONADA"
         Me.colPOLIZARELACIONADA.FieldName = "RELATED_POLIZA"
+        Me.colPOLIZARELACIONADA.MinWidth = 40
         Me.colPOLIZARELACIONADA.Name = "colPOLIZARELACIONADA"
-        Me.colPOLIZARELACIONADA.OptionsColumn.ShowInCustomizationForm = false
-        Me.colPOLIZARELACIONADA.Width = 120
+        Me.colPOLIZARELACIONADA.OptionsColumn.ShowInCustomizationForm = False
+        Me.colPOLIZARELACIONADA.Width = 240
         '
         'colACTUALIZADAPOR
         '
         Me.colACTUALIZADAPOR.Caption = "ACTUALIZADA POR"
         Me.colACTUALIZADAPOR.FieldName = "LAST_UPDATED_BY"
+        Me.colACTUALIZADAPOR.MinWidth = 40
         Me.colACTUALIZADAPOR.Name = "colACTUALIZADAPOR"
-        Me.colACTUALIZADAPOR.OptionsColumn.ShowInCustomizationForm = false
-        Me.colACTUALIZADAPOR.Width = 103
+        Me.colACTUALIZADAPOR.OptionsColumn.ShowInCustomizationForm = False
+        Me.colACTUALIZADAPOR.Width = 206
         '
         'colACTUALIZADAEL
         '
         Me.colACTUALIZADAEL.Caption = "ACTUALIZADA EL"
         Me.colACTUALIZADAEL.FieldName = "LAST_UPDATED"
+        Me.colACTUALIZADAEL.MinWidth = 40
         Me.colACTUALIZADAEL.Name = "colACTUALIZADAEL"
-        Me.colACTUALIZADAEL.OptionsColumn.ShowInCustomizationForm = false
-        Me.colACTUALIZADAEL.Width = 93
+        Me.colACTUALIZADAEL.OptionsColumn.ShowInCustomizationForm = False
+        Me.colACTUALIZADAEL.Width = 186
         '
         'colACUERDOCOMERCIAL
         '
         Me.colACUERDOCOMERCIAL.Caption = "ACUERDO COMERCIAL"
+        Me.colACUERDOCOMERCIAL.MinWidth = 40
         Me.colACUERDOCOMERCIAL.Name = "colACUERDOCOMERCIAL"
-        Me.colACUERDOCOMERCIAL.OptionsColumn.ShowInCustomizationForm = false
-        Me.colACUERDOCOMERCIAL.Width = 120
+        Me.colACUERDOCOMERCIAL.OptionsColumn.ShowInCustomizationForm = False
+        Me.colACUERDOCOMERCIAL.Width = 240
         '
         'colCONSIGNATARIO
         '
         Me.colCONSIGNATARIO.Caption = "CONSIGNATARIO"
         Me.colCONSIGNATARIO.FieldName = "CLIENT_CODE"
+        Me.colCONSIGNATARIO.MinWidth = 40
         Me.colCONSIGNATARIO.Name = "colCONSIGNATARIO"
-        Me.colCONSIGNATARIO.OptionsColumn.ShowInCustomizationForm = false
-        Me.colCONSIGNATARIO.Width = 94
+        Me.colCONSIGNATARIO.OptionsColumn.ShowInCustomizationForm = False
+        Me.colCONSIGNATARIO.Width = 188
         '
         'colPCTDAI
         '
         Me.colPCTDAI.Caption = "PCT DAI"
         Me.colPCTDAI.FieldName = "PCTDAI"
+        Me.colPCTDAI.MinWidth = 40
         Me.colPCTDAI.Name = "colPCTDAI"
-        Me.colPCTDAI.OptionsColumn.ShowInCustomizationForm = false
+        Me.colPCTDAI.OptionsColumn.ShowInCustomizationForm = False
+        Me.colPCTDAI.Width = 150
         '
         'colNUMEROODERORIGEN
         '
         Me.colNUMEROODERORIGEN.Caption = "Numero Orden Origen"
         Me.colNUMEROODERORIGEN.FieldName = "NUMEROODERORIGEN"
+        Me.colNUMEROODERORIGEN.MinWidth = 40
         Me.colNUMEROODERORIGEN.Name = "colNUMEROODERORIGEN"
-        Me.colNUMEROODERORIGEN.OptionsColumn.ShowInCustomizationForm = false
+        Me.colNUMEROODERORIGEN.OptionsColumn.ShowInCustomizationForm = False
+        Me.colNUMEROODERORIGEN.Width = 150
         '
         'txtValorIva
         '
-        Me.txtValorIva.Location = New System.Drawing.Point(709, 84)
+        Me.txtValorIva.Location = New System.Drawing.Point(1436, 167)
+        Me.txtValorIva.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtValorIva.Name = "txtValorIva"
         Me.txtValorIva.Properties.Mask.EditMask = "n6"
         Me.txtValorIva.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtValorIva.Size = New System.Drawing.Size(419, 20)
+        Me.txtValorIva.Size = New System.Drawing.Size(828, 40)
         Me.txtValorIva.StyleController = Me.LayoutDetalle
         Me.txtValorIva.TabIndex = 7
         '
         'txtDai
         '
-        Me.txtDai.Location = New System.Drawing.Point(401, 84)
+        Me.txtDai.Location = New System.Drawing.Point(811, 167)
+        Me.txtDai.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtDai.Name = "txtDai"
         Me.txtDai.Properties.Mask.EditMask = "n6"
         Me.txtDai.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtDai.Size = New System.Drawing.Size(196, 20)
+        Me.txtDai.Size = New System.Drawing.Size(394, 40)
         Me.txtDai.StyleController = Me.LayoutDetalle
         Me.txtDai.TabIndex = 9
         '
         'txtVolumen
         '
-        Me.txtVolumen.Location = New System.Drawing.Point(115, 108)
+        Me.txtVolumen.Location = New System.Drawing.Point(227, 215)
+        Me.txtVolumen.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtVolumen.Name = "txtVolumen"
         Me.txtVolumen.Properties.Mask.EditMask = "n6"
         Me.txtVolumen.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtVolumen.Size = New System.Drawing.Size(174, 20)
+        Me.txtVolumen.Size = New System.Drawing.Size(353, 40)
         Me.txtVolumen.StyleController = Me.LayoutDetalle
         Me.txtVolumen.TabIndex = 11
         '
         'txtValorAduana
         '
-        Me.txtValorAduana.Location = New System.Drawing.Point(115, 60)
+        Me.txtValorAduana.Location = New System.Drawing.Point(227, 119)
+        Me.txtValorAduana.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtValorAduana.Name = "txtValorAduana"
-        Me.txtValorAduana.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(192,Byte),Integer))
-        Me.txtValorAduana.Properties.Appearance.Options.UseBackColor = true
+        Me.txtValorAduana.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.txtValorAduana.Properties.Appearance.Options.UseBackColor = True
         Me.txtValorAduana.Properties.Mask.EditMask = "n2"
         Me.txtValorAduana.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtValorAduana.Size = New System.Drawing.Size(174, 20)
+        Me.txtValorAduana.Size = New System.Drawing.Size(353, 40)
         Me.txtValorAduana.StyleController = Me.LayoutDetalle
         Me.txtValorAduana.TabIndex = 5
         '
         'txtCantidad
         '
-        Me.txtCantidad.Location = New System.Drawing.Point(401, 36)
+        Me.txtCantidad.Location = New System.Drawing.Point(811, 71)
+        Me.txtCantidad.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtCantidad.Name = "txtCantidad"
         Me.txtCantidad.Properties.Mask.EditMask = "n4"
         Me.txtCantidad.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtCantidad.Size = New System.Drawing.Size(196, 20)
+        Me.txtCantidad.Size = New System.Drawing.Size(394, 40)
         Me.txtCantidad.StyleController = Me.LayoutDetalle
         Me.txtCantidad.TabIndex = 3
         '
         'cmbUnidadPeso
         '
-        Me.cmbUnidadPeso.Location = New System.Drawing.Point(709, 108)
+        Me.cmbUnidadPeso.Location = New System.Drawing.Point(1436, 215)
+        Me.cmbUnidadPeso.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.cmbUnidadPeso.Name = "cmbUnidadPeso"
         Me.cmbUnidadPeso.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.cmbUnidadPeso.Properties.NullText = "[Seleccione Unidad...]"
-        Me.cmbUnidadPeso.Properties.View = Me.GridView4
-        Me.cmbUnidadPeso.Size = New System.Drawing.Size(419, 20)
+        Me.cmbUnidadPeso.Properties.PopupView = Me.GridView4
+        Me.cmbUnidadPeso.Size = New System.Drawing.Size(828, 40)
         Me.cmbUnidadPeso.StyleController = Me.LayoutDetalle
         Me.cmbUnidadPeso.TabIndex = 10
         '
@@ -2433,45 +2550,49 @@ Partial Class frmDocumentoEgresoFiscal
         '
         Me.GridView4.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
         Me.GridView4.Name = "GridView4"
-        Me.GridView4.OptionsSelection.EnableAppearanceFocusedCell = false
-        Me.GridView4.OptionsView.ShowGroupPanel = false
+        Me.GridView4.OptionsSelection.EnableAppearanceFocusedCell = False
+        Me.GridView4.OptionsView.ShowGroupPanel = False
         '
         'txtPesoNeto
         '
-        Me.txtPesoNeto.Location = New System.Drawing.Point(401, 108)
+        Me.txtPesoNeto.Location = New System.Drawing.Point(811, 215)
+        Me.txtPesoNeto.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtPesoNeto.Name = "txtPesoNeto"
         Me.txtPesoNeto.Properties.Mask.EditMask = "n6"
         Me.txtPesoNeto.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtPesoNeto.Size = New System.Drawing.Size(196, 20)
+        Me.txtPesoNeto.Size = New System.Drawing.Size(394, 40)
         Me.txtPesoNeto.StyleController = Me.LayoutDetalle
         Me.txtPesoNeto.TabIndex = 12
         '
         'txtClaseLinea
         '
-        Me.txtClaseLinea.Location = New System.Drawing.Point(115, 84)
+        Me.txtClaseLinea.Location = New System.Drawing.Point(227, 167)
+        Me.txtClaseLinea.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtClaseLinea.Name = "txtClaseLinea"
-        Me.txtClaseLinea.Size = New System.Drawing.Size(174, 20)
+        Me.txtClaseLinea.Size = New System.Drawing.Size(353, 40)
         Me.txtClaseLinea.StyleController = Me.LayoutDetalle
         Me.txtClaseLinea.TabIndex = 8
         '
         'txtBultos
         '
-        Me.txtBultos.Location = New System.Drawing.Point(115, 36)
+        Me.txtBultos.Location = New System.Drawing.Point(227, 71)
+        Me.txtBultos.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtBultos.Name = "txtBultos"
         Me.txtBultos.Properties.Mask.EditMask = "n4"
         Me.txtBultos.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtBultos.Size = New System.Drawing.Size(174, 20)
+        Me.txtBultos.Size = New System.Drawing.Size(353, 40)
         Me.txtBultos.StyleController = Me.LayoutDetalle
         Me.txtBultos.TabIndex = 2
         '
         'cmbSacCode
         '
-        Me.cmbSacCode.Location = New System.Drawing.Point(709, 132)
+        Me.cmbSacCode.Location = New System.Drawing.Point(1436, 263)
+        Me.cmbSacCode.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.cmbSacCode.Name = "cmbSacCode"
         Me.cmbSacCode.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.cmbSacCode.Properties.NullText = "[Seleccione SAC...]"
-        Me.cmbSacCode.Properties.View = Me.GridView3
-        Me.cmbSacCode.Size = New System.Drawing.Size(419, 20)
+        Me.cmbSacCode.Properties.PopupView = Me.GridView3
+        Me.cmbSacCode.Size = New System.Drawing.Size(828, 40)
         Me.cmbSacCode.StyleController = Me.LayoutDetalle
         Me.cmbSacCode.TabIndex = 13
         '
@@ -2479,28 +2600,30 @@ Partial Class frmDocumentoEgresoFiscal
         '
         Me.GridView3.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
         Me.GridView3.Name = "GridView3"
-        Me.GridView3.OptionsSelection.EnableAppearanceFocusedCell = false
-        Me.GridView3.OptionsView.ShowGroupPanel = false
+        Me.GridView3.OptionsSelection.EnableAppearanceFocusedCell = False
+        Me.GridView3.OptionsView.ShowGroupPanel = False
         '
         'txtNumeroLinea
         '
-        Me.txtNumeroLinea.Location = New System.Drawing.Point(115, 12)
+        Me.txtNumeroLinea.Location = New System.Drawing.Point(227, 23)
+        Me.txtNumeroLinea.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtNumeroLinea.Name = "txtNumeroLinea"
         Me.txtNumeroLinea.Properties.Mask.EditMask = "n0"
         Me.txtNumeroLinea.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
-        Me.txtNumeroLinea.Properties.ReadOnly = true
-        Me.txtNumeroLinea.Size = New System.Drawing.Size(174, 20)
+        Me.txtNumeroLinea.Properties.ReadOnly = True
+        Me.txtNumeroLinea.Size = New System.Drawing.Size(353, 40)
         Me.txtNumeroLinea.StyleController = Me.LayoutDetalle
         Me.txtNumeroLinea.TabIndex = 0
         '
         'cmbUnidadCantidad
         '
-        Me.cmbUnidadCantidad.Location = New System.Drawing.Point(709, 60)
+        Me.cmbUnidadCantidad.Location = New System.Drawing.Point(1436, 119)
+        Me.cmbUnidadCantidad.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.cmbUnidadCantidad.Name = "cmbUnidadCantidad"
         Me.cmbUnidadCantidad.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.cmbUnidadCantidad.Properties.NullText = "[Seleccione Unidad...]"
-        Me.cmbUnidadCantidad.Properties.View = Me.GridView5
-        Me.cmbUnidadCantidad.Size = New System.Drawing.Size(419, 20)
+        Me.cmbUnidadCantidad.Properties.PopupView = Me.GridView5
+        Me.cmbUnidadCantidad.Size = New System.Drawing.Size(828, 40)
         Me.cmbUnidadCantidad.StyleController = Me.LayoutDetalle
         Me.cmbUnidadCantidad.TabIndex = 4
         '
@@ -2508,17 +2631,18 @@ Partial Class frmDocumentoEgresoFiscal
         '
         Me.GridView5.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
         Me.GridView5.Name = "GridView5"
-        Me.GridView5.OptionsSelection.EnableAppearanceFocusedCell = false
-        Me.GridView5.OptionsView.ShowGroupPanel = false
+        Me.GridView5.OptionsSelection.EnableAppearanceFocusedCell = False
+        Me.GridView5.OptionsView.ShowGroupPanel = False
         '
         'cmbUnidadVolumen
         '
-        Me.cmbUnidadVolumen.Location = New System.Drawing.Point(401, 132)
+        Me.cmbUnidadVolumen.Location = New System.Drawing.Point(811, 263)
+        Me.cmbUnidadVolumen.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.cmbUnidadVolumen.Name = "cmbUnidadVolumen"
         Me.cmbUnidadVolumen.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.cmbUnidadVolumen.Properties.NullText = ""
-        Me.cmbUnidadVolumen.Properties.View = Me.GridView6
-        Me.cmbUnidadVolumen.Size = New System.Drawing.Size(196, 20)
+        Me.cmbUnidadVolumen.Properties.PopupView = Me.GridView6
+        Me.cmbUnidadVolumen.Size = New System.Drawing.Size(394, 40)
         Me.cmbUnidadVolumen.StyleController = Me.LayoutDetalle
         Me.cmbUnidadVolumen.TabIndex = 15
         '
@@ -2526,18 +2650,19 @@ Partial Class frmDocumentoEgresoFiscal
         '
         Me.GridView6.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
         Me.GridView6.Name = "GridView6"
-        Me.GridView6.OptionsSelection.EnableAppearanceFocusedCell = false
-        Me.GridView6.OptionsView.ShowGroupPanel = false
+        Me.GridView6.OptionsSelection.EnableAppearanceFocusedCell = False
+        Me.GridView6.OptionsView.ShowGroupPanel = False
         '
         'cmbConsignatario
         '
-        Me.cmbConsignatario.Location = New System.Drawing.Point(401, 228)
+        Me.cmbConsignatario.Location = New System.Drawing.Point(811, 455)
+        Me.cmbConsignatario.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.cmbConsignatario.Name = "cmbConsignatario"
         Me.cmbConsignatario.Properties.BestFitMode = DevExpress.XtraEditors.Controls.BestFitMode.BestFitResizePopup
         Me.cmbConsignatario.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.cmbConsignatario.Properties.NullText = "[Seleccione Consignatario...]"
-        Me.cmbConsignatario.Properties.View = Me.GridView8
-        Me.cmbConsignatario.Size = New System.Drawing.Size(196, 20)
+        Me.cmbConsignatario.Properties.PopupView = Me.GridView8
+        Me.cmbConsignatario.Size = New System.Drawing.Size(394, 40)
         Me.cmbConsignatario.StyleController = Me.LayoutDetalle
         Me.cmbConsignatario.TabIndex = 28
         '
@@ -2545,18 +2670,19 @@ Partial Class frmDocumentoEgresoFiscal
         '
         Me.GridView8.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
         Me.GridView8.Name = "GridView8"
-        Me.GridView8.OptionsSelection.EnableAppearanceFocusedCell = false
-        Me.GridView8.OptionsView.ShowAutoFilterRow = true
-        Me.GridView8.OptionsView.ShowGroupPanel = false
+        Me.GridView8.OptionsSelection.EnableAppearanceFocusedCell = False
+        Me.GridView8.OptionsView.ShowAutoFilterRow = True
+        Me.GridView8.OptionsView.ShowGroupPanel = False
         '
         'txtDescripcionSku
         '
-        Me.txtDescripcionSku.Location = New System.Drawing.Point(401, 12)
+        Me.txtDescripcionSku.Location = New System.Drawing.Point(811, 23)
+        Me.txtDescripcionSku.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtDescripcionSku.Name = "txtDescripcionSku"
-        Me.txtDescripcionSku.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(192,Byte),Integer))
-        Me.txtDescripcionSku.Properties.Appearance.Options.UseBackColor = true
+        Me.txtDescripcionSku.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.txtDescripcionSku.Properties.Appearance.Options.UseBackColor = True
         Me.txtDescripcionSku.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.txtDescripcionSku.Size = New System.Drawing.Size(727, 20)
+        Me.txtDescripcionSku.Size = New System.Drawing.Size(1453, 40)
         Me.txtDescripcionSku.StyleController = Me.LayoutDetalle
         Me.txtDescripcionSku.TabIndex = 1
         '
@@ -2564,12 +2690,11 @@ Partial Class frmDocumentoEgresoFiscal
         '
         Me.LayoutControlGroup2.CustomizationFormText = "Root"
         Me.LayoutControlGroup2.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.[True]
-        Me.LayoutControlGroup2.GroupBordersVisible = false
+        Me.LayoutControlGroup2.GroupBordersVisible = False
         Me.LayoutControlGroup2.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem47, Me.LayoutControlItem52, Me.LayoutControlItem58, Me.LayoutControlItem48, Me.LayoutControlItem51, Me.LayoutControlItem56, Me.LayoutControlItem60, Me.LayoutControlItem55, Me.LayoutControlItem61, Me.LayoutControlItem53, Me.LayoutControlItem54, Me.LayoutControlItem59, Me.LayoutControlItem49, Me.SplitterItem8, Me.LayoutControlItem62, Me.LayoutControlItem63, Me.LayoutControlItem64, Me.LayoutControlItem65, Me.LayoutControlItem66, Me.LayoutControlItem67, Me.LayoutControlItem68, Me.LayoutControlItem69, Me.LayoutControlItem74, Me.LayoutControlItem73, Me.SplitterItem9, Me.LayoutControlItem70, Me.LayoutControlItem81, Me.LayoutControlItem72, Me.LayoutControlItem77, Me.LayoutControlItem71, Me.LayoutControlItem78, Me.LayoutControlItem50, Me.LayoutControlItem75, Me.LayoutControlItem76, Me.UILayoutControlImpuesto, Me.LayoutControlItem57})
-        Me.LayoutControlGroup2.Location = New System.Drawing.Point(0, 0)
         Me.LayoutControlGroup2.Name = "Root"
-        Me.LayoutControlGroup2.Size = New System.Drawing.Size(1140, 580)
-        Me.LayoutControlGroup2.TextVisible = false
+        Me.LayoutControlGroup2.Size = New System.Drawing.Size(2288, 1126)
+        Me.LayoutControlGroup2.TextVisible = False
         '
         'LayoutControlItem47
         '
@@ -2577,370 +2702,372 @@ Partial Class frmDocumentoEgresoFiscal
         Me.LayoutControlItem47.CustomizationFormText = "Numero Linea"
         Me.LayoutControlItem47.Location = New System.Drawing.Point(0, 0)
         Me.LayoutControlItem47.Name = "LayoutControlItem47"
-        Me.LayoutControlItem47.Size = New System.Drawing.Size(281, 24)
+        Me.LayoutControlItem47.Size = New System.Drawing.Size(564, 48)
         Me.LayoutControlItem47.Text = "Numero Linea"
-        Me.LayoutControlItem47.TextSize = New System.Drawing.Size(100, 13)
+        Me.LayoutControlItem47.TextSize = New System.Drawing.Size(197, 25)
         '
         'LayoutControlItem52
         '
         Me.LayoutControlItem52.Control = Me.txtClaseLinea
         Me.LayoutControlItem52.CustomizationFormText = "Clase"
-        Me.LayoutControlItem52.Location = New System.Drawing.Point(0, 72)
+        Me.LayoutControlItem52.Location = New System.Drawing.Point(0, 144)
         Me.LayoutControlItem52.Name = "LayoutControlItem52"
-        Me.LayoutControlItem52.Size = New System.Drawing.Size(281, 24)
+        Me.LayoutControlItem52.Size = New System.Drawing.Size(564, 48)
         Me.LayoutControlItem52.Text = "Clase"
-        Me.LayoutControlItem52.TextSize = New System.Drawing.Size(100, 13)
+        Me.LayoutControlItem52.TextSize = New System.Drawing.Size(197, 25)
         '
         'LayoutControlItem58
         '
         Me.LayoutControlItem58.Control = Me.txtVolumen
         Me.LayoutControlItem58.CustomizationFormText = "Volumen"
-        Me.LayoutControlItem58.Location = New System.Drawing.Point(0, 96)
+        Me.LayoutControlItem58.Location = New System.Drawing.Point(0, 192)
         Me.LayoutControlItem58.Name = "LayoutControlItem58"
-        Me.LayoutControlItem58.Size = New System.Drawing.Size(281, 24)
+        Me.LayoutControlItem58.Size = New System.Drawing.Size(564, 48)
         Me.LayoutControlItem58.Text = "Volumen"
-        Me.LayoutControlItem58.TextSize = New System.Drawing.Size(100, 13)
+        Me.LayoutControlItem58.TextSize = New System.Drawing.Size(197, 25)
         '
         'LayoutControlItem48
         '
         Me.LayoutControlItem48.Control = Me.txtDescripcionSku
         Me.LayoutControlItem48.CustomizationFormText = "Descripcion Producto"
-        Me.LayoutControlItem48.Location = New System.Drawing.Point(286, 0)
+        Me.LayoutControlItem48.Location = New System.Drawing.Point(584, 0)
         Me.LayoutControlItem48.Name = "LayoutControlItem48"
-        Me.LayoutControlItem48.Size = New System.Drawing.Size(834, 24)
+        Me.LayoutControlItem48.Size = New System.Drawing.Size(1664, 48)
         Me.LayoutControlItem48.Text = "Descripcion Producto"
-        Me.LayoutControlItem48.TextSize = New System.Drawing.Size(100, 13)
+        Me.LayoutControlItem48.TextSize = New System.Drawing.Size(197, 25)
         '
         'LayoutControlItem51
         '
         Me.LayoutControlItem51.Control = Me.txtBultos
         Me.LayoutControlItem51.CustomizationFormText = "Bultos"
-        Me.LayoutControlItem51.Location = New System.Drawing.Point(0, 24)
+        Me.LayoutControlItem51.Location = New System.Drawing.Point(0, 48)
         Me.LayoutControlItem51.Name = "LayoutControlItem51"
-        Me.LayoutControlItem51.Size = New System.Drawing.Size(281, 24)
+        Me.LayoutControlItem51.Size = New System.Drawing.Size(564, 48)
         Me.LayoutControlItem51.Text = "Bultos"
-        Me.LayoutControlItem51.TextSize = New System.Drawing.Size(100, 13)
+        Me.LayoutControlItem51.TextSize = New System.Drawing.Size(197, 25)
         '
         'LayoutControlItem56
         '
         Me.LayoutControlItem56.Control = Me.txtValorAduana
         Me.LayoutControlItem56.CustomizationFormText = "Valor Aduana"
-        Me.LayoutControlItem56.Location = New System.Drawing.Point(0, 48)
+        Me.LayoutControlItem56.Location = New System.Drawing.Point(0, 96)
         Me.LayoutControlItem56.Name = "LayoutControlItem56"
-        Me.LayoutControlItem56.Size = New System.Drawing.Size(281, 24)
+        Me.LayoutControlItem56.Size = New System.Drawing.Size(564, 48)
         Me.LayoutControlItem56.Text = "Valor Aduana"
-        Me.LayoutControlItem56.TextSize = New System.Drawing.Size(100, 13)
+        Me.LayoutControlItem56.TextSize = New System.Drawing.Size(197, 25)
         '
         'LayoutControlItem60
         '
         Me.LayoutControlItem60.Control = Me.txtDai
         Me.LayoutControlItem60.CustomizationFormText = "Valor DAI"
-        Me.LayoutControlItem60.Location = New System.Drawing.Point(286, 72)
+        Me.LayoutControlItem60.Location = New System.Drawing.Point(584, 144)
         Me.LayoutControlItem60.Name = "LayoutControlItem60"
-        Me.LayoutControlItem60.Size = New System.Drawing.Size(303, 24)
+        Me.LayoutControlItem60.Size = New System.Drawing.Size(605, 48)
         Me.LayoutControlItem60.Text = "Valor DAI"
-        Me.LayoutControlItem60.TextSize = New System.Drawing.Size(100, 13)
+        Me.LayoutControlItem60.TextSize = New System.Drawing.Size(197, 25)
         '
         'LayoutControlItem55
         '
         Me.LayoutControlItem55.Control = Me.txtCantidad
         Me.LayoutControlItem55.CustomizationFormText = "Cantidad"
-        Me.LayoutControlItem55.Location = New System.Drawing.Point(286, 24)
+        Me.LayoutControlItem55.Location = New System.Drawing.Point(584, 48)
         Me.LayoutControlItem55.Name = "LayoutControlItem55"
-        Me.LayoutControlItem55.Size = New System.Drawing.Size(303, 24)
+        Me.LayoutControlItem55.Size = New System.Drawing.Size(605, 48)
         Me.LayoutControlItem55.Text = "Cantidad"
-        Me.LayoutControlItem55.TextSize = New System.Drawing.Size(100, 13)
+        Me.LayoutControlItem55.TextSize = New System.Drawing.Size(197, 25)
         '
         'LayoutControlItem61
         '
         Me.LayoutControlItem61.Control = Me.txtValorIva
         Me.LayoutControlItem61.CustomizationFormText = "Valor IVA"
-        Me.LayoutControlItem61.Location = New System.Drawing.Point(594, 72)
+        Me.LayoutControlItem61.Location = New System.Drawing.Point(1209, 144)
         Me.LayoutControlItem61.Name = "LayoutControlItem61"
-        Me.LayoutControlItem61.Size = New System.Drawing.Size(526, 24)
+        Me.LayoutControlItem61.Size = New System.Drawing.Size(1039, 48)
         Me.LayoutControlItem61.Text = "Valor IVA"
-        Me.LayoutControlItem61.TextSize = New System.Drawing.Size(100, 13)
+        Me.LayoutControlItem61.TextSize = New System.Drawing.Size(197, 25)
         '
         'LayoutControlItem53
         '
         Me.LayoutControlItem53.Control = Me.txtPesoNeto
         Me.LayoutControlItem53.CustomizationFormText = "Peso Neto"
-        Me.LayoutControlItem53.Location = New System.Drawing.Point(286, 96)
+        Me.LayoutControlItem53.Location = New System.Drawing.Point(584, 192)
         Me.LayoutControlItem53.Name = "LayoutControlItem53"
-        Me.LayoutControlItem53.Size = New System.Drawing.Size(303, 24)
+        Me.LayoutControlItem53.Size = New System.Drawing.Size(605, 48)
         Me.LayoutControlItem53.Text = "Peso Neto"
-        Me.LayoutControlItem53.TextSize = New System.Drawing.Size(100, 13)
+        Me.LayoutControlItem53.TextSize = New System.Drawing.Size(197, 25)
         '
         'LayoutControlItem54
         '
         Me.LayoutControlItem54.Control = Me.cmbUnidadPeso
         Me.LayoutControlItem54.CustomizationFormText = "Unidad Peso"
-        Me.LayoutControlItem54.Location = New System.Drawing.Point(594, 96)
+        Me.LayoutControlItem54.Location = New System.Drawing.Point(1209, 192)
         Me.LayoutControlItem54.Name = "LayoutControlItem54"
-        Me.LayoutControlItem54.Size = New System.Drawing.Size(526, 24)
+        Me.LayoutControlItem54.Size = New System.Drawing.Size(1039, 48)
         Me.LayoutControlItem54.Text = "Unidad Peso"
-        Me.LayoutControlItem54.TextSize = New System.Drawing.Size(100, 13)
+        Me.LayoutControlItem54.TextSize = New System.Drawing.Size(197, 25)
         '
         'LayoutControlItem59
         '
         Me.LayoutControlItem59.Control = Me.cmbUnidadVolumen
         Me.LayoutControlItem59.CustomizationFormText = "Unidad Volumen"
-        Me.LayoutControlItem59.Location = New System.Drawing.Point(286, 120)
+        Me.LayoutControlItem59.Location = New System.Drawing.Point(584, 240)
         Me.LayoutControlItem59.Name = "LayoutControlItem59"
-        Me.LayoutControlItem59.Size = New System.Drawing.Size(303, 24)
+        Me.LayoutControlItem59.Size = New System.Drawing.Size(605, 48)
         Me.LayoutControlItem59.Text = "Unidad Volumen"
-        Me.LayoutControlItem59.TextSize = New System.Drawing.Size(100, 13)
+        Me.LayoutControlItem59.TextSize = New System.Drawing.Size(197, 25)
         '
         'LayoutControlItem49
         '
         Me.LayoutControlItem49.Control = Me.cmbSacCode
         Me.LayoutControlItem49.CustomizationFormText = "Codigo SAC"
-        Me.LayoutControlItem49.Location = New System.Drawing.Point(594, 120)
+        Me.LayoutControlItem49.Location = New System.Drawing.Point(1209, 240)
         Me.LayoutControlItem49.Name = "LayoutControlItem49"
-        Me.LayoutControlItem49.Size = New System.Drawing.Size(526, 24)
+        Me.LayoutControlItem49.Size = New System.Drawing.Size(1039, 48)
         Me.LayoutControlItem49.Text = "Codigo SAC"
-        Me.LayoutControlItem49.TextSize = New System.Drawing.Size(100, 13)
+        Me.LayoutControlItem49.TextSize = New System.Drawing.Size(197, 25)
         '
         'SplitterItem8
         '
-        Me.SplitterItem8.AllowHotTrack = true
+        Me.SplitterItem8.AllowHotTrack = True
         Me.SplitterItem8.CustomizationFormText = "SplitterItem8"
-        Me.SplitterItem8.Location = New System.Drawing.Point(281, 0)
+        Me.SplitterItem8.Location = New System.Drawing.Point(564, 0)
         Me.SplitterItem8.Name = "SplitterItem8"
-        Me.SplitterItem8.Size = New System.Drawing.Size(5, 288)
+        Me.SplitterItem8.Size = New System.Drawing.Size(20, 576)
         '
         'LayoutControlItem62
         '
         Me.LayoutControlItem62.Control = Me.GridDetalle
         Me.LayoutControlItem62.CustomizationFormText = "Detalle Documento"
-        Me.LayoutControlItem62.Location = New System.Drawing.Point(0, 288)
+        Me.LayoutControlItem62.Location = New System.Drawing.Point(0, 576)
         Me.LayoutControlItem62.Name = "LayoutControlItem62"
-        Me.LayoutControlItem62.Size = New System.Drawing.Size(1120, 272)
+        Me.LayoutControlItem62.Size = New System.Drawing.Size(2248, 512)
         Me.LayoutControlItem62.Text = "Detalle Documento"
-        Me.LayoutControlItem62.TextSize = New System.Drawing.Size(100, 13)
+        Me.LayoutControlItem62.TextSize = New System.Drawing.Size(197, 25)
         '
         'LayoutControlItem63
         '
         Me.LayoutControlItem63.Control = Me.txtImpuestosVarios
         Me.LayoutControlItem63.CustomizationFormText = "Impuestos Varios"
-        Me.LayoutControlItem63.Location = New System.Drawing.Point(0, 120)
+        Me.LayoutControlItem63.Location = New System.Drawing.Point(0, 240)
         Me.LayoutControlItem63.Name = "LayoutControlItem63"
-        Me.LayoutControlItem63.Size = New System.Drawing.Size(281, 24)
+        Me.LayoutControlItem63.Size = New System.Drawing.Size(564, 48)
         Me.LayoutControlItem63.Text = "Impuestos Varios"
-        Me.LayoutControlItem63.TextSize = New System.Drawing.Size(100, 13)
+        Me.LayoutControlItem63.TextSize = New System.Drawing.Size(197, 25)
         '
         'LayoutControlItem64
         '
         Me.LayoutControlItem64.Control = Me.txtGastosVarios
         Me.LayoutControlItem64.CustomizationFormText = "Gastos Varios"
-        Me.LayoutControlItem64.Location = New System.Drawing.Point(286, 144)
+        Me.LayoutControlItem64.Location = New System.Drawing.Point(584, 288)
         Me.LayoutControlItem64.Name = "LayoutControlItem64"
-        Me.LayoutControlItem64.Size = New System.Drawing.Size(303, 24)
+        Me.LayoutControlItem64.Size = New System.Drawing.Size(605, 48)
         Me.LayoutControlItem64.Text = "Gastos Varios"
-        Me.LayoutControlItem64.TextSize = New System.Drawing.Size(100, 13)
+        Me.LayoutControlItem64.TextSize = New System.Drawing.Size(197, 25)
         '
         'LayoutControlItem65
         '
         Me.LayoutControlItem65.Control = Me.txtPaisOrigen
         Me.LayoutControlItem65.CustomizationFormText = "Pais Origen"
-        Me.LayoutControlItem65.Location = New System.Drawing.Point(594, 144)
+        Me.LayoutControlItem65.Location = New System.Drawing.Point(1209, 288)
         Me.LayoutControlItem65.Name = "LayoutControlItem65"
-        Me.LayoutControlItem65.Size = New System.Drawing.Size(526, 24)
+        Me.LayoutControlItem65.Size = New System.Drawing.Size(1039, 48)
         Me.LayoutControlItem65.Text = "Pais Origen"
-        Me.LayoutControlItem65.TextSize = New System.Drawing.Size(100, 13)
+        Me.LayoutControlItem65.TextSize = New System.Drawing.Size(197, 25)
         '
         'LayoutControlItem66
         '
         Me.LayoutControlItem66.Control = Me.txtFobUsd
         Me.LayoutControlItem66.CustomizationFormText = "FOB USD"
-        Me.LayoutControlItem66.Location = New System.Drawing.Point(0, 144)
+        Me.LayoutControlItem66.Location = New System.Drawing.Point(0, 288)
         Me.LayoutControlItem66.Name = "LayoutControlItem66"
-        Me.LayoutControlItem66.Size = New System.Drawing.Size(281, 24)
+        Me.LayoutControlItem66.Size = New System.Drawing.Size(564, 48)
         Me.LayoutControlItem66.Text = "FOB USD"
-        Me.LayoutControlItem66.TextSize = New System.Drawing.Size(100, 13)
+        Me.LayoutControlItem66.TextSize = New System.Drawing.Size(197, 25)
         '
         'LayoutControlItem67
         '
         Me.LayoutControlItem67.Control = Me.txtFleteUsd
         Me.LayoutControlItem67.CustomizationFormText = "Flete USD"
-        Me.LayoutControlItem67.Location = New System.Drawing.Point(286, 168)
+        Me.LayoutControlItem67.Location = New System.Drawing.Point(584, 336)
         Me.LayoutControlItem67.Name = "LayoutControlItem67"
-        Me.LayoutControlItem67.Size = New System.Drawing.Size(303, 24)
+        Me.LayoutControlItem67.Size = New System.Drawing.Size(605, 48)
         Me.LayoutControlItem67.Text = "Flete USD"
-        Me.LayoutControlItem67.TextSize = New System.Drawing.Size(100, 13)
+        Me.LayoutControlItem67.TextSize = New System.Drawing.Size(197, 25)
         '
         'LayoutControlItem68
         '
         Me.LayoutControlItem68.Control = Me.txtSeguroUsd
         Me.LayoutControlItem68.CustomizationFormText = "Seguro USD"
-        Me.LayoutControlItem68.Location = New System.Drawing.Point(594, 168)
+        Me.LayoutControlItem68.Location = New System.Drawing.Point(1209, 336)
         Me.LayoutControlItem68.Name = "LayoutControlItem68"
-        Me.LayoutControlItem68.Size = New System.Drawing.Size(526, 24)
+        Me.LayoutControlItem68.Size = New System.Drawing.Size(1039, 48)
         Me.LayoutControlItem68.Text = "Seguro USD"
-        Me.LayoutControlItem68.TextSize = New System.Drawing.Size(100, 13)
+        Me.LayoutControlItem68.TextSize = New System.Drawing.Size(197, 25)
         '
         'LayoutControlItem69
         '
         Me.LayoutControlItem69.Control = Me.txtRegionCp
         Me.LayoutControlItem69.CustomizationFormText = "Region CP"
-        Me.LayoutControlItem69.Location = New System.Drawing.Point(0, 168)
+        Me.LayoutControlItem69.Location = New System.Drawing.Point(0, 336)
         Me.LayoutControlItem69.Name = "LayoutControlItem69"
-        Me.LayoutControlItem69.Size = New System.Drawing.Size(281, 24)
+        Me.LayoutControlItem69.Size = New System.Drawing.Size(564, 48)
         Me.LayoutControlItem69.Text = "Region CP"
-        Me.LayoutControlItem69.TextSize = New System.Drawing.Size(100, 13)
+        Me.LayoutControlItem69.TextSize = New System.Drawing.Size(197, 25)
         '
         'LayoutControlItem74
         '
         Me.LayoutControlItem74.Control = Me.txtActualizadaEl
         Me.LayoutControlItem74.CustomizationFormText = "Actualizada El"
-        Me.LayoutControlItem74.Location = New System.Drawing.Point(286, 192)
+        Me.LayoutControlItem74.Location = New System.Drawing.Point(584, 384)
         Me.LayoutControlItem74.Name = "LayoutControlItem74"
-        Me.LayoutControlItem74.Size = New System.Drawing.Size(303, 24)
+        Me.LayoutControlItem74.Size = New System.Drawing.Size(605, 48)
         Me.LayoutControlItem74.Text = "Actualizada El"
-        Me.LayoutControlItem74.TextSize = New System.Drawing.Size(100, 13)
+        Me.LayoutControlItem74.TextSize = New System.Drawing.Size(197, 25)
         '
         'LayoutControlItem73
         '
         Me.LayoutControlItem73.Control = Me.txtActualizadaPor
         Me.LayoutControlItem73.CustomizationFormText = "Actualizada Por"
-        Me.LayoutControlItem73.Location = New System.Drawing.Point(594, 192)
+        Me.LayoutControlItem73.Location = New System.Drawing.Point(1209, 384)
         Me.LayoutControlItem73.Name = "LayoutControlItem73"
-        Me.LayoutControlItem73.Size = New System.Drawing.Size(526, 24)
+        Me.LayoutControlItem73.Size = New System.Drawing.Size(1039, 48)
         Me.LayoutControlItem73.Text = "Actualizada Por"
-        Me.LayoutControlItem73.TextSize = New System.Drawing.Size(100, 13)
+        Me.LayoutControlItem73.TextSize = New System.Drawing.Size(197, 25)
         '
         'SplitterItem9
         '
-        Me.SplitterItem9.AllowHotTrack = true
+        Me.SplitterItem9.AllowHotTrack = True
         Me.SplitterItem9.CustomizationFormText = "SplitterItem9"
-        Me.SplitterItem9.Location = New System.Drawing.Point(589, 24)
+        Me.SplitterItem9.Location = New System.Drawing.Point(1189, 48)
         Me.SplitterItem9.Name = "SplitterItem9"
-        Me.SplitterItem9.Size = New System.Drawing.Size(5, 264)
+        Me.SplitterItem9.Size = New System.Drawing.Size(20, 528)
         '
         'LayoutControlItem70
         '
         Me.LayoutControlItem70.Control = Me.txtAcuerdo1
         Me.LayoutControlItem70.CustomizationFormText = "Acuerdo1"
-        Me.LayoutControlItem70.Location = New System.Drawing.Point(0, 192)
+        Me.LayoutControlItem70.Location = New System.Drawing.Point(0, 384)
         Me.LayoutControlItem70.Name = "LayoutControlItem70"
-        Me.LayoutControlItem70.Size = New System.Drawing.Size(281, 24)
+        Me.LayoutControlItem70.Size = New System.Drawing.Size(564, 48)
         Me.LayoutControlItem70.Text = "Acuerdo1"
-        Me.LayoutControlItem70.TextSize = New System.Drawing.Size(100, 13)
+        Me.LayoutControlItem70.TextSize = New System.Drawing.Size(197, 25)
         '
         'LayoutControlItem81
         '
         Me.LayoutControlItem81.Control = Me.pctDAI
         Me.LayoutControlItem81.CustomizationFormText = "pct DAI"
-        Me.LayoutControlItem81.Location = New System.Drawing.Point(286, 48)
+        Me.LayoutControlItem81.Location = New System.Drawing.Point(584, 96)
         Me.LayoutControlItem81.Name = "LayoutControlItem81"
-        Me.LayoutControlItem81.Size = New System.Drawing.Size(303, 24)
+        Me.LayoutControlItem81.Size = New System.Drawing.Size(605, 48)
         Me.LayoutControlItem81.Text = "pct DAI"
-        Me.LayoutControlItem81.TextSize = New System.Drawing.Size(100, 13)
+        Me.LayoutControlItem81.TextSize = New System.Drawing.Size(197, 25)
         '
         'LayoutControlItem72
         '
         Me.LayoutControlItem72.Control = Me.txtPolizaRelacionada
         Me.LayoutControlItem72.CustomizationFormText = "Poliza Relacionada"
-        Me.LayoutControlItem72.Location = New System.Drawing.Point(594, 216)
+        Me.LayoutControlItem72.Location = New System.Drawing.Point(1209, 432)
         Me.LayoutControlItem72.Name = "LayoutControlItem72"
-        Me.LayoutControlItem72.Size = New System.Drawing.Size(526, 24)
+        Me.LayoutControlItem72.Size = New System.Drawing.Size(1039, 48)
         Me.LayoutControlItem72.Text = "Poliza Relacionada"
-        Me.LayoutControlItem72.TextSize = New System.Drawing.Size(100, 13)
+        Me.LayoutControlItem72.TextSize = New System.Drawing.Size(197, 25)
         '
         'LayoutControlItem77
         '
         Me.LayoutControlItem77.Control = Me.cmbLineas
         Me.LayoutControlItem77.CustomizationFormText = "Linea Origen"
-        Me.LayoutControlItem77.Location = New System.Drawing.Point(908, 264)
+        Me.LayoutControlItem77.Location = New System.Drawing.Point(1829, 528)
         Me.LayoutControlItem77.Name = "LayoutControlItem77"
-        Me.LayoutControlItem77.Size = New System.Drawing.Size(212, 24)
+        Me.LayoutControlItem77.Size = New System.Drawing.Size(419, 48)
         Me.LayoutControlItem77.Text = "Linea Origen"
-        Me.LayoutControlItem77.TextSize = New System.Drawing.Size(100, 13)
+        Me.LayoutControlItem77.TextSize = New System.Drawing.Size(197, 25)
         '
         'LayoutControlItem71
         '
         Me.LayoutControlItem71.Control = Me.txtAcuerdo2
         Me.LayoutControlItem71.CustomizationFormText = "Acuerdo2"
-        Me.LayoutControlItem71.Location = New System.Drawing.Point(0, 216)
+        Me.LayoutControlItem71.Location = New System.Drawing.Point(0, 432)
         Me.LayoutControlItem71.Name = "LayoutControlItem71"
-        Me.LayoutControlItem71.Size = New System.Drawing.Size(281, 72)
+        Me.LayoutControlItem71.Size = New System.Drawing.Size(564, 144)
         Me.LayoutControlItem71.Text = "Acuerdo2"
-        Me.LayoutControlItem71.TextSize = New System.Drawing.Size(100, 13)
+        Me.LayoutControlItem71.TextSize = New System.Drawing.Size(197, 25)
         '
         'LayoutControlItem78
         '
         Me.LayoutControlItem78.Control = Me.cmbConsignatario
         Me.LayoutControlItem78.CustomizationFormText = "Consignatario"
-        Me.LayoutControlItem78.Location = New System.Drawing.Point(286, 216)
+        Me.LayoutControlItem78.Location = New System.Drawing.Point(584, 432)
         Me.LayoutControlItem78.Name = "LayoutControlItem78"
-        Me.LayoutControlItem78.Size = New System.Drawing.Size(303, 72)
+        Me.LayoutControlItem78.Size = New System.Drawing.Size(605, 144)
         Me.LayoutControlItem78.Text = "Consignatario"
-        Me.LayoutControlItem78.TextSize = New System.Drawing.Size(100, 13)
+        Me.LayoutControlItem78.TextSize = New System.Drawing.Size(197, 25)
         '
         'LayoutControlItem50
         '
         Me.LayoutControlItem50.Control = Me.txtDocumentoOrigen
         Me.LayoutControlItem50.CustomizationFormText = "Documento Origen"
-        Me.LayoutControlItem50.Location = New System.Drawing.Point(594, 240)
+        Me.LayoutControlItem50.Location = New System.Drawing.Point(1209, 480)
         Me.LayoutControlItem50.Name = "LayoutControlItem50"
-        Me.LayoutControlItem50.Size = New System.Drawing.Size(314, 24)
+        Me.LayoutControlItem50.Size = New System.Drawing.Size(620, 48)
         Me.LayoutControlItem50.Text = "Documento Origen"
-        Me.LayoutControlItem50.TextSize = New System.Drawing.Size(100, 13)
+        Me.LayoutControlItem50.TextSize = New System.Drawing.Size(197, 25)
         '
         'LayoutControlItem75
         '
         Me.LayoutControlItem75.Control = Me.txtPolizaOrigen
         Me.LayoutControlItem75.CustomizationFormText = "Poliza Origen"
-        Me.LayoutControlItem75.Location = New System.Drawing.Point(908, 240)
+        Me.LayoutControlItem75.Location = New System.Drawing.Point(1829, 480)
         Me.LayoutControlItem75.Name = "LayoutControlItem75"
-        Me.LayoutControlItem75.Size = New System.Drawing.Size(212, 24)
+        Me.LayoutControlItem75.Size = New System.Drawing.Size(419, 48)
         Me.LayoutControlItem75.Text = "Poliza Origen"
-        Me.LayoutControlItem75.TextSize = New System.Drawing.Size(100, 13)
+        Me.LayoutControlItem75.TextSize = New System.Drawing.Size(197, 25)
         '
         'LayoutControlItem76
         '
         Me.LayoutControlItem76.Control = Me.txtOrigenNumOrden
         Me.LayoutControlItem76.CustomizationFormText = "Num. Orden Origen"
-        Me.LayoutControlItem76.Location = New System.Drawing.Point(594, 264)
+        Me.LayoutControlItem76.Location = New System.Drawing.Point(1209, 528)
         Me.LayoutControlItem76.Name = "LayoutControlItem76"
-        Me.LayoutControlItem76.Size = New System.Drawing.Size(314, 24)
+        Me.LayoutControlItem76.Size = New System.Drawing.Size(620, 48)
         Me.LayoutControlItem76.Text = "Num. Orden Origen"
-        Me.LayoutControlItem76.TextSize = New System.Drawing.Size(100, 13)
+        Me.LayoutControlItem76.TextSize = New System.Drawing.Size(197, 25)
         '
         'UILayoutControlImpuesto
         '
         Me.UILayoutControlImpuesto.Control = Me.UiListaImpuesto
-        Me.UILayoutControlImpuesto.Location = New System.Drawing.Point(594, 24)
+        Me.UILayoutControlImpuesto.Location = New System.Drawing.Point(1209, 48)
         Me.UILayoutControlImpuesto.Name = "UILayoutControlImpuesto"
-        Me.UILayoutControlImpuesto.Size = New System.Drawing.Size(526, 24)
+        Me.UILayoutControlImpuesto.Size = New System.Drawing.Size(1039, 48)
         Me.UILayoutControlImpuesto.Text = "Impuesto"
-        Me.UILayoutControlImpuesto.TextSize = New System.Drawing.Size(100, 13)
+        Me.UILayoutControlImpuesto.TextSize = New System.Drawing.Size(197, 25)
         '
         'LayoutControlItem57
         '
         Me.LayoutControlItem57.Control = Me.cmbUnidadCantidad
         Me.LayoutControlItem57.CustomizationFormText = "Unidad de Cantidad"
-        Me.LayoutControlItem57.Location = New System.Drawing.Point(594, 48)
+        Me.LayoutControlItem57.Location = New System.Drawing.Point(1209, 96)
         Me.LayoutControlItem57.Name = "LayoutControlItem57"
-        Me.LayoutControlItem57.Size = New System.Drawing.Size(526, 24)
+        Me.LayoutControlItem57.Size = New System.Drawing.Size(1039, 48)
         Me.LayoutControlItem57.Text = "Unidad de Cantidad"
-        Me.LayoutControlItem57.TextSize = New System.Drawing.Size(100, 13)
+        Me.LayoutControlItem57.TextSize = New System.Drawing.Size(197, 25)
         '
         'XtraTabServicios
         '
         Me.XtraTabServicios.Controls.Add(Me.LayoutServicios)
+        Me.XtraTabServicios.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.XtraTabServicios.Name = "XtraTabServicios"
-        Me.XtraTabServicios.PageVisible = false
-        Me.XtraTabServicios.Size = New System.Drawing.Size(1140, 580)
+        Me.XtraTabServicios.PageVisible = False
+        Me.XtraTabServicios.Size = New System.Drawing.Size(2288, 1120)
         Me.XtraTabServicios.Text = "Servicios"
         '
         'LayoutServicios
         '
         Me.LayoutServicios.Dock = System.Windows.Forms.DockStyle.Fill
         Me.LayoutServicios.Location = New System.Drawing.Point(0, 0)
+        Me.LayoutServicios.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.LayoutServicios.Name = "LayoutServicios"
         Me.LayoutServicios.Root = Me.LayoutControlGroup3
-        Me.LayoutServicios.Size = New System.Drawing.Size(1140, 580)
+        Me.LayoutServicios.Size = New System.Drawing.Size(2288, 1120)
         Me.LayoutServicios.TabIndex = 0
         Me.LayoutServicios.Text = "Servicios"
         '
@@ -2948,22 +3075,22 @@ Partial Class frmDocumentoEgresoFiscal
         '
         Me.LayoutControlGroup3.CustomizationFormText = "LayoutControlGroup3"
         Me.LayoutControlGroup3.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.[True]
-        Me.LayoutControlGroup3.GroupBordersVisible = false
-        Me.LayoutControlGroup3.Location = New System.Drawing.Point(0, 0)
+        Me.LayoutControlGroup3.GroupBordersVisible = False
         Me.LayoutControlGroup3.Name = "LayoutControlGroup3"
-        Me.LayoutControlGroup3.Size = New System.Drawing.Size(1140, 580)
-        Me.LayoutControlGroup3.TextVisible = false
+        Me.LayoutControlGroup3.Size = New System.Drawing.Size(2288, 1120)
+        Me.LayoutControlGroup3.TextVisible = False
         '
         'frmDocumentoEgresoFiscal
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1146, 666)
+        Me.ClientSize = New System.Drawing.Size(2292, 1281)
         Me.Controls.Add(Me.XtraTabControl1)
         Me.Controls.Add(Me.barDockControlLeft)
         Me.Controls.Add(Me.barDockControlRight)
         Me.Controls.Add(Me.barDockControlBottom)
         Me.Controls.Add(Me.barDockControlTop)
+        Me.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.Name = "frmDocumentoEgresoFiscal"
         Me.Text = "Documento Egreso Fiscal"
         CType(Me.XtraTabControl1,System.ComponentModel.ISupportInitialize).EndInit

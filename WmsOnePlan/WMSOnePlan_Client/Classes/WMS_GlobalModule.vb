@@ -69,8 +69,8 @@ Module WMS_GlobalModule
                                                                  PublicLoginInfo.Environment)
                 If pResult = "OK" Then
 #If DEBUG Then
-                    WSHost = "http://localhost:8088/WMSOnePlan_BusinessServices"
-                    'WSHost = "http://192.168.0.5:9999"
+                    'WSHost = "http://localhost:8088/WMSOnePlan_BusinessServices"
+                    WSHost = "http://192.168.0.5:9999"
                     'WSHost = "http://10.240.29.104:8090"
 #End If
 #If Not DEBUG Then

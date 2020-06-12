@@ -28,6 +28,8 @@ Public Class frmDocumentoIngreso
     Dim docIdRectificacion As Integer = 0
     Dim comentarioRectificacion As String = ""
 
+    Dim materialId As String = ""
+
     Private Impuesto As Decimal = 1
 
     Private Sub btnRestore_ItemClick(ByVal sender As System.Object, ByVal e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnRestore.ItemClick
@@ -872,7 +874,7 @@ Public Class frmDocumentoIngreso
 
             If xserv.set_Poliza_Detail(_docid, txtDescripcionSku.Text.ToString(), _codigoSAC, _bultos, txtClaseLinea.Text, _pesoNeto, _unidadPeso, _Cantidad, _valorAduana, _unidadCantidad,
                                     _volumen, _unidadVolumen, _valorDai, _valorIva, _impuestosVarios, _fobUsd, _fleteUsd, _seguroUsd, _gastosVarios, txtPaisOrigen.Text, txtRegionCp.Text, txtAcuerdo1.Text,
-                                    txtAcuerdo2.Text, txtPolizaRelacionada.Text, PublicLoginInfo.LoginID, Date.Now(), _documentoOrigen, txtPolizaOrigen.Text, cmbConsignatario.EditValue, _pctdai, 0, PublicLoginInfo.Environment, pResult, _numeroLinea, UiListaImpuesto.EditValue, txtDescripcionSku.EditValue.ToString()) Then
+                                    txtAcuerdo2.Text, txtPolizaRelacionada.Text, PublicLoginInfo.LoginID, Date.Now(), _documentoOrigen, txtPolizaOrigen.Text, cmbConsignatario.EditValue, _pctdai, 0, PublicLoginInfo.Environment, pResult, _numeroLinea, UiListaImpuesto.EditValue, materialId) Then
                 fn_llena_detalle()
                 fn_limpia_detalle()
             Else
@@ -1919,5 +1921,10 @@ Public Class frmDocumentoIngreso
         Catch ex As Exception
             NotifyStatus(ex.Message, True, True)
         End Try
+    End Sub
+
+    Private Sub txtDescripcionSku_EditValueChanged(sender As Object, e As EventArgs) Handles txtDescripcionSku.EditValueChanged
+        Dim row As DataRowView = txtDescripcionSku.Properties.GetDataSourceRowByKeyValue(txtDescripcionSku.EditValue)
+        materialId = row(2).ToString
     End Sub
 End Class
