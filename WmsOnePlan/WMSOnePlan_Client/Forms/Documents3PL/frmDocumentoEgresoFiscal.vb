@@ -19,6 +19,8 @@ Public Class frmDocumentoEgresoFiscal
     Dim dsTiposDocRef As New DataSet
     Dim pResult As String = ""
 
+    Dim materialId As String = ""
+
     Private Impuesto As Decimal = 1
 
     Private Sub btnRestore_ItemClick(ByVal sender As System.Object, ByVal e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnRestore.ItemClick
@@ -751,7 +753,7 @@ Public Class frmDocumentoEgresoFiscal
             If xserv.set_Poliza_Detail(_docid, txtDescripcionSku.Text, _codigoSAC, _bultos, txtClaseLinea.Text, _pesoNeto, _unidadPeso, _Cantidad, _valorAduana, _unidadCantidad,
                                     _volumen, _unidadVolumen, _valorDai, _valorIva, _impuestosVarios, _fobUsd, _fleteUsd, _seguroUsd, _gastosVarios, txtPaisOrigen.Text, txtRegionCp.Text, txtAcuerdo1.Text,
                                     txtAcuerdo2.Text, txtPolizaRelacionada.Text, PublicLoginInfo.LoginID, Date.Now(), _documentoOrigen, txtPolizaOrigen.Text, cmbConsignatario.EditValue, _pctdai,
-                                    _origin_line_number, PublicLoginInfo.Environment, pResult, _numeroLinea, UiListaImpuesto.EditValue, "") Then
+                                    _origin_line_number, PublicLoginInfo.Environment, pResult, _numeroLinea, UiListaImpuesto.EditValue, materialId) Then
                 fn_llena_detalle()
                 fn_limpia_detalle()
             Else
@@ -1189,7 +1191,7 @@ Public Class frmDocumentoEgresoFiscal
                                     dsMAT = xserv.get_cust_skus(cmbCliente.EditValue, PublicLoginInfo.Environment, pResult)
                                     If pResult = "OK" Then
                                         For i = 0 To dsMAT.Tables(0).Rows.Count - 1
-                                            txtDescripcionSku.Properties.Items.Add(dsMAT.Tables("OP_WMS_MATERIALS").Rows(i)("BARCODE_ID").ToString & " - " & dsMAT.Tables("OP_WMS_MATERIALS").Rows(i)("MATERIAL_NAME").ToString)
+                                            txtDescripcionSku.Properties.Items.Add(dsMAT.Tables("OP_WMS_MATERIALS").Rows(i)("MATERIAL_ID").ToString & " - " & dsMAT.Tables("OP_WMS_MATERIALS").Rows(i)("MATERIAL_NAME").ToString)
                                         Next
                                         pResult = String.Empty
                                     Else
@@ -1592,5 +1594,9 @@ Public Class frmDocumentoEgresoFiscal
                 txtValorIva.Text = CDbl(txtValorAduana.Text) * Impuesto '0.12
             End If
         End If
+    End Sub
+
+    Private Sub txtDescripcionSku_SelectedIndexChanged(sender As Object, e As EventArgs) Handles txtDescripcionSku.SelectedIndexChanged
+        materialId = sender.Text.Split("-")(0).ToString
     End Sub
 End Class
