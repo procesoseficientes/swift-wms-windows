@@ -123,8 +123,8 @@ Public Class frmDocumentoIngreso
             GridViewDetalle.SaveLayoutToXml(strPath)
 
             'grabamos el layout del grid del detalle
-            strPath = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly.Location).ToString() & "\frmDocumentoIngresoGridDocReferencia" & PublicLoginInfo.LoginID & ".xml"
-            GridViewDocReferencia.SaveLayoutToXml(strPath)
+            'strPath = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly.Location).ToString() & "\frmDocumentoIngresoGridDocReferencia" & PublicLoginInfo.LoginID & ".xml"
+            'GridViewDocReferencia.SaveLayoutToXml(strPath)
 
             strPath = String.Empty
 
@@ -168,7 +168,7 @@ Public Class frmDocumentoIngreso
             strPath = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly.Location).ToString() & "\frmDocumentoIngresoGridDocReferencia" & PublicLoginInfo.LoginID & ".xml"
 
             If File.Exists(strPath) Then
-                GridViewDocReferencia.RestoreLayoutFromXml(strPath)
+                'GridViewDocReferencia.RestoreLayoutFromXml(strPath)
             End If
 
             'Verificamos si se muestra el campo de ticket
@@ -363,14 +363,14 @@ Public Class frmDocumentoIngreso
                 xdataDocsRef = xserv.get_Docs_Ref_Poliza(" Where 1 = 2", PublicLoginInfo.Environment, pResult)
             End If
             If pResult = "OK" Then
-                GridDocRefencia.DataSource = xdataDocsRef.Tables(0)
+                'GridDocRefencia.DataSource = xdataDocsRef.Tables(0)
             Else
                 MsgBox("Error: " & pResult, MsgBoxStyle.Critical, "Error")
             End If
 
             'seteamos los elementos visuales del grid
 
-            GridViewDocReferencia.BestFitColumns()
+            'GridViewDocReferencia.BestFitColumns()
 
         Catch ex As Exception
             MsgBox("Error: " & ex.Message, MsgBoxStyle.Critical, "Error")
@@ -387,21 +387,21 @@ Public Class frmDocumentoIngreso
         Try
             'llenamos el combo de los tipos de documento
             dsTiposDocRef = xSettingServ.GetParam_ByParamKey("WMS3PL", "DOCUMENTOS", "", pResult, PublicLoginInfo.Environment)
-            cmbTipoDocRef.DataSource = dsTiposDocRef.Tables(0)
-            cmbTipoDocRef.PopulateViewColumns()
-            cmbTipoDocRef.ValueMember = "PARAM_NAME"
-            cmbTipoDocRef.DisplayMember = "PARAM_CAPTION"
+            'cmbTipoDocRef.DataSource = dsTiposDocRef.Tables(0)
+            'cmbTipoDocRef.PopulateViewColumns()
+            'cmbTipoDocRef.ValueMember = "PARAM_NAME"
+            'cmbTipoDocRef.DisplayMember = "PARAM_CAPTION"
 
-            Dim i As Int16
+            'Dim i As Int16
 
-            For i = 0 To cmbTipoDocRef.View.Columns.Count - 1
-                cmbTipoDocRef.View.Columns(i).Visible = False
-            Next
-            cmbTipoDocRef.View.Columns("PARAM_NAME").Caption = "TIPO"
-            cmbTipoDocRef.View.Columns("PARAM_CAPTION").Caption = "DESCRIPCION"
-            cmbTipoDocRef.View.Columns("PARAM_NAME").Visible = True
-            cmbTipoDocRef.View.Columns("PARAM_CAPTION").Visible = True
-            cmbTipoDocRef.View.BestFitColumns()
+            'For i = 0 To cmbTipoDocRef.View.Columns.Count - 1
+            '    cmbTipoDocRef.View.Columns(i).Visible = False
+            'Next
+            'cmbTipoDocRef.View.Columns("PARAM_NAME").Caption = "TIPO"
+            'cmbTipoDocRef.View.Columns("PARAM_CAPTION").Caption = "DESCRIPCION"
+            'cmbTipoDocRef.View.Columns("PARAM_NAME").Visible = True
+            'cmbTipoDocRef.View.Columns("PARAM_CAPTION").Visible = True
+            'cmbTipoDocRef.View.BestFitColumns()
 
             'llenamos el combo de los regimenes de almacen
             Dim dsRegimenAlmacen As New DataSet
@@ -1183,30 +1183,30 @@ Public Class frmDocumentoIngreso
         Dim _fechaDoc As Date
         Dim _obs As String
         Try
-            If GridViewDocReferencia.RowCount > 0 Then
-                For i = 0 To GridViewDocReferencia.RowCount - 1
-                    If GridViewDocReferencia.GetRowCellValue(i, "NUMERO_DOCUMENTO").ToString.Length > 0 Then
-                        _numDoc = GridViewDocReferencia.GetRowCellValue(i, "NUMERO_DOCUMENTO").ToString
-                    Else
-                        _numDoc = String.Empty
-                    End If
-                    If GridViewDocReferencia.GetRowCellValue(i, "TIPO_DOCUMENTO").ToString.Length > 0 Then
-                        _tipoDoc = GridViewDocReferencia.GetRowCellValue(i, "TIPO_DOCUMENTO").ToString
-                    Else
-                        _tipoDoc = String.Empty
-                    End If
-                    If GridViewDocReferencia.GetRowCellValue(i, "OBSERVACIONES").ToString.Length > 0 Then
-                        _obs = GridViewDocReferencia.GetRowCellValue(i, "OBSERVACIONES").ToString
-                    Else
-                        _obs = String.Empty
-                    End If
-                    Date.TryParse(GridViewDocReferencia.GetRowCellValue(i, "FECHA_DOCUMENTO").ToString, _fechaDoc)
+            'If GridViewDocReferencia.RowCount > 0 Then
+            '    For i = 0 To GridViewDocReferencia.RowCount - 1
+            '        If GridViewDocReferencia.GetRowCellValue(i, "NUMERO_DOCUMENTO").ToString.Length > 0 Then
+            '            _numDoc = GridViewDocReferencia.GetRowCellValue(i, "NUMERO_DOCUMENTO").ToString
+            '        Else
+            '            _numDoc = String.Empty
+            '        End If
+            '        If GridViewDocReferencia.GetRowCellValue(i, "TIPO_DOCUMENTO").ToString.Length > 0 Then
+            '            _tipoDoc = GridViewDocReferencia.GetRowCellValue(i, "TIPO_DOCUMENTO").ToString
+            '        Else
+            '            _tipoDoc = String.Empty
+            '        End If
+            '        If GridViewDocReferencia.GetRowCellValue(i, "OBSERVACIONES").ToString.Length > 0 Then
+            '            _obs = GridViewDocReferencia.GetRowCellValue(i, "OBSERVACIONES").ToString
+            '        Else
+            '            _obs = String.Empty
+            '        End If
+            '        Date.TryParse(GridViewDocReferencia.GetRowCellValue(i, "FECHA_DOCUMENTO").ToString, _fechaDoc)
 
-                    If xserv.set_Docs_Ref_Poliza(dblDoc_id, txtNumeroDua.Text, _numDoc, _tipoDoc, _fechaDoc, _obs, PublicLoginInfo.LoginID, Date.Now(), PublicLoginInfo.Environment, pResult) = False Then
-                        Throw New ApplicationException(pResult)
-                    End If
-                Next
-            End If
+            '        If xserv.set_Docs_Ref_Poliza(dblDoc_id, txtNumeroDua.Text, _numDoc, _tipoDoc, _fechaDoc, _obs, PublicLoginInfo.LoginID, Date.Now(), PublicLoginInfo.Environment, pResult) = False Then
+            '            Throw New ApplicationException(pResult)
+            '        End If
+            '    Next
+            'End If
 
         Catch ex As Exception
             Throw New ApplicationException(ex.Message)
@@ -1589,20 +1589,20 @@ Public Class frmDocumentoIngreso
 
     End Sub
 
-    Private Sub GridDocRefencia_KeyUp(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles GridDocRefencia.KeyUp
+    Private Sub GridDocRefencia_KeyUp(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs)
         Try
-            If e.KeyCode = 46 Then ' delete
-                If MessageBox.Show("¿ Confirma la eliminacion de " & GridViewDocReferencia.GetFocusedRowCellValue("NUMERO_DOCUMENTO").ToString & " ?", "Swift 3PL", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) = MsgBoxResult.Yes Then
-                    xserv.del_Docs_Ref_Poliza(dblDoc_id, GridViewDocReferencia.GetFocusedRowCellValue("NUMERO_DOCUMENTO"), GridViewDocReferencia.GetFocusedRowCellValue("TIPO_DOCUMENTO"), PublicLoginInfo.Environment, pResult)
-                    If pResult = "OK" Then
-                        fn_llena_docs_ref()
+            'If e.KeyCode = 46 Then ' delete
+            '    If MessageBox.Show("¿ Confirma la eliminacion de " & GridViewDocReferencia.GetFocusedRowCellValue("NUMERO_DOCUMENTO").ToString & " ?", "Swift 3PL", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) = MsgBoxResult.Yes Then
+            '        xserv.del_Docs_Ref_Poliza(dblDoc_id, GridViewDocReferencia.GetFocusedRowCellValue("NUMERO_DOCUMENTO"), GridViewDocReferencia.GetFocusedRowCellValue("TIPO_DOCUMENTO"), PublicLoginInfo.Environment, pResult)
+            '        If pResult = "OK" Then
+            '            fn_llena_docs_ref()
 
-                    Else
-                        NotifyStatus(pResult, False, True)
-                    End If
+            '        Else
+            '            NotifyStatus(pResult, False, True)
+            '        End If
 
-                End If
-            End If
+            '    End If
+            'End If
         Catch ex As Exception
             NotifyStatus(pResult, False, True)
         End Try

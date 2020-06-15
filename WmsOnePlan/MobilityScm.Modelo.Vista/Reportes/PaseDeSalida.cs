@@ -37,7 +37,7 @@ namespace MobilityScm.Modelo.Reportes
             {
                 UiEtiquetaERP.Text = ((bool)GeneraFactura.Value) ? "No. Factura:" : "No. Entrega: ";
                 UiEtiquetaGarantia.Visible = ((bool)MostrorEtiquetaGarantia.Value);
-                UiPanelCodiciones.Visible = ((bool)MostrarEtiquetaPanelCondiciones.Value);
+                UiPanelCodiciones.Visible = ((bool)MostrorEtiquetaGarantia.Value);
 
                 var logo = ImagenLogo.Value.ToString();
                 logo = logo.Replace("data:image/png;base64,", "");
