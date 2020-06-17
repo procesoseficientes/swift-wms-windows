@@ -156,7 +156,7 @@ namespace MobilityScm.Modelo.Vistas
                 VistaCargandosePorPrimeraVez?.Invoke(sender, e);
 
                 UiListaTipo.Properties.DataSource = TipoSalida;
-                UiListaTipo.Properties.ValueMember = "TEXT_VALUE";
+                UiListaTipo.Properties.ValueMember = "PARAM_NAME";
                 UiListaTipo.Properties.DisplayMember = "PARAM_CAPTION";
 
 
@@ -886,19 +886,10 @@ namespace MobilityScm.Modelo.Vistas
             try
             {
                 BloquearControles(string.Empty);
-                var tipo = TipoDeDespachoParaPaseDeSalida.Venta;
-                if (paseDeSalidaEncabezado.TYPE.Equals(Enums.GetStringValue(TipoDeDespachoParaPaseDeSalida.Transferencia)))
-                {
-                    tipo = TipoDeDespachoParaPaseDeSalida.Transferencia;
-                }
-                else if (paseDeSalidaEncabezado.TYPE.Equals(Enums.GetStringValue(TipoDeDespachoParaPaseDeSalida.DespachoGeneral)))
-                {
-                    tipo = TipoDeDespachoParaPaseDeSalida.DespachoGeneral;
-                }
                 UiEtiquetaNumeroPase.Text = paseDeSalidaEncabezado.PASS_ID.ToString();
                 UiListaCliente.EditValue = paseDeSalidaEncabezado.CLIENT_CODE;
                 UiCheckTransporteVacio.Checked = paseDeSalidaEncabezado.ISEMPTY.Equals("Y");
-                UiListaTipo.EditValue = tipo;
+                UiListaTipo.EditValue = paseDeSalidaEncabezado.TYPE;
                 UiListaVehiculo.EditValue = paseDeSalidaEncabezado.VEHICLE_ID;
                 UiListaSoloVehiculo.EditValue = paseDeSalidaEncabezado.VEHICLE_ID;
                 UiListaPilotos.EditValue = paseDeSalidaEncabezado.DRIVER_ID;
@@ -1148,7 +1139,7 @@ namespace MobilityScm.Modelo.Vistas
                         reporte.Parameters["GeneraFactura"].Value = (parametroFactura != null && int.Parse(parametroFactura.VALUE) == (int)SiNo.Si);
                         reporte.Parameters["MostrorEtiquetaGarantia"].Value = (parametroEtiquetaGarantia != null && int.Parse(parametroEtiquetaGarantia.VALUE) == (int)SiNo.Si);
                         //Se mostrará la etiqueta PanelCondiciones si no existe el parámetro en la DB o si existe, debe de tener el valor "1".
-                        reporte.Parameters["MostrarEtiquetaPanelCondiciones"].Value = !(parametroPanelCondiciones != null && int.Parse(parametroPanelCondiciones.VALUE) == (int)SiNo.No);
+                        //reporte.Parameters["MostrarEtiquetaPanelCondiciones"].Value = !(parametroPanelCondiciones != null && int.Parse(parametroPanelCondiciones.VALUE) == (int)SiNo.No);
                         reporte.Parameters["LogoDeImagenPredeterminada"].Value = InteraccionConUsuarioServicio.ObtenerLogoDeImagenPredeterminada();
                         
                         reporte.FillDataSource();
@@ -1439,6 +1430,5 @@ namespace MobilityScm.Modelo.Vistas
 
 
         #endregion
-
     }
 }
