@@ -3,6 +3,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.ServiceModel.Channels;
 using MobilityScm.Modelo.Argumentos;
 using MobilityScm.Modelo.Entidades;
 using MobilityScm.Modelo.Interfaces.Controladores;
@@ -64,7 +65,7 @@ namespace MobilityScm.Modelo.Controladores
             }
             catch (Exception ex)
             {
-                InteraccionConUsuarioServicio.Mensaje(ex.Message);
+                InteraccionConUsuarioServicio.Mensaje(ex.Message + ex.StackTrace);
             }
         }
 
@@ -76,7 +77,7 @@ namespace MobilityScm.Modelo.Controladores
             }
             catch (Exception ex)
             {
-                InteraccionConUsuarioServicio.Mensaje(ex.Message);
+                InteraccionConUsuarioServicio.Mensaje(ex.Message + ex.StackTrace);
             }
         }
 
@@ -88,7 +89,7 @@ namespace MobilityScm.Modelo.Controladores
             }
             catch (Exception ex)
             {
-                InteraccionConUsuarioServicio.Mensaje(ex.Message);
+                InteraccionConUsuarioServicio.Mensaje(ex.Message + ex.StackTrace);
             }
         }
 
@@ -100,7 +101,7 @@ namespace MobilityScm.Modelo.Controladores
             }
             catch (Exception ex)
             {
-                InteraccionConUsuarioServicio.Mensaje(ex.Message);
+                InteraccionConUsuarioServicio.Mensaje(ex.Message + ex.StackTrace);
             }
         }
 
@@ -115,7 +116,7 @@ namespace MobilityScm.Modelo.Controladores
             }
             catch (Exception ex)
             {
-                InteraccionConUsuarioServicio.Mensaje(ex.Message);
+                InteraccionConUsuarioServicio.Mensaje(ex.Message + ex.StackTrace);
             }
         }
 
@@ -127,7 +128,7 @@ namespace MobilityScm.Modelo.Controladores
             }
             catch (Exception ex)
             {
-                InteraccionConUsuarioServicio.Mensaje(ex.Message);
+                InteraccionConUsuarioServicio.Mensaje(ex.Message + ex.StackTrace);
             }
         }
 
@@ -139,7 +140,7 @@ namespace MobilityScm.Modelo.Controladores
             }
             catch (Exception ex)
             {
-                InteraccionConUsuarioServicio.Mensaje(ex.Message);
+                InteraccionConUsuarioServicio.Mensaje(ex.Message + ex.StackTrace);
             }
 
         }
@@ -152,7 +153,7 @@ namespace MobilityScm.Modelo.Controladores
             }
             catch (Exception ex)
             {
-                InteraccionConUsuarioServicio.Mensaje(ex.Message);
+                InteraccionConUsuarioServicio.Mensaje(ex.Message + ex.StackTrace);
             }
         }
 
@@ -177,7 +178,7 @@ namespace MobilityScm.Modelo.Controladores
             }
             catch (Exception ex)
             {
-                InteraccionConUsuarioServicio.Mensaje(ex.Message);
+                InteraccionConUsuarioServicio.Mensaje(ex.Message + ex.StackTrace);
             }
 
         }
@@ -221,7 +222,7 @@ namespace MobilityScm.Modelo.Controladores
             }
             catch (Exception ex)
             {
-                InteraccionConUsuarioServicio.Mensaje(ex.Message);
+                InteraccionConUsuarioServicio.Mensaje(ex.Message + ex.StackTrace);
             }
         }
 
@@ -233,7 +234,7 @@ namespace MobilityScm.Modelo.Controladores
             }
             catch (Exception ex)
             {
-                InteraccionConUsuarioServicio.Mensaje(ex.Message);
+                InteraccionConUsuarioServicio.Mensaje(ex.Message + ex.StackTrace);
             }
         }
 
@@ -241,11 +242,11 @@ namespace MobilityScm.Modelo.Controladores
         {
             try
             {
-                _vista.PickingEncabezado = PickingServicio.ConsultarPickingEncabezadosFinalizados(e);
+                _vista.PickingEncabezado = PickingServicio.ConsultarPickingEncabezadosFinalizados(e);;
             }
             catch (Exception ex)
             {
-                InteraccionConUsuarioServicio.Mensaje(ex.Message);
+                InteraccionConUsuarioServicio.Mensaje(ex.Message + ex.StackTrace);
             }
         }
 
@@ -267,7 +268,7 @@ namespace MobilityScm.Modelo.Controladores
             }
             catch (Exception ex)
             {
-                InteraccionConUsuarioServicio.Mensaje(ex.Message);
+                InteraccionConUsuarioServicio.Mensaje(ex.Message + ex.StackTrace);
             }
         }
     }

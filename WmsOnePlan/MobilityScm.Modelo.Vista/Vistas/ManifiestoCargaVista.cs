@@ -376,7 +376,7 @@ namespace MobilityScm.Modelo.Vistas
             }
             catch (Exception ex)
             {
-                InteraccionConUsuarioServicio.MensajeErrorDialogo(ex.Message);
+                InteraccionConUsuarioServicio.MensajeErrorDialogo(ex.Message + ex.StackTrace);
             }
         }
 
@@ -463,7 +463,7 @@ namespace MobilityScm.Modelo.Vistas
             }
             catch (Exception ex)
             {
-                InteraccionConUsuarioServicio.MensajeErrorDialogo(ex.Message);
+                InteraccionConUsuarioServicio.MensajeErrorDialogo(ex.Message + ex.StackTrace);
             }
         }
 
@@ -506,7 +506,7 @@ namespace MobilityScm.Modelo.Vistas
             }
             catch (Exception ex)
             {
-                InteraccionConUsuarioServicio.MensajeErrorDialogo(ex.Message);
+                InteraccionConUsuarioServicio.MensajeErrorDialogo(ex.Message + ex.StackTrace);
             }
         }
 
@@ -557,7 +557,7 @@ namespace MobilityScm.Modelo.Vistas
             }
             catch (Exception ex)
             {
-                InteraccionConUsuarioServicio.MensajeErrorDialogo(ex.Message);
+                InteraccionConUsuarioServicio.MensajeErrorDialogo(ex.Message + ex.StackTrace);
             }
         }
 
@@ -608,7 +608,7 @@ namespace MobilityScm.Modelo.Vistas
             }
             catch (Exception ex)
             {
-                InteraccionConUsuarioServicio.MensajeErrorDialogo(ex.Message);
+                InteraccionConUsuarioServicio.MensajeErrorDialogo(ex.Message + ex.StackTrace);
             }
         }
         #endregion
@@ -635,7 +635,7 @@ namespace MobilityScm.Modelo.Vistas
             }
             catch (Exception ex)
             {
-                InteraccionConUsuarioServicio.Alerta(ex.Message);
+                InteraccionConUsuarioServicio.Alerta(ex.Message + ex.StackTrace);
             }
         }
 
@@ -936,7 +936,7 @@ namespace MobilityScm.Modelo.Vistas
             }
             catch (Exception ex)
             {
-                InteraccionConUsuarioServicio.Alerta(ex.Message);
+                InteraccionConUsuarioServicio.Alerta(ex.Message + ex.StackTrace);
             }
         }
 
@@ -956,7 +956,7 @@ namespace MobilityScm.Modelo.Vistas
             }
             catch (Exception ex)
             {
-                InteraccionConUsuarioServicio.Alerta(ex.Message);
+                InteraccionConUsuarioServicio.Alerta(ex.Message + ex.StackTrace);
             }
         }
 
@@ -1298,7 +1298,7 @@ namespace MobilityScm.Modelo.Vistas
             }
             catch (Exception ex)
             {
-                InteraccionConUsuarioServicio.Alerta("Error al cargar el manifiesto: " + ex.Message);
+                InteraccionConUsuarioServicio.Alerta("Error al cargar el manifiesto: " + ex.Message + ex.StackTrace);
             }
         }
 
