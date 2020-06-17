@@ -490,7 +490,7 @@
             this.UiListaCliente.Properties.PopupView = this.UiVistaCliente;
             this.UiListaCliente.Properties.ValueMember = "CLIENT_CODE";
             this.UiListaCliente.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
-            this.UiListaCliente.Size = new System.Drawing.Size(1560, 40);
+            this.UiListaCliente.Size = new System.Drawing.Size(500, 40);
             this.UiListaCliente.TabIndex = 9;
             this.UiListaCliente.EditValueChanged += new System.EventHandler(this.UiListaCliente_EditValueChanged);
             // 
@@ -556,7 +556,7 @@
             this.UiListaErp.Properties.PopupView = this.UiVistaErpEncabezado;
             this.UiListaErp.Properties.ValueMember = "SAP_REFERENCE";
             this.UiListaErp.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
-            this.UiListaErp.Size = new System.Drawing.Size(1560, 40);
+            this.UiListaErp.Size = new System.Drawing.Size(500, 40);
             this.UiListaErp.TabIndex = 11;
             this.UiListaErp.CustomDisplayText += new DevExpress.XtraEditors.Controls.CustomDisplayTextEventHandler(this.UiListaErp_CustomDisplayText);
             // 
@@ -652,7 +652,7 @@
             this.UiListaUbicacion.Properties.PopupView = this.UiVistaDeListaUbicacion;
             this.UiListaUbicacion.Properties.ValueMember = "LOCATION_SPOT";
             this.UiListaUbicacion.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
-            this.UiListaUbicacion.Size = new System.Drawing.Size(738, 40);
+            this.UiListaUbicacion.Size = new System.Drawing.Size(500, 40);
             this.UiListaUbicacion.TabIndex = 15;
             // 
             // UiVistaDeListaUbicacion
@@ -728,7 +728,7 @@
             this.UiListaOperador.Properties.PopupView = this.UiVistaUsuario;
             this.UiListaOperador.Properties.ValueMember = "LOGIN_ID";
             this.UiListaOperador.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
-            this.UiListaOperador.Size = new System.Drawing.Size(738, 40);
+            this.UiListaOperador.Size = new System.Drawing.Size(500, 40);
             this.UiListaOperador.TabIndex = 13;
             // 
             // UiVistaUsuario
@@ -811,7 +811,7 @@
             this.UiListaAcuerdoComercial.Properties.PopupView = this.UiVistaAcuerdoComercial;
             this.UiListaAcuerdoComercial.Properties.ValueMember = "ACUERDO_COMERCIAL";
             this.UiListaAcuerdoComercial.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
-            this.UiListaAcuerdoComercial.Size = new System.Drawing.Size(1560, 40);
+            this.UiListaAcuerdoComercial.Size = new System.Drawing.Size(500, 40);
             this.UiListaAcuerdoComercial.TabIndex = 23;
             // 
             // UiVistaAcuerdoComercial
@@ -857,7 +857,7 @@
             this.UiListaPolizasDeSeguro.Properties.DisplayMember = "POLIZA_INSURANCE";
             this.UiListaPolizasDeSeguro.Properties.PopupView = this.UiVistaPolizasSeguro;
             this.UiListaPolizasDeSeguro.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
-            this.UiListaPolizasDeSeguro.Size = new System.Drawing.Size(1560, 40);
+            this.UiListaPolizasDeSeguro.Size = new System.Drawing.Size(500, 40);
             this.UiListaPolizasDeSeguro.TabIndex = 24;
             // 
             // UiVistaPolizasSeguro
@@ -911,7 +911,7 @@
             this.UiListaTipoRecepcion.Properties.PopupView = this.UiVistaTipoRecepcion;
             this.UiListaTipoRecepcion.Properties.ValueMember = "TEXT_VALUE";
             this.UiListaTipoRecepcion.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
-            this.UiListaTipoRecepcion.Size = new System.Drawing.Size(738, 40);
+            this.UiListaTipoRecepcion.Size = new System.Drawing.Size(500, 40);
             this.UiListaTipoRecepcion.TabIndex = 25;
             // 
             // UiVistaTipoRecepcion
@@ -957,7 +957,7 @@
             this.UiListaPrioridad.Properties.PopupView = this.gridView7;
             this.UiListaPrioridad.Properties.ValueMember = "NUMERIC_VALUE";
             this.UiListaPrioridad.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
-            this.UiListaPrioridad.Size = new System.Drawing.Size(738, 40);
+            this.UiListaPrioridad.Size = new System.Drawing.Size(500, 40);
             this.UiListaPrioridad.TabIndex = 27;
             // 
             // gridView7
@@ -1384,7 +1384,7 @@
             this.UiGrupoCliente.Location = new System.Drawing.Point(24, 71);
             this.UiGrupoCliente.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.UiGrupoCliente.Name = "UiGrupoCliente";
-            this.UiGrupoCliente.Size = new System.Drawing.Size(1778, 269);
+            this.UiGrupoCliente.Size = new System.Drawing.Size(750, 269);
             this.UiGrupoCliente.TabIndex = 29;
             this.UiGrupoCliente.Text = "Datos de Cliente";
             // 
@@ -1401,7 +1401,7 @@
             this.UiTextoNumeroDeFactura.Properties.Mask.EditMask = "(0?\\d|1\\d|2[0-3])\\:[0-5]\\d";
             this.UiTextoNumeroDeFactura.Properties.Mask.IgnoreMaskBlank = false;
             this.UiTextoNumeroDeFactura.Properties.Mask.ShowPlaceHolders = false;
-            this.UiTextoNumeroDeFactura.Size = new System.Drawing.Size(1560, 40);
+            this.UiTextoNumeroDeFactura.Size = new System.Drawing.Size(500, 40);
             this.UiTextoNumeroDeFactura.TabIndex = 25;
             this.UiTextoNumeroDeFactura.ToolTip = "Ingrese el numero de factura";
             this.UiTextoNumeroDeFactura.Visible = false;
@@ -1419,10 +1419,10 @@
             this.UiGrupoTarea.Controls.Add(this.UiEtiquetaPrioridad);
             this.UiGrupoTarea.Controls.Add(this.UiEtiqeutaTipoRecepcion);
             this.UiGrupoTarea.Controls.Add(this.UiListaTipoRecepcion);
-            this.UiGrupoTarea.Location = new System.Drawing.Point(1814, 71);
+            this.UiGrupoTarea.Location = new System.Drawing.Point(800, 71);
             this.UiGrupoTarea.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.UiGrupoTarea.Name = "UiGrupoTarea";
-            this.UiGrupoTarea.Size = new System.Drawing.Size(922, 269);
+            this.UiGrupoTarea.Size = new System.Drawing.Size(700, 269);
             this.UiGrupoTarea.TabIndex = 30;
             this.UiGrupoTarea.Text = "Datos de Tarea";
             // 
@@ -1434,7 +1434,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2750, 1315);
+            this.ClientSize = new System.Drawing.Size(3750, 1315);
             this.Controls.Add(this.UiGrupoTarea);
             this.Controls.Add(this.UiGrupoCliente);
             this.Controls.Add(this.UiContenedorVistaErp);
