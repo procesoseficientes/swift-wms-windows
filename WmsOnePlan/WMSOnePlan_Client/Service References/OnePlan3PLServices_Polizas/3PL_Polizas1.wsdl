@@ -591,6 +591,7 @@
           </s:sequence>
         </s:complexType>
       </s:element>
+      
       <s:element name="set_picking_status">
         <s:complexType>
           <s:sequence>
@@ -602,6 +603,7 @@
           </s:sequence>
         </s:complexType>
       </s:element>
+      
       <s:element name="set_picking_statusResponse">
         <s:complexType>
           <s:sequence>
@@ -617,6 +619,36 @@
           </s:sequence>
         </s:complexType>
       </s:element>
+
+      <s:element name="set_pending_quantity">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pDOC_ID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pLINE_NUMBER" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pPENDING" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEnvironmentName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      
+      <s:element name="set_pending_quantityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="set_pending_quantityResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="pResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+
+
       <s:element name="get_skus_match">
         <s:complexType>
           <s:sequence>
@@ -2129,12 +2161,21 @@
   <wsdl:message name="get_pending_pickingSoapOut">
     <wsdl:part name="parameters" element="tns:get_pending_pickingResponse" />
   </wsdl:message>
+  
   <wsdl:message name="set_picking_statusSoapIn">
     <wsdl:part name="parameters" element="tns:set_picking_status" />
   </wsdl:message>
   <wsdl:message name="set_picking_statusSoapOut">
     <wsdl:part name="parameters" element="tns:set_picking_statusResponse" />
   </wsdl:message>
+
+  <wsdl:message name="set_pending_quantitySoapIn">
+    <wsdl:part name="parameters" element="tns:set_pending_quantity" />
+  </wsdl:message>
+  <wsdl:message name="set_pending_quantitySoapOut">
+    <wsdl:part name="parameters" element="tns:set_pending_quantityResponse" />
+  </wsdl:message>
+  
   <wsdl:message name="get_skus_matchSoapIn">
     <wsdl:part name="parameters" element="tns:get_skus_match" />
   </wsdl:message>
@@ -2582,11 +2623,19 @@
       <wsdl:input message="tns:get_pending_pickingSoapIn" />
       <wsdl:output message="tns:get_pending_pickingSoapOut" />
     </wsdl:operation>
+    
     <wsdl:operation name="set_picking_status">
       <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"> actualiza picking en proceso</wsdl:documentation>
       <wsdl:input message="tns:set_picking_statusSoapIn" />
       <wsdl:output message="tns:set_picking_statusSoapOut" />
     </wsdl:operation>
+
+    <wsdl:operation name="set_pending_quantity">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"> actualiza la cantidad pendiente en el detalle de la poliza</wsdl:documentation>
+      <wsdl:input message="tns:set_pending_quantitySoapIn" />
+      <wsdl:output message="tns:set_pending_quantitySoapOut" />
+    </wsdl:operation>
+    
     <wsdl:operation name="get_skus_match">
       <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Devuelve detalle de asociacion entre las productos y las polizas de ingreso</wsdl:documentation>
       <wsdl:input message="tns:get_skus_matchSoapIn" />
@@ -3068,6 +3117,7 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    
     <wsdl:operation name="set_picking_status">
       <soap:operation soapAction="http://tempuri.org/set_picking_status" style="document" />
       <wsdl:input>
@@ -3077,6 +3127,17 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+
+    <wsdl:operation name="set_pending_quantity">
+      <soap:operation soapAction="http://tempuri.org/set_pending_quantity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    
     <wsdl:operation name="get_skus_match">
       <soap:operation soapAction="http://tempuri.org/get_skus_match" style="document" />
       <wsdl:input>
@@ -3782,6 +3843,7 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    
     <wsdl:operation name="set_picking_status">
       <soap12:operation soapAction="http://tempuri.org/set_picking_status" style="document" />
       <wsdl:input>
@@ -3791,6 +3853,17 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    
+    <wsdl:operation name="set_pending_quantity">
+      <soap12:operation soapAction="http://tempuri.org/set_pending_quantity" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    
     <wsdl:operation name="get_skus_match">
       <soap12:operation soapAction="http://tempuri.org/get_skus_match" style="document" />
       <wsdl:input>
