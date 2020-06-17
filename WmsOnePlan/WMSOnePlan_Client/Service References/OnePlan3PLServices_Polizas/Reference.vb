@@ -199,10 +199,14 @@ Namespace OnePlan3PLServices_Polizas
          System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
         Function get_pending_picking(ByVal pWHERE As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataSet
         
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/set_picking_status", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/set_picking_status", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
         Function set_picking_status(ByVal pDOC_ID As Integer, ByVal pLINE_NUMBER As Integer, ByVal pSTATUS As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataSet
-        
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/set_pending_quantity", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function set_pending_quantity(ByVal pDOC_ID As Integer, ByVal pLINE_NUMBER As Integer, ByVal pPENDING As Decimal, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataSet
+
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/get_skus_match", ReplyAction:="*"),  _
          System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
         Function get_skus_match(ByVal pWhere As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataSet
@@ -737,11 +741,15 @@ Namespace OnePlan3PLServices_Polizas
         Public Function get_pending_picking(ByVal pWHERE As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataSet Implements OnePlan3PLServices_Polizas._3PL_PolizasSoap.get_pending_picking
             Return MyBase.Channel.get_pending_picking(pWHERE, pEnvironmentName, pResult)
         End Function
-        
+
         Public Function set_picking_status(ByVal pDOC_ID As Integer, ByVal pLINE_NUMBER As Integer, ByVal pSTATUS As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataSet Implements OnePlan3PLServices_Polizas._3PL_PolizasSoap.set_picking_status
             Return MyBase.Channel.set_picking_status(pDOC_ID, pLINE_NUMBER, pSTATUS, pEnvironmentName, pResult)
         End Function
-        
+
+        Public Function set_pending_quantity(ByVal pDOC_ID As Integer, ByVal pLINE_NUMBER As Integer, ByVal pPENDING As Decimal, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataSet Implements OnePlan3PLServices_Polizas._3PL_PolizasSoap.set_pending_quantity
+            Return MyBase.Channel.set_pending_quantity(pDOC_ID, pLINE_NUMBER, pPENDING, pEnvironmentName, pResult)
+        End Function
+
         Public Function get_skus_match(ByVal pWhere As String, ByVal pEnvironmentName As String, ByRef pResult As String) As System.Data.DataSet Implements OnePlan3PLServices_Polizas._3PL_PolizasSoap.get_skus_match
             Return MyBase.Channel.get_skus_match(pWhere, pEnvironmentName, pResult)
         End Function
