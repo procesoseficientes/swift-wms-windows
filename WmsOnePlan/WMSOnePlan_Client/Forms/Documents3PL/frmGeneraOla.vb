@@ -433,15 +433,36 @@ Public Class frmGeneraOla
                 btnOLaPicking.Caption = String.Format("Nueva Ola de Picking(Actual {0})", _olaPicking)
 
                 pResult = String.Empty
-                Dim xset As DataSet = xserv.set_picking_status(GridViewPending.GetFocusedRowCellValue("DOC_ID"), GridViewPending.GetFocusedRowCellValue("LINE_NUMBER"), "ASSIGNED", PublicLoginInfo.Environment, pResult)
-                If Not pResult = "OK" Then
-                    NotifyStatus(pResult, True, True)
-                Else
-                    _olaPicking = 0
-                    LlenarGridPendientes()
+                Dim qty_pending As Decimal
 
-                    Dim noOrden As String = xset.Tables(0).Rows(0)(0).ToString()
-                    NotifyStatus("Orden no." + noOrden + " generada exitosamente", True, False)
+
+                If (qty < GridViewPending.GetFocusedRowCellValue("QTY_PENDING")) Then
+                    qty_pending = GridViewPending.GetFocusedRowCellValue("QTY_PENDING") - qty
+                    xserv.set_pending_quantity(GridViewPending.GetFocusedRowCellValue("DOC_ID"), GridViewPending.GetFocusedRowCellValue("LINE_NUMBER"), qty_pending, PublicLoginInfo.Environment, pResult)
+
+
+
+                ElseIf (qty > GridViewPending.GetFocusedRowCellValue("QTY_PENDING")) Then
+                    NotifyStatus("Cantidad a despachar es mayor a la cantidad pendiente", True, True)
+
+                ElseIf (qty = GridViewPending.GetFocusedRowCellValue("QTY_PENDING")) Then
+                    qty_pending = GridViewPending.GetFocusedRowCellValue("QTY_PENDING") - qty
+                    xserv.set_pending_quantity(GridViewPending.GetFocusedRowCellValue("DOC_ID"), GridViewPending.GetFocusedRowCellValue("LINE_NUMBER"), qty_pending, PublicLoginInfo.Environment, pResult)
+
+                    If Not pResult = "OK" Then
+                        NotifyStatus(pResult, True, True)
+                    End If
+
+                    Dim xset As DataSet = xserv.set_picking_status(GridViewPending.GetFocusedRowCellValue("DOC_ID"), GridViewPending.GetFocusedRowCellValue("LINE_NUMBER"), "ASSIGNED", PublicLoginInfo.Environment, pResult)
+                    If Not pResult = "OK" Then
+                        NotifyStatus(pResult, True, True)
+                    Else
+                        _olaPicking = 0
+                        LlenarGridPendientes()
+
+                        Dim noOrden As String = xset.Tables(0).Rows(0)(0).ToString()
+                        NotifyStatus("Orden no." + noOrden + " generada exitosamente", True, False)
+                    End If
                 End If
             Else
                 NotifyStatus(pResult, True, True)

@@ -61,6 +61,7 @@ Partial Class frmGeneraOla
         Me.colNUMERO_DUA = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.colREGIMEN = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.colDOC_TRASLADO = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.colPendiente = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.colTRANSLATION = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.SplitContainerControl1 = New DevExpress.XtraEditors.SplitContainerControl()
         Me.dxError = New DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(Me.components)
@@ -364,7 +365,7 @@ Partial Class frmGeneraOla
         '
         'GridViewPending
         '
-        Me.GridViewPending.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colWAREHOUSE_REGIMEN, Me.colDOC_ID, Me.colLINE_NUMBER, Me.colCODIGO_POLIZA_ORIGEN, Me.colCODIGO_POLIZA, Me.colCLIENT_CODE, Me.colSKU_DESCRIPTION, Me.colORIGIN_DOC_ID, Me.colORIGIN_LINE_NUMBER, Me.colQTY, Me.colBULTOS, Me.colNUMERO_ORDEN, Me.colNUMERO_DUA, Me.colREGIMEN, Me.colDOC_TRASLADO, Me.colTRANSLATION})
+        Me.GridViewPending.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colWAREHOUSE_REGIMEN, Me.colDOC_ID, Me.colLINE_NUMBER, Me.colCODIGO_POLIZA_ORIGEN, Me.colCODIGO_POLIZA, Me.colCLIENT_CODE, Me.colSKU_DESCRIPTION, Me.colORIGIN_DOC_ID, Me.colORIGIN_LINE_NUMBER, Me.colQTY, Me.colBULTOS, Me.colNUMERO_ORDEN, Me.colNUMERO_DUA, Me.colREGIMEN, Me.colDOC_TRASLADO, Me.colPendiente, Me.colTRANSLATION})
         Me.GridViewPending.DetailHeight = 673
         Me.GridViewPending.FixedLineWidth = 4
         Me.GridViewPending.GridControl = Me.GridPending
@@ -532,6 +533,20 @@ Partial Class frmGeneraOla
         Me.colDOC_TRASLADO.OptionsColumn.AllowEdit = False
         Me.colDOC_TRASLADO.OptionsColumn.ShowInCustomizationForm = False
         Me.colDOC_TRASLADO.Width = 150
+        '
+        'colPendiente
+        '
+        Me.colPendiente.Caption = "PENDIENTE"
+        Me.colPendiente.DisplayFormat.FormatString = "###,##,#0.0000"
+        Me.colPendiente.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+        Me.colPendiente.FieldName = "QTY_PENDING"
+        Me.colPendiente.MinWidth = 40
+        Me.colPendiente.Name = "colPendiente"
+        Me.colPendiente.OptionsColumn.AllowEdit = False
+        Me.colPendiente.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "QTY_PENDING", "(Pendiente = {0:n2})")})
+        Me.colPendiente.Visible = True
+        Me.colPendiente.VisibleIndex = 2
+        Me.colPendiente.Width = 104
         '
         'colTRANSLATION
         '
@@ -759,6 +774,7 @@ End Sub
     Friend WithEvents colORIGIN_DOC_ID As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents colORIGIN_LINE_NUMBER As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents colQTY As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents colPendiente As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents colBULTOS As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents UiColCodigoBarras As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents RepositoryItemCalcEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit

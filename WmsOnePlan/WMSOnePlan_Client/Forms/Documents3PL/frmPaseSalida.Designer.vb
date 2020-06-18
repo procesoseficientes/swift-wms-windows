@@ -22,6 +22,7 @@ Partial Class frmPaseSalida
         Me.components = New System.ComponentModel.Container()
         Dim GridLevelNode1 As DevExpress.XtraGrid.GridLevelNode = New DevExpress.XtraGrid.GridLevelNode()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmPaseSalida))
+        Dim EditorButtonImageOptions1 As DevExpress.XtraEditors.Controls.EditorButtonImageOptions = New DevExpress.XtraEditors.Controls.EditorButtonImageOptions()
         Dim SerializableAppearanceObject1 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim SerializableAppearanceObject2 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim SerializableAppearanceObject3 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
@@ -97,55 +98,55 @@ Partial Class frmPaseSalida
         Me.LayoutControlItem17 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.PrintingSystem1 = New DevExpress.XtraPrinting.PrintingSystem(Me.components)
         Me.PrintableComponentLink1 = New DevExpress.XtraPrinting.PrintableComponentLink(Me.components)
-        CType(Me.GridViewPolizas,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.GridDespachos,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.GridViewDespachos,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControl1,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.LayoutControl1.SuspendLayout
-        CType(Me.GridLookPoliza.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.BarManager1,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.GridView4,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.checkPoliza.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.ckVacio.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.cmbDespachos.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.GridView3,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.cmbEntregado.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.GridView2,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.cmbAutoriza.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.GridView1,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.btnPassid.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.cmbClientes.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.GridLookUpEdit1View,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtObs.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.txtCargadoCon.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.rgCARGA.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.cmbPILOTO.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.cmbLICENCIA.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.cmbTRANSPORTISTA.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.cmbTIPOTRANSPORTE.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.cmbPlacas.Properties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlGroup1,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem1,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem6,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem8,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem9,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem10,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem12,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem13,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem15,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem7,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem11,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem5,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem3,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem2,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem4,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem16,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.SplitterItem1,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem14,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem18,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.LayoutControlItem17,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PrintingSystem1,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.SuspendLayout
+        CType(Me.GridViewPolizas, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GridDespachos, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GridViewDespachos, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.LayoutControl1.SuspendLayout()
+        CType(Me.GridLookPoliza.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BarManager1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GridView4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.checkPoliza.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ckVacio.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.cmbDespachos.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GridView3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.cmbEntregado.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GridView2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.cmbAutoriza.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnPassid.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.cmbClientes.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GridLookUpEdit1View, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtObs.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtCargadoCon.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.rgCARGA.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.cmbPILOTO.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.cmbLICENCIA.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.cmbTRANSPORTISTA.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.cmbTIPOTRANSPORTE.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.cmbPlacas.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlGroup1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem10, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem12, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem13, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem15, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem11, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem16, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SplitterItem1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem14, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem18, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem17, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PrintingSystem1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
         '
         'GridViewPolizas
         '
@@ -154,7 +155,7 @@ Partial Class frmPaseSalida
         Me.GridViewPolizas.GroupCount = 1
         Me.GridViewPolizas.GroupSummary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridGroupSummaryItem(DevExpress.Data.SummaryItemType.Sum, "QTY", Me.colPQTY, "")})
         Me.GridViewPolizas.Name = "GridViewPolizas"
-        Me.GridViewPolizas.OptionsView.ShowFooter = true
+        Me.GridViewPolizas.OptionsView.ShowFooter = True
         Me.GridViewPolizas.SortInfo.AddRange(New DevExpress.XtraGrid.Columns.GridColumnSortInfo() {New DevExpress.XtraGrid.Columns.GridColumnSortInfo(Me.colPCODIGO_POLIZA, DevExpress.Data.ColumnSortOrder.Ascending)})
         '
         'colPCODIGO_POLIZA
@@ -162,8 +163,8 @@ Partial Class frmPaseSalida
         Me.colPCODIGO_POLIZA.Caption = "Codigo Poliza"
         Me.colPCODIGO_POLIZA.FieldName = "CODIGO_POLIZA"
         Me.colPCODIGO_POLIZA.Name = "colPCODIGO_POLIZA"
-        Me.colPCODIGO_POLIZA.OptionsColumn.AllowEdit = false
-        Me.colPCODIGO_POLIZA.Visible = true
+        Me.colPCODIGO_POLIZA.OptionsColumn.AllowEdit = False
+        Me.colPCODIGO_POLIZA.Visible = True
         Me.colPCODIGO_POLIZA.VisibleIndex = 0
         '
         'colPNUMERO_ORDEN
@@ -171,8 +172,8 @@ Partial Class frmPaseSalida
         Me.colPNUMERO_ORDEN.Caption = "Numero Orden"
         Me.colPNUMERO_ORDEN.FieldName = "NUMERO_ORDEN"
         Me.colPNUMERO_ORDEN.Name = "colPNUMERO_ORDEN"
-        Me.colPNUMERO_ORDEN.OptionsColumn.AllowEdit = false
-        Me.colPNUMERO_ORDEN.Visible = true
+        Me.colPNUMERO_ORDEN.OptionsColumn.AllowEdit = False
+        Me.colPNUMERO_ORDEN.Visible = True
         Me.colPNUMERO_ORDEN.VisibleIndex = 0
         '
         'colPMATERIAL_ID
@@ -180,8 +181,8 @@ Partial Class frmPaseSalida
         Me.colPMATERIAL_ID.Caption = "Codigo Producto"
         Me.colPMATERIAL_ID.FieldName = "MATERIAL_ID"
         Me.colPMATERIAL_ID.Name = "colPMATERIAL_ID"
-        Me.colPMATERIAL_ID.OptionsColumn.AllowEdit = false
-        Me.colPMATERIAL_ID.Visible = true
+        Me.colPMATERIAL_ID.OptionsColumn.AllowEdit = False
+        Me.colPMATERIAL_ID.Visible = True
         Me.colPMATERIAL_ID.VisibleIndex = 1
         '
         'colPBARCODE_ID
@@ -189,8 +190,8 @@ Partial Class frmPaseSalida
         Me.colPBARCODE_ID.Caption = "Codigo Barrara"
         Me.colPBARCODE_ID.FieldName = "BARCODE_ID"
         Me.colPBARCODE_ID.Name = "colPBARCODE_ID"
-        Me.colPBARCODE_ID.OptionsColumn.AllowEdit = false
-        Me.colPBARCODE_ID.Visible = true
+        Me.colPBARCODE_ID.OptionsColumn.AllowEdit = False
+        Me.colPBARCODE_ID.Visible = True
         Me.colPBARCODE_ID.VisibleIndex = 2
         '
         'colPMATERIAL_NAME
@@ -198,8 +199,8 @@ Partial Class frmPaseSalida
         Me.colPMATERIAL_NAME.Caption = "Producto"
         Me.colPMATERIAL_NAME.FieldName = "MATERIAL_NAME"
         Me.colPMATERIAL_NAME.Name = "colPMATERIAL_NAME"
-        Me.colPMATERIAL_NAME.OptionsColumn.AllowEdit = false
-        Me.colPMATERIAL_NAME.Visible = true
+        Me.colPMATERIAL_NAME.OptionsColumn.AllowEdit = False
+        Me.colPMATERIAL_NAME.Visible = True
         Me.colPMATERIAL_NAME.VisibleIndex = 3
         '
         'colPQTY
@@ -207,9 +208,9 @@ Partial Class frmPaseSalida
         Me.colPQTY.Caption = "Cantidad"
         Me.colPQTY.FieldName = "QTY"
         Me.colPQTY.Name = "colPQTY"
-        Me.colPQTY.OptionsColumn.AllowEdit = false
+        Me.colPQTY.OptionsColumn.AllowEdit = False
         Me.colPQTY.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum)})
-        Me.colPQTY.Visible = true
+        Me.colPQTY.Visible = True
         Me.colPQTY.VisibleIndex = 4
         '
         'GridDespachos
@@ -218,10 +219,10 @@ Partial Class frmPaseSalida
         GridLevelNode1.LevelTemplate = Me.GridViewPolizas
         GridLevelNode1.RelationName = "Level1"
         Me.GridDespachos.LevelTree.Nodes.AddRange(New DevExpress.XtraGrid.GridLevelNode() {GridLevelNode1})
-        Me.GridDespachos.Location = New System.Drawing.Point(146, 216)
+        Me.GridDespachos.Location = New System.Drawing.Point(146, 230)
         Me.GridDespachos.MainView = Me.GridViewDespachos
         Me.GridDespachos.Name = "GridDespachos"
-        Me.GridDespachos.Size = New System.Drawing.Size(976, 240)
+        Me.GridDespachos.Size = New System.Drawing.Size(976, 228)
         Me.GridDespachos.TabIndex = 17
         Me.GridDespachos.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridViewDespachos, Me.GridViewPolizas})
         '
@@ -232,7 +233,7 @@ Partial Class frmPaseSalida
         Me.GridViewDespachos.GroupCount = 1
         Me.GridViewDespachos.GroupSummary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridGroupSummaryItem(DevExpress.Data.SummaryItemType.Sum, "QTY", Me.colQTY, "")})
         Me.GridViewDespachos.Name = "GridViewDespachos"
-        Me.GridViewDespachos.OptionsView.ShowFooter = true
+        Me.GridViewDespachos.OptionsView.ShowFooter = True
         Me.GridViewDespachos.SortInfo.AddRange(New DevExpress.XtraGrid.Columns.GridColumnSortInfo() {New DevExpress.XtraGrid.Columns.GridColumnSortInfo(Me.colAUDIT_ID, DevExpress.Data.ColumnSortOrder.Ascending)})
         '
         'colAUDIT_ID
@@ -240,8 +241,8 @@ Partial Class frmPaseSalida
         Me.colAUDIT_ID.Caption = "Auditoria"
         Me.colAUDIT_ID.FieldName = "AUDIT_ID"
         Me.colAUDIT_ID.Name = "colAUDIT_ID"
-        Me.colAUDIT_ID.OptionsColumn.AllowEdit = false
-        Me.colAUDIT_ID.Visible = true
+        Me.colAUDIT_ID.OptionsColumn.AllowEdit = False
+        Me.colAUDIT_ID.Visible = True
         Me.colAUDIT_ID.VisibleIndex = 0
         '
         'colCODIGO_POLIZA
@@ -249,8 +250,8 @@ Partial Class frmPaseSalida
         Me.colCODIGO_POLIZA.Caption = "Poliza"
         Me.colCODIGO_POLIZA.FieldName = "CODIGO_POLIZA"
         Me.colCODIGO_POLIZA.Name = "colCODIGO_POLIZA"
-        Me.colCODIGO_POLIZA.OptionsColumn.AllowEdit = false
-        Me.colCODIGO_POLIZA.Visible = true
+        Me.colCODIGO_POLIZA.OptionsColumn.AllowEdit = False
+        Me.colCODIGO_POLIZA.Visible = True
         Me.colCODIGO_POLIZA.VisibleIndex = 0
         '
         'colNUMERO_ORDEN
@@ -258,8 +259,8 @@ Partial Class frmPaseSalida
         Me.colNUMERO_ORDEN.Caption = "Numero de Orden"
         Me.colNUMERO_ORDEN.FieldName = "NUMERO_ORDEN"
         Me.colNUMERO_ORDEN.Name = "colNUMERO_ORDEN"
-        Me.colNUMERO_ORDEN.OptionsColumn.AllowEdit = false
-        Me.colNUMERO_ORDEN.Visible = true
+        Me.colNUMERO_ORDEN.OptionsColumn.AllowEdit = False
+        Me.colNUMERO_ORDEN.Visible = True
         Me.colNUMERO_ORDEN.VisibleIndex = 1
         '
         'colMATERIAL_ID
@@ -267,8 +268,8 @@ Partial Class frmPaseSalida
         Me.colMATERIAL_ID.Caption = "Codigo"
         Me.colMATERIAL_ID.FieldName = "MATERIAL_ID"
         Me.colMATERIAL_ID.Name = "colMATERIAL_ID"
-        Me.colMATERIAL_ID.OptionsColumn.AllowEdit = false
-        Me.colMATERIAL_ID.Visible = true
+        Me.colMATERIAL_ID.OptionsColumn.AllowEdit = False
+        Me.colMATERIAL_ID.Visible = True
         Me.colMATERIAL_ID.VisibleIndex = 2
         '
         'colBARCODE_ID
@@ -276,8 +277,8 @@ Partial Class frmPaseSalida
         Me.colBARCODE_ID.Caption = "Codigo de Barra"
         Me.colBARCODE_ID.FieldName = "BARCODE_ID"
         Me.colBARCODE_ID.Name = "colBARCODE_ID"
-        Me.colBARCODE_ID.OptionsColumn.AllowEdit = false
-        Me.colBARCODE_ID.Visible = true
+        Me.colBARCODE_ID.OptionsColumn.AllowEdit = False
+        Me.colBARCODE_ID.Visible = True
         Me.colBARCODE_ID.VisibleIndex = 3
         '
         'colMATERIAL_NAME
@@ -285,8 +286,8 @@ Partial Class frmPaseSalida
         Me.colMATERIAL_NAME.Caption = "Producto"
         Me.colMATERIAL_NAME.FieldName = "MATERIAL_NAME"
         Me.colMATERIAL_NAME.Name = "colMATERIAL_NAME"
-        Me.colMATERIAL_NAME.OptionsColumn.AllowEdit = false
-        Me.colMATERIAL_NAME.Visible = true
+        Me.colMATERIAL_NAME.OptionsColumn.AllowEdit = False
+        Me.colMATERIAL_NAME.Visible = True
         Me.colMATERIAL_NAME.VisibleIndex = 4
         '
         'colQTY
@@ -294,9 +295,9 @@ Partial Class frmPaseSalida
         Me.colQTY.Caption = "Cantidad"
         Me.colQTY.FieldName = "QTY"
         Me.colQTY.Name = "colQTY"
-        Me.colQTY.OptionsColumn.AllowEdit = false
+        Me.colQTY.OptionsColumn.AllowEdit = False
         Me.colQTY.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum)})
-        Me.colQTY.Visible = true
+        Me.colQTY.Visible = True
         Me.colQTY.VisibleIndex = 5
         '
         'LayoutControl1
@@ -320,22 +321,22 @@ Partial Class frmPaseSalida
         Me.LayoutControl1.Controls.Add(Me.cmbTIPOTRANSPORTE)
         Me.LayoutControl1.Controls.Add(Me.cmbPlacas)
         Me.LayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.LayoutControl1.Location = New System.Drawing.Point(0, 58)
+        Me.LayoutControl1.Location = New System.Drawing.Point(0, 56)
         Me.LayoutControl1.Name = "LayoutControl1"
         Me.LayoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New System.Drawing.Rectangle(45, 181, 477, 350)
         Me.LayoutControl1.Root = Me.LayoutControlGroup1
-        Me.LayoutControl1.Size = New System.Drawing.Size(1134, 468)
+        Me.LayoutControl1.Size = New System.Drawing.Size(1134, 470)
         Me.LayoutControl1.TabIndex = 0
         Me.LayoutControl1.Text = "LayoutControl1"
         '
         'GridLookPoliza
         '
-        Me.GridLookPoliza.Enabled = false
-        Me.GridLookPoliza.Location = New System.Drawing.Point(282, 166)
+        Me.GridLookPoliza.Enabled = False
+        Me.GridLookPoliza.Location = New System.Drawing.Point(282, 180)
         Me.GridLookPoliza.MenuManager = Me.BarManager1
         Me.GridLookPoliza.Name = "GridLookPoliza"
         Me.GridLookPoliza.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.GridLookPoliza.Properties.View = Me.GridView4
+        Me.GridLookPoliza.Properties.PopupView = Me.GridView4
         Me.GridLookPoliza.Size = New System.Drawing.Size(283, 20)
         Me.GridLookPoliza.StyleController = Me.LayoutControl1
         Me.GridLookPoliza.TabIndex = 14
@@ -359,83 +360,87 @@ Partial Class frmPaseSalida
         Me.Bar2.DockRow = 0
         Me.Bar2.DockStyle = DevExpress.XtraBars.BarDockStyle.Top
         Me.Bar2.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {New DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, Me.BarLargeButtonItem1, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph), New DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, Me.btnSave, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph), New DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, Me.btnFind, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph), New DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, Me.btnClean, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)})
-        Me.Bar2.OptionsBar.MultiLine = true
-        Me.Bar2.OptionsBar.UseWholeRow = true
+        Me.Bar2.OptionsBar.MultiLine = True
+        Me.Bar2.OptionsBar.UseWholeRow = True
         Me.Bar2.Text = "Main menu"
         '
         'BarLargeButtonItem1
         '
         Me.BarLargeButtonItem1.Caption = "Imprimir"
         Me.BarLargeButtonItem1.Id = 0
-        Me.BarLargeButtonItem1.LargeGlyph = CType(resources.GetObject("BarLargeButtonItem1.LargeGlyph"),System.Drawing.Image)
+        Me.BarLargeButtonItem1.ImageOptions.LargeImage = CType(resources.GetObject("BarLargeButtonItem1.ImageOptions.LargeImage"), System.Drawing.Image)
         Me.BarLargeButtonItem1.Name = "BarLargeButtonItem1"
         '
         'btnSave
         '
         Me.btnSave.Caption = "Grabar"
         Me.btnSave.Id = 1
-        Me.btnSave.LargeGlyph = CType(resources.GetObject("btnSave.LargeGlyph"),System.Drawing.Image)
+        Me.btnSave.ImageOptions.LargeImage = CType(resources.GetObject("btnSave.ImageOptions.LargeImage"), System.Drawing.Image)
         Me.btnSave.Name = "btnSave"
         '
         'btnFind
         '
         Me.btnFind.Caption = "Buscar Pase"
         Me.btnFind.Id = 2
-        Me.btnFind.LargeGlyph = CType(resources.GetObject("btnFind.LargeGlyph"),System.Drawing.Image)
+        Me.btnFind.ImageOptions.LargeImage = CType(resources.GetObject("btnFind.ImageOptions.LargeImage"), System.Drawing.Image)
         Me.btnFind.Name = "btnFind"
         '
         'btnClean
         '
         Me.btnClean.Caption = "Borrar Pase de Salida"
         Me.btnClean.Id = 3
-        Me.btnClean.LargeGlyph = CType(resources.GetObject("btnClean.LargeGlyph"),System.Drawing.Image)
+        Me.btnClean.ImageOptions.LargeImage = CType(resources.GetObject("btnClean.ImageOptions.LargeImage"), System.Drawing.Image)
         Me.btnClean.Name = "btnClean"
         '
         'barDockControlTop
         '
-        Me.barDockControlTop.CausesValidation = false
+        Me.barDockControlTop.CausesValidation = False
         Me.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.barDockControlTop.Location = New System.Drawing.Point(0, 0)
-        Me.barDockControlTop.Size = New System.Drawing.Size(1134, 58)
+        Me.barDockControlTop.Manager = Me.BarManager1
+        Me.barDockControlTop.Size = New System.Drawing.Size(1134, 56)
         '
         'barDockControlBottom
         '
-        Me.barDockControlBottom.CausesValidation = false
+        Me.barDockControlBottom.CausesValidation = False
         Me.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.barDockControlBottom.Location = New System.Drawing.Point(0, 526)
+        Me.barDockControlBottom.Manager = Me.BarManager1
         Me.barDockControlBottom.Size = New System.Drawing.Size(1134, 0)
         '
         'barDockControlLeft
         '
-        Me.barDockControlLeft.CausesValidation = false
+        Me.barDockControlLeft.CausesValidation = False
         Me.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left
-        Me.barDockControlLeft.Location = New System.Drawing.Point(0, 58)
-        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 468)
+        Me.barDockControlLeft.Location = New System.Drawing.Point(0, 56)
+        Me.barDockControlLeft.Manager = Me.BarManager1
+        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 470)
         '
         'barDockControlRight
         '
-        Me.barDockControlRight.CausesValidation = false
+        Me.barDockControlRight.CausesValidation = False
         Me.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right
-        Me.barDockControlRight.Location = New System.Drawing.Point(1134, 58)
-        Me.barDockControlRight.Size = New System.Drawing.Size(0, 468)
+        Me.barDockControlRight.Location = New System.Drawing.Point(1134, 56)
+        Me.barDockControlRight.Manager = Me.BarManager1
+        Me.barDockControlRight.Size = New System.Drawing.Size(0, 470)
         '
         'GridView4
         '
         Me.GridView4.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
         Me.GridView4.Name = "GridView4"
-        Me.GridView4.OptionsSelection.EnableAppearanceFocusedCell = false
-        Me.GridView4.OptionsView.ShowAutoFilterRow = true
-        Me.GridView4.OptionsView.ShowGroupPanel = false
+        Me.GridView4.OptionsSelection.EnableAppearanceFocusedCell = False
+        Me.GridView4.OptionsView.ShowAutoFilterRow = True
+        Me.GridView4.OptionsView.ShowGroupPanel = False
         '
         'checkPoliza
         '
-        Me.checkPoliza.Enabled = false
-        Me.checkPoliza.Location = New System.Drawing.Point(12, 166)
+        Me.checkPoliza.Enabled = False
+        Me.checkPoliza.Location = New System.Drawing.Point(12, 180)
         Me.checkPoliza.MenuManager = Me.BarManager1
         Me.checkPoliza.Name = "checkPoliza"
         Me.checkPoliza.Properties.Caption = "Despacho por Poliza"
         Me.checkPoliza.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Far
-        Me.checkPoliza.Size = New System.Drawing.Size(132, 19)
+        Me.checkPoliza.Size = New System.Drawing.Size(132, 20)
         Me.checkPoliza.StyleController = Me.LayoutControl1
         Me.checkPoliza.TabIndex = 13
         '
@@ -451,21 +456,20 @@ Partial Class frmPaseSalida
         Me.ckVacio.Properties.ValueChecked = "S"
         Me.ckVacio.Properties.ValueGrayed = "N"
         Me.ckVacio.Properties.ValueUnchecked = "N"
-        Me.ckVacio.Size = New System.Drawing.Size(208, 19)
+        Me.ckVacio.Size = New System.Drawing.Size(208, 20)
         Me.ckVacio.StyleController = Me.LayoutControl1
         Me.ckVacio.TabIndex = 2
         '
         'cmbDespachos
         '
-        Me.cmbDespachos.Enabled = false
-        Me.cmbDespachos.Location = New System.Drawing.Point(703, 166)
+        Me.cmbDespachos.Enabled = False
+        Me.cmbDespachos.Location = New System.Drawing.Point(703, 180)
         Me.cmbDespachos.MenuManager = Me.BarManager1
         Me.cmbDespachos.Name = "cmbDespachos"
         Me.cmbDespachos.Properties.BestFitMode = DevExpress.XtraEditors.Controls.BestFitMode.BestFitResizePopup
         Me.cmbDespachos.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.cmbDespachos.Properties.NullValuePrompt = "Seleccione Auditoria de despacho"
-        Me.cmbDespachos.Properties.NullValuePromptShowForEmptyValue = true
-        Me.cmbDespachos.Properties.View = Me.GridView3
+        Me.cmbDespachos.Properties.PopupView = Me.GridView3
         Me.cmbDespachos.Size = New System.Drawing.Size(419, 20)
         Me.cmbDespachos.StyleController = Me.LayoutControl1
         Me.cmbDespachos.TabIndex = 15
@@ -475,17 +479,17 @@ Partial Class frmPaseSalida
         Me.GridView3.DetailHeight = 600
         Me.GridView3.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
         Me.GridView3.Name = "GridView3"
-        Me.GridView3.OptionsSelection.EnableAppearanceFocusedCell = false
-        Me.GridView3.OptionsView.ShowAutoFilterRow = true
-        Me.GridView3.OptionsView.ShowGroupPanel = false
+        Me.GridView3.OptionsSelection.EnableAppearanceFocusedCell = False
+        Me.GridView3.OptionsView.ShowAutoFilterRow = True
+        Me.GridView3.OptionsView.ShowGroupPanel = False
         '
         'cmbEntregado
         '
-        Me.cmbEntregado.Location = New System.Drawing.Point(705, 137)
+        Me.cmbEntregado.Location = New System.Drawing.Point(705, 146)
         Me.cmbEntregado.MenuManager = Me.BarManager1
         Me.cmbEntregado.Name = "cmbEntregado"
         Me.cmbEntregado.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.cmbEntregado.Properties.View = Me.GridView2
+        Me.cmbEntregado.Properties.PopupView = Me.GridView2
         Me.cmbEntregado.Size = New System.Drawing.Size(417, 20)
         Me.cmbEntregado.StyleController = Me.LayoutControl1
         Me.cmbEntregado.TabIndex = 12
@@ -494,17 +498,17 @@ Partial Class frmPaseSalida
         '
         Me.GridView2.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
         Me.GridView2.Name = "GridView2"
-        Me.GridView2.OptionsSelection.EnableAppearanceFocusedCell = false
-        Me.GridView2.OptionsView.ShowAutoFilterRow = true
-        Me.GridView2.OptionsView.ShowGroupPanel = false
+        Me.GridView2.OptionsSelection.EnableAppearanceFocusedCell = False
+        Me.GridView2.OptionsView.ShowAutoFilterRow = True
+        Me.GridView2.OptionsView.ShowGroupPanel = False
         '
         'cmbAutoriza
         '
-        Me.cmbAutoriza.Location = New System.Drawing.Point(146, 137)
+        Me.cmbAutoriza.Location = New System.Drawing.Point(146, 146)
         Me.cmbAutoriza.MenuManager = Me.BarManager1
         Me.cmbAutoriza.Name = "cmbAutoriza"
         Me.cmbAutoriza.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.cmbAutoriza.Properties.View = Me.GridView1
+        Me.cmbAutoriza.Properties.PopupView = Me.GridView1
         Me.cmbAutoriza.Size = New System.Drawing.Size(421, 20)
         Me.cmbAutoriza.StyleController = Me.LayoutControl1
         Me.cmbAutoriza.TabIndex = 11
@@ -513,34 +517,34 @@ Partial Class frmPaseSalida
         '
         Me.GridView1.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
         Me.GridView1.Name = "GridView1"
-        Me.GridView1.OptionsSelection.EnableAppearanceFocusedCell = false
-        Me.GridView1.OptionsView.ShowAutoFilterRow = true
-        Me.GridView1.OptionsView.ShowGroupPanel = false
+        Me.GridView1.OptionsSelection.EnableAppearanceFocusedCell = False
+        Me.GridView1.OptionsView.ShowAutoFilterRow = True
+        Me.GridView1.OptionsView.ShowGroupPanel = False
         '
         'btnPassid
         '
         Me.btnPassid.Location = New System.Drawing.Point(657, 12)
         Me.btnPassid.MenuManager = Me.BarManager1
         Me.btnPassid.Name = "btnPassid"
-        Me.btnPassid.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(128,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(128,Byte),Integer))
-        Me.btnPassid.Properties.Appearance.Options.UseBackColor = true
+        Me.btnPassid.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnPassid.Properties.Appearance.Options.UseBackColor = True
         SerializableAppearanceObject1.BackColor = System.Drawing.Color.Blue
         SerializableAppearanceObject1.BorderColor = System.Drawing.Color.White
-        SerializableAppearanceObject1.Options.UseBackColor = true
-        SerializableAppearanceObject1.Options.UseBorderColor = true
+        SerializableAppearanceObject1.Options.UseBackColor = True
+        SerializableAppearanceObject1.Options.UseBorderColor = True
         SerializableAppearanceObject2.BackColor = System.Drawing.Color.Blue
         SerializableAppearanceObject2.BorderColor = System.Drawing.Color.White
-        SerializableAppearanceObject2.Options.UseBackColor = true
-        SerializableAppearanceObject2.Options.UseBorderColor = true
+        SerializableAppearanceObject2.Options.UseBackColor = True
+        SerializableAppearanceObject2.Options.UseBorderColor = True
         SerializableAppearanceObject3.BackColor = System.Drawing.Color.Blue
         SerializableAppearanceObject3.BorderColor = System.Drawing.Color.White
-        SerializableAppearanceObject3.Options.UseBackColor = true
-        SerializableAppearanceObject3.Options.UseBorderColor = true
+        SerializableAppearanceObject3.Options.UseBackColor = True
+        SerializableAppearanceObject3.Options.UseBorderColor = True
         SerializableAppearanceObject4.BackColor = System.Drawing.Color.Blue
         SerializableAppearanceObject4.BorderColor = System.Drawing.Color.White
-        SerializableAppearanceObject4.Options.UseBackColor = true
-        SerializableAppearanceObject4.Options.UseBorderColor = true
-        Me.btnPassid.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Redo, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, Nothing, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject1, SerializableAppearanceObject2, SerializableAppearanceObject3, SerializableAppearanceObject4, "", Nothing, Nothing, true)})
+        SerializableAppearanceObject4.Options.UseBackColor = True
+        SerializableAppearanceObject4.Options.UseBorderColor = True
+        Me.btnPassid.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Redo, "", -1, True, True, False, EditorButtonImageOptions1, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject1, SerializableAppearanceObject2, SerializableAppearanceObject3, SerializableAppearanceObject4, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
         Me.btnPassid.Size = New System.Drawing.Size(253, 20)
         Me.btnPassid.StyleController = Me.LayoutControl1
         Me.btnPassid.TabIndex = 1
@@ -551,7 +555,7 @@ Partial Class frmPaseSalida
         Me.cmbClientes.MenuManager = Me.BarManager1
         Me.cmbClientes.Name = "cmbClientes"
         Me.cmbClientes.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.cmbClientes.Properties.View = Me.GridLookUpEdit1View
+        Me.cmbClientes.Properties.PopupView = Me.GridLookUpEdit1View
         Me.cmbClientes.Size = New System.Drawing.Size(373, 20)
         Me.cmbClientes.StyleController = Me.LayoutControl1
         Me.cmbClientes.TabIndex = 0
@@ -560,30 +564,30 @@ Partial Class frmPaseSalida
         '
         Me.GridLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
         Me.GridLookUpEdit1View.Name = "GridLookUpEdit1View"
-        Me.GridLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false
-        Me.GridLookUpEdit1View.OptionsView.ShowAutoFilterRow = true
-        Me.GridLookUpEdit1View.OptionsView.ShowGroupPanel = false
+        Me.GridLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = False
+        Me.GridLookUpEdit1View.OptionsView.ShowAutoFilterRow = True
+        Me.GridLookUpEdit1View.OptionsView.ShowGroupPanel = False
         '
         'txtObs
         '
-        Me.txtObs.Location = New System.Drawing.Point(146, 113)
+        Me.txtObs.Location = New System.Drawing.Point(146, 122)
         Me.txtObs.MenuManager = Me.BarManager1
         Me.txtObs.Name = "txtObs"
-        Me.txtObs.Properties.AutoHeight = false
+        Me.txtObs.Properties.AutoHeight = False
         Me.txtObs.Size = New System.Drawing.Size(976, 20)
         Me.txtObs.StyleController = Me.LayoutControl1
         Me.txtObs.TabIndex = 10
         '
         'txtCargadoCon
         '
-        Me.txtCargadoCon.Location = New System.Drawing.Point(146, 89)
+        Me.txtCargadoCon.Location = New System.Drawing.Point(146, 98)
         Me.txtCargadoCon.MenuManager = Me.BarManager1
         Me.txtCargadoCon.Name = "txtCargadoCon"
-        Me.txtCargadoCon.Properties.AppearanceFocused.Options.UseTextOptions = true
+        Me.txtCargadoCon.Properties.AppearanceFocused.Options.UseTextOptions = True
         Me.txtCargadoCon.Properties.AppearanceFocused.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
         Me.txtCargadoCon.Properties.AppearanceFocused.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
         Me.txtCargadoCon.Properties.AppearanceFocused.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap
-        Me.txtCargadoCon.Properties.AutoHeight = false
+        Me.txtCargadoCon.Properties.AutoHeight = False
         Me.txtCargadoCon.Properties.MaxLength = 4000
         Me.txtCargadoCon.Size = New System.Drawing.Size(976, 20)
         Me.txtCargadoCon.StyleController = Me.LayoutControl1
@@ -595,19 +599,19 @@ Partial Class frmPaseSalida
         Me.rgCARGA.MenuManager = Me.BarManager1
         Me.rgCARGA.Name = "rgCARGA"
         Me.rgCARGA.Properties.Items.AddRange(New DevExpress.XtraEditors.Controls.RadioGroupItem() {New DevExpress.XtraEditors.Controls.RadioGroupItem("C", "Cargado"), New DevExpress.XtraEditors.Controls.RadioGroupItem("U", "Descargado"), New DevExpress.XtraEditors.Controls.RadioGroupItem("N", "Ninguno")})
-        Me.rgCARGA.Size = New System.Drawing.Size(152, 25)
+        Me.rgCARGA.Size = New System.Drawing.Size(152, 34)
         Me.rgCARGA.StyleController = Me.LayoutControl1
         Me.rgCARGA.TabIndex = 8
         '
         'btnCargar
         '
-        Me.btnCargar.Location = New System.Drawing.Point(12, 190)
+        Me.btnCargar.Location = New System.Drawing.Point(12, 204)
         Me.btnCargar.Name = "btnCargar"
         Me.btnCargar.Size = New System.Drawing.Size(1110, 22)
         Me.btnCargar.StyleController = Me.LayoutControl1
         Me.btnCargar.TabIndex = 16
         Me.btnCargar.Text = "Cargar"
-        Me.btnCargar.Visible = false
+        Me.btnCargar.Visible = False
         '
         'cmbPILOTO
         '
@@ -663,20 +667,19 @@ Partial Class frmPaseSalida
         '
         Me.LayoutControlGroup1.CustomizationFormText = "Root"
         Me.LayoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.[True]
-        Me.LayoutControlGroup1.GroupBordersVisible = false
+        Me.LayoutControlGroup1.GroupBordersVisible = False
         Me.LayoutControlGroup1.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem1, Me.LayoutControlItem6, Me.LayoutControlItem8, Me.LayoutControlItem9, Me.LayoutControlItem10, Me.LayoutControlItem12, Me.LayoutControlItem13, Me.LayoutControlItem15, Me.LayoutControlItem7, Me.LayoutControlItem11, Me.LayoutControlItem5, Me.LayoutControlItem3, Me.LayoutControlItem2, Me.LayoutControlItem4, Me.LayoutControlItem16, Me.SplitterItem1, Me.LayoutControlItem14, Me.LayoutControlItem18, Me.LayoutControlItem17})
-        Me.LayoutControlGroup1.Location = New System.Drawing.Point(0, 0)
         Me.LayoutControlGroup1.Name = "Root"
-        Me.LayoutControlGroup1.Size = New System.Drawing.Size(1134, 468)
-        Me.LayoutControlGroup1.TextVisible = false
+        Me.LayoutControlGroup1.Size = New System.Drawing.Size(1134, 470)
+        Me.LayoutControlGroup1.TextVisible = False
         '
         'LayoutControlItem1
         '
         Me.LayoutControlItem1.Control = Me.GridDespachos
         Me.LayoutControlItem1.CustomizationFormText = "Despachos"
-        Me.LayoutControlItem1.Location = New System.Drawing.Point(0, 204)
+        Me.LayoutControlItem1.Location = New System.Drawing.Point(0, 218)
         Me.LayoutControlItem1.Name = "LayoutControlItem1"
-        Me.LayoutControlItem1.Size = New System.Drawing.Size(1114, 244)
+        Me.LayoutControlItem1.Size = New System.Drawing.Size(1114, 232)
         Me.LayoutControlItem1.Text = "Despachos"
         Me.LayoutControlItem1.TextSize = New System.Drawing.Size(131, 13)
         '
@@ -686,7 +689,7 @@ Partial Class frmPaseSalida
         Me.LayoutControlItem6.CustomizationFormText = "Piloto"
         Me.LayoutControlItem6.Location = New System.Drawing.Point(0, 48)
         Me.LayoutControlItem6.Name = "LayoutControlItem6"
-        Me.LayoutControlItem6.Size = New System.Drawing.Size(512, 29)
+        Me.LayoutControlItem6.Size = New System.Drawing.Size(512, 38)
         Me.LayoutControlItem6.Text = "Piloto"
         Me.LayoutControlItem6.TextSize = New System.Drawing.Size(131, 13)
         '
@@ -696,7 +699,7 @@ Partial Class frmPaseSalida
         Me.LayoutControlItem8.CustomizationFormText = "¿El vehiculo fue?"
         Me.LayoutControlItem8.Location = New System.Drawing.Point(824, 48)
         Me.LayoutControlItem8.Name = "LayoutControlItem8"
-        Me.LayoutControlItem8.Size = New System.Drawing.Size(290, 29)
+        Me.LayoutControlItem8.Size = New System.Drawing.Size(290, 38)
         Me.LayoutControlItem8.Text = "¿El vehiculo fue?"
         Me.LayoutControlItem8.TextSize = New System.Drawing.Size(131, 13)
         '
@@ -704,7 +707,7 @@ Partial Class frmPaseSalida
         '
         Me.LayoutControlItem9.Control = Me.txtCargadoCon
         Me.LayoutControlItem9.CustomizationFormText = "El Vehiculo fue cargado con"
-        Me.LayoutControlItem9.Location = New System.Drawing.Point(0, 77)
+        Me.LayoutControlItem9.Location = New System.Drawing.Point(0, 86)
         Me.LayoutControlItem9.Name = "LayoutControlItem9"
         Me.LayoutControlItem9.Size = New System.Drawing.Size(1114, 24)
         Me.LayoutControlItem9.Text = "El Vehiculo fue cargado con"
@@ -714,7 +717,7 @@ Partial Class frmPaseSalida
         '
         Me.LayoutControlItem10.Control = Me.txtObs
         Me.LayoutControlItem10.CustomizationFormText = "Observaciones"
-        Me.LayoutControlItem10.Location = New System.Drawing.Point(0, 101)
+        Me.LayoutControlItem10.Location = New System.Drawing.Point(0, 110)
         Me.LayoutControlItem10.Name = "LayoutControlItem10"
         Me.LayoutControlItem10.Size = New System.Drawing.Size(1114, 24)
         Me.LayoutControlItem10.Text = "Observaciones"
@@ -724,7 +727,7 @@ Partial Class frmPaseSalida
         '
         Me.LayoutControlItem12.Control = Me.cmbAutoriza
         Me.LayoutControlItem12.CustomizationFormText = "Autorizado Por"
-        Me.LayoutControlItem12.Location = New System.Drawing.Point(0, 125)
+        Me.LayoutControlItem12.Location = New System.Drawing.Point(0, 134)
         Me.LayoutControlItem12.Name = "LayoutControlItem12"
         Me.LayoutControlItem12.Size = New System.Drawing.Size(559, 24)
         Me.LayoutControlItem12.Text = "Autorizado Por"
@@ -734,7 +737,7 @@ Partial Class frmPaseSalida
         '
         Me.LayoutControlItem13.Control = Me.cmbEntregado
         Me.LayoutControlItem13.CustomizationFormText = "Entregado Por"
-        Me.LayoutControlItem13.Location = New System.Drawing.Point(559, 125)
+        Me.LayoutControlItem13.Location = New System.Drawing.Point(559, 134)
         Me.LayoutControlItem13.Name = "LayoutControlItem13"
         Me.LayoutControlItem13.Size = New System.Drawing.Size(555, 24)
         Me.LayoutControlItem13.Text = "Entregado Por"
@@ -744,11 +747,11 @@ Partial Class frmPaseSalida
         '
         Me.LayoutControlItem15.Control = Me.btnCargar
         Me.LayoutControlItem15.CustomizationFormText = "LayoutControlItem15"
-        Me.LayoutControlItem15.Location = New System.Drawing.Point(0, 178)
+        Me.LayoutControlItem15.Location = New System.Drawing.Point(0, 192)
         Me.LayoutControlItem15.Name = "LayoutControlItem15"
         Me.LayoutControlItem15.Size = New System.Drawing.Size(1114, 26)
         Me.LayoutControlItem15.TextSize = New System.Drawing.Size(0, 0)
-        Me.LayoutControlItem15.TextVisible = false
+        Me.LayoutControlItem15.TextVisible = False
         Me.LayoutControlItem15.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never
         '
         'LayoutControlItem7
@@ -777,7 +780,7 @@ Partial Class frmPaseSalida
         Me.LayoutControlItem5.CustomizationFormText = "Licencia"
         Me.LayoutControlItem5.Location = New System.Drawing.Point(512, 48)
         Me.LayoutControlItem5.Name = "LayoutControlItem5"
-        Me.LayoutControlItem5.Size = New System.Drawing.Size(312, 29)
+        Me.LayoutControlItem5.Size = New System.Drawing.Size(312, 38)
         Me.LayoutControlItem5.Text = "Licencia"
         Me.LayoutControlItem5.TextSize = New System.Drawing.Size(131, 13)
         '
@@ -819,21 +822,21 @@ Partial Class frmPaseSalida
         Me.LayoutControlItem16.Name = "LayoutControlItem16"
         Me.LayoutControlItem16.Size = New System.Drawing.Size(212, 24)
         Me.LayoutControlItem16.TextSize = New System.Drawing.Size(0, 0)
-        Me.LayoutControlItem16.TextVisible = false
+        Me.LayoutControlItem16.TextVisible = False
         '
         'SplitterItem1
         '
-        Me.SplitterItem1.AllowHotTrack = true
+        Me.SplitterItem1.AllowHotTrack = True
         Me.SplitterItem1.CustomizationFormText = "SplitterItem1"
-        Me.SplitterItem1.Location = New System.Drawing.Point(0, 149)
+        Me.SplitterItem1.Location = New System.Drawing.Point(0, 158)
         Me.SplitterItem1.Name = "SplitterItem1"
-        Me.SplitterItem1.Size = New System.Drawing.Size(1114, 5)
+        Me.SplitterItem1.Size = New System.Drawing.Size(1114, 10)
         '
         'LayoutControlItem14
         '
         Me.LayoutControlItem14.Control = Me.cmbDespachos
         Me.LayoutControlItem14.CustomizationFormText = "Despachos"
-        Me.LayoutControlItem14.Location = New System.Drawing.Point(557, 154)
+        Me.LayoutControlItem14.Location = New System.Drawing.Point(557, 168)
         Me.LayoutControlItem14.Name = "LayoutControlItem14"
         Me.LayoutControlItem14.Size = New System.Drawing.Size(557, 24)
         Me.LayoutControlItem14.Text = "Despachos"
@@ -843,7 +846,7 @@ Partial Class frmPaseSalida
         '
         Me.LayoutControlItem18.Control = Me.GridLookPoliza
         Me.LayoutControlItem18.CustomizationFormText = "Polizas"
-        Me.LayoutControlItem18.Location = New System.Drawing.Point(136, 154)
+        Me.LayoutControlItem18.Location = New System.Drawing.Point(136, 168)
         Me.LayoutControlItem18.Name = "LayoutControlItem18"
         Me.LayoutControlItem18.Size = New System.Drawing.Size(421, 24)
         Me.LayoutControlItem18.Text = "Polizas"
@@ -853,7 +856,7 @@ Partial Class frmPaseSalida
         '
         Me.LayoutControlItem17.Control = Me.checkPoliza
         Me.LayoutControlItem17.CustomizationFormText = "Despacho por Poliza"
-        Me.LayoutControlItem17.Location = New System.Drawing.Point(0, 154)
+        Me.LayoutControlItem17.Location = New System.Drawing.Point(0, 168)
         Me.LayoutControlItem17.Name = "LayoutControlItem17"
         Me.LayoutControlItem17.Size = New System.Drawing.Size(136, 24)
         Me.LayoutControlItem17.TextSize = New System.Drawing.Size(0, 0)

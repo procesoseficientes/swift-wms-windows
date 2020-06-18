@@ -993,6 +993,39 @@ Public Class _3PL_Polizas
         End Try
     End Function
 
+    <WebMethod(Description:=" actualiza la cantidad pendiente en el detalle de la poliza")>
+    Public Function set_pending_quantity(ByVal pDOC_ID As Integer, ByVal pLINE_NUMBER As Integer, ByVal pPENDING As Decimal, ByVal pEnvironmentName As String, ByRef pResult As String) As DataSet
+        Dim XSQL As String
+
+        Try
+            XSQL = "UPDATE " & DefaultSchema & "OP_WMS_POLIZA_DETAIL SET QTY_PENDING = '" & pPENDING & "' WHERE DOC_ID = " & pDOC_ID.ToString() & " AND LINE_NUMBER = " & pLINE_NUMBER.ToString()
+            ExecuteSqlTransaction(AppSettings(pEnvironmentName).ToString, XSQL, pResult)
+
+            If pResult = "OK" Then
+                XSQL = "SELECT TOP 1 WAVE_PICKING_ID FROM " + DefaultSchema + "OP_WMS_TASK_LIST ORDER BY ASSIGNED_DATE DESC;"
+                Dim sqldb_conexion As SqlConnection
+                Try
+                    sqldb_conexion = New SqlConnection(AppSettings(pEnvironmentName).ToString)
+                    Dim miscDA As SqlDataAdapter = New SqlDataAdapter(XSQL, sqldb_conexion)
+                    Dim miscDS As DataSet = New DataSet()
+                    miscDA.Fill(miscDS, "OP_WMS_TASK_LIST")
+                    pResult = "OK"
+                    Return miscDS
+                Catch ex As Exception
+                    pResult = "ERROR," + ex.Message + ex.StackTrace
+                    Return Nothing
+                End Try
+            Else
+                pResult = "ERROR"
+                Return Nothing
+            End If
+
+        Catch ex As Exception
+            pResult = "ERROR," + ex.Message
+            Return Nothing
+        End Try
+    End Function
+
     <WebMethod(Description:="Devuelve detalle de asociacion entre las productos y las polizas de ingreso")>
     Public Function get_skus_match(ByVal pWhere As String, ByVal pEnvironmentName As String, ByRef pResult As String) As DataSet
         Dim XSQL As String = " SELECT *  FROM " & DefaultSchema & "OP_WMS3PL_VIEW_POLIZA_MATERIAL_MATCH "
