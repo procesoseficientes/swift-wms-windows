@@ -574,22 +574,6 @@ Partial Class frmDocumentoIngreso
         Me.LayoutEncabezado.TabIndex = 0
         Me.LayoutEncabezado.Text = "Encabezado Ingreso"
         '
-        'GridLookUpEdit3
-        '
-        Me.GridLookUpEdit3.Location = New System.Drawing.Point(319, 978)
-        Me.GridLookUpEdit3.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.GridLookUpEdit3.MenuManager = Me.BarManager1
-        Me.GridLookUpEdit3.Name = "GridLookUpEdit3"
-        Me.GridLookUpEdit3.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.GridLookUpEdit3.Properties.Appearance.Options.UseBackColor = True
-        Me.GridLookUpEdit3.Properties.BestFitMode = DevExpress.XtraEditors.Controls.BestFitMode.BestFitResizePopup
-        Me.GridLookUpEdit3.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.GridLookUpEdit3.Properties.NullText = "[Seleccione Regimen...]"
-        Me.GridLookUpEdit3.Properties.PopupView = Me.GridView10
-        Me.GridLookUpEdit3.Size = New System.Drawing.Size(1557, 40)
-        Me.GridLookUpEdit3.StyleController = Me.LayoutEncabezado
-        Me.GridLookUpEdit3.TabIndex = 60
-        '
         'BarManager1
         '
         Me.BarManager1.Bars.AddRange(New DevExpress.XtraBars.Bar() {Me.Bar2})
@@ -747,62 +731,6 @@ Partial Class frmDocumentoIngreso
         Me.btnEnviar.ItemShortcut = New DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.E))
         Me.btnEnviar.Name = "btnEnviar"
         '
-        'GridView10
-        '
-        Me.GridView10.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
-        Me.GridView10.Name = "GridView10"
-        Me.GridView10.OptionsSelection.EnableAppearanceFocusedCell = False
-        Me.GridView10.OptionsView.ShowAutoFilterRow = True
-        Me.GridView10.OptionsView.ShowGroupPanel = False
-        '
-        'GridLookUpEdit2
-        '
-        Me.GridLookUpEdit2.Location = New System.Drawing.Point(319, 930)
-        Me.GridLookUpEdit2.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.GridLookUpEdit2.MenuManager = Me.BarManager1
-        Me.GridLookUpEdit2.Name = "GridLookUpEdit2"
-        Me.GridLookUpEdit2.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.GridLookUpEdit2.Properties.Appearance.Options.UseBackColor = True
-        Me.GridLookUpEdit2.Properties.BestFitMode = DevExpress.XtraEditors.Controls.BestFitMode.BestFitResizePopup
-        Me.GridLookUpEdit2.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.GridLookUpEdit2.Properties.NullText = "[Seleccione Regimen...]"
-        Me.GridLookUpEdit2.Properties.PopupView = Me.GridView9
-        Me.GridLookUpEdit2.Size = New System.Drawing.Size(1557, 40)
-        Me.GridLookUpEdit2.StyleController = Me.LayoutEncabezado
-        Me.GridLookUpEdit2.TabIndex = 59
-        '
-        'GridView9
-        '
-        Me.GridView9.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
-        Me.GridView9.Name = "GridView9"
-        Me.GridView9.OptionsSelection.EnableAppearanceFocusedCell = False
-        Me.GridView9.OptionsView.ShowAutoFilterRow = True
-        Me.GridView9.OptionsView.ShowGroupPanel = False
-        '
-        'GridLookUpEdit1
-        '
-        Me.GridLookUpEdit1.Location = New System.Drawing.Point(319, 882)
-        Me.GridLookUpEdit1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.GridLookUpEdit1.MenuManager = Me.BarManager1
-        Me.GridLookUpEdit1.Name = "GridLookUpEdit1"
-        Me.GridLookUpEdit1.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.GridLookUpEdit1.Properties.Appearance.Options.UseBackColor = True
-        Me.GridLookUpEdit1.Properties.BestFitMode = DevExpress.XtraEditors.Controls.BestFitMode.BestFitResizePopup
-        Me.GridLookUpEdit1.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.GridLookUpEdit1.Properties.NullText = "[Seleccione Regimen...]"
-        Me.GridLookUpEdit1.Properties.PopupView = Me.GridView7
-        Me.GridLookUpEdit1.Size = New System.Drawing.Size(1557, 40)
-        Me.GridLookUpEdit1.StyleController = Me.LayoutEncabezado
-        Me.GridLookUpEdit1.TabIndex = 58
-        '
-        'GridView7
-        '
-        Me.GridView7.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
-        Me.GridView7.Name = "GridView7"
-        Me.GridView7.OptionsSelection.EnableAppearanceFocusedCell = False
-        Me.GridView7.OptionsView.ShowAutoFilterRow = True
-        Me.GridView7.OptionsView.ShowGroupPanel = False
-        '
         'cmbBodegueros
         '
         Me.cmbBodegueros.Location = New System.Drawing.Point(990, 781)
@@ -910,129 +838,6 @@ Partial Class frmDocumentoIngreso
         Me.dtFechaLlegada.Size = New System.Drawing.Size(100, 40)
         Me.dtFechaLlegada.StyleController = Me.LayoutEncabezado
         Me.dtFechaLlegada.TabIndex = 47
-        '
-        'GridDocRefencia
-        '
-        Me.GridDocRefencia.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.GridDocRefencia.Location = New System.Drawing.Point(319, 849)
-        Me.GridDocRefencia.MainView = Me.GridViewDocReferencia
-        Me.GridDocRefencia.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.GridDocRefencia.MenuManager = Me.BarManager1
-        Me.GridDocRefencia.Name = "GridDocRefencia"
-        Me.GridDocRefencia.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.dtFechaDocumentoRef, Me.cmbTipoDocRef})
-        Me.GridDocRefencia.Size = New System.Drawing.Size(1557, 25)
-        Me.GridDocRefencia.TabIndex = 53
-        Me.GridDocRefencia.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridViewDocReferencia})
-        '
-        'GridViewDocReferencia
-        '
-        Me.GridViewDocReferencia.Appearance.TopNewRow.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.GridViewDocReferencia.Appearance.TopNewRow.Options.UseBackColor = True
-        Me.GridViewDocReferencia.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colDOCUMENTO, Me.colTIPODOCUMENTO, Me.colFECHADOCUMENTO, Me.colDOC_ID, Me.colNUMERO_DUA, Me.colOBSERVACIONES, Me.colLAST_UPDATED_BY, Me.colLAST_UPDATED})
-        Me.GridViewDocReferencia.DetailHeight = 673
-        Me.GridViewDocReferencia.FixedLineWidth = 4
-        Me.GridViewDocReferencia.GridControl = Me.GridDocRefencia
-        Me.GridViewDocReferencia.LevelIndent = 0
-        Me.GridViewDocReferencia.Name = "GridViewDocReferencia"
-        Me.GridViewDocReferencia.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Top
-        Me.GridViewDocReferencia.OptionsView.ShowGroupPanel = False
-        Me.GridViewDocReferencia.PreviewIndent = 0
-        '
-        'colDOCUMENTO
-        '
-        Me.colDOCUMENTO.Caption = "NUMERO DOCUMENTO"
-        Me.colDOCUMENTO.FieldName = "NUMERO_DOCUMENTO"
-        Me.colDOCUMENTO.MinWidth = 40
-        Me.colDOCUMENTO.Name = "colDOCUMENTO"
-        Me.colDOCUMENTO.Visible = True
-        Me.colDOCUMENTO.VisibleIndex = 0
-        Me.colDOCUMENTO.Width = 150
-        '
-        'colTIPODOCUMENTO
-        '
-        Me.colTIPODOCUMENTO.Caption = "TIPO DOCUMENTO"
-        Me.colTIPODOCUMENTO.ColumnEdit = Me.cmbTipoDocRef
-        Me.colTIPODOCUMENTO.FieldName = "TIPO_DOCUMENTO"
-        Me.colTIPODOCUMENTO.MinWidth = 40
-        Me.colTIPODOCUMENTO.Name = "colTIPODOCUMENTO"
-        Me.colTIPODOCUMENTO.Visible = True
-        Me.colTIPODOCUMENTO.VisibleIndex = 1
-        Me.colTIPODOCUMENTO.Width = 150
-        '
-        'cmbTipoDocRef
-        '
-        Me.cmbTipoDocRef.AutoHeight = False
-        Me.cmbTipoDocRef.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.cmbTipoDocRef.Name = "cmbTipoDocRef"
-        Me.cmbTipoDocRef.NullText = "[Seleccione tipo documento...]"
-        Me.cmbTipoDocRef.PopupView = Me.RepositoryItemGridLookUpEdit1View
-        '
-        'RepositoryItemGridLookUpEdit1View
-        '
-        Me.RepositoryItemGridLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
-        Me.RepositoryItemGridLookUpEdit1View.Name = "RepositoryItemGridLookUpEdit1View"
-        Me.RepositoryItemGridLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = False
-        Me.RepositoryItemGridLookUpEdit1View.OptionsView.ShowGroupPanel = False
-        '
-        'colFECHADOCUMENTO
-        '
-        Me.colFECHADOCUMENTO.Caption = "FECHA DOCUMENTO"
-        Me.colFECHADOCUMENTO.ColumnEdit = Me.dtFechaDocumentoRef
-        Me.colFECHADOCUMENTO.FieldName = "FECHA_DOCUMENTO"
-        Me.colFECHADOCUMENTO.MinWidth = 40
-        Me.colFECHADOCUMENTO.Name = "colFECHADOCUMENTO"
-        Me.colFECHADOCUMENTO.Visible = True
-        Me.colFECHADOCUMENTO.VisibleIndex = 2
-        Me.colFECHADOCUMENTO.Width = 150
-        '
-        'dtFechaDocumentoRef
-        '
-        Me.dtFechaDocumentoRef.AutoHeight = False
-        Me.dtFechaDocumentoRef.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.dtFechaDocumentoRef.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
-        Me.dtFechaDocumentoRef.Name = "dtFechaDocumentoRef"
-        '
-        'colDOC_ID
-        '
-        Me.colDOC_ID.Caption = "DOCUMENTO"
-        Me.colDOC_ID.FieldName = "DOC_ID"
-        Me.colDOC_ID.MinWidth = 40
-        Me.colDOC_ID.Name = "colDOC_ID"
-        Me.colDOC_ID.Width = 150
-        '
-        'colNUMERO_DUA
-        '
-        Me.colNUMERO_DUA.Caption = "NUMERO DUA"
-        Me.colNUMERO_DUA.FieldName = "NUMERO_DUA"
-        Me.colNUMERO_DUA.MinWidth = 40
-        Me.colNUMERO_DUA.Name = "colNUMERO_DUA"
-        Me.colNUMERO_DUA.Width = 150
-        '
-        'colOBSERVACIONES
-        '
-        Me.colOBSERVACIONES.Caption = "OBSERVACIONES"
-        Me.colOBSERVACIONES.FieldName = "OBSERVACIONES"
-        Me.colOBSERVACIONES.MinWidth = 40
-        Me.colOBSERVACIONES.Name = "colOBSERVACIONES"
-        Me.colOBSERVACIONES.Visible = True
-        Me.colOBSERVACIONES.VisibleIndex = 3
-        Me.colOBSERVACIONES.Width = 150
-        '
-        'colLAST_UPDATED_BY
-        '
-        Me.colLAST_UPDATED_BY.Caption = "USUARIO ACTUALIZO"
-        Me.colLAST_UPDATED_BY.FieldName = "LAST_UPDATED_BY"
-        Me.colLAST_UPDATED_BY.MinWidth = 40
-        Me.colLAST_UPDATED_BY.Name = "colLAST_UPDATED_BY"
-        Me.colLAST_UPDATED_BY.Width = 150
-        '
-        'colLAST_UPDATED
-        '
-        Me.colLAST_UPDATED.Caption = "ACTUALIZADO EL"
-        Me.colLAST_UPDATED.FieldName = "LAST_UPDATED"
-        Me.colLAST_UPDATED.MinWidth = 40
-        Me.colLAST_UPDATED.Name = "colLAST_UPDATED"
-        Me.colLAST_UPDATED.Width = 150
         '
         'txtStatus
         '
@@ -1761,17 +1566,6 @@ Partial Class frmDocumentoIngreso
         Me.LayoutControlItem28.Text = "Id Tributaria Importador"
         Me.LayoutControlItem28.TextSize = New System.Drawing.Size(289, 25)
         '
-        'LayoutControlItem50
-        '
-        Me.LayoutControlItem50.ContentVisible = False
-        Me.LayoutControlItem50.Control = Me.GridDocRefencia
-        Me.LayoutControlItem50.CustomizationFormText = "Documentos de Referencia"
-        Me.LayoutControlItem50.Location = New System.Drawing.Point(0, 826)
-        Me.LayoutControlItem50.Name = "LayoutControlItem50"
-        Me.LayoutControlItem50.Size = New System.Drawing.Size(1860, 33)
-        Me.LayoutControlItem50.Text = "Documentos de Referencia"
-        Me.LayoutControlItem50.TextSize = New System.Drawing.Size(289, 25)
-        '
         'LayoutControlItem14
         '
         Me.LayoutControlItem14.Control = Me.txtTotalSeguroUsd
@@ -2185,33 +1979,6 @@ Partial Class frmDocumentoIngreso
         Me.LayoutControlItem83.Size = New System.Drawing.Size(473, 48)
         Me.LayoutControlItem83.Text = "Prioridad"
         Me.LayoutControlItem83.TextSize = New System.Drawing.Size(289, 25)
-        '
-        'LayoutControlItem77
-        '
-        Me.LayoutControlItem77.ContentVisible = False
-        Me.LayoutControlItem77.Control = Me.GridLookUpEdit1
-        Me.LayoutControlItem77.Location = New System.Drawing.Point(0, 859)
-        Me.LayoutControlItem77.Name = "LayoutControlItem77"
-        Me.LayoutControlItem77.Size = New System.Drawing.Size(1860, 48)
-        Me.LayoutControlItem77.TextSize = New System.Drawing.Size(289, 25)
-        '
-        'LayoutControlItem84
-        '
-        Me.LayoutControlItem84.ContentVisible = False
-        Me.LayoutControlItem84.Control = Me.GridLookUpEdit2
-        Me.LayoutControlItem84.Location = New System.Drawing.Point(0, 907)
-        Me.LayoutControlItem84.Name = "LayoutControlItem84"
-        Me.LayoutControlItem84.Size = New System.Drawing.Size(1860, 48)
-        Me.LayoutControlItem84.TextSize = New System.Drawing.Size(289, 25)
-        '
-        'LayoutControlItem85
-        '
-        Me.LayoutControlItem85.ContentVisible = False
-        Me.LayoutControlItem85.Control = Me.GridLookUpEdit3
-        Me.LayoutControlItem85.Location = New System.Drawing.Point(0, 955)
-        Me.LayoutControlItem85.Name = "LayoutControlItem85"
-        Me.LayoutControlItem85.Size = New System.Drawing.Size(1860, 48)
-        Me.LayoutControlItem85.TextSize = New System.Drawing.Size(289, 25)
         '
         'XtraTabDetail
         '
