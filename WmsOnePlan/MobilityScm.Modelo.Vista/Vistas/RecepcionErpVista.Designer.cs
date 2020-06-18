@@ -30,51 +30,51 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RecepcionErpVista));
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions5 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject17 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject18 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject19 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject20 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions6 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject21 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject22 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject23 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject24 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions7 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject25 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject26 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject27 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject28 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions3 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject9 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject10 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject11 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject12 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions9 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject33 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject34 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject35 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject36 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions8 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject29 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject30 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject31 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject32 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions4 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject13 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject14 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject15 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject16 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions2 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions3 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject9 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject10 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject11 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject12 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions8 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject29 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject30 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject31 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject32 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions6 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject21 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject22 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject23 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject24 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions5 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject17 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject18 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject19 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject20 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions4 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject13 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject14 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject15 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject16 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions9 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject33 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject34 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject35 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject36 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions7 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject25 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject26 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject27 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject28 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule1 = new DevExpress.XtraGrid.GridFormatRule();
             DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression1 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule2 = new DevExpress.XtraGrid.GridFormatRule();
@@ -85,11 +85,6 @@
             DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression4 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule5 = new DevExpress.XtraGrid.GridFormatRule();
             DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression5 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions10 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject37 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject38 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject39 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject40 = new DevExpress.Utils.SerializableAppearanceObject();
             this.colDetIS_ASSIGNED = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDetIS_MISSING = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UiBarraContenedorPrincipal = new DevExpress.XtraBars.BarManager(this.components);
@@ -192,6 +187,7 @@
             this.UiTextoNumeroDeFactura = new DevExpress.XtraEditors.TextEdit();
             this.UiGrupoTarea = new DevExpress.XtraEditors.GroupControl();
             this.UiError = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.UiBarraContenedorPrincipal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiGridLookUpFuente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit1)).BeginInit();
@@ -225,6 +221,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.UiGrupoTarea)).BeginInit();
             this.UiGrupoTarea.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.UiError)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // colDetIS_ASSIGNED
@@ -419,8 +416,8 @@
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.UiBarraContenedorPrincipal;
-            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.barDockControlTop.Size = new System.Drawing.Size(2750, 46);
+            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(6);
+            this.barDockControlTop.Size = new System.Drawing.Size(2447, 46);
             // 
             // barDockControlBottom
             // 
@@ -428,8 +425,8 @@
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.barDockControlBottom.Location = new System.Drawing.Point(0, 1315);
             this.barDockControlBottom.Manager = this.UiBarraContenedorPrincipal;
-            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.barDockControlBottom.Size = new System.Drawing.Size(2750, 0);
+            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(6);
+            this.barDockControlBottom.Size = new System.Drawing.Size(2447, 0);
             // 
             // barDockControlLeft
             // 
@@ -437,16 +434,16 @@
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 46);
             this.barDockControlLeft.Manager = this.UiBarraContenedorPrincipal;
-            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(6);
             this.barDockControlLeft.Size = new System.Drawing.Size(0, 1269);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(2750, 46);
+            this.barDockControlRight.Location = new System.Drawing.Point(2447, 46);
             this.barDockControlRight.Manager = this.UiBarraContenedorPrincipal;
-            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(6);
             this.barDockControlRight.Size = new System.Drawing.Size(0, 1269);
             // 
             // UiComboFuente
@@ -467,7 +464,7 @@
             // UiEtiquetaCliente
             // 
             this.UiEtiquetaCliente.Location = new System.Drawing.Point(10, 50);
-            this.UiEtiquetaCliente.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.UiEtiquetaCliente.Margin = new System.Windows.Forms.Padding(6);
             this.UiEtiquetaCliente.Name = "UiEtiquetaCliente";
             this.UiEtiquetaCliente.Size = new System.Drawing.Size(71, 25);
             this.UiEtiquetaCliente.TabIndex = 4;
@@ -479,18 +476,18 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.UiListaCliente.EditValue = "CLIENT_CODE";
             this.UiListaCliente.Location = new System.Drawing.Point(208, 44);
-            this.UiListaCliente.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.UiListaCliente.Margin = new System.Windows.Forms.Padding(6);
             this.UiListaCliente.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiListaCliente.Name = "UiListaCliente";
-            editorButtonImageOptions5.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions5.Image")));
+            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
             this.UiListaCliente.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions5, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject17, serializableAppearanceObject18, serializableAppearanceObject19, serializableAppearanceObject20, "", "REFRESCAR-CLIENTE", null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", "REFRESCAR-CLIENTE", null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.UiListaCliente.Properties.DisplayMember = "COMPANY_NAME";
             this.UiListaCliente.Properties.PopupView = this.UiVistaCliente;
             this.UiListaCliente.Properties.ValueMember = "CLIENT_CODE";
             this.UiListaCliente.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
-            this.UiListaCliente.Size = new System.Drawing.Size(500, 40);
+            this.UiListaCliente.Size = new System.Drawing.Size(1467, 40);
             this.UiListaCliente.TabIndex = 9;
             this.UiListaCliente.EditValueChanged += new System.EventHandler(this.UiListaCliente_EditValueChanged);
             // 
@@ -533,7 +530,7 @@
             // UiEtiquetaERP
             // 
             this.UiEtiquetaERP.Location = new System.Drawing.Point(10, 100);
-            this.UiEtiquetaERP.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.UiEtiquetaERP.Margin = new System.Windows.Forms.Padding(6);
             this.UiEtiquetaERP.Name = "UiEtiquetaERP";
             this.UiEtiquetaERP.Size = new System.Drawing.Size(44, 25);
             this.UiEtiquetaERP.TabIndex = 10;
@@ -544,19 +541,19 @@
             this.UiListaErp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.UiListaErp.Location = new System.Drawing.Point(208, 94);
-            this.UiListaErp.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.UiListaErp.Margin = new System.Windows.Forms.Padding(6);
             this.UiListaErp.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiListaErp.Name = "UiListaErp";
-            editorButtonImageOptions6.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions6.Image")));
-            editorButtonImageOptions7.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions7.Image")));
+            editorButtonImageOptions2.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions2.Image")));
+            editorButtonImageOptions3.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions3.Image")));
             this.UiListaErp.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions6, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject21, serializableAppearanceObject22, serializableAppearanceObject23, serializableAppearanceObject24, "", "REFRESCAR-ERP", null, DevExpress.Utils.ToolTipAnchor.Default),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions7, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject25, serializableAppearanceObject26, serializableAppearanceObject27, serializableAppearanceObject28, "", "AGREGAR-ERP", null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", "REFRESCAR-ERP", null, DevExpress.Utils.ToolTipAnchor.Default),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions3, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject9, serializableAppearanceObject10, serializableAppearanceObject11, serializableAppearanceObject12, "", "AGREGAR-ERP", null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.UiListaErp.Properties.PopupView = this.UiVistaErpEncabezado;
             this.UiListaErp.Properties.ValueMember = "SAP_REFERENCE";
             this.UiListaErp.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
-            this.UiListaErp.Size = new System.Drawing.Size(500, 40);
+            this.UiListaErp.Size = new System.Drawing.Size(1467, 40);
             this.UiListaErp.TabIndex = 11;
             this.UiListaErp.CustomDisplayText += new DevExpress.XtraEditors.Controls.CustomDisplayTextEventHandler(this.UiListaErp_CustomDisplayText);
             // 
@@ -641,13 +638,13 @@
             this.UiListaUbicacion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.UiListaUbicacion.Location = new System.Drawing.Point(174, 94);
-            this.UiListaUbicacion.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.UiListaUbicacion.Margin = new System.Windows.Forms.Padding(6);
             this.UiListaUbicacion.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiListaUbicacion.Name = "UiListaUbicacion";
-            editorButtonImageOptions3.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions3.Image")));
+            editorButtonImageOptions8.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions8.Image")));
             this.UiListaUbicacion.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "Refrescar", -1, true, true, true, editorButtonImageOptions3, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject9, serializableAppearanceObject10, serializableAppearanceObject11, serializableAppearanceObject12, "", "REFRESCAR-UBICACION", null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "Refrescar", -1, true, true, true, editorButtonImageOptions8, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject29, serializableAppearanceObject30, serializableAppearanceObject31, serializableAppearanceObject32, "", "REFRESCAR-UBICACION", null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.UiListaUbicacion.Properties.DisplayMember = "LOCATION_SPOT";
             this.UiListaUbicacion.Properties.PopupView = this.UiVistaDeListaUbicacion;
             this.UiListaUbicacion.Properties.ValueMember = "LOCATION_SPOT";
@@ -706,7 +703,7 @@
             // UiEtiquetaUbicacion
             // 
             this.UiEtiquetaUbicacion.Location = new System.Drawing.Point(10, 100);
-            this.UiEtiquetaUbicacion.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.UiEtiquetaUbicacion.Margin = new System.Windows.Forms.Padding(6);
             this.UiEtiquetaUbicacion.Name = "UiEtiquetaUbicacion";
             this.UiEtiquetaUbicacion.Size = new System.Drawing.Size(97, 25);
             this.UiEtiquetaUbicacion.TabIndex = 14;
@@ -717,13 +714,13 @@
             this.UiListaOperador.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.UiListaOperador.Location = new System.Drawing.Point(174, 44);
-            this.UiListaOperador.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.UiListaOperador.Margin = new System.Windows.Forms.Padding(6);
             this.UiListaOperador.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiListaOperador.Name = "UiListaOperador";
-            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
+            editorButtonImageOptions6.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions6.Image")));
             this.UiListaOperador.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", "REFRESCAR-USUARIO", null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions6, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject21, serializableAppearanceObject22, serializableAppearanceObject23, serializableAppearanceObject24, "", "REFRESCAR-USUARIO", null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.UiListaOperador.Properties.DisplayMember = "LOGIN_ID";
             this.UiListaOperador.Properties.PopupView = this.UiVistaUsuario;
             this.UiListaOperador.Properties.ValueMember = "LOGIN_ID";
@@ -762,7 +759,7 @@
             // UiEtiquetaOperador
             // 
             this.UiEtiquetaOperador.Location = new System.Drawing.Point(10, 50);
-            this.UiEtiquetaOperador.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.UiEtiquetaOperador.Margin = new System.Windows.Forms.Padding(6);
             this.UiEtiquetaOperador.Name = "UiEtiquetaOperador";
             this.UiEtiquetaOperador.Size = new System.Drawing.Size(95, 25);
             this.UiEtiquetaOperador.TabIndex = 12;
@@ -771,7 +768,7 @@
             // UiEtiqeutaTipoRecepcion
             // 
             this.UiEtiqeutaTipoRecepcion.Location = new System.Drawing.Point(10, 206);
-            this.UiEtiqeutaTipoRecepcion.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.UiEtiqeutaTipoRecepcion.Margin = new System.Windows.Forms.Padding(6);
             this.UiEtiqeutaTipoRecepcion.Name = "UiEtiqeutaTipoRecepcion";
             this.UiEtiqeutaTipoRecepcion.Size = new System.Drawing.Size(149, 25);
             this.UiEtiqeutaTipoRecepcion.TabIndex = 20;
@@ -780,7 +777,7 @@
             // UiEtiquetaAcuerdoComercial
             // 
             this.UiEtiquetaAcuerdoComercial.Location = new System.Drawing.Point(10, 150);
-            this.UiEtiquetaAcuerdoComercial.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.UiEtiquetaAcuerdoComercial.Margin = new System.Windows.Forms.Padding(6);
             this.UiEtiquetaAcuerdoComercial.Name = "UiEtiquetaAcuerdoComercial";
             this.UiEtiquetaAcuerdoComercial.Size = new System.Drawing.Size(183, 25);
             this.UiEtiquetaAcuerdoComercial.TabIndex = 21;
@@ -789,7 +786,7 @@
             // UiEtiquetaPolizaDeSeguro
             // 
             this.UiEtiquetaPolizaDeSeguro.Location = new System.Drawing.Point(10, 200);
-            this.UiEtiquetaPolizaDeSeguro.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.UiEtiquetaPolizaDeSeguro.Margin = new System.Windows.Forms.Padding(6);
             this.UiEtiquetaPolizaDeSeguro.Name = "UiEtiquetaPolizaDeSeguro";
             this.UiEtiquetaPolizaDeSeguro.Size = new System.Drawing.Size(163, 25);
             this.UiEtiquetaPolizaDeSeguro.TabIndex = 22;
@@ -800,18 +797,18 @@
             this.UiListaAcuerdoComercial.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.UiListaAcuerdoComercial.Location = new System.Drawing.Point(208, 144);
-            this.UiListaAcuerdoComercial.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.UiListaAcuerdoComercial.Margin = new System.Windows.Forms.Padding(6);
             this.UiListaAcuerdoComercial.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiListaAcuerdoComercial.Name = "UiListaAcuerdoComercial";
-            editorButtonImageOptions9.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions9.Image")));
+            editorButtonImageOptions5.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions5.Image")));
             this.UiListaAcuerdoComercial.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions9, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject33, serializableAppearanceObject34, serializableAppearanceObject35, serializableAppearanceObject36, "", "REFRESCAR-ACUERDOCOMERCIAL", null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions5, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject17, serializableAppearanceObject18, serializableAppearanceObject19, serializableAppearanceObject20, "", "REFRESCAR-ACUERDOCOMERCIAL", null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.UiListaAcuerdoComercial.Properties.DisplayMember = "DESCRIPCION";
             this.UiListaAcuerdoComercial.Properties.PopupView = this.UiVistaAcuerdoComercial;
             this.UiListaAcuerdoComercial.Properties.ValueMember = "ACUERDO_COMERCIAL";
             this.UiListaAcuerdoComercial.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
-            this.UiListaAcuerdoComercial.Size = new System.Drawing.Size(500, 40);
+            this.UiListaAcuerdoComercial.Size = new System.Drawing.Size(1467, 40);
             this.UiListaAcuerdoComercial.TabIndex = 23;
             // 
             // UiVistaAcuerdoComercial
@@ -847,17 +844,17 @@
             this.UiListaPolizasDeSeguro.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.UiListaPolizasDeSeguro.Location = new System.Drawing.Point(208, 194);
-            this.UiListaPolizasDeSeguro.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.UiListaPolizasDeSeguro.Margin = new System.Windows.Forms.Padding(6);
             this.UiListaPolizasDeSeguro.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiListaPolizasDeSeguro.Name = "UiListaPolizasDeSeguro";
-            editorButtonImageOptions8.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions8.Image")));
+            editorButtonImageOptions4.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions4.Image")));
             this.UiListaPolizasDeSeguro.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions8, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject29, serializableAppearanceObject30, serializableAppearanceObject31, serializableAppearanceObject32, "", "REFRESCAR-POLIZASEGURO", null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions4, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject13, serializableAppearanceObject14, serializableAppearanceObject15, serializableAppearanceObject16, "", "REFRESCAR-POLIZASEGURO", null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.UiListaPolizasDeSeguro.Properties.DisplayMember = "POLIZA_INSURANCE";
             this.UiListaPolizasDeSeguro.Properties.PopupView = this.UiVistaPolizasSeguro;
             this.UiListaPolizasDeSeguro.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
-            this.UiListaPolizasDeSeguro.Size = new System.Drawing.Size(500, 40);
+            this.UiListaPolizasDeSeguro.Size = new System.Drawing.Size(1467, 40);
             this.UiListaPolizasDeSeguro.TabIndex = 24;
             // 
             // UiVistaPolizasSeguro
@@ -900,13 +897,13 @@
             this.UiListaTipoRecepcion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.UiListaTipoRecepcion.Location = new System.Drawing.Point(174, 200);
-            this.UiListaTipoRecepcion.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.UiListaTipoRecepcion.Margin = new System.Windows.Forms.Padding(6);
             this.UiListaTipoRecepcion.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiListaTipoRecepcion.Name = "UiListaTipoRecepcion";
-            editorButtonImageOptions4.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions4.Image")));
+            editorButtonImageOptions9.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions9.Image")));
             this.UiListaTipoRecepcion.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions4, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject13, serializableAppearanceObject14, serializableAppearanceObject15, serializableAppearanceObject16, "", "REFRESCAR-TIPORECEPCION", null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions9, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject33, serializableAppearanceObject34, serializableAppearanceObject35, serializableAppearanceObject36, "", "REFRESCAR-TIPORECEPCION", null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.UiListaTipoRecepcion.Properties.DisplayMember = "PARAM_CAPTION";
             this.UiListaTipoRecepcion.Properties.PopupView = this.UiVistaTipoRecepcion;
             this.UiListaTipoRecepcion.Properties.ValueMember = "TEXT_VALUE";
@@ -935,7 +932,7 @@
             // UiEtiquetaPrioridad
             // 
             this.UiEtiquetaPrioridad.Location = new System.Drawing.Point(10, 150);
-            this.UiEtiquetaPrioridad.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.UiEtiquetaPrioridad.Margin = new System.Windows.Forms.Padding(6);
             this.UiEtiquetaPrioridad.Name = "UiEtiquetaPrioridad";
             this.UiEtiquetaPrioridad.Size = new System.Drawing.Size(91, 25);
             this.UiEtiquetaPrioridad.TabIndex = 26;
@@ -946,13 +943,13 @@
             this.UiListaPrioridad.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.UiListaPrioridad.Location = new System.Drawing.Point(174, 146);
-            this.UiListaPrioridad.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.UiListaPrioridad.Margin = new System.Windows.Forms.Padding(6);
             this.UiListaPrioridad.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiListaPrioridad.Name = "UiListaPrioridad";
-            editorButtonImageOptions2.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions2.Image")));
+            editorButtonImageOptions7.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions7.Image")));
             this.UiListaPrioridad.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", "REFRESCAR-PRIORIDAD", null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions7, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject25, serializableAppearanceObject26, serializableAppearanceObject27, serializableAppearanceObject28, "", "REFRESCAR-PRIORIDAD", null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.UiListaPrioridad.Properties.DisplayMember = "PARAM_CAPTION";
             this.UiListaPrioridad.Properties.PopupView = this.gridView7;
             this.UiListaPrioridad.Properties.ValueMember = "NUMERIC_VALUE";
@@ -979,17 +976,15 @@
             // 
             // UiContenedorVistaErp
             // 
-            this.UiContenedorVistaErp.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.UiContenedorVistaErp.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.UiContenedorVistaErp.Location = new System.Drawing.Point(24, 352);
+            this.UiContenedorVistaErp.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.UiContenedorVistaErp.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(6);
+            this.UiContenedorVistaErp.Location = new System.Drawing.Point(0, 327);
             this.UiContenedorVistaErp.MainView = this.UiVistaErp;
-            this.UiContenedorVistaErp.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.UiContenedorVistaErp.Margin = new System.Windows.Forms.Padding(6);
             this.UiContenedorVistaErp.Name = "UiContenedorVistaErp";
             this.UiContenedorVistaErp.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.UiBotonEliminarEncabezado});
-            this.UiContenedorVistaErp.Size = new System.Drawing.Size(2712, 940);
+            this.UiContenedorVistaErp.Size = new System.Drawing.Size(2447, 988);
             this.UiContenedorVistaErp.TabIndex = 28;
             this.UiContenedorVistaErp.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.UiVistaErp});
@@ -1105,9 +1100,8 @@
             // UiBotonEliminarEncabezado
             // 
             this.UiBotonEliminarEncabezado.AutoHeight = false;
-            editorButtonImageOptions10.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions10.Image")));
             this.UiBotonEliminarEncabezado.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions10, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject37, serializableAppearanceObject38, serializableAppearanceObject39, serializableAppearanceObject40, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph)});
             this.UiBotonEliminarEncabezado.Name = "UiBotonEliminarEncabezado";
             this.UiBotonEliminarEncabezado.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             this.UiBotonEliminarEncabezado.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiBotonEliminarEncabezado_ButtonClick);
@@ -1370,8 +1364,6 @@
             // 
             // UiGrupoCliente
             // 
-            this.UiGrupoCliente.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.UiGrupoCliente.Controls.Add(this.UiTextoNumeroDeFactura);
             this.UiGrupoCliente.Controls.Add(this.UiEtiquetaCliente);
             this.UiGrupoCliente.Controls.Add(this.UiListaCliente);
@@ -1381,10 +1373,11 @@
             this.UiGrupoCliente.Controls.Add(this.UiEtiquetaPolizaDeSeguro);
             this.UiGrupoCliente.Controls.Add(this.UiListaPolizasDeSeguro);
             this.UiGrupoCliente.Controls.Add(this.UiListaAcuerdoComercial);
-            this.UiGrupoCliente.Location = new System.Drawing.Point(24, 71);
-            this.UiGrupoCliente.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.UiGrupoCliente.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.UiGrupoCliente.Location = new System.Drawing.Point(15, 15);
+            this.UiGrupoCliente.Margin = new System.Windows.Forms.Padding(6);
             this.UiGrupoCliente.Name = "UiGrupoCliente";
-            this.UiGrupoCliente.Size = new System.Drawing.Size(750, 269);
+            this.UiGrupoCliente.Size = new System.Drawing.Size(1717, 251);
             this.UiGrupoCliente.TabIndex = 29;
             this.UiGrupoCliente.Text = "Datos de Cliente";
             // 
@@ -1393,15 +1386,15 @@
             this.UiTextoNumeroDeFactura.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.UiTextoNumeroDeFactura.CausesValidation = false;
-            this.UiTextoNumeroDeFactura.Location = new System.Drawing.Point(208, 94);
-            this.UiTextoNumeroDeFactura.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.UiTextoNumeroDeFactura.Location = new System.Drawing.Point(264, 94);
+            this.UiTextoNumeroDeFactura.Margin = new System.Windows.Forms.Padding(6);
             this.UiTextoNumeroDeFactura.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiTextoNumeroDeFactura.Name = "UiTextoNumeroDeFactura";
             this.UiTextoNumeroDeFactura.Properties.Mask.BeepOnError = true;
             this.UiTextoNumeroDeFactura.Properties.Mask.EditMask = "(0?\\d|1\\d|2[0-3])\\:[0-5]\\d";
             this.UiTextoNumeroDeFactura.Properties.Mask.IgnoreMaskBlank = false;
             this.UiTextoNumeroDeFactura.Properties.Mask.ShowPlaceHolders = false;
-            this.UiTextoNumeroDeFactura.Size = new System.Drawing.Size(500, 40);
+            this.UiTextoNumeroDeFactura.Size = new System.Drawing.Size(1467, 40);
             this.UiTextoNumeroDeFactura.TabIndex = 25;
             this.UiTextoNumeroDeFactura.ToolTip = "Ingrese el numero de factura";
             this.UiTextoNumeroDeFactura.Visible = false;
@@ -1410,7 +1403,6 @@
             // 
             // UiGrupoTarea
             // 
-            this.UiGrupoTarea.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.UiGrupoTarea.Controls.Add(this.UiEtiquetaOperador);
             this.UiGrupoTarea.Controls.Add(this.UiListaOperador);
             this.UiGrupoTarea.Controls.Add(this.UiEtiquetaUbicacion);
@@ -1419,10 +1411,11 @@
             this.UiGrupoTarea.Controls.Add(this.UiEtiquetaPrioridad);
             this.UiGrupoTarea.Controls.Add(this.UiEtiqeutaTipoRecepcion);
             this.UiGrupoTarea.Controls.Add(this.UiListaTipoRecepcion);
-            this.UiGrupoTarea.Location = new System.Drawing.Point(800, 71);
-            this.UiGrupoTarea.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.UiGrupoTarea.Dock = System.Windows.Forms.DockStyle.Right;
+            this.UiGrupoTarea.Location = new System.Drawing.Point(1732, 15);
+            this.UiGrupoTarea.Margin = new System.Windows.Forms.Padding(6);
             this.UiGrupoTarea.Name = "UiGrupoTarea";
-            this.UiGrupoTarea.Size = new System.Drawing.Size(700, 269);
+            this.UiGrupoTarea.Size = new System.Drawing.Size(700, 251);
             this.UiGrupoTarea.TabIndex = 30;
             this.UiGrupoTarea.Text = "Datos de Tarea";
             // 
@@ -1430,19 +1423,29 @@
             // 
             this.UiError.ContainerControl = this;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.UiGrupoCliente);
+            this.panel1.Controls.Add(this.UiGrupoTarea);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 46);
+            this.panel1.Name = "panel1";
+            this.panel1.Padding = new System.Windows.Forms.Padding(15);
+            this.panel1.Size = new System.Drawing.Size(2447, 281);
+            this.panel1.TabIndex = 35;
+            // 
             // RecepcionErpVista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(3750, 1315);
-            this.Controls.Add(this.UiGrupoTarea);
-            this.Controls.Add(this.UiGrupoCliente);
+            this.ClientSize = new System.Drawing.Size(2447, 1315);
             this.Controls.Add(this.UiContenedorVistaErp);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "RecepcionErpVista";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Recepcion ERP";
@@ -1483,6 +1486,7 @@
             this.UiGrupoTarea.ResumeLayout(false);
             this.UiGrupoTarea.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.UiError)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1592,5 +1596,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn colUNIT_DESCRIPTION;
         private DevExpress.XtraGrid.Columns.GridColumn colUNIT;
         private DevExpress.XtraBars.BarToggleSwitchItem UIToogleConsolidado;
+        private System.Windows.Forms.Panel panel1;
     }
 }
