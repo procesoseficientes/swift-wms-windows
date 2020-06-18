@@ -555,6 +555,7 @@
             this.UiListaErp.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
             this.UiListaErp.Size = new System.Drawing.Size(1467, 40);
             this.UiListaErp.TabIndex = 11;
+            this.UiListaErp.EditValueChanged += new System.EventHandler(this.UiListaErp_EditValueChanged);
             this.UiListaErp.CustomDisplayText += new DevExpress.XtraEditors.Controls.CustomDisplayTextEventHandler(this.UiListaErp_CustomDisplayText);
             // 
             // UiVistaErpEncabezado

@@ -290,6 +290,7 @@ namespace MobilityScm.Modelo.Vistas
             try
             {
                 if (e.Button.Tag == null) return;
+                MessageBox.Show(e.Button.Tag.ToString());
                 switch (e.Button.Tag.ToString())
                 {
                     case "REFRESCAR-USUARIO":
@@ -317,6 +318,7 @@ namespace MobilityScm.Modelo.Vistas
                         LlenarPolizasSeguro();
                         break;
                     case "AGREGAR-ERP":
+                        MessageBox.Show(ValidarAlAgregarDocDet(true).ToString());
                         if (!ValidarAlAgregarDocDet(true))
                             LlenarDetalleErp();
                         break;
@@ -481,7 +483,10 @@ namespace MobilityScm.Modelo.Vistas
                     cadena.Append(documento.SAP_REFERENCE);
                 }
 
-                if (string.IsNullOrEmpty(cadena.ToString())) return;
+                if (string.IsNullOrEmpty(cadena.ToString())) {
+                    InteraccionConUsuarioServicio.MensajeErrorDialogo("Documentos ERP está vació");
+                    return;
+                };
 
                 UsuarioDeseaObtenerDetalleOrdenDeCompra?.Invoke(null, new DocumentoRecepcionERPArgumento
                 {
@@ -845,6 +850,11 @@ namespace MobilityScm.Modelo.Vistas
         private void UiTextoNumeroDeFactura_Leave(object sender, EventArgs e)
         {
             GetFactura(sender);
+        }
+
+        private void UiListaErp_EditValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
