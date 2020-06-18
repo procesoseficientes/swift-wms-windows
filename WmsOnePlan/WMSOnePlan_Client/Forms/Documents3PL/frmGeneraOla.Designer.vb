@@ -52,6 +52,7 @@ Partial Class frmGeneraOla
         Me.colCODIGO_POLIZA_ORIGEN = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.colCODIGO_POLIZA = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.colCLIENT_CODE = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.colBARCODE_ID = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.colSKU_DESCRIPTION = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.colORIGIN_DOC_ID = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.colORIGIN_LINE_NUMBER = New DevExpress.XtraGrid.Columns.GridColumn()
@@ -196,6 +197,19 @@ Partial Class frmGeneraOla
         Me.GridViewAssigned.OptionsView.ShowAutoFilterRow = True
         Me.GridViewAssigned.OptionsView.ShowFooter = True
         Me.GridViewAssigned.OptionsView.ShowGroupPanel = False
+
+        '
+        'UiColCodigoBarras
+        '
+        Me.UiColCodigoBarras.Caption = "Codigo de Barras"
+        Me.UiColCodigoBarras.FieldName = "BARCODE_ID"
+        Me.UiColCodigoBarras.MinWidth = 40
+        Me.UiColCodigoBarras.Name = "UiColCodigoBarras"
+        Me.UiColCodigoBarras.OptionsColumn.AllowEdit = False
+        Me.UiColCodigoBarras.Visible = True
+        Me.UiColCodigoBarras.VisibleIndex = 0
+        Me.UiColCodigoBarras.Width = 150
+
         '
         'UiColLicencia
         '
@@ -229,17 +243,6 @@ Partial Class frmGeneraOla
         Me.UiColMaterialDescripcion.Visible = True
         Me.UiColMaterialDescripcion.VisibleIndex = 2
         Me.UiColMaterialDescripcion.Width = 150
-        '
-        'UiColCodigoBarras
-        '
-        Me.UiColCodigoBarras.Caption = "Código de Barras"
-        Me.UiColCodigoBarras.FieldName = "BARCODE_ID"
-        Me.UiColCodigoBarras.MinWidth = 40
-        Me.UiColCodigoBarras.Name = "UiColCodigoBarras"
-        Me.UiColCodigoBarras.OptionsColumn.AllowEdit = False
-        Me.UiColCodigoBarras.Visible = True
-        Me.UiColCodigoBarras.VisibleIndex = 3
-        Me.UiColCodigoBarras.Width = 150
         '
         'UiColLote
         '
@@ -365,7 +368,7 @@ Partial Class frmGeneraOla
         '
         'GridViewPending
         '
-        Me.GridViewPending.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colWAREHOUSE_REGIMEN, Me.colDOC_ID, Me.colLINE_NUMBER, Me.colCODIGO_POLIZA_ORIGEN, Me.colCODIGO_POLIZA, Me.colCLIENT_CODE, Me.colSKU_DESCRIPTION, Me.colORIGIN_DOC_ID, Me.colORIGIN_LINE_NUMBER, Me.colQTY, Me.colBULTOS, Me.colNUMERO_ORDEN, Me.colNUMERO_DUA, Me.colREGIMEN, Me.colDOC_TRASLADO, Me.colPendiente, Me.colTRANSLATION})
+        Me.GridViewPending.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colWAREHOUSE_REGIMEN, Me.colDOC_ID, Me.colLINE_NUMBER, Me.colCODIGO_POLIZA_ORIGEN, Me.colCODIGO_POLIZA, Me.colCLIENT_CODE, Me.colBARCODE_ID, Me.colSKU_DESCRIPTION, Me.colORIGIN_DOC_ID, Me.colORIGIN_LINE_NUMBER, Me.colQTY, Me.colBULTOS, Me.colNUMERO_ORDEN, Me.colNUMERO_DUA, Me.colREGIMEN, Me.colDOC_TRASLADO, Me.colPendiente, Me.colTRANSLATION})
         Me.GridViewPending.DetailHeight = 673
         Me.GridViewPending.FixedLineWidth = 4
         Me.GridViewPending.GridControl = Me.GridPending
@@ -433,6 +436,17 @@ Partial Class frmGeneraOla
         Me.colCLIENT_CODE.Name = "colCLIENT_CODE"
         Me.colCLIENT_CODE.OptionsColumn.AllowEdit = False
         Me.colCLIENT_CODE.Width = 150
+        '
+        'colBARCODE_ID
+        '
+        Me.colBARCODE_ID.Caption = "BARCODE"
+        Me.colBARCODE_ID.FieldName = "BARCODE_ID"
+        Me.colBARCODE_ID.MinWidth = 40
+        Me.colBARCODE_ID.Name = "colBARCODE_ID"
+        Me.colBARCODE_ID.OptionsColumn.AllowEdit = False
+        Me.colBARCODE_ID.Visible = True
+        Me.colBARCODE_ID.VisibleIndex = 1
+        Me.colBARCODE_ID.Width = 104
         '
         'colSKU_DESCRIPTION
         '
@@ -770,6 +784,7 @@ End Sub
     Friend WithEvents colCODIGO_POLIZA_ORIGEN As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents colCODIGO_POLIZA As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents colCLIENT_CODE As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents colBARCODE_ID As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents colSKU_DESCRIPTION As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents colORIGIN_DOC_ID As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents colORIGIN_LINE_NUMBER As DevExpress.XtraGrid.Columns.GridColumn
