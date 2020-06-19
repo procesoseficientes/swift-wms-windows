@@ -134,12 +134,12 @@ Public Class frmCostearGeneral
     , ByVal pVOLUME_UNIT As String, ByVal pDAI As Double, ByVal pIVA As Double, ByVal pMISC_TAXES As Double, ByVal pFOB_USD As Double, ByVal pFREIGTH_USD As Double _
     , ByVal pINSURANCE_USD As Double, ByVal pMISC_EXPENSES As Double, ByVal pORIGIN_COUNTRY As String, ByVal pREGION_CP As String, ByVal pAGREEMENT_1 As String _
     , ByVal pAGREEMENT_2 As String, ByVal pRELATED_POLIZA As String, ByVal pORIGIN_DOC_ID As Integer _
-    , ByVal pCODIGO_POLIZA_ORIGEN As String, ByVal pCLIENT_CODE As String, ByVal pPCTDAI As Double, ByVal pORIGIN_LINE_NUMBER As Double, ByRef pLINE_NUMBER As Integer) As Boolean
+    , ByVal pCODIGO_POLIZA_ORIGEN As String, ByVal pCLIENT_CODE As String, ByVal pPCTDAI As Double, ByVal pORIGIN_LINE_NUMBER As Double, ByRef pLINE_NUMBER As Integer, ByVal pMATERIAL_ID As String) As Boolean
         Try
             If xserv.set_Poliza_Detail(pDOC_ID, pSKU_DESCRIPTION, pSAC_CODE, pBULTOS, pCLASE, pNET_WEIGTH, pWEIGTH_UNIT, pQTY, pCUSTOMS_AMOUNT, pQTY_UNIT,
                                     pVOLUME, pVOLUME_UNIT, pDAI, pIVA, pMISC_TAXES, pFOB_USD, pFREIGTH_USD, pINSURANCE_USD, pMISC_EXPENSES, pORIGIN_COUNTRY,
                                     pREGION_CP, pAGREEMENT_1, pAGREEMENT_2, pRELATED_POLIZA, PublicLoginInfo.LoginID, Date.Now(), pORIGIN_DOC_ID, pCODIGO_POLIZA_ORIGEN,
-                                    pCLIENT_CODE, pPCTDAI, pORIGIN_LINE_NUMBER, PublicLoginInfo.Environment, pResult, pLINE_NUMBER, 0, "") Then
+                                    pCLIENT_CODE, pPCTDAI, pORIGIN_LINE_NUMBER, PublicLoginInfo.Environment, pResult, pLINE_NUMBER, 0, pMATERIAL_ID) Then
                 Return True
             Else
                 Return False
@@ -164,8 +164,8 @@ Public Class frmCostearGeneral
             If pResult = "OK" Then
                 For iR = 0 To GridViewCostos.RowCount - 1
                     drDet = GridViewCostos.GetDataRow(iR)
-                    If fn_graba_Detalle(drHead("DOC_ID"), drDet("MATERIAL_CODE").ToString + "-" + drDet("MATERIAL_DESCRIPTION").ToString, "", Val(drDet("QUANTITY_UNITS")), _
-                                     "", 0, "", Val(drDet("QUANTITY_UNITS")), Val(drDet("MATERIAL_COST")), "UN", 0, "", 0, 0, 0, 0, 0, 0, 0, "", "", "", "", "", 0, "", drHead("CLIENT_CODE"), 0, 0, 0) = False Then
+                    If fn_graba_Detalle(drHead("DOC_ID"), drDet("MATERIAL_CODE").ToString + "-" + drDet("MATERIAL_DESCRIPTION").ToString, "", Val(drDet("QUANTITY_UNITS")),
+                                     "", 0, "", Val(drDet("QUANTITY_UNITS")), Val(drDet("MATERIAL_COST")), "UN", 0, "", 0, 0, 0, 0, 0, 0, 0, "", "", "", "", "", 0, "", drHead("CLIENT_CODE"), 0, 0, 0, drDet("MATERIAL_CODE").ToString) = False Then
 
                         Exit For
                     End If

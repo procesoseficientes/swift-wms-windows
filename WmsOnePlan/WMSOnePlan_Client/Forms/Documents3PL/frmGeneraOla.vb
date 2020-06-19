@@ -438,8 +438,17 @@ Public Class frmGeneraOla
 
                 If (qty < GridViewPending.GetFocusedRowCellValue("QTY_PENDING")) Then
                     qty_pending = GridViewPending.GetFocusedRowCellValue("QTY_PENDING") - qty
-                    xserv.set_pending_quantity(GridViewPending.GetFocusedRowCellValue("DOC_ID"), GridViewPending.GetFocusedRowCellValue("LINE_NUMBER"), qty_pending, PublicLoginInfo.Environment, pResult)
+                    Dim xset As DataSet = xserv.set_pending_quantity(GridViewPending.GetFocusedRowCellValue("DOC_ID"), GridViewPending.GetFocusedRowCellValue("LINE_NUMBER"), qty_pending, PublicLoginInfo.Environment, pResult)
 
+                    If Not pResult = "OK" Then
+                        NotifyStatus(pResult, True, True)
+                    Else
+                        _olaPicking = 0
+                        LlenarGridPendientes()
+
+                        Dim noOrden As String = xset.Tables(0).Rows(0)(0).ToString()
+                        NotifyStatus("Orden no." + noOrden + " generada exitosamente", True, False)
+                    End If
 
 
                 ElseIf (qty > GridViewPending.GetFocusedRowCellValue("QTY_PENDING")) Then
