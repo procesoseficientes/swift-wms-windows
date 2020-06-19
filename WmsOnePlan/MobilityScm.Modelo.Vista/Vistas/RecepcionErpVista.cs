@@ -290,7 +290,6 @@ namespace MobilityScm.Modelo.Vistas
             try
             {
                 if (e.Button.Tag == null) return;
-                MessageBox.Show(e.Button.Tag.ToString());
                 switch (e.Button.Tag.ToString())
                 {
                     case "REFRESCAR-USUARIO":
@@ -318,7 +317,6 @@ namespace MobilityScm.Modelo.Vistas
                         LlenarPolizasSeguro();
                         break;
                     case "AGREGAR-ERP":
-                        MessageBox.Show(ValidarAlAgregarDocDet(true).ToString());
                         if (!ValidarAlAgregarDocDet(true))
                             LlenarDetalleErp();
                         break;
