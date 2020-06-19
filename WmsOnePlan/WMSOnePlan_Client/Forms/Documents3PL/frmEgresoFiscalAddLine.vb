@@ -40,7 +40,7 @@
                 Dim _numeroLinea, _documentoOrigen, _docid, _origin_line_number As Integer
                 Dim _bultos, _Cantidad, _valorAduana, _valorDai, _valorIva, _pesoNeto, _volumen, _impuestosVarios, _gastosVarios, _fobUsd As Double
                 Dim _fleteUsd, _seguroUsd, _pctdai As Double
-                Dim _codigoSAC, _unidadCantidad, _unidadPeso, _unidadVolumen, _sku_description, _clase, _region_cp As String
+                Dim _codigoSAC, _unidadCantidad, _unidadPeso, _unidadVolumen, _sku_description, _clase, _region_cp, _material_id As String
                 Dim _agreement1, _agreement2, _origin_poliza, _origin_country, _related_poliza, _consignatario As String
                 dim impuesto as Decimal
                 For I = 0 To GridViewEnvio.RowCount - 1
@@ -72,6 +72,7 @@
                     _sku_description = GridViewEnvio.GetRowCellValue(I, "SKU_DESCRIPTION").ToString
                     _clase = GridViewEnvio.GetRowCellValue(I, "CLASE").ToString
                     _region_cp = GridViewEnvio.GetRowCellValue(I, "REGION_CP").ToString
+                    _material_id = GridViewEnvio.GetRowCellValue(I, "MATERIAL_ID").ToString
                     _agreement1 = GridViewEnvio.GetRowCellValue(I, "AGREEMENT_1").ToString
                     _agreement2 = GridViewEnvio.GetRowCellValue(I, "AGREEMENT_2").ToString
                     _origin_country = GridViewEnvio.GetRowCellValue(I, "ORIGIN_COUNTRY").ToString
@@ -91,9 +92,9 @@
                     If _seguroUsd > 0 Then _seguroUsd = -_seguroUsd
                     If _gastosVarios > 0 Then _gastosVarios = -_gastosVarios
 
-                    fn_graba_Detalle(_docid, _sku_description, _codigoSAC, _bultos, _clase, _pesoNeto, _unidadPeso, _Cantidad, _valorAduana, _unidadCantidad, _volumen, _unidadVolumen, _
-                                         _valorDai, _valorIva, _impuestosVarios, _fobUsd, _fleteUsd, _seguroUsd, _gastosVarios, _origin_country, _region_cp, _agreement1, _agreement2, _
-                                         _related_poliza, _documentoOrigen, _origin_poliza, _consignatario, _pctdai, _origin_line_number, _numeroLinea, impuesto)
+                    fn_graba_Detalle(_docid, _sku_description, _codigoSAC, _bultos, _clase, _pesoNeto, _unidadPeso, _Cantidad, _valorAduana, _unidadCantidad, _volumen, _unidadVolumen,
+                                         _valorDai, _valorIva, _impuestosVarios, _fobUsd, _fleteUsd, _seguroUsd, _gastosVarios, _origin_country, _region_cp, _agreement1, _agreement2,
+                                         _related_poliza, _documentoOrigen, _origin_poliza, _consignatario, _pctdai, _origin_line_number, _numeroLinea, impuesto, _material_id)
 
                 Next
 
@@ -203,13 +204,13 @@
     , ByVal pVOLUME_UNIT As String, ByVal pDAI As Double, ByVal pIVA As Double, ByVal pMISC_TAXES As Double, ByVal pFOB_USD As Double, ByVal pFREIGTH_USD As Double _
     , ByVal pINSURANCE_USD As Double, ByVal pMISC_EXPENSES As Double, ByVal pORIGIN_COUNTRY As String, ByVal pREGION_CP As String, ByVal pAGREEMENT_1 As String _
     , ByVal pAGREEMENT_2 As String, ByVal pRELATED_POLIZA As String, ByVal pORIGIN_DOC_ID As Integer _
-    , ByVal pCODIGO_POLIZA_ORIGEN As String, ByVal pCLIENT_CODE As String, ByVal pPCTDAI As Double, ByVal pORIGIN_LINE_NUMBER As Double, ByRef pLINE_NUMBER As Integer, impuesto As Decimal) As Boolean
+    , ByVal pCODIGO_POLIZA_ORIGEN As String, ByVal pCLIENT_CODE As String, ByVal pPCTDAI As Double, ByVal pORIGIN_LINE_NUMBER As Double, ByRef pLINE_NUMBER As Integer, impuesto As Decimal, ByVal pMATERIAL_ID As String) As Boolean
         Try
 
             If xserv.set_Poliza_Detail(pDOC_ID, pSKU_DESCRIPTION, pSAC_CODE, pBULTOS, pCLASE, pNET_WEIGTH, pWEIGTH_UNIT, pQTY, pCUSTOMS_AMOUNT, pQTY_UNIT,
                                     pVOLUME, pVOLUME_UNIT, pDAI, pIVA, pMISC_TAXES, pFOB_USD, pFREIGTH_USD, pINSURANCE_USD, pMISC_EXPENSES, pORIGIN_COUNTRY,
                                     pREGION_CP, pAGREEMENT_1, pAGREEMENT_2, pRELATED_POLIZA, PublicLoginInfo.LoginID, Date.Now(), pORIGIN_DOC_ID, pCODIGO_POLIZA_ORIGEN,
-                                    pCLIENT_CODE, pPCTDAI, pORIGIN_LINE_NUMBER, PublicLoginInfo.Environment, pResult, pLINE_NUMBER, impuesto, "") Then
+                                    pCLIENT_CODE, pPCTDAI, pORIGIN_LINE_NUMBER, PublicLoginInfo.Environment, pResult, pLINE_NUMBER, impuesto, pMATERIAL_ID) Then
 
                 'NotifyStatus("gRegimenSource:" + gRegimenSource, False, False)
 
@@ -219,7 +220,7 @@
                                                pNET_WEIGTH, pWEIGTH_UNIT, (pQTY * -1), (pCUSTOMS_AMOUNT * -1), pQTY_UNIT,
                         pVOLUME, pVOLUME_UNIT, (pDAI * -1), (pIVA * -1), pMISC_TAXES, (pFOB_USD * -1), (pFREIGTH_USD * -1), (pINSURANCE_USD * -1), pMISC_EXPENSES, pORIGIN_COUNTRY,
                         pREGION_CP, pAGREEMENT_1, pAGREEMENT_2, pRELATED_POLIZA, PublicLoginInfo.LoginID, Date.Now(), pORIGIN_DOC_ID, pCODIGO_POLIZA_ORIGEN,
-                        pCLIENT_CODE, pPCTDAI, pORIGIN_LINE_NUMBER, PublicLoginInfo.Environment, pResult, pLINE_NUMBER, impuesto, "") Then
+                        pCLIENT_CODE, pPCTDAI, pORIGIN_LINE_NUMBER, PublicLoginInfo.Environment, pResult, pLINE_NUMBER, impuesto, pMATERIAL_ID) Then
                         'NotifyStatus("gRegimenSource:" + gRegimenSource, False, False)
 
                         Return True

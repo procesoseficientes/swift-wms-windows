@@ -25,6 +25,7 @@ Partial Class frmEgresoFiscalAddLine
         Me.GridViewEnvio = New DevExpress.XtraGrid.Views.Grid.GridView()
         Me.colDOC_ID = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.colLINE_NUMBER = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.colMATERIAL_ID = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.colSKU_DESCRIPTION1 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.colSAC_CODE = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.colBULTOS = New DevExpress.XtraGrid.Columns.GridColumn()
@@ -120,7 +121,7 @@ Partial Class frmEgresoFiscalAddLine
         '
         'GridViewEnvio
         '
-        Me.GridViewEnvio.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colDOC_ID, Me.colLINE_NUMBER, Me.colSKU_DESCRIPTION1, Me.colSAC_CODE, Me.colBULTOS, Me.colCLASE, Me.colNET_WEIGTH, Me.colWEIGTH_UNIT, Me.colQTY1, Me.colCUSTOMS_AMOUNT, Me.colQTY_UNIT, Me.colVOLUME, Me.colVOLUME_UNIT, Me.colDAI, Me.colIVA, Me.colMISC_TAXES, Me.colFOB_USD, Me.colFREIGTH_USD, Me.colINSURANCE_USD, Me.colMISC_EXPENSES, Me.colORIGIN_COUNTRY, Me.colREGION_CP, Me.colAGREEMENT_1, Me.colAGREEMENT_2, Me.colRELATED_POLIZA, Me.colORIGIN_DOC_ID, Me.colCODIGO_POLIZA_ORIGEN, Me.colACUERDO_COMERCIAL, Me.colPCTDAI, Me.colORIGIN_LINE_NUMBER, Me.colCLIENT_CODE1, Me.colCONSIGNATARIO_NAME1})
+        Me.GridViewEnvio.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colDOC_ID, Me.colLINE_NUMBER, Me.colMATERIAL_ID, Me.colSKU_DESCRIPTION1, Me.colSAC_CODE, Me.colBULTOS, Me.colCLASE, Me.colNET_WEIGTH, Me.colWEIGTH_UNIT, Me.colQTY1, Me.colCUSTOMS_AMOUNT, Me.colQTY_UNIT, Me.colVOLUME, Me.colVOLUME_UNIT, Me.colDAI, Me.colIVA, Me.colMISC_TAXES, Me.colFOB_USD, Me.colFREIGTH_USD, Me.colINSURANCE_USD, Me.colMISC_EXPENSES, Me.colORIGIN_COUNTRY, Me.colREGION_CP, Me.colAGREEMENT_1, Me.colAGREEMENT_2, Me.colRELATED_POLIZA, Me.colORIGIN_DOC_ID, Me.colCODIGO_POLIZA_ORIGEN, Me.colACUERDO_COMERCIAL, Me.colPCTDAI, Me.colORIGIN_LINE_NUMBER, Me.colCLIENT_CODE1, Me.colCONSIGNATARIO_NAME1})
         Me.GridViewEnvio.GridControl = Me.GridEnvio
         Me.GridViewEnvio.Name = "GridViewEnvio"
         Me.GridViewEnvio.OptionsBehavior.Editable = false
@@ -139,6 +140,14 @@ Partial Class frmEgresoFiscalAddLine
         Me.colLINE_NUMBER.Name = "colLINE_NUMBER"
         Me.colLINE_NUMBER.Visible = true
         Me.colLINE_NUMBER.VisibleIndex = 0
+        '
+        'colMATERIAL_ID
+        '
+        Me.colMATERIAL_ID.Caption = "MATERIAL_ID"
+        Me.colMATERIAL_ID.FieldName = "MATERIAL_ID"
+        Me.colMATERIAL_ID.Name = "colMATERIAL_ID"
+        Me.colMATERIAL_ID.Visible = True
+        Me.colMATERIAL_ID.VisibleIndex = 1
         '
         'colSKU_DESCRIPTION1
         '
@@ -641,6 +650,7 @@ End Sub
     Friend WithEvents colQTY As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents colDOC_ID As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents colLINE_NUMBER As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents colMATERIAL_ID As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents colSKU_DESCRIPTION1 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents colSAC_CODE As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents colBULTOS As DevExpress.XtraGrid.Columns.GridColumn
