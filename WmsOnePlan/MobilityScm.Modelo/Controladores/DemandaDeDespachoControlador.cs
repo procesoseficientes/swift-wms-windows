@@ -434,9 +434,19 @@ namespace MobilityScm.Modelo.Controladores
         {
             try
             {
-                _vista.ClientesErpCanalModerno = _vista.TipoInventario == TipoDeInventario.General
-                    ? ClienteServicio.ObtenerClientesErpPorCanalModerno(e)
-                    : ClienteServicio.ObtenerClientesErpCanalModernoParaOrdenesDeVentaPreparadas(e);
+                switch (_vista.TipoFuente)
+                {
+                    case TipoFuenteDemandaDespacho.OrdenDeEntrega:
+                        _vista.ClientesErpCanalModerno = ClienteServicio.ObtenerClientesOrdeDeEntrega(e);
+                        break;
+                    case TipoFuenteDemandaDespacho.OrdenVentaErp:
+                        _vista.ClientesErpCanalModerno = _vista.TipoInventario == TipoDeInventario.General
+                        ? ClienteServicio.ObtenerClientesErpPorCanalModerno(e)
+                        : ClienteServicio.ObtenerClientesErpCanalModernoParaOrdenesDeVentaPreparadas(e);
+                        break;
+                    default:
+                        return;
+                }
             }
             catch (Exception exception)
             {
@@ -1086,6 +1096,16 @@ namespace MobilityScm.Modelo.Controladores
                     _vista.Parametros.Add(parametro);
                 }
                 //
+
+                parametrosParaFuenteDespacho = ParametroServicio.ObtenerParametro(new ConsultaArgumento
+                {
+                    GrupoParametro = Enums.GetStringValue(GrupoParametro.FuenteDemandaDespacho),
+                    IdParametro = "DO - ERP"
+                });
+                foreach (var parametro in parametrosParaFuenteDespacho)
+                {
+                    _vista.Parametros.Add(parametro);
+                }
 
                 foreach (var parametro in parametrosParaTipoDespacho)
                 {

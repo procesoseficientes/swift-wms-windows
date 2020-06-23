@@ -12,6 +12,7 @@ namespace MobilityScm.Modelo.Interfaces.Servicios
         IList<Cliente> ObtenerClientesErpPorCanalModerno(OrdenDeVentaArgumento argumento);
 
         IList<Cliente> ObtenerClientesErpCanalModernoParaOrdenesDeVentaPreparadas(OrdenDeVentaArgumento argumento);
+        IList<Cliente> ObtenerClientesOrdeDeEntrega(OrdenDeVentaArgumento argumento);
 
         IList<Cliente> ObtenerClientesErp(OrdenDeVentaArgumento argumento);
     }
