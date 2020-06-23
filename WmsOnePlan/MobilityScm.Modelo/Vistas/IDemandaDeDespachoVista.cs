@@ -18,7 +18,7 @@ namespace MobilityScm.Modelo.Vistas
         event EventHandler<OrdenDeVentaArgumento> UsuarioDeseaDescartarEncabezado;
         event EventHandler<OrdenDeVentaArgumento> UsuarioDeseaDescartarTodosEncabezadosConAdvertencia;
         event EventHandler<OrdenDeVentaArgumento> UsuarioDeseaObtenerBodegasAsignadas;
-        event EventHandler UsuarioDeseaObtenerUbicacionesDeSalida;
+        event EventHandler<BodegaArgumento> UsuarioDeseaObtenerUbicacionesDeSalida;
         event EventHandler<OrdenDeVentaArgumento> UsuarioDeseaObtenerClientesErpCanalModerno;
         event EventHandler<OrdenDeVentaArgumento> UsuarioDeseaObtenerDetallesConsolidados;
         event EventHandler<OrdenDeVentaArgumento> usuarioDeseaEliminarRegistros;
