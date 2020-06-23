@@ -44,7 +44,7 @@ namespace MobilityScm.Modelo.Vistas
         public event EventHandler<OrdenDeVentaArgumento> UsuarioDeseaDescartarEncabezado;
         public event EventHandler<OrdenDeVentaArgumento> UsuarioDeseaDescartarTodosEncabezadosConAdvertencia;
         public event EventHandler<OrdenDeVentaArgumento> UsuarioDeseaObtenerBodegasAsignadas;
-        public event EventHandler UsuarioDeseaObtenerUbicacionesDeSalida;
+        public event EventHandler<BodegaArgumento> UsuarioDeseaObtenerUbicacionesDeSalida;
         public event EventHandler<OrdenDeVentaArgumento> UsuarioDeseaObtenerClientesErpCanalModerno;
         public event EventHandler<OrdenDeVentaArgumento> UsuarioDeseaObtenerDetallesConsolidados;
         public event EventHandler<OrdenDeVentaArgumento> usuarioDeseaEliminarRegistros;
@@ -711,6 +711,7 @@ namespace MobilityScm.Modelo.Vistas
 
         private void UIListaBodega_EditValueChanged(object sender, EventArgs e)
         {
+            CargarUbicacionesDeSalida(sender);
             try
             {
                 if (UIListaBodega.EditValue != null)
@@ -737,7 +738,6 @@ namespace MobilityScm.Modelo.Vistas
                         {
                             CodigoBodega = UIListaBodega.EditValue.ToString()
                         });
-
                         CargarPoligonos();
                         ValidarSkusConInventario(null);
                         CargarOrdenesDeVenta(sender);
@@ -957,7 +957,7 @@ namespace MobilityScm.Modelo.Vistas
 
         private void CargarUbicacionesDeSalida(object sender)
         {
-            UsuarioDeseaObtenerUbicacionesDeSalida?.Invoke(sender, EventArgs.Empty);
+            UsuarioDeseaObtenerUbicacionesDeSalida?.Invoke(sender, new BodegaArgumento { BodegaId = UIListaBodega.EditValue.ToString() }) ;
         }
 
         private bool ValidarBodega()

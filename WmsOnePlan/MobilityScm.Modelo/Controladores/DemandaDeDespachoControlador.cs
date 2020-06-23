@@ -454,9 +454,9 @@ namespace MobilityScm.Modelo.Controladores
             }
         }
 
-        private void _vista_UsuarioDeseaObtenerUbicacionesDeSalida(object sender, EventArgs e)
+        private void _vista_UsuarioDeseaObtenerUbicacionesDeSalida(object sender, BodegaArgumento e)
         {
-            _vista.Ubicaciones = UbicacionServicio.ObtenerUbicacionesTipoRampaYPuertaParaDespacho(InteraccionConUsuarioServicio.ObtenerCentroDistribucion());
+            _vista.Ubicaciones = UbicacionServicio.ObtenerUbicacionesTipoRampaYPuertaParaDespacho(e.BodegaId);
         }
 
         private void _vista_UsuarioDeseaCrearPickingDeOrdenDeVenta(object sender, PickingArgumento e)
