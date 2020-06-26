@@ -128,6 +128,40 @@ namespace MobilityScm.Modelo.Servicios
         }
 
 
+        public IList<OrdenDeVentaDetalle> ObtenerOrdenDeEntregaDetalle(OrdenDeVentaArgumento argumento)
+        {
+            DbParameter[] parameters =
+        {
+               new OAParameter
+               {
+                   ParameterName = "@DOC_NUMS",
+                   Value = argumento.TextoEncabezados
+               },
+               new OAParameter
+               {
+                   ParameterName = "@EXTERNAL_SOURCE_IDS",
+                   Value = argumento.TextoFuentesExternas
+               }
+               ,
+               new OAParameter
+               {
+                    ParameterName = "@CODE_WAREHOUSE",
+                   Value = argumento.CodigoBodega
+               }
+                ,new OAParameter
+                {
+                    ParameterName = "@START_DATE",
+                    Value = argumento.FechaInicio
+                }
+                ,new OAParameter
+                {
+                    ParameterName = "@END_DATE",
+                    Value = argumento.FechaFin
+                }
+           };
+            return BaseDeDatosServicio.ExecuteQuery<OrdenDeVentaDetalle>(BaseDeDatosServicio.Esquema + ".OP_WMS_GET_ERP_DELIVERY_ORDER_DETAIL_BY_ORDERS", CommandType.StoredProcedure, false, parameters);
+        }
+
         public IList<MaterialConTonoYCalibre> ObtenerTonosYCalibresDeMateriales(SkuArgumento skuArgumento)
         {
             DbParameter[] parameters =

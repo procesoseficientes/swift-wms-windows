@@ -68,6 +68,7 @@ namespace MobilityScm.Modelo.Controladores
             _vista.VistaCargandosePorPrimeraVez += _vista_VistaCargandosePorPrimeraVez;
             _vista.UsuarioDeseaObtenerRutas += _vista_UsuarioDeseaObtenerRutas;
             _vista.UsuarioDeseaObtenerOrdenesDeVentaPorFecha += _vista_UsuarioDeseaObtenerOrdenesDeVentaPorFecha;
+            _vista.UsuarioDeseaObtenerOrdenesDeEntregaPorFecha += _vista_UsuarioDeseaObtenerOrdenesDeEntregaPorFecha;
             _vista.UsuarioDeseaValidarInventarioParaOrdenDeVenta += _vista_UsuarioDeseaValidarInventarioParaOrdenDeVenta;
             _vista.UsuarioDeseaMarcarOrdenDeVentaConPicking += _vista_UsuarioDeseaMarcarOrdenDeVentaConPicking;
             _vista.UsuarioDeseaDescartarEncabezado += _vista_UsuarioDeseaDescartarEncabezado;
@@ -895,12 +896,12 @@ namespace MobilityScm.Modelo.Controladores
             }
         }
 
-        private void _vista_UsuarioDeseaObtenerOrdenesDeVentaPorFecha(object sender, OrdenDeVentaArgumento e)
+        private void _vista_UsuarioDeseaObtenerOrdenesDeEntregaPorFecha(object sender, OrdenDeVentaArgumento e)
         {
             try
             {
                 _vista.Vehiculos = VehiculoServicio.ObtenerVehiculosParaDemandaDespacho();
-                _vista.OrdenesDeVenta = (_vista.TipoFuente == TipoFuenteDemandaDespacho.OrdenVentaErp) ? OrdenDeVentaErpServicio.ObtenerOrdenesDeVentaPorFecha(e) : OrdenDeVentaSwiftExpressServicio.ObtenerOrdenesDeVentaPorFecha(e);
+                _vista.OrdenesDeVenta = OrdenDeVentaSwiftExpressServicio.ObtenerOrdenesDeEntregaPorFecha(e);
                 _vista.OrdenesDeVenta = _vista.OrdenesDeVenta.OrderBy(en => en.POSTED_DATETIME).ToList();
 
                 e.TextoEncabezados = string.Empty;
@@ -913,7 +914,130 @@ namespace MobilityScm.Modelo.Controladores
 
                 }
 
-                _vista.DetallesOrdenDeVenta = (_vista.TipoFuente == TipoFuenteDemandaDespacho.OrdenVentaErp) ? OrdenDeVentaErpServicio.ObtenerOrdenVentaDetalleDeOrdenes(e) : OrdenDeVentaSwiftExpressServicio.ObtenerOrdenVentaDetalleDeOrdenes(e);
+                _vista.DetallesOrdenDeVenta = OrdenDeVentaErpServicio.ObtenerOrdenDeEntregaDetalle(e);
+
+
+                foreach (var ordenDeVentaDetalle in _vista.DetallesOrdenDeVenta.Where(det => _vista.FiltroDeUsaLineaDePicking != (int)Tipos.UsaLineaDePicking.Ambas && det.USE_PICKING_LINE != _vista.FiltroDeUsaLineaDePicking))
+                {
+                    ordenDeVentaDetalle.QTY = 0;
+                }
+
+                var encabezadosParaEliminar = _vista.DetallesOrdenDeVenta
+                    .GroupBy(x => new { x.SALES_ORDER_ID })
+                    .Select(y => new { Id = y.Key.SALES_ORDER_ID, Amount = y.Sum(x => x.QTY) })
+                    .Where(x => x.Amount <= 0)
+                    .Select(x => x.Id);
+
+                foreach (var en in encabezadosParaEliminar)
+                {
+                    var enc = _vista.OrdenesDeVenta.FirstOrDefault(x => x.SALES_ORDER_ID == en);
+                    _vista.OrdenesDeVenta.Remove(enc);
+                }
+                _vista.DetallesOrdenDeVenta = _vista.DetallesOrdenDeVenta.Where(x => _vista.OrdenesDeVenta.ToList().Exists(y => y.SALES_ORDER_ID == x.SALES_ORDER_ID && x.SOURCE == y.OWNER)).ToList();
+
+                var listaEncabezado = _vista.OrdenesDeVenta.ToList();
+                var listaDetalle = _vista.DetallesOrdenDeVenta.ToList();
+
+                foreach (var detalle in listaDetalle)
+                {
+                    detalle.STATUS_CODE_ORIGIN = detalle.STATUS_CODE;
+                    if (string.IsNullOrEmpty(detalle.STATUS_CODE))
+                    {
+                        detalle.STATUS_CODE = _vista.EstadoPredeterminadoDeMaterial.PARAM_NAME;
+                    }
+                }
+
+                int numeroEncabezado = 1;
+                int numeroDetalle = 1;
+                foreach (var enc in listaEncabezado)
+                {
+                    enc.ID = numeroEncabezado;
+                    foreach (var d in from det in listaDetalle
+                                      where enc.SALES_ORDER_ID == det.SALES_ORDER_ID && enc.EXTERNAL_SOURCE_ID == det.EXTERNAL_SOURCE_ID
+                                      && det.SOURCE == enc.OWNER
+                                      select det)
+                    {
+                        d.fechaModificacion = DateTime.Now;
+                        d.ID = numeroDetalle;
+                        d.HEADER_ID = numeroEncabezado;
+                        enc.Detalles.Add(d);
+                        numeroDetalle++;
+                    }
+                    numeroEncabezado++;
+                }
+                listaEncabezado.RemoveAll(n => n.Detalles.Count == 0);
+
+
+
+                var despachoConEstado =
+                    _vista.Parametros.FirstOrDefault(
+                        p =>
+                            p.GROUP_ID == Enums.GetStringValue(GrupoParametro.DemandaDePicking) &&
+                            p.PARAMETER_ID == Enums.GetStringValue(IdParametro.DespachoPorEstadoDematerial));
+
+                bool despacharConEstadoDeMaterial = false;
+                if (despachoConEstado != null && despachoConEstado.VALUE.Equals("1"))
+                {
+                    _vista.InvnetarioDisponiblePorEstado = PickingServicio.ObtenerInvnentarioPraPickingPorEstado(ObtenerArgumentoDePickingParaInventarioPorestado());
+                    _vista.EstadosDeMaterial = ObtenerEstadosDisponibles();
+                    despacharConEstadoDeMaterial = true;
+                }
+
+                _vista.Skus = OrdenDeVentaSwiftExpressServicio.ValidarInventarioParaOrdenDeVenta(ObtenerArgumentoParaValidarSkuInventario());
+
+                var listaMaterialesConTonoOCalibre = _vista.MaterialesConTonoYCalibres.ToList();
+
+                DemandaDeDespachoServicio.AjustarInventarioDeOrdenDeVenta(ref listaEncabezado, ref listaDetalle, _vista.Skus, ref listaMaterialesConTonoOCalibre, _vista.TipoInventario, despacharConEstadoDeMaterial);
+
+                var ordenLlenado =
+                    _vista.Permisos.FirstOrDefault(
+                        p => p.PARAM_NAME == Enums.GetStringValue(NombreDeClasificaciones.OrdenDeLlenado));
+
+                var argumento = new PickingArgumento
+                {
+                    Encabezados = listaEncabezado,
+                    Vehiculos = _vista.Vehiculos,
+                    PrioridadOrden = ordenLlenado == null || ordenLlenado.TEXT_VALUE == "PESO" ? PrioridadVehiculos.Peso : PrioridadVehiculos.Volumen
+                };
+                _vista.Vehiculos = DemandaDeDespachoServicio.ProcesarDemandaParaVehiculos(ref argumento);
+                _vista.OrdenesDeVenta = listaEncabezado;
+                _vista.DetallesOrdenDeVenta = listaDetalle;
+                _vista.MaterialesConTonoYCalibres = listaMaterialesConTonoOCalibre;
+                AjustarOrdenarEncabezados();
+                LlenarOrdenesDeVentaConsolidado();
+
+            }
+            catch (Exception ex)
+            {
+                InteraccionConUsuarioServicio.Mensaje(ex.Message);
+            }
+        }
+
+        private void _vista_UsuarioDeseaObtenerOrdenesDeVentaPorFecha(object sender, OrdenDeVentaArgumento e)
+        {
+            try
+            {
+                _vista.Vehiculos = VehiculoServicio.ObtenerVehiculosParaDemandaDespacho();
+                _vista.OrdenesDeVenta = 
+                    (_vista.TipoFuente == TipoFuenteDemandaDespacho.OrdenVentaErp) ? 
+                        OrdenDeVentaErpServicio.ObtenerOrdenesDeVentaPorFecha(e) : 
+                        OrdenDeVentaSwiftExpressServicio.ObtenerOrdenesDeVentaPorFecha(e);
+                _vista.OrdenesDeVenta = _vista.OrdenesDeVenta.OrderBy(en => en.POSTED_DATETIME).ToList();
+
+                e.TextoEncabezados = string.Empty;
+                e.TextoFuentesExternas = string.Empty;
+
+                foreach (var ordenDeVentaEncabezado in _vista.OrdenesDeVenta)
+                {
+                    e.TextoEncabezados += string.IsNullOrEmpty(e.TextoEncabezados) ? ordenDeVentaEncabezado.SALES_ORDER_ID.ToString() : "|" + ordenDeVentaEncabezado.SALES_ORDER_ID;
+                    e.TextoFuentesExternas += string.IsNullOrEmpty(e.TextoFuentesExternas) ? ordenDeVentaEncabezado.EXTERNAL_SOURCE_ID.ToString() : "|" + ordenDeVentaEncabezado.EXTERNAL_SOURCE_ID;
+
+                }
+
+                _vista.DetallesOrdenDeVenta = 
+                    (_vista.TipoFuente == TipoFuenteDemandaDespacho.OrdenVentaErp) ? 
+                        OrdenDeVentaErpServicio.ObtenerOrdenVentaDetalleDeOrdenes(e) : 
+                        OrdenDeVentaSwiftExpressServicio.ObtenerOrdenVentaDetalleDeOrdenes(e);
 
 
                 foreach (var ordenDeVentaDetalle in _vista.DetallesOrdenDeVenta.Where(det => _vista.FiltroDeUsaLineaDePicking != (int)Tipos.UsaLineaDePicking.Ambas && det.USE_PICKING_LINE != _vista.FiltroDeUsaLineaDePicking))

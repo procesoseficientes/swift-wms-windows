@@ -9,6 +9,8 @@ namespace MobilityScm.Modelo.Interfaces.Servicios
     {
         IList<OrdenDeVentaEncabezado> ObtenerOrdenesDeVentaPorFecha(OrdenDeVentaArgumento ordenDeVentaArgumento);
 
+        IList<OrdenDeVentaEncabezado> ObtenerOrdenesDeEntregaPorFecha(OrdenDeVentaArgumento ordenDeVentaArgumento);
+
         IList<Sku> ValidarInventarioParaOrdenDeVenta(SkuArgumento skuArgumento);
 
         IList<OrdenDeVentaDetalle> ObtenerOrdenVentaDetalle(OrdenDeVentaEncabezado encabezado);

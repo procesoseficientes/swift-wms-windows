@@ -47,6 +47,8 @@ namespace MobilityScm.Modelo.Servicios
                 serializer.Serialize(xmlWriter, argumento.Encabezados.ToList());
                 var documentos = xmlDocumentos.ToString();
 
+                var source = argumento.TipoDespacho == TipoFuenteDemandaDespacho.OrdenDeEntrega ? "DO - ERP" : Enums.GetStringValue(argumento.TipoDespacho);
+
                 DbParameter[] parameters =
           {
                 new OAParameter
@@ -67,7 +69,7 @@ namespace MobilityScm.Modelo.Servicios
                 new OAParameter
                 {
                     ParameterName = "@SOURCE",
-                    Value = Enums.GetStringValue(argumento.TipoDespacho),
+                    Value = source,
                 }
                 ,
                 new OAParameter
