@@ -38,6 +38,7 @@ namespace MobilityScm.Modelo.Vistas
         public event EventHandler<PickingArgumento> UsuarioDeseaCrearPickingDeOrdenDeVenta;
         public event EventHandler<OrdenDeVentaArgumento> UsuarioDeseaMarcarOrdenDeVentaConPicking;
         public event EventHandler<OrdenDeVentaArgumento> UsuarioDeseaObtenerOrdenesDeVentaPorFecha;
+        public event EventHandler<OrdenDeVentaArgumento> UsuarioDeseaObtenerOrdenesDeEntregaPorFecha;
         public event EventHandler UsuarioDeseaObtenerRutas;
         public event EventHandler<SkuArgumento> UsuarioDeseaValidarInventarioParaOrdenDeVenta;
         public event EventHandler VistaCargandosePorPrimeraVez;
@@ -1060,6 +1061,19 @@ namespace MobilityScm.Modelo.Vistas
                         switch (TipoFuente)
                         {
                             case TipoFuenteDemandaDespacho.OrdenDeEntrega:
+                                UsuarioDeseaObtenerOrdenesDeEntregaPorFecha?.Invoke(sender, new OrdenDeVentaArgumento
+                                {
+                                    FechaInicio = Convert.ToDateTime(UiFechaInicial.EditValue),
+                                    FechaFin =
+                                        Convert.ToDateTime(UiFechaFin.EditValue)
+                                            .AddHours(23)
+                                            .AddMinutes(59)
+                                            .AddSeconds(59),
+                                    CodigoBodega = BodegaSeleccionda,
+                                    CodigosClientesErpCanalModerno = codigosClientesErpCanalModerno.ToString(),
+                                    DocNum = UiSpinNumeroDocumentoControl.EditValue.ToString()
+                                });
+                                break;
                             case TipoFuenteDemandaDespacho.OrdenVentaErp:
                                 UsuarioDeseaObtenerOrdenesDeVentaPorFecha?.Invoke(sender, new OrdenDeVentaArgumento
                                 {
@@ -1812,7 +1826,8 @@ namespace MobilityScm.Modelo.Vistas
                         UiComboFuente.EditValue.ToString());
                 var usaNext =
                     Parametros.FirstOrDefault(x => x.PARAMETER_ID == Enums.GetStringValue(IdParametro.TieneNext));
-                switch (fuente)
+                TipoFuente = fuente == 0 ? TipoFuenteDemandaDespacho.OrdenDeEntrega : fuente;
+                switch (TipoFuente)
                 {
                     case TipoFuenteDemandaDespacho.OrdenDeEntrega:
                     case TipoFuenteDemandaDespacho.OrdenVentaErp:
@@ -1831,7 +1846,6 @@ namespace MobilityScm.Modelo.Vistas
                         UiEspacioMapa.Visibility = LayoutVisibility.Never;
 
                         UiEtiquetaEncabezado.Text = @"Órdenes De Venta";
-                        TipoFuente = TipoFuenteDemandaDespacho.OrdenVentaErp;
 
                         UiPaginaVehiculos.PageVisible = (usaNext != null && usaNext.VALUE == ((int)SiNo.Si).ToString());
                         UiSpinNumeroDocumento.Visibility = LayoutVisibility.Always;
@@ -1853,7 +1867,6 @@ namespace MobilityScm.Modelo.Vistas
                         UiSeparadorLineaPicking.Visibility = PermisoLineaDePicking
                             ? LayoutVisibility.Always
                             : LayoutVisibility.Never;
-                        TipoFuente = TipoFuenteDemandaDespacho.OrdenVentaSonda;
                         UiEspacioMapa.Visibility = (usaNext != null && usaNext.VALUE == ((int)SiNo.Si).ToString()
                             ? LayoutVisibility.Always
                             : LayoutVisibility.Never);
@@ -1875,7 +1888,6 @@ namespace MobilityScm.Modelo.Vistas
                         UiSeparadorUbicacionSalida.Visibility = LayoutVisibility.Always;
                         UiEspacioLinea.Visibility = LayoutVisibility.Never;
                         UiSeparadorLineaPicking.Visibility = LayoutVisibility.Never;
-                        TipoFuente = TipoFuenteDemandaDespacho.SolicitudTrasladoWms;
                         UiEspacioMapa.Visibility = LayoutVisibility.Never;
                         FiltroDeUsaLineaDePicking = (int)Tipos.UsaLineaDePicking.Ambas;
                         UiListaUsaLineaDePicking.EditValue = FiltroDeUsaLineaDePicking;
@@ -1896,7 +1908,6 @@ namespace MobilityScm.Modelo.Vistas
                         UiSeparadorRutaYVendedor.Visibility = LayoutVisibility.Never;
                         UiEspacioMapa.Visibility = LayoutVisibility.Never;
                         UiSwiftConsolidado.Visibility = BarItemVisibility.Never;
-                        TipoFuente = TipoFuenteDemandaDespacho.SolicitudTrasladoErp;
                         FiltroDeUsaLineaDePicking = (int)Tipos.UsaLineaDePicking.Ambas;
                         UiListaUsaLineaDePicking.EditValue = FiltroDeUsaLineaDePicking;
 

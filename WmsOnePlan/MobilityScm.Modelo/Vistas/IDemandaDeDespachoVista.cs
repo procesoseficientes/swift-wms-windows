@@ -10,6 +10,7 @@ namespace MobilityScm.Modelo.Vistas
     public interface IDemandaDeDespachoVista
     {
         event EventHandler<OrdenDeVentaArgumento> UsuarioDeseaObtenerOrdenesDeVentaPorFecha;
+        event EventHandler<OrdenDeVentaArgumento> UsuarioDeseaObtenerOrdenesDeEntregaPorFecha;
         event EventHandler<SkuArgumento> UsuarioDeseaValidarInventarioParaOrdenDeVenta;
         event EventHandler<OrdenDeVentaArgumento> UsuarioDeseaMarcarOrdenDeVentaConPicking;
         event EventHandler UsuarioDeseaObtenerRutas;

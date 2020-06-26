@@ -111,6 +111,39 @@ namespace MobilityScm.Modelo.Servicios
             return BaseDeDatosServicio.ExecuteQuery<OrdenDeVentaEncabezado>(BaseDeDatosServicio.Esquema + ".OP_WMS_SP_GET_SALES_ORDER_BY_DATE_FROM_EXTERNAL_SOURCE", CommandType.StoredProcedure, parameters).ToList();
         }
 
+        public IList<OrdenDeVentaEncabezado> ObtenerOrdenesDeEntregaPorFecha(OrdenDeVentaArgumento ordenDeVentaArgumento)
+        {
+            DbParameter[] parameters =
+           {
+               new OAParameter
+               {
+                   ParameterName = "@START_DATE",
+                   Value = ordenDeVentaArgumento.FechaInicio
+               },
+               new OAParameter
+               {
+                   ParameterName = "@END_DATE",
+                   Value = ordenDeVentaArgumento.FechaFin
+               },
+               new OAParameter
+               {
+                   ParameterName = "@WAREHOUSE_CODE",
+                   Value = ordenDeVentaArgumento.CodigoBodega
+               },
+               new OAParameter
+               {
+                   ParameterName = "@CLIENTS",
+                   Value = ordenDeVentaArgumento.CodigosClientesErpCanalModerno
+               },
+               new OAParameter
+               {
+                   ParameterName = "@DOC_NUM",
+                   Value = ordenDeVentaArgumento.DocNum
+               }
+           };
+            return BaseDeDatosServicio.ExecuteQuery<OrdenDeVentaEncabezado>(BaseDeDatosServicio.Esquema + ".OP_WMS_GET_ERP_DELIVERY_ORDER_HEADER", CommandType.StoredProcedure, parameters).ToList();
+        }
+
         public IList<OrdenDeVentaDetalle> ObtenerOrdenVentaDetalle(OrdenDeVentaEncabezado encabezado)
         {
             DbParameter[] parameters =
@@ -128,7 +161,7 @@ namespace MobilityScm.Modelo.Servicios
            };
             return BaseDeDatosServicio.ExecuteQuery<OrdenDeVentaDetalle>(BaseDeDatosServicio.Esquema + ".OP_WMS_SP_GET_SALE_ORDER_DETAIL_FROM_EXTERNAL", CommandType.StoredProcedure, parameters).ToList();
         }
-
+        
         public IList<Sku> ValidarInventarioParaOrdenDeVenta(SkuArgumento skuArgumento)
         {
             DbParameter[] parameters =

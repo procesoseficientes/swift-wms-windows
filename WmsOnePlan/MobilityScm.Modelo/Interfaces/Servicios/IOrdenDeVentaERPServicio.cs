@@ -11,6 +11,7 @@ namespace MobilityScm.Modelo.Interfaces.Servicios
         IList<OrdenDeVentaDetalle> ObtenerOrdenVentaDetalle(OrdenDeVentaArgumento argumento);
         IList<OrdenDeVentaPendiente> ObtenerOrdenVentaPendientes(OrdenDeVentaArgumento ordenDeVentaArgumento);
         IList<OrdenDeVentaDetalle> ObtenerOrdenVentaDetalleDeOrdenes(OrdenDeVentaArgumento argumento);
+        IList<OrdenDeVentaDetalle> ObtenerOrdenDeEntregaDetalle(OrdenDeVentaArgumento argumento);
         IList<MaterialConTonoYCalibre> ObtenerTonosYCalibresDeMateriales(SkuArgumento skuArgumento);
         IList<OrdenDeVentaReporte> ObtenerOrdenesParaReporteDeTrazabilidad(OrdenDeVentaArgumento arg);
     }
