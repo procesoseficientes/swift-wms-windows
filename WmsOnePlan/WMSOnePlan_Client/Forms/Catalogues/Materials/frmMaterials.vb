@@ -89,6 +89,7 @@ Public Class frmMaterials
             .TiempoDeEspera = 0
             .Proveedor = ""
             .NombreProveedor = ""
+            .ToleranciaDeExpiracion = 0
             UiPropiedadDeDatosGenerales.SelectedObject = Bag_Materials_Class
             UiPropiedadDeDatosGenerales.Refresh()
         End With
@@ -382,6 +383,8 @@ Public Class frmMaterials
                 .TiempoDeEspera = IIf(IsDBNull(xdata.Tables(0).Rows(0)("LEAD_TIME")), "0.00", xdata.Tables(0).Rows(0)("LEAD_TIME"))
                 .Proveedor = xdata.Tables(0).Rows(0)("SUPPLIER").ToString
                 .NombreProveedor = xdata.Tables(0).Rows(0)("NAME_SUPPLIER").ToString
+                .ToleranciaDeExpiracion = IIf(IsDBNull(xdata.Tables(0).Rows(0)("EXPIRATION_TOLERANCE")), "0.00", xdata.Tables(0).Rows(0)("EXPIRATION_TOLERANCE"))
+
 
             End With
 

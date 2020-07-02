@@ -1111,7 +1111,7 @@ Partial Class frmMaterials
         Me.PropiedadDeDatosGenerales_EXPIRATION_TOLERANCE.Name = "PropiedadDeDatosGenerales_EXPIRATION_TOLERANCE"
         Me.PropiedadDeDatosGenerales_EXPIRATION_TOLERANCE.Properties.Caption = "Tolerancia días de expiración en recepción"
         Me.PropiedadDeDatosGenerales_EXPIRATION_TOLERANCE.Properties.CustomizationCaption = "Tolerancia días de expiración en recepción"
-        Me.PropiedadDeDatosGenerales_EXPIRATION_TOLERANCE.Properties.FieldName = "TpleranciaDeExpiracion"
+        Me.PropiedadDeDatosGenerales_EXPIRATION_TOLERANCE.Properties.FieldName = "ToleranciaDeExpiracion"
         Me.PropiedadDeDatosGenerales_EXPIRATION_TOLERANCE.Properties.ReadOnly = False
         Me.PropiedadDeDatosGenerales_EXPIRATION_TOLERANCE.Properties.ToolTip = "Tolerancia días de expiración en recepción"
         '
