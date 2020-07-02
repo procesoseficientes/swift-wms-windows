@@ -57,6 +57,7 @@
     <Compile Include="Argumentos\BalanceDeSaldosFiscalArgumento.cs" />
     <Compile Include="Argumentos\CajaArgumento.cs" />
     <Compile Include="Argumentos\ClaseArgumento.cs" />
+    <Compile Include="Argumentos\BodegaArgumento.cs" />
     <Compile Include="Argumentos\InventarioComprometidoArgumento.cs" />
     <Compile Include="Argumentos\InventarioInactivoArgumento.cs" />
     <Compile Include="Argumentos\OlaDePickingDeDemandaDespachoArgumento.cs" />

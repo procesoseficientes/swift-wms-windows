@@ -3601,6 +3601,7 @@
             this.UIListaBodega.StyleController = this.layoutControl1;
             this.UIListaBodega.TabIndex = 8;
             this.UIListaBodega.EditValueChanged += new System.EventHandler(this.UIListaBodega_EditValueChanged);
+            this.UIListaBodega.Properties.KeyMember = "UiColCodigoBodega";
             // 
             // UiListaVistaBodega
             // 
