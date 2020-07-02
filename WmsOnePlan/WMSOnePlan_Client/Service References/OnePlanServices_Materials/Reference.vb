@@ -19,44 +19,45 @@ Namespace OnePlanServices_Materials
      System.ServiceModel.ServiceContractAttribute(ConfigurationName:="OnePlanServices_Materials.WMS_MaterialsSoap")>  _
     Public Interface WMS_MaterialsSoap
         
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/CreateMaterials", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function CreateMaterials( _
-                    ByVal pCLIENT_OWNER As String,  _
-                    ByVal pMATERIAL_ID As String,  _
-                    ByVal pBARCODE_ID As String,  _
-                    ByVal pALTERNATE_BARCODE As String,  _
-                    ByVal pMATERIAL_NAME As String,  _
-                    ByVal pSHORT_NAME As String,  _
-                    ByVal pVOLUME_FACTOR As Double,  _
-                    ByVal pMATERIAL_CLASS As String,  _
-                    ByVal pMATERIAL_SUB_CLASS As String,  _
-                    ByVal pHIGH As Double,  _
-                    ByVal pLENGTH As Double,  _
-                    ByVal pWIDTH As Double,  _
-                    ByVal pMAX_X_BIN As Integer,  _
-                    ByVal pSCAN_BY_ONE As Integer,  _
-                    ByVal pREQUIRES_LOGISTICS_INFO As Integer,  _
-                    ByVal pWEIGTH As Double,  _
-                    ByVal pLAST_UPDATED_BY As String,  _
-                    ByVal pIS_CAR As Integer,  _
-                    ByVal pBatchRequested As Integer,  _
-                    ByRef resultado As String,  _
-                    ByVal ambiente As String,  _
-                    ByVal serialNumberRequests As Integer,  _
-                    ByVal isMasterPack As Integer,  _
-                    ByVal weightMeasurement As String,  _
-                    ByVal explodeInReception As Integer,  _
-                    ByVal handleTone As Integer,  _
-                    ByVal handleCaliber As Integer,  _
-                    ByVal usePickingLine As String,  _
-                    ByVal pQUALITY_CONTROL As Integer,  _
-                    ByVal PREFIX_CORRELATIVE_SERIALS As String,  _
-                    ByVal HANDLE_CORRELATIVE_SERIALS As Integer,  _
-                    ByVal LEAD_TIME As Integer,  _
-                    ByVal SUPPLIER As String,  _
-                    ByVal NAME_SUPPLIER As String) As Boolean
-        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/CreateMaterials", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function CreateMaterials(
+                    ByVal pCLIENT_OWNER As String,
+                    ByVal pMATERIAL_ID As String,
+                    ByVal pBARCODE_ID As String,
+                    ByVal pALTERNATE_BARCODE As String,
+                    ByVal pMATERIAL_NAME As String,
+                    ByVal pSHORT_NAME As String,
+                    ByVal pVOLUME_FACTOR As Double,
+                    ByVal pMATERIAL_CLASS As String,
+                    ByVal pMATERIAL_SUB_CLASS As String,
+                    ByVal pHIGH As Double,
+                    ByVal pLENGTH As Double,
+                    ByVal pWIDTH As Double,
+                    ByVal pMAX_X_BIN As Integer,
+                    ByVal pSCAN_BY_ONE As Integer,
+                    ByVal pREQUIRES_LOGISTICS_INFO As Integer,
+                    ByVal pWEIGTH As Double,
+                    ByVal pLAST_UPDATED_BY As String,
+                    ByVal pIS_CAR As Integer,
+                    ByVal pBatchRequested As Integer,
+                    ByRef resultado As String,
+                    ByVal ambiente As String,
+                    ByVal serialNumberRequests As Integer,
+                    ByVal isMasterPack As Integer,
+                    ByVal weightMeasurement As String,
+                    ByVal explodeInReception As Integer,
+                    ByVal handleTone As Integer,
+                    ByVal handleCaliber As Integer,
+                    ByVal usePickingLine As String,
+                    ByVal pQUALITY_CONTROL As Integer,
+                    ByVal PREFIX_CORRELATIVE_SERIALS As String,
+                    ByVal HANDLE_CORRELATIVE_SERIALS As Integer,
+                    ByVal LEAD_TIME As Integer,
+                    ByVal SUPPLIER As String,
+                    ByVal NAME_SUPPLIER As String,
+                    ByVal EXPIRATION_TOLERANCE As Integer) As Boolean
+
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/SearchByBarCodeMultipleClients", ReplyAction:="*"),  _
          System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
         Function SearchByBarCodeMultipleClients(ByVal pBARCODE_ID As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet
@@ -73,44 +74,45 @@ Namespace OnePlanServices_Materials
          System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
         Function ObtenerMaterialPorCodigoDeBarraYLicencia(ByVal codigoBarra As String, ByVal cliente As String, ByVal licencia As Integer, ByVal tarea As Integer, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataTable
         
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/UpdateMaterials", ReplyAction:="*"),  _
-         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function UpdateMaterials( _
-                    ByVal pCLIENT_OWNER As String,  _
-                    ByVal pMATERIAL_ID As String,  _
-                    ByVal pBARCODE_ID As String,  _
-                    ByVal pALTERNATE_BARCODE As String,  _
-                    ByVal pMATERIAL_NAME As String,  _
-                    ByVal pSHORT_NAME As String,  _
-                    ByVal pVOLUME_FACTOR As Double,  _
-                    ByVal pMATERIAL_CLASS As String,  _
-                    ByVal pMATERIAL_SUB_CLASS As String,  _
-                    ByVal pHIGH As Double,  _
-                    ByVal pLENGTH As Double,  _
-                    ByVal pWIDTH As Double,  _
-                    ByVal pMAX_X_BIN As Integer,  _
-                    ByVal pSCAN_BY_ONE As Integer,  _
-                    ByVal pREQUIRES_LOGISTICS_INFO As Integer,  _
-                    ByVal pWEIGTH As Decimal,  _
-                    ByVal pLAST_UPDATED_BY As String,  _
-                    ByVal IS_CAR As Integer,  _
-                    ByVal pBatchRequested As Integer,  _
-                    ByRef resultado As String,  _
-                    ByVal ambiente As String,  _
-                    ByVal serialNumberRequests As Integer,  _
-                    ByVal isMasterPack As Integer,  _
-                    ByVal weightMeasurement As String,  _
-                    ByVal explodeInReception As Integer,  _
-                    ByVal handleTone As Integer,  _
-                    ByVal handleCaliber As Integer,  _
-                    ByVal usePickingLine As String,  _
-                    ByVal pQUALITY_CONTROL As Integer,  _
-                    ByVal PREFIX_CORRELATIVE_SERIALS As String,  _
-                    ByVal HANDLE_CORRELATIVE_SERIALS As Integer,  _
-                    ByVal LEAD_TIME As Integer,  _
-                    ByVal SUPPLIER As String,  _
-                    ByVal NAME_SUPPLIER As String) As Boolean
-        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/UpdateMaterials", ReplyAction:="*"),
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=True)>
+        Function UpdateMaterials(
+                    ByVal pCLIENT_OWNER As String,
+                    ByVal pMATERIAL_ID As String,
+                    ByVal pBARCODE_ID As String,
+                    ByVal pALTERNATE_BARCODE As String,
+                    ByVal pMATERIAL_NAME As String,
+                    ByVal pSHORT_NAME As String,
+                    ByVal pVOLUME_FACTOR As Double,
+                    ByVal pMATERIAL_CLASS As String,
+                    ByVal pMATERIAL_SUB_CLASS As String,
+                    ByVal pHIGH As Double,
+                    ByVal pLENGTH As Double,
+                    ByVal pWIDTH As Double,
+                    ByVal pMAX_X_BIN As Integer,
+                    ByVal pSCAN_BY_ONE As Integer,
+                    ByVal pREQUIRES_LOGISTICS_INFO As Integer,
+                    ByVal pWEIGTH As Decimal,
+                    ByVal pLAST_UPDATED_BY As String,
+                    ByVal IS_CAR As Integer,
+                    ByVal pBatchRequested As Integer,
+                    ByRef resultado As String,
+                    ByVal ambiente As String,
+                    ByVal serialNumberRequests As Integer,
+                    ByVal isMasterPack As Integer,
+                    ByVal weightMeasurement As String,
+                    ByVal explodeInReception As Integer,
+                    ByVal handleTone As Integer,
+                    ByVal handleCaliber As Integer,
+                    ByVal usePickingLine As String,
+                    ByVal pQUALITY_CONTROL As Integer,
+                    ByVal PREFIX_CORRELATIVE_SERIALS As String,
+                    ByVal HANDLE_CORRELATIVE_SERIALS As Integer,
+                    ByVal LEAD_TIME As Integer,
+                    ByVal SUPPLIER As String,
+                    ByVal NAME_SUPPLIER As String,
+                    ByVal EXPIRATION_TOLERANCE As Integer) As Boolean
+
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/DeleteMaterials", ReplyAction:="*"),  _
          System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
         Function DeleteMaterials(ByVal pBARCODE_ID As String, ByVal pCLIENT_OWNER As String, ByRef pResult As String, ByVal pEnvironmentName As String) As Boolean
@@ -390,45 +392,46 @@ Namespace OnePlanServices_Materials
         Public Sub New(ByVal binding As System.ServiceModel.Channels.Binding, ByVal remoteAddress As System.ServiceModel.EndpointAddress)
             MyBase.New(binding, remoteAddress)
         End Sub
-        
-        Public Function CreateMaterials( _
-                    ByVal pCLIENT_OWNER As String,  _
-                    ByVal pMATERIAL_ID As String,  _
-                    ByVal pBARCODE_ID As String,  _
-                    ByVal pALTERNATE_BARCODE As String,  _
-                    ByVal pMATERIAL_NAME As String,  _
-                    ByVal pSHORT_NAME As String,  _
-                    ByVal pVOLUME_FACTOR As Double,  _
-                    ByVal pMATERIAL_CLASS As String,  _
-                    ByVal pMATERIAL_SUB_CLASS As String,  _
-                    ByVal pHIGH As Double,  _
-                    ByVal pLENGTH As Double,  _
-                    ByVal pWIDTH As Double,  _
-                    ByVal pMAX_X_BIN As Integer,  _
-                    ByVal pSCAN_BY_ONE As Integer,  _
-                    ByVal pREQUIRES_LOGISTICS_INFO As Integer,  _
-                    ByVal pWEIGTH As Double,  _
-                    ByVal pLAST_UPDATED_BY As String,  _
-                    ByVal pIS_CAR As Integer,  _
-                    ByVal pBatchRequested As Integer,  _
-                    ByRef resultado As String,  _
-                    ByVal ambiente As String,  _
-                    ByVal serialNumberRequests As Integer,  _
-                    ByVal isMasterPack As Integer,  _
-                    ByVal weightMeasurement As String,  _
-                    ByVal explodeInReception As Integer,  _
-                    ByVal handleTone As Integer,  _
-                    ByVal handleCaliber As Integer,  _
-                    ByVal usePickingLine As String,  _
-                    ByVal pQUALITY_CONTROL As Integer,  _
-                    ByVal PREFIX_CORRELATIVE_SERIALS As String,  _
-                    ByVal HANDLE_CORRELATIVE_SERIALS As Integer,  _
-                    ByVal LEAD_TIME As Integer,  _
-                    ByVal SUPPLIER As String,  _
-                    ByVal NAME_SUPPLIER As String) As Boolean Implements OnePlanServices_Materials.WMS_MaterialsSoap.CreateMaterials
-            Return MyBase.Channel.CreateMaterials(pCLIENT_OWNER, pMATERIAL_ID, pBARCODE_ID, pALTERNATE_BARCODE, pMATERIAL_NAME, pSHORT_NAME, pVOLUME_FACTOR, pMATERIAL_CLASS, pMATERIAL_SUB_CLASS, pHIGH, pLENGTH, pWIDTH, pMAX_X_BIN, pSCAN_BY_ONE, pREQUIRES_LOGISTICS_INFO, pWEIGTH, pLAST_UPDATED_BY, pIS_CAR, pBatchRequested, resultado, ambiente, serialNumberRequests, isMasterPack, weightMeasurement, explodeInReception, handleTone, handleCaliber, usePickingLine, pQUALITY_CONTROL, PREFIX_CORRELATIVE_SERIALS, HANDLE_CORRELATIVE_SERIALS, LEAD_TIME, SUPPLIER, NAME_SUPPLIER)
+
+        Public Function CreateMaterials(
+                    ByVal pCLIENT_OWNER As String,
+                    ByVal pMATERIAL_ID As String,
+                    ByVal pBARCODE_ID As String,
+                    ByVal pALTERNATE_BARCODE As String,
+                    ByVal pMATERIAL_NAME As String,
+                    ByVal pSHORT_NAME As String,
+                    ByVal pVOLUME_FACTOR As Double,
+                    ByVal pMATERIAL_CLASS As String,
+                    ByVal pMATERIAL_SUB_CLASS As String,
+                    ByVal pHIGH As Double,
+                    ByVal pLENGTH As Double,
+                    ByVal pWIDTH As Double,
+                    ByVal pMAX_X_BIN As Integer,
+                    ByVal pSCAN_BY_ONE As Integer,
+                    ByVal pREQUIRES_LOGISTICS_INFO As Integer,
+                    ByVal pWEIGTH As Double,
+                    ByVal pLAST_UPDATED_BY As String,
+                    ByVal pIS_CAR As Integer,
+                    ByVal pBatchRequested As Integer,
+                    ByRef resultado As String,
+                    ByVal ambiente As String,
+                    ByVal serialNumberRequests As Integer,
+                    ByVal isMasterPack As Integer,
+                    ByVal weightMeasurement As String,
+                    ByVal explodeInReception As Integer,
+                    ByVal handleTone As Integer,
+                    ByVal handleCaliber As Integer,
+                    ByVal usePickingLine As String,
+                    ByVal pQUALITY_CONTROL As Integer,
+                    ByVal PREFIX_CORRELATIVE_SERIALS As String,
+                    ByVal HANDLE_CORRELATIVE_SERIALS As Integer,
+                    ByVal LEAD_TIME As Integer,
+                    ByVal SUPPLIER As String,
+                    ByVal NAME_SUPPLIER As String,
+                    ByVal EXPIRATION_TOLERANCE As Integer) As Boolean Implements OnePlanServices_Materials.WMS_MaterialsSoap.CreateMaterials
+            Return MyBase.Channel.CreateMaterials(pCLIENT_OWNER, pMATERIAL_ID, pBARCODE_ID, pALTERNATE_BARCODE, pMATERIAL_NAME, pSHORT_NAME, pVOLUME_FACTOR, pMATERIAL_CLASS, pMATERIAL_SUB_CLASS, pHIGH, pLENGTH, pWIDTH, pMAX_X_BIN, pSCAN_BY_ONE, pREQUIRES_LOGISTICS_INFO, pWEIGTH, pLAST_UPDATED_BY, pIS_CAR, pBatchRequested, resultado, ambiente, serialNumberRequests, isMasterPack, weightMeasurement, explodeInReception, handleTone, handleCaliber, usePickingLine, pQUALITY_CONTROL, PREFIX_CORRELATIVE_SERIALS, HANDLE_CORRELATIVE_SERIALS, LEAD_TIME, SUPPLIER, NAME_SUPPLIER, EXPIRATION_TOLERANCE)
         End Function
-        
+
         Public Function SearchByBarCodeMultipleClients(ByVal pBARCODE_ID As String, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_Materials.WMS_MaterialsSoap.SearchByBarCodeMultipleClients
             Return MyBase.Channel.SearchByBarCodeMultipleClients(pBARCODE_ID, pResult, pEnvironmentName)
         End Function
@@ -444,45 +447,46 @@ Namespace OnePlanServices_Materials
         Public Function ObtenerMaterialPorCodigoDeBarraYLicencia(ByVal codigoBarra As String, ByVal cliente As String, ByVal licencia As Integer, ByVal tarea As Integer, ByRef pResult As String, ByVal pEnvironmentName As String) As System.Data.DataTable Implements OnePlanServices_Materials.WMS_MaterialsSoap.ObtenerMaterialPorCodigoDeBarraYLicencia
             Return MyBase.Channel.ObtenerMaterialPorCodigoDeBarraYLicencia(codigoBarra, cliente, licencia, tarea, pResult, pEnvironmentName)
         End Function
-        
-        Public Function UpdateMaterials( _
-                    ByVal pCLIENT_OWNER As String,  _
-                    ByVal pMATERIAL_ID As String,  _
-                    ByVal pBARCODE_ID As String,  _
-                    ByVal pALTERNATE_BARCODE As String,  _
-                    ByVal pMATERIAL_NAME As String,  _
-                    ByVal pSHORT_NAME As String,  _
-                    ByVal pVOLUME_FACTOR As Double,  _
-                    ByVal pMATERIAL_CLASS As String,  _
-                    ByVal pMATERIAL_SUB_CLASS As String,  _
-                    ByVal pHIGH As Double,  _
-                    ByVal pLENGTH As Double,  _
-                    ByVal pWIDTH As Double,  _
-                    ByVal pMAX_X_BIN As Integer,  _
-                    ByVal pSCAN_BY_ONE As Integer,  _
-                    ByVal pREQUIRES_LOGISTICS_INFO As Integer,  _
-                    ByVal pWEIGTH As Decimal,  _
-                    ByVal pLAST_UPDATED_BY As String,  _
-                    ByVal IS_CAR As Integer,  _
-                    ByVal pBatchRequested As Integer,  _
-                    ByRef resultado As String,  _
-                    ByVal ambiente As String,  _
-                    ByVal serialNumberRequests As Integer,  _
-                    ByVal isMasterPack As Integer,  _
-                    ByVal weightMeasurement As String,  _
-                    ByVal explodeInReception As Integer,  _
-                    ByVal handleTone As Integer,  _
-                    ByVal handleCaliber As Integer,  _
-                    ByVal usePickingLine As String,  _
-                    ByVal pQUALITY_CONTROL As Integer,  _
-                    ByVal PREFIX_CORRELATIVE_SERIALS As String,  _
-                    ByVal HANDLE_CORRELATIVE_SERIALS As Integer,  _
-                    ByVal LEAD_TIME As Integer,  _
-                    ByVal SUPPLIER As String,  _
-                    ByVal NAME_SUPPLIER As String) As Boolean Implements OnePlanServices_Materials.WMS_MaterialsSoap.UpdateMaterials
-            Return MyBase.Channel.UpdateMaterials(pCLIENT_OWNER, pMATERIAL_ID, pBARCODE_ID, pALTERNATE_BARCODE, pMATERIAL_NAME, pSHORT_NAME, pVOLUME_FACTOR, pMATERIAL_CLASS, pMATERIAL_SUB_CLASS, pHIGH, pLENGTH, pWIDTH, pMAX_X_BIN, pSCAN_BY_ONE, pREQUIRES_LOGISTICS_INFO, pWEIGTH, pLAST_UPDATED_BY, IS_CAR, pBatchRequested, resultado, ambiente, serialNumberRequests, isMasterPack, weightMeasurement, explodeInReception, handleTone, handleCaliber, usePickingLine, pQUALITY_CONTROL, PREFIX_CORRELATIVE_SERIALS, HANDLE_CORRELATIVE_SERIALS, LEAD_TIME, SUPPLIER, NAME_SUPPLIER)
+
+        Public Function UpdateMaterials(
+                    ByVal pCLIENT_OWNER As String,
+                    ByVal pMATERIAL_ID As String,
+                    ByVal pBARCODE_ID As String,
+                    ByVal pALTERNATE_BARCODE As String,
+                    ByVal pMATERIAL_NAME As String,
+                    ByVal pSHORT_NAME As String,
+                    ByVal pVOLUME_FACTOR As Double,
+                    ByVal pMATERIAL_CLASS As String,
+                    ByVal pMATERIAL_SUB_CLASS As String,
+                    ByVal pHIGH As Double,
+                    ByVal pLENGTH As Double,
+                    ByVal pWIDTH As Double,
+                    ByVal pMAX_X_BIN As Integer,
+                    ByVal pSCAN_BY_ONE As Integer,
+                    ByVal pREQUIRES_LOGISTICS_INFO As Integer,
+                    ByVal pWEIGTH As Decimal,
+                    ByVal pLAST_UPDATED_BY As String,
+                    ByVal IS_CAR As Integer,
+                    ByVal pBatchRequested As Integer,
+                    ByRef resultado As String,
+                    ByVal ambiente As String,
+                    ByVal serialNumberRequests As Integer,
+                    ByVal isMasterPack As Integer,
+                    ByVal weightMeasurement As String,
+                    ByVal explodeInReception As Integer,
+                    ByVal handleTone As Integer,
+                    ByVal handleCaliber As Integer,
+                    ByVal usePickingLine As String,
+                    ByVal pQUALITY_CONTROL As Integer,
+                    ByVal PREFIX_CORRELATIVE_SERIALS As String,
+                    ByVal HANDLE_CORRELATIVE_SERIALS As Integer,
+                    ByVal LEAD_TIME As Integer,
+                    ByVal SUPPLIER As String,
+                    ByVal NAME_SUPPLIER As String,
+                    ByVal EXPIRATION_TOLERANCE As Integer) As Boolean Implements OnePlanServices_Materials.WMS_MaterialsSoap.UpdateMaterials
+            Return MyBase.Channel.UpdateMaterials(pCLIENT_OWNER, pMATERIAL_ID, pBARCODE_ID, pALTERNATE_BARCODE, pMATERIAL_NAME, pSHORT_NAME, pVOLUME_FACTOR, pMATERIAL_CLASS, pMATERIAL_SUB_CLASS, pHIGH, pLENGTH, pWIDTH, pMAX_X_BIN, pSCAN_BY_ONE, pREQUIRES_LOGISTICS_INFO, pWEIGTH, pLAST_UPDATED_BY, IS_CAR, pBatchRequested, resultado, ambiente, serialNumberRequests, isMasterPack, weightMeasurement, explodeInReception, handleTone, handleCaliber, usePickingLine, pQUALITY_CONTROL, PREFIX_CORRELATIVE_SERIALS, HANDLE_CORRELATIVE_SERIALS, LEAD_TIME, SUPPLIER, NAME_SUPPLIER, EXPIRATION_TOLERANCE)
         End Function
-        
+
         Public Function DeleteMaterials(ByVal pBARCODE_ID As String, ByVal pCLIENT_OWNER As String, ByRef pResult As String, ByVal pEnvironmentName As String) As Boolean Implements OnePlanServices_Materials.WMS_MaterialsSoap.DeleteMaterials
             Return MyBase.Channel.DeleteMaterials(pBARCODE_ID, pCLIENT_OWNER, pResult, pEnvironmentName)
         End Function
