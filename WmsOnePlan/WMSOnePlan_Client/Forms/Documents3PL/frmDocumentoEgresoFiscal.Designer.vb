@@ -189,6 +189,8 @@ Partial Class frmDocumentoEgresoFiscal
         Me.GridBand1 = New DevExpress.XtraGrid.Views.BandedGrid.GridBand()
         Me.colNUMEROLINEA = New DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn()
         Me.colDESCRIPCIONPRODUCTO = New DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn()
+        Me.colMaterialId = New DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn()
+
         Me.colBULTOS = New DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn()
         Me.colPOLIZAORIGEN = New DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn()
         Me.colDOCUMENTOORIGEN = New DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn()
@@ -2123,7 +2125,7 @@ Partial Class frmDocumentoEgresoFiscal
         Me.GridViewDetalle.Appearance.FooterPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.GridViewDetalle.Appearance.FooterPanel.Options.UseBackColor = True
         Me.GridViewDetalle.Bands.AddRange(New DevExpress.XtraGrid.Views.BandedGrid.GridBand() {Me.GridBand1})
-        Me.GridViewDetalle.Columns.AddRange(New DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn() {Me.colNUMEROLINEA, Me.colDESCRIPCIONPRODUCTO, Me.colBULTOS, Me.colCANTIDAD, Me.colCLIENT_CODED, Me.colCONSIGNATARIO_NAMED, Me.colUNIDADCANTIDAD, Me.colVALORADUANA, Me.colVALORDAI, Me.colVALORIVA, Me.colCLASE, Me.colPESONETO, Me.colUNIDADPESO, Me.colVOLUMEN, Me.colUNIDADVOLUMEN, Me.colCODIGOSAC, Me.colIMPUESTOSVARIOS, Me.colGASTOSVARIOS, Me.colPAISORIGEN, Me.colFOBUSD, Me.colFLETEUSD, Me.colSEGUROUSD, Me.colREGIONCP, Me.colACUERDO1, Me.colACUERDO2, Me.colPOLIZARELACIONADA, Me.colACTUALIZADAPOR, Me.colACTUALIZADAEL, Me.colDOCUMENTOORIGEN, Me.colPOLIZAORIGEN, Me.colACUERDOCOMERCIAL, Me.colCONSIGNATARIO, Me.colPCTDAI, Me.colORIGIN_LINE_NUMBER, Me.colNUMEROODERORIGEN})
+        Me.GridViewDetalle.Columns.AddRange(New DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn() {Me.colNUMEROLINEA, Me.colMaterialId, Me.colDESCRIPCIONPRODUCTO, Me.colBULTOS, Me.colCANTIDAD, Me.colCLIENT_CODED, Me.colCONSIGNATARIO_NAMED, Me.colUNIDADCANTIDAD, Me.colVALORADUANA, Me.colVALORDAI, Me.colVALORIVA, Me.colCLASE, Me.colPESONETO, Me.colUNIDADPESO, Me.colVOLUMEN, Me.colUNIDADVOLUMEN, Me.colCODIGOSAC, Me.colIMPUESTOSVARIOS, Me.colGASTOSVARIOS, Me.colPAISORIGEN, Me.colFOBUSD, Me.colFLETEUSD, Me.colSEGUROUSD, Me.colREGIONCP, Me.colACUERDO1, Me.colACUERDO2, Me.colPOLIZARELACIONADA, Me.colACTUALIZADAPOR, Me.colACTUALIZADAEL, Me.colDOCUMENTOORIGEN, Me.colPOLIZAORIGEN, Me.colACUERDOCOMERCIAL, Me.colCONSIGNATARIO, Me.colPCTDAI, Me.colORIGIN_LINE_NUMBER, Me.colNUMEROODERORIGEN})
         Me.GridViewDetalle.CustomizationFormBounds = New System.Drawing.Rectangle(980, 605, 432, 400)
         Me.GridViewDetalle.DetailHeight = 673
         Me.GridViewDetalle.FixedLineWidth = 4
@@ -2142,6 +2144,7 @@ Partial Class frmDocumentoEgresoFiscal
         '
         Me.GridBand1.Caption = "Productos contenidos en el documento"
         Me.GridBand1.Columns.Add(Me.colNUMEROLINEA)
+        Me.GridBand1.Columns.Add(Me.colMaterialId)
         Me.GridBand1.Columns.Add(Me.colDESCRIPCIONPRODUCTO)
         Me.GridBand1.Columns.Add(Me.colBULTOS)
         Me.GridBand1.Columns.Add(Me.colPOLIZAORIGEN)
@@ -2165,6 +2168,15 @@ Partial Class frmDocumentoEgresoFiscal
         Me.colNUMEROLINEA.Name = "colNUMEROLINEA"
         Me.colNUMEROLINEA.Visible = True
         Me.colNUMEROLINEA.Width = 212
+        '
+        'colMaterialId
+        '
+        Me.colMaterialId.Caption = "MATERIAL ID"
+        Me.colMaterialId.FieldName = "MATERIAL_ID"
+        Me.colMaterialId.MinWidth = 40
+        Me.colMaterialId.Name = "colMaterialId"
+        Me.colMaterialId.Visible = True
+        Me.colMaterialId.Width = 336
         '
         'colDESCRIPCIONPRODUCTO
         '
@@ -3430,6 +3442,7 @@ End Sub
     Friend WithEvents GridDetalle As DevExpress.XtraGrid.GridControl
     Friend WithEvents GridViewDetalle As DevExpress.XtraGrid.Views.BandedGrid.AdvBandedGridView
     Friend WithEvents colNUMEROLINEA As DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn
+    Friend WithEvents colMaterialId As DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn
     Friend WithEvents colDESCRIPCIONPRODUCTO As DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn
     Friend WithEvents colBULTOS As DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn
     Friend WithEvents colVALORADUANA As DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn
