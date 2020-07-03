@@ -16,6 +16,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modelo", "Modelo", "{ABE7B544-9AFF-45FF-A341-B73C126DFB60}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobilityScm.Modelo", "MobilityScm.Modelo\MobilityScm.Modelo.csproj", "{3DBA5BC7-059F-41CE-9692-C4E875FA6D10}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FFD26045-9C54-4FD7-ADDB-8C9865F67C1D} = {FFD26045-9C54-4FD7-ADDB-8C9865F67C1D}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobilityScm.Modelo.Entidades", "MobilityScm.Modelo.Entidades\MobilityScm.Modelo.Entidades.csproj", "{0D4A97D7-6303-4C48-B3A6-1C4314F09C76}"
 EndProject

@@ -2135,16 +2135,16 @@ Public Class WMS_Trans
             connection = Nothing
         End Try
     End Function
-    
+
     <WebMethod(Description:="Unifica las licencias por ubicacion y material")>
-    Public function UnificarLicenciasPorUbicacionYMaterial(currentLocation As string, materialId As String, login As String, ByRef result As String, pEnvironmentName As String) as DataSet
+    Public Function UnificarLicenciasPorUbicacionYMaterial(currentLocation As String, materialId As String, login As String, ByRef result As String, pEnvironmentName As String) As DataSet
         Dim sqldbConexion = New SqlConnection(AppSettings(pEnvironmentName).ToString)
         sqldbConexion.Open()
         Try
             Dim cmd As New SqlCommand
 
             cmd.Parameters.Add(New SqlParameter("@LOCATION", SqlDbType.VarChar, 25)).Value = currentLocation
-            If not String.IsNullOrEmpty(materialId) then
+            If Not String.IsNullOrEmpty(materialId) Then
                 cmd.Parameters.Add(New SqlParameter("@MATERIAL_ID", SqlDbType.VarChar, 50)).Value = materialId
             End If
             cmd.Parameters.Add(New SqlParameter("@LOGIN", SqlDbType.VarChar)).Value = login
@@ -2152,14 +2152,14 @@ Public Class WMS_Trans
             cmd.CommandText = DefaultSchema + "OP_WMS_SP_MERGE_LICENSE_IN_LOCATION"
             cmd.CommandType = CommandType.StoredProcedure
             cmd.Connection = sqldbConexion
-            
+
             Dim miscDa = New SqlDataAdapter(cmd)
-            Dim miscDs = new DataSet()
+            Dim miscDs = New DataSet()
             miscDa.Fill(miscDs)
-                
-            for i = 0 to 3
-                try 
-                    if miscDs.Tables(i).Rows(0)("Resultado") = -1 then
+
+            For i = 0 To 3
+                Try
+                    If miscDs.Tables(i).Rows(0)("Resultado") = -1 Then
                         result = miscDs.Tables(i).Rows(0)("Mensaje").ToString()
                         Return Nothing
                     End If
@@ -2167,8 +2167,8 @@ Public Class WMS_Trans
                     Continue For
                 End Try
             Next
-            
-                
+
+
             result = "OK"
 
             miscDs.Relations.Add("LICENCIA_A_MATERIAL", miscDS.Tables(0).Columns("LICENSE_ID"), miscDS.Tables(1).Columns("LICENSE_ID"), False)
@@ -2179,16 +2179,55 @@ Public Class WMS_Trans
                 {miscDS.Tables(1).Columns("LICENSE_ID"), miscDS.Tables(1).Columns("MATERIAL_ID")}
             childColumns = New DataColumn() _
                 {miscDS.Tables(2).Columns("LICENSE_ID"), miscDS.Tables(2).Columns("MATERIAL_ID")}
-                    
-            miscDs.Relations.Add("INFORMACION_MATERIAL",parentColumns,childColumns, False)
 
-            return miscDs
+            miscDs.Relations.Add("INFORMACION_MATERIAL", parentColumns, childColumns, False)
+
+            Return miscDs
         Catch ex As Exception
             result = ex.Message
             Return Nothing
         Finally
             sqldbConexion.Close()
             sqldbConexion.Dispose()
+        End Try
+    End Function
+
+    <WebMethod(Description:="Actualizar Demanda de Despacho y Orden de Entrega en ERP")>
+    Public Function UpdateDeliveryNoteERP(passId As Integer, status As String, login As String, environmentName As String, ByRef result As String) As DataTable
+        Dim sqldbConexion = New SqlConnection(AppSettings(environmentName).ToString)
+        sqldbConexion.Open()
+
+        Try
+            Dim cmd As New SqlCommand
+
+            cmd.Parameters.Add("@PASS_ID", SqlDbType.Int).Value = passId
+            cmd.Parameters.Add("@STATUS", SqlDbType.VarChar).Value = status
+            cmd.Parameters.Add("@LOGIN", SqlDbType.VarChar).Value = login
+
+            cmd.CommandText = DefaultSchema + "[OP_WMS_SP_UPDATE_STATUS_BY_EXIT_PASS]"
+            cmd.CommandType = CommandType.StoredProcedure
+            cmd.Connection = sqldbConexion
+
+            Dim miscDa = New SqlDataAdapter(cmd)
+            Dim miscDs = New DataTable("UpdateDeliveryNoteReturn")
+
+            Try
+                miscDa.Fill(miscDs)
+            Catch ex As Exception
+                result = "ERROR," + ex.Message
+                Return Nothing
+            End Try
+
+            result = ""
+            Return miscDs
+
+        Catch ex As Exception
+            result = ex.Message
+            Return Nothing
+        Finally
+            sqldbConexion.Close()
+            sqldbConexion.Dispose()
+            sqldbConexion = Nothing
         End Try
     End Function
 End Class

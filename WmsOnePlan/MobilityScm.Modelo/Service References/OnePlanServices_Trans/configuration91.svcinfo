@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="9SQ747fWuBJr/M5B5a6D3V3OsU8RCaklhLL31b5kMsc=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="jDVnVERAfKW7JZVEjVNL0gNtD1M4Hx/3YTwprRA3B5I=">
   <bindingConfigurations>
-    <bindingConfiguration bindingType="basicHttpBinding" name="WMS_TransSoap1">
+    <bindingConfiguration bindingType="basicHttpBinding" name="WMS_TransSoap">
       <properties>
         <property path="/name" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>WMS_TransSoap1</serializedValue>
+          <serializedValue>WMS_TransSoap</serializedValue>
         </property>
         <property path="/closeTimeout" isComplexType="false" isExplicitlyDefined="true" clrType="System.TimeSpan, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
@@ -112,10 +112,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="WMS_TransSoap1" contract="OnePlanServices_Trans.WMS_TransSoap" bindingType="basicHttpBinding" address="http://localhost:8088/WMSOnePlan_BusinessServices/trans/wms_trans.asmx" bindingConfiguration="WMS_TransSoap1">
+    <endpoint name="WMS_TransSoap" contract="OnePlanServices_Trans.WMS_TransSoap" bindingType="basicHttpBinding" address="http://localhost:8088/WMSOnePlan_BusinessServices/Trans/WMS_Trans.asmx" bindingConfiguration="WMS_TransSoap">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://localhost:8088/WMSOnePlan_BusinessServices/trans/wms_trans.asmx</serializedValue>
+          <serializedValue>http://localhost:8088/WMSOnePlan_BusinessServices/Trans/WMS_Trans.asmx</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
@@ -124,7 +124,7 @@
           <serializedValue>basicHttpBinding</serializedValue>
         </property>
         <property path="/bindingConfiguration" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>WMS_TransSoap1</serializedValue>
+          <serializedValue>WMS_TransSoap</serializedValue>
         </property>
         <property path="/contract" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>OnePlanServices_Trans.WMS_TransSoap</serializedValue>
@@ -187,7 +187,7 @@
           <serializedValue>False</serializedValue>
         </property>
         <property path="/name" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>WMS_TransSoap1</serializedValue>
+          <serializedValue>WMS_TransSoap</serializedValue>
         </property>
         <property path="/kind" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />

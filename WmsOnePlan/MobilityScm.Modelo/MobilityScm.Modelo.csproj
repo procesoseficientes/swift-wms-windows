@@ -70,6 +70,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.Serialization" />
@@ -208,6 +209,11 @@
     <Compile Include="Interfaces\Servicios\IVencimientoDePolizasServicio.cs" />
     <Compile Include="Interfaces\Servicios\IPosicionamientoServicio.cs" />
     <Compile Include="Service References\BandaAtoxAriumWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\OnePlanServices_Trans\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -353,10 +359,122 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
     <None Include="Service References\BandaAtoxAriumWS\BandaAtoxArium.wsdl" />
+    <None Include="Service References\OnePlanServices_Trans\MobilityScm.Modelo.OnePlanServices_Trans.ActualizarEstadoTareaDeRecepcionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OnePlanServices_Trans\MobilityScm.Modelo.OnePlanServices_Trans.AllocLicenseResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OnePlanServices_Trans\MobilityScm.Modelo.OnePlanServices_Trans.AuditCountResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OnePlanServices_Trans\MobilityScm.Modelo.OnePlanServices_Trans.AuditFinishCountingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OnePlanServices_Trans\MobilityScm.Modelo.OnePlanServices_Trans.AuditResetCountingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OnePlanServices_Trans\MobilityScm.Modelo.OnePlanServices_Trans.AuditStartCountingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OnePlanServices_Trans\MobilityScm.Modelo.OnePlanServices_Trans.CancelPickingDetailLineResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OnePlanServices_Trans\MobilityScm.Modelo.OnePlanServices_Trans.CreateAcuseReciboResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OnePlanServices_Trans\MobilityScm.Modelo.OnePlanServices_Trans.CreateTypeChangeXLicenseResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OnePlanServices_Trans\MobilityScm.Modelo.OnePlanServices_Trans.DeletePickingLabelResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OnePlanServices_Trans\MobilityScm.Modelo.OnePlanServices_Trans.ExplodeMasterPackResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OnePlanServices_Trans\MobilityScm.Modelo.OnePlanServices_Trans.GetDetailMasterPackByLicenseResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OnePlanServices_Trans\MobilityScm.Modelo.OnePlanServices_Trans.GetMasterPackByLicenseResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OnePlanServices_Trans\MobilityScm.Modelo.OnePlanServices_Trans.GetRequestedSerialNumberDiscretionalPickingByLicenseResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OnePlanServices_Trans\MobilityScm.Modelo.OnePlanServices_Trans.InsertPickingLabelResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OnePlanServices_Trans\MobilityScm.Modelo.OnePlanServices_Trans.LicenseReAllocResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OnePlanServices_Trans\MobilityScm.Modelo.OnePlanServices_Trans.ObtenerMaterialesEnUnbicacionParaUnificarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OnePlanServices_Trans\MobilityScm.Modelo.OnePlanServices_Trans.ProcessScannedDocumentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OnePlanServices_Trans\MobilityScm.Modelo.OnePlanServices_Trans.RegisterOccupancyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OnePlanServices_Trans\MobilityScm.Modelo.OnePlanServices_Trans.RegisterTransReallocForReplenishmentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OnePlanServices_Trans\MobilityScm.Modelo.OnePlanServices_Trans.RegisterTransRelocateForNoImmediatePickingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OnePlanServices_Trans\MobilityScm.Modelo.OnePlanServices_Trans.RegisterTransResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OnePlanServices_Trans\MobilityScm.Modelo.OnePlanServices_Trans.RollBackALicenciaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OnePlanServices_Trans\MobilityScm.Modelo.OnePlanServices_Trans.RollbackSerialNumbersOnProcessResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OnePlanServices_Trans\MobilityScm.Modelo.OnePlanServices_Trans.SetReceptionAuditSummaryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OnePlanServices_Trans\MobilityScm.Modelo.OnePlanServices_Trans.SetTransWeigthResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OnePlanServices_Trans\MobilityScm.Modelo.OnePlanServices_Trans.UnificarLicenciasPorUbicacionYMaterialResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OnePlanServices_Trans\MobilityScm.Modelo.OnePlanServices_Trans.UpdateDeliveryNoteERPResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OnePlanServices_Trans\MobilityScm.Modelo.OnePlanServices_Trans.UpdateLocationTargerTaskResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OnePlanServices_Trans\MobilityScm.Modelo.OnePlanServices_Trans.UpdatePickingLabelResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OnePlanServices_Trans\MobilityScm.Modelo.OnePlanServices_Trans.UpdateScannedSerialNumberToProcessResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OnePlanServices_Trans\MobilityScm.Modelo.OnePlanServices_Trans.UpdateSetActiveSerialNumberResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OnePlanServices_Trans\MobilityScm.Modelo.OnePlanServices_Trans.UpdateStatusQuotaLetterResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OnePlanServices_Trans\MobilityScm.Modelo.OnePlanServices_Trans.UpdateStatusSapServiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OnePlanServices_Trans\MobilityScm.Modelo.OnePlanServices_Trans.ValidateIfPickingLicenseIsAvailableResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OnePlanServices_Trans\MobilityScm.Modelo.OnePlanServices_Trans.ValidateScannedReceptionDocumentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OnePlanServices_Trans\WMS_Trans.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\BandaAtoxAriumWS\" />
+    <WCFMetadataStorage Include="Service References\OnePlanServices_Trans\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\BandaAtoxAriumWS\BandaAtoxArium.disco" />
@@ -369,6 +487,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\BandaAtoxAriumWS\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\OnePlanServices_Trans\WMS_Trans.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\OnePlanServices_Trans\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\OnePlanServices_Trans\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\OnePlanServices_Trans\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

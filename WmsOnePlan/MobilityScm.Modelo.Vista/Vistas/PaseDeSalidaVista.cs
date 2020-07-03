@@ -160,7 +160,7 @@ namespace MobilityScm.Modelo.Vistas
                 UiListaTipo.Properties.DisplayMember = "PARAM_CAPTION";
 
 
-                CargarOGuardarDisenios(UiVistasDeDetalle, false, InteraccionConUsuarioServicio.ObtenerUsuario(), GetType().Name);
+                //CargarOGuardarDisenios(UiVistasDeDetalle, false, InteraccionConUsuarioServicio.ObtenerUsuario(), GetType().Name);
                 var parametroTipoDespacho = Parametros.FirstOrDefault(p => p.PARAMETER_ID == Enums.GetStringValue(IdParametro.ObtieneTipoDeDemanda) && p.GROUP_ID == Enums.GetStringValue(GrupoParametro.DemandaDePicking));
                 var mostrarTipoDespacho = (parametroTipoDespacho != null && int.Parse(parametroTipoDespacho.VALUE) == (int)SiNo.Si);                
 
@@ -1075,6 +1075,7 @@ namespace MobilityScm.Modelo.Vistas
                                 STATUS = Enums.GetStringValue(EstadoPaseDeSalida.Finalizado)
                             }
                         };
+                                                
                         UsuarioDeseaCambiarEstadoAlPase?.Invoke(null, argumento);
                         GenerarReporte(false);
                     }

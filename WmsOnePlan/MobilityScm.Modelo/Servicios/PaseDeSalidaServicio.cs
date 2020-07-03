@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
 using System.Data.Common;
 using System.Linq;
 using System.Text;
+using DocumentFormat.OpenXml.Spreadsheet;
 using MobilityScm.Modelo.Argumentos;
 using MobilityScm.Modelo.Entidades;
 using MobilityScm.Modelo.Interfaces.Servicios;
@@ -361,9 +363,21 @@ namespace MobilityScm.Modelo.Servicios
             return BaseDeDatosServicio.ExecuteQuery<PaseDeSalidaDetalle>(BaseDeDatosServicio.Esquema + ".[OP_WMS_SP_GET_DETAIL_PASS]", CommandType.StoredProcedure, parameters);
         }
 
-        public Operacion ActualizarEstadoParaElPaseDeSalida(PaseDeSalidaArgumento paseDeSalidaArgumento)
+        public DataTable ActualizarEstadoParaElPaseDeSalida(PaseDeSalidaArgumento paseDeSalidaArgumento)
         {
-            try
+            string wshost = ConfigurationManager.AppSettings["WSHOST"].ToString();
+            var xserv = new OnePlanServices_Trans.WMS_TransSoapClient("WMS_TransSoap", wshost + "/Trans/WMS_Trans.asmx");
+            string result = "";
+            DataTable transReturn = xserv.UpdateDeliveryNoteERP(
+                Decimal.ToInt32(paseDeSalidaArgumento.PaseDeSalidaEncabezado.PASS_ID),
+                paseDeSalidaArgumento.PaseDeSalidaEncabezado.STATUS,
+                paseDeSalidaArgumento.Login,
+                ConfigurationManager.AppSettings["DEFAULT_ENVIRONMENT"].ToString(),
+                ref result);
+
+            return transReturn;
+
+            /*try
             {
                 DbParameter[] parameters ={
                    new OAParameter
@@ -405,7 +419,8 @@ namespace MobilityScm.Modelo.Servicios
                     Mensaje = ex.Message,
                     Resultado = ResultadoOperacionTipo.Error
                 };
-            }
+            }*/
+
         }
 
         public IList<PaseDeSalida> ObtenerPasesDeSalidaParaReporte(PaseDeSalidaArgumento paseDeSalidaArgumento)
