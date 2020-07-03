@@ -138,6 +138,10 @@ Namespace OnePlanServices_Trans
          System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
         Function RegisterTransReallocForReplenishment(ByVal login As String, ByVal materialId As String, ByVal materialBarcode As String, ByVal sourceLicence As Integer, ByVal sourceLocation As String, ByVal qty As Decimal, ByVal wavePickingId As Integer, ByVal mt2 As Decimal, ByVal typeLocation As String, ByVal targetLocation As String, ByVal pEnvironmentName As String, ByRef newLiceceId As Integer, ByRef pResult As String) As Boolean
         
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/RegisterTransRelocateForNoImmediatePicking", ReplyAction:="*"),  _
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+        Function RegisterTransRelocateForNoImmediatePicking(ByVal login As String, ByVal materialId As String, ByVal materialBarcode As String, ByVal sourceLicence As Integer, ByVal sourceLocation As String, ByVal qty As Decimal, ByVal wavePickingId As Integer, ByVal mt2 As Decimal, ByVal typeLocation As String, ByVal targetLocation As String, ByVal environmentName As String, ByRef newLicenseId As Integer, ByRef result As String) As Boolean
+        
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/UpdateScannedSerialNumberToProcess", ReplyAction:="*"),  _
          System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
         Function UpdateScannedSerialNumberToProcess(ByVal serialNumber As String, ByVal licenseId As Integer, ByVal wavePickingId As Integer, ByVal materialId As String, ByVal login As String, ByVal taskType As String, ByVal environmentName As String, ByRef result As String) As System.Data.DataTable
@@ -161,6 +165,34 @@ Namespace OnePlanServices_Trans
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/ProcessScannedDocument", ReplyAction:="*"),  _
          System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
         Function ProcessScannedDocument(ByVal type As String, ByVal document As String, ByVal login As String, ByRef pResult As String, ByVal enviromentName As String) As Boolean
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/InsertPickingLabel", ReplyAction:="*"),  _
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+        Function InsertPickingLabel(ByVal loginId As String, ByVal wavePickingId As Integer, ByVal clientCode As String, ByRef pResult As String, ByVal enviromentName As String) As String
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/UpdatePickingLabel", ReplyAction:="*"),  _
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+        Function UpdatePickingLabel(ByVal labelId As Integer, ByVal clientCode As String, ByVal licenseId As Integer, ByVal barcode As String, ByVal qty As Decimal, ByVal codigoPoliza As String, ByVal sourceLocation As String, ByVal targetLocation As String, ByVal transitLocation As String, ByVal serialNumber As String, ByVal wavePicking As Integer, ByRef pResult As String, ByVal enviromentName As String) As Boolean
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/DeletePickingLabel", ReplyAction:="*"),  _
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+        Function DeletePickingLabel(ByVal labelId As Integer, ByRef pResult As String, ByVal enviromentName As String) As Boolean
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/ValidateIfPickingLicenseIsAvailable", ReplyAction:="*"),  _
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+        Function ValidateIfPickingLicenseIsAvailable(ByVal wavePickingId As Integer, ByVal currentLocation As String, ByVal materialId As String, ByVal licenseId As Integer, ByVal login As String, ByRef result As String, ByVal pEnvironmentName As String) As System.Data.DataTable
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/ObtenerMaterialesEnUnbicacionParaUnificar", ReplyAction:="*"),  _
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+        Function ObtenerMaterialesEnUnbicacionParaUnificar(ByVal currentLocation As String, ByVal materialId As String, ByRef result As String, ByVal pEnvironmentName As String) As System.Data.DataSet
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/UnificarLicenciasPorUbicacionYMaterial", ReplyAction:="*"),  _
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+        Function UnificarLicenciasPorUbicacionYMaterial(ByVal currentLocation As String, ByVal materialId As String, ByVal login As String, ByRef result As String, ByVal pEnvironmentName As String) As System.Data.DataSet
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/UpdateDeliveryNoteERP", ReplyAction:="*"),  _
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+        Function UpdateDeliveryNoteERP(ByVal passId As Integer, ByVal status As String, ByVal login As String, ByVal environmentName As String, ByRef result As String) As System.Data.DataTable
     End Interface
     
     <System.Diagnostics.DebuggerStepThroughAttribute(),  _
@@ -431,6 +463,10 @@ Namespace OnePlanServices_Trans
             Return MyBase.Channel.RegisterTransReallocForReplenishment(login, materialId, materialBarcode, sourceLicence, sourceLocation, qty, wavePickingId, mt2, typeLocation, targetLocation, pEnvironmentName, newLiceceId, pResult)
         End Function
         
+        Public Function RegisterTransRelocateForNoImmediatePicking(ByVal login As String, ByVal materialId As String, ByVal materialBarcode As String, ByVal sourceLicence As Integer, ByVal sourceLocation As String, ByVal qty As Decimal, ByVal wavePickingId As Integer, ByVal mt2 As Decimal, ByVal typeLocation As String, ByVal targetLocation As String, ByVal environmentName As String, ByRef newLicenseId As Integer, ByRef result As String) As Boolean Implements OnePlanServices_Trans.WMS_TransSoap.RegisterTransRelocateForNoImmediatePicking
+            Return MyBase.Channel.RegisterTransRelocateForNoImmediatePicking(login, materialId, materialBarcode, sourceLicence, sourceLocation, qty, wavePickingId, mt2, typeLocation, targetLocation, environmentName, newLicenseId, result)
+        End Function
+        
         Public Function UpdateScannedSerialNumberToProcess(ByVal serialNumber As String, ByVal licenseId As Integer, ByVal wavePickingId As Integer, ByVal materialId As String, ByVal login As String, ByVal taskType As String, ByVal environmentName As String, ByRef result As String) As System.Data.DataTable Implements OnePlanServices_Trans.WMS_TransSoap.UpdateScannedSerialNumberToProcess
             Return MyBase.Channel.UpdateScannedSerialNumberToProcess(serialNumber, licenseId, wavePickingId, materialId, login, taskType, environmentName, result)
         End Function
@@ -453,6 +489,34 @@ Namespace OnePlanServices_Trans
         
         Public Function ProcessScannedDocument(ByVal type As String, ByVal document As String, ByVal login As String, ByRef pResult As String, ByVal enviromentName As String) As Boolean Implements OnePlanServices_Trans.WMS_TransSoap.ProcessScannedDocument
             Return MyBase.Channel.ProcessScannedDocument(type, document, login, pResult, enviromentName)
+        End Function
+        
+        Public Function InsertPickingLabel(ByVal loginId As String, ByVal wavePickingId As Integer, ByVal clientCode As String, ByRef pResult As String, ByVal enviromentName As String) As String Implements OnePlanServices_Trans.WMS_TransSoap.InsertPickingLabel
+            Return MyBase.Channel.InsertPickingLabel(loginId, wavePickingId, clientCode, pResult, enviromentName)
+        End Function
+        
+        Public Function UpdatePickingLabel(ByVal labelId As Integer, ByVal clientCode As String, ByVal licenseId As Integer, ByVal barcode As String, ByVal qty As Decimal, ByVal codigoPoliza As String, ByVal sourceLocation As String, ByVal targetLocation As String, ByVal transitLocation As String, ByVal serialNumber As String, ByVal wavePicking As Integer, ByRef pResult As String, ByVal enviromentName As String) As Boolean Implements OnePlanServices_Trans.WMS_TransSoap.UpdatePickingLabel
+            Return MyBase.Channel.UpdatePickingLabel(labelId, clientCode, licenseId, barcode, qty, codigoPoliza, sourceLocation, targetLocation, transitLocation, serialNumber, wavePicking, pResult, enviromentName)
+        End Function
+        
+        Public Function DeletePickingLabel(ByVal labelId As Integer, ByRef pResult As String, ByVal enviromentName As String) As Boolean Implements OnePlanServices_Trans.WMS_TransSoap.DeletePickingLabel
+            Return MyBase.Channel.DeletePickingLabel(labelId, pResult, enviromentName)
+        End Function
+        
+        Public Function ValidateIfPickingLicenseIsAvailable(ByVal wavePickingId As Integer, ByVal currentLocation As String, ByVal materialId As String, ByVal licenseId As Integer, ByVal login As String, ByRef result As String, ByVal pEnvironmentName As String) As System.Data.DataTable Implements OnePlanServices_Trans.WMS_TransSoap.ValidateIfPickingLicenseIsAvailable
+            Return MyBase.Channel.ValidateIfPickingLicenseIsAvailable(wavePickingId, currentLocation, materialId, licenseId, login, result, pEnvironmentName)
+        End Function
+        
+        Public Function ObtenerMaterialesEnUnbicacionParaUnificar(ByVal currentLocation As String, ByVal materialId As String, ByRef result As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_Trans.WMS_TransSoap.ObtenerMaterialesEnUnbicacionParaUnificar
+            Return MyBase.Channel.ObtenerMaterialesEnUnbicacionParaUnificar(currentLocation, materialId, result, pEnvironmentName)
+        End Function
+        
+        Public Function UnificarLicenciasPorUbicacionYMaterial(ByVal currentLocation As String, ByVal materialId As String, ByVal login As String, ByRef result As String, ByVal pEnvironmentName As String) As System.Data.DataSet Implements OnePlanServices_Trans.WMS_TransSoap.UnificarLicenciasPorUbicacionYMaterial
+            Return MyBase.Channel.UnificarLicenciasPorUbicacionYMaterial(currentLocation, materialId, login, result, pEnvironmentName)
+        End Function
+        
+        Public Function UpdateDeliveryNoteERP(ByVal passId As Integer, ByVal status As String, ByVal login As String, ByVal environmentName As String, ByRef result As String) As System.Data.DataTable Implements OnePlanServices_Trans.WMS_TransSoap.UpdateDeliveryNoteERP
+            Return MyBase.Channel.UpdateDeliveryNoteERP(passId, status, login, environmentName, result)
         End Function
     End Class
 End Namespace
