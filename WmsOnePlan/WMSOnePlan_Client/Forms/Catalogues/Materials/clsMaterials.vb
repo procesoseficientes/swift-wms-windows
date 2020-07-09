@@ -172,6 +172,7 @@ Public Class clsMaterials
     Public _LEAD_TIME As Integer
     Public _SUPPLIER As String
     Public _NAME_SUPPLIER As String
+    Public _EXPIRATION_TOLERANCE As Integer
 
     Public Class SioNo
         Inherits StringConverter
@@ -517,6 +518,16 @@ Public Class clsMaterials
         End Set
     End Property
 
+    <Category("Datos Generales"), Description("Tolerancia días de expiración en recepción")>
+    Public Property ToleranciaDeExpiracion() As Integer
+        Get
+            Return _EXPIRATION_TOLERANCE
+        End Get
+        Set(ByVal value As Integer)
+            _EXPIRATION_TOLERANCE = value
+        End Set
+    End Property
+
     <Category("Datos Generales"), Description("Prefijo Series Correlativas")>
     Public Property PrefijoSerieCorrelativa() As String
         Get
@@ -740,7 +751,9 @@ Public Class clsMaterials
                                          IIf(ManejaSerieCorrelativa = "SI", 1, 0),
                                          TiempoDeEspera,
                                          Proveedor,
-                                         NombreProveedor) Then
+                                         NombreProveedor,
+                                         ToleranciaDeExpiracion
+) Then
                     Return True
                 Else
                     pResult = pLocalResult
@@ -780,7 +793,8 @@ Public Class clsMaterials
                                          IIf(ManejaSerieCorrelativa = "SI", 1, 0),
                                          TiempoDeEspera,
                                          Proveedor,
-                                         NombreProveedor) Then
+                                         NombreProveedor,
+                                         ToleranciaDeExpiracion) Then
                     Codigo = Cliente + "/" + Codigo
                     Return True
                 Else
