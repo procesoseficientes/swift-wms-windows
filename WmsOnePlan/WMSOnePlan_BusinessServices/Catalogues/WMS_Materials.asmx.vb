@@ -55,7 +55,8 @@ Public Class WMS_Materials
                                     ByVal HANDLE_CORRELATIVE_SERIALS As Integer,
                                     ByVal LEAD_TIME As Integer,
                                     ByVal SUPPLIER As String,
-                                    ByVal NAME_SUPPLIER As String) As Boolean
+                                    ByVal NAME_SUPPLIER As String,
+                                    ByVal EXPIRATION_TOLERANCE As Integer) As Boolean
         Dim sqldbConexion As SqlConnection = New SqlConnection(AppSettings(ambiente).ToString)
         sqldbConexion.Open()
         Try
@@ -95,6 +96,8 @@ Public Class WMS_Materials
             cmd.Parameters.Add("@LEAD_TIME", SqlDbType.Int)
             cmd.Parameters.Add("@SUPPLIER", SqlDbType.VarChar, 64)
             cmd.Parameters.Add("@NAME_SUPPLIER", SqlDbType.VarChar, 250)
+            cmd.Parameters.Add("@EXPIRATION_TOLERANCE", SqlDbType.Int)
+
 
             cmd.Parameters("@CLIENT_OWNER").Direction = ParameterDirection.Input
             cmd.Parameters("@MATERIAL_ID").Direction = ParameterDirection.Input
@@ -130,6 +133,9 @@ Public Class WMS_Materials
             cmd.Parameters("@LEAD_TIME").Direction = ParameterDirection.Input
             cmd.Parameters("@SUPPLIER").Direction = ParameterDirection.Input
             cmd.Parameters("@NAME_SUPPLIER").Direction = ParameterDirection.Input
+            cmd.Parameters("@EXPIRATION_TOLERANCE").Direction = ParameterDirection.Input
+
+
 
             cmd.Parameters("@CLIENT_OWNER").Value = pCLIENT_OWNER
             cmd.Parameters("@MATERIAL_ID").Value = pMATERIAL_ID
@@ -165,6 +171,9 @@ Public Class WMS_Materials
             cmd.Parameters("@LEAD_TIME").Value = LEAD_TIME
             cmd.Parameters("@SUPPLIER").Value = SUPPLIER
             cmd.Parameters("@NAME_SUPPLIER").Value = NAME_SUPPLIER
+            cmd.Parameters("@EXPIRATION_TOLERANCE").Value = EXPIRATION_TOLERANCE
+
+
 
             cmd.CommandText = DefaultSchema + "[OP_WMS_SP_INSERT_MATERIAL]"
             cmd.CommandType = CommandType.StoredProcedure
@@ -372,7 +381,8 @@ Public Class WMS_Materials
                                     ByVal HANDLE_CORRELATIVE_SERIALS As Integer,
                                     ByVal LEAD_TIME As Integer,
                                     ByVal SUPPLIER As String,
-                                    ByVal NAME_SUPPLIER As String
+                                    ByVal NAME_SUPPLIER As String,
+                                    ByVal EXPIRATION_TOLERANCE As Integer
                                     ) As Boolean
         Dim sqldbConexion As SqlConnection = New SqlConnection(AppSettings(ambiente).ToString)
         sqldbConexion.Open()
@@ -413,6 +423,8 @@ Public Class WMS_Materials
             cmd.Parameters.Add("@LEAD_TIME", SqlDbType.Int)
             cmd.Parameters.Add("@SUPPLIER", SqlDbType.VarChar, 64)
             cmd.Parameters.Add("@NAME_SUPPLIER", SqlDbType.VarChar, 250)
+            cmd.Parameters.Add("@EXPIRATION_TOLERANCE", SqlDbType.Int)
+
 
             cmd.Parameters("@CLIENT_OWNER").Direction = ParameterDirection.Input
             cmd.Parameters("@MATERIAL_ID").Direction = ParameterDirection.Input
@@ -448,6 +460,7 @@ Public Class WMS_Materials
             cmd.Parameters("@LEAD_TIME").Direction = ParameterDirection.Input
             cmd.Parameters("@SUPPLIER").Direction = ParameterDirection.Input
             cmd.Parameters("@NAME_SUPPLIER").Direction = ParameterDirection.Input
+            cmd.Parameters("@EXPIRATION_TOLERANCE").Direction = ParameterDirection.Input
 
             cmd.Parameters("@CLIENT_OWNER").Value = pCLIENT_OWNER
             cmd.Parameters("@MATERIAL_ID").Value = pMATERIAL_ID
@@ -483,6 +496,7 @@ Public Class WMS_Materials
             cmd.Parameters("@LEAD_TIME").Value = LEAD_TIME
             cmd.Parameters("@SUPPLIER").Value = SUPPLIER
             cmd.Parameters("@NAME_SUPPLIER").Value = NAME_SUPPLIER
+            cmd.Parameters("@EXPIRATION_TOLERANCE").Value = EXPIRATION_TOLERANCE
 
             cmd.CommandText = DefaultSchema + "[OP_WMS_SP_UPDATE_MATERIAL]"
             cmd.CommandType = CommandType.StoredProcedure
