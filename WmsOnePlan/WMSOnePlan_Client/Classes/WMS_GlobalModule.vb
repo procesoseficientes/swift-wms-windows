@@ -72,7 +72,7 @@ Module WMS_GlobalModule
                     'local
                     WSHost = "http://localhost:8088/WMSOnePlan_BusinessServices"
                     'Cealsa
-                    WSHost = "http://192.168.0.5:9999"
+                    'WSHost = "http://192.168.0.5:9999"
                     'Ferco
                     'WSHost = "http://10.240.29.104:8090"
                     'Arium
