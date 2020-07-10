@@ -53,7 +53,7 @@ Module ModuleServices
         Try
             pSqlLocal = "INSERT INTO " & DefaultSchema & "OP_LOG (ERR_DATETIME, ERR_TEXT, ERR_SQL) VALUES (CURRENT_TIMESTAMP, '" + pMessage.Replace("'", "|") + "', '" + pSQL.Replace("'", "|") + "')"
 
-            ExecuteSqlTransaction(AppSettings("TESTING").ToString, pSqlLocal, pResult)
+            'ExecuteSqlTransaction(AppSettings("WSHOST").ToString, pSqlLocal, pResult)
             Return True
 
         Catch ex As Exception

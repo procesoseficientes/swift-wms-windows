@@ -10,8 +10,8 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyTitle("WMSOnePlan_BusinessServices")> 
 <Assembly: AssemblyDescription("")> 
 <Assembly: AssemblyCompany("")> 
-<Assembly: AssemblyProduct("WMSOnePlan_BusinessServices")> 
-<Assembly: AssemblyCopyright("Copyright ©  2010")> 
+<Assembly: AssemblyProduct("WMSOnePlan_BusinessServices")>
+<Assembly: AssemblyCopyright("Copyright ©  2020")>
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(True)> 
@@ -30,5 +30,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("2020.6.16.1")>
-<Assembly: AssemblyFileVersion("2020.6.16.1")>
+<Assembly: AssemblyVersion("2020.7.6.0")>
+<Assembly: AssemblyFileVersion("2020.7.6.0")>

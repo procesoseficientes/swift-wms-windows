@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Xml.Linq;
 using MobilityScm.Modelo.Argumentos;
 using MobilityScm.Modelo.Entidades;
 using MobilityScm.Modelo.Interfaces.Servicios;
+using MobilityScm.Modelo.Servicios;
 using MobilityScm.Modelo.Tipos;
 using MobilityScm.Modelo.Vistas;
 using MobilityScm.Vertical.Entidades;
@@ -148,15 +150,16 @@ namespace MobilityScm.Modelo.Controladores
         {
             try
             {
-                var op = PaseDeSalidaServicio.ActualizarEstadoParaElPaseDeSalida(e);
-                if (op.Resultado == ResultadoOperacionTipo.Exito)
+                DataTable op = PaseDeSalidaServicio.ActualizarEstadoParaElPaseDeSalida(e);
+                int result = op.Rows[0].Field<int>(0);
+                if (result == 1)
                 {
                     _vista.TerminoDeActualizarEstado(Convert.ToInt32(e.PaseDeSalidaEncabezado.PASS_ID),
                         e.PaseDeSalidaEncabezado.STATUS);
                 }
                 else
                 {
-                    InteraccionConUsuarioServicio.MensajeErrorDialogo(op.Mensaje);
+                    InteraccionConUsuarioServicio.MensajeErrorDialogo(op.Rows[0].Field<string>(1));
                 }
             }
             catch (Exception ex)

@@ -38,6 +38,7 @@ namespace MobilityScm.Modelo.Vistas
         public event EventHandler<PickingArgumento> UsuarioDeseaCrearPickingDeOrdenDeVenta;
         public event EventHandler<OrdenDeVentaArgumento> UsuarioDeseaMarcarOrdenDeVentaConPicking;
         public event EventHandler<OrdenDeVentaArgumento> UsuarioDeseaObtenerOrdenesDeVentaPorFecha;
+        public event EventHandler<OrdenDeVentaArgumento> UsuarioDeseaObtenerOrdenesDeEntregaPorFecha;
         public event EventHandler UsuarioDeseaObtenerRutas;
         public event EventHandler<SkuArgumento> UsuarioDeseaValidarInventarioParaOrdenDeVenta;
         public event EventHandler VistaCargandosePorPrimeraVez;
@@ -285,11 +286,13 @@ namespace MobilityScm.Modelo.Vistas
                 var fuenteSO_SONDA = Parametros?.FirstOrDefault(p => p.PARAMETER_ID == Enums.GetStringValue(TipoFuenteDemandaDespacho.OrdenVentaSonda));
                 var fuenteWT_SWIFT = Parametros?.FirstOrDefault(p => p.PARAMETER_ID == Enums.GetStringValue(TipoFuenteDemandaDespacho.SolicitudTrasladoWms));
                 var fuenteWT_ERP = Parametros?.FirstOrDefault(p => p.PARAMETER_ID == Enums.GetStringValue(TipoFuenteDemandaDespacho.SolicitudTrasladoErp));
+                var fuenteDO_ERP = Parametros?.FirstOrDefault(p => p.PARAMETER_ID == "DO - ERP");
 
                 if (fuenteSO_SONDA != null && Convert.ToInt32(fuenteSO_SONDA.VALUE.ToString()) == (int)SiNo.Si) UiComboFuente.Properties.Items.Add(fuenteSO_SONDA.PARAMETER_ID);
                 if (fuenteSO_ERP != null && Convert.ToInt32(fuenteSO_ERP.VALUE.ToString()) == (int)SiNo.Si) UiComboFuente.Properties.Items.Add(fuenteSO_ERP.PARAMETER_ID);
                 if (fuenteWT_SWIFT != null && Convert.ToInt32(fuenteWT_SWIFT.VALUE.ToString()) == (int)SiNo.Si) UiComboFuente.Properties.Items.Add(fuenteWT_SWIFT.PARAMETER_ID);
                 if (fuenteWT_ERP != null && Convert.ToInt32(fuenteWT_ERP.VALUE.ToString()) == (int)SiNo.Si) UiComboFuente.Properties.Items.Add(fuenteWT_ERP.PARAMETER_ID);
+                if (fuenteDO_ERP != null && Convert.ToInt32(fuenteDO_ERP.VALUE.ToString()) == (int)SiNo.Si) UiComboFuente.Properties.Items.Add(fuenteDO_ERP.PARAMETER_ID);
 
                 var permisoTonoYCalibre =
                     Permisos?.FirstOrDefault(
@@ -664,6 +667,9 @@ namespace MobilityScm.Modelo.Vistas
                     FechaFin = Convert.ToDateTime(UiFechaFin.EditValue).AddHours(23).AddMinutes(59).AddSeconds(59),
                     CodigoBodega = BodegaSeleccionda,
                 });
+            } else
+            {
+                InteraccionConUsuarioServicio.Mensaje("Cargar clientes requiere al menos una bodega seleccinada.");
             }
         }
 
@@ -717,7 +723,7 @@ namespace MobilityScm.Modelo.Vistas
                     });
 
 
-                    if (TipoFuente == TipoFuenteDemandaDespacho.OrdenVentaErp)
+                    if (TipoFuente == TipoFuenteDemandaDespacho.OrdenVentaErp || TipoFuente == TipoFuenteDemandaDespacho.OrdenDeEntrega)
                     {
                         UsuarioDeseaObtenerClientesErpCanalModerno?.Invoke(null, new OrdenDeVentaArgumento()
                         {
@@ -1054,7 +1060,20 @@ namespace MobilityScm.Modelo.Vistas
 
                         switch (TipoFuente)
                         {
-                            case TipoFuenteDemandaDespacho.OrdenVentaSonda:
+                            case TipoFuenteDemandaDespacho.OrdenDeEntrega:
+                                UsuarioDeseaObtenerOrdenesDeEntregaPorFecha?.Invoke(sender, new OrdenDeVentaArgumento
+                                {
+                                    FechaInicio = Convert.ToDateTime(UiFechaInicial.EditValue),
+                                    FechaFin =
+                                        Convert.ToDateTime(UiFechaFin.EditValue)
+                                            .AddHours(23)
+                                            .AddMinutes(59)
+                                            .AddSeconds(59),
+                                    CodigoBodega = BodegaSeleccionda,
+                                    CodigosClientesErpCanalModerno = codigosClientesErpCanalModerno.ToString(),
+                                    DocNum = UiSpinNumeroDocumentoControl.EditValue.ToString()
+                                });
+                                break;
                             case TipoFuenteDemandaDespacho.OrdenVentaErp:
                                 UsuarioDeseaObtenerOrdenesDeVentaPorFecha?.Invoke(sender, new OrdenDeVentaArgumento
                                 {
@@ -1807,8 +1826,10 @@ namespace MobilityScm.Modelo.Vistas
                         UiComboFuente.EditValue.ToString());
                 var usaNext =
                     Parametros.FirstOrDefault(x => x.PARAMETER_ID == Enums.GetStringValue(IdParametro.TieneNext));
-                switch (fuente)
+                TipoFuente = fuente == 0 ? TipoFuenteDemandaDespacho.OrdenDeEntrega : fuente;
+                switch (TipoFuente)
                 {
+                    case TipoFuenteDemandaDespacho.OrdenDeEntrega:
                     case TipoFuenteDemandaDespacho.OrdenVentaErp:
                         UiEspacioCliente.Visibility = LayoutVisibility.Always;
                         UiSeparadorCliente.Visibility = LayoutVisibility.Always;
@@ -1825,7 +1846,6 @@ namespace MobilityScm.Modelo.Vistas
                         UiEspacioMapa.Visibility = LayoutVisibility.Never;
 
                         UiEtiquetaEncabezado.Text = @"Órdenes De Venta";
-                        TipoFuente = TipoFuenteDemandaDespacho.OrdenVentaErp;
 
                         UiPaginaVehiculos.PageVisible = (usaNext != null && usaNext.VALUE == ((int)SiNo.Si).ToString());
                         UiSpinNumeroDocumento.Visibility = LayoutVisibility.Always;
@@ -1847,7 +1867,6 @@ namespace MobilityScm.Modelo.Vistas
                         UiSeparadorLineaPicking.Visibility = PermisoLineaDePicking
                             ? LayoutVisibility.Always
                             : LayoutVisibility.Never;
-                        TipoFuente = TipoFuenteDemandaDespacho.OrdenVentaSonda;
                         UiEspacioMapa.Visibility = (usaNext != null && usaNext.VALUE == ((int)SiNo.Si).ToString()
                             ? LayoutVisibility.Always
                             : LayoutVisibility.Never);
@@ -1869,7 +1888,6 @@ namespace MobilityScm.Modelo.Vistas
                         UiSeparadorUbicacionSalida.Visibility = LayoutVisibility.Always;
                         UiEspacioLinea.Visibility = LayoutVisibility.Never;
                         UiSeparadorLineaPicking.Visibility = LayoutVisibility.Never;
-                        TipoFuente = TipoFuenteDemandaDespacho.SolicitudTrasladoWms;
                         UiEspacioMapa.Visibility = LayoutVisibility.Never;
                         FiltroDeUsaLineaDePicking = (int)Tipos.UsaLineaDePicking.Ambas;
                         UiListaUsaLineaDePicking.EditValue = FiltroDeUsaLineaDePicking;
@@ -1890,7 +1908,6 @@ namespace MobilityScm.Modelo.Vistas
                         UiSeparadorRutaYVendedor.Visibility = LayoutVisibility.Never;
                         UiEspacioMapa.Visibility = LayoutVisibility.Never;
                         UiSwiftConsolidado.Visibility = BarItemVisibility.Never;
-                        TipoFuente = TipoFuenteDemandaDespacho.SolicitudTrasladoErp;
                         FiltroDeUsaLineaDePicking = (int)Tipos.UsaLineaDePicking.Ambas;
                         UiListaUsaLineaDePicking.EditValue = FiltroDeUsaLineaDePicking;
 

@@ -380,7 +380,7 @@ Public Class RibbonForm1
         Catch ex As Exception
             CerrarDialogoDeCargando()
             Cursor = Cursors.Default
-            MessageBox.Show(ex.Message)
+            MessageBox.Show(ex.Message + ex.StackTrace)
         End Try
         CerrarDialogoDeCargando()
     End Sub
@@ -667,7 +667,7 @@ Public Class RibbonForm1
 
 
         Catch ex As Exception
-            MessageBox.Show(ex.Message)
+            MessageBox.Show(ex.Message + ex.StackTrace)
         End Try
     End Sub
 
@@ -801,7 +801,7 @@ Public Class RibbonForm1
             SaveSetting("ONE_PLAN", "USER_CONFIG", "LAST_SCREEN", gLastScreenShowed)
 
         Catch ex As Exception
-            MessageBox.Show(ex.Message)
+            MessageBox.Show(ex.Message + ex.StackTrace)
         End Try
     End Sub
     Public Function GetLastScreen() As String
@@ -916,7 +916,7 @@ Public Class RibbonForm1
 
 
         Catch ex As Exception
-            MessageBox.Show(ex.Message)
+            MessageBox.Show(ex.Message + ex.StackTrace)
         End Try
     End Sub
 
@@ -1161,12 +1161,12 @@ Public Class RibbonForm1
                 End If
             Catch ex As Exception
                 xdataset = Nothing
-                MsgBox(pResult & ": " & ex.Message, MsgBoxStyle.Critical, "Error")
+                MsgBox(pResult & ": " & ex.Message + ex.StackTrace, MsgBoxStyle.Critical, "Error")
             End Try
             xdataset = Nothing
             pResult = Nothing
         Catch ex As Exception
-            NotifyStatus(ex.Message, True, True)
+            NotifyStatus(ex.Message + ex.StackTrace, True, True)
         End Try
     End Sub
 
@@ -1458,7 +1458,7 @@ Public Class RibbonForm1
                 formulario.Activate()
             End If
         Catch ex As Exception
-            NotifyStatus(ex.Message, True, True)
+            NotifyStatus(ex.Message + ex.StackTrace, True, True)
         Finally
             Cursor = Cursors.Default
         End Try
@@ -1654,7 +1654,7 @@ Public Class RibbonForm1
                 Throw New Exception(resultError)
             End If
         Catch ex As Exception
-            Throw New Exception(ex.Message)
+            Throw New Exception(ex.Message + ex.StackTrace)
         End Try
         Return resultListCheckPoint
     End Function
@@ -1724,7 +1724,7 @@ Public Class RibbonForm1
             FillLookAndFeelMenu(PublicLoginInfo.GUI)
             AddItemsStyleToRibbon()
         Catch ex As Exception
-            NotifyStatus(ex.Message, True, True)
+            NotifyStatus(ex.Message + ex.StackTrace, True, True)
         End Try
     End Sub
 
@@ -1800,11 +1800,11 @@ Public Class RibbonForm1
                     End Select
                     CreatedControllerForMenu(cp)
                 Catch ex As Exception
-                    NotifyStatus(ex.Message, False, True)
+                    NotifyStatus(ex.Message + ex.StackTrace, False, True)
                 End Try
             Next
         Catch ex As Exception
-            Throw New Exception(ex.Message)
+            Throw New Exception(ex.Message + ex.StackTrace)
         End Try
     End Sub
 
@@ -1864,7 +1864,7 @@ Public Class RibbonForm1
             End If
         Catch ex As Exception
             CerrarDialogoDeCargando()
-            NotifyStatus(ex.Message, True, True)
+            NotifyStatus(ex.Message + ex.StackTrace, True, True)
         End Try
         CerrarDialogoDeCargando()
     End Sub
@@ -1890,7 +1890,7 @@ Public Class RibbonForm1
             End If
             gLastTabShowed = RibbonControl.SelectedPage.Text
         Catch ex As Exception
-            Throw New Exception(ex.Message)
+            Throw New Exception(ex.Message + ex.StackTrace)
         Finally
             Cursor = Cursors.Default
         End Try
@@ -1942,7 +1942,7 @@ Public Class RibbonForm1
                 Return
             End If
         Catch ex As Exception
-            NotifyStatus(ex.Message, True, True)
+            NotifyStatus(ex.Message + ex.StackTrace, True, True)
         End Try
     End Sub
 
@@ -1984,7 +1984,7 @@ Public Class RibbonForm1
                 RibbonControl.Pages.Add(page)
             End If
         Catch ex As Exception
-            Throw New Exception(ex.Message)
+            Throw New Exception(ex.Message + ex.StackTrace)
         End Try
     End Sub
 

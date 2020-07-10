@@ -36,76 +36,76 @@ Public Class WMS_Security
                                     ByVal pWHEREHOUSE_iD As String, ByVal pEmail As String, ByVal pAuthorizer As Integer, ByVal pNotifyLetterQuota As Integer,
                                     ByVal pCAN_RELOCATE As Integer, ByVal linePosition As String, ByVal spotColumn As String, ByVal terminalIp As String, ByVal domainId As Integer,
                                     ByRef pResult As String, ByVal pEnvironmentName As String) As Boolean
-        pResult = "No tiene autorización para crear usuarios nuevos, contacte a su administrador"
-        Return False
-        'Dim sqldb_conexion As SqlConnection = New SqlConnection(AppSettings(pEnvironmentName).ToString)
-        'Dim XSQL As String = ""
-        'Try
-        '    XSQL = "INSERT INTO  " & DefaultSchema & "OP_WMS_LOGINS("
-        '    XSQL = XSQL + "LOGIN_ID,"
-        '    XSQL = XSQL + "ROLE_ID,"
-        '    XSQL = XSQL + "LOGIN_NAME,"
-        '    XSQL = XSQL + "LOGIN_TYPE,"
-        '    XSQL = XSQL + "LOGIN_STATUS,"
-        '    XSQL = XSQL + "LOGIN_PWD,"
-        '    XSQL = XSQL + "LICENSE_SERIAL,"
-        '    XSQL = XSQL + "ENVIRONMENT,"
-        '    XSQL = XSQL + "GUI_LAYOUT,"
-        '    XSQL = XSQL + "CONSOLIDATION_TERMINAL,"
-        '    XSQL = XSQL + "GENERATE_TASKS, LINE_ID"
-        '    XSQL = XSQL + ", [3PL_WAREHOUSE]"
-        '    XSQL = XSQL + ", EMAIL"
-        '    XSQL = XSQL + ", AUTHORIZER"
-        '    XSQL = XSQL + ", NOTIFY_LETTER_QUOTA"
-        '    XSQL = XSQL + ", CAN_RELOCATE"
-        '    XSQL = XSQL + ", LINE_POSITION"
-        '    XSQL = XSQL + ", SPOT_COLUMN"
-        '    XSQL = XSQL + ", TERMINAL_IP"
-        '    XSQL = XSQL + ", DOMAIN_ID"
-        '    XSQL = XSQL + ") VALUES ("
-        '    XSQL = XSQL + "'" + pLOGIN_ID.ToUpper + "',"
-        '    XSQL = XSQL + "'" + pROLE_ID.ToUpper + "',"
-        '    XSQL = XSQL + "'" + pLOGIN_NAME.ToUpper + "',"
-        '    XSQL = XSQL + "'" + pLOGIN_TYPE.ToUpper + "',"
-        '    XSQL = XSQL + "'" + pLOGIN_STATUS.ToUpper + "',"
-        '    XSQL = XSQL + "'" + pLOGIN_PWD + "',"
-        '    XSQL = XSQL + "'" + pLICENSE_SERIAL.ToUpper + "',"
-        '    XSQL = XSQL + "'" + pENVIRONMENT + "',"
-        '    XSQL = XSQL + "'" + pGUI_LAYOUT + "',"
-        '    XSQL = XSQL + pCONSOLIDATION_TERMINAL.ToString & ","
-        '    XSQL = XSQL + pGENERATE_TASKS.ToString & ",'" + pLINE_ID
-        '    XSQL = XSQL + "' , '" + pWHEREHOUSE_iD + "'"
-        '    XSQL = XSQL + " , '" + pEmail + "'"
-        '    XSQL = XSQL + " , " + pAuthorizer.ToString()
-        '    XSQL = XSQL + " , " + pNotifyLetterQuota.ToString()
-        '    XSQL = XSQL + " , " + pCAN_RELOCATE.ToString()
-        '    XSQL = XSQL + " , '" + linePosition + "'"
-        '    XSQL = XSQL + " , '" + spotColumn + "'"
-        '    XSQL = XSQL + " , '" + terminalIp + "'"
-        '    XSQL = XSQL + " , " + domainId.ToString() + " "
-        '    XSQL = XSQL + ")"
+        'pResult = "No tiene autorización para crear usuarios nuevos, contacte a su administrador"
+        'Return False
+        Dim sqldb_conexion As SqlConnection = New SqlConnection(AppSettings(pEnvironmentName).ToString)
+        Dim XSQL As String = ""
+        Try
+            XSQL = "INSERT INTO  " & DefaultSchema & "OP_WMS_LOGINS("
+            XSQL = XSQL + "LOGIN_ID,"
+            XSQL = XSQL + "ROLE_ID,"
+            XSQL = XSQL + "LOGIN_NAME,"
+            XSQL = XSQL + "LOGIN_TYPE,"
+            XSQL = XSQL + "LOGIN_STATUS,"
+            XSQL = XSQL + "LOGIN_PWD,"
+            XSQL = XSQL + "LICENSE_SERIAL,"
+            XSQL = XSQL + "ENVIRONMENT,"
+            XSQL = XSQL + "GUI_LAYOUT,"
+            XSQL = XSQL + "CONSOLIDATION_TERMINAL,"
+            XSQL = XSQL + "GENERATE_TASKS, LINE_ID"
+            XSQL = XSQL + ", [3PL_WAREHOUSE]"
+            XSQL = XSQL + ", EMAIL"
+            XSQL = XSQL + ", AUTHORIZER"
+            XSQL = XSQL + ", NOTIFY_LETTER_QUOTA"
+            XSQL = XSQL + ", CAN_RELOCATE"
+            XSQL = XSQL + ", LINE_POSITION"
+            XSQL = XSQL + ", SPOT_COLUMN"
+            XSQL = XSQL + ", TERMINAL_IP"
+            XSQL = XSQL + ", DOMAIN_ID"
+            XSQL = XSQL + ") VALUES ("
+            XSQL = XSQL + "'" + pLOGIN_ID.ToUpper + "',"
+            XSQL = XSQL + "'" + pROLE_ID.ToUpper + "',"
+            XSQL = XSQL + "'" + pLOGIN_NAME.ToUpper + "',"
+            XSQL = XSQL + "'" + pLOGIN_TYPE.ToUpper + "',"
+            XSQL = XSQL + "'" + pLOGIN_STATUS.ToUpper + "',"
+            XSQL = XSQL + "'" + pLOGIN_PWD + "',"
+            XSQL = XSQL + "'" + pLICENSE_SERIAL.ToUpper + "',"
+            XSQL = XSQL + "'" + pENVIRONMENT + "',"
+            XSQL = XSQL + "'" + pGUI_LAYOUT + "',"
+            XSQL = XSQL + pCONSOLIDATION_TERMINAL.ToString & ","
+            XSQL = XSQL + pGENERATE_TASKS.ToString & ",'" + pLINE_ID
+            XSQL = XSQL + "' , '" + pWHEREHOUSE_iD + "'"
+            XSQL = XSQL + " , '" + pEmail + "'"
+            XSQL = XSQL + " , " + pAuthorizer.ToString()
+            XSQL = XSQL + " , " + pNotifyLetterQuota.ToString()
+            XSQL = XSQL + " , " + pCAN_RELOCATE.ToString()
+            XSQL = XSQL + " , '" + linePosition + "'"
+            XSQL = XSQL + " , '" + spotColumn + "'"
+            XSQL = XSQL + " , '" + terminalIp + "'"
+            XSQL = XSQL + " , " + domainId.ToString() + " "
+            XSQL = XSQL + ")"
 
-        '    If ExecuteSqlTransaction(sqldb_conexion.ConnectionString, XSQL, pResult) Then
+            If ExecuteSqlTransaction(sqldb_conexion.ConnectionString, XSQL, pResult) Then
 
-        '        If pLOADING_GATE <> 0 Then
-        '            XSQL = XSQL + " UPDATE " + AppSettings("SONDA_DB_OWNER").ToString + ".SONDA_LOADING_GATES SET"
-        '            XSQL = XSQL + " ASSIGNED_OPERATOR = '" & pLOGIN_ID & "'"
-        '            XSQL = XSQL + " WHERE GATE_ID = " & pLOADING_GATE
-        '            If ExecuteSqlTransaction(sqldb_conexion.ConnectionString, XSQL, pResult) Then
-        '                Return True
-        '            Else
-        '                Return False
-        '            End If
-        '        End If
+                If pLOADING_GATE <> 0 Then
+                    XSQL = XSQL + " UPDATE " + AppSettings("SONDA_DB_OWNER").ToString + ".SONDA_LOADING_GATES SET"
+                    XSQL = XSQL + " ASSIGNED_OPERATOR = '" & pLOGIN_ID & "'"
+                    XSQL = XSQL + " WHERE GATE_ID = " & pLOADING_GATE
+                    If ExecuteSqlTransaction(sqldb_conexion.ConnectionString, XSQL, pResult) Then
+                        Return True
+                    Else
+                        Return False
+                    End If
+                End If
 
-        '    Else
-        '        Return False
-        '    End If
-        'Catch ex As Exception
-        '    pResult = ex.Message
-        '    Return False
-        'End Try
-        'Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            pResult = ex.Message
+            Return False
+        End Try
+        Return True
     End Function
 
     <WebMethod(Description:="Actualiza usuario")>

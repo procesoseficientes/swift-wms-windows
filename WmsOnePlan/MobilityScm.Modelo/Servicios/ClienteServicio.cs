@@ -4,6 +4,7 @@ using System.Data;
 using System.Data.Common;
 using System.Linq;
 using System.Text;
+using DevExpress.Xpo.DB.Helpers;
 using MobilityScm.Modelo.Argumentos;
 using MobilityScm.Modelo.Interfaces.Servicios;
 using MobilityScm.Utilerias;
@@ -75,6 +76,28 @@ namespace MobilityScm.Modelo.Servicios
             };
             return BaseDeDatosServicio.ExecuteQuery<Cliente>
                 (BaseDeDatosServicio.Esquema + ".OP_WMS_GET_ERP_CLIENTS_FOR_CHANNEL_MODERN", CommandType.StoredProcedure, true, parameters).ToList();
+        }
+
+        public IList<Cliente> ObtenerClientesOrdeDeEntrega(OrdenDeVentaArgumento argumento)
+        {
+            DbParameter[] parameters =
+            {
+                new OAParameter
+                {
+                    ParameterName = "@START_DATE",
+                    Value = argumento.FechaInicio
+                },new OAParameter
+                {
+                    ParameterName = "@END_DATE",
+                    Value = argumento.FechaFin
+                },new OAParameter
+                {
+                    ParameterName = "@WAREHOUSE_CODE",
+                    Value = argumento.CodigoBodega
+                }
+            };
+            return BaseDeDatosServicio.ExecuteQuery<Cliente>
+                (BaseDeDatosServicio.Esquema + ".OP_WMS_GET_ERP_CLIENTS_FOR_DELIVERY_ORDER", CommandType.StoredProcedure, true, parameters).ToList();
         }
 
         public IList<Cliente> ObtenerClientesErpCanalModernoParaOrdenesDeVentaPreparadas(OrdenDeVentaArgumento argumento)

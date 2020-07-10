@@ -88,8 +88,8 @@
       <HintPath>..\packages\FastMember.1.3.0\lib\net45\FastMember.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualC" />
-    <Reference Include="MobilityScm.Modelo.TipoYEstados, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MobilityScm.Modelo.TipoYEstados.1.0.2\lib\net40\MobilityScm.Modelo.TipoYEstados.dll</HintPath>
+    <Reference Include="MobilityScm.Modelo.TipoYEstados, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MobilityScm.Modelo.TipoYEstados.1.0.4\lib\net40\MobilityScm.Modelo.TipoYEstados.dll</HintPath>
     </Reference>
     <Reference Include="MobilityScm.Utilerias, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MobilityScm.Utilerias.1.0.1\lib\net40\MobilityScm.Utilerias.dll</HintPath>
@@ -302,6 +302,12 @@
     </Compile>
     <Compile Include="Reportes\PaseDeSalida.Designer.cs">
       <DependentUpon>PaseDeSalida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\PaseDeSalidaAlt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\PaseDeSalidaAlt.Designer.cs">
+      <DependentUpon>PaseDeSalidaAlt.cs</DependentUpon>
     </Compile>
     <Compile Include="Reportes\PolizasVencidas.cs">
       <SubType>Component</SubType>
@@ -641,6 +647,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\PaseDeSalida.resx">
       <DependentUpon>PaseDeSalida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\PaseDeSalidaAlt.resx">
+      <DependentUpon>PaseDeSalidaAlt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\PolizasVencidas.resx">
       <DependentUpon>PolizasVencidas.cs</DependentUpon>

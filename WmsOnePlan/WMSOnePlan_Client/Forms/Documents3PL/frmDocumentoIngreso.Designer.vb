@@ -21,15 +21,14 @@ Partial Class frmDocumentoIngreso
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmDocumentoIngreso))
-        Dim EditorButtonImageOptions1 As DevExpress.XtraEditors.Controls.EditorButtonImageOptions = New DevExpress.XtraEditors.Controls.EditorButtonImageOptions()
-        Dim SerializableAppearanceObject1 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim SerializableAppearanceObject2 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim SerializableAppearanceObject3 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim SerializableAppearanceObject4 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim EditorButtonImageOptions2 As DevExpress.XtraEditors.Controls.EditorButtonImageOptions = New DevExpress.XtraEditors.Controls.EditorButtonImageOptions()
+        Dim SerializableAppearanceObject5 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject6 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject7 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject8 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Me.XtraTabControl1 = New DevExpress.XtraTab.XtraTabControl()
         Me.XtraTabHead = New DevExpress.XtraTab.XtraTabPage()
         Me.LayoutEncabezado = New DevExpress.XtraLayout.LayoutControl()
-        Me.GridLookUpEdit3 = New DevExpress.XtraEditors.GridLookUpEdit()
         Me.BarManager1 = New DevExpress.XtraBars.BarManager(Me.components)
         Me.Bar2 = New DevExpress.XtraBars.Bar()
         Me.txtScanPoliza = New DevExpress.XtraBars.BarEditItem()
@@ -48,11 +47,6 @@ Partial Class frmDocumentoIngreso
         Me.barDockControlRight = New DevExpress.XtraBars.BarDockControl()
         Me.btnRectify = New DevExpress.XtraBars.BarLargeButtonItem()
         Me.btnEnviar = New DevExpress.XtraBars.BarLargeButtonItem()
-        Me.GridView10 = New DevExpress.XtraGrid.Views.Grid.GridView()
-        Me.GridLookUpEdit2 = New DevExpress.XtraEditors.GridLookUpEdit()
-        Me.GridView9 = New DevExpress.XtraGrid.Views.Grid.GridView()
-        Me.GridLookUpEdit1 = New DevExpress.XtraEditors.GridLookUpEdit()
-        Me.GridView7 = New DevExpress.XtraGrid.Views.Grid.GridView()
         Me.cmbBodegueros = New DevExpress.XtraEditors.GridLookUpEdit()
         Me.GridView2 = New DevExpress.XtraGrid.Views.Grid.GridView()
         Me.cmbPolizaAsegurada = New DevExpress.XtraEditors.GridLookUpEdit()
@@ -62,19 +56,6 @@ Partial Class frmDocumentoIngreso
         Me.txtCodigoPoliza = New DevExpress.XtraEditors.TextEdit()
         Me.txtMarchamo = New DevExpress.XtraEditors.TextEdit()
         Me.dtFechaLlegada = New DevExpress.XtraEditors.DateEdit()
-        Me.GridDocRefencia = New DevExpress.XtraGrid.GridControl()
-        Me.GridViewDocReferencia = New DevExpress.XtraGrid.Views.Grid.GridView()
-        Me.colDOCUMENTO = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.colTIPODOCUMENTO = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.cmbTipoDocRef = New DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit()
-        Me.RepositoryItemGridLookUpEdit1View = New DevExpress.XtraGrid.Views.Grid.GridView()
-        Me.colFECHADOCUMENTO = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.dtFechaDocumentoRef = New DevExpress.XtraEditors.Repository.RepositoryItemDateEdit()
-        Me.colDOC_ID = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.colNUMERO_DUA = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.colOBSERVACIONES = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.colLAST_UPDATED_BY = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.colLAST_UPDATED = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.txtStatus = New DevExpress.XtraEditors.TextEdit()
         Me.txtNumeroSat = New DevExpress.XtraEditors.TextEdit()
         Me.txtDomicilioRepresentante = New DevExpress.XtraEditors.TextEdit()
@@ -142,7 +123,6 @@ Partial Class frmDocumentoIngreso
         Me.LayoutControlItem27 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.LayoutControlItem25 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.LayoutControlItem28 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.LayoutControlItem50 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.LayoutControlItem14 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.LayoutControlItem15 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.LayoutControlItem7 = New DevExpress.XtraLayout.LayoutControlItem()
@@ -186,9 +166,6 @@ Partial Class frmDocumentoIngreso
         Me.LayoutControlItem6 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.layoutTicketFiscal = New DevExpress.XtraLayout.LayoutControlItem()
         Me.LayoutControlItem83 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.LayoutControlItem77 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.LayoutControlItem84 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.LayoutControlItem85 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.XtraTabDetail = New DevExpress.XtraTab.XtraTabPage()
         Me.LayoutDetalle = New DevExpress.XtraLayout.LayoutControl()
         Me.UiListaImpuesto = New DevExpress.XtraEditors.GridLookUpEdit()
@@ -308,14 +285,8 @@ Partial Class frmDocumentoIngreso
         Me.XtraTabHead.SuspendLayout()
         CType(Me.LayoutEncabezado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.LayoutEncabezado.SuspendLayout()
-        CType(Me.GridLookUpEdit3.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BarManager1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtScanEdit, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GridView10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GridLookUpEdit2.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GridView9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GridLookUpEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GridView7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cmbBodegueros.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cmbPolizaAsegurada.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -326,12 +297,6 @@ Partial Class frmDocumentoIngreso
         CType(Me.txtMarchamo.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dtFechaLlegada.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dtFechaLlegada.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GridDocRefencia, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GridViewDocReferencia, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.cmbTipoDocRef, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RepositoryItemGridLookUpEdit1View, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.dtFechaDocumentoRef, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.dtFechaDocumentoRef.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtStatus.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtNumeroSat.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtDomicilioRepresentante.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -401,7 +366,6 @@ Partial Class frmDocumentoIngreso
         CType(Me.LayoutControlItem27, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem25, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem28, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem50, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem14, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem15, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem7, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -445,9 +409,6 @@ Partial Class frmDocumentoIngreso
         CType(Me.LayoutControlItem6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.layoutTicketFiscal, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem83, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem77, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem84, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem85, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.XtraTabDetail.SuspendLayout()
         CType(Me.LayoutDetalle, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.LayoutDetalle.SuspendLayout()
@@ -551,16 +512,12 @@ Partial Class frmDocumentoIngreso
         '
         'LayoutEncabezado
         '
-        Me.LayoutEncabezado.Controls.Add(Me.GridLookUpEdit3)
-        Me.LayoutEncabezado.Controls.Add(Me.GridLookUpEdit2)
-        Me.LayoutEncabezado.Controls.Add(Me.GridLookUpEdit1)
         Me.LayoutEncabezado.Controls.Add(Me.cmbBodegueros)
         Me.LayoutEncabezado.Controls.Add(Me.cmbPolizaAsegurada)
         Me.LayoutEncabezado.Controls.Add(Me.cmbAcuerdoHead)
         Me.LayoutEncabezado.Controls.Add(Me.txtCodigoPoliza)
         Me.LayoutEncabezado.Controls.Add(Me.txtMarchamo)
         Me.LayoutEncabezado.Controls.Add(Me.dtFechaLlegada)
-        Me.LayoutEncabezado.Controls.Add(Me.GridDocRefencia)
         Me.LayoutEncabezado.Controls.Add(Me.txtStatus)
         Me.LayoutEncabezado.Controls.Add(Me.txtNumeroSat)
         Me.LayoutEncabezado.Controls.Add(Me.txtDomicilioRepresentante)
@@ -616,22 +573,6 @@ Partial Class frmDocumentoIngreso
         Me.LayoutEncabezado.Size = New System.Drawing.Size(1934, 880)
         Me.LayoutEncabezado.TabIndex = 0
         Me.LayoutEncabezado.Text = "Encabezado Ingreso"
-        '
-        'GridLookUpEdit3
-        '
-        Me.GridLookUpEdit3.Location = New System.Drawing.Point(319, 978)
-        Me.GridLookUpEdit3.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.GridLookUpEdit3.MenuManager = Me.BarManager1
-        Me.GridLookUpEdit3.Name = "GridLookUpEdit3"
-        Me.GridLookUpEdit3.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.GridLookUpEdit3.Properties.Appearance.Options.UseBackColor = True
-        Me.GridLookUpEdit3.Properties.BestFitMode = DevExpress.XtraEditors.Controls.BestFitMode.BestFitResizePopup
-        Me.GridLookUpEdit3.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.GridLookUpEdit3.Properties.NullText = "[Seleccione Regimen...]"
-        Me.GridLookUpEdit3.Properties.PopupView = Me.GridView10
-        Me.GridLookUpEdit3.Size = New System.Drawing.Size(1557, 40)
-        Me.GridLookUpEdit3.StyleController = Me.LayoutEncabezado
-        Me.GridLookUpEdit3.TabIndex = 60
         '
         'BarManager1
         '
@@ -790,62 +731,6 @@ Partial Class frmDocumentoIngreso
         Me.btnEnviar.ItemShortcut = New DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.E))
         Me.btnEnviar.Name = "btnEnviar"
         '
-        'GridView10
-        '
-        Me.GridView10.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
-        Me.GridView10.Name = "GridView10"
-        Me.GridView10.OptionsSelection.EnableAppearanceFocusedCell = False
-        Me.GridView10.OptionsView.ShowAutoFilterRow = True
-        Me.GridView10.OptionsView.ShowGroupPanel = False
-        '
-        'GridLookUpEdit2
-        '
-        Me.GridLookUpEdit2.Location = New System.Drawing.Point(319, 930)
-        Me.GridLookUpEdit2.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.GridLookUpEdit2.MenuManager = Me.BarManager1
-        Me.GridLookUpEdit2.Name = "GridLookUpEdit2"
-        Me.GridLookUpEdit2.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.GridLookUpEdit2.Properties.Appearance.Options.UseBackColor = True
-        Me.GridLookUpEdit2.Properties.BestFitMode = DevExpress.XtraEditors.Controls.BestFitMode.BestFitResizePopup
-        Me.GridLookUpEdit2.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.GridLookUpEdit2.Properties.NullText = "[Seleccione Regimen...]"
-        Me.GridLookUpEdit2.Properties.PopupView = Me.GridView9
-        Me.GridLookUpEdit2.Size = New System.Drawing.Size(1557, 40)
-        Me.GridLookUpEdit2.StyleController = Me.LayoutEncabezado
-        Me.GridLookUpEdit2.TabIndex = 59
-        '
-        'GridView9
-        '
-        Me.GridView9.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
-        Me.GridView9.Name = "GridView9"
-        Me.GridView9.OptionsSelection.EnableAppearanceFocusedCell = False
-        Me.GridView9.OptionsView.ShowAutoFilterRow = True
-        Me.GridView9.OptionsView.ShowGroupPanel = False
-        '
-        'GridLookUpEdit1
-        '
-        Me.GridLookUpEdit1.Location = New System.Drawing.Point(319, 882)
-        Me.GridLookUpEdit1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.GridLookUpEdit1.MenuManager = Me.BarManager1
-        Me.GridLookUpEdit1.Name = "GridLookUpEdit1"
-        Me.GridLookUpEdit1.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.GridLookUpEdit1.Properties.Appearance.Options.UseBackColor = True
-        Me.GridLookUpEdit1.Properties.BestFitMode = DevExpress.XtraEditors.Controls.BestFitMode.BestFitResizePopup
-        Me.GridLookUpEdit1.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.GridLookUpEdit1.Properties.NullText = "[Seleccione Regimen...]"
-        Me.GridLookUpEdit1.Properties.PopupView = Me.GridView7
-        Me.GridLookUpEdit1.Size = New System.Drawing.Size(1557, 40)
-        Me.GridLookUpEdit1.StyleController = Me.LayoutEncabezado
-        Me.GridLookUpEdit1.TabIndex = 58
-        '
-        'GridView7
-        '
-        Me.GridView7.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
-        Me.GridView7.Name = "GridView7"
-        Me.GridView7.OptionsSelection.EnableAppearanceFocusedCell = False
-        Me.GridView7.OptionsView.ShowAutoFilterRow = True
-        Me.GridView7.OptionsView.ShowGroupPanel = False
-        '
         'cmbBodegueros
         '
         Me.cmbBodegueros.Location = New System.Drawing.Point(990, 781)
@@ -953,129 +838,6 @@ Partial Class frmDocumentoIngreso
         Me.dtFechaLlegada.Size = New System.Drawing.Size(100, 40)
         Me.dtFechaLlegada.StyleController = Me.LayoutEncabezado
         Me.dtFechaLlegada.TabIndex = 47
-        '
-        'GridDocRefencia
-        '
-        Me.GridDocRefencia.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.GridDocRefencia.Location = New System.Drawing.Point(319, 849)
-        Me.GridDocRefencia.MainView = Me.GridViewDocReferencia
-        Me.GridDocRefencia.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
-        Me.GridDocRefencia.MenuManager = Me.BarManager1
-        Me.GridDocRefencia.Name = "GridDocRefencia"
-        Me.GridDocRefencia.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.dtFechaDocumentoRef, Me.cmbTipoDocRef})
-        Me.GridDocRefencia.Size = New System.Drawing.Size(1557, 25)
-        Me.GridDocRefencia.TabIndex = 53
-        Me.GridDocRefencia.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridViewDocReferencia})
-        '
-        'GridViewDocReferencia
-        '
-        Me.GridViewDocReferencia.Appearance.TopNewRow.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.GridViewDocReferencia.Appearance.TopNewRow.Options.UseBackColor = True
-        Me.GridViewDocReferencia.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colDOCUMENTO, Me.colTIPODOCUMENTO, Me.colFECHADOCUMENTO, Me.colDOC_ID, Me.colNUMERO_DUA, Me.colOBSERVACIONES, Me.colLAST_UPDATED_BY, Me.colLAST_UPDATED})
-        Me.GridViewDocReferencia.DetailHeight = 673
-        Me.GridViewDocReferencia.FixedLineWidth = 4
-        Me.GridViewDocReferencia.GridControl = Me.GridDocRefencia
-        Me.GridViewDocReferencia.LevelIndent = 0
-        Me.GridViewDocReferencia.Name = "GridViewDocReferencia"
-        Me.GridViewDocReferencia.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Top
-        Me.GridViewDocReferencia.OptionsView.ShowGroupPanel = False
-        Me.GridViewDocReferencia.PreviewIndent = 0
-        '
-        'colDOCUMENTO
-        '
-        Me.colDOCUMENTO.Caption = "NUMERO DOCUMENTO"
-        Me.colDOCUMENTO.FieldName = "NUMERO_DOCUMENTO"
-        Me.colDOCUMENTO.MinWidth = 40
-        Me.colDOCUMENTO.Name = "colDOCUMENTO"
-        Me.colDOCUMENTO.Visible = True
-        Me.colDOCUMENTO.VisibleIndex = 0
-        Me.colDOCUMENTO.Width = 150
-        '
-        'colTIPODOCUMENTO
-        '
-        Me.colTIPODOCUMENTO.Caption = "TIPO DOCUMENTO"
-        Me.colTIPODOCUMENTO.ColumnEdit = Me.cmbTipoDocRef
-        Me.colTIPODOCUMENTO.FieldName = "TIPO_DOCUMENTO"
-        Me.colTIPODOCUMENTO.MinWidth = 40
-        Me.colTIPODOCUMENTO.Name = "colTIPODOCUMENTO"
-        Me.colTIPODOCUMENTO.Visible = True
-        Me.colTIPODOCUMENTO.VisibleIndex = 1
-        Me.colTIPODOCUMENTO.Width = 150
-        '
-        'cmbTipoDocRef
-        '
-        Me.cmbTipoDocRef.AutoHeight = False
-        Me.cmbTipoDocRef.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.cmbTipoDocRef.Name = "cmbTipoDocRef"
-        Me.cmbTipoDocRef.NullText = "[Seleccione tipo documento...]"
-        Me.cmbTipoDocRef.PopupView = Me.RepositoryItemGridLookUpEdit1View
-        '
-        'RepositoryItemGridLookUpEdit1View
-        '
-        Me.RepositoryItemGridLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
-        Me.RepositoryItemGridLookUpEdit1View.Name = "RepositoryItemGridLookUpEdit1View"
-        Me.RepositoryItemGridLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = False
-        Me.RepositoryItemGridLookUpEdit1View.OptionsView.ShowGroupPanel = False
-        '
-        'colFECHADOCUMENTO
-        '
-        Me.colFECHADOCUMENTO.Caption = "FECHA DOCUMENTO"
-        Me.colFECHADOCUMENTO.ColumnEdit = Me.dtFechaDocumentoRef
-        Me.colFECHADOCUMENTO.FieldName = "FECHA_DOCUMENTO"
-        Me.colFECHADOCUMENTO.MinWidth = 40
-        Me.colFECHADOCUMENTO.Name = "colFECHADOCUMENTO"
-        Me.colFECHADOCUMENTO.Visible = True
-        Me.colFECHADOCUMENTO.VisibleIndex = 2
-        Me.colFECHADOCUMENTO.Width = 150
-        '
-        'dtFechaDocumentoRef
-        '
-        Me.dtFechaDocumentoRef.AutoHeight = False
-        Me.dtFechaDocumentoRef.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.dtFechaDocumentoRef.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
-        Me.dtFechaDocumentoRef.Name = "dtFechaDocumentoRef"
-        '
-        'colDOC_ID
-        '
-        Me.colDOC_ID.Caption = "DOCUMENTO"
-        Me.colDOC_ID.FieldName = "DOC_ID"
-        Me.colDOC_ID.MinWidth = 40
-        Me.colDOC_ID.Name = "colDOC_ID"
-        Me.colDOC_ID.Width = 150
-        '
-        'colNUMERO_DUA
-        '
-        Me.colNUMERO_DUA.Caption = "NUMERO DUA"
-        Me.colNUMERO_DUA.FieldName = "NUMERO_DUA"
-        Me.colNUMERO_DUA.MinWidth = 40
-        Me.colNUMERO_DUA.Name = "colNUMERO_DUA"
-        Me.colNUMERO_DUA.Width = 150
-        '
-        'colOBSERVACIONES
-        '
-        Me.colOBSERVACIONES.Caption = "OBSERVACIONES"
-        Me.colOBSERVACIONES.FieldName = "OBSERVACIONES"
-        Me.colOBSERVACIONES.MinWidth = 40
-        Me.colOBSERVACIONES.Name = "colOBSERVACIONES"
-        Me.colOBSERVACIONES.Visible = True
-        Me.colOBSERVACIONES.VisibleIndex = 3
-        Me.colOBSERVACIONES.Width = 150
-        '
-        'colLAST_UPDATED_BY
-        '
-        Me.colLAST_UPDATED_BY.Caption = "USUARIO ACTUALIZO"
-        Me.colLAST_UPDATED_BY.FieldName = "LAST_UPDATED_BY"
-        Me.colLAST_UPDATED_BY.MinWidth = 40
-        Me.colLAST_UPDATED_BY.Name = "colLAST_UPDATED_BY"
-        Me.colLAST_UPDATED_BY.Width = 150
-        '
-        'colLAST_UPDATED
-        '
-        Me.colLAST_UPDATED.Caption = "ACTUALIZADO EL"
-        Me.colLAST_UPDATED.FieldName = "LAST_UPDATED"
-        Me.colLAST_UPDATED.MinWidth = 40
-        Me.colLAST_UPDATED.Name = "colLAST_UPDATED"
-        Me.colLAST_UPDATED.Width = 150
         '
         'txtStatus
         '
@@ -1485,7 +1247,7 @@ Partial Class frmDocumentoIngreso
         Me.txtDocId.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtDocId.MenuManager = Me.BarManager1
         Me.txtDocId.Name = "txtDocId"
-        Me.txtDocId.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Redo, "", -1, True, False, False, EditorButtonImageOptions1, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject1, SerializableAppearanceObject2, SerializableAppearanceObject3, SerializableAppearanceObject4, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
+        Me.txtDocId.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Redo, "", -1, True, False, False, EditorButtonImageOptions2, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject5, SerializableAppearanceObject6, SerializableAppearanceObject7, SerializableAppearanceObject8, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
         Me.txtDocId.Properties.Mask.EditMask = "n0"
         Me.txtDocId.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
         Me.txtDocId.Properties.ReadOnly = True
@@ -1639,7 +1401,7 @@ Partial Class frmDocumentoIngreso
         Me.LayoutControlGroup1.CustomizationFormText = "Root"
         Me.LayoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.[True]
         Me.LayoutControlGroup1.GroupBordersVisible = False
-        Me.LayoutControlGroup1.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem2, Me.LayoutControlItem3, Me.LayoutControlItem4, Me.LayoutControlItem9, Me.LayoutControlItem1, Me.LayoutControlItem5, Me.LayoutControlItem18, Me.LayoutControlItem22, Me.LayoutControlItem23, Me.LayoutControlItem24, Me.LayoutControlItem11, Me.LayoutControlItem8, Me.LayoutControlItem12, Me.LayoutControlItem27, Me.LayoutControlItem25, Me.LayoutControlItem28, Me.LayoutControlItem50, Me.LayoutControlItem14, Me.LayoutControlItem15, Me.LayoutControlItem7, Me.LayoutControlItem34, Me.LayoutControlItem13, Me.LayoutControlItem10, Me.LayoutControlItem20, Me.LayoutControlItem19, Me.LayoutControlItem21, Me.LayoutControlItem26, Me.LayoutControlItem43, Me.LayoutControlItem16, Me.LayoutControlItem44, Me.LayoutControlItem31, Me.LayoutControlItem39, Me.LayoutControlItem36, Me.LayoutControlItem38, Me.LayoutControlItem32, Me.LayoutControlItem30, Me.LayoutControlItem35, Me.LayoutControlItem40, Me.SplitterItem2, Me.SplitterItem3, Me.SplitterItem4, Me.SplitterItem6, Me.LayoutControlItem46, Me.LayoutControlItem45, Me.SplitterItem1, Me.SplitterItem7, Me.LayoutControlItem29, Me.LayoutControlItem41, Me.LayoutControlItem33, Me.SplitterItem5, Me.LayoutControlItem80, Me.LayoutControlItem42, Me.lblPolizaAsegurada, Me.LayoutControlItem82, Me.LayoutControlItem79, Me.LayoutControlItem17, Me.LayoutControlItem37, Me.LayoutControlItem6, Me.layoutTicketFiscal, Me.LayoutControlItem83, Me.LayoutControlItem77, Me.LayoutControlItem84, Me.LayoutControlItem85})
+        Me.LayoutControlGroup1.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem2, Me.LayoutControlItem3, Me.LayoutControlItem4, Me.LayoutControlItem9, Me.LayoutControlItem1, Me.LayoutControlItem5, Me.LayoutControlItem18, Me.LayoutControlItem22, Me.LayoutControlItem23, Me.LayoutControlItem24, Me.LayoutControlItem11, Me.LayoutControlItem8, Me.LayoutControlItem12, Me.LayoutControlItem27, Me.LayoutControlItem25, Me.LayoutControlItem28, Me.LayoutControlItem14, Me.LayoutControlItem15, Me.LayoutControlItem7, Me.LayoutControlItem34, Me.LayoutControlItem13, Me.LayoutControlItem10, Me.LayoutControlItem20, Me.LayoutControlItem19, Me.LayoutControlItem21, Me.LayoutControlItem26, Me.LayoutControlItem43, Me.LayoutControlItem16, Me.LayoutControlItem44, Me.LayoutControlItem31, Me.LayoutControlItem39, Me.LayoutControlItem36, Me.LayoutControlItem38, Me.LayoutControlItem32, Me.LayoutControlItem30, Me.LayoutControlItem35, Me.LayoutControlItem40, Me.SplitterItem2, Me.SplitterItem3, Me.SplitterItem4, Me.SplitterItem6, Me.LayoutControlItem46, Me.LayoutControlItem45, Me.SplitterItem1, Me.SplitterItem7, Me.LayoutControlItem29, Me.LayoutControlItem41, Me.LayoutControlItem33, Me.SplitterItem5, Me.LayoutControlItem80, Me.LayoutControlItem42, Me.lblPolizaAsegurada, Me.LayoutControlItem82, Me.LayoutControlItem79, Me.LayoutControlItem17, Me.LayoutControlItem37, Me.LayoutControlItem6, Me.layoutTicketFiscal, Me.LayoutControlItem83})
         Me.LayoutControlGroup1.Name = "Root"
         Me.LayoutControlGroup1.Size = New System.Drawing.Size(1900, 1041)
         Me.LayoutControlGroup1.TextVisible = False
@@ -1803,17 +1565,6 @@ Partial Class frmDocumentoIngreso
         Me.LayoutControlItem28.Size = New System.Drawing.Size(473, 48)
         Me.LayoutControlItem28.Text = "Id Tributaria Importador"
         Me.LayoutControlItem28.TextSize = New System.Drawing.Size(289, 25)
-        '
-        'LayoutControlItem50
-        '
-        Me.LayoutControlItem50.ContentVisible = False
-        Me.LayoutControlItem50.Control = Me.GridDocRefencia
-        Me.LayoutControlItem50.CustomizationFormText = "Documentos de Referencia"
-        Me.LayoutControlItem50.Location = New System.Drawing.Point(0, 826)
-        Me.LayoutControlItem50.Name = "LayoutControlItem50"
-        Me.LayoutControlItem50.Size = New System.Drawing.Size(1860, 33)
-        Me.LayoutControlItem50.Text = "Documentos de Referencia"
-        Me.LayoutControlItem50.TextSize = New System.Drawing.Size(289, 25)
         '
         'LayoutControlItem14
         '
@@ -2228,33 +1979,6 @@ Partial Class frmDocumentoIngreso
         Me.LayoutControlItem83.Size = New System.Drawing.Size(473, 48)
         Me.LayoutControlItem83.Text = "Prioridad"
         Me.LayoutControlItem83.TextSize = New System.Drawing.Size(289, 25)
-        '
-        'LayoutControlItem77
-        '
-        Me.LayoutControlItem77.ContentVisible = False
-        Me.LayoutControlItem77.Control = Me.GridLookUpEdit1
-        Me.LayoutControlItem77.Location = New System.Drawing.Point(0, 859)
-        Me.LayoutControlItem77.Name = "LayoutControlItem77"
-        Me.LayoutControlItem77.Size = New System.Drawing.Size(1860, 48)
-        Me.LayoutControlItem77.TextSize = New System.Drawing.Size(289, 25)
-        '
-        'LayoutControlItem84
-        '
-        Me.LayoutControlItem84.ContentVisible = False
-        Me.LayoutControlItem84.Control = Me.GridLookUpEdit2
-        Me.LayoutControlItem84.Location = New System.Drawing.Point(0, 907)
-        Me.LayoutControlItem84.Name = "LayoutControlItem84"
-        Me.LayoutControlItem84.Size = New System.Drawing.Size(1860, 48)
-        Me.LayoutControlItem84.TextSize = New System.Drawing.Size(289, 25)
-        '
-        'LayoutControlItem85
-        '
-        Me.LayoutControlItem85.ContentVisible = False
-        Me.LayoutControlItem85.Control = Me.GridLookUpEdit3
-        Me.LayoutControlItem85.Location = New System.Drawing.Point(0, 955)
-        Me.LayoutControlItem85.Name = "LayoutControlItem85"
-        Me.LayoutControlItem85.Size = New System.Drawing.Size(1860, 48)
-        Me.LayoutControlItem85.TextSize = New System.Drawing.Size(289, 25)
         '
         'XtraTabDetail
         '
@@ -3467,14 +3191,8 @@ Partial Class frmDocumentoIngreso
         Me.XtraTabHead.ResumeLayout(False)
         CType(Me.LayoutEncabezado, System.ComponentModel.ISupportInitialize).EndInit()
         Me.LayoutEncabezado.ResumeLayout(False)
-        CType(Me.GridLookUpEdit3.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BarManager1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtScanEdit, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GridView10, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GridLookUpEdit2.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GridView9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GridLookUpEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GridView7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.cmbBodegueros.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridView2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.cmbPolizaAsegurada.Properties, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3485,12 +3203,6 @@ Partial Class frmDocumentoIngreso
         CType(Me.txtMarchamo.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dtFechaLlegada.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dtFechaLlegada.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GridDocRefencia, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GridViewDocReferencia, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.cmbTipoDocRef, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RepositoryItemGridLookUpEdit1View, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.dtFechaDocumentoRef.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.dtFechaDocumentoRef, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtStatus.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtNumeroSat.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtDomicilioRepresentante.Properties, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3560,7 +3272,6 @@ Partial Class frmDocumentoIngreso
         CType(Me.LayoutControlItem27, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem25, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem28, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem50, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem14, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem15, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem7, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3604,9 +3315,6 @@ Partial Class frmDocumentoIngreso
         CType(Me.LayoutControlItem6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.layoutTicketFiscal, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem83, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem77, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem84, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem85, System.ComponentModel.ISupportInitialize).EndInit()
         Me.XtraTabDetail.ResumeLayout(False)
         CType(Me.LayoutDetalle, System.ComponentModel.ISupportInitialize).EndInit()
         Me.LayoutDetalle.ResumeLayout(False)
@@ -3804,12 +3512,6 @@ End Sub
     Friend WithEvents GridViewCliente As DevExpress.XtraGrid.Views.Grid.GridView
     Friend WithEvents LayoutControlItem46 As DevExpress.XtraLayout.LayoutControlItem
     Friend WithEvents SplitterItem1 As DevExpress.XtraLayout.SplitterItem
-    Friend WithEvents GridDocRefencia As DevExpress.XtraGrid.GridControl
-    Friend WithEvents GridViewDocReferencia As DevExpress.XtraGrid.Views.Grid.GridView
-    Friend WithEvents LayoutControlItem50 As DevExpress.XtraLayout.LayoutControlItem
-    Friend WithEvents colDOCUMENTO As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents colTIPODOCUMENTO As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents colFECHADOCUMENTO As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents btnSave As DevExpress.XtraBars.BarLargeButtonItem
     Friend WithEvents btnScan As DevExpress.XtraBars.BarLargeButtonItem
     Friend WithEvents btnRectify As DevExpress.XtraBars.BarLargeButtonItem
@@ -3921,14 +3623,6 @@ End Sub
     Friend WithEvents colCONSIGNATARIO As DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn
     Friend WithEvents GridBand1 As DevExpress.XtraGrid.Views.BandedGrid.GridBand
     Friend WithEvents btnEnviar As DevExpress.XtraBars.BarLargeButtonItem
-    Friend WithEvents cmbTipoDocRef As DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit
-    Friend WithEvents RepositoryItemGridLookUpEdit1View As DevExpress.XtraGrid.Views.Grid.GridView
-    Friend WithEvents dtFechaDocumentoRef As DevExpress.XtraEditors.Repository.RepositoryItemDateEdit
-    Friend WithEvents colDOC_ID As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents colNUMERO_DUA As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents colOBSERVACIONES As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents colLAST_UPDATED_BY As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents colLAST_UPDATED As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents txtScanPoliza As DevExpress.XtraBars.BarEditItem
     Friend WithEvents txtScanEdit As DevExpress.XtraEditors.Repository.RepositoryItemTextEdit
     Friend WithEvents txtCodigoPoliza As DevExpress.XtraEditors.TextEdit
@@ -3957,15 +3651,6 @@ End Sub
     Friend WithEvents txtTicketNumber As DevExpress.XtraEditors.TextEdit
     Friend WithEvents layoutTicketFiscal As DevExpress.XtraLayout.LayoutControlItem
     Friend WithEvents LayoutControlItem83 As DevExpress.XtraLayout.LayoutControlItem
-    Friend WithEvents GridLookUpEdit3 As DevExpress.XtraEditors.GridLookUpEdit
-    Friend WithEvents GridView10 As DevExpress.XtraGrid.Views.Grid.GridView
-    Friend WithEvents GridLookUpEdit2 As DevExpress.XtraEditors.GridLookUpEdit
-    Friend WithEvents GridView9 As DevExpress.XtraGrid.Views.Grid.GridView
-    Friend WithEvents GridLookUpEdit1 As DevExpress.XtraEditors.GridLookUpEdit
-    Friend WithEvents GridView7 As DevExpress.XtraGrid.Views.Grid.GridView
-    Friend WithEvents LayoutControlItem77 As DevExpress.XtraLayout.LayoutControlItem
-    Friend WithEvents LayoutControlItem84 As DevExpress.XtraLayout.LayoutControlItem
-    Friend WithEvents LayoutControlItem85 As DevExpress.XtraLayout.LayoutControlItem
     Friend WithEvents lookUpPrioridad As DevExpress.XtraEditors.GridLookUpEdit
     Friend WithEvents GridLookUpEdit4View As DevExpress.XtraGrid.Views.Grid.GridView
 End Class

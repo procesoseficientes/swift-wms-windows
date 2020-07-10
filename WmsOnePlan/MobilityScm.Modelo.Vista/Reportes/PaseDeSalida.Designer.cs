@@ -1,4 +1,4 @@
-﻿namespace MobilityScm.Modelo.Reportes
+namespace MobilityScm.Modelo.Reportes
 {
     partial class PaseDeSalida
     {

@@ -481,7 +481,10 @@ namespace MobilityScm.Modelo.Vistas
                     cadena.Append(documento.SAP_REFERENCE);
                 }
 
-                if (string.IsNullOrEmpty(cadena.ToString())) return;
+                if (string.IsNullOrEmpty(cadena.ToString())) {
+                    InteraccionConUsuarioServicio.MensajeErrorDialogo("Documentos ERP está vació");
+                    return;
+                };
 
                 UsuarioDeseaObtenerDetalleOrdenDeCompra?.Invoke(null, new DocumentoRecepcionERPArgumento
                 {
@@ -845,6 +848,11 @@ namespace MobilityScm.Modelo.Vistas
         private void UiTextoNumeroDeFactura_Leave(object sender, EventArgs e)
         {
             GetFactura(sender);
+        }
+
+        private void UiListaErp_EditValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

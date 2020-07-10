@@ -72,7 +72,7 @@ namespace MobilityScm.Modelo.Entidades
 
         public string ADDRESS_CUSTOMER { get; set; }
 
-        public int STATE_CODE { get; set; }
+        public string STATE_CODE { get; set; }
 
         public int? PICKING_DEMAND_HEADER_ID { get; set; }
 
@@ -88,7 +88,7 @@ namespace MobilityScm.Modelo.Entidades
 
         public string TYPE_DEMAND_NAME { get; set; }
 
-        public string ORDER_NUMBER { get; set; }
+        public int ORDER_NUMBER { get; set; }
 
         public string LOCATION_SPOT_TARGET { get; set; }
     }
