@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Globalization;
 using System.Linq;
 using System.Text;
@@ -1120,18 +1121,32 @@ namespace MobilityScm.Modelo.Vistas
                 if (FiltroPasesParaReporte(pasesFiltradosAgrupados))
                 {
                     var generoReportePrincipal = false;
-                    var reporteDePaseDeSalidaGeneral = new Reportes.PaseDeSalida();
+                    bool pAlt = bool.Parse(ConfigurationManager.AppSettings["PaseDeSalidaAlt"]);
+                    XtraReport reporteDePaseDeSalidaGeneral;
+                    if (pAlt == true) reporteDePaseDeSalidaGeneral = new Reportes.PaseDeSalidaAlt();
+                    else reporteDePaseDeSalidaGeneral = new Reportes.PaseDeSalida();
 
                     for (var i = 0; i < pasesFiltradosAgrupados.Count; i++)
                     {
                         var pasefiltrado = pasesFiltradosAgrupados[i];
+                        XtraReport reporte;
 
-                        var reporte = new Reportes.PaseDeSalida(!string.IsNullOrEmpty(pasefiltrado[0].SELLER), mostrarEtiquetaReimpresion)
+                        if (pAlt == true) { 
+                            reporte = new Reportes.PaseDeSalidaAlt(!string.IsNullOrEmpty(pasefiltrado[0].SELLER), mostrarEtiquetaReimpresion)
+                            {
+                                DataSource = ListToDataTableClass.ListToDataTable(pasefiltrado),
+                                DataMember = "PaseDeSalida",
+                                RequestParameters = false
+                            };
+                        } else
                         {
-                            DataSource = ListToDataTableClass.ListToDataTable(pasefiltrado),
-                            DataMember = "PaseDeSalida",
-                            RequestParameters = false
-                        };
+                            reporte = new Reportes.PaseDeSalida(!string.IsNullOrEmpty(pasefiltrado[0].SELLER), mostrarEtiquetaReimpresion)
+                            {
+                                DataSource = ListToDataTableClass.ListToDataTable(pasefiltrado),
+                                DataMember = "PaseDeSalida",
+                                RequestParameters = false
+                            };
+                        }
                         var parametroFactura = Parametros.FirstOrDefault(p => p.PARAMETER_ID == Enums.GetStringValue(IdParametro.GeneraFactura) && p.GROUP_ID == Enums.GetStringValue(GrupoParametro.Sistema));
                         var parametroEtiquetaGarantia = Parametros.FirstOrDefault(p => p.PARAMETER_ID == Enums.GetStringValue(IdParametro.MostrarEtiquetaDeGarantia) && p.GROUP_ID == Enums.GetStringValue(GrupoParametro.Pase));
                         var parametroPanelCondiciones = Parametros.FirstOrDefault(p => p.PARAMETER_ID == Enums.GetStringValue(IdParametro.MostrarEtiquetaDePanelCondiciones) && p.GROUP_ID == Enums.GetStringValue(GrupoParametro.Pase));

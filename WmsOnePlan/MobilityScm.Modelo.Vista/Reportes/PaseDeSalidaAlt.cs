@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -8,14 +8,14 @@ using DevExpress.XtraReports.UI;
 
 namespace MobilityScm.Modelo.Reportes
 {
-    public partial class PaseDeSalida : DevExpress.XtraReports.UI.XtraReport
+    public partial class PaseDeSalidaAlt : DevExpress.XtraReports.UI.XtraReport
     {
-        public PaseDeSalida()
+        public PaseDeSalidaAlt()
         {
             InitializeComponent();
         }
 
-        public PaseDeSalida(bool mostrarCampos, bool mostrarEtiquetaReimpresion)
+        public PaseDeSalidaAlt(bool mostrarCampos, bool mostrarEtiquetaReimpresion)
         {
             InitializeComponent();
             UiEtiquetaVendedor.Visible = mostrarCampos;
@@ -37,7 +37,7 @@ namespace MobilityScm.Modelo.Reportes
             {
                 UiEtiquetaERP.Text = ((bool)GeneraFactura.Value) ? "No. Factura:" : "No. Entrega: ";
                 UiEtiquetaGarantia.Visible = ((bool)MostrorEtiquetaGarantia.Value);
-                UiPanelCodiciones.Visible = ((bool)MostrarEtiquetaPanelCondiciones.Value);
+                UiPanelCodiciones.Visible = ((bool)MostrorEtiquetaGarantia.Value);
 
                 var logo = ImagenLogo.Value.ToString();
                 logo = logo.Replace("data:image/png;base64,", "");

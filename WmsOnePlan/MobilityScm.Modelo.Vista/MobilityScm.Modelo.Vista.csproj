@@ -303,6 +303,12 @@
     <Compile Include="Reportes\PaseDeSalida.Designer.cs">
       <DependentUpon>PaseDeSalida.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reportes\PaseDeSalidaAlt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\PaseDeSalidaAlt.Designer.cs">
+      <DependentUpon>PaseDeSalidaAlt.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reportes\PolizasVencidas.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -641,6 +647,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\PaseDeSalida.resx">
       <DependentUpon>PaseDeSalida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\PaseDeSalidaAlt.resx">
+      <DependentUpon>PaseDeSalidaAlt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\PolizasVencidas.resx">
       <DependentUpon>PolizasVencidas.cs</DependentUpon>
