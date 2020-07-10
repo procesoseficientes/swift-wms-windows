@@ -1449,7 +1449,7 @@
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "RecepcionErpVista";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Recepcion ERP";
+            this.Text = "Recepción ERP";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.RecepcionErpVista_FormClosing);
             this.Load += new System.EventHandler(this.RecepcionErpVista_Load);
             ((System.ComponentModel.ISupportInitialize)(this.UiBarraContenedorPrincipal)).EndInit();

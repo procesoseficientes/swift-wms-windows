@@ -223,8 +223,8 @@
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="MobilityScm.Modelo.TipoYEstados, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MobilityScm.Modelo.TipoYEstados.1.0.2\lib\net40\MobilityScm.Modelo.TipoYEstados.dll</HintPath>
+    <Reference Include="MobilityScm.Modelo.TipoYEstados, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MobilityScm.Modelo.TipoYEstados.1.0.4\lib\net40\MobilityScm.Modelo.TipoYEstados.dll</HintPath>
     </Reference>
     <Reference Include="MobilityScm.Utilerias, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MobilityScm.Utilerias.1.0.1\lib\net40\MobilityScm.Utilerias.dll</HintPath>
