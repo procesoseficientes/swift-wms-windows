@@ -28,6 +28,7 @@ using DevExpress.XtraPrinting.Native;
 using MobilityScm.Modelo.Estados;
 using MobilityScm.Modelo.Tipos;
 using DevExpress.Utils.Extensions;
+using DevExpress.CodeParser;
 
 namespace MobilityScm.Modelo.Vistas
 {
@@ -680,6 +681,7 @@ namespace MobilityScm.Modelo.Vistas
             switch (e.Button.Tag.ToString())
             {
                 case "UiBotonRefrescarBodega":
+                    UiError.SetError(UIListaBodega, "", ErrorType.None);
                     UsuarioDeseaObtenerBodegasAsignadas?.Invoke(null, new OrdenDeVentaArgumento());
                     break;
                 case "UiBotonRefrescarRuntaVendedor":
@@ -687,7 +689,17 @@ namespace MobilityScm.Modelo.Vistas
                     RefrescarRutaVendedor(sender);
                     break;
                 case "UiBotonRefrescarUbicacionDeSalida":
-                    CargarUbicacionesDeSalida(sender);
+                    try 
+                    {
+                        UiError.SetError(UiListaUbicacionDeSalida, "", ErrorType.None);
+                        CargarUbicacionesDeSalida(sender);
+
+                    }
+                    catch(System.NullReferenceException)
+                    {
+                        UiError.SetError(UiListaUbicacionDeSalida, "Por favor seleccionar bodega antes de refrescar ubicaciones");
+                    }
+
                     break;
                 case "UiBotonRefrescarClienteErpCanalModerno":
                     RefrescarClientesErp();
@@ -963,7 +975,6 @@ namespace MobilityScm.Modelo.Vistas
 
         private bool ValidarBodega()
         {
-            UiError.SetError(UIListaBodega, "", ErrorType.None);
 
             if (UIListaBodega.EditValue != null) return true;
             UiError.SetError(UIListaBodega, "Seleccione la bodega");
