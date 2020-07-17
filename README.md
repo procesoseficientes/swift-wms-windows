@@ -12,8 +12,8 @@ El repositorio tiene tanto el código como los binarios del software.
   * En este repo la versión móvil está desactualizada
 * Todos los demas directorios son liberarias compartidas por todos los programas
 
-## Cliente Win32
-### Dependencias
+# Cliente Win32
+## Dependencias
 - DevExpress 19.2
 - Visual Studio 2017+
 - IIS
@@ -22,8 +22,8 @@ El repositorio tiene tanto el código como los binarios del software.
 - NuGet
 
 Este repoo inicia en el último commit del branch `G-Force@Paris`
-### Instalación
-## Instalar NuGet y agregar fuente
+## Instalación
+### Instalar NuGet y agregar fuente
 1. Descargar NuGet
 [https://www.nuget.org/downloads](https://www.nuget.org/downloads)
 2. Agregar el folder donde esté el ejecutable a la variable de ambiente `Path`
@@ -79,7 +79,7 @@ Los datos dentro del servidor de prueba son:
 - User: `sa`
 - Pwd: `SQ1MSCM!9`
 
-### Guía de release
+## Guía de release
 Esta información tambien está en el archivo de la [guía de release](RELEASE_GUIDE.md).
 
 1. Cambiar la configuración de la solución a `Release`
