@@ -502,7 +502,12 @@ namespace MobilityScm.Modelo.Controladores
             ObtenerDetalleOrdenDeCompra(e);
             ObtenerDetalleRecepcionSeries(e);
             ObtenerUltimoCorrelativo();
-            ObtenerBodegasERP(e);
+            ObtenerBodegasUsuario(e);
+        }
+
+        private void ObtenerBodegasUsuario(TareaArgumento e)
+        {
+            _vista.BodegasUsuario = BodegaServicio.ObtenerBodegaAsignadaAUsuario(e.Users);
         }
 
         private void ObtenerBodegasERP(TareaArgumento e)

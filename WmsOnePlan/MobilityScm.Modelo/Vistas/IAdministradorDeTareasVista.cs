@@ -60,6 +60,7 @@ namespace MobilityScm.Modelo.Vistas
         IList<Parametro> ParametrosDeSistema { get; set; }
         IList<Parametro> ParametrosAutorizacionTraslado { get; set; }
 
+        IList<Bodega> BodegasUsuario { get; set; }
         IList<BodegaERP> BodegasERP { get; set; }
 
         IList<Entidades.Configuracion> RazonesDetalleCanceladoDeRecepcion { get; set; }

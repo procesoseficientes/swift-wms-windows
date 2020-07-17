@@ -2833,7 +2833,7 @@
             this.UiLookUpEditBodegaERP.AutoHeight = false;
             this.UiLookUpEditBodegaERP.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.UiLookUpEditBodegaERP.DisplayMember = "ERP_WAREHOUSE_NAME";
+            this.UiLookUpEditBodegaERP.DisplayMember = "NAME";
             this.UiLookUpEditBodegaERP.Name = "UiLookUpEditBodegaERP";
             this.UiLookUpEditBodegaERP.PopupView = this.repositoryItemGridLookUpEdit1View;
             this.UiLookUpEditBodegaERP.ValueMember = "ERP_WAREHOUSE";
@@ -2859,7 +2859,7 @@
             // UiRepositoryColNombreBodegaERP
             // 
             this.UiRepositoryColNombreBodegaERP.Caption = "Nombre Bodega";
-            this.UiRepositoryColNombreBodegaERP.FieldName = "ERP_WAREHOUSE_NAME";
+            this.UiRepositoryColNombreBodegaERP.FieldName = "NAME";
             this.UiRepositoryColNombreBodegaERP.Name = "UiRepositoryColNombreBodegaERP";
             this.UiRepositoryColNombreBodegaERP.Visible = true;
             this.UiRepositoryColNombreBodegaERP.VisibleIndex = 1;
