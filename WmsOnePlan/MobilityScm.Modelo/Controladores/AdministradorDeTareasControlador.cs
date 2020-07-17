@@ -507,7 +507,7 @@ namespace MobilityScm.Modelo.Controladores
 
         private void ObtenerBodegasUsuario(TareaArgumento e)
         {
-            _vista.BodegasUsuario = BodegaServicio.ObtenerBodegaAsignadaAUsuario(e.Users);
+            _vista.BodegasUsuario = BodegaServicio.ObtenerBodegaAsignadaAUsuario(InteraccionConUsuarioServicio.ObtenerUsuario());
         }
 
         private void ObtenerBodegasERP(TareaArgumento e)
