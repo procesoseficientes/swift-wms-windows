@@ -502,7 +502,6 @@ namespace MobilityScm.Modelo.Controladores
             ObtenerDetalleOrdenDeCompra(e);
             ObtenerDetalleRecepcionSeries(e);
             ObtenerUltimoCorrelativo();
-            ObtenerBodegasERP(e);
             ObtenerBodegasUsuario(e);
         }
 

@@ -168,6 +168,16 @@ namespace MobilityScm.Modelo.Vistas
             }
         }
 
+        public IList<Bodega> BodegasUsuario
+        {
+            get { return (IList<Bodega>)UiLookUpEditBodegaERP.DataSource; }
+            set
+            {
+                UiLookUpEditBodegaERP.DataSource = value;
+            }
+        }
+
+
         public IList<BodegaERP> BodegasERP
         {
             get { return (IList<BodegaERP>)UiLookUpEditBodegaERP.DataSource; }
