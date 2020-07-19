@@ -78,6 +78,21 @@
             DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression21 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule22 = new DevExpress.XtraGrid.GridFormatRule();
             DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression22 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions2 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions3 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject9 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject10 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject11 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject12 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.XtraCharts.SimpleDiagram simpleDiagram1 = new DevExpress.XtraCharts.SimpleDiagram();
             DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
             DevExpress.XtraCharts.PieSeriesLabel pieSeriesLabel1 = new DevExpress.XtraCharts.PieSeriesLabel();
@@ -95,21 +110,6 @@
             DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression25 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule26 = new DevExpress.XtraGrid.GridFormatRule();
             DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression26 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions3 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject9 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject10 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject11 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject12 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions2 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
             this.UiVistaDetalleErpEncabezado = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.UiColNumeroDocumentoDetalleErp = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UiColNumeroIntentosDetalleErp = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -230,6 +230,38 @@
             this.UiColCodigoBarraDetallePicking = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UiColIsCompleted = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UiColClassName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.UiNavegacionPaginasPricipal = new DevExpress.XtraBars.Navigation.NavigationPane();
+            this.UiPaginaFecha = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.UiBotonAceptarRangoFecha = new DevExpress.XtraEditors.SimpleButton();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.UiFechaFinal = new DevExpress.XtraEditors.DateEdit();
+            this.UiEtiquetaFechaFinal = new System.Windows.Forms.Label();
+            this.UiFechaInicial = new DevExpress.XtraEditors.DateEdit();
+            this.UiEtiquetaFechaInicial = new System.Windows.Forms.Label();
+            this.UiGrupoRadioFechas = new DevExpress.XtraEditors.RadioGroup();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.UiListaDeClases = new DevExpress.XtraEditors.SearchLookUpEdit();
+            this.UiVistaClases = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colCLASS_ID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCLASS_NAME = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.UiEtiquetaClases = new System.Windows.Forms.Label();
+            this.UiListaDeOperadores = new DevExpress.XtraEditors.SearchLookUpEdit();
+            this.UiListaVistaDeOperadores = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.UiColCodigoUsuario = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.UiColNombreUsuario = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.UiEtiquetaOperadores = new System.Windows.Forms.Label();
+            this.UIListaTiposDeTarea = new DevExpress.XtraEditors.SearchLookUpEdit();
+            this.UiListaVistaTipoDeTarea = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.UiColTipoTarea = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.UiColDescripcionTipoTarea = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.UiEtiqeutaTipoDeTareas = new System.Windows.Forms.Label();
+            this.UiPaginaUsuarios = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.UiListaOperadores = new DevExpress.XtraEditors.ListBoxControl();
+            this.UiBotonCambiarPrioridad = new DevExpress.XtraEditors.SimpleButton();
+            this.UiBotonReasignarBanda = new DevExpress.XtraEditors.SimpleButton();
+            this.UiBotonCancelarTarea = new DevExpress.XtraEditors.SimpleButton();
+            this.UiBotonPausarTarea = new DevExpress.XtraEditors.SimpleButton();
+            this.UiBotonReanudarTarea = new DevExpress.XtraEditors.SimpleButton();
             this.ToggleDetallado = new DevExpress.XtraEditors.Repository.RepositoryItemToggleSwitch();
             this.UiColAsignado = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UiContenedorTab = new DevExpress.XtraTab.XtraTabControl();
@@ -359,38 +391,6 @@
             this.UiDialogoParaGuardar = new System.Windows.Forms.SaveFileDialog();
             this.bar12 = new DevExpress.XtraBars.Bar();
             this.bar13 = new DevExpress.XtraBars.Bar();
-            this.UiNavegacionPaginasPricipal = new DevExpress.XtraBars.Navigation.NavigationPane();
-            this.UiPaginaUsuarios = new DevExpress.XtraBars.Navigation.NavigationPage();
-            this.UiBotonReanudarTarea = new DevExpress.XtraEditors.SimpleButton();
-            this.UiBotonPausarTarea = new DevExpress.XtraEditors.SimpleButton();
-            this.UiBotonCancelarTarea = new DevExpress.XtraEditors.SimpleButton();
-            this.UiListaOperadores = new DevExpress.XtraEditors.ListBoxControl();
-            this.UiBotonReasignarBanda = new DevExpress.XtraEditors.SimpleButton();
-            this.UiBotonCambiarPrioridad = new DevExpress.XtraEditors.SimpleButton();
-            this.UiPaginaFecha = new DevExpress.XtraBars.Navigation.NavigationPage();
-            this.UiEtiqeutaTipoDeTareas = new System.Windows.Forms.Label();
-            this.UIListaTiposDeTarea = new DevExpress.XtraEditors.SearchLookUpEdit();
-            this.UiListaVistaTipoDeTarea = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.UiColTipoTarea = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.UiColDescripcionTipoTarea = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.UiEtiquetaOperadores = new System.Windows.Forms.Label();
-            this.UiListaDeOperadores = new DevExpress.XtraEditors.SearchLookUpEdit();
-            this.UiListaVistaDeOperadores = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.UiColCodigoUsuario = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.UiColNombreUsuario = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.UiEtiquetaClases = new System.Windows.Forms.Label();
-            this.UiListaDeClases = new DevExpress.XtraEditors.SearchLookUpEdit();
-            this.UiVistaClases = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.colCLASS_ID = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colCLASS_NAME = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.UiGrupoRadioFechas = new DevExpress.XtraEditors.RadioGroup();
-            this.UiEtiquetaFechaInicial = new System.Windows.Forms.Label();
-            this.UiFechaInicial = new DevExpress.XtraEditors.DateEdit();
-            this.UiEtiquetaFechaFinal = new System.Windows.Forms.Label();
-            this.UiFechaFinal = new DevExpress.XtraEditors.DateEdit();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.UiBotonAceptarRangoFecha = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.UiVistaDetalleErpEncabezado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiContenedorVistaTareasEncabezado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiVistaEncabezadoConDetalle)).BeginInit();
@@ -408,6 +408,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.UiVistaDetalleRecepcion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiListaOperadoresParaPickingDetalle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiVistaDetallePicking)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UiNavegacionPaginasPricipal)).BeginInit();
+            this.UiNavegacionPaginasPricipal.SuspendLayout();
+            this.UiPaginaFecha.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.UiFechaFinal.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UiFechaFinal.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UiFechaInicial.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UiFechaInicial.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UiGrupoRadioFechas.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UiListaDeClases.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UiVistaClases)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UiListaDeOperadores.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UiListaVistaDeOperadores)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UIListaTiposDeTarea.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UiListaVistaTipoDeTarea)).BeginInit();
+            this.UiPaginaUsuarios.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.UiListaOperadores)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ToggleDetallado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiContenedorTab)).BeginInit();
             this.UiContenedorTab.SuspendLayout();
@@ -443,22 +459,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.UIViewOlaPicking)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiError)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UiNavegacionPaginasPricipal)).BeginInit();
-            this.UiNavegacionPaginasPricipal.SuspendLayout();
-            this.UiPaginaUsuarios.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.UiListaOperadores)).BeginInit();
-            this.UiPaginaFecha.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.UIListaTiposDeTarea.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UiListaVistaTipoDeTarea)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UiListaDeOperadores.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UiListaVistaDeOperadores)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UiListaDeClases.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UiVistaClases)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UiGrupoRadioFechas.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UiFechaInicial.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UiFechaInicial.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UiFechaFinal.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UiFechaFinal.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // UiVistaDetalleErpEncabezado
@@ -2254,6 +2254,434 @@
             this.UiColClassName.VisibleIndex = 10;
             this.UiColClassName.Width = 150;
             // 
+            // UiNavegacionPaginasPricipal
+            // 
+            this.UiNavegacionPaginasPricipal.Controls.Add(this.UiPaginaFecha);
+            this.UiNavegacionPaginasPricipal.Controls.Add(this.UiPaginaUsuarios);
+            this.UiNavegacionPaginasPricipal.Dock = System.Windows.Forms.DockStyle.Left;
+            this.UiNavegacionPaginasPricipal.Location = new System.Drawing.Point(0, 46);
+            this.UiNavegacionPaginasPricipal.Margin = new System.Windows.Forms.Padding(6);
+            this.UiNavegacionPaginasPricipal.Name = "UiNavegacionPaginasPricipal";
+            this.UiNavegacionPaginasPricipal.PageProperties.ShowCollapseButton = false;
+            this.UiNavegacionPaginasPricipal.PageProperties.ShowExpandButton = false;
+            this.UiNavegacionPaginasPricipal.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
+            this.UiPaginaFecha,
+            this.UiPaginaUsuarios});
+            this.UiNavegacionPaginasPricipal.RegularSize = new System.Drawing.Size(660, 1209);
+            this.UiNavegacionPaginasPricipal.SelectedPage = this.UiPaginaFecha;
+            this.UiNavegacionPaginasPricipal.Size = new System.Drawing.Size(660, 1209);
+            this.UiNavegacionPaginasPricipal.TabIndex = 3;
+            this.UiNavegacionPaginasPricipal.Text = "navigationPane1";
+            // 
+            // UiPaginaFecha
+            // 
+            this.UiPaginaFecha.Caption = "Tipo de Tareas y Rango de Fechas";
+            this.UiPaginaFecha.Controls.Add(this.UiBotonAceptarRangoFecha);
+            this.UiPaginaFecha.Controls.Add(this.panel2);
+            this.UiPaginaFecha.Controls.Add(this.UiFechaFinal);
+            this.UiPaginaFecha.Controls.Add(this.UiEtiquetaFechaFinal);
+            this.UiPaginaFecha.Controls.Add(this.UiFechaInicial);
+            this.UiPaginaFecha.Controls.Add(this.UiEtiquetaFechaInicial);
+            this.UiPaginaFecha.Controls.Add(this.UiGrupoRadioFechas);
+            this.UiPaginaFecha.Controls.Add(this.panel1);
+            this.UiPaginaFecha.Controls.Add(this.UiListaDeClases);
+            this.UiPaginaFecha.Controls.Add(this.UiEtiquetaClases);
+            this.UiPaginaFecha.Controls.Add(this.UiListaDeOperadores);
+            this.UiPaginaFecha.Controls.Add(this.UiEtiquetaOperadores);
+            this.UiPaginaFecha.Controls.Add(this.UIListaTiposDeTarea);
+            this.UiPaginaFecha.Controls.Add(this.UiEtiqeutaTipoDeTareas);
+            this.UiPaginaFecha.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiPaginaFecha.ImageOptions.Image")));
+            this.UiPaginaFecha.Margin = new System.Windows.Forms.Padding(6);
+            this.UiPaginaFecha.Name = "UiPaginaFecha";
+            this.UiPaginaFecha.Size = new System.Drawing.Size(534, 1080);
+            // 
+            // UiBotonAceptarRangoFecha
+            // 
+            this.UiBotonAceptarRangoFecha.Dock = System.Windows.Forms.DockStyle.Top;
+            this.UiBotonAceptarRangoFecha.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBotonAceptarRangoFecha.ImageOptions.Image")));
+            this.UiBotonAceptarRangoFecha.Location = new System.Drawing.Point(0, 610);
+            this.UiBotonAceptarRangoFecha.Margin = new System.Windows.Forms.Padding(6);
+            this.UiBotonAceptarRangoFecha.Name = "UiBotonAceptarRangoFecha";
+            this.UiBotonAceptarRangoFecha.Size = new System.Drawing.Size(534, 42);
+            this.UiBotonAceptarRangoFecha.TabIndex = 7;
+            this.UiBotonAceptarRangoFecha.Text = "Aceptar";
+            this.UiBotonAceptarRangoFecha.Click += new System.EventHandler(this.UiBotonAceptarRangoFecha_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 568);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(534, 42);
+            this.panel2.TabIndex = 13;
+            // 
+            // UiFechaFinal
+            // 
+            this.UiFechaFinal.Dock = System.Windows.Forms.DockStyle.Top;
+            this.UiFechaFinal.EditValue = new System.DateTime(2017, 5, 22, 10, 7, 17, 0);
+            this.UiFechaFinal.Location = new System.Drawing.Point(0, 528);
+            this.UiFechaFinal.Margin = new System.Windows.Forms.Padding(6);
+            this.UiFechaFinal.MenuManager = this.UiContendorDeBarras;
+            this.UiFechaFinal.Name = "UiFechaFinal";
+            this.UiFechaFinal.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.UiFechaFinal.Properties.CalendarTimeEditing = DevExpress.Utils.DefaultBoolean.True;
+            this.UiFechaFinal.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.UiFechaFinal.Properties.DisplayFormat.FormatString = "";
+            this.UiFechaFinal.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.UiFechaFinal.Properties.EditFormat.FormatString = "";
+            this.UiFechaFinal.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.UiFechaFinal.Properties.Mask.EditMask = "";
+            this.UiFechaFinal.Size = new System.Drawing.Size(534, 40);
+            this.UiFechaFinal.TabIndex = 4;
+            // 
+            // UiEtiquetaFechaFinal
+            // 
+            this.UiEtiquetaFechaFinal.AutoSize = true;
+            this.UiEtiquetaFechaFinal.Dock = System.Windows.Forms.DockStyle.Top;
+            this.UiEtiquetaFechaFinal.Location = new System.Drawing.Point(0, 488);
+            this.UiEtiquetaFechaFinal.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.UiEtiquetaFechaFinal.Name = "UiEtiquetaFechaFinal";
+            this.UiEtiquetaFechaFinal.Padding = new System.Windows.Forms.Padding(0, 15, 0, 0);
+            this.UiEtiquetaFechaFinal.Size = new System.Drawing.Size(125, 40);
+            this.UiEtiquetaFechaFinal.TabIndex = 3;
+            this.UiEtiquetaFechaFinal.Text = "Fecha Final:";
+            // 
+            // UiFechaInicial
+            // 
+            this.UiFechaInicial.Dock = System.Windows.Forms.DockStyle.Top;
+            this.UiFechaInicial.EditValue = null;
+            this.UiFechaInicial.Location = new System.Drawing.Point(0, 448);
+            this.UiFechaInicial.Margin = new System.Windows.Forms.Padding(6);
+            this.UiFechaInicial.MenuManager = this.UiContendorDeBarras;
+            this.UiFechaInicial.Name = "UiFechaInicial";
+            this.UiFechaInicial.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.UiFechaInicial.Properties.CalendarTimeEditing = DevExpress.Utils.DefaultBoolean.True;
+            this.UiFechaInicial.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.UiFechaInicial.Properties.DisplayFormat.FormatString = "";
+            this.UiFechaInicial.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.UiFechaInicial.Properties.EditFormat.FormatString = "";
+            this.UiFechaInicial.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.UiFechaInicial.Properties.Mask.EditMask = "";
+            this.UiFechaInicial.Size = new System.Drawing.Size(534, 40);
+            this.UiFechaInicial.TabIndex = 1;
+            // 
+            // UiEtiquetaFechaInicial
+            // 
+            this.UiEtiquetaFechaInicial.AutoSize = true;
+            this.UiEtiquetaFechaInicial.Dock = System.Windows.Forms.DockStyle.Top;
+            this.UiEtiquetaFechaInicial.Location = new System.Drawing.Point(0, 408);
+            this.UiEtiquetaFechaInicial.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.UiEtiquetaFechaInicial.Name = "UiEtiquetaFechaInicial";
+            this.UiEtiquetaFechaInicial.Padding = new System.Windows.Forms.Padding(0, 15, 0, 0);
+            this.UiEtiquetaFechaInicial.Size = new System.Drawing.Size(137, 40);
+            this.UiEtiquetaFechaInicial.TabIndex = 2;
+            this.UiEtiquetaFechaInicial.Text = "Fecha Inicial:";
+            // 
+            // UiGrupoRadioFechas
+            // 
+            this.UiGrupoRadioFechas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.UiGrupoRadioFechas.Location = new System.Drawing.Point(0, 248);
+            this.UiGrupoRadioFechas.Margin = new System.Windows.Forms.Padding(6);
+            this.UiGrupoRadioFechas.MenuManager = this.UiContendorDeBarras;
+            this.UiGrupoRadioFechas.Name = "UiGrupoRadioFechas";
+            this.UiGrupoRadioFechas.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Hoy"),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Ayer"),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "1 Semana"),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "1 Mes"),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "3 Meses")});
+            this.UiGrupoRadioFechas.Size = new System.Drawing.Size(534, 160);
+            this.UiGrupoRadioFechas.TabIndex = 0;
+            this.UiGrupoRadioFechas.SelectedIndexChanged += new System.EventHandler(this.UiGrupoRadioFechas_SelectedIndexChanged);
+            // 
+            // panel1
+            // 
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 225);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(534, 23);
+            this.panel1.TabIndex = 12;
+            // 
+            // UiListaDeClases
+            // 
+            this.UiListaDeClases.Dock = System.Windows.Forms.DockStyle.Top;
+            this.UiListaDeClases.Location = new System.Drawing.Point(0, 185);
+            this.UiListaDeClases.Margin = new System.Windows.Forms.Padding(4);
+            this.UiListaDeClases.MenuManager = this.UiContendorDeBarras;
+            this.UiListaDeClases.Name = "UiListaDeClases";
+            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
+            this.UiListaDeClases.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", "UiBotonRefrescar-Operadores", null, DevExpress.Utils.ToolTipAnchor.Default)});
+            this.UiListaDeClases.Properties.PopupView = this.UiVistaClases;
+            this.UiListaDeClases.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UILista_Properties_ButtonClick);
+            this.UiListaDeClases.Size = new System.Drawing.Size(534, 40);
+            this.UiListaDeClases.TabIndex = 11;
+            this.UiListaDeClases.CustomDisplayText += new DevExpress.XtraEditors.Controls.CustomDisplayTextEventHandler(this.UiListaDeClases_CustomDisplayText);
+            // 
+            // UiVistaClases
+            // 
+            this.UiVistaClases.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colCLASS_ID,
+            this.colCLASS_NAME});
+            this.UiVistaClases.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.UiVistaClases.Name = "UiVistaClases";
+            this.UiVistaClases.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.UiVistaClases.OptionsSelection.MultiSelect = true;
+            this.UiVistaClases.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
+            this.UiVistaClases.OptionsView.ShowGroupPanel = false;
+            this.UiVistaClases.SelectionChanged += new DevExpress.Data.SelectionChangedEventHandler(this.UiVistaClases_SelectionChanged);
+            this.UiVistaClases.BeforeLeaveRow += new DevExpress.XtraGrid.Views.Base.RowAllowEventHandler(this.UiVistaClases_BeforeLeaveRow);
+            this.UiVistaClases.MouseUp += new System.Windows.Forms.MouseEventHandler(this.UiVistaClases_MouseUp);
+            // 
+            // colCLASS_ID
+            // 
+            this.colCLASS_ID.Caption = "Código";
+            this.colCLASS_ID.FieldName = "CLASS_ID";
+            this.colCLASS_ID.Name = "colCLASS_ID";
+            this.colCLASS_ID.OptionsColumn.AllowEdit = false;
+            this.colCLASS_ID.Visible = true;
+            this.colCLASS_ID.VisibleIndex = 1;
+            // 
+            // colCLASS_NAME
+            // 
+            this.colCLASS_NAME.Caption = "Nombre";
+            this.colCLASS_NAME.FieldName = "CLASS_NAME";
+            this.colCLASS_NAME.Name = "colCLASS_NAME";
+            this.colCLASS_NAME.OptionsColumn.AllowEdit = false;
+            this.colCLASS_NAME.Visible = true;
+            this.colCLASS_NAME.VisibleIndex = 2;
+            // 
+            // UiEtiquetaClases
+            // 
+            this.UiEtiquetaClases.AutoSize = true;
+            this.UiEtiquetaClases.Dock = System.Windows.Forms.DockStyle.Top;
+            this.UiEtiquetaClases.Location = new System.Drawing.Point(0, 145);
+            this.UiEtiquetaClases.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.UiEtiquetaClases.Name = "UiEtiquetaClases";
+            this.UiEtiquetaClases.Padding = new System.Windows.Forms.Padding(0, 15, 0, 0);
+            this.UiEtiquetaClases.Size = new System.Drawing.Size(77, 40);
+            this.UiEtiquetaClases.TabIndex = 10;
+            this.UiEtiquetaClases.Text = "Clases:";
+            // 
+            // UiListaDeOperadores
+            // 
+            this.UiListaDeOperadores.Dock = System.Windows.Forms.DockStyle.Top;
+            this.UiListaDeOperadores.Location = new System.Drawing.Point(0, 105);
+            this.UiListaDeOperadores.Margin = new System.Windows.Forms.Padding(6);
+            this.UiListaDeOperadores.MenuManager = this.UiContendorDeBarras;
+            this.UiListaDeOperadores.Name = "UiListaDeOperadores";
+            editorButtonImageOptions2.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions2.Image")));
+            this.UiListaDeOperadores.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", "UiBotonRefrescar-Operadores", null, DevExpress.Utils.ToolTipAnchor.Default)});
+            this.UiListaDeOperadores.Properties.PopupView = this.UiListaVistaDeOperadores;
+            this.UiListaDeOperadores.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UILista_Properties_ButtonClick);
+            this.UiListaDeOperadores.Size = new System.Drawing.Size(534, 40);
+            this.UiListaDeOperadores.TabIndex = 9;
+            this.UiListaDeOperadores.EditValueChanged += new System.EventHandler(this.UiListaDeOperadores_EditValueChanged);
+            this.UiListaDeOperadores.CustomDisplayText += new DevExpress.XtraEditors.Controls.CustomDisplayTextEventHandler(this.UiListaDeOperadores_CustomDisplayText);
+            // 
+            // UiListaVistaDeOperadores
+            // 
+            this.UiListaVistaDeOperadores.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.UiColCodigoUsuario,
+            this.UiColNombreUsuario});
+            this.UiListaVistaDeOperadores.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.UiListaVistaDeOperadores.Name = "UiListaVistaDeOperadores";
+            this.UiListaVistaDeOperadores.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.UiListaVistaDeOperadores.OptionsSelection.MultiSelect = true;
+            this.UiListaVistaDeOperadores.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
+            this.UiListaVistaDeOperadores.OptionsView.ShowGroupPanel = false;
+            this.UiListaVistaDeOperadores.SelectionChanged += new DevExpress.Data.SelectionChangedEventHandler(this.UiListaVistaDeOperadores_SelectionChanged);
+            this.UiListaVistaDeOperadores.BeforeLeaveRow += new DevExpress.XtraGrid.Views.Base.RowAllowEventHandler(this.UiListaVistaDeOperadores_BeforeLeaveRow);
+            this.UiListaVistaDeOperadores.MouseUp += new System.Windows.Forms.MouseEventHandler(this.UiListaVistaDeOperadores_MouseUp);
+            // 
+            // UiColCodigoUsuario
+            // 
+            this.UiColCodigoUsuario.Caption = "Código";
+            this.UiColCodigoUsuario.FieldName = "LOGIN_ID";
+            this.UiColCodigoUsuario.Name = "UiColCodigoUsuario";
+            this.UiColCodigoUsuario.OptionsColumn.AllowEdit = false;
+            this.UiColCodigoUsuario.Visible = true;
+            this.UiColCodigoUsuario.VisibleIndex = 1;
+            // 
+            // UiColNombreUsuario
+            // 
+            this.UiColNombreUsuario.Caption = "Nombre";
+            this.UiColNombreUsuario.FieldName = "LOGIN_NAME";
+            this.UiColNombreUsuario.Name = "UiColNombreUsuario";
+            this.UiColNombreUsuario.OptionsColumn.AllowEdit = false;
+            this.UiColNombreUsuario.Visible = true;
+            this.UiColNombreUsuario.VisibleIndex = 2;
+            // 
+            // UiEtiquetaOperadores
+            // 
+            this.UiEtiquetaOperadores.AutoSize = true;
+            this.UiEtiquetaOperadores.Dock = System.Windows.Forms.DockStyle.Top;
+            this.UiEtiquetaOperadores.Location = new System.Drawing.Point(0, 65);
+            this.UiEtiquetaOperadores.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.UiEtiquetaOperadores.Name = "UiEtiquetaOperadores";
+            this.UiEtiquetaOperadores.Padding = new System.Windows.Forms.Padding(0, 15, 0, 0);
+            this.UiEtiquetaOperadores.Size = new System.Drawing.Size(127, 40);
+            this.UiEtiquetaOperadores.TabIndex = 8;
+            this.UiEtiquetaOperadores.Text = "Operadores:";
+            this.UiEtiquetaOperadores.Click += new System.EventHandler(this.UiEtiquetaOperadores_Click);
+            // 
+            // UIListaTiposDeTarea
+            // 
+            this.UIListaTiposDeTarea.Dock = System.Windows.Forms.DockStyle.Top;
+            this.UIListaTiposDeTarea.Location = new System.Drawing.Point(0, 25);
+            this.UIListaTiposDeTarea.Margin = new System.Windows.Forms.Padding(6);
+            this.UIListaTiposDeTarea.MenuManager = this.UiContendorDeBarras;
+            this.UIListaTiposDeTarea.Name = "UIListaTiposDeTarea";
+            this.UIListaTiposDeTarea.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions3, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject9, serializableAppearanceObject10, serializableAppearanceObject11, serializableAppearanceObject12, "", "UiBotonRefrescar-TiposDeTarea", null, DevExpress.Utils.ToolTipAnchor.Default)});
+            this.UIListaTiposDeTarea.Properties.PopupView = this.UiListaVistaTipoDeTarea;
+            this.UIListaTiposDeTarea.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UILista_Properties_ButtonClick);
+            this.UIListaTiposDeTarea.Size = new System.Drawing.Size(534, 40);
+            this.UIListaTiposDeTarea.TabIndex = 5;
+            this.UIListaTiposDeTarea.CustomDisplayText += new DevExpress.XtraEditors.Controls.CustomDisplayTextEventHandler(this.UIListaTiposDeTarea_CustomDisplayText);
+            // 
+            // UiListaVistaTipoDeTarea
+            // 
+            this.UiListaVistaTipoDeTarea.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.UiColTipoTarea,
+            this.UiColDescripcionTipoTarea});
+            this.UiListaVistaTipoDeTarea.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.UiListaVistaTipoDeTarea.Name = "UiListaVistaTipoDeTarea";
+            this.UiListaVistaTipoDeTarea.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.UiListaVistaTipoDeTarea.OptionsSelection.MultiSelect = true;
+            this.UiListaVistaTipoDeTarea.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
+            this.UiListaVistaTipoDeTarea.OptionsView.ShowGroupPanel = false;
+            this.UiListaVistaTipoDeTarea.SelectionChanged += new DevExpress.Data.SelectionChangedEventHandler(this.UiListaVistaTipoDeTarea_SelectionChanged);
+            this.UiListaVistaTipoDeTarea.BeforeLeaveRow += new DevExpress.XtraGrid.Views.Base.RowAllowEventHandler(this.UiListaVistaTipoDeTarea_BeforeLeaveRow);
+            this.UiListaVistaTipoDeTarea.MouseUp += new System.Windows.Forms.MouseEventHandler(this.UiListaVistaTipoDeTarea_MouseUp);
+            // 
+            // UiColTipoTarea
+            // 
+            this.UiColTipoTarea.Caption = "Tipo";
+            this.UiColTipoTarea.FieldName = "PARAM_NAME";
+            this.UiColTipoTarea.Name = "UiColTipoTarea";
+            this.UiColTipoTarea.OptionsColumn.AllowEdit = false;
+            this.UiColTipoTarea.Visible = true;
+            this.UiColTipoTarea.VisibleIndex = 1;
+            // 
+            // UiColDescripcionTipoTarea
+            // 
+            this.UiColDescripcionTipoTarea.Caption = "Descripción";
+            this.UiColDescripcionTipoTarea.FieldName = "PARAM_CAPTION";
+            this.UiColDescripcionTipoTarea.Name = "UiColDescripcionTipoTarea";
+            this.UiColDescripcionTipoTarea.OptionsColumn.AllowEdit = false;
+            this.UiColDescripcionTipoTarea.Visible = true;
+            this.UiColDescripcionTipoTarea.VisibleIndex = 2;
+            // 
+            // UiEtiqeutaTipoDeTareas
+            // 
+            this.UiEtiqeutaTipoDeTareas.AutoSize = true;
+            this.UiEtiqeutaTipoDeTareas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.UiEtiqeutaTipoDeTareas.Location = new System.Drawing.Point(0, 0);
+            this.UiEtiqeutaTipoDeTareas.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.UiEtiqeutaTipoDeTareas.Name = "UiEtiqeutaTipoDeTareas";
+            this.UiEtiqeutaTipoDeTareas.Size = new System.Drawing.Size(158, 25);
+            this.UiEtiqeutaTipoDeTareas.TabIndex = 6;
+            this.UiEtiqeutaTipoDeTareas.Text = "Tipo de Tareas:";
+            // 
+            // UiPaginaUsuarios
+            // 
+            this.UiPaginaUsuarios.Caption = "Operadores";
+            this.UiPaginaUsuarios.Controls.Add(this.UiListaOperadores);
+            this.UiPaginaUsuarios.Controls.Add(this.UiBotonCambiarPrioridad);
+            this.UiPaginaUsuarios.Controls.Add(this.UiBotonReasignarBanda);
+            this.UiPaginaUsuarios.Controls.Add(this.UiBotonCancelarTarea);
+            this.UiPaginaUsuarios.Controls.Add(this.UiBotonPausarTarea);
+            this.UiPaginaUsuarios.Controls.Add(this.UiBotonReanudarTarea);
+            this.UiPaginaUsuarios.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiPaginaUsuarios.ImageOptions.Image")));
+            this.UiPaginaUsuarios.Margin = new System.Windows.Forms.Padding(6);
+            this.UiPaginaUsuarios.Name = "UiPaginaUsuarios";
+            this.UiPaginaUsuarios.Size = new System.Drawing.Size(534, 1080);
+            // 
+            // UiListaOperadores
+            // 
+            this.UiListaOperadores.DisplayMember = "LOGIN_NAME";
+            this.UiListaOperadores.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.UiListaOperadores.Location = new System.Drawing.Point(0, 210);
+            this.UiListaOperadores.Margin = new System.Windows.Forms.Padding(6);
+            this.UiListaOperadores.Name = "UiListaOperadores";
+            this.UiListaOperadores.Size = new System.Drawing.Size(534, 870);
+            this.UiListaOperadores.TabIndex = 11;
+            this.UiListaOperadores.ValueMember = "LOGIN_ID";
+            this.UiListaOperadores.DragOver += new System.Windows.Forms.DragEventHandler(this.UiListaOperadores_DragOver);
+            this.UiListaOperadores.GiveFeedback += new System.Windows.Forms.GiveFeedbackEventHandler(this.UiListaOperadores_GiveFeedback);
+            this.UiListaOperadores.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UiListaOperadores_MouseDown);
+            this.UiListaOperadores.MouseMove += new System.Windows.Forms.MouseEventHandler(this.UiListaOperadores_MouseMove);
+            // 
+            // UiBotonCambiarPrioridad
+            // 
+            this.UiBotonCambiarPrioridad.Dock = System.Windows.Forms.DockStyle.Top;
+            this.UiBotonCambiarPrioridad.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBotonCambiarPrioridad.ImageOptions.Image")));
+            this.UiBotonCambiarPrioridad.Location = new System.Drawing.Point(0, 168);
+            this.UiBotonCambiarPrioridad.Margin = new System.Windows.Forms.Padding(4);
+            this.UiBotonCambiarPrioridad.Name = "UiBotonCambiarPrioridad";
+            this.UiBotonCambiarPrioridad.Size = new System.Drawing.Size(534, 42);
+            this.UiBotonCambiarPrioridad.TabIndex = 13;
+            this.UiBotonCambiarPrioridad.Text = "Cambiar Prioridad";
+            this.UiBotonCambiarPrioridad.Visible = false;
+            this.UiBotonCambiarPrioridad.Click += new System.EventHandler(this.UiBotonCambiarPrioridad_Click);
+            // 
+            // UiBotonReasignarBanda
+            // 
+            this.UiBotonReasignarBanda.Dock = System.Windows.Forms.DockStyle.Top;
+            this.UiBotonReasignarBanda.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBotonReasignarBanda.ImageOptions.Image")));
+            this.UiBotonReasignarBanda.Location = new System.Drawing.Point(0, 126);
+            this.UiBotonReasignarBanda.Margin = new System.Windows.Forms.Padding(4);
+            this.UiBotonReasignarBanda.Name = "UiBotonReasignarBanda";
+            this.UiBotonReasignarBanda.Size = new System.Drawing.Size(534, 42);
+            this.UiBotonReasignarBanda.TabIndex = 12;
+            this.UiBotonReasignarBanda.Text = "Reasignar Banda";
+            this.UiBotonReasignarBanda.Click += new System.EventHandler(this.UiBotonReasignarBanda_Click);
+            // 
+            // UiBotonCancelarTarea
+            // 
+            this.UiBotonCancelarTarea.Dock = System.Windows.Forms.DockStyle.Top;
+            this.UiBotonCancelarTarea.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBotonCancelarTarea.ImageOptions.Image")));
+            this.UiBotonCancelarTarea.Location = new System.Drawing.Point(0, 84);
+            this.UiBotonCancelarTarea.Margin = new System.Windows.Forms.Padding(6);
+            this.UiBotonCancelarTarea.Name = "UiBotonCancelarTarea";
+            this.UiBotonCancelarTarea.Size = new System.Drawing.Size(534, 42);
+            this.UiBotonCancelarTarea.TabIndex = 10;
+            this.UiBotonCancelarTarea.Text = "Cancelar";
+            this.UiBotonCancelarTarea.Click += new System.EventHandler(this.UiBotonCancelarTarea_Click);
+            // 
+            // UiBotonPausarTarea
+            // 
+            this.UiBotonPausarTarea.Dock = System.Windows.Forms.DockStyle.Top;
+            this.UiBotonPausarTarea.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBotonPausarTarea.ImageOptions.Image")));
+            this.UiBotonPausarTarea.Location = new System.Drawing.Point(0, 42);
+            this.UiBotonPausarTarea.Margin = new System.Windows.Forms.Padding(6);
+            this.UiBotonPausarTarea.Name = "UiBotonPausarTarea";
+            this.UiBotonPausarTarea.Size = new System.Drawing.Size(534, 42);
+            this.UiBotonPausarTarea.TabIndex = 9;
+            this.UiBotonPausarTarea.Text = "Pausar";
+            this.UiBotonPausarTarea.Click += new System.EventHandler(this.UiBotonPausarTarea_Click);
+            // 
+            // UiBotonReanudarTarea
+            // 
+            this.UiBotonReanudarTarea.Dock = System.Windows.Forms.DockStyle.Top;
+            this.UiBotonReanudarTarea.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBotonReanudarTarea.ImageOptions.Image")));
+            this.UiBotonReanudarTarea.Location = new System.Drawing.Point(0, 0);
+            this.UiBotonReanudarTarea.Margin = new System.Windows.Forms.Padding(6);
+            this.UiBotonReanudarTarea.Name = "UiBotonReanudarTarea";
+            this.UiBotonReanudarTarea.Size = new System.Drawing.Size(534, 42);
+            this.UiBotonReanudarTarea.TabIndex = 8;
+            this.UiBotonReanudarTarea.Text = "Reanudar";
+            this.UiBotonReanudarTarea.Click += new System.EventHandler(this.UiBotonReanudarTarea_Click);
+            // 
             // ToggleDetallado
             // 
             this.ToggleDetallado.AutoHeight = false;
@@ -2302,7 +2730,7 @@
             this.UiTabGraficas.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiTabGraficas.ImageOptions.Image")));
             this.UiTabGraficas.Margin = new System.Windows.Forms.Padding(6);
             this.UiTabGraficas.Name = "UiTabGraficas";
-            this.UiTabGraficas.Size = new System.Drawing.Size(3000, 1255);
+            this.UiTabGraficas.Size = new System.Drawing.Size(2245, 1255);
             this.UiTabGraficas.Text = "Gráficas";
             // 
             // UiSplitGraficas
@@ -2315,7 +2743,7 @@
             this.UiSplitGraficas.Panel1.Text = "Panel1";
             this.UiSplitGraficas.Panel2.Controls.Add(this.UiChartTiposTareas);
             this.UiSplitGraficas.Panel2.Text = "Panel2";
-            this.UiSplitGraficas.Size = new System.Drawing.Size(3000, 1209);
+            this.UiSplitGraficas.Size = new System.Drawing.Size(2245, 1209);
             this.UiSplitGraficas.SplitterPosition = 1040;
             this.UiSplitGraficas.TabIndex = 1;
             this.UiSplitGraficas.Text = "UiSplitGraficas";
@@ -2383,7 +2811,7 @@
             this.UiChartTiposTareas.SeriesTemplate.SeriesDataMember = "TASK_ASSIGNEDTO";
             this.UiChartTiposTareas.SeriesTemplate.ToolTipEnabled = DevExpress.Utils.DefaultBoolean.True;
             this.UiChartTiposTareas.SeriesTemplate.ToolTipSeriesPattern = "{V:#.00}";
-            this.UiChartTiposTareas.Size = new System.Drawing.Size(1940, 1209);
+            this.UiChartTiposTareas.Size = new System.Drawing.Size(1185, 1209);
             this.UiChartTiposTareas.TabIndex = 1;
             chartTitle2.Text = "Tiempo promedio de tareas";
             this.UiChartTiposTareas.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
@@ -2473,7 +2901,7 @@
             this.barDockControl1.Location = new System.Drawing.Point(0, 0);
             this.barDockControl1.Manager = this.UiBarManagerGraficas;
             this.barDockControl1.Margin = new System.Windows.Forms.Padding(6);
-            this.barDockControl1.Size = new System.Drawing.Size(3000, 46);
+            this.barDockControl1.Size = new System.Drawing.Size(2245, 46);
             // 
             // barDockControl2
             // 
@@ -2482,13 +2910,13 @@
             this.barDockControl2.Location = new System.Drawing.Point(0, 1255);
             this.barDockControl2.Manager = this.UiBarManagerGraficas;
             this.barDockControl2.Margin = new System.Windows.Forms.Padding(6);
-            this.barDockControl2.Size = new System.Drawing.Size(3000, 0);
+            this.barDockControl2.Size = new System.Drawing.Size(2245, 0);
             // 
             // barDockControl4
             // 
             this.barDockControl4.CausesValidation = false;
             this.barDockControl4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl4.Location = new System.Drawing.Point(3000, 46);
+            this.barDockControl4.Location = new System.Drawing.Point(2245, 46);
             this.barDockControl4.Manager = this.UiBarManagerGraficas;
             this.barDockControl4.Margin = new System.Windows.Forms.Padding(6);
             this.barDockControl4.Size = new System.Drawing.Size(0, 1209);
@@ -2502,7 +2930,7 @@
             this.UITabConfirmarRecepcion.Controls.Add(this.barDockControl5);
             this.UITabConfirmarRecepcion.Margin = new System.Windows.Forms.Padding(6);
             this.UITabConfirmarRecepcion.Name = "UITabConfirmarRecepcion";
-            this.UITabConfirmarRecepcion.Size = new System.Drawing.Size(3000, 1255);
+            this.UITabConfirmarRecepcion.Size = new System.Drawing.Size(2245, 1255);
             this.UITabConfirmarRecepcion.Text = "Confirmación Recepción";
             // 
             // splitContainerControl1
@@ -2515,7 +2943,7 @@
             this.splitContainerControl1.Panel1.Text = "Panel1";
             this.splitContainerControl1.Panel2.Controls.Add(this.UiContenedorVistaConfirmacionOrdenDeCompra);
             this.splitContainerControl1.Panel2.Text = "Panel2";
-            this.splitContainerControl1.Size = new System.Drawing.Size(3000, 1209);
+            this.splitContainerControl1.Size = new System.Drawing.Size(2245, 1209);
             this.splitContainerControl1.SplitterPosition = 1412;
             this.splitContainerControl1.TabIndex = 10;
             this.splitContainerControl1.Text = "splitContainerControl1";
@@ -2668,7 +3096,7 @@
             this.UiContenedorVistaConfirmacionOrdenDeCompra.Name = "UiContenedorVistaConfirmacionOrdenDeCompra";
             this.UiContenedorVistaConfirmacionOrdenDeCompra.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.UiLookUpEditBodegaERP});
-            this.UiContenedorVistaConfirmacionOrdenDeCompra.Size = new System.Drawing.Size(1568, 1209);
+            this.UiContenedorVistaConfirmacionOrdenDeCompra.Size = new System.Drawing.Size(813, 1209);
             this.UiContenedorVistaConfirmacionOrdenDeCompra.TabIndex = 5;
             this.UiContenedorVistaConfirmacionOrdenDeCompra.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.UIVistaConfirmacionOrdenDeCompra});
@@ -2991,7 +3419,7 @@
             this.barDockControl5.Location = new System.Drawing.Point(0, 0);
             this.barDockControl5.Manager = this.UIBarManagerConfirmarRecepcion;
             this.barDockControl5.Margin = new System.Windows.Forms.Padding(6);
-            this.barDockControl5.Size = new System.Drawing.Size(3000, 46);
+            this.barDockControl5.Size = new System.Drawing.Size(2245, 46);
             // 
             // barDockControl6
             // 
@@ -3000,13 +3428,13 @@
             this.barDockControl6.Location = new System.Drawing.Point(0, 1255);
             this.barDockControl6.Manager = this.UIBarManagerConfirmarRecepcion;
             this.barDockControl6.Margin = new System.Windows.Forms.Padding(6);
-            this.barDockControl6.Size = new System.Drawing.Size(3000, 0);
+            this.barDockControl6.Size = new System.Drawing.Size(2245, 0);
             // 
             // barDockControl8
             // 
             this.barDockControl8.CausesValidation = false;
             this.barDockControl8.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl8.Location = new System.Drawing.Point(3000, 46);
+            this.barDockControl8.Location = new System.Drawing.Point(2245, 46);
             this.barDockControl8.Manager = this.UIBarManagerConfirmarRecepcion;
             this.barDockControl8.Margin = new System.Windows.Forms.Padding(6);
             this.barDockControl8.Size = new System.Drawing.Size(0, 1209);
@@ -3027,7 +3455,7 @@
             this.UITabConfirmarSeries.Margin = new System.Windows.Forms.Padding(6);
             this.UITabConfirmarSeries.Name = "UITabConfirmarSeries";
             this.UITabConfirmarSeries.PageVisible = false;
-            this.UITabConfirmarSeries.Size = new System.Drawing.Size(3000, 1255);
+            this.UITabConfirmarSeries.Size = new System.Drawing.Size(2245, 1255);
             this.UITabConfirmarSeries.Text = "Confirmación Series";
             // 
             // UIContenedorVistaConfirmacionSeries
@@ -3039,7 +3467,7 @@
             this.UIContenedorVistaConfirmacionSeries.Margin = new System.Windows.Forms.Padding(6);
             this.UIContenedorVistaConfirmacionSeries.MenuManager = this.UiContendorDeBarras;
             this.UIContenedorVistaConfirmacionSeries.Name = "UIContenedorVistaConfirmacionSeries";
-            this.UIContenedorVistaConfirmacionSeries.Size = new System.Drawing.Size(3000, 1209);
+            this.UIContenedorVistaConfirmacionSeries.Size = new System.Drawing.Size(2245, 1209);
             this.UIContenedorVistaConfirmacionSeries.TabIndex = 5;
             this.UIContenedorVistaConfirmacionSeries.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.UIVistaConfirmacionSeries});
@@ -3273,7 +3701,7 @@
             this.barDockControl9.Location = new System.Drawing.Point(0, 0);
             this.barDockControl9.Manager = this.UIBarManagerConfirmacionSeries;
             this.barDockControl9.Margin = new System.Windows.Forms.Padding(6);
-            this.barDockControl9.Size = new System.Drawing.Size(3000, 46);
+            this.barDockControl9.Size = new System.Drawing.Size(2245, 46);
             // 
             // barDockControl10
             // 
@@ -3282,13 +3710,13 @@
             this.barDockControl10.Location = new System.Drawing.Point(0, 1255);
             this.barDockControl10.Manager = this.UIBarManagerConfirmacionSeries;
             this.barDockControl10.Margin = new System.Windows.Forms.Padding(6);
-            this.barDockControl10.Size = new System.Drawing.Size(3000, 0);
+            this.barDockControl10.Size = new System.Drawing.Size(2245, 0);
             // 
             // barDockControl12
             // 
             this.barDockControl12.CausesValidation = false;
             this.barDockControl12.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl12.Location = new System.Drawing.Point(3000, 46);
+            this.barDockControl12.Location = new System.Drawing.Point(2245, 46);
             this.barDockControl12.Manager = this.UIBarManagerConfirmacionSeries;
             this.barDockControl12.Margin = new System.Windows.Forms.Padding(6);
             this.barDockControl12.Size = new System.Drawing.Size(0, 1209);
@@ -3302,7 +3730,7 @@
             this.UITabOlaPicking.Controls.Add(this.barDockControl13);
             this.UITabOlaPicking.Margin = new System.Windows.Forms.Padding(6);
             this.UITabOlaPicking.Name = "UITabOlaPicking";
-            this.UITabOlaPicking.Size = new System.Drawing.Size(3000, 1255);
+            this.UITabOlaPicking.Size = new System.Drawing.Size(2245, 1255);
             this.UITabOlaPicking.Text = "Ola de Picking";
             // 
             // UIContenedorOla
@@ -3314,7 +3742,7 @@
             this.UIContenedorOla.Margin = new System.Windows.Forms.Padding(6);
             this.UIContenedorOla.MenuManager = this.UiContendorDeBarras;
             this.UIContenedorOla.Name = "UIContenedorOla";
-            this.UIContenedorOla.Size = new System.Drawing.Size(3000, 1187);
+            this.UIContenedorOla.Size = new System.Drawing.Size(2245, 1187);
             this.UIContenedorOla.TabIndex = 5;
             this.UIContenedorOla.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.UIViewOlaPicking});
@@ -3623,7 +4051,7 @@
             this.barDockControl13.Location = new System.Drawing.Point(0, 0);
             this.barDockControl13.Manager = this.barManager1;
             this.barDockControl13.Margin = new System.Windows.Forms.Padding(6);
-            this.barDockControl13.Size = new System.Drawing.Size(3000, 46);
+            this.barDockControl13.Size = new System.Drawing.Size(2245, 46);
             // 
             // barDockControl14
             // 
@@ -3632,13 +4060,13 @@
             this.barDockControl14.Location = new System.Drawing.Point(0, 1233);
             this.barDockControl14.Manager = this.barManager1;
             this.barDockControl14.Margin = new System.Windows.Forms.Padding(6);
-            this.barDockControl14.Size = new System.Drawing.Size(3000, 22);
+            this.barDockControl14.Size = new System.Drawing.Size(2245, 22);
             // 
             // barDockControl16
             // 
             this.barDockControl16.CausesValidation = false;
             this.barDockControl16.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl16.Location = new System.Drawing.Point(3000, 46);
+            this.barDockControl16.Location = new System.Drawing.Point(2245, 46);
             this.barDockControl16.Manager = this.barManager1;
             this.barDockControl16.Margin = new System.Windows.Forms.Padding(6);
             this.barDockControl16.Size = new System.Drawing.Size(0, 1187);
@@ -3741,434 +4169,6 @@
             this.bar13.OptionsBar.UseWholeRow = true;
             this.bar13.Text = "Tools";
             // 
-            // UiNavegacionPaginasPricipal
-            // 
-            this.UiNavegacionPaginasPricipal.Controls.Add(this.UiPaginaFecha);
-            this.UiNavegacionPaginasPricipal.Controls.Add(this.UiPaginaUsuarios);
-            this.UiNavegacionPaginasPricipal.Dock = System.Windows.Forms.DockStyle.Left;
-            this.UiNavegacionPaginasPricipal.Location = new System.Drawing.Point(0, 46);
-            this.UiNavegacionPaginasPricipal.Margin = new System.Windows.Forms.Padding(6);
-            this.UiNavegacionPaginasPricipal.Name = "UiNavegacionPaginasPricipal";
-            this.UiNavegacionPaginasPricipal.PageProperties.ShowCollapseButton = false;
-            this.UiNavegacionPaginasPricipal.PageProperties.ShowExpandButton = false;
-            this.UiNavegacionPaginasPricipal.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
-            this.UiPaginaFecha,
-            this.UiPaginaUsuarios});
-            this.UiNavegacionPaginasPricipal.RegularSize = new System.Drawing.Size(660, 1209);
-            this.UiNavegacionPaginasPricipal.SelectedPage = this.UiPaginaFecha;
-            this.UiNavegacionPaginasPricipal.Size = new System.Drawing.Size(660, 1209);
-            this.UiNavegacionPaginasPricipal.TabIndex = 3;
-            this.UiNavegacionPaginasPricipal.Text = "navigationPane1";
-            // 
-            // UiPaginaUsuarios
-            // 
-            this.UiPaginaUsuarios.Caption = "Operadores";
-            this.UiPaginaUsuarios.Controls.Add(this.UiListaOperadores);
-            this.UiPaginaUsuarios.Controls.Add(this.UiBotonCambiarPrioridad);
-            this.UiPaginaUsuarios.Controls.Add(this.UiBotonReasignarBanda);
-            this.UiPaginaUsuarios.Controls.Add(this.UiBotonCancelarTarea);
-            this.UiPaginaUsuarios.Controls.Add(this.UiBotonPausarTarea);
-            this.UiPaginaUsuarios.Controls.Add(this.UiBotonReanudarTarea);
-            this.UiPaginaUsuarios.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiPaginaUsuarios.ImageOptions.Image")));
-            this.UiPaginaUsuarios.Margin = new System.Windows.Forms.Padding(6);
-            this.UiPaginaUsuarios.Name = "UiPaginaUsuarios";
-            this.UiPaginaUsuarios.Size = new System.Drawing.Size(534, 1080);
-            // 
-            // UiBotonReanudarTarea
-            // 
-            this.UiBotonReanudarTarea.Dock = System.Windows.Forms.DockStyle.Top;
-            this.UiBotonReanudarTarea.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBotonReanudarTarea.ImageOptions.Image")));
-            this.UiBotonReanudarTarea.Location = new System.Drawing.Point(0, 0);
-            this.UiBotonReanudarTarea.Margin = new System.Windows.Forms.Padding(6);
-            this.UiBotonReanudarTarea.Name = "UiBotonReanudarTarea";
-            this.UiBotonReanudarTarea.Size = new System.Drawing.Size(534, 42);
-            this.UiBotonReanudarTarea.TabIndex = 8;
-            this.UiBotonReanudarTarea.Text = "Reanudar";
-            this.UiBotonReanudarTarea.Click += new System.EventHandler(this.UiBotonReanudarTarea_Click);
-            // 
-            // UiBotonPausarTarea
-            // 
-            this.UiBotonPausarTarea.Dock = System.Windows.Forms.DockStyle.Top;
-            this.UiBotonPausarTarea.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBotonPausarTarea.ImageOptions.Image")));
-            this.UiBotonPausarTarea.Location = new System.Drawing.Point(0, 42);
-            this.UiBotonPausarTarea.Margin = new System.Windows.Forms.Padding(6);
-            this.UiBotonPausarTarea.Name = "UiBotonPausarTarea";
-            this.UiBotonPausarTarea.Size = new System.Drawing.Size(534, 42);
-            this.UiBotonPausarTarea.TabIndex = 9;
-            this.UiBotonPausarTarea.Text = "Pausar";
-            this.UiBotonPausarTarea.Click += new System.EventHandler(this.UiBotonPausarTarea_Click);
-            // 
-            // UiBotonCancelarTarea
-            // 
-            this.UiBotonCancelarTarea.Dock = System.Windows.Forms.DockStyle.Top;
-            this.UiBotonCancelarTarea.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBotonCancelarTarea.ImageOptions.Image")));
-            this.UiBotonCancelarTarea.Location = new System.Drawing.Point(0, 84);
-            this.UiBotonCancelarTarea.Margin = new System.Windows.Forms.Padding(6);
-            this.UiBotonCancelarTarea.Name = "UiBotonCancelarTarea";
-            this.UiBotonCancelarTarea.Size = new System.Drawing.Size(534, 42);
-            this.UiBotonCancelarTarea.TabIndex = 10;
-            this.UiBotonCancelarTarea.Text = "Cancelar";
-            this.UiBotonCancelarTarea.Click += new System.EventHandler(this.UiBotonCancelarTarea_Click);
-            // 
-            // UiListaOperadores
-            // 
-            this.UiListaOperadores.DisplayMember = "LOGIN_NAME";
-            this.UiListaOperadores.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.UiListaOperadores.Location = new System.Drawing.Point(0, 210);
-            this.UiListaOperadores.Margin = new System.Windows.Forms.Padding(6);
-            this.UiListaOperadores.Name = "UiListaOperadores";
-            this.UiListaOperadores.Size = new System.Drawing.Size(534, 870);
-            this.UiListaOperadores.TabIndex = 11;
-            this.UiListaOperadores.ValueMember = "LOGIN_ID";
-            this.UiListaOperadores.DragOver += new System.Windows.Forms.DragEventHandler(this.UiListaOperadores_DragOver);
-            this.UiListaOperadores.GiveFeedback += new System.Windows.Forms.GiveFeedbackEventHandler(this.UiListaOperadores_GiveFeedback);
-            this.UiListaOperadores.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UiListaOperadores_MouseDown);
-            this.UiListaOperadores.MouseMove += new System.Windows.Forms.MouseEventHandler(this.UiListaOperadores_MouseMove);
-            // 
-            // UiBotonReasignarBanda
-            // 
-            this.UiBotonReasignarBanda.Dock = System.Windows.Forms.DockStyle.Top;
-            this.UiBotonReasignarBanda.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBotonReasignarBanda.ImageOptions.Image")));
-            this.UiBotonReasignarBanda.Location = new System.Drawing.Point(0, 126);
-            this.UiBotonReasignarBanda.Margin = new System.Windows.Forms.Padding(4);
-            this.UiBotonReasignarBanda.Name = "UiBotonReasignarBanda";
-            this.UiBotonReasignarBanda.Size = new System.Drawing.Size(534, 42);
-            this.UiBotonReasignarBanda.TabIndex = 12;
-            this.UiBotonReasignarBanda.Text = "Reasignar Banda";
-            this.UiBotonReasignarBanda.Click += new System.EventHandler(this.UiBotonReasignarBanda_Click);
-            // 
-            // UiBotonCambiarPrioridad
-            // 
-            this.UiBotonCambiarPrioridad.Dock = System.Windows.Forms.DockStyle.Top;
-            this.UiBotonCambiarPrioridad.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBotonCambiarPrioridad.ImageOptions.Image")));
-            this.UiBotonCambiarPrioridad.Location = new System.Drawing.Point(0, 168);
-            this.UiBotonCambiarPrioridad.Margin = new System.Windows.Forms.Padding(4);
-            this.UiBotonCambiarPrioridad.Name = "UiBotonCambiarPrioridad";
-            this.UiBotonCambiarPrioridad.Size = new System.Drawing.Size(534, 42);
-            this.UiBotonCambiarPrioridad.TabIndex = 13;
-            this.UiBotonCambiarPrioridad.Text = "Cambiar Prioridad";
-            this.UiBotonCambiarPrioridad.Visible = false;
-            this.UiBotonCambiarPrioridad.Click += new System.EventHandler(this.UiBotonCambiarPrioridad_Click);
-            // 
-            // UiPaginaFecha
-            // 
-            this.UiPaginaFecha.Caption = "Tipo de Tareas y Rango de Fechas";
-            this.UiPaginaFecha.Controls.Add(this.UiBotonAceptarRangoFecha);
-            this.UiPaginaFecha.Controls.Add(this.panel2);
-            this.UiPaginaFecha.Controls.Add(this.UiFechaFinal);
-            this.UiPaginaFecha.Controls.Add(this.UiEtiquetaFechaFinal);
-            this.UiPaginaFecha.Controls.Add(this.UiFechaInicial);
-            this.UiPaginaFecha.Controls.Add(this.UiEtiquetaFechaInicial);
-            this.UiPaginaFecha.Controls.Add(this.UiGrupoRadioFechas);
-            this.UiPaginaFecha.Controls.Add(this.panel1);
-            this.UiPaginaFecha.Controls.Add(this.UiListaDeClases);
-            this.UiPaginaFecha.Controls.Add(this.UiEtiquetaClases);
-            this.UiPaginaFecha.Controls.Add(this.UiListaDeOperadores);
-            this.UiPaginaFecha.Controls.Add(this.UiEtiquetaOperadores);
-            this.UiPaginaFecha.Controls.Add(this.UIListaTiposDeTarea);
-            this.UiPaginaFecha.Controls.Add(this.UiEtiqeutaTipoDeTareas);
-            this.UiPaginaFecha.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiPaginaFecha.ImageOptions.Image")));
-            this.UiPaginaFecha.Margin = new System.Windows.Forms.Padding(6);
-            this.UiPaginaFecha.Name = "UiPaginaFecha";
-            this.UiPaginaFecha.Size = new System.Drawing.Size(534, 1080);
-            // 
-            // UiEtiqeutaTipoDeTareas
-            // 
-            this.UiEtiqeutaTipoDeTareas.AutoSize = true;
-            this.UiEtiqeutaTipoDeTareas.Dock = System.Windows.Forms.DockStyle.Top;
-            this.UiEtiqeutaTipoDeTareas.Location = new System.Drawing.Point(0, 0);
-            this.UiEtiqeutaTipoDeTareas.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.UiEtiqeutaTipoDeTareas.Name = "UiEtiqeutaTipoDeTareas";
-            this.UiEtiqeutaTipoDeTareas.Size = new System.Drawing.Size(158, 25);
-            this.UiEtiqeutaTipoDeTareas.TabIndex = 6;
-            this.UiEtiqeutaTipoDeTareas.Text = "Tipo de Tareas:";
-            // 
-            // UIListaTiposDeTarea
-            // 
-            this.UIListaTiposDeTarea.Dock = System.Windows.Forms.DockStyle.Top;
-            this.UIListaTiposDeTarea.Location = new System.Drawing.Point(0, 25);
-            this.UIListaTiposDeTarea.Margin = new System.Windows.Forms.Padding(6);
-            this.UIListaTiposDeTarea.MenuManager = this.UiContendorDeBarras;
-            this.UIListaTiposDeTarea.Name = "UIListaTiposDeTarea";
-            this.UIListaTiposDeTarea.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions3, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject9, serializableAppearanceObject10, serializableAppearanceObject11, serializableAppearanceObject12, "", "UiBotonRefrescar-TiposDeTarea", null, DevExpress.Utils.ToolTipAnchor.Default)});
-            this.UIListaTiposDeTarea.Properties.PopupView = this.UiListaVistaTipoDeTarea;
-            this.UIListaTiposDeTarea.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UILista_Properties_ButtonClick);
-            this.UIListaTiposDeTarea.Size = new System.Drawing.Size(534, 40);
-            this.UIListaTiposDeTarea.TabIndex = 5;
-            this.UIListaTiposDeTarea.CustomDisplayText += new DevExpress.XtraEditors.Controls.CustomDisplayTextEventHandler(this.UIListaTiposDeTarea_CustomDisplayText);
-            // 
-            // UiListaVistaTipoDeTarea
-            // 
-            this.UiListaVistaTipoDeTarea.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.UiColTipoTarea,
-            this.UiColDescripcionTipoTarea});
-            this.UiListaVistaTipoDeTarea.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
-            this.UiListaVistaTipoDeTarea.Name = "UiListaVistaTipoDeTarea";
-            this.UiListaVistaTipoDeTarea.OptionsSelection.EnableAppearanceFocusedCell = false;
-            this.UiListaVistaTipoDeTarea.OptionsSelection.MultiSelect = true;
-            this.UiListaVistaTipoDeTarea.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
-            this.UiListaVistaTipoDeTarea.OptionsView.ShowGroupPanel = false;
-            this.UiListaVistaTipoDeTarea.SelectionChanged += new DevExpress.Data.SelectionChangedEventHandler(this.UiListaVistaTipoDeTarea_SelectionChanged);
-            this.UiListaVistaTipoDeTarea.BeforeLeaveRow += new DevExpress.XtraGrid.Views.Base.RowAllowEventHandler(this.UiListaVistaTipoDeTarea_BeforeLeaveRow);
-            this.UiListaVistaTipoDeTarea.MouseUp += new System.Windows.Forms.MouseEventHandler(this.UiListaVistaTipoDeTarea_MouseUp);
-            // 
-            // UiColTipoTarea
-            // 
-            this.UiColTipoTarea.Caption = "Tipo";
-            this.UiColTipoTarea.FieldName = "PARAM_NAME";
-            this.UiColTipoTarea.Name = "UiColTipoTarea";
-            this.UiColTipoTarea.OptionsColumn.AllowEdit = false;
-            this.UiColTipoTarea.Visible = true;
-            this.UiColTipoTarea.VisibleIndex = 1;
-            // 
-            // UiColDescripcionTipoTarea
-            // 
-            this.UiColDescripcionTipoTarea.Caption = "Descripción";
-            this.UiColDescripcionTipoTarea.FieldName = "PARAM_CAPTION";
-            this.UiColDescripcionTipoTarea.Name = "UiColDescripcionTipoTarea";
-            this.UiColDescripcionTipoTarea.OptionsColumn.AllowEdit = false;
-            this.UiColDescripcionTipoTarea.Visible = true;
-            this.UiColDescripcionTipoTarea.VisibleIndex = 2;
-            // 
-            // UiEtiquetaOperadores
-            // 
-            this.UiEtiquetaOperadores.AutoSize = true;
-            this.UiEtiquetaOperadores.Dock = System.Windows.Forms.DockStyle.Top;
-            this.UiEtiquetaOperadores.Location = new System.Drawing.Point(0, 65);
-            this.UiEtiquetaOperadores.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.UiEtiquetaOperadores.Name = "UiEtiquetaOperadores";
-            this.UiEtiquetaOperadores.Padding = new System.Windows.Forms.Padding(0, 15, 0, 0);
-            this.UiEtiquetaOperadores.Size = new System.Drawing.Size(127, 40);
-            this.UiEtiquetaOperadores.TabIndex = 8;
-            this.UiEtiquetaOperadores.Text = "Operadores:";
-            this.UiEtiquetaOperadores.Click += new System.EventHandler(this.UiEtiquetaOperadores_Click);
-            // 
-            // UiListaDeOperadores
-            // 
-            this.UiListaDeOperadores.Dock = System.Windows.Forms.DockStyle.Top;
-            this.UiListaDeOperadores.Location = new System.Drawing.Point(0, 105);
-            this.UiListaDeOperadores.Margin = new System.Windows.Forms.Padding(6);
-            this.UiListaDeOperadores.MenuManager = this.UiContendorDeBarras;
-            this.UiListaDeOperadores.Name = "UiListaDeOperadores";
-            editorButtonImageOptions2.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions2.Image")));
-            this.UiListaDeOperadores.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", "UiBotonRefrescar-Operadores", null, DevExpress.Utils.ToolTipAnchor.Default)});
-            this.UiListaDeOperadores.Properties.PopupView = this.UiListaVistaDeOperadores;
-            this.UiListaDeOperadores.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UILista_Properties_ButtonClick);
-            this.UiListaDeOperadores.Size = new System.Drawing.Size(534, 40);
-            this.UiListaDeOperadores.TabIndex = 9;
-            this.UiListaDeOperadores.EditValueChanged += new System.EventHandler(this.UiListaDeOperadores_EditValueChanged);
-            this.UiListaDeOperadores.CustomDisplayText += new DevExpress.XtraEditors.Controls.CustomDisplayTextEventHandler(this.UiListaDeOperadores_CustomDisplayText);
-            // 
-            // UiListaVistaDeOperadores
-            // 
-            this.UiListaVistaDeOperadores.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.UiColCodigoUsuario,
-            this.UiColNombreUsuario});
-            this.UiListaVistaDeOperadores.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
-            this.UiListaVistaDeOperadores.Name = "UiListaVistaDeOperadores";
-            this.UiListaVistaDeOperadores.OptionsSelection.EnableAppearanceFocusedCell = false;
-            this.UiListaVistaDeOperadores.OptionsSelection.MultiSelect = true;
-            this.UiListaVistaDeOperadores.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
-            this.UiListaVistaDeOperadores.OptionsView.ShowGroupPanel = false;
-            this.UiListaVistaDeOperadores.SelectionChanged += new DevExpress.Data.SelectionChangedEventHandler(this.UiListaVistaDeOperadores_SelectionChanged);
-            this.UiListaVistaDeOperadores.BeforeLeaveRow += new DevExpress.XtraGrid.Views.Base.RowAllowEventHandler(this.UiListaVistaDeOperadores_BeforeLeaveRow);
-            this.UiListaVistaDeOperadores.MouseUp += new System.Windows.Forms.MouseEventHandler(this.UiListaVistaDeOperadores_MouseUp);
-            // 
-            // UiColCodigoUsuario
-            // 
-            this.UiColCodigoUsuario.Caption = "Código";
-            this.UiColCodigoUsuario.FieldName = "LOGIN_ID";
-            this.UiColCodigoUsuario.Name = "UiColCodigoUsuario";
-            this.UiColCodigoUsuario.OptionsColumn.AllowEdit = false;
-            this.UiColCodigoUsuario.Visible = true;
-            this.UiColCodigoUsuario.VisibleIndex = 1;
-            // 
-            // UiColNombreUsuario
-            // 
-            this.UiColNombreUsuario.Caption = "Nombre";
-            this.UiColNombreUsuario.FieldName = "LOGIN_NAME";
-            this.UiColNombreUsuario.Name = "UiColNombreUsuario";
-            this.UiColNombreUsuario.OptionsColumn.AllowEdit = false;
-            this.UiColNombreUsuario.Visible = true;
-            this.UiColNombreUsuario.VisibleIndex = 2;
-            // 
-            // UiEtiquetaClases
-            // 
-            this.UiEtiquetaClases.AutoSize = true;
-            this.UiEtiquetaClases.Dock = System.Windows.Forms.DockStyle.Top;
-            this.UiEtiquetaClases.Location = new System.Drawing.Point(0, 145);
-            this.UiEtiquetaClases.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.UiEtiquetaClases.Name = "UiEtiquetaClases";
-            this.UiEtiquetaClases.Padding = new System.Windows.Forms.Padding(0, 15, 0, 0);
-            this.UiEtiquetaClases.Size = new System.Drawing.Size(77, 40);
-            this.UiEtiquetaClases.TabIndex = 10;
-            this.UiEtiquetaClases.Text = "Clases:";
-            // 
-            // UiListaDeClases
-            // 
-            this.UiListaDeClases.Dock = System.Windows.Forms.DockStyle.Top;
-            this.UiListaDeClases.Location = new System.Drawing.Point(0, 185);
-            this.UiListaDeClases.Margin = new System.Windows.Forms.Padding(4);
-            this.UiListaDeClases.MenuManager = this.UiContendorDeBarras;
-            this.UiListaDeClases.Name = "UiListaDeClases";
-            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
-            this.UiListaDeClases.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", "UiBotonRefrescar-Operadores", null, DevExpress.Utils.ToolTipAnchor.Default)});
-            this.UiListaDeClases.Properties.PopupView = this.UiVistaClases;
-            this.UiListaDeClases.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UILista_Properties_ButtonClick);
-            this.UiListaDeClases.Size = new System.Drawing.Size(534, 40);
-            this.UiListaDeClases.TabIndex = 11;
-            this.UiListaDeClases.CustomDisplayText += new DevExpress.XtraEditors.Controls.CustomDisplayTextEventHandler(this.UiListaDeClases_CustomDisplayText);
-            // 
-            // UiVistaClases
-            // 
-            this.UiVistaClases.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colCLASS_ID,
-            this.colCLASS_NAME});
-            this.UiVistaClases.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
-            this.UiVistaClases.Name = "UiVistaClases";
-            this.UiVistaClases.OptionsSelection.EnableAppearanceFocusedCell = false;
-            this.UiVistaClases.OptionsSelection.MultiSelect = true;
-            this.UiVistaClases.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
-            this.UiVistaClases.OptionsView.ShowGroupPanel = false;
-            this.UiVistaClases.SelectionChanged += new DevExpress.Data.SelectionChangedEventHandler(this.UiVistaClases_SelectionChanged);
-            this.UiVistaClases.BeforeLeaveRow += new DevExpress.XtraGrid.Views.Base.RowAllowEventHandler(this.UiVistaClases_BeforeLeaveRow);
-            this.UiVistaClases.MouseUp += new System.Windows.Forms.MouseEventHandler(this.UiVistaClases_MouseUp);
-            // 
-            // colCLASS_ID
-            // 
-            this.colCLASS_ID.Caption = "Código";
-            this.colCLASS_ID.FieldName = "CLASS_ID";
-            this.colCLASS_ID.Name = "colCLASS_ID";
-            this.colCLASS_ID.OptionsColumn.AllowEdit = false;
-            this.colCLASS_ID.Visible = true;
-            this.colCLASS_ID.VisibleIndex = 1;
-            // 
-            // colCLASS_NAME
-            // 
-            this.colCLASS_NAME.Caption = "Nombre";
-            this.colCLASS_NAME.FieldName = "CLASS_NAME";
-            this.colCLASS_NAME.Name = "colCLASS_NAME";
-            this.colCLASS_NAME.OptionsColumn.AllowEdit = false;
-            this.colCLASS_NAME.Visible = true;
-            this.colCLASS_NAME.VisibleIndex = 2;
-            // 
-            // panel1
-            // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 225);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(534, 23);
-            this.panel1.TabIndex = 12;
-            // 
-            // UiGrupoRadioFechas
-            // 
-            this.UiGrupoRadioFechas.Dock = System.Windows.Forms.DockStyle.Top;
-            this.UiGrupoRadioFechas.Location = new System.Drawing.Point(0, 248);
-            this.UiGrupoRadioFechas.Margin = new System.Windows.Forms.Padding(6);
-            this.UiGrupoRadioFechas.MenuManager = this.UiContendorDeBarras;
-            this.UiGrupoRadioFechas.Name = "UiGrupoRadioFechas";
-            this.UiGrupoRadioFechas.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Hoy"),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Ayer"),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "1 Semana"),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "1 Mes"),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "3 Meses")});
-            this.UiGrupoRadioFechas.Size = new System.Drawing.Size(534, 160);
-            this.UiGrupoRadioFechas.TabIndex = 0;
-            this.UiGrupoRadioFechas.SelectedIndexChanged += new System.EventHandler(this.UiGrupoRadioFechas_SelectedIndexChanged);
-            // 
-            // UiEtiquetaFechaInicial
-            // 
-            this.UiEtiquetaFechaInicial.AutoSize = true;
-            this.UiEtiquetaFechaInicial.Dock = System.Windows.Forms.DockStyle.Top;
-            this.UiEtiquetaFechaInicial.Location = new System.Drawing.Point(0, 408);
-            this.UiEtiquetaFechaInicial.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.UiEtiquetaFechaInicial.Name = "UiEtiquetaFechaInicial";
-            this.UiEtiquetaFechaInicial.Padding = new System.Windows.Forms.Padding(0, 15, 0, 0);
-            this.UiEtiquetaFechaInicial.Size = new System.Drawing.Size(137, 40);
-            this.UiEtiquetaFechaInicial.TabIndex = 2;
-            this.UiEtiquetaFechaInicial.Text = "Fecha Inicial:";
-            // 
-            // UiFechaInicial
-            // 
-            this.UiFechaInicial.Dock = System.Windows.Forms.DockStyle.Top;
-            this.UiFechaInicial.EditValue = null;
-            this.UiFechaInicial.Location = new System.Drawing.Point(0, 448);
-            this.UiFechaInicial.Margin = new System.Windows.Forms.Padding(6);
-            this.UiFechaInicial.MenuManager = this.UiContendorDeBarras;
-            this.UiFechaInicial.Name = "UiFechaInicial";
-            this.UiFechaInicial.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.UiFechaInicial.Properties.CalendarTimeEditing = DevExpress.Utils.DefaultBoolean.True;
-            this.UiFechaInicial.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.UiFechaInicial.Properties.DisplayFormat.FormatString = "";
-            this.UiFechaInicial.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.UiFechaInicial.Properties.EditFormat.FormatString = "";
-            this.UiFechaInicial.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.UiFechaInicial.Properties.Mask.EditMask = "";
-            this.UiFechaInicial.Size = new System.Drawing.Size(534, 40);
-            this.UiFechaInicial.TabIndex = 1;
-            // 
-            // UiEtiquetaFechaFinal
-            // 
-            this.UiEtiquetaFechaFinal.AutoSize = true;
-            this.UiEtiquetaFechaFinal.Dock = System.Windows.Forms.DockStyle.Top;
-            this.UiEtiquetaFechaFinal.Location = new System.Drawing.Point(0, 488);
-            this.UiEtiquetaFechaFinal.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.UiEtiquetaFechaFinal.Name = "UiEtiquetaFechaFinal";
-            this.UiEtiquetaFechaFinal.Padding = new System.Windows.Forms.Padding(0, 15, 0, 0);
-            this.UiEtiquetaFechaFinal.Size = new System.Drawing.Size(125, 40);
-            this.UiEtiquetaFechaFinal.TabIndex = 3;
-            this.UiEtiquetaFechaFinal.Text = "Fecha Final:";
-            // 
-            // UiFechaFinal
-            // 
-            this.UiFechaFinal.Dock = System.Windows.Forms.DockStyle.Top;
-            this.UiFechaFinal.EditValue = new System.DateTime(2017, 5, 22, 10, 7, 17, 0);
-            this.UiFechaFinal.Location = new System.Drawing.Point(0, 528);
-            this.UiFechaFinal.Margin = new System.Windows.Forms.Padding(6);
-            this.UiFechaFinal.MenuManager = this.UiContendorDeBarras;
-            this.UiFechaFinal.Name = "UiFechaFinal";
-            this.UiFechaFinal.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.UiFechaFinal.Properties.CalendarTimeEditing = DevExpress.Utils.DefaultBoolean.True;
-            this.UiFechaFinal.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.UiFechaFinal.Properties.DisplayFormat.FormatString = "";
-            this.UiFechaFinal.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.UiFechaFinal.Properties.EditFormat.FormatString = "";
-            this.UiFechaFinal.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.UiFechaFinal.Properties.Mask.EditMask = "";
-            this.UiFechaFinal.Size = new System.Drawing.Size(534, 40);
-            this.UiFechaFinal.TabIndex = 4;
-            // 
-            // panel2
-            // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 568);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(534, 42);
-            this.panel2.TabIndex = 13;
-            // 
-            // UiBotonAceptarRangoFecha
-            // 
-            this.UiBotonAceptarRangoFecha.Dock = System.Windows.Forms.DockStyle.Top;
-            this.UiBotonAceptarRangoFecha.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBotonAceptarRangoFecha.ImageOptions.Image")));
-            this.UiBotonAceptarRangoFecha.Location = new System.Drawing.Point(0, 610);
-            this.UiBotonAceptarRangoFecha.Margin = new System.Windows.Forms.Padding(6);
-            this.UiBotonAceptarRangoFecha.Name = "UiBotonAceptarRangoFecha";
-            this.UiBotonAceptarRangoFecha.Size = new System.Drawing.Size(534, 42);
-            this.UiBotonAceptarRangoFecha.TabIndex = 7;
-            this.UiBotonAceptarRangoFecha.Text = "Aceptar";
-            this.UiBotonAceptarRangoFecha.Click += new System.EventHandler(this.UiBotonAceptarRangoFecha_Click);
-            // 
             // AdministradorDeTareasVista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -4198,6 +4198,23 @@
             ((System.ComponentModel.ISupportInitialize)(this.UiVistaDetalleRecepcion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiListaOperadoresParaPickingDetalle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiVistaDetallePicking)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UiNavegacionPaginasPricipal)).EndInit();
+            this.UiNavegacionPaginasPricipal.ResumeLayout(false);
+            this.UiPaginaFecha.ResumeLayout(false);
+            this.UiPaginaFecha.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.UiFechaFinal.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UiFechaFinal.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UiFechaInicial.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UiFechaInicial.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UiGrupoRadioFechas.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UiListaDeClases.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UiVistaClases)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UiListaDeOperadores.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UiListaVistaDeOperadores)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UIListaTiposDeTarea.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UiListaVistaTipoDeTarea)).EndInit();
+            this.UiPaginaUsuarios.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.UiListaOperadores)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ToggleDetallado)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiContenedorTab)).EndInit();
             this.UiContenedorTab.ResumeLayout(false);
@@ -4237,23 +4254,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.UIViewOlaPicking)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiError)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UiNavegacionPaginasPricipal)).EndInit();
-            this.UiNavegacionPaginasPricipal.ResumeLayout(false);
-            this.UiPaginaUsuarios.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.UiListaOperadores)).EndInit();
-            this.UiPaginaFecha.ResumeLayout(false);
-            this.UiPaginaFecha.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.UIListaTiposDeTarea.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UiListaVistaTipoDeTarea)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UiListaDeOperadores.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UiListaVistaDeOperadores)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UiListaDeClases.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UiVistaClases)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UiGrupoRadioFechas.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UiFechaInicial.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UiFechaInicial.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UiFechaFinal.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UiFechaFinal.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
