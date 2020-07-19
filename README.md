@@ -79,6 +79,25 @@ Los datos dentro del servidor de prueba son:
 - User: `sa`
 - Pwd: `SQ1MSCM!9`
 
+## Pase de Salida
+- Pase de salida alternativo
+- Es necesario agregar los siguientes parametros en el `app.config`:  
+1. 
+```xml
+<setting name="PaseDeSalidaAlt" serializeAs="String">
+    <value>False</value>
+</setting>
+```
+Eso dentro de la sección `<applicationSettings><WMSOnePlan_Client.My.MySettings>`
+
+2. 
+```xml
+<add key="PaseDeSalidaAlt" value="False"/>
+```
+Y eso en `<appSettings>`
+
+Para `Ferco` el valor tiene que ser `True`
+
 ## Guía de release
 Esta información tambien está en el archivo de la [guía de release](RELEASE_GUIDE.md).
 
