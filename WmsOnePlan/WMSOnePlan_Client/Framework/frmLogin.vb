@@ -143,7 +143,7 @@ Public Class frmLogin
                 PublicLoginInfo.Environment = xdata.Tables(0).Rows(0)("ENVIRONMENT")
                 PublicLoginInfo.GUI = xdata.Tables(0).Rows(0)("GUI_LAYOUT")
                 PublicLoginInfo.DistributionCenter = xdata.Tables(0).Rows(0)("DISTRIBUTION_CENTER_ID")
-                PublicLoginInfo.ImgLogoDefault =  AppSettings("IMG_LOGO_DEFAULT").ToString
+                PublicLoginInfo.ImgLogoDefault = "" 'AppSettings("IMG_LOGO_DEFAULT").ToString
                 PublicLoginInfo.ServerAddress(pResult)
                 PublicLoginInfo.Api3PlAddress = AppSettings("API_3PL_ADDRESS").ToString
                 PublicLoginInfo.DbUser = xdata.Tables(0).Rows(0)("USER")

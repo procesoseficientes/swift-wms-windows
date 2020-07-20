@@ -17,7 +17,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyCopyright("Copyright ©  2009-2020")>
 <Assembly: AssemblyTrademark("Mobility SCM©")> 
 
-<Assembly: ComVisible(False)> 
+<Assembly: ComVisible(False)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
 <Assembly: Guid("eff70f39-db27-4f11-a0c6-05b1ff3ae850")>
@@ -34,8 +34,8 @@ Imports System.Runtime.InteropServices
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
 
-<Assembly: AssemblyVersion("2020.7.17.0")>
-<Assembly: AssemblyFileVersion("2020.7.17.0")>
+<Assembly: AssemblyVersion("2020.7.29.0")>
+<Assembly: AssemblyFileVersion("2020.7.20.0")>
 
 
 <Assembly: NeutralResourcesLanguageAttribute("en-US")> 

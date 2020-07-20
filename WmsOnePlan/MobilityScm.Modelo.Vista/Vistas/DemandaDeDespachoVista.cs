@@ -1085,6 +1085,7 @@ namespace MobilityScm.Modelo.Vistas
                                     DocNum = UiSpinNumeroDocumentoControl.EditValue.ToString()
                                 });
                                 break;
+                            case TipoFuenteDemandaDespacho.OrdenVentaSonda:
                             case TipoFuenteDemandaDespacho.OrdenVentaErp:
                                 UsuarioDeseaObtenerOrdenesDeVentaPorFecha?.Invoke(sender, new OrdenDeVentaArgumento
                                 {
@@ -1832,109 +1833,111 @@ namespace MobilityScm.Modelo.Vistas
         {
             try
             {
-                var fuente =
-                    EnumsOperations.GetEnumValueFromStringValue<TipoFuenteDemandaDespacho>(
-                        UiComboFuente.EditValue.ToString());
-                var usaNext =
-                    Parametros.FirstOrDefault(x => x.PARAMETER_ID == Enums.GetStringValue(IdParametro.TieneNext));
-                TipoFuente = fuente == 0 ? TipoFuenteDemandaDespacho.OrdenDeEntrega : fuente;
-                switch (TipoFuente)
-                {
-                    case TipoFuenteDemandaDespacho.OrdenDeEntrega:
-                    case TipoFuenteDemandaDespacho.OrdenVentaErp:
-                        UiEspacioCliente.Visibility = LayoutVisibility.Always;
-                        UiSeparadorCliente.Visibility = LayoutVisibility.Always;
-                        UiSeparadorUbicacionSalida.Visibility = LayoutVisibility.Always;
-                        UiEspacioRuta.Visibility = LayoutVisibility.Never;
-                        UiSeparadorRutaYVendedor.Visibility = LayoutVisibility.Never;
-                        UiSwiftConsolidado.Visibility = BarItemVisibility.Always;
-                        UiEspacioLinea.Visibility = PermisoLineaDePicking
-                            ? LayoutVisibility.Always
-                            : LayoutVisibility.Never;
-                        UiSeparadorLineaPicking.Visibility = PermisoLineaDePicking
-                            ? LayoutVisibility.Always
-                            : LayoutVisibility.Never;
-                        UiEspacioMapa.Visibility = LayoutVisibility.Never;
+                if (UiComboFuente.EditValue != null) { 
+                    var fuente =
+                        EnumsOperations.GetEnumValueFromStringValue<TipoFuenteDemandaDespacho>(
+                            UiComboFuente.EditValue.ToString());
+                    var usaNext =
+                        Parametros.FirstOrDefault(x => x.PARAMETER_ID == Enums.GetStringValue(IdParametro.TieneNext));
+                    TipoFuente = fuente == 0 ? TipoFuenteDemandaDespacho.OrdenDeEntrega : fuente;
+                    switch (TipoFuente)
+                    {
+                        case TipoFuenteDemandaDespacho.OrdenDeEntrega:
+                        case TipoFuenteDemandaDespacho.OrdenVentaErp:
+                            UiEspacioCliente.Visibility = LayoutVisibility.Always;
+                            UiSeparadorCliente.Visibility = LayoutVisibility.Always;
+                            UiSeparadorUbicacionSalida.Visibility = LayoutVisibility.Always;
+                            UiEspacioRuta.Visibility = LayoutVisibility.Never;
+                            UiSeparadorRutaYVendedor.Visibility = LayoutVisibility.Never;
+                            UiSwiftConsolidado.Visibility = BarItemVisibility.Always;
+                            UiEspacioLinea.Visibility = PermisoLineaDePicking
+                                ? LayoutVisibility.Always
+                                : LayoutVisibility.Never;
+                            UiSeparadorLineaPicking.Visibility = PermisoLineaDePicking
+                                ? LayoutVisibility.Always
+                                : LayoutVisibility.Never;
+                            UiEspacioMapa.Visibility = LayoutVisibility.Never;
 
-                        UiEtiquetaEncabezado.Text = @"Órdenes De Venta";
+                            UiEtiquetaEncabezado.Text = @"Órdenes De Venta";
 
-                        UiPaginaVehiculos.PageVisible = (usaNext != null && usaNext.VALUE == ((int)SiNo.Si).ToString());
-                        UiSpinNumeroDocumento.Visibility = LayoutVisibility.Always;
-                        UiElementoProyecto.Visibility = LayoutVisibility.Always;
-                        ProyectoSeleccionado = new Proyecto();
+                            UiPaginaVehiculos.PageVisible = (usaNext != null && usaNext.VALUE == ((int)SiNo.Si).ToString());
+                            UiSpinNumeroDocumento.Visibility = LayoutVisibility.Always;
+                            UiElementoProyecto.Visibility = LayoutVisibility.Always;
+                            ProyectoSeleccionado = new Proyecto();
 
-                        break;
-                    case TipoFuenteDemandaDespacho.OrdenVentaSonda:
-                        UiEtiquetaEncabezado.Text = @"Órdenes De Venta";
-                        UiEspacioRuta.Visibility = LayoutVisibility.Always;
-                        UiSeparadorRutaYVendedor.Visibility = LayoutVisibility.Always;
-                        UiEspacioCliente.Visibility = LayoutVisibility.Never;
-                        UiSeparadorCliente.Visibility = LayoutVisibility.Never;
-                        UiSeparadorUbicacionSalida.Visibility = LayoutVisibility.Always;
-                        UiSwiftConsolidado.Visibility = BarItemVisibility.Always;
-                        UiEspacioLinea.Visibility = PermisoLineaDePicking
-                            ? LayoutVisibility.Always
-                            : LayoutVisibility.Never;
-                        UiSeparadorLineaPicking.Visibility = PermisoLineaDePicking
-                            ? LayoutVisibility.Always
-                            : LayoutVisibility.Never;
-                        UiEspacioMapa.Visibility = (usaNext != null && usaNext.VALUE == ((int)SiNo.Si).ToString()
-                            ? LayoutVisibility.Always
-                            : LayoutVisibility.Never);
+                            break;
+                        case TipoFuenteDemandaDespacho.OrdenVentaSonda:
+                            UiEtiquetaEncabezado.Text = @"Órdenes De Venta";
+                            UiEspacioRuta.Visibility = LayoutVisibility.Always;
+                            UiSeparadorRutaYVendedor.Visibility = LayoutVisibility.Always;
+                            UiEspacioCliente.Visibility = LayoutVisibility.Never;
+                            UiSeparadorCliente.Visibility = LayoutVisibility.Never;
+                            UiSeparadorUbicacionSalida.Visibility = LayoutVisibility.Always;
+                            UiSwiftConsolidado.Visibility = BarItemVisibility.Always;
+                            UiEspacioLinea.Visibility = PermisoLineaDePicking
+                                ? LayoutVisibility.Always
+                                : LayoutVisibility.Never;
+                            UiSeparadorLineaPicking.Visibility = PermisoLineaDePicking
+                                ? LayoutVisibility.Always
+                                : LayoutVisibility.Never;
+                            UiEspacioMapa.Visibility = (usaNext != null && usaNext.VALUE == ((int)SiNo.Si).ToString()
+                                ? LayoutVisibility.Always
+                                : LayoutVisibility.Never);
 
-                        UiPaginaVehiculos.PageVisible = (usaNext != null && usaNext.VALUE == ((int)SiNo.Si).ToString());
-                        UiSpinNumeroDocumento.Visibility = LayoutVisibility.Never;
+                            UiPaginaVehiculos.PageVisible = (usaNext != null && usaNext.VALUE == ((int)SiNo.Si).ToString());
+                            UiSpinNumeroDocumento.Visibility = LayoutVisibility.Never;
 
-                        UiElementoProyecto.Visibility = LayoutVisibility.Never;
-                        ProyectoSeleccionado = new Proyecto();
-                        break;
-                    case TipoFuenteDemandaDespacho.SolicitudTrasladoWms:
-                        UiEtiquetaEncabezado.Text = @"Solicitudes de Traslado";
+                            UiElementoProyecto.Visibility = LayoutVisibility.Never;
+                            ProyectoSeleccionado = new Proyecto();
+                            break;
+                        case TipoFuenteDemandaDespacho.SolicitudTrasladoWms:
+                            UiEtiquetaEncabezado.Text = @"Solicitudes de Traslado";
 
-                        UiSwiftConsolidado.Visibility = BarItemVisibility.Never;
-                        UiEspacioRuta.Visibility = LayoutVisibility.Never;
-                        UiSeparadorRutaYVendedor.Visibility = LayoutVisibility.Never;
-                        UiEspacioCliente.Visibility = LayoutVisibility.Never;
-                        UiSeparadorCliente.Visibility = LayoutVisibility.Never;
-                        UiSeparadorUbicacionSalida.Visibility = LayoutVisibility.Always;
-                        UiEspacioLinea.Visibility = LayoutVisibility.Never;
-                        UiSeparadorLineaPicking.Visibility = LayoutVisibility.Never;
-                        UiEspacioMapa.Visibility = LayoutVisibility.Never;
-                        FiltroDeUsaLineaDePicking = (int)Tipos.UsaLineaDePicking.Ambas;
-                        UiListaUsaLineaDePicking.EditValue = FiltroDeUsaLineaDePicking;
+                            UiSwiftConsolidado.Visibility = BarItemVisibility.Never;
+                            UiEspacioRuta.Visibility = LayoutVisibility.Never;
+                            UiSeparadorRutaYVendedor.Visibility = LayoutVisibility.Never;
+                            UiEspacioCliente.Visibility = LayoutVisibility.Never;
+                            UiSeparadorCliente.Visibility = LayoutVisibility.Never;
+                            UiSeparadorUbicacionSalida.Visibility = LayoutVisibility.Always;
+                            UiEspacioLinea.Visibility = LayoutVisibility.Never;
+                            UiSeparadorLineaPicking.Visibility = LayoutVisibility.Never;
+                            UiEspacioMapa.Visibility = LayoutVisibility.Never;
+                            FiltroDeUsaLineaDePicking = (int)Tipos.UsaLineaDePicking.Ambas;
+                            UiListaUsaLineaDePicking.EditValue = FiltroDeUsaLineaDePicking;
 
-                        UiPaginaVehiculos.PageVisible = false;
-                        UiSpinNumeroDocumento.Visibility = LayoutVisibility.Never;
-                        UiElementoProyecto.Visibility = LayoutVisibility.Never;
-                        ProyectoSeleccionado = new Proyecto();
-                        break;
-                    case TipoFuenteDemandaDespacho.SolicitudTrasladoErp:
-                        UiEtiquetaEncabezado.Text = @"Solicitudes de Traslado";
-                        UiEspacioCliente.Visibility = LayoutVisibility.Never;
-                        UiSeparadorCliente.Visibility = LayoutVisibility.Never;
-                        UiSeparadorUbicacionSalida.Visibility = LayoutVisibility.Always;
-                        UiEspacioLinea.Visibility = LayoutVisibility.Never;
-                        UiSeparadorLineaPicking.Visibility = LayoutVisibility.Never;
-                        UiEspacioRuta.Visibility = LayoutVisibility.Never;
-                        UiSeparadorRutaYVendedor.Visibility = LayoutVisibility.Never;
-                        UiEspacioMapa.Visibility = LayoutVisibility.Never;
-                        UiSwiftConsolidado.Visibility = BarItemVisibility.Never;
-                        FiltroDeUsaLineaDePicking = (int)Tipos.UsaLineaDePicking.Ambas;
-                        UiListaUsaLineaDePicking.EditValue = FiltroDeUsaLineaDePicking;
+                            UiPaginaVehiculos.PageVisible = false;
+                            UiSpinNumeroDocumento.Visibility = LayoutVisibility.Never;
+                            UiElementoProyecto.Visibility = LayoutVisibility.Never;
+                            ProyectoSeleccionado = new Proyecto();
+                            break;
+                        case TipoFuenteDemandaDespacho.SolicitudTrasladoErp:
+                            UiEtiquetaEncabezado.Text = @"Solicitudes de Traslado";
+                            UiEspacioCliente.Visibility = LayoutVisibility.Never;
+                            UiSeparadorCliente.Visibility = LayoutVisibility.Never;
+                            UiSeparadorUbicacionSalida.Visibility = LayoutVisibility.Always;
+                            UiEspacioLinea.Visibility = LayoutVisibility.Never;
+                            UiSeparadorLineaPicking.Visibility = LayoutVisibility.Never;
+                            UiEspacioRuta.Visibility = LayoutVisibility.Never;
+                            UiSeparadorRutaYVendedor.Visibility = LayoutVisibility.Never;
+                            UiEspacioMapa.Visibility = LayoutVisibility.Never;
+                            UiSwiftConsolidado.Visibility = BarItemVisibility.Never;
+                            FiltroDeUsaLineaDePicking = (int)Tipos.UsaLineaDePicking.Ambas;
+                            UiListaUsaLineaDePicking.EditValue = FiltroDeUsaLineaDePicking;
 
-                        UiPaginaVehiculos.PageVisible = false;
-                        UiSpinNumeroDocumento.Visibility = LayoutVisibility.Never;
-                        UiElementoProyecto.Visibility = LayoutVisibility.Never;
-                        ProyectoSeleccionado = new Proyecto();
-                        break;
+                            UiPaginaVehiculos.PageVisible = false;
+                            UiSpinNumeroDocumento.Visibility = LayoutVisibility.Never;
+                            UiElementoProyecto.Visibility = LayoutVisibility.Never;
+                            ProyectoSeleccionado = new Proyecto();
+                            break;
+                    }
+                    CambiarVisualizacionEntregaNoInmediata();
+                    CambiarVisibilidadDeEntregaInmediata(null);
+                    OrdenesDeVenta = new List<OrdenDeVentaEncabezado>();
+                    DetallesOrdenDeVenta = new List<OrdenDeVentaDetalle>();
+                    Skus = new List<Sku>();
+                    UiContenedorVistaOrdenDetalle.DataSource = new List<OrdenDeVentaDetalle>();
+                    UiContenerdoVistaOrdenEncabezado.DataSource = new List<OrdenDeVentaEncabezado>();
                 }
-                CambiarVisualizacionEntregaNoInmediata();
-                CambiarVisibilidadDeEntregaInmediata(null);
-                OrdenesDeVenta = new List<OrdenDeVentaEncabezado>();
-                DetallesOrdenDeVenta = new List<OrdenDeVentaDetalle>();
-                Skus = new List<Sku>();
-                UiContenedorVistaOrdenDetalle.DataSource = new List<OrdenDeVentaDetalle>();
-                UiContenerdoVistaOrdenEncabezado.DataSource = new List<OrdenDeVentaEncabezado>();
             }
             catch (Exception ex)
             {

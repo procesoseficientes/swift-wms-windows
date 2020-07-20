@@ -1056,7 +1056,13 @@ namespace MobilityScm.Modelo.Controladores
                     var enc = _vista.OrdenesDeVenta.FirstOrDefault(x => x.SALES_ORDER_ID == en);
                     _vista.OrdenesDeVenta.Remove(enc);
                 }
-                _vista.DetallesOrdenDeVenta = _vista.DetallesOrdenDeVenta.Where(x => _vista.OrdenesDeVenta.ToList().Exists(y => y.SALES_ORDER_ID == x.SALES_ORDER_ID && x.SOURCE == y.OWNER)).ToList();
+                //_vista.DetallesOrdenDeVenta = _vista.DetallesOrdenDeVenta
+                //    .Where(
+                //        x => _vista.OrdenesDeVenta.ToList()
+                //        .Exists(
+                //            y => y.SALES_ORDER_ID == x.SALES_ORDER_ID && x.SOURCE == y.OWNER
+                //        )
+                //    ).ToList();
 
                 var listaEncabezado = _vista.OrdenesDeVenta.ToList();
                 var listaDetalle = _vista.DetallesOrdenDeVenta.ToList();

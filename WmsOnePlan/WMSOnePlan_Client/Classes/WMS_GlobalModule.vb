@@ -70,13 +70,15 @@ Module WMS_GlobalModule
                 If pResult = "OK" Then
 #If DEBUG Then
                     'local
-                    WSHost = "http://localhost:8088/WMSOnePlan_BusinessServices"
+                    'WSHost = "http://localhost:8088/WMSOnePlan_BusinessServices"
                     'Cealsa
                     'WSHost = "http://192.168.0.5:9999"
                     'Ferco
                     'WSHost = "http://10.240.29.104:8090"
                     'Arium
                     'WSHost = "http://172.16.20.11:8088"
+                    'Use with config
+                    WSHost = ConfigurationManager.AppSettings("WSHOST")
 
 #End If
 #If Not DEBUG Then
