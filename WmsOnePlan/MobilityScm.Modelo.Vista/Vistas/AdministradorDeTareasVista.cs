@@ -1724,11 +1724,6 @@ namespace MobilityScm.Modelo.Vistas
             }
         }
 
-        private void UiContenedorTab_MouseLeave(object sender, EventArgs e)
-        {
-
-        }
-
         private void UiChartTiposTareas_MouseLeave(object sender, EventArgs e)
         {
 

@@ -10,12 +10,12 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("Swift 3PL")> 
-<Assembly: AssemblyDescription("Backoffice WMS")> 
-<Assembly: AssemblyCompany("Mobility SCM")> 
+<Assembly: AssemblyTitle("WMS")>
+<Assembly: AssemblyDescription("Backoffice WMS")>
+<Assembly: AssemblyCompany("Procesos Eficientes")>
 <Assembly: AssemblyProduct("WMSOnePlan_Client")>
-<Assembly: AssemblyCopyright("Copyright ©  2009-2020")>
-<Assembly: AssemblyTrademark("Mobility SCM©")> 
+<Assembly: AssemblyCopyright("Copyright ©  2020")>
+<Assembly: AssemblyTrademark("Procesos Eficientes©")>
 
 <Assembly: ComVisible(False)>
 
@@ -34,8 +34,8 @@ Imports System.Runtime.InteropServices
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
 
-<Assembly: AssemblyVersion("2020.7.21.0")>
-<Assembly: AssemblyFileVersion("2020.7.21.0")>
+<Assembly: AssemblyVersion("2020.7.24.0")>
+<Assembly: AssemblyFileVersion("2020.7.24.0")>
 
 
 <Assembly: NeutralResourcesLanguageAttribute("en-US")> 
