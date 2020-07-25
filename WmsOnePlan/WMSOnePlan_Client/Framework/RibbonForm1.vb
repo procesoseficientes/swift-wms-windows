@@ -841,16 +841,8 @@ Public Class RibbonForm1
 
     End Sub
 
-    Private Sub Static_Version_ItemClick(ByVal sender As System.Object, ByVal e As DevExpress.XtraBars.ItemClickEventArgs) Handles Static_Version.ItemClick
-
-    End Sub
-
-    Private Sub BarButtonItem36_ItemClick(ByVal sender As System.Object, ByVal e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem36.ItemClick
-
-    End Sub
-
     Private Sub btnReleaseBin_ItemClick(ByVal sender As System.Object, ByVal e As DevExpress.XtraBars.ItemClickEventArgs)
-        If MessageBox.Show("Esta seguro que desea LIBERAR un Bin?", "Swift 3PL", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification) = DialogResult.Yes Then
+        If MessageBox.Show("Esta seguro que desea LIBERAR un Bin?", "WMS", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification) = DialogResult.Yes Then
 
             'frmReleaseBin.ShowDialog()
 
@@ -867,10 +859,6 @@ Public Class RibbonForm1
         SetLayout("Office 2010 Black")
     End Sub
 
-    Private Sub BarButtonItem18_ItemClick(ByVal sender As System.Object, ByVal e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem18.ItemClick
-
-    End Sub
-
     Private Sub btnSetupLabels_ItemClick(ByVal sender As System.Object, ByVal e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnSetupLabels.ItemClick
         'Configurar Etiqueta
         Dim xCtrlPanel_form As New frmSetupLabels
@@ -881,22 +869,6 @@ Public Class RibbonForm1
         End With
         Me.Cursor = Cursors.Default
     End Sub
-
-    Private Sub cmbSkinItems_EditValueChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles cmbSkinItems.EditValueChanged
-        'DefaultLookAndFeel1.LookAndFeel.SetSkinStyle()
-
-    End Sub
-
-    Private Sub cmbSkinItems_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles cmbSkinItems.SelectedIndexChanged
-        'DefaultLookAndFeel1.LookAndFeel.SetSkinStyle()
-
-    End Sub
-
-    Private Sub BarButtonItem23_ItemClick(ByVal sender As System.Object, ByVal e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem23.ItemClick
-
-    End Sub
-
-
 
     Sub GetLoginStatus()
         Dim pResult As String = ""
@@ -1078,25 +1050,6 @@ Public Class RibbonForm1
         fc.MdiParent = Me
         fc.Show()
         Me.Cursor = Cursors.Default
-    End Sub
-
-    Private Sub RibbonControl_Click(sender As System.Object, e As System.EventArgs) Handles RibbonControl.Click
-
-
-
-    End Sub
-
-    Private Sub RibbonControl_SelectedPageChanged(sender As Object, e As System.EventArgs) Handles RibbonControl.SelectedPageChanged
-
-    End Sub
-
-    Private Sub RibbonControl_SelectedPageChanging(sender As Object, e As DevExpress.XtraBars.Ribbon.RibbonPageChangingEventArgs) Handles RibbonControl.SelectedPageChanging
-
-
-    End Sub
-
-    Private Sub RibbonControl_TabIndexChanged(sender As Object, e As System.EventArgs) Handles RibbonControl.TabIndexChanged
-
     End Sub
 
     Private Sub btnIngresoActurizacionSat_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnIngresoActurizacionSat.ItemClick

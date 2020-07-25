@@ -515,7 +515,7 @@
             // 
             // UiSwiftchRefrescarAutomaticamenteInventario
             // 
-            this.UiSwiftchRefrescarAutomaticamenteInventario.Caption = "Refrescar Automaticamente";
+            this.UiSwiftchRefrescarAutomaticamenteInventario.Caption = "Refrescar Automáticamente";
             this.UiSwiftchRefrescarAutomaticamenteInventario.Glyph = ((System.Drawing.Image)(resources.GetObject("UiSwiftchRefrescarAutomaticamenteInventario.Glyph")));
             this.UiSwiftchRefrescarAutomaticamenteInventario.Id = 1;
             this.UiSwiftchRefrescarAutomaticamenteInventario.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiSwiftchRefrescarAutomaticamenteInventario.LargeGlyph")));

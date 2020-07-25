@@ -6084,6 +6084,9 @@
     <Content Include="Resources\DevExpress\Images\Zoom\ZoomOut_32x32.png" />
     <Content Include="Resources\DevExpress\Images\Zoom\Zoom_16x16.png" />
     <Content Include="Resources\DevExpress\Images\Zoom\Zoom_32x32.png" />
+    <None Include="Resources\drawable-hdpi-icon.png" />
+    <None Include="Resources\drawable-xhdpi-icon.png" />
+    <None Include="Resources\drawable-xxhdpi-icon.png" />
     <Content Include="Resources\error_sound.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -6535,6 +6538,8 @@
     <None Include="Resources\team_16x16.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Resources\wms PE.png" />
+    <None Include="Resources\wmsPE_white.png" />
     <Content Include="Resources\zoom_extend.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
