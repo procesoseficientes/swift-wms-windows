@@ -50,6 +50,8 @@
             this.UiContenedorTrazabilidadOrdenes = new DevExpress.XtraGrid.GridControl();
             this.UiVistaTrazabilidadOrdenes = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colSOURCE = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colESTADO = new DevExpress.XtraGrid.Columns.GridColumn();
+
             this.colSALES_ORDER_ID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colPOSTED_DATETIME = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDELIVERY_DATE = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -294,6 +296,7 @@
             // 
             this.UiVistaTrazabilidadOrdenes.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colSOURCE,
+            this.colESTADO,
             this.colSALES_ORDER_ID,
             this.colPOSTED_DATETIME,
             this.colDELIVERY_DATE,
@@ -341,6 +344,15 @@
             this.colSOURCE.OptionsColumn.AllowEdit = false;
             this.colSOURCE.Visible = true;
             this.colSOURCE.VisibleIndex = 0;
+            // 
+            // colESTADO
+            // 
+            this.colESTADO.Caption = "Estado Del Pedido";
+            this.colESTADO.FieldName = "ESTADO_DOCUMENTO";
+            this.colESTADO.Name = "colESTADO";
+            this.colESTADO.OptionsColumn.AllowEdit = false;
+            this.colESTADO.Visible = true;
+            this.colESTADO.VisibleIndex = 0;
             // 
             // colSALES_ORDER_ID
             // 
@@ -734,6 +746,8 @@
         private DevExpress.XtraEditors.Repository.RepositoryItemDateEdit repositoryItemDateEdit2;
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
         private DevExpress.XtraGrid.Columns.GridColumn colSOURCE;
+        private DevExpress.XtraGrid.Columns.GridColumn colESTADO;
+
         private DevExpress.XtraGrid.Columns.GridColumn colSALES_ORDER_ID;
         private DevExpress.XtraGrid.Columns.GridColumn colPOSTED_DATETIME;
         private DevExpress.XtraGrid.Columns.GridColumn colDELIVERY_DATE;
