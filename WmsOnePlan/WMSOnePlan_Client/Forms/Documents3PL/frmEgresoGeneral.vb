@@ -285,8 +285,7 @@ Public Class frmEgresoGeneral
         'llenamos el combo de proyecto
         Dim i As Integer
         Dim dsLocations As DataSet
-        dsLocations = xInventory.getExitLocations(PublicLoginInfo.DistributionCenter, pResult, PublicLoginInfo.Environment)
-
+        dsLocations = xInventory.getExitLocations(UiListaBodega.EditValue, pResult, PublicLoginInfo.Environment)
         If pResult = "OK" Then
             If Not IsNothing(dsLocations) Then
                 UiListaUbicacionDeSalida.Properties.DataSource = dsLocations.Tables(0)
@@ -1878,6 +1877,17 @@ Public Class frmEgresoGeneral
     End Sub
 
     Private Sub UiLista_Properties_ButtonClick(sender As Object, e As ButtonPressedEventArgs) Handles UiListaUbicacionDeSalida.Properties.ButtonClick
+
+        Try
+            If e.Button.Tag = Nothing Then
+                Return
+            End If
+            If e.Button.Tag = "UiBotonRefrescarUbicacionDeSalida" Then
+                cargarUbicaciones()
+            End If
+        Catch ex As Exception
+            NotifyStatus("Error al cargar Ubicaciones: " + ex.Message, False, True)
+        End Try
 
     End Sub
 End Class
