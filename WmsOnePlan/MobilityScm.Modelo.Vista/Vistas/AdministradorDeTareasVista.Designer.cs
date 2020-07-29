@@ -1416,7 +1416,7 @@
             // 
             // UiSwitchActualizarAutomaticamente
             // 
-            this.UiSwitchActualizarAutomaticamente.Caption = "Actualizar Automaticamente";
+            this.UiSwitchActualizarAutomaticamente.Caption = "Actualizar Automáticamente";
             this.UiSwitchActualizarAutomaticamente.Id = 0;
             this.UiSwitchActualizarAutomaticamente.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiSwitchActualizarAutomaticamente.ImageOptions.Image")));
             this.UiSwitchActualizarAutomaticamente.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiSwitchActualizarAutomaticamente.ImageOptions.LargeImage")));
@@ -2718,7 +2718,6 @@
             this.UITabConfirmarSeries,
             this.UITabOlaPicking});
             this.UiContenedorTab.Click += new System.EventHandler(this.UiContenedorTab_Click);
-            this.UiContenedorTab.MouseLeave += new System.EventHandler(this.UiContenedorTab_MouseLeave);
             // 
             // UiTabGraficas
             // 

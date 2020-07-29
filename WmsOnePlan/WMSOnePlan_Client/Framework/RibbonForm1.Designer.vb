@@ -712,7 +712,7 @@ Partial Class RibbonForm1
         Me.RibbonControl.ExpandCollapseItem.Id = 0
         Me.RibbonControl.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.RibbonControl.ExpandCollapseItem, Me.RibbonControl.SearchEditItem, Me.PanelCtrl_BarButtonItem, Me.BarButtonItem3, Me.BarButtonItem4, Me.BarButtonItem5, Me.BarButtonItem7, Me.BarButtonItem8, Me.BarButtonItem9, Me.BarSubItem2, Me.BarButtonItem10, Me.BarButtonItem12, Me.BarStaticItem1, Me.BarButtonItem13, Me.BarButtonItem15, Me.BarButtonItem22, Me.BarButtonItem24, Me.Static_CustomerName, Me.Static_Version, Me.Static_Environment, Me.uiCerrarSesion, Me.BarStaticItem5, Me.BarButtonItem11, Me.BarStaticItem6, Me.BarButtonLocations, Me.BarButtonItem29, Me.BarButtonItem30, Me.BarButtonItem26, Me.BarButtonItem27, Me.BarButtonItem32, Me.BarLinkContainerItem1, Me.BarButtonItem34, Me.BarButtonItem14, Me.BarButtonItem35, Me.BarButtonItem37, Me.btnMonitor_ConteoBultos, Me.BarButtonItem42, Me.Static_UserID, Me.btnAparienciaCoffee, Me.BarButtonItem6, Me.btnCrearTareaCargaRuta, Me.BarButtonItem1, Me.Static_Message, Me.BarStaticItem4, Me.btn_Transportistas, Me.btnCrear_PlanRuta, Me.BarButtonItem16, Me.btnConsulta_Rutas, Me.BarEditItem_Pedido, Me.BarEditItem1, Me.btnBinInfo, Me.btnUpLoad_InitFile, Me.BarSubItem3, Me.BarButtonItem17, Me.BarButtonItem18, Me.BarButtonItem19, Me.BarButtonItem20, Me.btnSetupLabels, Me.BarEditItem_GUI, Me.BarCheckItem1, Me.BarCheckItem2, Me.BarButtonItem21, Me.BarButtonItem23, Me.btnVehiculos, Me.btnPilotos, Me.BarButtonItem_TrackingOperatorsByRoute, Me.btnRouteGuide, Me.btnReciboDoc, Me.btnAutoSat, Me.btnGarita, Me.btnAprobacion, Me.btnInventarioDocumentos, Me.btnPolizaEgreso, Me.btnGenerateWave, Me.btnReceptions, Me.btnConsultaAuditsRec, Me.btnPase, Me.btnIngresoGeneral, Me.btnEgresoGeneral, Me.btnKardexFiscal, Me.btnCostearGeneral, Me.BarButtonItem_InvViews, Me.btnConteos, Me.btnServiciosAsociados, Me.btnOccupancy, Me.btnIngresoActurizacionSat, Me.btnInsuranceCompany, Me.btnInsuranceDocs, Me.btnCertificadoDeposito, Me.btnSupervisions, Me.btnRepCertificadoBono, Me.btnRepPolizaSeguros, Me.BarButtonItem38, Me.BarButtonItem39, Me.btnTypeChange, Me.btnAcuerdoComercial, Me.btnAcuerdoCliente, Me.btnAutoQuotaLetter, Me.btnAcuseRecibo, Me.btnVencimientoPolizas, Me.UiBotonCertificadoDeposito, Me.UiBotonPaseSalidaCertificado, Me.UiBotonRectificaciones, Me.BarBntOutInventory, Me.BarButtonGroup1, Me.BtnIngresoExterno, Me.UiBotonReporteEgreso, Me.UiBotonReporteIngresoF, Me.UiBotonDemandaDespacho, Me.UiBotonServiciosPorCobrar, Me.UiBtnInventarioPorAcuerdoComercial, Me.UiBotonIngresoERP, Me.UiBotonMasterPack, Me.UiBotonConsultaBackOrder, Me.UiBotonManifiestoDeCarga, Me.UiBotonAsignacionConteoFisico, Me.UiBotonConsultaConteoFisico, Me.UiBarButtonZonas, Me.UiBotonConsultaCosteos, Me.UiBotonBalanceDeSaldosFiscal, Me.BarButtonItem25, Me.btnVencimientoDePolizas, Me.UiBotonSolicitudDeTraslado, Me.UiBarButtonConsultaSolicitudDeTraslado, Me.UiBotonCatalogoClases, Me.UiBotonBloqueoDeInventario, Me.UiButtonTrazabilidadDeDemanda, Me.UiBotonCatalogoEmpresasDeTransporte, Me.UiBotonCatalogoDePiloto, Me.UiBotonCatalogoVehiculo, Me.UiBotonConsultaDeManifiesto, Me.UiBotonConsultaDeLineaDePicking, Me.UiBarButtonConsultaInventarioDiario, Me.UiBotonPedidosPorRuta, Me.UiBotonConsultaCumplimientoEntrega, Me.UiBotonAdminitradorDeLineaDePicking, Me.UiBotonConsultaPaseDeSalida, Me.UiBarButtonReporteDevoluciones, Me.BarButtonGroup2, Me.UiBotonInventarioComprometido, Me.botonConsultasPersonalizadas, Me.UiBotonReportePicking, Me.UiBontonInvnetarioInactivo, Me.UiBotonIndicesDeBodega, Me.UiBotonZonaPosicionamiento, Me.UiBotonSugeridoCompra})
         Me.RibbonControl.Location = New System.Drawing.Point(0, 0)
-        Me.RibbonControl.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.RibbonControl.Margin = New System.Windows.Forms.Padding(10, 9, 10, 9)
         Me.RibbonControl.MaxItemId = 377
         Me.RibbonControl.MiniToolbars.Add(Me.RibbonMiniToolbar1)
         Me.RibbonControl.Name = "RibbonControl"
@@ -726,7 +726,7 @@ Partial Class RibbonForm1
         Me.RibbonControl.QuickToolbarItemLinks.Add(Me.BarButtonItem14)
         Me.RibbonControl.QuickToolbarItemLinks.Add(Me.uiCerrarSesion)
         Me.RibbonControl.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemTextEdit1, Me.RepositoryItemTextEdit2, Me.cmbSkinItems, Me.RepositoryItemComboBox1})
-        Me.RibbonControl.Size = New System.Drawing.Size(2252, 193)
+        Me.RibbonControl.Size = New System.Drawing.Size(3861, 308)
         Me.RibbonControl.StatusBar = Me.RibbonStatusBar
         '
         'ApplicationMenu1
@@ -1723,11 +1723,11 @@ Partial Class RibbonForm1
         Me.RibbonStatusBar.ItemLinks.Add(Me.Static_Version)
         Me.RibbonStatusBar.ItemLinks.Add(Me.Static_Environment)
         Me.RibbonStatusBar.ItemLinks.Add(Me.Static_Message)
-        Me.RibbonStatusBar.Location = New System.Drawing.Point(0, 825)
-        Me.RibbonStatusBar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.RibbonStatusBar.Location = New System.Drawing.Point(0, 1288)
+        Me.RibbonStatusBar.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.RibbonStatusBar.Name = "RibbonStatusBar"
         Me.RibbonStatusBar.Ribbon = Me.RibbonControl
-        Me.RibbonStatusBar.Size = New System.Drawing.Size(2252, 30)
+        Me.RibbonStatusBar.Size = New System.Drawing.Size(3861, 48)
         '
         'BarButtonItem2
         '
@@ -1839,18 +1839,19 @@ Partial Class RibbonForm1
         '
         'RibbonForm1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(2252, 855)
+        Me.ClientSize = New System.Drawing.Size(3861, 1336)
         Me.Controls.Add(Me.RibbonStatusBar)
         Me.Controls.Add(Me.RibbonControl)
         Me.IconOptions.Icon = CType(resources.GetObject("RibbonForm1.IconOptions.Icon"), System.Drawing.Icon)
+        Me.IconOptions.Image = Global.WMSOnePlan_Client.My.Resources.Resources.drawable_xhdpi_icon
         Me.IsMdiContainer = True
-        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.Name = "RibbonForm1"
         Me.Ribbon = Me.RibbonControl
         Me.StatusBar = Me.RibbonStatusBar
-        Me.Text = "Swift 3PL(Mobility SCM)"
+        Me.Text = "WMS (Procesos Eficientes)"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.RibbonControl,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.ApplicationMenu1,System.ComponentModel.ISupportInitialize).EndInit

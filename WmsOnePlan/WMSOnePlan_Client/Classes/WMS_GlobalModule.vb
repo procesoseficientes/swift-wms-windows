@@ -76,7 +76,9 @@ Module WMS_GlobalModule
                     'Ferco
                     'WSHost = "http://10.240.29.104:8090"
                     'Arium
-                    WSHost = "http://172.16.20.11:8088"
+                    'WSHost = "http://172.16.20.11:8088"
+                    'Use with config
+                    WSHost = ConfigurationManager.AppSettings("WSHOST")
 
 #End If
 #If Not DEBUG Then

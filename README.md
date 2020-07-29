@@ -66,7 +66,7 @@ ex.json -Username <usuario de github> -Password <PAT>
 4. Probar correr programa con F5
 
 ### Configución con DB
-Los configs se pueden descargar desde el sharepoint desde [este link](https://procesoseficientescom.sharepoint.com/sites/Entregadehitorias/Documentos%20compartidos/Forms/AllItems.aspx?viewid=8a7d2a11%2Dc25f%2D46c7%2D8680%2D8ed6947371a5&id=%2Fsites%2FEntregadehitorias%2FDocumentos%20compartidos%2FConfiguracionAmbientes).  
+Los configs se pueden descargar desde el sharepoint desde [este link](https://github.com/procesoseficientes/configs).  
 Los datos para configurar la DB en el backend está en `WMSOnePlan_BussinessServices/Web.config` en la llave `DESARROLLO`.
 
 `<add key="DESARROLLO" value="Server=`**`<ip del servidor deprueba>`**`,1433;Database=`**`<nombre de la DB deprueba>`**`;User=`**`<usuario>`**`;Pwd=`**`<SQ1MSCM!9>`**`"/>`
@@ -78,6 +78,25 @@ Los datos dentro del servidor de prueba son:
 - Database: `OP_WMS_ALSERSA`
 - User: `sa`
 - Pwd: `SQ1MSCM!9`
+
+## Pase de Salida
+- Pase de salida alternativo
+- Es necesario agregar los siguientes parametros en el `app.config`:  
+1. 
+```xml
+<setting name="PaseDeSalidaAlt" serializeAs="String">
+    <value>False</value>
+</setting>
+```
+Eso dentro de la sección `<applicationSettings><WMSOnePlan_Client.My.MySettings>`
+
+2. 
+```xml
+<add key="PaseDeSalidaAlt" value="False"/>
+```
+Y eso en `<appSettings>`
+
+Para `Ferco` el valor tiene que ser `True`
 
 ## Guía de release
 Esta información tambien está en el archivo de la [guía de release](RELEASE_GUIDE.md).

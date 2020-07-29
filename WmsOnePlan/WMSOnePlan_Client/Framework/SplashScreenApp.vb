@@ -1,7 +1,7 @@
 ﻿Public Class SplashScreenApp
     Sub New
         InitializeComponent()
-        version.Text = System.String.Format(version.Text, My.Application.Info.Version.Major, My.Application.Info.Version.Minor)
+        version.Text = My.Application.Info.Version.Major & "." & My.Application.Info.Version.Minor & "." & My.Application.Info.Version.Build
         Copyright.Text = My.Application.Info.Copyright
     End Sub
 

@@ -1056,7 +1056,13 @@ namespace MobilityScm.Modelo.Controladores
                     var enc = _vista.OrdenesDeVenta.FirstOrDefault(x => x.SALES_ORDER_ID == en);
                     _vista.OrdenesDeVenta.Remove(enc);
                 }
-                _vista.DetallesOrdenDeVenta = _vista.DetallesOrdenDeVenta.Where(x => _vista.OrdenesDeVenta.ToList().Exists(y => y.SALES_ORDER_ID == x.SALES_ORDER_ID && x.SOURCE == y.OWNER)).ToList();
+                _vista.DetallesOrdenDeVenta = _vista.DetallesOrdenDeVenta
+                    .Where(
+                        x => _vista.OrdenesDeVenta.ToList()
+                        .Exists(
+                            y => y.SALES_ORDER_ID == x.SALES_ORDER_ID && x.SOURCE == y.OWNER
+                        )
+                    ).ToList();
 
                 var listaEncabezado = _vista.OrdenesDeVenta.ToList();
                 var listaDetalle = _vista.DetallesOrdenDeVenta.ToList();
@@ -1128,7 +1134,6 @@ namespace MobilityScm.Modelo.Controladores
                 _vista.MaterialesConTonoYCalibres = listaMaterialesConTonoOCalibre;
                 AjustarOrdenarEncabezados();
                 LlenarOrdenesDeVentaConsolidado();
-
             }
             catch (Exception ex)
             {
@@ -1264,7 +1269,6 @@ namespace MobilityScm.Modelo.Controladores
                     PARAM_GROUP = Enums.GetStringValue(GrupoDeClasificaciones.Prioridad),
                     PARAM_TYPE = Enums.GetStringValue(TipoDeClasificaciones.Sistema)
                 });
-                _vista.Rutas = RutasSwiftExpressServicio.ObtenerRutas();
 
                 var listaDeEstados = ConfiguracionServicio.ObtenerConfiguracionesGrupoYTipo(new Entidades.Configuracion()
                 {
@@ -1275,6 +1279,7 @@ namespace MobilityScm.Modelo.Controladores
                 _vista.EstadoPredeterminadoDeMaterial = listaDeEstados.FirstOrDefault(es => es.NUMERIC_VALUE == 1);
                 _vista.ProyectoSeleccionado = new Proyecto();
                 _vista.OrdenesDeVenta = new List<OrdenDeVentaEncabezado>();
+                _vista.Rutas = RutasSwiftExpressServicio.ObtenerRutas();
             }
             catch (Exception ex)
             {

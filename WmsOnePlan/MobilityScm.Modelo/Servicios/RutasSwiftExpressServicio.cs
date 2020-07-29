@@ -24,7 +24,7 @@ namespace MobilityScm.Modelo.Servicios
 
         public IList<Ruta> ObtenerRutas()
         {
-            var ls = BaseDeDatosServicio.ExecuteQuery<Ruta>(BaseDeDatosServicio.Esquema + ".OP_WMS_SP_GET_ROUTES_FROM_EXTERNAL_SOURCE", CommandType.StoredProcedure, null).ToList();
+            var ls = BaseDeDatosServicio.ExecuteQuery<Ruta>(BaseDeDatosServicio.Esquema + ".OP_WMS_SP_GET_ROUTES_FROM_EXTERNAL_SOURCE", CommandType.StoredProcedure, true, null).ToList();
             return ls;
         }
         public IList<Ruta> ObtenerTodasRutas()

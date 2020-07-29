@@ -12,15 +12,6 @@ Imports DevExpress.XtraEditors
 Imports MobilityScm.Modelo.Vistas
 
 Public Class frmLogin
-
-    Private Sub CheckButton2_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CheckButton2.CheckedChanged
-        Try
-            Me.Close()
-        Catch ex As Exception
-
-        End Try
-
-    End Sub
     Sub MyUnhandledExceptionHandler()
 
     End Sub
@@ -52,7 +43,7 @@ Public Class frmLogin
             Me.lblStatus.Text = "Ambiente:" + pDfltEnv
             Me.lblStatus.Refresh()
             Dim xserv As New OnePlanServices_Security.WMS_SecuritySoapClient("WMS_SecuritySoap", pUri)
-            
+
             Dim xdata As DataSet
             Dim xdata1 As DataSet
             Dim expirationDate As DateTime
@@ -61,13 +52,13 @@ Public Class frmLogin
 
             If IsUserIdValid(txtUserID.Text) Then
                 xdata = xserv.VerifyUserPass(Me.txtUserID.Text.ToUpper.Trim, Me.txtPwd.Text.ToString.ToUpper.Trim, pResult, pDfltEnv, expirationDate, showMessage, missingDays)
-            Else 
+            Else
                 lblStatus.Text = $"El usuario {txtUserID.Text} es incorrecto, por favor, verifique y vuelva a intentar"
                 lblStatus.Refresh()
-                Cursor = Cursors.Default   
+                Cursor = Cursors.Default
                 Exit Sub
             End If
-            
+
             lblStatus.Text = "Result=" + pResult
             lblStatus.Refresh()
 
@@ -143,7 +134,7 @@ Public Class frmLogin
                 PublicLoginInfo.Environment = xdata.Tables(0).Rows(0)("ENVIRONMENT")
                 PublicLoginInfo.GUI = xdata.Tables(0).Rows(0)("GUI_LAYOUT")
                 PublicLoginInfo.DistributionCenter = xdata.Tables(0).Rows(0)("DISTRIBUTION_CENTER_ID")
-                PublicLoginInfo.ImgLogoDefault =  AppSettings("IMG_LOGO_DEFAULT").ToString
+                PublicLoginInfo.ImgLogoDefault = "" 'AppSettings("IMG_LOGO_DEFAULT").ToString
                 PublicLoginInfo.ServerAddress(pResult)
                 PublicLoginInfo.Api3PlAddress = AppSettings("API_3PL_ADDRESS").ToString
                 PublicLoginInfo.DbUser = xdata.Tables(0).Rows(0)("USER")
@@ -211,7 +202,7 @@ Public Class frmLogin
 
     End Sub
 
-    Private Shared Function IsUserIdValid(userId As string) As Boolean
+    Private Shared Function IsUserIdValid(userId As String) As Boolean
         Dim pattern As String
         pattern = "^[_a-zA-Z0-9-]+(.[_a-zA-Z0-9-]+)*@[a-zA-Z0-9-]+(.[a-zA-Z0-9-]+)*(.[a-zA-Z])$"
         Return (Regex.Matches(userId, pattern)).Count > 0
@@ -255,39 +246,26 @@ Public Class frmLogin
 
     Private Sub frmLogin_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         Try
-            DevExpress.UserSkins.BonusSkins.Register()
-            DevExpress.UserSkins.OfficeSkins.Register()
+            BonusSkins.Register()
 
         Catch ex As Exception
             MessageBox.Show("Registrando skins de devexpress: " + ex.Message)
 
-        End Try       
+        End Try
         GetLastUser()
-        GroupControl1.Focus()
-        GroupControl1.Text = "Bienvenido: Swift 3PL " & My.Application.Info.Version.Major & "." & My.Application.Info.Version.Minor & "." & My.Application.Info.Version.Build
+        Focus()
+        Text = "Bienvenido: WMS " & My.Application.Info.Version.Major & "." & My.Application.Info.Version.Minor & "." & My.Application.Info.Version.Build
         txtPwd.Focus()
     End Sub
 
     Private Sub PictureBox1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox1.Click
-        Me.lblLastUSER.Visible = Not Me.lblLastUSER.Visible
-        Me.txtUserID.Visible = Not Me.txtUserID.Visible
-        If Me.txtUserID.Visible Then
-            Me.txtUserID.Focus()
+        lblLastUSER.Visible = Not lblLastUSER.Visible
+        txtUserID.Visible = Not txtUserID.Visible
+        If txtUserID.Visible Then
+            txtUserID.Focus()
         Else
-            Me.txtPwd.Focus()
+            txtPwd.Focus()
         End If
-    End Sub
-
-    Private Sub txtPwd_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtPwd.TextChanged
-
-    End Sub
-
-    Private Sub GroupControl1_Paint(sender As System.Object, e As System.Windows.Forms.PaintEventArgs) Handles GroupControl1.Paint
-
-    End Sub
-
-    Private Sub txtUserID_EditValueChanged(sender As System.Object, e As System.EventArgs) Handles txtUserID.EditValueChanged
-
     End Sub
 
     Private Sub SimpleButton1_Click(sender As System.Object, e As System.EventArgs) Handles SimpleButton1.Click

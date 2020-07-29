@@ -10,14 +10,14 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("Swift 3PL")> 
-<Assembly: AssemblyDescription("Backoffice WMS")> 
-<Assembly: AssemblyCompany("Mobility SCM")> 
+<Assembly: AssemblyTitle("WMS")>
+<Assembly: AssemblyDescription("Backoffice WMS")>
+<Assembly: AssemblyCompany("Procesos Eficientes")>
 <Assembly: AssemblyProduct("WMSOnePlan_Client")>
-<Assembly: AssemblyCopyright("Copyright ©  2009-2020")>
-<Assembly: AssemblyTrademark("Mobility SCM©")> 
+<Assembly: AssemblyCopyright("Copyright ©  2020")>
+<Assembly: AssemblyTrademark("Procesos Eficientes©")>
 
-<Assembly: ComVisible(False)> 
+<Assembly: ComVisible(False)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
 <Assembly: Guid("eff70f39-db27-4f11-a0c6-05b1ff3ae850")>
@@ -34,8 +34,8 @@ Imports System.Runtime.InteropServices
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
 
-<Assembly: AssemblyVersion("2020.7.17.0")>
-<Assembly: AssemblyFileVersion("2020.7.17.0")>
+<Assembly: AssemblyVersion("2020.7.24.0")>
+<Assembly: AssemblyFileVersion("2020.7.24.0")>
 
 
 <Assembly: NeutralResourcesLanguageAttribute("en-US")> 
