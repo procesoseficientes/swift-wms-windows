@@ -477,6 +477,8 @@ Public Class FrmAprobacionFiscal
                 Return False
             End If
 
+            Dim isError = False
+            Dim Lines = ""
             For Each dataRow As DataRow In CType(gridViewLineas.DataSource, DataView).Table.Rows
                 Dim qty As Double = 0
                 For Each dataRowDet As DataRow In CType(gridViewEnlazados.DataSource, DataView).Table.Rows
@@ -486,24 +488,25 @@ Public Class FrmAprobacionFiscal
                 Next
 
                 If qty <> Double.Parse(dataRow("BULTOS")) Then
-
-                    MessageBox.Show("Las cantidades no coiciden con la linea " & dataRow("LINE_NUMBER").ToString() & " de la poliza", "Error Asociados", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    isError = True
+                    Lines = Lines & dataRow("LINE_NUMBER").ToString() & ","
                     'Return False
-                    If MessageBox.Show("Desea guardar con diferencias?", "Confirmacion", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
-                        If txtComentario3.EditValue.ToString() = "" Then
-                            MessageBox.Show("Ingrese el comentario.", "Error Asociados", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                            Bar1.ItemLinks(1).Focus()
-                            Return False
-                        End If 'Dim xstr As String
-                        'xstr = InputBox("Comentario sobre las diferencias", "Ingrese un comentario", "")
-                        'If xstr <> "" Then
-                        'End If
-                    Else
-                        Return False
-                    End If
                 End If
             Next
 
+            If isError Then
+                Lines = Lines.Substring(0, Lines.Length - 1)
+                MessageBox.Show("Las cantidades no coiciden con la(s) linea(s) " & Lines & " de la poliza", "Error Asociados", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                If MessageBox.Show("Desea guardar con diferencias?", "Confirmacion", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
+                    If txtComentario3.EditValue.ToString() = "" Then
+                        MessageBox.Show("Ingrese el comentario.", "Error Asociados", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                        Bar1.ItemLinks(1).Focus()
+                        Return False
+                    End If
+                Else
+                    Return False
+                End If
+            End If
             Return True
         Catch ex As Exception
             NotifyStatus(ex.Message, False, True)
