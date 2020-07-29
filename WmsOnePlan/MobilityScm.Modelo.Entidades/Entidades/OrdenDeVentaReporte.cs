@@ -6,6 +6,7 @@ namespace MobilityScm.Modelo.Entidades
     public class OrdenDeVentaReporte
     {
         public string SOURCE { get; set; }
+        public string ESTADO_DOCUMENTO { get; set; }
         public string SALES_ORDER_ID { get; set; }
         public DateTime POSTED_DATETIME { get; set; }
         public DateTime DELIVERY_DATE { get; set; }
