@@ -854,5 +854,11 @@ namespace MobilityScm.Modelo.Vistas
         {
 
         }
+
+        private void UiListaCliente_Click(object sender, EventArgs e)
+        {
+            UiListaCliente.Properties.PopupFormWidth = UiListaCliente.Width;
+            UiListaErp.Properties.PopupFormWidth = UiListaErp.Width;
+        }
     }
 }
