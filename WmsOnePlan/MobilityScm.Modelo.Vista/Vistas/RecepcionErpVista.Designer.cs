@@ -490,6 +490,7 @@
             this.UiListaCliente.Size = new System.Drawing.Size(1467, 40);
             this.UiListaCliente.TabIndex = 9;
             this.UiListaCliente.EditValueChanged += new System.EventHandler(this.UiListaCliente_EditValueChanged);
+            this.UiListaCliente.Click += new System.EventHandler(this.UiListaCliente_Click);
             // 
             // UiVistaCliente
             // 
