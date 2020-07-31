@@ -564,7 +564,8 @@ Public Class frmInfo_Inventory
         Try
             xdataset = xserv.GetParam_PartialSearch("ESTADOS", pResult, PublicLoginInfo.Environment)
             If pResult = "OK" Then
-                lookupEstados.DataSource = xdataset.Tables(0)
+                Dim subset As DataTable = New DataView(xdataset.Tables(0)).ToTable(False, "PARAM_NAME", "PARAM_CAPTION")
+                lookupEstados.DataSource = subset
                 UiColNombreEstado.ColumnEdit = lookupEstados
             End If
         Catch ex As Exception
