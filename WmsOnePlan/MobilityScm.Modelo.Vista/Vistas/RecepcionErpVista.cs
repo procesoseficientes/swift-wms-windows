@@ -758,6 +758,7 @@ namespace MobilityScm.Modelo.Vistas
                 UiToogleOrdenesIncompletas.Visibility = BarItemVisibility.Always;
                 UiListaErp.Visible = true;
                 UiTextoNumeroDeFactura.Visible = false;
+                bbi_Factura.Visibility = BarItemVisibility.Never;
                 colDetPROVIDER_ID.Caption = "Código Proveedor";
                 colDetPROVIDER_NAME.Caption = "Nombre Proveedor";
                 UiEtiqeutaTipoRecepcion.Visible = true;
@@ -772,6 +773,7 @@ namespace MobilityScm.Modelo.Vistas
                 UiToogleOrdenesIncompletas.Visibility = BarItemVisibility.Never;
                 UiListaErp.Visible = false;
                 UiTextoNumeroDeFactura.Visible = true;
+                bbi_Factura.Visibility = BarItemVisibility.Always;
                 colDetPROVIDER_ID.Caption = "Código Cliente";
                 colDetPROVIDER_NAME.Caption = "Nombre Cliente";
                 UiEtiqeutaTipoRecepcion.Visible = false;
@@ -859,6 +861,11 @@ namespace MobilityScm.Modelo.Vistas
         {
             UiListaCliente.Properties.PopupFormWidth = UiListaCliente.Width;
             UiListaErp.Properties.PopupFormWidth = UiListaErp.Width;
+        }
+
+        private void bbi_Factura_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            GetFactura(UiTextoNumeroDeFactura);
         }
     }
 }

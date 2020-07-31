@@ -30,11 +30,21 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RecepcionErpVista));
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions10 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject37 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject38 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject39 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject40 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions11 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject41 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject42 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject43 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject44 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions2 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
@@ -45,11 +55,6 @@
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject10 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject11 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject12 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions8 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject29 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject30 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject31 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject32 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions6 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject21 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject22 = new DevExpress.Utils.SerializableAppearanceObject();
@@ -65,26 +70,21 @@
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject14 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject15 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject16 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions9 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject33 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject34 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject35 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject36 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions7 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject25 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject26 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject27 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject28 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule1 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression1 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule2 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression2 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule3 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression3 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule4 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression4 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule5 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression5 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions8 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject29 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject30 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject31 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject32 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule6 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression6 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule7 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression7 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule8 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression8 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule9 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression9 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule10 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression10 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
             this.colDetIS_ASSIGNED = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDetIS_MISSING = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UiBarraContenedorPrincipal = new DevExpress.XtraBars.BarManager(this.components);
@@ -188,6 +188,7 @@
             this.UiGrupoTarea = new DevExpress.XtraEditors.GroupControl();
             this.UiError = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.bbi_Factura = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.UiBarraContenedorPrincipal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiGridLookUpFuente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit1)).BeginInit();
@@ -263,8 +264,9 @@
             this.UiBotonExportarExcel,
             this.UiToogleOrdenesIncompletas,
             this.UiBarFuente,
-            this.UIToogleConsolidado});
-            this.UiBarraContenedorPrincipal.MaxItemId = 13;
+            this.UIToogleConsolidado,
+            this.bbi_Factura});
+            this.UiBarraContenedorPrincipal.MaxItemId = 14;
             this.UiBarraContenedorPrincipal.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemDateEdit1,
             this.repositoryItemDateEdit2,
@@ -283,6 +285,7 @@
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.UiBotonContraer, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.UiBotonExportarExcel, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.UiBotonNuevo, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.bbi_Factura, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.UiBotonGrabar, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.Width, this.UiBarFuente, "", false, true, true, 165),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.UiFechaInicio, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
@@ -417,7 +420,7 @@
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.UiBarraContenedorPrincipal;
             this.barDockControlTop.Margin = new System.Windows.Forms.Padding(6);
-            this.barDockControlTop.Size = new System.Drawing.Size(2447, 46);
+            this.barDockControlTop.Size = new System.Drawing.Size(2666, 46);
             // 
             // barDockControlBottom
             // 
@@ -426,7 +429,7 @@
             this.barDockControlBottom.Location = new System.Drawing.Point(0, 1315);
             this.barDockControlBottom.Manager = this.UiBarraContenedorPrincipal;
             this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(6);
-            this.barDockControlBottom.Size = new System.Drawing.Size(2447, 0);
+            this.barDockControlBottom.Size = new System.Drawing.Size(2666, 0);
             // 
             // barDockControlLeft
             // 
@@ -441,7 +444,7 @@
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(2447, 46);
+            this.barDockControlRight.Location = new System.Drawing.Point(2666, 46);
             this.barDockControlRight.Manager = this.UiBarraContenedorPrincipal;
             this.barDockControlRight.Margin = new System.Windows.Forms.Padding(6);
             this.barDockControlRight.Size = new System.Drawing.Size(0, 1269);
@@ -479,15 +482,15 @@
             this.UiListaCliente.Margin = new System.Windows.Forms.Padding(6);
             this.UiListaCliente.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiListaCliente.Name = "UiListaCliente";
-            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
+            editorButtonImageOptions10.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions10.Image")));
             this.UiListaCliente.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", "REFRESCAR-CLIENTE", null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions10, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject37, serializableAppearanceObject38, serializableAppearanceObject39, serializableAppearanceObject40, "", "REFRESCAR-CLIENTE", null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.UiListaCliente.Properties.DisplayMember = "COMPANY_NAME";
             this.UiListaCliente.Properties.PopupView = this.UiVistaCliente;
             this.UiListaCliente.Properties.ValueMember = "CLIENT_CODE";
             this.UiListaCliente.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
-            this.UiListaCliente.Size = new System.Drawing.Size(1467, 40);
+            this.UiListaCliente.Size = new System.Drawing.Size(1686, 40);
             this.UiListaCliente.TabIndex = 9;
             this.UiListaCliente.EditValueChanged += new System.EventHandler(this.UiListaCliente_EditValueChanged);
             this.UiListaCliente.Click += new System.EventHandler(this.UiListaCliente_Click);
@@ -545,16 +548,16 @@
             this.UiListaErp.Margin = new System.Windows.Forms.Padding(6);
             this.UiListaErp.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiListaErp.Name = "UiListaErp";
-            editorButtonImageOptions2.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions2.Image")));
-            editorButtonImageOptions3.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions3.Image")));
+            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
+            editorButtonImageOptions11.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions11.Image")));
             this.UiListaErp.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", "REFRESCAR-ERP", null, DevExpress.Utils.ToolTipAnchor.Default),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions3, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject9, serializableAppearanceObject10, serializableAppearanceObject11, serializableAppearanceObject12, "", "AGREGAR-ERP", null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", "REFRESCAR-ERP", null, DevExpress.Utils.ToolTipAnchor.Default),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions11, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject41, serializableAppearanceObject42, serializableAppearanceObject43, serializableAppearanceObject44, "", "AGREGAR-ERP", null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.UiListaErp.Properties.PopupView = this.UiVistaErpEncabezado;
             this.UiListaErp.Properties.ValueMember = "SAP_REFERENCE";
             this.UiListaErp.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
-            this.UiListaErp.Size = new System.Drawing.Size(1467, 40);
+            this.UiListaErp.Size = new System.Drawing.Size(1686, 40);
             this.UiListaErp.TabIndex = 11;
             this.UiListaErp.EditValueChanged += new System.EventHandler(this.UiListaErp_EditValueChanged);
             this.UiListaErp.CustomDisplayText += new DevExpress.XtraEditors.Controls.CustomDisplayTextEventHandler(this.UiListaErp_CustomDisplayText);
@@ -643,15 +646,14 @@
             this.UiListaUbicacion.Margin = new System.Windows.Forms.Padding(6);
             this.UiListaUbicacion.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiListaUbicacion.Name = "UiListaUbicacion";
-            editorButtonImageOptions8.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions8.Image")));
             this.UiListaUbicacion.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "Refrescar", -1, true, true, true, editorButtonImageOptions8, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject29, serializableAppearanceObject30, serializableAppearanceObject31, serializableAppearanceObject32, "", "REFRESCAR-UBICACION", null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "Refrescar", -1, true, true, true, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", "REFRESCAR-UBICACION", null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.UiListaUbicacion.Properties.DisplayMember = "LOCATION_SPOT";
             this.UiListaUbicacion.Properties.PopupView = this.UiVistaDeListaUbicacion;
             this.UiListaUbicacion.Properties.ValueMember = "LOCATION_SPOT";
             this.UiListaUbicacion.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
-            this.UiListaUbicacion.Size = new System.Drawing.Size(500, 40);
+            this.UiListaUbicacion.Size = new System.Drawing.Size(500, 42);
             this.UiListaUbicacion.TabIndex = 15;
             // 
             // UiVistaDeListaUbicacion
@@ -719,10 +721,10 @@
             this.UiListaOperador.Margin = new System.Windows.Forms.Padding(6);
             this.UiListaOperador.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiListaOperador.Name = "UiListaOperador";
-            editorButtonImageOptions6.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions6.Image")));
+            editorButtonImageOptions3.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions3.Image")));
             this.UiListaOperador.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions6, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject21, serializableAppearanceObject22, serializableAppearanceObject23, serializableAppearanceObject24, "", "REFRESCAR-USUARIO", null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions3, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject9, serializableAppearanceObject10, serializableAppearanceObject11, serializableAppearanceObject12, "", "REFRESCAR-USUARIO", null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.UiListaOperador.Properties.DisplayMember = "LOGIN_ID";
             this.UiListaOperador.Properties.PopupView = this.UiVistaUsuario;
             this.UiListaOperador.Properties.ValueMember = "LOGIN_ID";
@@ -802,15 +804,15 @@
             this.UiListaAcuerdoComercial.Margin = new System.Windows.Forms.Padding(6);
             this.UiListaAcuerdoComercial.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiListaAcuerdoComercial.Name = "UiListaAcuerdoComercial";
-            editorButtonImageOptions5.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions5.Image")));
+            editorButtonImageOptions6.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions6.Image")));
             this.UiListaAcuerdoComercial.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions5, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject17, serializableAppearanceObject18, serializableAppearanceObject19, serializableAppearanceObject20, "", "REFRESCAR-ACUERDOCOMERCIAL", null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions6, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject21, serializableAppearanceObject22, serializableAppearanceObject23, serializableAppearanceObject24, "", "REFRESCAR-ACUERDOCOMERCIAL", null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.UiListaAcuerdoComercial.Properties.DisplayMember = "DESCRIPCION";
             this.UiListaAcuerdoComercial.Properties.PopupView = this.UiVistaAcuerdoComercial;
             this.UiListaAcuerdoComercial.Properties.ValueMember = "ACUERDO_COMERCIAL";
             this.UiListaAcuerdoComercial.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
-            this.UiListaAcuerdoComercial.Size = new System.Drawing.Size(1467, 40);
+            this.UiListaAcuerdoComercial.Size = new System.Drawing.Size(1686, 40);
             this.UiListaAcuerdoComercial.TabIndex = 23;
             // 
             // UiVistaAcuerdoComercial
@@ -849,14 +851,14 @@
             this.UiListaPolizasDeSeguro.Margin = new System.Windows.Forms.Padding(6);
             this.UiListaPolizasDeSeguro.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiListaPolizasDeSeguro.Name = "UiListaPolizasDeSeguro";
-            editorButtonImageOptions4.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions4.Image")));
+            editorButtonImageOptions5.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions5.Image")));
             this.UiListaPolizasDeSeguro.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions4, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject13, serializableAppearanceObject14, serializableAppearanceObject15, serializableAppearanceObject16, "", "REFRESCAR-POLIZASEGURO", null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions5, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject17, serializableAppearanceObject18, serializableAppearanceObject19, serializableAppearanceObject20, "", "REFRESCAR-POLIZASEGURO", null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.UiListaPolizasDeSeguro.Properties.DisplayMember = "POLIZA_INSURANCE";
             this.UiListaPolizasDeSeguro.Properties.PopupView = this.UiVistaPolizasSeguro;
             this.UiListaPolizasDeSeguro.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
-            this.UiListaPolizasDeSeguro.Size = new System.Drawing.Size(1467, 40);
+            this.UiListaPolizasDeSeguro.Size = new System.Drawing.Size(1686, 40);
             this.UiListaPolizasDeSeguro.TabIndex = 24;
             // 
             // UiVistaPolizasSeguro
@@ -902,10 +904,9 @@
             this.UiListaTipoRecepcion.Margin = new System.Windows.Forms.Padding(6);
             this.UiListaTipoRecepcion.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiListaTipoRecepcion.Name = "UiListaTipoRecepcion";
-            editorButtonImageOptions9.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions9.Image")));
             this.UiListaTipoRecepcion.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions9, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject33, serializableAppearanceObject34, serializableAppearanceObject35, serializableAppearanceObject36, "", "REFRESCAR-TIPORECEPCION", null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions4, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject13, serializableAppearanceObject14, serializableAppearanceObject15, serializableAppearanceObject16, "", "REFRESCAR-TIPORECEPCION", null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.UiListaTipoRecepcion.Properties.DisplayMember = "PARAM_CAPTION";
             this.UiListaTipoRecepcion.Properties.PopupView = this.UiVistaTipoRecepcion;
             this.UiListaTipoRecepcion.Properties.ValueMember = "TEXT_VALUE";
@@ -948,10 +949,10 @@
             this.UiListaPrioridad.Margin = new System.Windows.Forms.Padding(6);
             this.UiListaPrioridad.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiListaPrioridad.Name = "UiListaPrioridad";
-            editorButtonImageOptions7.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions7.Image")));
+            editorButtonImageOptions8.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions8.Image")));
             this.UiListaPrioridad.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions7, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject25, serializableAppearanceObject26, serializableAppearanceObject27, serializableAppearanceObject28, "", "REFRESCAR-PRIORIDAD", null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions8, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject29, serializableAppearanceObject30, serializableAppearanceObject31, serializableAppearanceObject32, "", "REFRESCAR-PRIORIDAD", null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.UiListaPrioridad.Properties.DisplayMember = "PARAM_CAPTION";
             this.UiListaPrioridad.Properties.PopupView = this.gridView7;
             this.UiListaPrioridad.Properties.ValueMember = "NUMERIC_VALUE";
@@ -986,7 +987,7 @@
             this.UiContenedorVistaErp.Name = "UiContenedorVistaErp";
             this.UiContenedorVistaErp.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.UiBotonEliminarEncabezado});
-            this.UiContenedorVistaErp.Size = new System.Drawing.Size(2447, 988);
+            this.UiContenedorVistaErp.Size = new System.Drawing.Size(2666, 988);
             this.UiContenedorVistaErp.TabIndex = 28;
             this.UiContenedorVistaErp.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.UiVistaErp});
@@ -1023,65 +1024,65 @@
             this.colUNIT});
             this.UiVistaErp.DetailHeight = 673;
             this.UiVistaErp.FixedLineWidth = 4;
-            gridFormatRule1.ApplyToRow = true;
-            gridFormatRule1.Name = "Format0";
-            formatConditionRuleExpression1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            formatConditionRuleExpression1.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            formatConditionRuleExpression1.Appearance.BorderColor = System.Drawing.Color.Yellow;
-            formatConditionRuleExpression1.Appearance.Options.UseBackColor = true;
-            formatConditionRuleExpression1.Appearance.Options.UseBorderColor = true;
-            formatConditionRuleExpression1.Expression = "[AdvertenciaFaltaInventario] = 1";
-            gridFormatRule1.Rule = formatConditionRuleExpression1;
-            gridFormatRule2.ApplyToRow = true;
-            gridFormatRule2.Name = "Format1";
-            formatConditionRuleExpression2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            formatConditionRuleExpression2.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            formatConditionRuleExpression2.Appearance.BorderColor = System.Drawing.Color.Lime;
-            formatConditionRuleExpression2.Appearance.Options.UseBackColor = true;
-            formatConditionRuleExpression2.Appearance.Options.UseBorderColor = true;
-            formatConditionRuleExpression2.Expression = "[AdvertenciaFaltaInventario] = 0";
-            gridFormatRule2.Rule = formatConditionRuleExpression2;
-            gridFormatRule3.ApplyToRow = true;
-            gridFormatRule3.Column = this.colDetIS_ASSIGNED;
-            gridFormatRule3.ColumnApplyTo = this.colDetIS_ASSIGNED;
-            gridFormatRule3.Name = "IS_ASSIGNED";
-            formatConditionRuleExpression3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            formatConditionRuleExpression3.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            formatConditionRuleExpression3.Appearance.BorderColor = System.Drawing.Color.Yellow;
-            formatConditionRuleExpression3.Appearance.Options.UseBackColor = true;
-            formatConditionRuleExpression3.Appearance.Options.UseBorderColor = true;
-            formatConditionRuleExpression3.Expression = "[IS_ASSIGNED] = 1";
-            formatConditionRuleExpression3.PredefinedName = "IS_ASSIGNED";
-            gridFormatRule3.Rule = formatConditionRuleExpression3;
-            gridFormatRule4.ApplyToRow = true;
-            gridFormatRule4.Column = this.colDetIS_ASSIGNED;
-            gridFormatRule4.ColumnApplyTo = this.colDetIS_ASSIGNED;
-            gridFormatRule4.Name = "IS_ASSIGNED2";
-            formatConditionRuleExpression4.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            formatConditionRuleExpression4.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            formatConditionRuleExpression4.Appearance.BorderColor = System.Drawing.Color.Lime;
-            formatConditionRuleExpression4.Appearance.Options.UseBackColor = true;
-            formatConditionRuleExpression4.Appearance.Options.UseBorderColor = true;
-            formatConditionRuleExpression4.Expression = "[IS_ASSIGNED] = 0";
-            formatConditionRuleExpression4.PredefinedName = "IS_ASSIGNED";
-            gridFormatRule4.Rule = formatConditionRuleExpression4;
-            gridFormatRule5.ApplyToRow = true;
-            gridFormatRule5.Column = this.colDetIS_MISSING;
-            gridFormatRule5.ColumnApplyTo = this.colDetIS_MISSING;
-            gridFormatRule5.Name = "IS_MISSING_RULE";
-            formatConditionRuleExpression5.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            formatConditionRuleExpression5.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            formatConditionRuleExpression5.Appearance.BorderColor = System.Drawing.Color.Red;
-            formatConditionRuleExpression5.Appearance.Options.UseBackColor = true;
-            formatConditionRuleExpression5.Appearance.Options.UseBorderColor = true;
-            formatConditionRuleExpression5.Expression = "[IS_MISSING] = 1";
-            formatConditionRuleExpression5.PredefinedName = "IS_MISSING";
-            gridFormatRule5.Rule = formatConditionRuleExpression5;
-            this.UiVistaErp.FormatRules.Add(gridFormatRule1);
-            this.UiVistaErp.FormatRules.Add(gridFormatRule2);
-            this.UiVistaErp.FormatRules.Add(gridFormatRule3);
-            this.UiVistaErp.FormatRules.Add(gridFormatRule4);
-            this.UiVistaErp.FormatRules.Add(gridFormatRule5);
+            gridFormatRule6.ApplyToRow = true;
+            gridFormatRule6.Name = "Format0";
+            formatConditionRuleExpression6.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            formatConditionRuleExpression6.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            formatConditionRuleExpression6.Appearance.BorderColor = System.Drawing.Color.Yellow;
+            formatConditionRuleExpression6.Appearance.Options.UseBackColor = true;
+            formatConditionRuleExpression6.Appearance.Options.UseBorderColor = true;
+            formatConditionRuleExpression6.Expression = "[AdvertenciaFaltaInventario] = 1";
+            gridFormatRule6.Rule = formatConditionRuleExpression6;
+            gridFormatRule7.ApplyToRow = true;
+            gridFormatRule7.Name = "Format1";
+            formatConditionRuleExpression7.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            formatConditionRuleExpression7.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            formatConditionRuleExpression7.Appearance.BorderColor = System.Drawing.Color.Lime;
+            formatConditionRuleExpression7.Appearance.Options.UseBackColor = true;
+            formatConditionRuleExpression7.Appearance.Options.UseBorderColor = true;
+            formatConditionRuleExpression7.Expression = "[AdvertenciaFaltaInventario] = 0";
+            gridFormatRule7.Rule = formatConditionRuleExpression7;
+            gridFormatRule8.ApplyToRow = true;
+            gridFormatRule8.Column = this.colDetIS_ASSIGNED;
+            gridFormatRule8.ColumnApplyTo = this.colDetIS_ASSIGNED;
+            gridFormatRule8.Name = "IS_ASSIGNED";
+            formatConditionRuleExpression8.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            formatConditionRuleExpression8.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            formatConditionRuleExpression8.Appearance.BorderColor = System.Drawing.Color.Yellow;
+            formatConditionRuleExpression8.Appearance.Options.UseBackColor = true;
+            formatConditionRuleExpression8.Appearance.Options.UseBorderColor = true;
+            formatConditionRuleExpression8.Expression = "[IS_ASSIGNED] = 1";
+            formatConditionRuleExpression8.PredefinedName = "IS_ASSIGNED";
+            gridFormatRule8.Rule = formatConditionRuleExpression8;
+            gridFormatRule9.ApplyToRow = true;
+            gridFormatRule9.Column = this.colDetIS_ASSIGNED;
+            gridFormatRule9.ColumnApplyTo = this.colDetIS_ASSIGNED;
+            gridFormatRule9.Name = "IS_ASSIGNED2";
+            formatConditionRuleExpression9.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            formatConditionRuleExpression9.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            formatConditionRuleExpression9.Appearance.BorderColor = System.Drawing.Color.Lime;
+            formatConditionRuleExpression9.Appearance.Options.UseBackColor = true;
+            formatConditionRuleExpression9.Appearance.Options.UseBorderColor = true;
+            formatConditionRuleExpression9.Expression = "[IS_ASSIGNED] = 0";
+            formatConditionRuleExpression9.PredefinedName = "IS_ASSIGNED";
+            gridFormatRule9.Rule = formatConditionRuleExpression9;
+            gridFormatRule10.ApplyToRow = true;
+            gridFormatRule10.Column = this.colDetIS_MISSING;
+            gridFormatRule10.ColumnApplyTo = this.colDetIS_MISSING;
+            gridFormatRule10.Name = "IS_MISSING_RULE";
+            formatConditionRuleExpression10.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            formatConditionRuleExpression10.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            formatConditionRuleExpression10.Appearance.BorderColor = System.Drawing.Color.Red;
+            formatConditionRuleExpression10.Appearance.Options.UseBackColor = true;
+            formatConditionRuleExpression10.Appearance.Options.UseBorderColor = true;
+            formatConditionRuleExpression10.Expression = "[IS_MISSING] = 1";
+            formatConditionRuleExpression10.PredefinedName = "IS_MISSING";
+            gridFormatRule10.Rule = formatConditionRuleExpression10;
+            this.UiVistaErp.FormatRules.Add(gridFormatRule6);
+            this.UiVistaErp.FormatRules.Add(gridFormatRule7);
+            this.UiVistaErp.FormatRules.Add(gridFormatRule8);
+            this.UiVistaErp.FormatRules.Add(gridFormatRule9);
+            this.UiVistaErp.FormatRules.Add(gridFormatRule10);
             this.UiVistaErp.GridControl = this.UiContenedorVistaErp;
             this.UiVistaErp.GroupCount = 1;
             this.UiVistaErp.Name = "UiVistaErp";
@@ -1379,7 +1380,7 @@
             this.UiGrupoCliente.Location = new System.Drawing.Point(15, 15);
             this.UiGrupoCliente.Margin = new System.Windows.Forms.Padding(6);
             this.UiGrupoCliente.Name = "UiGrupoCliente";
-            this.UiGrupoCliente.Size = new System.Drawing.Size(1717, 251);
+            this.UiGrupoCliente.Size = new System.Drawing.Size(1936, 251);
             this.UiGrupoCliente.TabIndex = 29;
             this.UiGrupoCliente.Text = "Datos de Cliente";
             // 
@@ -1388,7 +1389,7 @@
             this.UiTextoNumeroDeFactura.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.UiTextoNumeroDeFactura.CausesValidation = false;
-            this.UiTextoNumeroDeFactura.Location = new System.Drawing.Point(264, 94);
+            this.UiTextoNumeroDeFactura.Location = new System.Drawing.Point(209, 94);
             this.UiTextoNumeroDeFactura.Margin = new System.Windows.Forms.Padding(6);
             this.UiTextoNumeroDeFactura.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiTextoNumeroDeFactura.Name = "UiTextoNumeroDeFactura";
@@ -1396,7 +1397,7 @@
             this.UiTextoNumeroDeFactura.Properties.Mask.EditMask = "(0?\\d|1\\d|2[0-3])\\:[0-5]\\d";
             this.UiTextoNumeroDeFactura.Properties.Mask.IgnoreMaskBlank = false;
             this.UiTextoNumeroDeFactura.Properties.Mask.ShowPlaceHolders = false;
-            this.UiTextoNumeroDeFactura.Size = new System.Drawing.Size(1467, 40);
+            this.UiTextoNumeroDeFactura.Size = new System.Drawing.Size(1686, 40);
             this.UiTextoNumeroDeFactura.TabIndex = 25;
             this.UiTextoNumeroDeFactura.ToolTip = "Ingrese el numero de factura";
             this.UiTextoNumeroDeFactura.Visible = false;
@@ -1414,7 +1415,7 @@
             this.UiGrupoTarea.Controls.Add(this.UiEtiqeutaTipoRecepcion);
             this.UiGrupoTarea.Controls.Add(this.UiListaTipoRecepcion);
             this.UiGrupoTarea.Dock = System.Windows.Forms.DockStyle.Right;
-            this.UiGrupoTarea.Location = new System.Drawing.Point(1732, 15);
+            this.UiGrupoTarea.Location = new System.Drawing.Point(1951, 15);
             this.UiGrupoTarea.Margin = new System.Windows.Forms.Padding(6);
             this.UiGrupoTarea.Name = "UiGrupoTarea";
             this.UiGrupoTarea.Size = new System.Drawing.Size(700, 251);
@@ -1433,14 +1434,24 @@
             this.panel1.Location = new System.Drawing.Point(0, 46);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(15);
-            this.panel1.Size = new System.Drawing.Size(2447, 281);
+            this.panel1.Size = new System.Drawing.Size(2666, 281);
             this.panel1.TabIndex = 35;
+            // 
+            // bbi_Factura
+            // 
+            this.bbi_Factura.Caption = "Leer factura";
+            this.bbi_Factura.Id = 13;
+            this.bbi_Factura.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bbi_Factura.ImageOptions.Image")));
+            this.bbi_Factura.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("bbi_Factura.ImageOptions.LargeImage")));
+            this.bbi_Factura.Name = "bbi_Factura";
+            this.bbi_Factura.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            this.bbi_Factura.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbi_Factura_ItemClick);
             // 
             // RecepcionErpVista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2447, 1315);
+            this.ClientSize = new System.Drawing.Size(2666, 1315);
             this.Controls.Add(this.UiContenedorVistaErp);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.barDockControlLeft);
@@ -1599,5 +1610,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn colUNIT;
         private DevExpress.XtraBars.BarToggleSwitchItem UIToogleConsolidado;
         private System.Windows.Forms.Panel panel1;
+        private DevExpress.XtraBars.BarButtonItem bbi_Factura;
     }
 }
