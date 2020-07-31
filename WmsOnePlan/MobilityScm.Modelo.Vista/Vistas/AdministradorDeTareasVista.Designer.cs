@@ -1954,7 +1954,7 @@
             formatConditionRuleExpression19.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             formatConditionRuleExpression19.Appearance.Options.UseBackColor = true;
             formatConditionRuleExpression19.Appearance.Options.UseBorderColor = true;
-            formatConditionRuleExpression19.Expression = "[QTY] >= 0 And [QTY_DOC] <> [QTY]";
+            formatConditionRuleExpression19.Expression = "[QTY] >= 0 And [QTY_DOC] <> [QTY] And [QTY_DIFFERENCE] <> 0";
             formatConditionRuleExpression19.PredefinedName = "Yellow Fill, Yellow Text";
             gridFormatRule19.Rule = formatConditionRuleExpression19;
             gridFormatRule20.ApplyToRow = true;
