@@ -843,7 +843,7 @@ namespace MobilityScm.Modelo.Vistas
                             SOURCE = Enums.GetStringValue((FuenteDeRecepcionDeErp)UiBarFuente.EditValue)
                         }
                     });
-                UiTextoNumeroDeFactura.Text = "";
+                //UiTextoNumeroDeFactura.Text = "";
             }
         }
 
