@@ -24,30 +24,30 @@ Partial Class frmInfoTransOnLine
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmInfoTransOnLine))
-        Dim SuperToolTip6 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
-        Dim ToolTipTitleItem11 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
-        Dim ToolTipItem6 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
-        Dim ToolTipSeparatorItem5 As DevExpress.Utils.ToolTipSeparatorItem = New DevExpress.Utils.ToolTipSeparatorItem()
-        Dim ToolTipTitleItem12 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
-        Dim SuperToolTip7 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
-        Dim ToolTipTitleItem13 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
-        Dim ToolTipItem7 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
-        Dim ToolTipSeparatorItem6 As DevExpress.Utils.ToolTipSeparatorItem = New DevExpress.Utils.ToolTipSeparatorItem()
-        Dim ToolTipTitleItem14 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
-        Dim SuperToolTip8 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
-        Dim ToolTipTitleItem15 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
-        Dim ToolTipItem8 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
-        Dim ToolTipSeparatorItem7 As DevExpress.Utils.ToolTipSeparatorItem = New DevExpress.Utils.ToolTipSeparatorItem()
-        Dim ToolTipTitleItem16 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
-        Dim SuperToolTip9 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
-        Dim ToolTipTitleItem17 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
-        Dim ToolTipItem9 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
-        Dim ToolTipTitleItem18 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
-        Dim SuperToolTip10 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
-        Dim ToolTipTitleItem19 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
-        Dim ToolTipItem10 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
-        Dim ToolTipSeparatorItem8 As DevExpress.Utils.ToolTipSeparatorItem = New DevExpress.Utils.ToolTipSeparatorItem()
-        Dim ToolTipTitleItem20 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim SuperToolTip1 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem1 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem1 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim ToolTipSeparatorItem1 As DevExpress.Utils.ToolTipSeparatorItem = New DevExpress.Utils.ToolTipSeparatorItem()
+        Dim ToolTipTitleItem2 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim SuperToolTip2 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem3 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem2 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim ToolTipSeparatorItem2 As DevExpress.Utils.ToolTipSeparatorItem = New DevExpress.Utils.ToolTipSeparatorItem()
+        Dim ToolTipTitleItem4 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim SuperToolTip3 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem5 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem3 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim ToolTipSeparatorItem3 As DevExpress.Utils.ToolTipSeparatorItem = New DevExpress.Utils.ToolTipSeparatorItem()
+        Dim ToolTipTitleItem6 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim SuperToolTip4 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem7 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem4 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim ToolTipTitleItem8 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim SuperToolTip5 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem9 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem5 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim ToolTipSeparatorItem4 As DevExpress.Utils.ToolTipSeparatorItem = New DevExpress.Utils.ToolTipSeparatorItem()
+        Dim ToolTipTitleItem10 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
         Me.PanelControl2 = New DevExpress.XtraEditors.PanelControl()
         Me.GridControl1 = New DevExpress.XtraGrid.GridControl()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
@@ -168,7 +168,7 @@ Partial Class frmInfoTransOnLine
         Me.PanelControl2.Controls.Add(Me.NavBarControlTransOnLine)
         Me.PanelControl2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelControl2.Location = New System.Drawing.Point(3, 3)
-        Me.PanelControl2.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.PanelControl2.Margin = New System.Windows.Forms.Padding(6)
         Me.PanelControl2.Name = "PanelControl2"
         Me.PanelControl2.Size = New System.Drawing.Size(1862, 941)
         Me.PanelControl2.TabIndex = 1
@@ -178,10 +178,10 @@ Partial Class frmInfoTransOnLine
         Me.GridControl1.ContextMenuStrip = Me.ContextMenuStrip1
         Me.GridControl1.Cursor = System.Windows.Forms.Cursors.Default
         Me.GridControl1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GridControl1.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.GridControl1.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(6)
         Me.GridControl1.Location = New System.Drawing.Point(445, 3)
         Me.GridControl1.MainView = Me.GridView1
-        Me.GridControl1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.GridControl1.Margin = New System.Windows.Forms.Padding(6)
         Me.GridControl1.Name = "GridControl1"
         Me.GridControl1.Size = New System.Drawing.Size(1414, 910)
         Me.GridControl1.TabIndex = 24
@@ -612,7 +612,7 @@ Partial Class frmInfoTransOnLine
         Me.NavBarControlTransOnLine.Dock = System.Windows.Forms.DockStyle.Left
         Me.NavBarControlTransOnLine.Groups.AddRange(New DevExpress.XtraNavBar.NavBarGroup() {Me.NavBarGroupFilter})
         Me.NavBarControlTransOnLine.Location = New System.Drawing.Point(3, 3)
-        Me.NavBarControlTransOnLine.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.NavBarControlTransOnLine.Margin = New System.Windows.Forms.Padding(6)
         Me.NavBarControlTransOnLine.Name = "NavBarControlTransOnLine"
         Me.NavBarControlTransOnLine.OptionsNavPane.ExpandedWidth = 442
         Me.NavBarControlTransOnLine.Size = New System.Drawing.Size(442, 935)
@@ -634,7 +634,7 @@ Partial Class frmInfoTransOnLine
         'NavBarGroupControlContainer1
         '
         Me.NavBarGroupControlContainer1.Controls.Add(Me.PanelControl3)
-        Me.NavBarGroupControlContainer1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.NavBarGroupControlContainer1.Margin = New System.Windows.Forms.Padding(6)
         Me.NavBarGroupControlContainer1.Name = "NavBarGroupControlContainer1"
         Me.NavBarGroupControlContainer1.Size = New System.Drawing.Size(442, 765)
         Me.NavBarGroupControlContainer1.TabIndex = 0
@@ -648,7 +648,7 @@ Partial Class frmInfoTransOnLine
         Me.PanelControl3.Location = New System.Drawing.Point(0, 0)
         Me.PanelControl3.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat
         Me.PanelControl3.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.PanelControl3.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.PanelControl3.Margin = New System.Windows.Forms.Padding(6)
         Me.PanelControl3.Name = "PanelControl3"
         Me.PanelControl3.Size = New System.Drawing.Size(442, 765)
         Me.PanelControl3.TabIndex = 1
@@ -657,7 +657,7 @@ Partial Class frmInfoTransOnLine
         '
         Me.btnGo.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnGo.Location = New System.Drawing.Point(3, 506)
-        Me.btnGo.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.btnGo.Margin = New System.Windows.Forms.Padding(6)
         Me.btnGo.Name = "btnGo"
         Me.btnGo.Size = New System.Drawing.Size(436, 44)
         Me.btnGo.TabIndex = 8
@@ -676,7 +676,7 @@ Partial Class frmInfoTransOnLine
         Me.GroupControl3.Controls.Add(Me.chkBtn3)
         Me.GroupControl3.Dock = System.Windows.Forms.DockStyle.Top
         Me.GroupControl3.Location = New System.Drawing.Point(3, 192)
-        Me.GroupControl3.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.GroupControl3.Margin = New System.Windows.Forms.Padding(6)
         Me.GroupControl3.Name = "GroupControl3"
         Me.GroupControl3.Size = New System.Drawing.Size(436, 314)
         Me.GroupControl3.TabIndex = 1
@@ -690,19 +690,19 @@ Partial Class frmInfoTransOnLine
         Me.btnToday.Checked = True
         Me.btnToday.GroupIndex = 1
         Me.btnToday.Location = New System.Drawing.Point(332, 44)
-        Me.btnToday.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.btnToday.Margin = New System.Windows.Forms.Padding(6)
         Me.btnToday.Name = "btnToday"
         Me.btnToday.Size = New System.Drawing.Size(80, 73)
-        ToolTipTitleItem11.Text = "TransaccionesEnLinea"
-        ToolTipItem6.LeftIndent = 6
-        ToolTipItem6.Text = "Consultar transacciones desde el dia de ayer hasta la fecha"
-        ToolTipTitleItem12.LeftIndent = 6
-        ToolTipTitleItem12.Text = "Filtros"
-        SuperToolTip6.Items.Add(ToolTipTitleItem11)
-        SuperToolTip6.Items.Add(ToolTipItem6)
-        SuperToolTip6.Items.Add(ToolTipSeparatorItem5)
-        SuperToolTip6.Items.Add(ToolTipTitleItem12)
-        Me.btnToday.SuperTip = SuperToolTip6
+        ToolTipTitleItem1.Text = "TransaccionesEnLinea"
+        ToolTipItem1.LeftIndent = 6
+        ToolTipItem1.Text = "Consultar transacciones desde el dia de ayer hasta la fecha"
+        ToolTipTitleItem2.LeftIndent = 6
+        ToolTipTitleItem2.Text = "Filtros"
+        SuperToolTip1.Items.Add(ToolTipTitleItem1)
+        SuperToolTip1.Items.Add(ToolTipItem1)
+        SuperToolTip1.Items.Add(ToolTipSeparatorItem1)
+        SuperToolTip1.Items.Add(ToolTipTitleItem2)
+        Me.btnToday.SuperTip = SuperToolTip1
         Me.btnToday.TabIndex = 8
         Me.btnToday.Text = "Hoy"
         '
@@ -711,7 +711,7 @@ Partial Class frmInfoTransOnLine
         Me.txtFechaFinal.EditValue = Nothing
         Me.txtFechaFinal.EnterMoveNextControl = True
         Me.txtFechaFinal.Location = New System.Drawing.Point(6, 253)
-        Me.txtFechaFinal.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtFechaFinal.Margin = New System.Windows.Forms.Padding(6)
         Me.txtFechaFinal.Name = "txtFechaFinal"
         Me.txtFechaFinal.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.txtFechaFinal.Properties.CalendarTimeEditing = DevExpress.Utils.DefaultBoolean.[True]
@@ -737,7 +737,7 @@ Partial Class frmInfoTransOnLine
         'LabelControl4
         '
         Me.LabelControl4.Location = New System.Drawing.Point(12, 217)
-        Me.LabelControl4.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.LabelControl4.Margin = New System.Windows.Forms.Padding(6)
         Me.LabelControl4.Name = "LabelControl4"
         Me.LabelControl4.Size = New System.Drawing.Size(118, 25)
         Me.LabelControl4.TabIndex = 6
@@ -748,7 +748,7 @@ Partial Class frmInfoTransOnLine
         Me.txtFechaInicial.EditValue = Nothing
         Me.txtFechaInicial.EnterMoveNextControl = True
         Me.txtFechaInicial.Location = New System.Drawing.Point(6, 167)
-        Me.txtFechaInicial.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtFechaInicial.Margin = New System.Windows.Forms.Padding(6)
         Me.txtFechaInicial.Name = "txtFechaInicial"
         Me.txtFechaInicial.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.txtFechaInicial.Properties.CalendarTimeEditing = DevExpress.Utils.DefaultBoolean.[True]
@@ -774,7 +774,7 @@ Partial Class frmInfoTransOnLine
         'LabelControl3
         '
         Me.LabelControl3.Location = New System.Drawing.Point(12, 128)
-        Me.LabelControl3.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.LabelControl3.Margin = New System.Windows.Forms.Padding(6)
         Me.LabelControl3.Name = "LabelControl3"
         Me.LabelControl3.Size = New System.Drawing.Size(118, 25)
         Me.LabelControl3.TabIndex = 4
@@ -787,19 +787,19 @@ Partial Class frmInfoTransOnLine
         Me.chkBtnY.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
         Me.chkBtnY.GroupIndex = 1
         Me.chkBtnY.Location = New System.Drawing.Point(250, 44)
-        Me.chkBtnY.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.chkBtnY.Margin = New System.Windows.Forms.Padding(6)
         Me.chkBtnY.Name = "chkBtnY"
         Me.chkBtnY.Size = New System.Drawing.Size(80, 73)
-        ToolTipTitleItem13.Text = "TransaccionesEnLinea"
-        ToolTipItem7.LeftIndent = 6
-        ToolTipItem7.Text = "Consultar transacciones desde el dia de ayer hasta la fecha"
-        ToolTipTitleItem14.LeftIndent = 6
-        ToolTipTitleItem14.Text = "Filtros"
-        SuperToolTip7.Items.Add(ToolTipTitleItem13)
-        SuperToolTip7.Items.Add(ToolTipItem7)
-        SuperToolTip7.Items.Add(ToolTipSeparatorItem6)
-        SuperToolTip7.Items.Add(ToolTipTitleItem14)
-        Me.chkBtnY.SuperTip = SuperToolTip7
+        ToolTipTitleItem3.Text = "TransaccionesEnLinea"
+        ToolTipItem2.LeftIndent = 6
+        ToolTipItem2.Text = "Consultar transacciones desde el dia de ayer hasta la fecha"
+        ToolTipTitleItem4.LeftIndent = 6
+        ToolTipTitleItem4.Text = "Filtros"
+        SuperToolTip2.Items.Add(ToolTipTitleItem3)
+        SuperToolTip2.Items.Add(ToolTipItem2)
+        SuperToolTip2.Items.Add(ToolTipSeparatorItem2)
+        SuperToolTip2.Items.Add(ToolTipTitleItem4)
+        Me.chkBtnY.SuperTip = SuperToolTip2
         Me.chkBtnY.TabIndex = 5
         Me.chkBtnY.TabStop = False
         Me.chkBtnY.Text = "Desde Ayer"
@@ -811,19 +811,19 @@ Partial Class frmInfoTransOnLine
         Me.chkBtnW.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
         Me.chkBtnW.GroupIndex = 1
         Me.chkBtnW.Location = New System.Drawing.Point(168, 44)
-        Me.chkBtnW.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.chkBtnW.Margin = New System.Windows.Forms.Padding(6)
         Me.chkBtnW.Name = "chkBtnW"
         Me.chkBtnW.Size = New System.Drawing.Size(80, 73)
-        ToolTipTitleItem15.Text = "TransaccionesEnLinea"
-        ToolTipItem8.LeftIndent = 6
-        ToolTipItem8.Text = "Consultar transacciones desde 1 semana a la fecha"
-        ToolTipTitleItem16.LeftIndent = 6
-        ToolTipTitleItem16.Text = "Filtros"
-        SuperToolTip8.Items.Add(ToolTipTitleItem15)
-        SuperToolTip8.Items.Add(ToolTipItem8)
-        SuperToolTip8.Items.Add(ToolTipSeparatorItem7)
-        SuperToolTip8.Items.Add(ToolTipTitleItem16)
-        Me.chkBtnW.SuperTip = SuperToolTip8
+        ToolTipTitleItem5.Text = "TransaccionesEnLinea"
+        ToolTipItem3.LeftIndent = 6
+        ToolTipItem3.Text = "Consultar transacciones desde 1 semana a la fecha"
+        ToolTipTitleItem6.LeftIndent = 6
+        ToolTipTitleItem6.Text = "Filtros"
+        SuperToolTip3.Items.Add(ToolTipTitleItem5)
+        SuperToolTip3.Items.Add(ToolTipItem3)
+        SuperToolTip3.Items.Add(ToolTipSeparatorItem3)
+        SuperToolTip3.Items.Add(ToolTipTitleItem6)
+        Me.chkBtnW.SuperTip = SuperToolTip3
         Me.chkBtnW.TabIndex = 4
         Me.chkBtnW.TabStop = False
         Me.chkBtnW.Text = "1 Semana"
@@ -835,18 +835,18 @@ Partial Class frmInfoTransOnLine
         Me.chkBtn1.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
         Me.chkBtn1.GroupIndex = 1
         Me.chkBtn1.Location = New System.Drawing.Point(86, 44)
-        Me.chkBtn1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.chkBtn1.Margin = New System.Windows.Forms.Padding(6)
         Me.chkBtn1.Name = "chkBtn1"
         Me.chkBtn1.Size = New System.Drawing.Size(80, 73)
-        ToolTipTitleItem17.Text = "TransaccionesEnLinea"
-        ToolTipItem9.LeftIndent = 6
-        ToolTipItem9.Text = "Consultar transacciones desde 3 meses a la fecha"
-        ToolTipTitleItem18.LeftIndent = 6
-        ToolTipTitleItem18.Text = "Filtros"
-        SuperToolTip9.Items.Add(ToolTipTitleItem17)
-        SuperToolTip9.Items.Add(ToolTipItem9)
-        SuperToolTip9.Items.Add(ToolTipTitleItem18)
-        Me.chkBtn1.SuperTip = SuperToolTip9
+        ToolTipTitleItem7.Text = "TransaccionesEnLinea"
+        ToolTipItem4.LeftIndent = 6
+        ToolTipItem4.Text = "Consultar transacciones desde 3 meses a la fecha"
+        ToolTipTitleItem8.LeftIndent = 6
+        ToolTipTitleItem8.Text = "Filtros"
+        SuperToolTip4.Items.Add(ToolTipTitleItem7)
+        SuperToolTip4.Items.Add(ToolTipItem4)
+        SuperToolTip4.Items.Add(ToolTipTitleItem8)
+        Me.chkBtn1.SuperTip = SuperToolTip4
         Me.chkBtn1.TabIndex = 3
         Me.chkBtn1.TabStop = False
         Me.chkBtn1.Text = "1   Mes"
@@ -859,19 +859,19 @@ Partial Class frmInfoTransOnLine
         Me.chkBtn3.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
         Me.chkBtn3.GroupIndex = 1
         Me.chkBtn3.Location = New System.Drawing.Point(6, 44)
-        Me.chkBtn3.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.chkBtn3.Margin = New System.Windows.Forms.Padding(6)
         Me.chkBtn3.Name = "chkBtn3"
         Me.chkBtn3.Size = New System.Drawing.Size(80, 73)
-        ToolTipTitleItem19.Text = "TransaccionesEnLinea"
-        ToolTipItem10.LeftIndent = 6
-        ToolTipItem10.Text = "Consultar transacciones desde 3 meses a la fecha"
-        ToolTipTitleItem20.LeftIndent = 6
-        ToolTipTitleItem20.Text = "Filtros"
-        SuperToolTip10.Items.Add(ToolTipTitleItem19)
-        SuperToolTip10.Items.Add(ToolTipItem10)
-        SuperToolTip10.Items.Add(ToolTipSeparatorItem8)
-        SuperToolTip10.Items.Add(ToolTipTitleItem20)
-        Me.chkBtn3.SuperTip = SuperToolTip10
+        ToolTipTitleItem9.Text = "TransaccionesEnLinea"
+        ToolTipItem5.LeftIndent = 6
+        ToolTipItem5.Text = "Consultar transacciones desde 3 meses a la fecha"
+        ToolTipTitleItem10.LeftIndent = 6
+        ToolTipTitleItem10.Text = "Filtros"
+        SuperToolTip5.Items.Add(ToolTipTitleItem9)
+        SuperToolTip5.Items.Add(ToolTipItem5)
+        SuperToolTip5.Items.Add(ToolTipSeparatorItem4)
+        SuperToolTip5.Items.Add(ToolTipTitleItem10)
+        Me.chkBtn3.SuperTip = SuperToolTip5
         Me.chkBtn3.TabIndex = 2
         Me.chkBtn3.TabStop = False
         Me.chkBtn3.Text = "3 meses"
@@ -884,7 +884,7 @@ Partial Class frmInfoTransOnLine
         Me.GroupControlUsers.Controls.Add(Me.LabelControl1)
         Me.GroupControlUsers.Dock = System.Windows.Forms.DockStyle.Top
         Me.GroupControlUsers.Location = New System.Drawing.Point(3, 3)
-        Me.GroupControlUsers.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.GroupControlUsers.Margin = New System.Windows.Forms.Padding(6)
         Me.GroupControlUsers.Name = "GroupControlUsers"
         Me.GroupControlUsers.Size = New System.Drawing.Size(436, 189)
         Me.GroupControlUsers.TabIndex = 0
@@ -895,7 +895,7 @@ Partial Class frmInfoTransOnLine
         Me.cmbTrans.Dock = System.Windows.Forms.DockStyle.Top
         Me.cmbTrans.EnterMoveNextControl = True
         Me.cmbTrans.Location = New System.Drawing.Point(3, 120)
-        Me.cmbTrans.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.cmbTrans.Margin = New System.Windows.Forms.Padding(6)
         Me.cmbTrans.Name = "cmbTrans"
         Me.cmbTrans.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.cmbTrans.Size = New System.Drawing.Size(430, 40)
@@ -906,7 +906,7 @@ Partial Class frmInfoTransOnLine
         Me.LabelControl2.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None
         Me.LabelControl2.Dock = System.Windows.Forms.DockStyle.Top
         Me.LabelControl2.Location = New System.Drawing.Point(3, 95)
-        Me.LabelControl2.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.LabelControl2.Margin = New System.Windows.Forms.Padding(6)
         Me.LabelControl2.Name = "LabelControl2"
         Me.LabelControl2.Size = New System.Drawing.Size(430, 25)
         Me.LabelControl2.TabIndex = 11
@@ -918,7 +918,7 @@ Partial Class frmInfoTransOnLine
         Me.cmbUsers.EditValue = ""
         Me.cmbUsers.EnterMoveNextControl = True
         Me.cmbUsers.Location = New System.Drawing.Point(3, 55)
-        Me.cmbUsers.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.cmbUsers.Margin = New System.Windows.Forms.Padding(6)
         Me.cmbUsers.Name = "cmbUsers"
         Me.cmbUsers.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.cmbUsers.Size = New System.Drawing.Size(430, 40)
@@ -929,7 +929,7 @@ Partial Class frmInfoTransOnLine
         Me.LabelControl1.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None
         Me.LabelControl1.Dock = System.Windows.Forms.DockStyle.Top
         Me.LabelControl1.Location = New System.Drawing.Point(3, 30)
-        Me.LabelControl1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.LabelControl1.Margin = New System.Windows.Forms.Padding(6)
         Me.LabelControl1.Name = "LabelControl1"
         Me.LabelControl1.Size = New System.Drawing.Size(430, 25)
         Me.LabelControl1.TabIndex = 9
@@ -947,7 +947,7 @@ Partial Class frmInfoTransOnLine
         Me.popObservacionesIngGeneral.Controls.Add(Me.btnCancelarRepIngGeneral)
         Me.popObservacionesIngGeneral.Location = New System.Drawing.Point(1008, 59)
         Me.popObservacionesIngGeneral.Manager = Me.BarManager1
-        Me.popObservacionesIngGeneral.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.popObservacionesIngGeneral.Margin = New System.Windows.Forms.Padding(6)
         Me.popObservacionesIngGeneral.Name = "popObservacionesIngGeneral"
         Me.popObservacionesIngGeneral.ShowCloseButton = True
         Me.popObservacionesIngGeneral.ShowSizeGrip = True
@@ -958,7 +958,7 @@ Partial Class frmInfoTransOnLine
         'LabelControl6
         '
         Me.LabelControl6.Location = New System.Drawing.Point(20, 16)
-        Me.LabelControl6.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.LabelControl6.Margin = New System.Windows.Forms.Padding(6)
         Me.LabelControl6.Name = "LabelControl6"
         Me.LabelControl6.Size = New System.Drawing.Size(131, 25)
         Me.LabelControl6.TabIndex = 5
@@ -977,7 +977,7 @@ Partial Class frmInfoTransOnLine
         'btnAceptarRepIngGeneral
         '
         Me.btnAceptarRepIngGeneral.Location = New System.Drawing.Point(414, 384)
-        Me.btnAceptarRepIngGeneral.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.btnAceptarRepIngGeneral.Margin = New System.Windows.Forms.Padding(6)
         Me.btnAceptarRepIngGeneral.Name = "btnAceptarRepIngGeneral"
         Me.btnAceptarRepIngGeneral.Size = New System.Drawing.Size(150, 44)
         Me.btnAceptarRepIngGeneral.TabIndex = 3
@@ -986,7 +986,7 @@ Partial Class frmInfoTransOnLine
         'menObservacinesRepIngGeneral
         '
         Me.menObservacinesRepIngGeneral.Location = New System.Drawing.Point(14, 83)
-        Me.menObservacinesRepIngGeneral.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.menObservacinesRepIngGeneral.Margin = New System.Windows.Forms.Padding(6)
         Me.menObservacinesRepIngGeneral.MenuManager = Me.BarManager1
         Me.menObservacinesRepIngGeneral.Name = "menObservacinesRepIngGeneral"
         Me.menObservacinesRepIngGeneral.Size = New System.Drawing.Size(712, 275)
@@ -1097,7 +1097,7 @@ Partial Class frmInfoTransOnLine
         Me.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.barDockControlTop.Location = New System.Drawing.Point(0, 0)
         Me.barDockControlTop.Manager = Me.BarManager1
-        Me.barDockControlTop.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.barDockControlTop.Margin = New System.Windows.Forms.Padding(6)
         Me.barDockControlTop.Size = New System.Drawing.Size(1868, 62)
         '
         'barDockControlBottom
@@ -1106,7 +1106,7 @@ Partial Class frmInfoTransOnLine
         Me.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.barDockControlBottom.Location = New System.Drawing.Point(0, 1009)
         Me.barDockControlBottom.Manager = Me.BarManager1
-        Me.barDockControlBottom.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.barDockControlBottom.Margin = New System.Windows.Forms.Padding(6)
         Me.barDockControlBottom.Size = New System.Drawing.Size(1868, 22)
         '
         'barDockControlLeft
@@ -1115,7 +1115,7 @@ Partial Class frmInfoTransOnLine
         Me.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left
         Me.barDockControlLeft.Location = New System.Drawing.Point(0, 62)
         Me.barDockControlLeft.Manager = Me.BarManager1
-        Me.barDockControlLeft.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.barDockControlLeft.Margin = New System.Windows.Forms.Padding(6)
         Me.barDockControlLeft.Size = New System.Drawing.Size(0, 947)
         '
         'barDockControlRight
@@ -1124,13 +1124,13 @@ Partial Class frmInfoTransOnLine
         Me.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right
         Me.barDockControlRight.Location = New System.Drawing.Point(1868, 62)
         Me.barDockControlRight.Manager = Me.BarManager1
-        Me.barDockControlRight.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.barDockControlRight.Margin = New System.Windows.Forms.Padding(6)
         Me.barDockControlRight.Size = New System.Drawing.Size(0, 947)
         '
         'LabelControl5
         '
         Me.LabelControl5.Location = New System.Drawing.Point(20, 47)
-        Me.LabelControl5.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.LabelControl5.Margin = New System.Windows.Forms.Padding(6)
         Me.LabelControl5.Name = "LabelControl5"
         Me.LabelControl5.Size = New System.Drawing.Size(132, 25)
         Me.LabelControl5.TabIndex = 1
@@ -1139,7 +1139,7 @@ Partial Class frmInfoTransOnLine
         'btnCancelarRepIngGeneral
         '
         Me.btnCancelarRepIngGeneral.Location = New System.Drawing.Point(576, 384)
-        Me.btnCancelarRepIngGeneral.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.btnCancelarRepIngGeneral.Margin = New System.Windows.Forms.Padding(6)
         Me.btnCancelarRepIngGeneral.Name = "btnCancelarRepIngGeneral"
         Me.btnCancelarRepIngGeneral.Size = New System.Drawing.Size(150, 44)
         Me.btnCancelarRepIngGeneral.TabIndex = 0
@@ -1150,7 +1150,7 @@ Partial Class frmInfoTransOnLine
         Me.PanelControl1.Controls.Add(Me.PanelControl2)
         Me.PanelControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelControl1.Location = New System.Drawing.Point(0, 62)
-        Me.PanelControl1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.PanelControl1.Margin = New System.Windows.Forms.Padding(6)
         Me.PanelControl1.Name = "PanelControl1"
         Me.PanelControl1.Size = New System.Drawing.Size(1868, 947)
         Me.PanelControl1.TabIndex = 0
@@ -1184,7 +1184,7 @@ Partial Class frmInfoTransOnLine
         Me.Controls.Add(Me.barDockControlRight)
         Me.Controls.Add(Me.barDockControlBottom)
         Me.Controls.Add(Me.barDockControlTop)
-        Me.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Margin = New System.Windows.Forms.Padding(6)
         Me.Name = "frmInfoTransOnLine"
         Me.Text = "Consulta Trans. En Linea"
         CType(Me.PanelControl2,System.ComponentModel.ISupportInitialize).EndInit

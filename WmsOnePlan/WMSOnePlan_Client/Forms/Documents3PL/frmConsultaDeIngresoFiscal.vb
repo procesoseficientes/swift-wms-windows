@@ -287,14 +287,6 @@ Public Class frmConsultaDeIngresoFiscal
         UsuarioDeseaGenerarReporte()
     End Sub
 
-    Private Sub cmbRegimen_EditValueChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub UiVistaGridEgresos_Click(sender As Object, e As EventArgs) Handles UiVistaGridEgresos.Click
-
-    End Sub
-
     Private Sub cmbClientes_EditValueChanged(sender As Object, e As EventArgs)
         If cargaFormulario Then
             LlenarVistaIngreso()
@@ -305,6 +297,7 @@ Public Class frmConsultaDeIngresoFiscal
         UIFechaInicio.EditValue = Date.Today.AddDays(-7)
         UiFechaFinal.EditValue = Date.Today
         fn_llena_combos()
+        loadLayout.Start()
     End Sub
 
     Private Function ObtenerTextoAMostrarListaCliente() As String
@@ -373,5 +366,23 @@ Public Class frmConsultaDeIngresoFiscal
         brush.Dispose()
         e.Graphics.DrawString("", e.Appearance.Font, Brushes.Black, New RectangleF(e.Bounds.X, e.Bounds.Y, e.Bounds.Width, e.Bounds.Height))
         e.Handled = True
+    End Sub
+
+    Dim ticks = 0
+    Private Sub loadLayout_Tick(sender As Object, e As EventArgs) Handles loadLayout.Tick
+        If ticks > 0 Then
+            LoadGridLayout("GridReporteIgresos", PublicLoginInfo.LoginID, UiVistaIngresoGeneral)
+            loadLayout.Stop()
+        Else
+            ticks += 1
+        End If
+    End Sub
+
+    Private Sub btnSaveLayout_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnSaveLayout.ItemClick
+        SaveGridLayout("GridReporteIgresos", PublicLoginInfo.LoginID, UiVistaIngresoGeneral)
+    End Sub
+
+    Private Sub frmConsultaDeIngresoFiscal_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+        SaveGridLayout("GridReporteIgresos", PublicLoginInfo.LoginID, UiVistaIngresoGeneral)
     End Sub
 End Class
