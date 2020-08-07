@@ -18,7 +18,7 @@
     <OptionStrict>Off</OptionStrict>
     <OptionInfer>On</OptionInfer>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <ApplicationIcon>Carton_v2.ico</ApplicationIcon>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
     <TargetZone>LocalIntranet</TargetZone>
     <GenerateManifests>false</GenerateManifests>
     <ApplicationManifest>app.manifest</ApplicationManifest>
@@ -2287,6 +2287,7 @@
     <None Include="Resources\Alsersa.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <Content Include="icon.ico" />
     <Content Include="Resources\bin.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
