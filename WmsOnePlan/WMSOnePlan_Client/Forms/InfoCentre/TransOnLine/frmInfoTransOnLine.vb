@@ -74,7 +74,8 @@ Public Class frmInfoTransOnLine
             gLastScreenShowed = Me.Name
             ShowAllUsers()
             ShowAllTrans()
-            LoadGridLayout("GRID_TRANS_ONLINE", PublicLoginInfo.LoginID, Me.GridView1)
+
+            loadLayout.Start()
 
             Me.txtFechaInicial.DateTime = Now.AddHours(-Now.Hour).AddMinutes(-Now.Minute)
             Me.txtFechaFinal.DateTime = Now
@@ -586,5 +587,15 @@ Public Class frmInfoTransOnLine
         destWorkBook.Worksheets.RemoveAt(0)
         destWorkBook.SaveDocument(destXlsxFileName)
         destWorkBook.Dispose()
+    End Sub
+
+    Dim ticks = 0
+    Private Sub loadLayout_Tick(sender As Object, e As EventArgs) Handles loadLayout.Tick
+        If ticks > 0 Then
+            LoadGridLayout("GRID_TRANS_ONLINE", PublicLoginInfo.LoginID, Me.GridView1)
+            loadLayout.Stop()
+        Else
+            ticks += 1
+        End If
     End Sub
 End Class
