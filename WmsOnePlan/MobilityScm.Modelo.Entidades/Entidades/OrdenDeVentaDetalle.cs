@@ -10,6 +10,10 @@ namespace MobilityScm.Modelo.Entidades
 
         public string SALES_ORDER_ID { get; set; }
 
+        public string BASE_REF { get; set; }
+
+        public string BASE_ENTRY { get; set; }
+
         public string SKU { get; set; }
 
         public string DESCRIPTION_SKU { get; set; }
