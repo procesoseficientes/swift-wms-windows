@@ -2194,6 +2194,21 @@ Public Class WMS_Trans
 
     <WebMethod(Description:="Actualizar Demanda de Despacho y Orden de Entrega en ERP")>
     Public Function UpdateDeliveryNoteERP(passId As Integer, status As String, login As String, environmentName As String, ByRef result As String) As DataTable
+        Dim rst As String = ""
+        Dim DocEntryTable = GetDraftDocEntry(passId, environmentName, rst)
+
+        Dim DocEntry As String = DocEntryTable.Rows(0).Field(Of Integer)(0)
+
+        If Not String.IsNullOrEmpty(DocEntry) Then
+            Dim webClient As New System.Net.WebClient
+            Dim response As String = webClient.DownloadString(AppSettings("SAPBOAPI") + "/" + DocEntry)
+
+            If Not response.Equals("True") Then
+                result = "ERROR," + response
+                Return Nothing
+            End If
+        End If
+
         Dim sqldbConexion = New SqlConnection(AppSettings(environmentName).ToString)
         sqldbConexion.Open()
 
@@ -2210,6 +2225,43 @@ Public Class WMS_Trans
 
             Dim miscDa = New SqlDataAdapter(cmd)
             Dim miscDs = New DataTable("UpdateDeliveryNoteReturn")
+
+            Try
+                miscDa.Fill(miscDs)
+            Catch ex As Exception
+                result = "ERROR," + ex.Message
+                Return Nothing
+            End Try
+
+            result = ""
+            Return miscDs
+
+        Catch ex As Exception
+            result = ex.Message
+            Return Nothing
+        Finally
+            sqldbConexion.Close()
+            sqldbConexion.Dispose()
+            sqldbConexion = Nothing
+        End Try
+    End Function
+
+    <WebMethod(Description:="Get Draft DocEntry Reference by PassID")>
+    Public Function GetDraftDocEntry(passId As Integer, environmentName As String, ByRef result As String) As DataTable
+        Dim sqldbConexion = New SqlConnection(AppSettings(environmentName).ToString)
+        sqldbConexion.Open()
+
+        Try
+            Dim cmd As New SqlCommand
+
+            cmd.Parameters.Add("@PASS_ID", SqlDbType.Int).Value = passId
+
+            cmd.CommandText = DefaultSchema + "[GETDRAFTDOCENTRY_BY_PASS_ID]"
+            cmd.CommandType = CommandType.StoredProcedure
+            cmd.Connection = sqldbConexion
+
+            Dim miscDa = New SqlDataAdapter(cmd)
+            Dim miscDs = New DataTable("DraftDocEntry")
 
             Try
                 miscDa.Fill(miscDs)

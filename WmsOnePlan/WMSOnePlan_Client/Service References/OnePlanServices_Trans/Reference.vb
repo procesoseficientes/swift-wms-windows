@@ -193,6 +193,10 @@ Namespace OnePlanServices_Trans
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/UpdateDeliveryNoteERP", ReplyAction:="*"),  _
          System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
         Function UpdateDeliveryNoteERP(ByVal passId As Integer, ByVal status As String, ByVal login As String, ByVal environmentName As String, ByRef result As String) As System.Data.DataTable
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetDraftDocEntry", ReplyAction:="*"),  _
+         System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
+        Function GetDraftDocEntry(ByVal passId As Integer, ByVal environmentName As String, ByRef result As String) As System.Data.DataTable
     End Interface
     
     <System.Diagnostics.DebuggerStepThroughAttribute(),  _
@@ -517,6 +521,10 @@ Namespace OnePlanServices_Trans
         
         Public Function UpdateDeliveryNoteERP(ByVal passId As Integer, ByVal status As String, ByVal login As String, ByVal environmentName As String, ByRef result As String) As System.Data.DataTable Implements OnePlanServices_Trans.WMS_TransSoap.UpdateDeliveryNoteERP
             Return MyBase.Channel.UpdateDeliveryNoteERP(passId, status, login, environmentName, result)
+        End Function
+        
+        Public Function GetDraftDocEntry(ByVal passId As Integer, ByVal environmentName As String, ByRef result As String) As System.Data.DataTable Implements OnePlanServices_Trans.WMS_TransSoap.GetDraftDocEntry
+            Return MyBase.Channel.GetDraftDocEntry(passId, environmentName, result)
         End Function
     End Class
 End Namespace
