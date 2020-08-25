@@ -555,6 +555,8 @@
             this.UiCheckBoxUsaLineaDePickingEnDetalle = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.UiColEstadoDetalleDocumento = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UiListaDeEstadosDetalleDocumento = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
+            this.UiColBaseEntryDetalle = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.UiColBaseRefDetalle = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UiEtiquetaEncabezado = new DevExpress.XtraEditors.LabelControl();
             this.UiListaVistaDeOperadores = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.UiColCodigoUsuario = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -819,8 +821,6 @@
             this.repositoryItemCheckEdit7 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.UiColBaseEntryDetalle = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.UiColBaseRefDetalle = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.UiVistaComponentesMasterPackFaltante)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiGridControlSkusSinInventario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiVistaSkusSinInventario)).BeginInit();
@@ -5603,6 +5603,26 @@
             this.UiListaDeEstadosDetalleDocumento.Name = "UiListaDeEstadosDetalleDocumento";
             this.UiListaDeEstadosDetalleDocumento.ValueMember = "STATUS_CODE";
             // 
+            // UiColBaseEntryDetalle
+            // 
+            this.UiColBaseEntryDetalle.Caption = "Entrada basa";
+            this.UiColBaseEntryDetalle.FieldName = "BASE_ENTRY";
+            this.UiColBaseEntryDetalle.MinWidth = 40;
+            this.UiColBaseEntryDetalle.Name = "UiColBaseEntryDetalle";
+            this.UiColBaseEntryDetalle.Visible = true;
+            this.UiColBaseEntryDetalle.VisibleIndex = 9;
+            this.UiColBaseEntryDetalle.Width = 150;
+            // 
+            // UiColBaseRefDetalle
+            // 
+            this.UiColBaseRefDetalle.Caption = "Referencia base";
+            this.UiColBaseRefDetalle.FieldName = "BASE_REF";
+            this.UiColBaseRefDetalle.MinWidth = 40;
+            this.UiColBaseRefDetalle.Name = "UiColBaseRefDetalle";
+            this.UiColBaseRefDetalle.Visible = true;
+            this.UiColBaseRefDetalle.VisibleIndex = 10;
+            this.UiColBaseRefDetalle.Width = 150;
+            // 
             // UiEtiquetaEncabezado
             // 
             this.UiEtiquetaEncabezado.Appearance.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -8499,26 +8519,6 @@
             this.layoutControlGroup1.Name = "LayoutRootGroupForRestore";
             this.layoutControlGroup1.Size = new System.Drawing.Size(409, 30);
             this.layoutControlGroup1.Tag = "LayoutRootGroupForRestore";
-            // 
-            // UiColBaseEntryDetalle
-            // 
-            this.UiColBaseEntryDetalle.Caption = "Entrada basa";
-            this.UiColBaseEntryDetalle.FieldName = "BASE_ENTRY";
-            this.UiColBaseEntryDetalle.MinWidth = 40;
-            this.UiColBaseEntryDetalle.Name = "UiColBaseEntryDetalle";
-            this.UiColBaseEntryDetalle.Visible = true;
-            this.UiColBaseEntryDetalle.VisibleIndex = 9;
-            this.UiColBaseEntryDetalle.Width = 150;
-            // 
-            // UiColBaseRefDetalle
-            // 
-            this.UiColBaseRefDetalle.Caption = "Referencia base";
-            this.UiColBaseRefDetalle.FieldName = "BASE_REF";
-            this.UiColBaseRefDetalle.MinWidth = 40;
-            this.UiColBaseRefDetalle.Name = "UiColBaseRefDetalle";
-            this.UiColBaseRefDetalle.Visible = true;
-            this.UiColBaseRefDetalle.VisibleIndex = 10;
-            this.UiColBaseRefDetalle.Width = 150;
             // 
             // DemandaDeDespachoVista
             // 
