@@ -2196,16 +2196,19 @@ Public Class WMS_Trans
     Public Function UpdateDeliveryNoteERP(passId As Integer, status As String, login As String, environmentName As String, ByRef result As String) As DataTable
         Dim rst As String = ""
         Dim DocEntryTable = GetDraftDocEntry(passId, environmentName, rst)
+        Dim DocNum = 0
 
-        Dim DocEntry As String = DocEntryTable.Rows(0).Field(Of Integer)(0)
+        Dim DocEntry As String = DocEntryTable.Rows(0)(0)
 
         If Not String.IsNullOrEmpty(DocEntry) Then
             Dim webClient As New System.Net.WebClient
-            Dim response As String = webClient.DownloadString(AppSettings("SAPBOAPI") + "/" + DocEntry)
+            Dim response As String = webClient.DownloadString(AppSettings("SAPBOAPI") + "/CloseDraft/" + DocEntry)
 
-            If Not response.Equals("True") Then
-                result = "ERROR," + response
-                Return Nothing
+            If response.Contains("Error") Then
+                result = "ERROR, (" + AppSettings("SAPBOAPI") + "/CloseDraft/" + DocEntry + ") ; " + response
+                Throw New Exception(result)
+            Else
+                DocNum = response
             End If
         End If
 
@@ -2218,6 +2221,7 @@ Public Class WMS_Trans
             cmd.Parameters.Add("@PASS_ID", SqlDbType.Int).Value = passId
             cmd.Parameters.Add("@STATUS", SqlDbType.VarChar).Value = status
             cmd.Parameters.Add("@LOGIN", SqlDbType.VarChar).Value = login
+            cmd.Parameters.Add("@ERP_REF", SqlDbType.VarChar).Value = DocNum
 
             cmd.CommandText = DefaultSchema + "[OP_WMS_SP_UPDATE_STATUS_BY_EXIT_PASS]"
             cmd.CommandType = CommandType.StoredProcedure
