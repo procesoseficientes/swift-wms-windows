@@ -74,7 +74,7 @@ Module WMS_GlobalModule
                     'Cealsa
                     'WSHost = "http://192.168.0.5:9999"
                     'Ferco
-                    WSHost = "http://10.240.29.104:8090"
+                    WSHost = "http://10.240.29.103:90"
                     'Arium
                     'WSHost = "http://172.16.20.11:8088"
 

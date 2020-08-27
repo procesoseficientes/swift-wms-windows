@@ -68,7 +68,8 @@ namespace MobilityScm.Modelo.Vistas
             VistaCargandosePorPrimeraVez?.Invoke(sender, e);
             UiFechaIncial.EditValue = DateTime.Now.Date;
             UiFechaFinal.EditValue = DateTime.Now.Date + (new TimeSpan(23, 59, 59));
-            CargarOGuardarDisenios(UiContenedorTrazabilidadOrdenes, false, InteraccionConUsuarioServicio.ObtenerUsuario(), GetType().Name);
+
+            SaveLayout.Start();
         }
 
 
@@ -114,6 +115,22 @@ namespace MobilityScm.Modelo.Vistas
         private void TrazabilidadDeDemandaVista_FormClosing(object sender, FormClosingEventArgs e)
         {
             CargarOGuardarDisenios(UiContenedorTrazabilidadOrdenes, true, InteraccionConUsuarioServicio.ObtenerUsuario(), GetType().Name);
+        }
+
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            SaveLayout.Start();
+        }
+
+        int start = 0;
+        private void SaveLayout_Tick(object sender, EventArgs e)
+        {
+            if (start == 0)
+            {
+                this.CargarOGuardarDisenios(UiContenedorTrazabilidadOrdenes, false, InteraccionConUsuarioServicio.ObtenerUsuario(), "Trazabilidad");
+                start = 1;
+                SaveLayout.Stop();
+            }
         }
     }
 }

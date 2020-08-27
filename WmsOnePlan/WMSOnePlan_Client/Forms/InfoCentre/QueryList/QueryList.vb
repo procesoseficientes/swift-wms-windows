@@ -4,8 +4,8 @@ Imports DevExpress.XtraGrid.Views.Grid
 
 Public Class QueryList
     Private Sub QueryList_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim fecha as Date = DateTime.Today
-        
+        Dim fecha As Date = DateTime.Today
+
         UiContenedorFechaInicio.EditValue = fecha.AddMonths(-1)
         UiContenedorFechaFinal.EditValue = fecha
         cargarListaQuery()
@@ -25,7 +25,7 @@ Public Class QueryList
 
     Private Sub botonRefrescar_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles botonRefrescar.ItemClick
         RefrescarVista()
-        
+
     End Sub
 
     Private Sub RefrescarVista()
@@ -45,7 +45,7 @@ Public Class QueryList
             Dim servicio As New OnePlanServices_InfoTrans.WMS_InfoTransSoapClient("WMS_InfoTransSoap", PublicLoginInfo.WSHost + "/Info/WMS_InfoTrans.asmx")
             dataTable = servicio.ObtenerConsultaSeleccionada(idConsulta, String.Empty, PublicLoginInfo.LoginID, PublicLoginInfo.Environment, UiContenedorFechaInicio.EditValue, UiContenedorFechaFinal.EditValue)
             Consulta.Columns.Clear()
-            GridConsultas.DataSource = nothing
+            GridConsultas.DataSource = Nothing
             GridConsultas.DataSource = dataTable
         Catch ex As Exception
             NotifyStatus(ex.Message, True, True)
@@ -108,8 +108,8 @@ Public Class QueryList
                 Return
             End If
 
-            if GridConsultas.DataSource is nothing Then
-               Return 
+            If GridConsultas.DataSource Is Nothing Then
+                Return
             End If
 
             Dim servicio As New OnePlanServices_InfoTrans.WMS_InfoTransSoapClient("WMS_InfoTransSoap", PublicLoginInfo.WSHost + "/Info/WMS_InfoTrans.asmx")

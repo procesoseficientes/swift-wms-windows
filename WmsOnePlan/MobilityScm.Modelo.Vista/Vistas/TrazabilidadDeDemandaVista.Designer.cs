@@ -84,9 +84,11 @@
             this.colUSE_PICKING_LINE = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UiColUsaLineaDePicking = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.colIS_BONUS = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.UiDialogoParaGuardar = new System.Windows.Forms.SaveFileDialog();
             this.colAdress = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colTYPE_DEMAND_NAME = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.UiDialogoParaGuardar = new System.Windows.Forms.SaveFileDialog();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.SaveLayout = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.UiBarManager)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit1.CalendarTimeProperties)).BeginInit();
@@ -116,9 +118,10 @@
             this.UiFechaFinal,
             this.UiComboBodega,
             this.UiBotonExcel,
-            this.UiBarSwitchERP});
+            this.UiBarSwitchERP,
+            this.barButtonItem1});
             this.UiBarManager.MainMenu = this.bar2;
-            this.UiBarManager.MaxItemId = 8;
+            this.UiBarManager.MaxItemId = 9;
             this.UiBarManager.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemDateEdit1,
             this.repositoryItemDateEdit2,
@@ -133,6 +136,7 @@
             this.bar2.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
             this.bar2.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.Width, this.UiFechaIncial, "", false, true, true, 113),
+            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem1),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.Width, this.UiFechaFinal, "", false, true, true, 104),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.Width, this.UiComboBodega, "", false, true, true, 157),
             new DevExpress.XtraBars.LinkPersistInfo(this.UiBotonRefrescar),
@@ -147,9 +151,9 @@
             // 
             this.UiFechaIncial.Caption = "Fecha Inicial";
             this.UiFechaIncial.Edit = this.repositoryItemDateEdit1;
-            this.UiFechaIncial.Glyph = ((System.Drawing.Image)(resources.GetObject("UiFechaIncial.Glyph")));
             this.UiFechaIncial.Id = 2;
-            this.UiFechaIncial.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiFechaIncial.LargeGlyph")));
+            this.UiFechaIncial.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiFechaIncial.ImageOptions.Image")));
+            this.UiFechaIncial.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiFechaIncial.ImageOptions.LargeImage")));
             this.UiFechaIncial.Name = "UiFechaIncial";
             this.UiFechaIncial.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
@@ -166,9 +170,9 @@
             // 
             this.UiFechaFinal.Caption = "Fecha Final";
             this.UiFechaFinal.Edit = this.repositoryItemDateEdit2;
-            this.UiFechaFinal.Glyph = ((System.Drawing.Image)(resources.GetObject("UiFechaFinal.Glyph")));
             this.UiFechaFinal.Id = 3;
-            this.UiFechaFinal.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiFechaFinal.LargeGlyph")));
+            this.UiFechaFinal.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiFechaFinal.ImageOptions.Image")));
+            this.UiFechaFinal.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiFechaFinal.ImageOptions.LargeImage")));
             this.UiFechaFinal.Name = "UiFechaFinal";
             this.UiFechaFinal.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
@@ -185,9 +189,9 @@
             // 
             this.UiComboBodega.Caption = "Bodega";
             this.UiComboBodega.Edit = this.repositoryItemLookUpEdit1;
-            this.UiComboBodega.Glyph = ((System.Drawing.Image)(resources.GetObject("UiComboBodega.Glyph")));
             this.UiComboBodega.Id = 4;
-            this.UiComboBodega.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiComboBodega.LargeGlyph")));
+            this.UiComboBodega.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiComboBodega.ImageOptions.Image")));
+            this.UiComboBodega.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiComboBodega.ImageOptions.LargeImage")));
             this.UiComboBodega.Name = "UiComboBodega";
             this.UiComboBodega.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
@@ -207,9 +211,9 @@
             // UiBotonRefrescar
             // 
             this.UiBotonRefrescar.Caption = "Refrescar";
-            this.UiBotonRefrescar.Glyph = ((System.Drawing.Image)(resources.GetObject("UiBotonRefrescar.Glyph")));
             this.UiBotonRefrescar.Id = 0;
-            this.UiBotonRefrescar.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiBotonRefrescar.LargeGlyph")));
+            this.UiBotonRefrescar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBotonRefrescar.ImageOptions.Image")));
+            this.UiBotonRefrescar.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiBotonRefrescar.ImageOptions.LargeImage")));
             this.UiBotonRefrescar.Name = "UiBotonRefrescar";
             this.UiBotonRefrescar.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.UiBotonRefrescar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.UiBotonRefrescar_ItemClick);
@@ -217,9 +221,9 @@
             // UiBotonExcel
             // 
             this.UiBotonExcel.Caption = "Exportar a Excel";
-            this.UiBotonExcel.Glyph = ((System.Drawing.Image)(resources.GetObject("UiBotonExcel.Glyph")));
             this.UiBotonExcel.Id = 5;
-            this.UiBotonExcel.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiBotonExcel.LargeGlyph")));
+            this.UiBotonExcel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBotonExcel.ImageOptions.Image")));
+            this.UiBotonExcel.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiBotonExcel.ImageOptions.LargeImage")));
             this.UiBotonExcel.Name = "UiBotonExcel";
             this.UiBotonExcel.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.UiBotonExcel.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.UiBotonExcel_ItemClick);
@@ -235,32 +239,36 @@
             this.barDockControlTop.CausesValidation = false;
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
-            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.barDockControlTop.Size = new System.Drawing.Size(1695, 30);
+            this.barDockControlTop.Manager = this.UiBarManager;
+            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.barDockControlTop.Size = new System.Drawing.Size(2542, 46);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 510);
-            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.barDockControlBottom.Size = new System.Drawing.Size(1695, 0);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 797);
+            this.barDockControlBottom.Manager = this.UiBarManager;
+            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.barDockControlBottom.Size = new System.Drawing.Size(2542, 0);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 30);
-            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 480);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 46);
+            this.barDockControlLeft.Manager = this.UiBarManager;
+            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 751);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(1695, 30);
-            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 480);
+            this.barDockControlRight.Location = new System.Drawing.Point(2542, 46);
+            this.barDockControlRight.Manager = this.UiBarManager;
+            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 751);
             // 
             // barButtonItem2
             // 
@@ -277,15 +285,15 @@
             // UiContenedorTrazabilidadOrdenes
             // 
             this.UiContenedorTrazabilidadOrdenes.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.UiContenedorTrazabilidadOrdenes.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.UiContenedorTrazabilidadOrdenes.Location = new System.Drawing.Point(0, 30);
+            this.UiContenedorTrazabilidadOrdenes.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.UiContenedorTrazabilidadOrdenes.Location = new System.Drawing.Point(0, 46);
             this.UiContenedorTrazabilidadOrdenes.MainView = this.UiVistaTrazabilidadOrdenes;
-            this.UiContenedorTrazabilidadOrdenes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.UiContenedorTrazabilidadOrdenes.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.UiContenedorTrazabilidadOrdenes.Name = "UiContenedorTrazabilidadOrdenes";
             this.UiContenedorTrazabilidadOrdenes.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.UiColExisteMaterial,
             this.UiColUsaLineaDePicking});
-            this.UiContenedorTrazabilidadOrdenes.Size = new System.Drawing.Size(1695, 480);
+            this.UiContenedorTrazabilidadOrdenes.Size = new System.Drawing.Size(2542, 751);
             this.UiContenedorTrazabilidadOrdenes.TabIndex = 7;
             this.UiContenedorTrazabilidadOrdenes.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.UiVistaTrazabilidadOrdenes});
@@ -328,6 +336,8 @@
             this.colIS_BONUS,
             this.colAdress,
             this.colTYPE_DEMAND_NAME});
+            this.UiVistaTrazabilidadOrdenes.DetailHeight = 547;
+            this.UiVistaTrazabilidadOrdenes.FixedLineWidth = 3;
             this.UiVistaTrazabilidadOrdenes.GridControl = this.UiContenedorTrazabilidadOrdenes;
             this.UiVistaTrazabilidadOrdenes.Name = "UiVistaTrazabilidadOrdenes";
             this.UiVistaTrazabilidadOrdenes.OptionsView.ShowAutoFilterRow = true;
@@ -337,136 +347,166 @@
             // 
             this.colSOURCE.Caption = "Dueño";
             this.colSOURCE.FieldName = "SOURCE";
+            this.colSOURCE.MinWidth = 30;
             this.colSOURCE.Name = "colSOURCE";
             this.colSOURCE.OptionsColumn.AllowEdit = false;
             this.colSOURCE.Visible = true;
             this.colSOURCE.VisibleIndex = 0;
+            this.colSOURCE.Width = 112;
             // 
             // colSALES_ORDER_ID
             // 
             this.colSALES_ORDER_ID.Caption = "Orden de Venta";
             this.colSALES_ORDER_ID.FieldName = "SALES_ORDER_ID";
+            this.colSALES_ORDER_ID.MinWidth = 30;
             this.colSALES_ORDER_ID.Name = "colSALES_ORDER_ID";
             this.colSALES_ORDER_ID.OptionsColumn.AllowEdit = false;
             this.colSALES_ORDER_ID.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count, "SALES_ORDER_ID", "{0}")});
             this.colSALES_ORDER_ID.Visible = true;
             this.colSALES_ORDER_ID.VisibleIndex = 1;
+            this.colSALES_ORDER_ID.Width = 112;
             // 
             // colPOSTED_DATETIME
             // 
             this.colPOSTED_DATETIME.Caption = "Fecha Documento";
             this.colPOSTED_DATETIME.FieldName = "POSTED_DATETIME";
+            this.colPOSTED_DATETIME.MinWidth = 30;
             this.colPOSTED_DATETIME.Name = "colPOSTED_DATETIME";
             this.colPOSTED_DATETIME.OptionsColumn.AllowEdit = false;
+            this.colPOSTED_DATETIME.Width = 112;
             // 
             // colDELIVERY_DATE
             // 
             this.colDELIVERY_DATE.Caption = "Fecha Entrega";
             this.colDELIVERY_DATE.FieldName = "DELIVERY_DATE";
+            this.colDELIVERY_DATE.MinWidth = 30;
             this.colDELIVERY_DATE.Name = "colDELIVERY_DATE";
             this.colDELIVERY_DATE.OptionsColumn.AllowEdit = false;
             this.colDELIVERY_DATE.Visible = true;
             this.colDELIVERY_DATE.VisibleIndex = 2;
+            this.colDELIVERY_DATE.Width = 112;
             // 
             // colQTY_WAVE_PICKING
             // 
             this.colQTY_WAVE_PICKING.Caption = "Cantidad de Olas";
             this.colQTY_WAVE_PICKING.FieldName = "QTY_WAVE_PICKING";
+            this.colQTY_WAVE_PICKING.MinWidth = 30;
             this.colQTY_WAVE_PICKING.Name = "colQTY_WAVE_PICKING";
             this.colQTY_WAVE_PICKING.OptionsColumn.AllowEdit = false;
             this.colQTY_WAVE_PICKING.Visible = true;
             this.colQTY_WAVE_PICKING.VisibleIndex = 3;
+            this.colQTY_WAVE_PICKING.Width = 112;
             // 
             // colCLIENT_CODE
             // 
             this.colCLIENT_CODE.Caption = "Código Cliente";
             this.colCLIENT_CODE.FieldName = "CLIENT_CODE";
+            this.colCLIENT_CODE.MinWidth = 30;
             this.colCLIENT_CODE.Name = "colCLIENT_CODE";
             this.colCLIENT_CODE.OptionsColumn.AllowEdit = false;
             this.colCLIENT_CODE.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.colCLIENT_CODE.Visible = true;
             this.colCLIENT_CODE.VisibleIndex = 4;
+            this.colCLIENT_CODE.Width = 112;
             // 
             // colCLIENT_NAME
             // 
             this.colCLIENT_NAME.Caption = "Nombre de Cliente";
             this.colCLIENT_NAME.FieldName = "CLIENT_NAME";
+            this.colCLIENT_NAME.MinWidth = 30;
             this.colCLIENT_NAME.Name = "colCLIENT_NAME";
             this.colCLIENT_NAME.OptionsColumn.AllowEdit = false;
             this.colCLIENT_NAME.Visible = true;
             this.colCLIENT_NAME.VisibleIndex = 5;
+            this.colCLIENT_NAME.Width = 112;
             // 
             // colCODE_SELLER
             // 
             this.colCODE_SELLER.Caption = "Código Vendedor";
             this.colCODE_SELLER.FieldName = "CODE_SELLER";
+            this.colCODE_SELLER.MinWidth = 30;
             this.colCODE_SELLER.Name = "colCODE_SELLER";
             this.colCODE_SELLER.OptionsColumn.AllowEdit = false;
             this.colCODE_SELLER.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
+            this.colCODE_SELLER.Width = 112;
             // 
             // colSELLER_NAME
             // 
             this.colSELLER_NAME.Caption = "Nombre Vendedor";
             this.colSELLER_NAME.FieldName = "SELLER_NAME";
+            this.colSELLER_NAME.MinWidth = 30;
             this.colSELLER_NAME.Name = "colSELLER_NAME";
             this.colSELLER_NAME.OptionsColumn.AllowEdit = false;
             this.colSELLER_NAME.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.colSELLER_NAME.Visible = true;
             this.colSELLER_NAME.VisibleIndex = 6;
+            this.colSELLER_NAME.Width = 112;
             // 
             // colSTATE_CODE
             // 
             this.colSTATE_CODE.Caption = "Departamento";
             this.colSTATE_CODE.FieldName = "STATE_CODE";
+            this.colSTATE_CODE.MinWidth = 30;
             this.colSTATE_CODE.Name = "colSTATE_CODE";
             this.colSTATE_CODE.OptionsColumn.AllowEdit = false;
             this.colSTATE_CODE.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.colSTATE_CODE.Visible = true;
             this.colSTATE_CODE.VisibleIndex = 7;
+            this.colSTATE_CODE.Width = 112;
             // 
             // colSKU
             // 
             this.colSKU.Caption = "Código Material";
             this.colSKU.FieldName = "SKU";
+            this.colSKU.MinWidth = 30;
             this.colSKU.Name = "colSKU";
             this.colSKU.OptionsColumn.AllowEdit = false;
             this.colSKU.Visible = true;
             this.colSKU.VisibleIndex = 8;
+            this.colSKU.Width = 112;
             // 
             // colDESCRIPTION_SKU
             // 
             this.colDESCRIPTION_SKU.Caption = "Descripción Material";
             this.colDESCRIPTION_SKU.FieldName = "DESCRIPTION_SKU";
+            this.colDESCRIPTION_SKU.MinWidth = 30;
             this.colDESCRIPTION_SKU.Name = "colDESCRIPTION_SKU";
             this.colDESCRIPTION_SKU.OptionsColumn.AllowEdit = false;
             this.colDESCRIPTION_SKU.Visible = true;
             this.colDESCRIPTION_SKU.VisibleIndex = 9;
+            this.colDESCRIPTION_SKU.Width = 112;
             // 
             // colLINE_SEQ
             // 
             this.colLINE_SEQ.Caption = "Número de Línea";
             this.colLINE_SEQ.FieldName = "LINE_SEQ";
+            this.colLINE_SEQ.MinWidth = 30;
             this.colLINE_SEQ.Name = "colLINE_SEQ";
             this.colLINE_SEQ.OptionsColumn.AllowEdit = false;
+            this.colLINE_SEQ.Width = 112;
             // 
             // colIS_MASTER_PACK_DESCRIPTION
             // 
             this.colIS_MASTER_PACK_DESCRIPTION.Caption = "Es MasterPack";
             this.colIS_MASTER_PACK_DESCRIPTION.FieldName = "IS_MASTER_PACK_DESCRIPTION";
+            this.colIS_MASTER_PACK_DESCRIPTION.MinWidth = 30;
             this.colIS_MASTER_PACK_DESCRIPTION.Name = "colIS_MASTER_PACK_DESCRIPTION";
             this.colIS_MASTER_PACK_DESCRIPTION.OptionsColumn.AllowEdit = false;
             this.colIS_MASTER_PACK_DESCRIPTION.Visible = true;
             this.colIS_MASTER_PACK_DESCRIPTION.VisibleIndex = 10;
+            this.colIS_MASTER_PACK_DESCRIPTION.Width = 112;
             // 
             // colWAVE_PICKING_ID
             // 
             this.colWAVE_PICKING_ID.Caption = "Ola de Picking";
             this.colWAVE_PICKING_ID.FieldName = "WAVE_PICKING_ID";
+            this.colWAVE_PICKING_ID.MinWidth = 30;
             this.colWAVE_PICKING_ID.Name = "colWAVE_PICKING_ID";
             this.colWAVE_PICKING_ID.OptionsColumn.AllowEdit = false;
             this.colWAVE_PICKING_ID.Visible = true;
             this.colWAVE_PICKING_ID.VisibleIndex = 11;
+            this.colWAVE_PICKING_ID.Width = 112;
             // 
             // colQTY
             // 
@@ -474,12 +514,14 @@
             this.colQTY.DisplayFormat.FormatString = "{0:#,###,##0.00}";
             this.colQTY.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colQTY.FieldName = "QTY";
+            this.colQTY.MinWidth = 30;
             this.colQTY.Name = "colQTY";
             this.colQTY.OptionsColumn.AllowEdit = false;
             this.colQTY.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "QTY", "{0:#,###,##0.00}")});
             this.colQTY.Visible = true;
             this.colQTY.VisibleIndex = 12;
+            this.colQTY.Width = 112;
             // 
             // colQTY_PENDING
             // 
@@ -487,12 +529,14 @@
             this.colQTY_PENDING.DisplayFormat.FormatString = "{0:#,###,##0.00}";
             this.colQTY_PENDING.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colQTY_PENDING.FieldName = "QTY_PENDING";
+            this.colQTY_PENDING.MinWidth = 30;
             this.colQTY_PENDING.Name = "colQTY_PENDING";
             this.colQTY_PENDING.OptionsColumn.AllowEdit = false;
             this.colQTY_PENDING.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "QTY_PENDING", "{0:#,###,##0.00}")});
             this.colQTY_PENDING.Visible = true;
             this.colQTY_PENDING.VisibleIndex = 13;
+            this.colQTY_PENDING.Width = 112;
             // 
             // colQTY_SWIFT
             // 
@@ -500,12 +544,14 @@
             this.colQTY_SWIFT.DisplayFormat.FormatString = "{0:#,###,##0.00}";
             this.colQTY_SWIFT.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colQTY_SWIFT.FieldName = "QTY_SWIFT";
+            this.colQTY_SWIFT.MinWidth = 30;
             this.colQTY_SWIFT.Name = "colQTY_SWIFT";
             this.colQTY_SWIFT.OptionsColumn.AllowEdit = false;
             this.colQTY_SWIFT.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "QTY_SWIFT", "{0:#,###,##0.00}")});
             this.colQTY_SWIFT.Visible = true;
             this.colQTY_SWIFT.VisibleIndex = 14;
+            this.colQTY_SWIFT.Width = 112;
             // 
             // colOPEN_QTY
             // 
@@ -513,55 +559,67 @@
             this.colOPEN_QTY.DisplayFormat.FormatString = "{0:#,###,##0.00}";
             this.colOPEN_QTY.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colOPEN_QTY.FieldName = "OPEN_QTY";
+            this.colOPEN_QTY.MinWidth = 30;
             this.colOPEN_QTY.Name = "colOPEN_QTY";
             this.colOPEN_QTY.OptionsColumn.AllowEdit = false;
             this.colOPEN_QTY.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "OPEN_QTY", "{0:#,###,##0.00}")});
             this.colOPEN_QTY.Visible = true;
             this.colOPEN_QTY.VisibleIndex = 15;
+            this.colOPEN_QTY.Width = 112;
             // 
             // colDOC_STATUS_DESCRIPTION
             // 
             this.colDOC_STATUS_DESCRIPTION.Caption = "Estado Documento";
             this.colDOC_STATUS_DESCRIPTION.FieldName = "DOC_STATUS_DESCRIPTION";
+            this.colDOC_STATUS_DESCRIPTION.MinWidth = 30;
             this.colDOC_STATUS_DESCRIPTION.Name = "colDOC_STATUS_DESCRIPTION";
             this.colDOC_STATUS_DESCRIPTION.OptionsColumn.AllowEdit = false;
             this.colDOC_STATUS_DESCRIPTION.Visible = true;
             this.colDOC_STATUS_DESCRIPTION.VisibleIndex = 16;
+            this.colDOC_STATUS_DESCRIPTION.Width = 112;
             // 
             // colIS_POSTED_ERP_DESCRIPTION
             // 
             this.colIS_POSTED_ERP_DESCRIPTION.Caption = "Enviado a ERP";
             this.colIS_POSTED_ERP_DESCRIPTION.FieldName = "IS_POSTED_ERP_DESCRIPTION";
+            this.colIS_POSTED_ERP_DESCRIPTION.MinWidth = 30;
             this.colIS_POSTED_ERP_DESCRIPTION.Name = "colIS_POSTED_ERP_DESCRIPTION";
             this.colIS_POSTED_ERP_DESCRIPTION.OptionsColumn.AllowEdit = false;
             this.colIS_POSTED_ERP_DESCRIPTION.Visible = true;
             this.colIS_POSTED_ERP_DESCRIPTION.VisibleIndex = 17;
+            this.colIS_POSTED_ERP_DESCRIPTION.Width = 112;
             // 
             // colPOSTED_RESPONSE
             // 
             this.colPOSTED_RESPONSE.Caption = "Respuesta ERP";
             this.colPOSTED_RESPONSE.FieldName = "POSTED_RESPONSE";
+            this.colPOSTED_RESPONSE.MinWidth = 30;
             this.colPOSTED_RESPONSE.Name = "colPOSTED_RESPONSE";
             this.colPOSTED_RESPONSE.OptionsColumn.AllowEdit = false;
             this.colPOSTED_RESPONSE.Visible = true;
             this.colPOSTED_RESPONSE.VisibleIndex = 19;
+            this.colPOSTED_RESPONSE.Width = 112;
             // 
             // colERP_REFERENCE
             // 
             this.colERP_REFERENCE.Caption = "Número de Factura";
             this.colERP_REFERENCE.FieldName = "ERP_REFERENCE";
+            this.colERP_REFERENCE.MinWidth = 30;
             this.colERP_REFERENCE.Name = "colERP_REFERENCE";
             this.colERP_REFERENCE.OptionsColumn.AllowEdit = false;
             this.colERP_REFERENCE.Visible = true;
             this.colERP_REFERENCE.VisibleIndex = 18;
+            this.colERP_REFERENCE.Width = 112;
             // 
             // colCANCELED
             // 
             this.colCANCELED.Caption = "Cancelado";
             this.colCANCELED.FieldName = "CANCELED";
+            this.colCANCELED.MinWidth = 30;
             this.colCANCELED.Name = "colCANCELED";
             this.colCANCELED.OptionsColumn.AllowEdit = false;
+            this.colCANCELED.Width = 112;
             // 
             // colWEIGTH
             // 
@@ -569,10 +627,12 @@
             this.colWEIGTH.DisplayFormat.FormatString = "{0:#,###,##0.00}";
             this.colWEIGTH.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colWEIGTH.FieldName = "WEIGHT";
+            this.colWEIGTH.MinWidth = 30;
             this.colWEIGTH.Name = "colWEIGTH";
             this.colWEIGTH.OptionsColumn.AllowEdit = false;
             this.colWEIGTH.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "WEIGHT", "{0:#,###,##0.00}")});
+            this.colWEIGTH.Width = 112;
             // 
             // colWEIGTH_SALE_ORDER
             // 
@@ -580,12 +640,14 @@
             this.colWEIGTH_SALE_ORDER.DisplayFormat.FormatString = "{0:#,###,##0.00}";
             this.colWEIGTH_SALE_ORDER.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colWEIGTH_SALE_ORDER.FieldName = "WEIGHT_SALE_ORDER";
+            this.colWEIGTH_SALE_ORDER.MinWidth = 30;
             this.colWEIGTH_SALE_ORDER.Name = "colWEIGTH_SALE_ORDER";
             this.colWEIGTH_SALE_ORDER.OptionsColumn.AllowEdit = false;
             this.colWEIGTH_SALE_ORDER.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "WEIGHT_SALE_ORDER", "{0:#,###,##0.00}")});
             this.colWEIGTH_SALE_ORDER.Visible = true;
             this.colWEIGTH_SALE_ORDER.VisibleIndex = 20;
+            this.colWEIGTH_SALE_ORDER.Width = 112;
             // 
             // colWEIGTH_SWIFT
             // 
@@ -593,49 +655,59 @@
             this.colWEIGTH_SWIFT.DisplayFormat.FormatString = "{0:#,###,##0.00}";
             this.colWEIGTH_SWIFT.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colWEIGTH_SWIFT.FieldName = "WEIGHT_SWIFT";
+            this.colWEIGTH_SWIFT.MinWidth = 30;
             this.colWEIGTH_SWIFT.Name = "colWEIGTH_SWIFT";
             this.colWEIGTH_SWIFT.OptionsColumn.AllowEdit = false;
             this.colWEIGTH_SWIFT.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "WEIGHT_SWIFT", "{0:#,###,##0.00}")});
             this.colWEIGTH_SWIFT.Visible = true;
             this.colWEIGTH_SWIFT.VisibleIndex = 21;
+            this.colWEIGTH_SWIFT.Width = 112;
             // 
             // colMANIFEST_HEADER_ID
             // 
             this.colMANIFEST_HEADER_ID.Caption = "Número Manifiesto";
             this.colMANIFEST_HEADER_ID.FieldName = "MANIFEST_HEADER_ID";
+            this.colMANIFEST_HEADER_ID.MinWidth = 30;
             this.colMANIFEST_HEADER_ID.Name = "colMANIFEST_HEADER_ID";
             this.colMANIFEST_HEADER_ID.OptionsColumn.AllowEdit = false;
             this.colMANIFEST_HEADER_ID.Visible = true;
             this.colMANIFEST_HEADER_ID.VisibleIndex = 22;
+            this.colMANIFEST_HEADER_ID.Width = 112;
             // 
             // colDRIVER
             // 
             this.colDRIVER.Caption = "Piloto";
             this.colDRIVER.FieldName = "DRIVER";
+            this.colDRIVER.MinWidth = 30;
             this.colDRIVER.Name = "colDRIVER";
             this.colDRIVER.OptionsColumn.AllowEdit = false;
             this.colDRIVER.Visible = true;
             this.colDRIVER.VisibleIndex = 23;
+            this.colDRIVER.Width = 112;
             // 
             // colVEHICLE
             // 
             this.colVEHICLE.Caption = "Vehículo";
             this.colVEHICLE.FieldName = "VEHICLE";
+            this.colVEHICLE.MinWidth = 30;
             this.colVEHICLE.Name = "colVEHICLE";
             this.colVEHICLE.OptionsColumn.AllowEdit = false;
             this.colVEHICLE.Visible = true;
             this.colVEHICLE.VisibleIndex = 24;
+            this.colVEHICLE.Width = 112;
             // 
             // UiColMaterialInSwift
             // 
             this.UiColMaterialInSwift.Caption = "Existe material";
             this.UiColMaterialInSwift.ColumnEdit = this.UiColExisteMaterial;
             this.UiColMaterialInSwift.FieldName = "MATERIAL_IN_SWIFT";
+            this.UiColMaterialInSwift.MinWidth = 30;
             this.UiColMaterialInSwift.Name = "UiColMaterialInSwift";
             this.UiColMaterialInSwift.OptionsColumn.AllowEdit = false;
             this.UiColMaterialInSwift.Visible = true;
             this.UiColMaterialInSwift.VisibleIndex = 25;
+            this.UiColMaterialInSwift.Width = 112;
             // 
             // UiColExisteMaterial
             // 
@@ -651,8 +723,10 @@
             this.colUSE_PICKING_LINE.Caption = "Usa Línea de Picking";
             this.colUSE_PICKING_LINE.ColumnEdit = this.UiColUsaLineaDePicking;
             this.colUSE_PICKING_LINE.FieldName = "USE_PICKING_LINE";
+            this.colUSE_PICKING_LINE.MinWidth = 30;
             this.colUSE_PICKING_LINE.Name = "colUSE_PICKING_LINE";
             this.colUSE_PICKING_LINE.OptionsColumn.AllowEdit = false;
+            this.colUSE_PICKING_LINE.Width = 112;
             // 
             // UiColUsaLineaDePicking
             // 
@@ -666,37 +740,57 @@
             this.colIS_BONUS.Caption = "Es Bono";
             this.colIS_BONUS.ColumnEdit = this.UiColUsaLineaDePicking;
             this.colIS_BONUS.FieldName = "IS_BONUS";
+            this.colIS_BONUS.MinWidth = 30;
             this.colIS_BONUS.Name = "colIS_BONUS";
             this.colIS_BONUS.OptionsColumn.AllowEdit = false;
+            this.colIS_BONUS.Width = 112;
             // 
             // colAdress
             // 
             this.colAdress.Caption = "Dirección Cliente";
             this.colAdress.FieldName = "ADRESS_CUSTOMER";
+            this.colAdress.MinWidth = 30;
             this.colAdress.Name = "colAdress";
             this.colAdress.OptionsColumn.AllowEdit = false;
             this.colAdress.Visible = true;
             this.colAdress.VisibleIndex = 26;
+            this.colAdress.Width = 112;
             // 
             // colTYPE_DEMAND_NAME
             // 
             this.colTYPE_DEMAND_NAME.Caption = "Tipo de Demanda";
             this.colTYPE_DEMAND_NAME.FieldName = "TYPE_DEMAND_NAME";
+            this.colTYPE_DEMAND_NAME.MinWidth = 30;
             this.colTYPE_DEMAND_NAME.Name = "colTYPE_DEMAND_NAME";
             this.colTYPE_DEMAND_NAME.Visible = true;
             this.colTYPE_DEMAND_NAME.VisibleIndex = 27;
+            this.colTYPE_DEMAND_NAME.Width = 112;
+            // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "Guardar Layout";
+            this.barButtonItem1.Id = 8;
+            this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.barButtonItem1.Name = "barButtonItem1";
+            this.barButtonItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
+            // 
+            // SaveLayout
+            // 
+            this.SaveLayout.Tick += new System.EventHandler(this.SaveLayout_Tick);
             // 
             // TrazabilidadDeDemandaVista
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1695, 510);
+            this.ClientSize = new System.Drawing.Size(2542, 797);
             this.Controls.Add(this.UiContenedorTrazabilidadOrdenes);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "TrazabilidadDeDemandaVista";
             this.Text = "Cumplimiento de demanda";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.TrazabilidadDeDemandaVista_FormClosing);
@@ -776,5 +870,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn colIS_BONUS;
         private DevExpress.XtraGrid.Columns.GridColumn colAdress;
         private DevExpress.XtraGrid.Columns.GridColumn colTYPE_DEMAND_NAME;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private System.Windows.Forms.Timer SaveLayout;
     }
 }

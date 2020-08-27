@@ -188,6 +188,7 @@
             this.UiGrupoTarea = new DevExpress.XtraEditors.GroupControl();
             this.UiError = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.LoadLayout = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.UiBarraContenedorPrincipal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiGridLookUpFuente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit1)).BeginInit();
@@ -1435,6 +1436,10 @@
             this.panel1.Size = new System.Drawing.Size(2447, 281);
             this.panel1.TabIndex = 35;
             // 
+            // LoadLayout
+            // 
+            this.LoadLayout.Tick += new System.EventHandler(this.LoadLayout_Tick);
+            // 
             // RecepcionErpVista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -1449,7 +1454,7 @@
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "RecepcionErpVista";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Recepción ERP";
+            this.Text = "Ingreso ERP";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.RecepcionErpVista_FormClosing);
             this.Load += new System.EventHandler(this.RecepcionErpVista_Load);
             ((System.ComponentModel.ISupportInitialize)(this.UiBarraContenedorPrincipal)).EndInit();
@@ -1598,5 +1603,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn colUNIT;
         private DevExpress.XtraBars.BarToggleSwitchItem UIToogleConsolidado;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Timer LoadLayout;
     }
 }

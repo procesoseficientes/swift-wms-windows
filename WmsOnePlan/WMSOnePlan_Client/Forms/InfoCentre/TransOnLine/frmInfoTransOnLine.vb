@@ -74,14 +74,14 @@ Public Class frmInfoTransOnLine
             gLastScreenShowed = Me.Name
             ShowAllUsers()
             ShowAllTrans()
-            LoadGridLayout("GRID_TRANS_ONLINE", PublicLoginInfo.LoginID, Me.GridView1)
+
 
             Me.txtFechaInicial.DateTime = Now.AddHours(-Now.Hour).AddMinutes(-Now.Minute)
             Me.txtFechaFinal.DateTime = Now
 
             'Me.txtFechaInicial.DateTime = Format(Now, "MM/dd/yyyy 00:00:00") + " AM"
             'Me.txtFechaFinal.DateTime = Format(Now.Date, "MM/dd/yyyy") + " 11:59:59 PM"
-
+            loadLayout.Start()
         Catch ex As Exception
 
         End Try
@@ -109,7 +109,9 @@ Public Class frmInfoTransOnLine
                     End If
                 Next j
             Next i
-            LoadGridLayout("TRANS_ONLINE", PublicLoginInfo.LoginID, Me.GridView1)
+
+            first = 0
+            loadLayout.Start()
         Catch ex As Exception
 
         End Try
@@ -586,5 +588,14 @@ Public Class frmInfoTransOnLine
         destWorkBook.Worksheets.RemoveAt(0)
         destWorkBook.SaveDocument(destXlsxFileName)
         destWorkBook.Dispose()
+    End Sub
+
+    Dim first = 0
+    Private Sub loadLayout_Tick(sender As Object, e As EventArgs) Handles loadLayout.Tick
+        If first = 0 Then
+            LoadGridLayout("GRID_TRANS_ONLINE", PublicLoginInfo.LoginID, Me.GridView1)
+            loadLayout.Stop()
+            first = 1
+        End If
     End Sub
 End Class

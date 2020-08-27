@@ -231,7 +231,6 @@ namespace MobilityScm.Modelo.Vistas
             UiFechaInicio.EditValue = DateTime.Now.AddDays(-7);
             UiFechaFinal.EditValue = DateTime.Now.AddDays(7);
             UsuarioSeleccionoListaOrdenEncabezadoCompleta = false;
-            CargarOGuardarDisenios(UiContenedorVistaErp, false, Usuario, GetType().Name);
             UiListaCliente.Properties.PopupFormWidth = UiListaCliente.Width;
             UiListaErp.Properties.PopupFormWidth = UiListaErp.Width;
             UiListaAcuerdoComercial.Properties.PopupFormWidth = UiListaAcuerdoComercial.Width;
@@ -240,7 +239,7 @@ namespace MobilityScm.Modelo.Vistas
             UiListaUbicacion.Properties.PopupFormWidth = UiListaUbicacion.Width;
             UiListaTipoRecepcion.Properties.PopupFormWidth = UiListaTipoRecepcion.Width;
             UiListaPrioridad.Properties.PopupFormWidth = UiListaPrioridad.Width;
-
+            LoadLayout.Start();
             UiBarFuente.EditValue = FuenteDeRecepcionDeErp.OrdenDeCompra;
             UiGridLookUpFuente.DataSource = Enum.GetValues(typeof(FuenteDeRecepcionDeErp));
             UiBarFuente.EditValue = FuenteDeRecepcionDeErp.OrdenDeCompra;
@@ -703,7 +702,7 @@ namespace MobilityScm.Modelo.Vistas
 
         private void RecepcionErpVista_FormClosing(object sender, FormClosingEventArgs e)
         {
-            CargarOGuardarDisenios(UiContenedorVistaErp, true, Usuario, GetType().Name);
+            CargarOGuardarDisenios(UiContenedorVistaErp, true, Usuario, "RecepcionERP");
         }
 
         private void UiBotonExportarExcel_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -853,6 +852,17 @@ namespace MobilityScm.Modelo.Vistas
         private void UiListaErp_EditValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        int start = 0;
+        private void LoadLayout_Tick(object sender, EventArgs e)
+        {
+            if (start == 0)
+            {
+                CargarOGuardarDisenios(UiContenedorVistaErp, false, Usuario, "RecepcionERP");
+                start = 1;
+                LoadLayout.Stop();
+            }
         }
     }
 }

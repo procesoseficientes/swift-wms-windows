@@ -8,6 +8,7 @@ Imports System.Drawing.Drawing2D
 Imports DevExpress.XtraGrid.Views.Grid
 Imports DevExpress.XtraGrid.Views.Base
 Imports DevExpress.Data
+Imports System.ComponentModel
 
 Public Class frmInfo_Inventory
     Dim strPath As String
@@ -651,5 +652,9 @@ Public Class frmInfo_Inventory
             UiColCalibre.OptionsColumn.ReadOnly = False
         End If
 
+    End Sub
+
+    Private Sub frmInfo_Inventory_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+        SaveGridLayout("INV_ONLINE", PublicLoginInfo.LoginID, Me.GridView1)
     End Sub
 End Class
