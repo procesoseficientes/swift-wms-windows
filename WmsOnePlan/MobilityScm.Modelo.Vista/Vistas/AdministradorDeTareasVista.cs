@@ -973,6 +973,9 @@ namespace MobilityScm.Modelo.Vistas
                         CambiarOperadorADetalleDeTarea(usuario.LOGIN_ID);
                         //ObtenerTareas();
                         UiContenedorDetalle.RefreshDataSource();
+                    } else if (TareaDetalle.Count(x => x.IS_SELECTED && (x.STATUS == "INCOMPLETA" || x.STATUS == "ACEPTADA")) == 0)
+                    {
+                        InteraccionConUsuarioServicio.Mensaje("No hay lineas seleccionadas disponibles para asignación");
                     }
                     Cursor = Cursors.Default;
                 }
