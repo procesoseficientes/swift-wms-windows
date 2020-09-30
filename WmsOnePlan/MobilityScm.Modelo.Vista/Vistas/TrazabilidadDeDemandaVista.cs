@@ -114,12 +114,12 @@ namespace MobilityScm.Modelo.Vistas
 
         private void TrazabilidadDeDemandaVista_FormClosing(object sender, FormClosingEventArgs e)
         {
-            CargarOGuardarDisenios(UiContenedorTrazabilidadOrdenes, true, InteraccionConUsuarioServicio.ObtenerUsuario(), GetType().Name);
+            this.CargarOGuardarDisenios(UiContenedorTrazabilidadOrdenes, true, InteraccionConUsuarioServicio.ObtenerUsuario(), "Trazabilidad");
         }
 
         private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            SaveLayout.Start();
+            this.CargarOGuardarDisenios(UiContenedorTrazabilidadOrdenes, true, InteraccionConUsuarioServicio.ObtenerUsuario(), "Trazabilidad");
         }
 
         int start = 0;
