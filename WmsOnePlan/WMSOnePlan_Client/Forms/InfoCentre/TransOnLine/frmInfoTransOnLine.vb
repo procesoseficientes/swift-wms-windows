@@ -6,7 +6,6 @@ Imports System.IO
 Imports DevExpress.XtraPrinting.Native
 
 Public Class frmInfoTransOnLine
-
     Sub ShowAllUsers()
 
         Dim pResult As String = ""
@@ -111,7 +110,7 @@ Public Class frmInfoTransOnLine
                 Next j
             Next i
 
-            first = 0
+            ticks = 0
             loadLayout.Start()
         Catch ex As Exception
 
