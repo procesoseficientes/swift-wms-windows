@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReporteRecepcionPorDevolucionVista));
-            this.UiBarManager = new DevExpress.XtraBars.BarManager();
+            this.UiBarManager = new DevExpress.XtraBars.BarManager(this.components);
             this.UiBarraPrincipal = new DevExpress.XtraBars.Bar();
             this.UiFechaInicial = new DevExpress.XtraBars.BarEditItem();
             this.UiRepositoryItemFechaInicial = new DevExpress.XtraEditors.Repository.RepositoryItemDateEdit();
@@ -64,6 +65,8 @@
             this.colQTY = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colRECEPTION_QTY = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UiDialogoGuardar = new System.Windows.Forms.SaveFileDialog();
+            this.btnSaveLayout = new DevExpress.XtraBars.BarButtonItem();
+            this.SaveLayout = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.UiBarManager)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiRepositoryItemFechaInicial)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiRepositoryItemFechaInicial.CalendarTimeProperties)).BeginInit();
@@ -93,8 +96,9 @@
             this.UiBarButtonExpandir,
             this.UiBarButtonConsolidado,
             this.UiBarButtonDetallado,
-            this.UiBarBodegas});
-            this.UiBarManager.MaxItemId = 12;
+            this.UiBarBodegas,
+            this.btnSaveLayout});
+            this.UiBarManager.MaxItemId = 13;
             this.UiBarManager.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.UiRepositoryItemFechaInicial,
             this.UiRepositoryItemFechaFinal,
@@ -115,7 +119,8 @@
             new DevExpress.XtraBars.LinkPersistInfo(this.UiBarButtonContraer),
             new DevExpress.XtraBars.LinkPersistInfo(this.UiBarButtonExpandir),
             new DevExpress.XtraBars.LinkPersistInfo(this.UiBarButtonConsolidado),
-            new DevExpress.XtraBars.LinkPersistInfo(this.UiBarButtonDetallado)});
+            new DevExpress.XtraBars.LinkPersistInfo(this.UiBarButtonDetallado),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnSaveLayout)});
             this.UiBarraPrincipal.OptionsBar.AllowQuickCustomization = false;
             this.UiBarraPrincipal.OptionsBar.DisableCustomization = true;
             this.UiBarraPrincipal.OptionsBar.DrawDragBorder = false;
@@ -127,9 +132,9 @@
             // 
             this.UiFechaInicial.Caption = "Fecha Inicial";
             this.UiFechaInicial.Edit = this.UiRepositoryItemFechaInicial;
-            this.UiFechaInicial.Glyph = ((System.Drawing.Image)(resources.GetObject("UiFechaInicial.Glyph")));
             this.UiFechaInicial.Id = 3;
-            this.UiFechaInicial.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiFechaInicial.LargeGlyph")));
+            this.UiFechaInicial.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiFechaInicial.ImageOptions.Image")));
+            this.UiFechaInicial.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiFechaInicial.ImageOptions.LargeImage")));
             this.UiFechaInicial.Name = "UiFechaInicial";
             this.UiFechaInicial.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
@@ -146,9 +151,9 @@
             // 
             this.UiFechaFinal.Caption = "Fecha Final";
             this.UiFechaFinal.Edit = this.UiRepositoryItemFechaFinal;
-            this.UiFechaFinal.Glyph = ((System.Drawing.Image)(resources.GetObject("UiFechaFinal.Glyph")));
             this.UiFechaFinal.Id = 4;
-            this.UiFechaFinal.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiFechaFinal.LargeGlyph")));
+            this.UiFechaFinal.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiFechaFinal.ImageOptions.Image")));
+            this.UiFechaFinal.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiFechaFinal.ImageOptions.LargeImage")));
             this.UiFechaFinal.Name = "UiFechaFinal";
             this.UiFechaFinal.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
@@ -165,9 +170,9 @@
             // 
             this.UiBarBodegas.Caption = "Bodegas";
             this.UiBarBodegas.Edit = this.UiRepositorySearchLookBodegas;
-            this.UiBarBodegas.Glyph = ((System.Drawing.Image)(resources.GetObject("UiBarBodegas.Glyph")));
             this.UiBarBodegas.Id = 11;
-            this.UiBarBodegas.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiBarBodegas.LargeGlyph")));
+            this.UiBarBodegas.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBarBodegas.ImageOptions.Image")));
+            this.UiBarBodegas.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiBarBodegas.ImageOptions.LargeImage")));
             this.UiBarBodegas.Name = "UiBarBodegas";
             this.UiBarBodegas.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
@@ -177,7 +182,7 @@
             this.UiRepositorySearchLookBodegas.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.UiRepositorySearchLookBodegas.Name = "UiRepositorySearchLookBodegas";
-            this.UiRepositorySearchLookBodegas.View = this.UiVistaBodegas;
+            this.UiRepositorySearchLookBodegas.PopupView = this.UiVistaBodegas;
             this.UiRepositorySearchLookBodegas.CustomDisplayText += new DevExpress.XtraEditors.Controls.CustomDisplayTextEventHandler(this.UiRepositorySearchLookBodegas_CustomDisplayText);
             // 
             // UiVistaBodegas
@@ -214,9 +219,9 @@
             // UiBarButtonRefrescar
             // 
             this.UiBarButtonRefrescar.Caption = "Refrescar";
-            this.UiBarButtonRefrescar.Glyph = ((System.Drawing.Image)(resources.GetObject("UiBarButtonRefrescar.Glyph")));
             this.UiBarButtonRefrescar.Id = 5;
-            this.UiBarButtonRefrescar.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiBarButtonRefrescar.LargeGlyph")));
+            this.UiBarButtonRefrescar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBarButtonRefrescar.ImageOptions.Image")));
+            this.UiBarButtonRefrescar.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiBarButtonRefrescar.ImageOptions.LargeImage")));
             this.UiBarButtonRefrescar.Name = "UiBarButtonRefrescar";
             this.UiBarButtonRefrescar.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.UiBarButtonRefrescar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.UiBarButtonRefrescar_ItemClick);
@@ -224,9 +229,9 @@
             // UiBarButtonExcel
             // 
             this.UiBarButtonExcel.Caption = "Exportar a Excel";
-            this.UiBarButtonExcel.Glyph = ((System.Drawing.Image)(resources.GetObject("UiBarButtonExcel.Glyph")));
             this.UiBarButtonExcel.Id = 6;
-            this.UiBarButtonExcel.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiBarButtonExcel.LargeGlyph")));
+            this.UiBarButtonExcel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBarButtonExcel.ImageOptions.Image")));
+            this.UiBarButtonExcel.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiBarButtonExcel.ImageOptions.LargeImage")));
             this.UiBarButtonExcel.Name = "UiBarButtonExcel";
             this.UiBarButtonExcel.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.UiBarButtonExcel.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.UiBarButtonExcel_ItemClick);
@@ -234,9 +239,9 @@
             // UiBarButtonContraer
             // 
             this.UiBarButtonContraer.Caption = "Contraer";
-            this.UiBarButtonContraer.Glyph = ((System.Drawing.Image)(resources.GetObject("UiBarButtonContraer.Glyph")));
             this.UiBarButtonContraer.Id = 7;
-            this.UiBarButtonContraer.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiBarButtonContraer.LargeGlyph")));
+            this.UiBarButtonContraer.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBarButtonContraer.ImageOptions.Image")));
+            this.UiBarButtonContraer.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiBarButtonContraer.ImageOptions.LargeImage")));
             this.UiBarButtonContraer.Name = "UiBarButtonContraer";
             this.UiBarButtonContraer.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.UiBarButtonContraer.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.UiBarButtonContraer_ItemClick);
@@ -244,9 +249,9 @@
             // UiBarButtonExpandir
             // 
             this.UiBarButtonExpandir.Caption = "Expandir";
-            this.UiBarButtonExpandir.Glyph = ((System.Drawing.Image)(resources.GetObject("UiBarButtonExpandir.Glyph")));
             this.UiBarButtonExpandir.Id = 8;
-            this.UiBarButtonExpandir.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiBarButtonExpandir.LargeGlyph")));
+            this.UiBarButtonExpandir.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBarButtonExpandir.ImageOptions.Image")));
+            this.UiBarButtonExpandir.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiBarButtonExpandir.ImageOptions.LargeImage")));
             this.UiBarButtonExpandir.Name = "UiBarButtonExpandir";
             this.UiBarButtonExpandir.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.UiBarButtonExpandir.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.UiBarButtonExpandir_ItemClick);
@@ -254,9 +259,9 @@
             // UiBarButtonConsolidado
             // 
             this.UiBarButtonConsolidado.Caption = "Reporte Consolidado";
-            this.UiBarButtonConsolidado.Glyph = ((System.Drawing.Image)(resources.GetObject("UiBarButtonConsolidado.Glyph")));
             this.UiBarButtonConsolidado.Id = 9;
-            this.UiBarButtonConsolidado.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiBarButtonConsolidado.LargeGlyph")));
+            this.UiBarButtonConsolidado.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBarButtonConsolidado.ImageOptions.Image")));
+            this.UiBarButtonConsolidado.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiBarButtonConsolidado.ImageOptions.LargeImage")));
             this.UiBarButtonConsolidado.Name = "UiBarButtonConsolidado";
             this.UiBarButtonConsolidado.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.UiBarButtonConsolidado.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.UiBarButtonConsolidado_ItemClick);
@@ -264,9 +269,9 @@
             // UiBarButtonDetallado
             // 
             this.UiBarButtonDetallado.Caption = "Reporte Detallado";
-            this.UiBarButtonDetallado.Glyph = ((System.Drawing.Image)(resources.GetObject("UiBarButtonDetallado.Glyph")));
             this.UiBarButtonDetallado.Id = 10;
-            this.UiBarButtonDetallado.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiBarButtonDetallado.LargeGlyph")));
+            this.UiBarButtonDetallado.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBarButtonDetallado.ImageOptions.Image")));
+            this.UiBarButtonDetallado.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiBarButtonDetallado.ImageOptions.LargeImage")));
             this.UiBarButtonDetallado.Name = "UiBarButtonDetallado";
             this.UiBarButtonDetallado.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.UiBarButtonDetallado.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.UiBarButtonDetallado_ItemClick);
@@ -276,37 +281,47 @@
             this.barDockControlTop.CausesValidation = false;
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
-            this.barDockControlTop.Size = new System.Drawing.Size(1609, 31);
+            this.barDockControlTop.Manager = this.UiBarManager;
+            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.barDockControlTop.Size = new System.Drawing.Size(3218, 46);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 654);
-            this.barDockControlBottom.Size = new System.Drawing.Size(1609, 0);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 1258);
+            this.barDockControlBottom.Manager = this.UiBarManager;
+            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.barDockControlBottom.Size = new System.Drawing.Size(3218, 0);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 31);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 623);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 46);
+            this.barDockControlLeft.Manager = this.UiBarManager;
+            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 1212);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(1609, 31);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 623);
+            this.barDockControlRight.Location = new System.Drawing.Point(3218, 46);
+            this.barDockControlRight.Manager = this.UiBarManager;
+            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 1212);
             // 
             // UiGridControlDevoluciones
             // 
             this.UiGridControlDevoluciones.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.UiGridControlDevoluciones.Location = new System.Drawing.Point(0, 31);
+            this.UiGridControlDevoluciones.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.UiGridControlDevoluciones.Location = new System.Drawing.Point(0, 46);
             this.UiGridControlDevoluciones.MainView = this.UiVistaDevoluciones;
+            this.UiGridControlDevoluciones.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.UiGridControlDevoluciones.MenuManager = this.UiBarManager;
             this.UiGridControlDevoluciones.Name = "UiGridControlDevoluciones";
-            this.UiGridControlDevoluciones.Size = new System.Drawing.Size(1609, 623);
+            this.UiGridControlDevoluciones.Size = new System.Drawing.Size(3218, 1212);
             this.UiGridControlDevoluciones.TabIndex = 4;
             this.UiGridControlDevoluciones.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.UiVistaDevoluciones});
@@ -325,6 +340,8 @@
             this.colMATERIAL_NAME,
             this.colQTY,
             this.colRECEPTION_QTY});
+            this.UiVistaDevoluciones.DetailHeight = 673;
+            this.UiVistaDevoluciones.FixedLineWidth = 4;
             this.UiVistaDevoluciones.GridControl = this.UiGridControlDevoluciones;
             this.UiVistaDevoluciones.GroupCount = 1;
             this.UiVistaDevoluciones.Name = "UiVistaDevoluciones";
@@ -337,84 +354,102 @@
             // 
             this.colINVOICE_DOC_NUM.Caption = "Factura";
             this.colINVOICE_DOC_NUM.FieldName = "INVOICE_DOC_NUM";
+            this.colINVOICE_DOC_NUM.MinWidth = 40;
             this.colINVOICE_DOC_NUM.Name = "colINVOICE_DOC_NUM";
             this.colINVOICE_DOC_NUM.OptionsColumn.AllowEdit = false;
             this.colINVOICE_DOC_NUM.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count, "INVOICE_DOC_NUM", "{0}")});
             this.colINVOICE_DOC_NUM.Visible = true;
             this.colINVOICE_DOC_NUM.VisibleIndex = 0;
+            this.colINVOICE_DOC_NUM.Width = 150;
             // 
             // colCLIENT_CODE
             // 
             this.colCLIENT_CODE.Caption = "Código del Cliente";
             this.colCLIENT_CODE.FieldName = "CLIENT_CODE";
+            this.colCLIENT_CODE.MinWidth = 40;
             this.colCLIENT_CODE.Name = "colCLIENT_CODE";
             this.colCLIENT_CODE.OptionsColumn.AllowEdit = false;
             this.colCLIENT_CODE.Visible = true;
             this.colCLIENT_CODE.VisibleIndex = 0;
+            this.colCLIENT_CODE.Width = 150;
             // 
             // colCLIENT_NAME
             // 
             this.colCLIENT_NAME.Caption = "Nombre del Cliente";
             this.colCLIENT_NAME.FieldName = "CLIENT_NAME";
+            this.colCLIENT_NAME.MinWidth = 40;
             this.colCLIENT_NAME.Name = "colCLIENT_NAME";
             this.colCLIENT_NAME.OptionsColumn.AllowEdit = false;
             this.colCLIENT_NAME.Visible = true;
             this.colCLIENT_NAME.VisibleIndex = 1;
+            this.colCLIENT_NAME.Width = 150;
             // 
             // colPLATE_NUMBER
             // 
             this.colPLATE_NUMBER.Caption = "Vehículo";
             this.colPLATE_NUMBER.FieldName = "PLATE_NUMBER";
+            this.colPLATE_NUMBER.MinWidth = 40;
             this.colPLATE_NUMBER.Name = "colPLATE_NUMBER";
             this.colPLATE_NUMBER.OptionsColumn.AllowEdit = false;
             this.colPLATE_NUMBER.Visible = true;
             this.colPLATE_NUMBER.VisibleIndex = 2;
+            this.colPLATE_NUMBER.Width = 150;
             // 
             // colTASK_ID
             // 
             this.colTASK_ID.Caption = "Documento de Recepción";
             this.colTASK_ID.FieldName = "TASK_ID";
+            this.colTASK_ID.MinWidth = 40;
             this.colTASK_ID.Name = "colTASK_ID";
             this.colTASK_ID.OptionsColumn.AllowEdit = false;
             this.colTASK_ID.Visible = true;
             this.colTASK_ID.VisibleIndex = 3;
+            this.colTASK_ID.Width = 150;
             // 
             // colENVIADO
             // 
             this.colENVIADO.Caption = "Estado de Envío";
             this.colENVIADO.FieldName = "ENVIADO";
+            this.colENVIADO.MinWidth = 40;
             this.colENVIADO.Name = "colENVIADO";
             this.colENVIADO.OptionsColumn.AllowEdit = false;
             this.colENVIADO.Visible = true;
             this.colENVIADO.VisibleIndex = 4;
+            this.colENVIADO.Width = 150;
             // 
             // colERP_REFERENCE_DOC_NUM
             // 
             this.colERP_REFERENCE_DOC_NUM.Caption = "Nota de Crédito";
             this.colERP_REFERENCE_DOC_NUM.FieldName = "ERP_REFERENCE_DOC_NUM";
+            this.colERP_REFERENCE_DOC_NUM.MinWidth = 40;
             this.colERP_REFERENCE_DOC_NUM.Name = "colERP_REFERENCE_DOC_NUM";
             this.colERP_REFERENCE_DOC_NUM.OptionsColumn.AllowEdit = false;
             this.colERP_REFERENCE_DOC_NUM.Visible = true;
             this.colERP_REFERENCE_DOC_NUM.VisibleIndex = 5;
+            this.colERP_REFERENCE_DOC_NUM.Width = 150;
             // 
             // colMATERIAL_ID
             // 
             this.colMATERIAL_ID.Caption = "Código de Material";
             this.colMATERIAL_ID.FieldName = "MATERIAL_ID";
+            this.colMATERIAL_ID.MinWidth = 40;
             this.colMATERIAL_ID.Name = "colMATERIAL_ID";
             this.colMATERIAL_ID.OptionsColumn.AllowEdit = false;
             this.colMATERIAL_ID.Visible = true;
             this.colMATERIAL_ID.VisibleIndex = 6;
+            this.colMATERIAL_ID.Width = 150;
             // 
             // colMATERIAL_NAME
             // 
             this.colMATERIAL_NAME.Caption = "Descripción de Material";
             this.colMATERIAL_NAME.FieldName = "MATERIAL_NAME";
+            this.colMATERIAL_NAME.MinWidth = 40;
             this.colMATERIAL_NAME.Name = "colMATERIAL_NAME";
             this.colMATERIAL_NAME.OptionsColumn.AllowEdit = false;
             this.colMATERIAL_NAME.Visible = true;
             this.colMATERIAL_NAME.VisibleIndex = 7;
+            this.colMATERIAL_NAME.Width = 150;
             // 
             // colQTY
             // 
@@ -422,12 +457,14 @@
             this.colQTY.DisplayFormat.FormatString = "{0:###,###,##0.00}";
             this.colQTY.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colQTY.FieldName = "QTY";
+            this.colQTY.MinWidth = 40;
             this.colQTY.Name = "colQTY";
             this.colQTY.OptionsColumn.AllowEdit = false;
             this.colQTY.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "QTY", "Total={0:#,###,##0.00}")});
             this.colQTY.Visible = true;
             this.colQTY.VisibleIndex = 8;
+            this.colQTY.Width = 150;
             // 
             // colRECEPTION_QTY
             // 
@@ -435,23 +472,41 @@
             this.colRECEPTION_QTY.DisplayFormat.FormatString = "{0:###,###,##0.00}";
             this.colRECEPTION_QTY.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colRECEPTION_QTY.FieldName = "RECEPTION_QTY";
+            this.colRECEPTION_QTY.MinWidth = 40;
             this.colRECEPTION_QTY.Name = "colRECEPTION_QTY";
             this.colRECEPTION_QTY.OptionsColumn.AllowEdit = false;
             this.colRECEPTION_QTY.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "RECEPTION_QTY", "Total={0:#,###,##0.00}")});
             this.colRECEPTION_QTY.Visible = true;
             this.colRECEPTION_QTY.VisibleIndex = 9;
+            this.colRECEPTION_QTY.Width = 150;
+            // 
+            // btnSaveLayout
+            // 
+            this.btnSaveLayout.Caption = "Grabar";
+            this.btnSaveLayout.Id = 12;
+            this.btnSaveLayout.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveLayout.ImageOptions.Image")));
+            this.btnSaveLayout.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnSaveLayout.ImageOptions.LargeImage")));
+            this.btnSaveLayout.Name = "btnSaveLayout";
+            this.btnSaveLayout.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.btnSaveLayout.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSaveLayout_ItemClick);
+            // 
+            // SaveLayout
+            // 
+            this.SaveLayout.Interval = 300;
+            this.SaveLayout.Tick += new System.EventHandler(this.SaveLayout_Tick);
             // 
             // ReporteRecepcionPorDevolucionVista
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1609, 654);
+            this.ClientSize = new System.Drawing.Size(3218, 1258);
             this.Controls.Add(this.UiGridControlDevoluciones);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "ReporteRecepcionPorDevolucionVista";
             this.Text = "Reporte de Devoluciones";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ReporteRecepcionPorDevolucionVista_FormClosing);
@@ -507,5 +562,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn colQTY;
         private DevExpress.XtraGrid.Columns.GridColumn colRECEPTION_QTY;
         private System.Windows.Forms.SaveFileDialog UiDialogoGuardar;
+        private DevExpress.XtraBars.BarButtonItem btnSaveLayout;
+        private System.Windows.Forms.Timer SaveLayout;
     }
 }

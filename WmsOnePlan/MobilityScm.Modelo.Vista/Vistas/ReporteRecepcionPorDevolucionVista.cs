@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Windows.Forms;
 using DevExpress.DataProcessing;
+using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraPrinting.Native;
 using DevExpress.XtraReports.UI;
 using MobilityScm.Modelo.Argumentos;
@@ -236,8 +239,25 @@ namespace MobilityScm.Modelo.Vistas
                 printTool.ShowRibbonPreviewDialog();
             }
         }
+
         #endregion
 
+        private void btnSaveLayout_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            CargarOGuardarDisenios(UiVistaDevoluciones, true, InteraccionConUsuarioServicio.ObtenerUsuario(), "ReporteDevoluciones");
+        }
 
+        int ticks = 0;
+        private void SaveLayout_Tick(object sender, EventArgs e)
+        {
+            if (ticks > 0)
+            {
+                CargarOGuardarDisenios(UiVistaDevoluciones, false, InteraccionConUsuarioServicio.ObtenerUsuario(), "ReporteDevoluciones");
+                SaveLayout.Stop();
+            } else
+            {
+                ticks++;
+            }
+        }
     }
 }

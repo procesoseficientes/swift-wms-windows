@@ -506,6 +506,8 @@
             this.UiColCodigoTipoDespacho = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UiColNombreTipoDespacho = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UiColDiasMinFecExpiracion = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.UiColBaseEntry = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.UiColBaseRef = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UiCheckEditUsaLineaPickingConsolidado = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.UiListaDeEstadosDeMaterialConsolidado = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
             this.UiVistaOrdenesDeCompraConsolidado = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -553,6 +555,8 @@
             this.UiCheckBoxUsaLineaDePickingEnDetalle = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.UiColEstadoDetalleDocumento = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UiListaDeEstadosDetalleDocumento = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
+            this.UiColBaseEntryDetalle = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.UiColBaseRefDetalle = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UiEtiquetaEncabezado = new DevExpress.XtraEditors.LabelControl();
             this.UiListaVistaDeOperadores = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.UiColCodigoUsuario = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -4675,7 +4679,9 @@
             this.colADDRESS_CUSTOMER,
             this.UiColCodigoTipoDespacho,
             this.UiColNombreTipoDespacho,
-            this.UiColDiasMinFecExpiracion});
+            this.UiColDiasMinFecExpiracion,
+            this.UiColBaseEntry,
+            this.UiColBaseRef});
             this.UiVistaOrdenEncabezado.DetailHeight = 673;
             this.UiVistaOrdenEncabezado.FixedLineWidth = 4;
             gridFormatRule7.ApplyToRow = true;
@@ -4920,7 +4926,7 @@
             this.colSTATE_CODE.Name = "colSTATE_CODE";
             this.colSTATE_CODE.OptionsColumn.AllowEdit = false;
             this.colSTATE_CODE.Visible = true;
-            this.colSTATE_CODE.VisibleIndex = 14;
+            this.colSTATE_CODE.VisibleIndex = 13;
             this.colSTATE_CODE.Width = 150;
             // 
             // colADDRESS_CUSTOMER
@@ -4930,8 +4936,6 @@
             this.colADDRESS_CUSTOMER.MinWidth = 40;
             this.colADDRESS_CUSTOMER.Name = "colADDRESS_CUSTOMER";
             this.colADDRESS_CUSTOMER.OptionsColumn.AllowEdit = false;
-            this.colADDRESS_CUSTOMER.Visible = true;
-            this.colADDRESS_CUSTOMER.VisibleIndex = 13;
             this.colADDRESS_CUSTOMER.Width = 150;
             // 
             // UiColCodigoTipoDespacho
@@ -4942,7 +4946,7 @@
             this.UiColCodigoTipoDespacho.Name = "UiColCodigoTipoDespacho";
             this.UiColCodigoTipoDespacho.OptionsColumn.AllowEdit = false;
             this.UiColCodigoTipoDespacho.Visible = true;
-            this.UiColCodigoTipoDespacho.VisibleIndex = 15;
+            this.UiColCodigoTipoDespacho.VisibleIndex = 14;
             this.UiColCodigoTipoDespacho.Width = 150;
             // 
             // UiColNombreTipoDespacho
@@ -4953,7 +4957,7 @@
             this.UiColNombreTipoDespacho.Name = "UiColNombreTipoDespacho";
             this.UiColNombreTipoDespacho.OptionsColumn.AllowEdit = false;
             this.UiColNombreTipoDespacho.Visible = true;
-            this.UiColNombreTipoDespacho.VisibleIndex = 16;
+            this.UiColNombreTipoDespacho.VisibleIndex = 15;
             this.UiColNombreTipoDespacho.Width = 150;
             // 
             // UiColDiasMinFecExpiracion
@@ -4964,8 +4968,28 @@
             this.UiColDiasMinFecExpiracion.Name = "UiColDiasMinFecExpiracion";
             this.UiColDiasMinFecExpiracion.OptionsColumn.AllowEdit = false;
             this.UiColDiasMinFecExpiracion.Visible = true;
-            this.UiColDiasMinFecExpiracion.VisibleIndex = 17;
+            this.UiColDiasMinFecExpiracion.VisibleIndex = 16;
             this.UiColDiasMinFecExpiracion.Width = 150;
+            // 
+            // UiColBaseEntry
+            // 
+            this.UiColBaseEntry.Caption = "Base de entrada";
+            this.UiColBaseEntry.FieldName = "BASE_ENTRY";
+            this.UiColBaseEntry.MinWidth = 40;
+            this.UiColBaseEntry.Name = "UiColBaseEntry";
+            this.UiColBaseEntry.Visible = true;
+            this.UiColBaseEntry.VisibleIndex = 17;
+            this.UiColBaseEntry.Width = 150;
+            // 
+            // UiColBaseRef
+            // 
+            this.UiColBaseRef.Caption = "Referencia base";
+            this.UiColBaseRef.FieldName = "BASE_REF";
+            this.UiColBaseRef.MinWidth = 40;
+            this.UiColBaseRef.Name = "UiColBaseRef";
+            this.UiColBaseRef.Visible = true;
+            this.UiColBaseRef.VisibleIndex = 18;
+            this.UiColBaseRef.Width = 150;
             // 
             // UiCheckEditUsaLineaPickingConsolidado
             // 
@@ -5244,7 +5268,9 @@
             this.UiColTonoDetalle,
             this.UiColCalibreDetalle,
             this.UiColUseLinePicking,
-            this.UiColEstadoDetalleDocumento});
+            this.UiColEstadoDetalleDocumento,
+            this.UiColBaseEntryDetalle,
+            this.UiColBaseRefDetalle});
             this.UiVistaOrdenDetalle.DetailHeight = 673;
             this.UiVistaOrdenDetalle.FixedLineWidth = 4;
             gridFormatRule11.ApplyToRow = true;
@@ -5576,6 +5602,26 @@
             this.UiListaDeEstadosDetalleDocumento.DisplayMember = "STATUS_NAME";
             this.UiListaDeEstadosDetalleDocumento.Name = "UiListaDeEstadosDetalleDocumento";
             this.UiListaDeEstadosDetalleDocumento.ValueMember = "STATUS_CODE";
+            // 
+            // UiColBaseEntryDetalle
+            // 
+            this.UiColBaseEntryDetalle.Caption = "Entrada basa";
+            this.UiColBaseEntryDetalle.FieldName = "BASE_ENTRY";
+            this.UiColBaseEntryDetalle.MinWidth = 40;
+            this.UiColBaseEntryDetalle.Name = "UiColBaseEntryDetalle";
+            this.UiColBaseEntryDetalle.Visible = true;
+            this.UiColBaseEntryDetalle.VisibleIndex = 9;
+            this.UiColBaseEntryDetalle.Width = 150;
+            // 
+            // UiColBaseRefDetalle
+            // 
+            this.UiColBaseRefDetalle.Caption = "Referencia base";
+            this.UiColBaseRefDetalle.FieldName = "BASE_REF";
+            this.UiColBaseRefDetalle.MinWidth = 40;
+            this.UiColBaseRefDetalle.Name = "UiColBaseRefDetalle";
+            this.UiColBaseRefDetalle.Visible = true;
+            this.UiColBaseRefDetalle.VisibleIndex = 10;
+            this.UiColBaseRefDetalle.Width = 150;
             // 
             // UiEtiquetaEncabezado
             // 
@@ -7089,7 +7135,7 @@
             this.mapControl1.Layers.Add(this.vectorItemsLayer2);
             this.mapControl1.Location = new System.Drawing.Point(7, 289);
             this.mapControl1.Name = "mapControl1";
-            this.mapControl1.Size = new System.Drawing.Size(576, 227);
+            this.mapControl1.Size = new System.Drawing.Size(576, 193);
             this.mapControl1.TabIndex = 34;
             // 
             // searchLookUpEdit5
@@ -7439,7 +7485,7 @@
             this.layoutControlGroup3.Name = "Root";
             this.layoutControlGroup3.Padding = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
             this.layoutControlGroup3.ShowInCustomizationForm = false;
-            this.layoutControlGroup3.Size = new System.Drawing.Size(590, 523);
+            this.layoutControlGroup3.Size = new System.Drawing.Size(590, 489);
             this.layoutControlGroup3.TextVisible = false;
             // 
             // layoutControlItem6
@@ -7557,7 +7603,7 @@
             this.layoutControlItem15.Control = this.mapControl1;
             this.layoutControlItem15.Location = new System.Drawing.Point(0, 282);
             this.layoutControlItem15.Name = "UiEspacioMapa";
-            this.layoutControlItem15.Size = new System.Drawing.Size(580, 231);
+            this.layoutControlItem15.Size = new System.Drawing.Size(580, 197);
             this.layoutControlItem15.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem15.TextVisible = false;
             // 
@@ -9373,5 +9419,9 @@
         private DevExpress.XtraGrid.Columns.GridColumn UiColDiasMinFecExpiracion;
         private DevExpress.XtraGrid.Columns.GridColumn UiColTolerancia;
         private DevExpress.XtraGrid.Columns.GridColumn UiColConsolidadoToleranciaFecExpiracion;
+        private DevExpress.XtraGrid.Columns.GridColumn UiColBaseEntry;
+        private DevExpress.XtraGrid.Columns.GridColumn UiColBaseRef;
+        private DevExpress.XtraGrid.Columns.GridColumn UiColBaseEntryDetalle;
+        private DevExpress.XtraGrid.Columns.GridColumn UiColBaseRefDetalle;
     }
 }

@@ -15,6 +15,10 @@ namespace MobilityScm.Modelo.Entidades
         public string LOGIN { get; set; }
         public string SALES_ORDER_ID { get; set; }
 
+        public string BASE_REF { get; set; }
+
+        public string BASE_ENTRY { get; set; }
+
         public string TERMS { get; set; }
 
         public DateTime? POSTED_DATETIME { get; set; }

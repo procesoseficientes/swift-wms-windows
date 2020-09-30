@@ -111,7 +111,7 @@ namespace MobilityScm.Modelo.Controladores
                 var listaEncabezados = new List<OlaDePickingDeDemandaDespacho>();
 
                 foreach (var olaDePiking in lista)
-                {
+                {   
                     if (!listaEncabezados.Exists(o => o.WAVE_PICKING_ID == olaDePiking.WAVE_PICKING_ID))
                     {
 
