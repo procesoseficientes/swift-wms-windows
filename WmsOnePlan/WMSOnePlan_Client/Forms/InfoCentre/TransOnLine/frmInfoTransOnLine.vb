@@ -6,7 +6,6 @@ Imports System.IO
 Imports DevExpress.XtraPrinting.Native
 
 Public Class frmInfoTransOnLine
-
     Sub ShowAllUsers()
 
         Dim pResult As String = ""
@@ -82,7 +81,7 @@ Public Class frmInfoTransOnLine
 
             'Me.txtFechaInicial.DateTime = Format(Now, "MM/dd/yyyy 00:00:00") + " AM"
             'Me.txtFechaFinal.DateTime = Format(Now.Date, "MM/dd/yyyy") + " 11:59:59 PM"
-
+            loadLayout.Start()
         Catch ex As Exception
 
         End Try
@@ -110,7 +109,9 @@ Public Class frmInfoTransOnLine
                     End If
                 Next j
             Next i
-            LoadGridLayout("TRANS_ONLINE", PublicLoginInfo.LoginID, Me.GridView1)
+
+            ticks = 0
+            loadLayout.Start()
         Catch ex As Exception
 
         End Try

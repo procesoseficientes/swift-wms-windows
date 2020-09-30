@@ -295,7 +295,7 @@ Public Class frmMaterials
                 Dim xdatarow As DataRow = GridView1.GetDataRow(GridView1.FocusedRowHandle)
                 Dim pMaterial As String = xdatarow(1).ToString
                 SelectedsKU = xdatarow("MATERIAL_ID").ToString
-                ShowMaterial(pMaterial)
+                ShowMaterial(SelectedsKU)
             End If
         Catch ex As Exception
             MessageBox.Show(ex.Message)
@@ -309,7 +309,7 @@ Public Class frmMaterials
                 Dim xdatarow As DataRow = GridView1.GetDataRow(GridView1.FocusedRowHandle)
                 Dim pID As String = xdatarow("MATERIAL_ID").ToString
                 SelectedsKU = xdatarow("MATERIAL_ID").ToString
-                ShowMaterial(pID)
+                ShowMaterial(SelectedsKU)
             End If
 
         Catch ex As Exception
@@ -1041,6 +1041,7 @@ Public Class frmMaterials
         xfrm.lblProd.Text = xdatarow("MATERIAL_ID")
         xfrm.lblProdDesc.Text = xdatarow("MATERIAL_NAME")
         xfrm.ShowDialog()
+        SelectedsKU = xdatarow("MATERIAL_ID").ToString
         ShowMaterial(SelectedsKU)
     End Sub
 
