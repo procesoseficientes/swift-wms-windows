@@ -68,20 +68,7 @@ Module WMS_GlobalModule
                 Dim xdata As DataSet = xserv.GetEnvironmentByKey("OP_WMS", Environment, pResult,
                                                                  PublicLoginInfo.Environment)
                 If pResult = "OK" Then
-#If DEBUG Then
-                    'local
-                    'WSHost = "http://localhost:8088/WMSOnePlan_BusinessServices"
-                    'Cealsa
-                    'WSHost = "http://192.168.0.5:9999"
-                    'Ferco
-                    WSHost = "http://10.240.29.103:90"
-                    'Arium
-                    'WSHost = "http://172.16.20.11:8088"
-
-#End If
-#If Not DEBUG Then
                     WSHost = xdata.Tables(0).Rows(0)("WS_HOST").ToString
-#End If
                 Else
                     WSHost = ""
                     Return pResult
