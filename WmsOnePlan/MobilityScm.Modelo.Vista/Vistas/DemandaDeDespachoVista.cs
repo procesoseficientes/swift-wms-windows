@@ -1237,19 +1237,22 @@ namespace MobilityScm.Modelo.Vistas
                                   (OrdenDeVentaEncabezado)
                                   UiVistaOrdenEncabezado.GetRow(UiVistaOrdenEncabezado.FocusedRowHandle);
 
-            UiContenedorVistaOrdenDetalle.DataSource = TipoFuente != TipoFuenteDemandaDespacho.SolicitudTrasladoErp
-                ? DetallesOrdenDeVenta.Where(
-                    det =>
-                        det.SALES_ORDER_ID == ordenEncabezado.SALES_ORDER_ID &&
-                        det.MATERIAL_OWNER == ordenEncabezado.OWNER &&
-                        det.EXTERNAL_SOURCE_ID == ordenEncabezado.EXTERNAL_SOURCE_ID &&
-                        (FiltroDeUsaLineaDePicking == (int)Tipos.UsaLineaDePicking.Ambas ||
-                         det.USE_PICKING_LINE == FiltroDeUsaLineaDePicking)).ToList()
-                : DetallesOrdenDeVenta.Where(
-                    det =>
-                        det.SALES_ORDER_ID == ordenEncabezado.SALES_ORDER_ID &&
-                        det.EXTERNAL_SOURCE_ID == ordenEncabezado.EXTERNAL_SOURCE_ID &&
-                        det.SOURCE == ordenEncabezado.OWNER).ToList();
+
+            UiContenedorVistaOrdenDetalle.DataSource = DetallesOrdenDeVenta.Where(det =>det.SALES_ORDER_ID == ordenEncabezado.SALES_ORDER_ID).ToList();
+
+            //UiContenedorVistaOrdenDetalle.DataSource = TipoFuente != TipoFuenteDemandaDespacho.SolicitudTrasladoErp
+            //    ? DetallesOrdenDeVenta.Where(
+            //        det =>
+            //            det.SALES_ORDER_ID == ordenEncabezado.SALES_ORDER_ID &&
+            //            det.MATERIAL_OWNER == ordenEncabezado.OWNER &&
+            //            det.EXTERNAL_SOURCE_ID == ordenEncabezado.EXTERNAL_SOURCE_ID &&
+            //    (FiltroDeUsaLineaDePicking == (int)Tipos.UsaLineaDePicking.Ambas ||
+            //     det.USE_PICKING_LINE == FiltroDeUsaLineaDePicking)).ToList()
+            //    : DetallesOrdenDeVenta.Where(
+            //        det =>
+            //            det.SALES_ORDER_ID == ordenEncabezado.SALES_ORDER_ID &&
+            //            det.EXTERNAL_SOURCE_ID == ordenEncabezado.EXTERNAL_SOURCE_ID &&
+            //            det.SOURCE == ordenEncabezado.OWNER).ToList();
         }
 
         private string ObtenerTextoAMostrarListaRutas()
