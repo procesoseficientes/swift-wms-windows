@@ -1221,7 +1221,7 @@ namespace MobilityScm.Modelo.Vistas
             }
             catch (Exception ex)
             {
-                InteraccionConUsuarioServicio.Mensaje(ex.Message);
+                InteraccionConUsuarioServicio.Mensaje(ex.Message) ;
             }
         }
 
