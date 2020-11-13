@@ -562,13 +562,12 @@
             this.UiContenedorVistaTareasEncabezado.Name = "UiContenedorVistaTareasEncabezado";
             this.UiContenedorVistaTareasEncabezado.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.UiListaOperadoresEncabezado});
-            this.UiContenedorVistaTareasEncabezado.Size = new System.Drawing.Size(353, 327);
+            this.UiContenedorVistaTareasEncabezado.Size = new System.Drawing.Size(353, 261);
             this.UiContenedorVistaTareasEncabezado.TabIndex = 0;
             this.UiContenedorVistaTareasEncabezado.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.UiVistaEncabezadoConDetalle,
             this.UiVistaEncabezado,
             this.UiVistaDetalleErpEncabezado});
-            this.UiContenedorVistaTareasEncabezado.Click += new System.EventHandler(this.UiContenedorVistaTareasEncabezado_Click);
             this.UiContenedorVistaTareasEncabezado.DragDrop += new System.Windows.Forms.DragEventHandler(this.UiContenedorVistaTareasEncabezado_DragDrop);
             this.UiContenedorVistaTareasEncabezado.DragEnter += new System.Windows.Forms.DragEventHandler(this.UiContenedorVistaTareasEncabezado_DragEnter);
             // 
@@ -1066,7 +1065,7 @@
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count, "TASK_COMMENTS", "{0}")});
             this.UiColOlaPickingEncabezado.Visible = true;
             this.UiColOlaPickingEncabezado.VisibleIndex = 1;
-            this.UiColOlaPickingEncabezado.Width = 20;
+            this.UiColOlaPickingEncabezado.Width = 37;
             // 
             // UiColIdTarea
             // 
@@ -1076,7 +1075,7 @@
             this.UiColIdTarea.OptionsColumn.AllowEdit = false;
             this.UiColIdTarea.Visible = true;
             this.UiColIdTarea.VisibleIndex = 2;
-            this.UiColIdTarea.Width = 20;
+            this.UiColIdTarea.Width = 37;
             // 
             // UiColNombreClienteEncabezado
             // 
@@ -1086,7 +1085,7 @@
             this.UiColNombreClienteEncabezado.OptionsColumn.AllowEdit = false;
             this.UiColNombreClienteEncabezado.Visible = true;
             this.UiColNombreClienteEncabezado.VisibleIndex = 3;
-            this.UiColNombreClienteEncabezado.Width = 20;
+            this.UiColNombreClienteEncabezado.Width = 37;
             // 
             // UiColSubTipoTareaEncabezado
             // 
@@ -1107,7 +1106,7 @@
             this.UiColAsignadoEncabezado.Name = "UiColAsignadoEncabezado";
             this.UiColAsignadoEncabezado.Visible = true;
             this.UiColAsignadoEncabezado.VisibleIndex = 4;
-            this.UiColAsignadoEncabezado.Width = 20;
+            this.UiColAsignadoEncabezado.Width = 37;
             // 
             // UiColRegimenEncabezado
             // 
@@ -1117,7 +1116,7 @@
             this.UiColRegimenEncabezado.OptionsColumn.AllowEdit = false;
             this.UiColRegimenEncabezado.Visible = true;
             this.UiColRegimenEncabezado.VisibleIndex = 5;
-            this.UiColRegimenEncabezado.Width = 20;
+            this.UiColRegimenEncabezado.Width = 37;
             // 
             // UiColEstadoEncabezado
             // 
@@ -1127,7 +1126,7 @@
             this.UiColEstadoEncabezado.OptionsColumn.AllowEdit = false;
             this.UiColEstadoEncabezado.Visible = true;
             this.UiColEstadoEncabezado.VisibleIndex = 6;
-            this.UiColEstadoEncabezado.Width = 20;
+            this.UiColEstadoEncabezado.Width = 37;
             // 
             // UiFechaAsignadoElEncabezado
             // 
@@ -1141,7 +1140,7 @@
             this.UiFechaAsignadoElEncabezado.OptionsColumn.AllowEdit = false;
             this.UiFechaAsignadoElEncabezado.Visible = true;
             this.UiFechaAsignadoElEncabezado.VisibleIndex = 9;
-            this.UiFechaAsignadoElEncabezado.Width = 20;
+            this.UiFechaAsignadoElEncabezado.Width = 37;
             // 
             // UiColEsDeSondaEncabezado
             // 
@@ -1151,7 +1150,7 @@
             this.UiColEsDeSondaEncabezado.OptionsColumn.AllowEdit = false;
             this.UiColEsDeSondaEncabezado.Visible = true;
             this.UiColEsDeSondaEncabezado.VisibleIndex = 7;
-            this.UiColEsDeSondaEncabezado.Width = 20;
+            this.UiColEsDeSondaEncabezado.Width = 37;
             // 
             // UiColEsDeErpEncabezado
             // 
@@ -1161,7 +1160,7 @@
             this.UiColEsDeErpEncabezado.OptionsColumn.AllowEdit = false;
             this.UiColEsDeErpEncabezado.Visible = true;
             this.UiColEsDeErpEncabezado.VisibleIndex = 8;
-            this.UiColEsDeErpEncabezado.Width = 20;
+            this.UiColEsDeErpEncabezado.Width = 37;
             // 
             // UiColDescripcionPausada
             // 
@@ -1171,7 +1170,7 @@
             this.UiColDescripcionPausada.OptionsColumn.AllowEdit = false;
             this.UiColDescripcionPausada.Visible = true;
             this.UiColDescripcionPausada.VisibleIndex = 10;
-            this.UiColDescripcionPausada.Width = 20;
+            this.UiColDescripcionPausada.Width = 37;
             // 
             // UiColSubTipoTarea
             // 
@@ -1181,7 +1180,7 @@
             this.UiColSubTipoTarea.OptionsColumn.AllowEdit = false;
             this.UiColSubTipoTarea.Visible = true;
             this.UiColSubTipoTarea.VisibleIndex = 11;
-            this.UiColSubTipoTarea.Width = 20;
+            this.UiColSubTipoTarea.Width = 37;
             // 
             // UiColAutorizadaEncabezado
             // 
@@ -1191,7 +1190,7 @@
             this.UiColAutorizadaEncabezado.OptionsColumn.AllowEdit = false;
             this.UiColAutorizadaEncabezado.Visible = true;
             this.UiColAutorizadaEncabezado.VisibleIndex = 12;
-            this.UiColAutorizadaEncabezado.Width = 20;
+            this.UiColAutorizadaEncabezado.Width = 37;
             // 
             // UiColPrioridad
             // 
@@ -1201,7 +1200,7 @@
             this.UiColPrioridad.OptionsColumn.AllowEdit = false;
             this.UiColPrioridad.Visible = true;
             this.UiColPrioridad.VisibleIndex = 13;
-            this.UiColPrioridad.Width = 20;
+            this.UiColPrioridad.Width = 37;
             // 
             // UiColDocumentoId
             // 
@@ -1277,19 +1276,17 @@
             this.UiCalNumeroOrden.Name = "UiCalNumeroOrden";
             this.UiCalNumeroOrden.OptionsColumn.AllowEdit = false;
             this.UiCalNumeroOrden.Visible = true;
-            this.UiCalNumeroOrden.VisibleIndex = 15;
-            this.UiCalNumeroOrden.Width = 20;
+            this.UiCalNumeroOrden.VisibleIndex = 16;
+            this.UiCalNumeroOrden.Width = 22;
             // 
             // UiColFin
             // 
             this.UiColFin.Caption = "Fin de tarea";
             this.UiColFin.FieldName = "PICKING_FINISHED_DATE";
-            this.UiColFin.MaxWidth = 200;
-            this.UiColFin.MinWidth = 50;
             this.UiColFin.Name = "UiColFin";
             this.UiColFin.Visible = true;
-            this.UiColFin.VisibleIndex = 16;
-            this.UiColFin.Width = 100;
+            this.UiColFin.VisibleIndex = 15;
+            this.UiColFin.Width = 87;
             // 
             // UiContendorDeBarras
             // 
@@ -1428,7 +1425,7 @@
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 361);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 447);
             this.barDockControlBottom.Manager = this.UiContendorDeBarras;
             this.barDockControlBottom.Size = new System.Drawing.Size(683, 0);
             // 
@@ -1438,7 +1435,7 @@
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 24);
             this.barDockControlLeft.Manager = this.UiContendorDeBarras;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 337);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 423);
             // 
             // barDockControlRight
             // 
@@ -1446,7 +1443,7 @@
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.barDockControlRight.Location = new System.Drawing.Point(683, 24);
             this.barDockControlRight.Manager = this.UiContendorDeBarras;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 337);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 423);
             // 
             // UiTabTareas
             // 
@@ -1458,7 +1455,7 @@
             this.UiTabTareas.Controls.Add(this.barDockControlTop);
             this.UiTabTareas.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiTabTareas.ImageOptions.Image")));
             this.UiTabTareas.Name = "UiTabTareas";
-            this.UiTabTareas.Size = new System.Drawing.Size(683, 361);
+            this.UiTabTareas.Size = new System.Drawing.Size(683, 447);
             this.UiTabTareas.Text = "Tareas";
             // 
             // UiSplitControlTareas
@@ -1472,8 +1469,8 @@
             this.UiSplitControlTareas.Panel1.Text = "Panel1";
             this.UiSplitControlTareas.Panel2.Controls.Add(this.UiContenedorDetalle);
             this.UiSplitControlTareas.Panel2.Text = "Panel2";
-            this.UiSplitControlTareas.Size = new System.Drawing.Size(353, 337);
-            this.UiSplitControlTareas.SplitterPosition = 378;
+            this.UiSplitControlTareas.Size = new System.Drawing.Size(353, 423);
+            this.UiSplitControlTareas.SplitterPosition = 261;
             this.UiSplitControlTareas.TabIndex = 9;
             this.UiSplitControlTareas.Text = "splitContainerControl1";
             // 
@@ -1495,7 +1492,7 @@
             this.UiListaOperadoresParaPickingDetalle,
             this.UiListaOperadoresParaReubicacionDetalle,
             this.UiListaOperadoresParaConteo});
-            this.UiContenedorDetalle.Size = new System.Drawing.Size(0, 0);
+            this.UiContenedorDetalle.Size = new System.Drawing.Size(353, 152);
             this.UiContenedorDetalle.TabIndex = 1;
             this.UiContenedorDetalle.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.UiVistaDetalleCounting,
@@ -2105,9 +2102,9 @@
             this.UiNavegacionPaginasPricipal.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
             this.UiPaginaFecha,
             this.UiPaginaUsuarios});
-            this.UiNavegacionPaginasPricipal.RegularSize = new System.Drawing.Size(330, 337);
+            this.UiNavegacionPaginasPricipal.RegularSize = new System.Drawing.Size(330, 423);
             this.UiNavegacionPaginasPricipal.SelectedPage = this.UiPaginaFecha;
-            this.UiNavegacionPaginasPricipal.Size = new System.Drawing.Size(330, 337);
+            this.UiNavegacionPaginasPricipal.Size = new System.Drawing.Size(330, 423);
             this.UiNavegacionPaginasPricipal.TabIndex = 3;
             this.UiNavegacionPaginasPricipal.Text = "navigationPane1";
             // 
@@ -2130,7 +2127,7 @@
             this.UiPaginaFecha.Controls.Add(this.UiEtiqeutaTipoDeTareas);
             this.UiPaginaFecha.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiPaginaFecha.ImageOptions.Image")));
             this.UiPaginaFecha.Name = "UiPaginaFecha";
-            this.UiPaginaFecha.Size = new System.Drawing.Size(259, 273);
+            this.UiPaginaFecha.Size = new System.Drawing.Size(259, 359);
             // 
             // UiBotonAceptarRangoFecha
             // 
@@ -2530,7 +2527,7 @@
             this.UiContenedorTab.Location = new System.Drawing.Point(0, 0);
             this.UiContenedorTab.Name = "UiContenedorTab";
             this.UiContenedorTab.SelectedTabPage = this.UiTabTareas;
-            this.UiContenedorTab.Size = new System.Drawing.Size(685, 389);
+            this.UiContenedorTab.Size = new System.Drawing.Size(685, 475);
             this.UiContenedorTab.TabIndex = 0;
             this.UiContenedorTab.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.UiTabTareas,
@@ -3869,7 +3866,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(685, 389);
+            this.ClientSize = new System.Drawing.Size(685, 475);
             this.Controls.Add(this.UiContenedorTab);
             this.Name = "AdministradorDeTareasVista";
             this.Text = "Administrador De Tareas";
