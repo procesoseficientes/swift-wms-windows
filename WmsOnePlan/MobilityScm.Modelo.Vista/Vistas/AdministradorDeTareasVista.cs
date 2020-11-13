@@ -2406,5 +2406,6 @@ namespace MobilityScm.Modelo.Vistas
             UIBtnReAbrirTask.Enabled = false;
             UiBotonRefrescar_ItemClick(sender, e);
         }
+ 
     }
 }
