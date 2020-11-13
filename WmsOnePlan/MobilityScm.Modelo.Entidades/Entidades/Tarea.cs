@@ -9,6 +9,9 @@ namespace MobilityScm.Modelo.Entidades
     {
         public decimal SERIAL_NUMBER { get; set; }
 
+        public DateTime PICKING_FINISHED_DATE { get; set; }
+
+
         public decimal TASK_OR_WAVE_ID
         {
             get
