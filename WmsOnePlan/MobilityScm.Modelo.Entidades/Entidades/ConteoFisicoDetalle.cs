@@ -28,6 +28,9 @@ namespace MobilityScm.Modelo.Entidades
 
         public string CODE_WAREHOUSE { get; set; }
         public string REGIMEN { get; set; }
+        public int QTY_SCANNED { get; set; }
+        public int QTY_EXPECTED { get; set; }
+        public int DIFFERENCE { get; set; }
 
     }
 }

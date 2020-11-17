@@ -67,8 +67,8 @@
             this.UiCheckBoxImplosion = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.colQUANTITY_ORIGINAL = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ColModified = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.UiDialogoParaGuardar = new System.Windows.Forms.SaveFileDialog();
             this.colPICKING_LINE = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.UiDialogoParaGuardar = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.UiBarManager)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiControlTextoNumeroDeCaja)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiContenedorPrincipal)).BeginInit();
@@ -117,9 +117,9 @@
             // 
             this.UiTextoNumeroDeCaja.Caption = "Número de Caja";
             this.UiTextoNumeroDeCaja.Edit = this.UiControlTextoNumeroDeCaja;
-            this.UiTextoNumeroDeCaja.Glyph = ((System.Drawing.Image)(resources.GetObject("UiTextoNumeroDeCaja.Glyph")));
             this.UiTextoNumeroDeCaja.Id = 1;
-            this.UiTextoNumeroDeCaja.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiTextoNumeroDeCaja.LargeGlyph")));
+            this.UiTextoNumeroDeCaja.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiTextoNumeroDeCaja.ImageOptions.Image")));
+            this.UiTextoNumeroDeCaja.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiTextoNumeroDeCaja.ImageOptions.LargeImage")));
             this.UiTextoNumeroDeCaja.Name = "UiTextoNumeroDeCaja";
             this.UiTextoNumeroDeCaja.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
@@ -132,9 +132,9 @@
             // UiBotonGuardar
             // 
             this.UiBotonGuardar.Caption = "Guardar";
-            this.UiBotonGuardar.Glyph = ((System.Drawing.Image)(resources.GetObject("UiBotonGuardar.Glyph")));
             this.UiBotonGuardar.Id = 2;
-            this.UiBotonGuardar.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiBotonGuardar.LargeGlyph")));
+            this.UiBotonGuardar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBotonGuardar.ImageOptions.Image")));
+            this.UiBotonGuardar.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiBotonGuardar.ImageOptions.LargeImage")));
             this.UiBotonGuardar.Name = "UiBotonGuardar";
             this.UiBotonGuardar.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.UiBotonGuardar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.UiBotonGuardar_ItemClick);
@@ -142,9 +142,9 @@
             // UiBotonExportarExcel
             // 
             this.UiBotonExportarExcel.Caption = "Exportar a Excel";
-            this.UiBotonExportarExcel.Glyph = ((System.Drawing.Image)(resources.GetObject("UiBotonExportarExcel.Glyph")));
             this.UiBotonExportarExcel.Id = 3;
-            this.UiBotonExportarExcel.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiBotonExportarExcel.LargeGlyph")));
+            this.UiBotonExportarExcel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBotonExportarExcel.ImageOptions.Image")));
+            this.UiBotonExportarExcel.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiBotonExportarExcel.ImageOptions.LargeImage")));
             this.UiBotonExportarExcel.Name = "UiBotonExportarExcel";
             this.UiBotonExportarExcel.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.UiBotonExportarExcel.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.UiBotonExportarExcel_ItemClick);
@@ -152,9 +152,9 @@
             // UiBotonContraer
             // 
             this.UiBotonContraer.Caption = "Contraer";
-            this.UiBotonContraer.Glyph = ((System.Drawing.Image)(resources.GetObject("UiBotonContraer.Glyph")));
             this.UiBotonContraer.Id = 4;
-            this.UiBotonContraer.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiBotonContraer.LargeGlyph")));
+            this.UiBotonContraer.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBotonContraer.ImageOptions.Image")));
+            this.UiBotonContraer.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiBotonContraer.ImageOptions.LargeImage")));
             this.UiBotonContraer.Name = "UiBotonContraer";
             this.UiBotonContraer.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.UiBotonContraer.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.UiBotonContraer_ItemClick);
@@ -162,9 +162,9 @@
             // UiBotonExpandir
             // 
             this.UiBotonExpandir.Caption = "Expandir";
-            this.UiBotonExpandir.Glyph = ((System.Drawing.Image)(resources.GetObject("UiBotonExpandir.Glyph")));
             this.UiBotonExpandir.Id = 5;
-            this.UiBotonExpandir.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiBotonExpandir.LargeGlyph")));
+            this.UiBotonExpandir.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBotonExpandir.ImageOptions.Image")));
+            this.UiBotonExpandir.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiBotonExpandir.ImageOptions.LargeImage")));
             this.UiBotonExpandir.Name = "UiBotonExpandir";
             this.UiBotonExpandir.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.UiBotonExpandir.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.UiBotonExpandir_ItemClick);
@@ -174,27 +174,31 @@
             this.barDockControlTop.CausesValidation = false;
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
-            this.barDockControlTop.Size = new System.Drawing.Size(1383, 24);
+            this.barDockControlTop.Manager = this.UiBarManager;
+            this.barDockControlTop.Size = new System.Drawing.Size(1370, 24);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.barDockControlBottom.Location = new System.Drawing.Point(0, 661);
-            this.barDockControlBottom.Size = new System.Drawing.Size(1383, 0);
+            this.barDockControlBottom.Manager = this.UiBarManager;
+            this.barDockControlBottom.Size = new System.Drawing.Size(1370, 0);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 24);
+            this.barDockControlLeft.Manager = this.UiBarManager;
             this.barDockControlLeft.Size = new System.Drawing.Size(0, 637);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(1383, 24);
+            this.barDockControlRight.Location = new System.Drawing.Point(1370, 24);
+            this.barDockControlRight.Manager = this.UiBarManager;
             this.barDockControlRight.Size = new System.Drawing.Size(0, 637);
             // 
             // UiContenedorPrincipal
@@ -206,7 +210,7 @@
             this.UiContenedorPrincipal.Name = "UiContenedorPrincipal";
             this.UiContenedorPrincipal.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.UiCheckBoxImplosion});
-            this.UiContenedorPrincipal.Size = new System.Drawing.Size(1383, 637);
+            this.UiContenedorPrincipal.Size = new System.Drawing.Size(1370, 637);
             this.UiContenedorPrincipal.TabIndex = 4;
             this.UiContenedorPrincipal.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.UiVistaPrincipal});
@@ -436,7 +440,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1383, 661);
+            this.ClientSize = new System.Drawing.Size(1370, 661);
             this.Controls.Add(this.UiContenedorPrincipal);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);

@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConsultaCosteoVista));
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
-            this.barManager1 = new DevExpress.XtraBars.BarManager();
+            this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.UiBarraPrincipalOpciones = new DevExpress.XtraBars.Bar();
             this.UiBotonAutorizar = new DevExpress.XtraBars.BarButtonItem();
             this.UiBotonRefrescar = new DevExpress.XtraBars.BarButtonItem();
@@ -71,12 +73,12 @@
             this.colMATEDIAL_ID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colSTATUS = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colUNITARY_PRICE = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCLIENT_NAME = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UiListaBodega = new DevExpress.XtraEditors.SearchLookUpEdit();
             this.UiListaVistaBodega = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colWAREHOUSE_ID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colNAME = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UiLabelBodega = new DevExpress.XtraEditors.LabelControl();
-            this.colCLIENT_NAME = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit1.CalendarTimeProperties)).BeginInit();
@@ -136,63 +138,63 @@
             // UiBotonAutorizar
             // 
             this.UiBotonAutorizar.Caption = "Autorizar";
-            this.UiBotonAutorizar.Glyph = ((System.Drawing.Image)(resources.GetObject("UiBotonAutorizar.Glyph")));
             this.UiBotonAutorizar.Id = 6;
-            this.UiBotonAutorizar.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiBotonAutorizar.LargeGlyph")));
+            this.UiBotonAutorizar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBotonAutorizar.ImageOptions.Image")));
+            this.UiBotonAutorizar.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiBotonAutorizar.ImageOptions.LargeImage")));
             this.UiBotonAutorizar.Name = "UiBotonAutorizar";
             this.UiBotonAutorizar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.UiBotonAutorizar_ItemClick);
             // 
             // UiBotonRefrescar
             // 
             this.UiBotonRefrescar.Caption = "Refrescar";
-            this.UiBotonRefrescar.Glyph = ((System.Drawing.Image)(resources.GetObject("UiBotonRefrescar.Glyph")));
             this.UiBotonRefrescar.Id = 0;
-            this.UiBotonRefrescar.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiBotonRefrescar.LargeGlyph")));
+            this.UiBotonRefrescar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBotonRefrescar.ImageOptions.Image")));
+            this.UiBotonRefrescar.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiBotonRefrescar.ImageOptions.LargeImage")));
             this.UiBotonRefrescar.Name = "UiBotonRefrescar";
             this.UiBotonRefrescar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.UiBotonRefrescar_ItemClick);
             // 
             // UiBotonExpandir
             // 
             this.UiBotonExpandir.Caption = "Expandir";
-            this.UiBotonExpandir.Glyph = ((System.Drawing.Image)(resources.GetObject("UiBotonExpandir.Glyph")));
             this.UiBotonExpandir.Id = 1;
-            this.UiBotonExpandir.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiBotonExpandir.LargeGlyph")));
+            this.UiBotonExpandir.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBotonExpandir.ImageOptions.Image")));
+            this.UiBotonExpandir.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiBotonExpandir.ImageOptions.LargeImage")));
             this.UiBotonExpandir.Name = "UiBotonExpandir";
             this.UiBotonExpandir.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.UiBotonExpandir_ItemClick);
             // 
             // UiBotonContraer
             // 
             this.UiBotonContraer.Caption = "Contraer";
-            this.UiBotonContraer.Glyph = ((System.Drawing.Image)(resources.GetObject("UiBotonContraer.Glyph")));
             this.UiBotonContraer.Id = 2;
-            this.UiBotonContraer.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiBotonContraer.LargeGlyph")));
+            this.UiBotonContraer.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBotonContraer.ImageOptions.Image")));
+            this.UiBotonContraer.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiBotonContraer.ImageOptions.LargeImage")));
             this.UiBotonContraer.Name = "UiBotonContraer";
             this.UiBotonContraer.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.UiBotonContraer_ItemClick);
             // 
             // UiBotonExportarExcel
             // 
             this.UiBotonExportarExcel.Caption = "Exportar Excel";
-            this.UiBotonExportarExcel.Glyph = ((System.Drawing.Image)(resources.GetObject("UiBotonExportarExcel.Glyph")));
             this.UiBotonExportarExcel.Id = 3;
-            this.UiBotonExportarExcel.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiBotonExportarExcel.LargeGlyph")));
+            this.UiBotonExportarExcel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBotonExportarExcel.ImageOptions.Image")));
+            this.UiBotonExportarExcel.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiBotonExportarExcel.ImageOptions.LargeImage")));
             this.UiBotonExportarExcel.Name = "UiBotonExportarExcel";
             this.UiBotonExportarExcel.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.UiBotonExportarExcel_ItemClick);
             // 
             // UiBotonReporteConsolidado
             // 
             this.UiBotonReporteConsolidado.Caption = "Reporte Consolidado";
-            this.UiBotonReporteConsolidado.Glyph = ((System.Drawing.Image)(resources.GetObject("UiBotonReporteConsolidado.Glyph")));
             this.UiBotonReporteConsolidado.Id = 4;
-            this.UiBotonReporteConsolidado.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiBotonReporteConsolidado.LargeGlyph")));
+            this.UiBotonReporteConsolidado.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBotonReporteConsolidado.ImageOptions.Image")));
+            this.UiBotonReporteConsolidado.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiBotonReporteConsolidado.ImageOptions.LargeImage")));
             this.UiBotonReporteConsolidado.Name = "UiBotonReporteConsolidado";
             this.UiBotonReporteConsolidado.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.UiBotonReporteConsolidado_ItemClick);
             // 
             // UiBotonReportePorDocumento
             // 
             this.UiBotonReportePorDocumento.Caption = "Reporte Por Documento";
-            this.UiBotonReportePorDocumento.Glyph = ((System.Drawing.Image)(resources.GetObject("UiBotonReportePorDocumento.Glyph")));
             this.UiBotonReportePorDocumento.Id = 5;
-            this.UiBotonReportePorDocumento.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiBotonReportePorDocumento.LargeGlyph")));
+            this.UiBotonReportePorDocumento.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBotonReportePorDocumento.ImageOptions.Image")));
+            this.UiBotonReportePorDocumento.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiBotonReportePorDocumento.ImageOptions.LargeImage")));
             this.UiBotonReportePorDocumento.Name = "UiBotonReportePorDocumento";
             this.UiBotonReportePorDocumento.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.UiBotonReportePorDocumento_ItemClick);
             // 
@@ -200,9 +202,9 @@
             // 
             this.UiFechaInicial.Caption = "Fecha Inicial";
             this.UiFechaInicial.Edit = this.repositoryItemDateEdit1;
-            this.UiFechaInicial.Glyph = ((System.Drawing.Image)(resources.GetObject("UiFechaInicial.Glyph")));
             this.UiFechaInicial.Id = 7;
-            this.UiFechaInicial.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiFechaInicial.LargeGlyph")));
+            this.UiFechaInicial.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiFechaInicial.ImageOptions.Image")));
+            this.UiFechaInicial.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiFechaInicial.ImageOptions.LargeImage")));
             this.UiFechaInicial.Name = "UiFechaInicial";
             this.UiFechaInicial.Size = new System.Drawing.Size(180, 0);
             // 
@@ -219,9 +221,9 @@
             // 
             this.UiFechaFinal.Caption = "Fecha Final";
             this.UiFechaFinal.Edit = this.repositoryItemDateEdit2;
-            this.UiFechaFinal.Glyph = ((System.Drawing.Image)(resources.GetObject("UiFechaFinal.Glyph")));
             this.UiFechaFinal.Id = 9;
-            this.UiFechaFinal.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiFechaFinal.LargeGlyph")));
+            this.UiFechaFinal.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiFechaFinal.ImageOptions.Image")));
+            this.UiFechaFinal.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiFechaFinal.ImageOptions.LargeImage")));
             this.UiFechaFinal.Name = "UiFechaFinal";
             this.UiFechaFinal.Size = new System.Drawing.Size(180, 0);
             // 
@@ -237,9 +239,9 @@
             // UiSwitchLineasAbiertas
             // 
             this.UiSwitchLineasAbiertas.Caption = "Lineas Abiertas";
-            this.UiSwitchLineasAbiertas.Glyph = ((System.Drawing.Image)(resources.GetObject("UiSwitchLineasAbiertas.Glyph")));
             this.UiSwitchLineasAbiertas.Id = 11;
-            this.UiSwitchLineasAbiertas.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiSwitchLineasAbiertas.LargeGlyph")));
+            this.UiSwitchLineasAbiertas.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiSwitchLineasAbiertas.ImageOptions.Image")));
+            this.UiSwitchLineasAbiertas.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiSwitchLineasAbiertas.ImageOptions.LargeImage")));
             this.UiSwitchLineasAbiertas.Name = "UiSwitchLineasAbiertas";
             this.UiSwitchLineasAbiertas.CheckedChanged += new DevExpress.XtraBars.ItemClickEventHandler(this.UiSwitchLineasAbiertas_CheckedChanged);
             // 
@@ -248,28 +250,32 @@
             this.barDockControlTop.CausesValidation = false;
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
-            this.barDockControlTop.Size = new System.Drawing.Size(1424, 33);
+            this.barDockControlTop.Manager = this.barManager1;
+            this.barDockControlTop.Size = new System.Drawing.Size(1370, 24);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.barDockControlBottom.Location = new System.Drawing.Point(0, 690);
-            this.barDockControlBottom.Size = new System.Drawing.Size(1424, 0);
+            this.barDockControlBottom.Manager = this.barManager1;
+            this.barDockControlBottom.Size = new System.Drawing.Size(1370, 0);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 33);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 657);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 24);
+            this.barDockControlLeft.Manager = this.barManager1;
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 666);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(1424, 33);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 657);
+            this.barDockControlRight.Location = new System.Drawing.Point(1370, 24);
+            this.barDockControlRight.Manager = this.barManager1;
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 666);
             // 
             // UiContenedorCosteos
             // 
@@ -280,7 +286,7 @@
             this.UiContenedorCosteos.MainView = this.UiVistaCosteos;
             this.UiContenedorCosteos.MenuManager = this.barManager1;
             this.UiContenedorCosteos.Name = "UiContenedorCosteos";
-            this.UiContenedorCosteos.Size = new System.Drawing.Size(1399, 613);
+            this.UiContenedorCosteos.Size = new System.Drawing.Size(1345, 613);
             this.UiContenedorCosteos.TabIndex = 4;
             this.UiContenedorCosteos.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.UiVistaCosteos});
@@ -478,6 +484,15 @@
             this.colUNITARY_PRICE.Visible = true;
             this.colUNITARY_PRICE.VisibleIndex = 17;
             // 
+            // colCLIENT_NAME
+            // 
+            this.colCLIENT_NAME.Caption = "Nombre Cliente";
+            this.colCLIENT_NAME.FieldName = "CLIENT_NAME";
+            this.colCLIENT_NAME.Name = "colCLIENT_NAME";
+            this.colCLIENT_NAME.OptionsColumn.AllowEdit = false;
+            this.colCLIENT_NAME.Visible = true;
+            this.colCLIENT_NAME.VisibleIndex = 18;
+            // 
             // UiListaBodega
             // 
             this.UiListaBodega.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -485,12 +500,13 @@
             this.UiListaBodega.Location = new System.Drawing.Point(74, 37);
             this.UiListaBodega.MenuManager = this.barManager1;
             this.UiListaBodega.Name = "UiListaBodega";
+            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
             this.UiListaBodega.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, DevExpress.XtraEditors.ImageLocation.MiddleCenter, ((System.Drawing.Image)(resources.GetObject("UiListaBodega.Properties.Buttons"))), new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", "UiBotonRefrescarBodega", null, true)});
-            this.UiListaBodega.Properties.View = this.UiListaVistaBodega;
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", "UiBotonRefrescarBodega", null, DevExpress.Utils.ToolTipAnchor.Default)});
+            this.UiListaBodega.Properties.PopupView = this.UiListaVistaBodega;
             this.UiListaBodega.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiListaBodega_Properties_ButtonClick);
-            this.UiListaBodega.Size = new System.Drawing.Size(1338, 22);
+            this.UiListaBodega.Size = new System.Drawing.Size(1284, 24);
             this.UiListaBodega.TabIndex = 5;
             this.UiListaBodega.CustomDisplayText += new DevExpress.XtraEditors.Controls.CustomDisplayTextEventHandler(this.UiListaBodega_CustomDisplayText);
             // 
@@ -535,20 +551,11 @@
             this.UiLabelBodega.TabIndex = 6;
             this.UiLabelBodega.Text = "Bodega:";
             // 
-            // colCLIENT_NAME
-            // 
-            this.colCLIENT_NAME.Caption = "Nombre Cliente";
-            this.colCLIENT_NAME.FieldName = "CLIENT_NAME";
-            this.colCLIENT_NAME.Name = "colCLIENT_NAME";
-            this.colCLIENT_NAME.OptionsColumn.AllowEdit = false;
-            this.colCLIENT_NAME.Visible = true;
-            this.colCLIENT_NAME.VisibleIndex = 18;
-            // 
             // ConsultaCosteoVista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1424, 690);
+            this.ClientSize = new System.Drawing.Size(1370, 690);
             this.Controls.Add(this.UiLabelBodega);
             this.Controls.Add(this.UiListaBodega);
             this.Controls.Add(this.UiContenedorCosteos);
