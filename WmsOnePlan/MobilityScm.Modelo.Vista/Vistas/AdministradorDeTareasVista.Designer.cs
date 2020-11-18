@@ -188,6 +188,9 @@
             this.UiSplitControlTareas = new DevExpress.XtraEditors.SplitContainerControl();
             this.UiContenedorDetalle = new DevExpress.XtraGrid.GridControl();
             this.UiVistaDetalleCounting = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.UiStockQTY = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.UiPhysicalCounting = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.UiDifference = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colPHYSICAL_COUNT_DETAIL_ID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colWAREHOUSE_ID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colZONE = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -562,7 +565,7 @@
             this.UiContenedorVistaTareasEncabezado.Name = "UiContenedorVistaTareasEncabezado";
             this.UiContenedorVistaTareasEncabezado.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.UiListaOperadoresEncabezado});
-            this.UiContenedorVistaTareasEncabezado.Size = new System.Drawing.Size(353, 261);
+            this.UiContenedorVistaTareasEncabezado.Size = new System.Drawing.Size(353, 412);
             this.UiContenedorVistaTareasEncabezado.TabIndex = 0;
             this.UiContenedorVistaTareasEncabezado.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.UiVistaEncabezadoConDetalle,
@@ -1470,7 +1473,7 @@
             this.UiSplitControlTareas.Panel2.Controls.Add(this.UiContenedorDetalle);
             this.UiSplitControlTareas.Panel2.Text = "Panel2";
             this.UiSplitControlTareas.Size = new System.Drawing.Size(353, 423);
-            this.UiSplitControlTareas.SplitterPosition = 261;
+            this.UiSplitControlTareas.SplitterPosition = 412;
             this.UiSplitControlTareas.TabIndex = 9;
             this.UiSplitControlTareas.Text = "splitContainerControl1";
             // 
@@ -1492,7 +1495,7 @@
             this.UiListaOperadoresParaPickingDetalle,
             this.UiListaOperadoresParaReubicacionDetalle,
             this.UiListaOperadoresParaConteo});
-            this.UiContenedorDetalle.Size = new System.Drawing.Size(353, 152);
+            this.UiContenedorDetalle.Size = new System.Drawing.Size(353, 1);
             this.UiContenedorDetalle.TabIndex = 1;
             this.UiContenedorDetalle.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.UiVistaDetalleCounting,
@@ -1507,6 +1510,9 @@
             // UiVistaDetalleCounting
             // 
             this.UiVistaDetalleCounting.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.UiStockQTY,
+            this.UiPhysicalCounting,
+            this.UiDifference,
             this.colPHYSICAL_COUNT_DETAIL_ID,
             this.colWAREHOUSE_ID,
             this.colZONE,
@@ -1533,6 +1539,30 @@
             this.UiVistaDetalleCounting.CustomColumnDisplayText += new DevExpress.XtraGrid.Views.Base.CustomColumnDisplayTextEventHandler(this.UiVistaDetalleCounting_CustomColumnDisplayText);
             this.UiVistaDetalleCounting.MouseUp += new System.Windows.Forms.MouseEventHandler(this.UiVistaDetallePicking_MouseUp);
             // 
+            // UiStockQTY
+            // 
+            this.UiStockQTY.Caption = "Cantidad Inventario";
+            this.UiStockQTY.FieldName = "QTY_SCANNED";
+            this.UiStockQTY.Name = "UiStockQTY";
+            this.UiStockQTY.Visible = true;
+            this.UiStockQTY.VisibleIndex = 1;
+            // 
+            // UiPhysicalCounting
+            // 
+            this.UiPhysicalCounting.Caption = "Cantidad Conteo Físico";
+            this.UiPhysicalCounting.FieldName = "QTY_EXPECTED";
+            this.UiPhysicalCounting.Name = "UiPhysicalCounting";
+            this.UiPhysicalCounting.Visible = true;
+            this.UiPhysicalCounting.VisibleIndex = 2;
+            // 
+            // UiDifference
+            // 
+            this.UiDifference.Caption = "Diferencia";
+            this.UiDifference.FieldName = "DIFFERENCE";
+            this.UiDifference.Name = "UiDifference";
+            this.UiDifference.Visible = true;
+            this.UiDifference.VisibleIndex = 3;
+            // 
             // colPHYSICAL_COUNT_DETAIL_ID
             // 
             this.colPHYSICAL_COUNT_DETAIL_ID.Caption = "PHYSICAL_COUNT_DETAIL_ID";
@@ -1548,7 +1578,7 @@
             this.colWAREHOUSE_ID.Name = "colWAREHOUSE_ID";
             this.colWAREHOUSE_ID.OptionsColumn.AllowEdit = false;
             this.colWAREHOUSE_ID.Visible = true;
-            this.colWAREHOUSE_ID.VisibleIndex = 1;
+            this.colWAREHOUSE_ID.VisibleIndex = 4;
             // 
             // colZONE
             // 
@@ -1557,7 +1587,7 @@
             this.colZONE.Name = "colZONE";
             this.colZONE.OptionsColumn.AllowEdit = false;
             this.colZONE.Visible = true;
-            this.colZONE.VisibleIndex = 2;
+            this.colZONE.VisibleIndex = 5;
             // 
             // colLOCATION
             // 
@@ -1566,7 +1596,7 @@
             this.colLOCATION.Name = "colLOCATION";
             this.colLOCATION.OptionsColumn.AllowEdit = false;
             this.colLOCATION.Visible = true;
-            this.colLOCATION.VisibleIndex = 3;
+            this.colLOCATION.VisibleIndex = 6;
             // 
             // colCLIENT_CODE
             // 
@@ -1575,7 +1605,7 @@
             this.colCLIENT_CODE.Name = "colCLIENT_CODE";
             this.colCLIENT_CODE.OptionsColumn.AllowEdit = false;
             this.colCLIENT_CODE.Visible = true;
-            this.colCLIENT_CODE.VisibleIndex = 4;
+            this.colCLIENT_CODE.VisibleIndex = 7;
             // 
             // colMATERIAL_ID
             // 
@@ -1584,7 +1614,7 @@
             this.colMATERIAL_ID.Name = "colMATERIAL_ID";
             this.colMATERIAL_ID.OptionsColumn.AllowEdit = false;
             this.colMATERIAL_ID.Visible = true;
-            this.colMATERIAL_ID.VisibleIndex = 5;
+            this.colMATERIAL_ID.VisibleIndex = 8;
             // 
             // colASSIGNED_TO
             // 
@@ -1593,7 +1623,7 @@
             this.colASSIGNED_TO.FieldName = "ASSIGNED_TO";
             this.colASSIGNED_TO.Name = "colASSIGNED_TO";
             this.colASSIGNED_TO.Visible = true;
-            this.colASSIGNED_TO.VisibleIndex = 6;
+            this.colASSIGNED_TO.VisibleIndex = 9;
             // 
             // UiListaOperadoresParaConteo
             // 
@@ -1616,7 +1646,7 @@
             this.colSTATUS.Name = "colSTATUS";
             this.colSTATUS.OptionsColumn.AllowEdit = false;
             this.colSTATUS.Visible = true;
-            this.colSTATUS.VisibleIndex = 7;
+            this.colSTATUS.VisibleIndex = 10;
             // 
             // colREGIMEN
             // 
@@ -1625,7 +1655,7 @@
             this.colREGIMEN.Name = "colREGIMEN";
             this.colREGIMEN.OptionsColumn.AllowEdit = false;
             this.colREGIMEN.Visible = true;
-            this.colREGIMEN.VisibleIndex = 8;
+            this.colREGIMEN.VisibleIndex = 11;
             // 
             // colDISTRIBUTION_CENTER
             // 
@@ -1634,7 +1664,7 @@
             this.colDISTRIBUTION_CENTER.Name = "colDISTRIBUTION_CENTER";
             this.colDISTRIBUTION_CENTER.OptionsColumn.AllowEdit = false;
             this.colDISTRIBUTION_CENTER.Visible = true;
-            this.colDISTRIBUTION_CENTER.VisibleIndex = 9;
+            this.colDISTRIBUTION_CENTER.VisibleIndex = 12;
             // 
             // colMATERIAL_CLASS
             // 
@@ -1643,7 +1673,7 @@
             this.colMATERIAL_CLASS.Name = "colMATERIAL_CLASS";
             this.colMATERIAL_CLASS.OptionsColumn.AllowEdit = false;
             this.colMATERIAL_CLASS.Visible = true;
-            this.colMATERIAL_CLASS.VisibleIndex = 10;
+            this.colMATERIAL_CLASS.VisibleIndex = 13;
             // 
             // UiVistaDetalleReubicacion
             // 
@@ -2546,7 +2576,7 @@
             this.UiTabGraficas.Controls.Add(this.barDockControl1);
             this.UiTabGraficas.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiTabGraficas.ImageOptions.Image")));
             this.UiTabGraficas.Name = "UiTabGraficas";
-            this.UiTabGraficas.Size = new System.Drawing.Size(683, 361);
+            this.UiTabGraficas.Size = new System.Drawing.Size(683, 447);
             this.UiTabGraficas.Text = "Gráficas";
             // 
             // UiSplitGraficas
@@ -2558,7 +2588,7 @@
             this.UiSplitGraficas.Panel1.Text = "Panel1";
             this.UiSplitGraficas.Panel2.Controls.Add(this.UiChartTiposTareas);
             this.UiSplitGraficas.Panel2.Text = "Panel2";
-            this.UiSplitGraficas.Size = new System.Drawing.Size(683, 337);
+            this.UiSplitGraficas.Size = new System.Drawing.Size(683, 423);
             this.UiSplitGraficas.SplitterPosition = 520;
             this.UiSplitGraficas.TabIndex = 1;
             this.UiSplitGraficas.Text = "UiSplitGraficas";
@@ -2591,7 +2621,7 @@
             this.UiChartTareasPorOperador.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series1};
             this.UiChartTareasPorOperador.SeriesTemplate.View = pieSeriesView2;
-            this.UiChartTareasPorOperador.Size = new System.Drawing.Size(520, 337);
+            this.UiChartTareasPorOperador.Size = new System.Drawing.Size(520, 423);
             this.UiChartTareasPorOperador.TabIndex = 0;
             chartTitle1.Text = "Tareas por operador";
             this.UiChartTareasPorOperador.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
@@ -2624,7 +2654,7 @@
             this.UiChartTiposTareas.SeriesTemplate.SeriesDataMember = "TASK_ASSIGNEDTO";
             this.UiChartTiposTareas.SeriesTemplate.ToolTipEnabled = DevExpress.Utils.DefaultBoolean.True;
             this.UiChartTiposTareas.SeriesTemplate.ToolTipSeriesPattern = "{V:#.00}";
-            this.UiChartTiposTareas.Size = new System.Drawing.Size(153, 337);
+            this.UiChartTiposTareas.Size = new System.Drawing.Size(153, 423);
             this.UiChartTiposTareas.TabIndex = 1;
             chartTitle2.Text = "Tiempo promedio de tareas";
             this.UiChartTiposTareas.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
@@ -2640,7 +2670,7 @@
             this.barDockControl3.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControl3.Location = new System.Drawing.Point(0, 24);
             this.barDockControl3.Manager = this.UiBarManagerGraficas;
-            this.barDockControl3.Size = new System.Drawing.Size(0, 337);
+            this.barDockControl3.Size = new System.Drawing.Size(0, 423);
             // 
             // UiBarManagerGraficas
             // 
@@ -2718,7 +2748,7 @@
             // 
             this.barDockControl2.CausesValidation = false;
             this.barDockControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl2.Location = new System.Drawing.Point(0, 361);
+            this.barDockControl2.Location = new System.Drawing.Point(0, 447);
             this.barDockControl2.Manager = this.UiBarManagerGraficas;
             this.barDockControl2.Size = new System.Drawing.Size(683, 0);
             // 
@@ -2728,7 +2758,7 @@
             this.barDockControl4.Dock = System.Windows.Forms.DockStyle.Right;
             this.barDockControl4.Location = new System.Drawing.Point(683, 24);
             this.barDockControl4.Manager = this.UiBarManagerGraficas;
-            this.barDockControl4.Size = new System.Drawing.Size(0, 337);
+            this.barDockControl4.Size = new System.Drawing.Size(0, 423);
             // 
             // UITabConfirmarRecepcion
             // 
@@ -2738,7 +2768,7 @@
             this.UITabConfirmarRecepcion.Controls.Add(this.barDockControl6);
             this.UITabConfirmarRecepcion.Controls.Add(this.barDockControl5);
             this.UITabConfirmarRecepcion.Name = "UITabConfirmarRecepcion";
-            this.UITabConfirmarRecepcion.Size = new System.Drawing.Size(683, 361);
+            this.UITabConfirmarRecepcion.Size = new System.Drawing.Size(683, 447);
             this.UITabConfirmarRecepcion.Text = "Confirmación Recepción";
             // 
             // splitContainerControl1
@@ -2750,7 +2780,7 @@
             this.splitContainerControl1.Panel1.Text = "Panel1";
             this.splitContainerControl1.Panel2.Controls.Add(this.UiContenedorVistaConfirmacionOrdenDeCompra);
             this.splitContainerControl1.Panel2.Text = "Panel2";
-            this.splitContainerControl1.Size = new System.Drawing.Size(683, 337);
+            this.splitContainerControl1.Size = new System.Drawing.Size(683, 423);
             this.splitContainerControl1.SplitterPosition = 706;
             this.splitContainerControl1.TabIndex = 10;
             this.splitContainerControl1.Text = "splitContainerControl1";
@@ -2762,7 +2792,7 @@
             this.UiContenedorVistaConfirmacionDetalleRecepcion.MainView = this.UIVistaConfirmacionDetalleRecepcion;
             this.UiContenedorVistaConfirmacionDetalleRecepcion.MenuManager = this.UiContendorDeBarras;
             this.UiContenedorVistaConfirmacionDetalleRecepcion.Name = "UiContenedorVistaConfirmacionDetalleRecepcion";
-            this.UiContenedorVistaConfirmacionDetalleRecepcion.Size = new System.Drawing.Size(673, 337);
+            this.UiContenedorVistaConfirmacionDetalleRecepcion.Size = new System.Drawing.Size(673, 423);
             this.UiContenedorVistaConfirmacionDetalleRecepcion.TabIndex = 4;
             this.UiContenedorVistaConfirmacionDetalleRecepcion.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.UIVistaConfirmacionDetalleRecepcion});
@@ -3065,7 +3095,7 @@
             this.barDockControl7.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControl7.Location = new System.Drawing.Point(0, 24);
             this.barDockControl7.Manager = this.UIBarManagerConfirmarRecepcion;
-            this.barDockControl7.Size = new System.Drawing.Size(0, 337);
+            this.barDockControl7.Size = new System.Drawing.Size(0, 423);
             // 
             // UIBarManagerConfirmarRecepcion
             // 
@@ -3190,7 +3220,7 @@
             // 
             this.barDockControl6.CausesValidation = false;
             this.barDockControl6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl6.Location = new System.Drawing.Point(0, 361);
+            this.barDockControl6.Location = new System.Drawing.Point(0, 447);
             this.barDockControl6.Manager = this.UIBarManagerConfirmarRecepcion;
             this.barDockControl6.Size = new System.Drawing.Size(683, 0);
             // 
@@ -3200,7 +3230,7 @@
             this.barDockControl8.Dock = System.Windows.Forms.DockStyle.Right;
             this.barDockControl8.Location = new System.Drawing.Point(683, 24);
             this.barDockControl8.Manager = this.UIBarManagerConfirmarRecepcion;
-            this.barDockControl8.Size = new System.Drawing.Size(0, 337);
+            this.barDockControl8.Size = new System.Drawing.Size(0, 423);
             // 
             // barButtonItem1
             // 
@@ -3217,7 +3247,7 @@
             this.UITabConfirmarSeries.Controls.Add(this.barDockControl9);
             this.UITabConfirmarSeries.Name = "UITabConfirmarSeries";
             this.UITabConfirmarSeries.PageVisible = false;
-            this.UITabConfirmarSeries.Size = new System.Drawing.Size(683, 361);
+            this.UITabConfirmarSeries.Size = new System.Drawing.Size(683, 447);
             this.UITabConfirmarSeries.Text = "Confirmación Series";
             // 
             // UIContenedorVistaConfirmacionSeries
@@ -3227,7 +3257,7 @@
             this.UIContenedorVistaConfirmacionSeries.MainView = this.UIVistaConfirmacionSeries;
             this.UIContenedorVistaConfirmacionSeries.MenuManager = this.UiContendorDeBarras;
             this.UIContenedorVistaConfirmacionSeries.Name = "UIContenedorVistaConfirmacionSeries";
-            this.UIContenedorVistaConfirmacionSeries.Size = new System.Drawing.Size(683, 337);
+            this.UIContenedorVistaConfirmacionSeries.Size = new System.Drawing.Size(683, 423);
             this.UIContenedorVistaConfirmacionSeries.TabIndex = 5;
             this.UIContenedorVistaConfirmacionSeries.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.UIVistaConfirmacionSeries});
@@ -3344,7 +3374,7 @@
             this.barDockControl11.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControl11.Location = new System.Drawing.Point(0, 24);
             this.barDockControl11.Manager = this.UIBarManagerConfirmacionSeries;
-            this.barDockControl11.Size = new System.Drawing.Size(0, 337);
+            this.barDockControl11.Size = new System.Drawing.Size(0, 423);
             // 
             // UIBarManagerConfirmacionSeries
             // 
@@ -3447,7 +3477,7 @@
             // 
             this.barDockControl10.CausesValidation = false;
             this.barDockControl10.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl10.Location = new System.Drawing.Point(0, 361);
+            this.barDockControl10.Location = new System.Drawing.Point(0, 447);
             this.barDockControl10.Manager = this.UIBarManagerConfirmacionSeries;
             this.barDockControl10.Size = new System.Drawing.Size(683, 0);
             // 
@@ -3457,7 +3487,7 @@
             this.barDockControl12.Dock = System.Windows.Forms.DockStyle.Right;
             this.barDockControl12.Location = new System.Drawing.Point(683, 24);
             this.barDockControl12.Manager = this.UIBarManagerConfirmacionSeries;
-            this.barDockControl12.Size = new System.Drawing.Size(0, 337);
+            this.barDockControl12.Size = new System.Drawing.Size(0, 423);
             // 
             // UITabOlaPicking
             // 
@@ -3467,7 +3497,7 @@
             this.UITabOlaPicking.Controls.Add(this.barDockControl14);
             this.UITabOlaPicking.Controls.Add(this.barDockControl13);
             this.UITabOlaPicking.Name = "UITabOlaPicking";
-            this.UITabOlaPicking.Size = new System.Drawing.Size(683, 361);
+            this.UITabOlaPicking.Size = new System.Drawing.Size(683, 447);
             this.UITabOlaPicking.Text = "Ola de Picking";
             // 
             // UIContenedorOla
@@ -3477,7 +3507,7 @@
             this.UIContenedorOla.MainView = this.UIViewOlaPicking;
             this.UIContenedorOla.MenuManager = this.UiContendorDeBarras;
             this.UIContenedorOla.Name = "UIContenedorOla";
-            this.UIContenedorOla.Size = new System.Drawing.Size(683, 317);
+            this.UIContenedorOla.Size = new System.Drawing.Size(683, 403);
             this.UIContenedorOla.TabIndex = 5;
             this.UIContenedorOla.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.UIViewOlaPicking});
@@ -3688,7 +3718,7 @@
             this.barDockControl15.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControl15.Location = new System.Drawing.Point(0, 24);
             this.barDockControl15.Manager = this.barManager1;
-            this.barDockControl15.Size = new System.Drawing.Size(0, 317);
+            this.barDockControl15.Size = new System.Drawing.Size(0, 403);
             // 
             // barManager1
             // 
@@ -3752,7 +3782,7 @@
             // 
             this.barDockControl14.CausesValidation = false;
             this.barDockControl14.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl14.Location = new System.Drawing.Point(0, 341);
+            this.barDockControl14.Location = new System.Drawing.Point(0, 427);
             this.barDockControl14.Manager = this.barManager1;
             this.barDockControl14.Size = new System.Drawing.Size(683, 20);
             // 
@@ -3762,7 +3792,7 @@
             this.barDockControl16.Dock = System.Windows.Forms.DockStyle.Right;
             this.barDockControl16.Location = new System.Drawing.Point(683, 24);
             this.barDockControl16.Manager = this.barManager1;
-            this.barDockControl16.Size = new System.Drawing.Size(0, 317);
+            this.barDockControl16.Size = new System.Drawing.Size(0, 403);
             // 
             // bar2
             // 
@@ -4234,5 +4264,8 @@
         private DevExpress.XtraEditors.SimpleButton UiBotonPausarTarea;
         private DevExpress.XtraEditors.SimpleButton UiBotonReanudarTarea;
         private DevExpress.XtraGrid.Columns.GridColumn UiColFin;
+        private DevExpress.XtraGrid.Columns.GridColumn UiStockQTY;
+        private DevExpress.XtraGrid.Columns.GridColumn UiPhysicalCounting;
+        private DevExpress.XtraGrid.Columns.GridColumn UiDifference;
     }
 }

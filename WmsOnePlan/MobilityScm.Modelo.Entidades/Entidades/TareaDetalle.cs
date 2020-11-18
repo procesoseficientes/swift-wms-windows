@@ -11,6 +11,9 @@ namespace MobilityScm.Modelo.Entidades
         public decimal QTY { get; set; }
         public decimal QTY_DOC { get; set; }
         public decimal QTY_DIFFERENCE { get; set; }
+        public int QTY_SCANNED { get; set; }
+        public int QTY_EXPECTED { get; set; }
+        public int DIFFERENCE { get; set; }
         public string TASK_COMMENTS { get; set; }
         public decimal WAVE_PICKING_ID { get; set; }
         public string NUMERO_ORDEN_TARGET { get; set; }
