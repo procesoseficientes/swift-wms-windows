@@ -61,11 +61,11 @@
             DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression14 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule15 = new DevExpress.XtraGrid.GridFormatRule();
             DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression15 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule16 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression16 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdministradorDeTareasVista));
             DevExpress.XtraGrid.GridLevelNode gridLevelNode3 = new DevExpress.XtraGrid.GridLevelNode();
             DevExpress.XtraGrid.GridLevelNode gridLevelNode4 = new DevExpress.XtraGrid.GridLevelNode();
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule16 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression16 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule17 = new DevExpress.XtraGrid.GridFormatRule();
             DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression17 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule18 = new DevExpress.XtraGrid.GridFormatRule();
@@ -78,6 +78,8 @@
             DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression21 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule22 = new DevExpress.XtraGrid.GridFormatRule();
             DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression22 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule23 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression23 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
             DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
@@ -102,14 +104,14 @@
             DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
             DevExpress.XtraCharts.SideBySideBarSeriesLabel sideBySideBarSeriesLabel1 = new DevExpress.XtraCharts.SideBySideBarSeriesLabel();
             DevExpress.XtraCharts.ChartTitle chartTitle2 = new DevExpress.XtraCharts.ChartTitle();
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule23 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression23 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule24 = new DevExpress.XtraGrid.GridFormatRule();
             DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression24 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule25 = new DevExpress.XtraGrid.GridFormatRule();
             DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression25 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule26 = new DevExpress.XtraGrid.GridFormatRule();
             DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression26 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule27 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression27 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
             this.UiVistaDetalleErpEncabezado = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.UiColNumeroDocumentoDetalleErp = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UiColNumeroIntentosDetalleErp = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -571,6 +573,7 @@
             this.UiVistaEncabezadoConDetalle,
             this.UiVistaEncabezado,
             this.UiVistaDetalleErpEncabezado});
+            this.UiContenedorVistaTareasEncabezado.Click += new System.EventHandler(this.UiContenedorVistaTareasEncabezado_Click);
             this.UiContenedorVistaTareasEncabezado.DragDrop += new System.Windows.Forms.DragEventHandler(this.UiContenedorVistaTareasEncabezado_DragDrop);
             this.UiContenedorVistaTareasEncabezado.DragEnter += new System.Windows.Forms.DragEventHandler(this.UiContenedorVistaTareasEncabezado_DragEnter);
             // 
@@ -960,7 +963,8 @@
             formatConditionRuleExpression9.Appearance.BorderColor = System.Drawing.Color.Lime;
             formatConditionRuleExpression9.Appearance.Options.UseBackColor = true;
             formatConditionRuleExpression9.Appearance.Options.UseBorderColor = true;
-            formatConditionRuleExpression9.Expression = "[IS_COMPLETED] = \'COMPLETA\' And [TASK_SUBTYPE] <> \'RECEPCION_TRASLADO\'";
+            formatConditionRuleExpression9.Expression = "[IS_COMPLETED] = \'COMPLETA\' And [TASK_SUBTYPE] <> \'RECEPCION_TRASLADO\' And [TASK_" +
+    "SUBTYPE] <> \'TAREA_CONTEO_FISICO\'";
             formatConditionRuleExpression9.PredefinedName = "Green Fill, Green Text";
             gridFormatRule9.Rule = formatConditionRuleExpression9;
             gridFormatRule10.ApplyToRow = true;
@@ -1030,6 +1034,14 @@
             formatConditionRuleExpression15.Appearance.Options.UseBorderColor = true;
             formatConditionRuleExpression15.Expression = "[COMPLETED_DOC_ERP] <> 1 AND [IS_FROM_ERP] = 1";
             gridFormatRule15.Rule = formatConditionRuleExpression15;
+            gridFormatRule16.ApplyToRow = true;
+            gridFormatRule16.Name = "Format8";
+            formatConditionRuleExpression16.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            formatConditionRuleExpression16.Appearance.Options.UseBackColor = true;
+            formatConditionRuleExpression16.Expression = "[TASK_SUBTYPE] = \'TAREA_CONTEO_FISICO\' And [IS_AUTHORIZED_DESCRIPTION] = \'NO\' And" +
+    " [IS_COMPLETED] = \'COMPLETA\'";
+            formatConditionRuleExpression16.PredefinedName = "Yellow Fill, Yellow Text";
+            gridFormatRule16.Rule = formatConditionRuleExpression16;
             this.UiVistaEncabezado.FormatRules.Add(gridFormatRule8);
             this.UiVistaEncabezado.FormatRules.Add(gridFormatRule9);
             this.UiVistaEncabezado.FormatRules.Add(gridFormatRule10);
@@ -1038,6 +1050,7 @@
             this.UiVistaEncabezado.FormatRules.Add(gridFormatRule13);
             this.UiVistaEncabezado.FormatRules.Add(gridFormatRule14);
             this.UiVistaEncabezado.FormatRules.Add(gridFormatRule15);
+            this.UiVistaEncabezado.FormatRules.Add(gridFormatRule16);
             this.UiVistaEncabezado.GridControl = this.UiContenedorVistaTareasEncabezado;
             this.UiVistaEncabezado.GroupCount = 1;
             this.UiVistaEncabezado.LevelIndent = 0;
@@ -1818,58 +1831,58 @@
             this.UiColCantidadRecepcion,
             this.UiColCantidadDocumentoRecepcion,
             this.UiColDiferenciaCantidadRecepcion});
-            gridFormatRule16.ApplyToRow = true;
-            gridFormatRule16.Name = "Format0";
-            formatConditionRuleExpression16.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            formatConditionRuleExpression16.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            formatConditionRuleExpression16.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            formatConditionRuleExpression16.Appearance.Options.UseBackColor = true;
-            formatConditionRuleExpression16.Appearance.Options.UseBorderColor = true;
-            formatConditionRuleExpression16.Expression = "[QTY_DIFFERENCE] < 0";
-            gridFormatRule16.Rule = formatConditionRuleExpression16;
             gridFormatRule17.ApplyToRow = true;
-            gridFormatRule17.Name = "Format1";
-            formatConditionRuleExpression17.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            formatConditionRuleExpression17.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            formatConditionRuleExpression17.Appearance.BorderColor = System.Drawing.Color.Yellow;
+            gridFormatRule17.Name = "Format0";
+            formatConditionRuleExpression17.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            formatConditionRuleExpression17.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            formatConditionRuleExpression17.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             formatConditionRuleExpression17.Appearance.Options.UseBackColor = true;
             formatConditionRuleExpression17.Appearance.Options.UseBorderColor = true;
-            formatConditionRuleExpression17.Expression = "[QTY_DIFFERENCE] > 0";
+            formatConditionRuleExpression17.Expression = "[QTY_DIFFERENCE] < 0";
             gridFormatRule17.Rule = formatConditionRuleExpression17;
             gridFormatRule18.ApplyToRow = true;
-            gridFormatRule18.Name = "Format2";
-            formatConditionRuleExpression18.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            formatConditionRuleExpression18.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            formatConditionRuleExpression18.Appearance.BorderColor = System.Drawing.Color.Lime;
+            gridFormatRule18.Name = "Format1";
+            formatConditionRuleExpression18.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            formatConditionRuleExpression18.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            formatConditionRuleExpression18.Appearance.BorderColor = System.Drawing.Color.Yellow;
             formatConditionRuleExpression18.Appearance.Options.UseBackColor = true;
             formatConditionRuleExpression18.Appearance.Options.UseBorderColor = true;
-            formatConditionRuleExpression18.Expression = "IsNullOrEmpty([QTY_DIFFERENCE]) Or [QTY_DIFFERENCE] = 0";
+            formatConditionRuleExpression18.Expression = "[QTY_DIFFERENCE] > 0";
             gridFormatRule18.Rule = formatConditionRuleExpression18;
             gridFormatRule19.ApplyToRow = true;
-            gridFormatRule19.Name = "Format3";
-            formatConditionRuleExpression19.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            formatConditionRuleExpression19.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            formatConditionRuleExpression19.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            gridFormatRule19.Name = "Format2";
+            formatConditionRuleExpression19.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            formatConditionRuleExpression19.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            formatConditionRuleExpression19.Appearance.BorderColor = System.Drawing.Color.Lime;
             formatConditionRuleExpression19.Appearance.Options.UseBackColor = true;
             formatConditionRuleExpression19.Appearance.Options.UseBorderColor = true;
-            formatConditionRuleExpression19.Expression = "[QTY] >= 0 And [QTY_DOC] <> [QTY] And [QTY_DIFFERENCE] <> 0";
-            formatConditionRuleExpression19.PredefinedName = "Yellow Fill, Yellow Text";
+            formatConditionRuleExpression19.Expression = "IsNullOrEmpty([QTY_DIFFERENCE]) Or [QTY_DIFFERENCE] = 0";
             gridFormatRule19.Rule = formatConditionRuleExpression19;
             gridFormatRule20.ApplyToRow = true;
-            gridFormatRule20.Name = "Format4";
-            formatConditionRuleExpression20.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            formatConditionRuleExpression20.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            formatConditionRuleExpression20.Appearance.BorderColor = System.Drawing.Color.Lime;
+            gridFormatRule20.Name = "Format3";
+            formatConditionRuleExpression20.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            formatConditionRuleExpression20.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            formatConditionRuleExpression20.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             formatConditionRuleExpression20.Appearance.Options.UseBackColor = true;
             formatConditionRuleExpression20.Appearance.Options.UseBorderColor = true;
-            formatConditionRuleExpression20.Expression = "[QTY] = [QTY_DOC]";
-            formatConditionRuleExpression20.PredefinedName = "Green Fill, Green Text";
+            formatConditionRuleExpression20.Expression = "[QTY] >= 0 And [QTY_DOC] <> [QTY] And [QTY_DIFFERENCE] <> 0";
+            formatConditionRuleExpression20.PredefinedName = "Yellow Fill, Yellow Text";
             gridFormatRule20.Rule = formatConditionRuleExpression20;
-            this.UiVistaDetalleRecepcion.FormatRules.Add(gridFormatRule16);
+            gridFormatRule21.ApplyToRow = true;
+            gridFormatRule21.Name = "Format4";
+            formatConditionRuleExpression21.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            formatConditionRuleExpression21.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            formatConditionRuleExpression21.Appearance.BorderColor = System.Drawing.Color.Lime;
+            formatConditionRuleExpression21.Appearance.Options.UseBackColor = true;
+            formatConditionRuleExpression21.Appearance.Options.UseBorderColor = true;
+            formatConditionRuleExpression21.Expression = "[QTY] = [QTY_DOC]";
+            formatConditionRuleExpression21.PredefinedName = "Green Fill, Green Text";
+            gridFormatRule21.Rule = formatConditionRuleExpression21;
             this.UiVistaDetalleRecepcion.FormatRules.Add(gridFormatRule17);
             this.UiVistaDetalleRecepcion.FormatRules.Add(gridFormatRule18);
             this.UiVistaDetalleRecepcion.FormatRules.Add(gridFormatRule19);
             this.UiVistaDetalleRecepcion.FormatRules.Add(gridFormatRule20);
+            this.UiVistaDetalleRecepcion.FormatRules.Add(gridFormatRule21);
             this.UiVistaDetalleRecepcion.GridControl = this.UiContenedorDetalle;
             this.UiVistaDetalleRecepcion.GroupSummary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridGroupSummaryItem(DevExpress.Data.SummaryItemType.Count, "MATERIAL_ID", this.UiColCodigoMaterialRecepcion, "(Código Material: Count={0})"),
@@ -1978,28 +1991,28 @@
             this.UiColCodigoBarraDetallePicking,
             this.UiColIsCompleted,
             this.UiColClassName});
-            gridFormatRule21.ApplyToRow = true;
-            gridFormatRule21.Name = "Format0";
-            formatConditionRuleExpression21.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            formatConditionRuleExpression21.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            formatConditionRuleExpression21.Appearance.BorderColor = System.Drawing.Color.Lime;
-            formatConditionRuleExpression21.Appearance.Options.UseBackColor = true;
-            formatConditionRuleExpression21.Appearance.Options.UseBorderColor = true;
-            formatConditionRuleExpression21.Expression = "[QTY] = 0";
-            formatConditionRuleExpression21.PredefinedName = "Green Text";
-            gridFormatRule21.Rule = formatConditionRuleExpression21;
             gridFormatRule22.ApplyToRow = true;
-            gridFormatRule22.Name = "Format1";
-            formatConditionRuleExpression22.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            formatConditionRuleExpression22.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            formatConditionRuleExpression22.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            gridFormatRule22.Name = "Format0";
+            formatConditionRuleExpression22.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            formatConditionRuleExpression22.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            formatConditionRuleExpression22.Appearance.BorderColor = System.Drawing.Color.Lime;
             formatConditionRuleExpression22.Appearance.Options.UseBackColor = true;
             formatConditionRuleExpression22.Appearance.Options.UseBorderColor = true;
-            formatConditionRuleExpression22.Expression = "[QTY] > 0";
-            formatConditionRuleExpression22.PredefinedName = "Yellow Fill, Yellow Text";
+            formatConditionRuleExpression22.Expression = "[QTY] = 0";
+            formatConditionRuleExpression22.PredefinedName = "Green Text";
             gridFormatRule22.Rule = formatConditionRuleExpression22;
-            this.UiVistaDetallePicking.FormatRules.Add(gridFormatRule21);
+            gridFormatRule23.ApplyToRow = true;
+            gridFormatRule23.Name = "Format1";
+            formatConditionRuleExpression23.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            formatConditionRuleExpression23.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            formatConditionRuleExpression23.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            formatConditionRuleExpression23.Appearance.Options.UseBackColor = true;
+            formatConditionRuleExpression23.Appearance.Options.UseBorderColor = true;
+            formatConditionRuleExpression23.Expression = "[QTY] > 0";
+            formatConditionRuleExpression23.PredefinedName = "Yellow Fill, Yellow Text";
+            gridFormatRule23.Rule = formatConditionRuleExpression23;
             this.UiVistaDetallePicking.FormatRules.Add(gridFormatRule22);
+            this.UiVistaDetallePicking.FormatRules.Add(gridFormatRule23);
             this.UiVistaDetallePicking.GridControl = this.UiContenedorDetalle;
             this.UiVistaDetallePicking.LevelIndent = 0;
             this.UiVistaDetallePicking.Name = "UiVistaDetallePicking";
@@ -2811,12 +2824,12 @@
             this.UiColAsignado,
             this.UiColLote,
             this.UiColFechaExpiracion});
-            gridFormatRule23.ApplyToRow = true;
-            gridFormatRule23.Name = "Format0";
-            formatConditionRuleExpression23.Expression = "[ASIGNADO] = [QTY]";
-            formatConditionRuleExpression23.PredefinedName = "Green Fill, Green Text";
-            gridFormatRule23.Rule = formatConditionRuleExpression23;
-            this.UIVistaConfirmacionDetalleRecepcion.FormatRules.Add(gridFormatRule23);
+            gridFormatRule24.ApplyToRow = true;
+            gridFormatRule24.Name = "Format0";
+            formatConditionRuleExpression24.Expression = "[ASIGNADO] = [QTY]";
+            formatConditionRuleExpression24.PredefinedName = "Green Fill, Green Text";
+            gridFormatRule24.Rule = formatConditionRuleExpression24;
+            this.UIVistaConfirmacionDetalleRecepcion.FormatRules.Add(gridFormatRule24);
             this.UIVistaConfirmacionDetalleRecepcion.GridControl = this.UiContenedorVistaConfirmacionDetalleRecepcion;
             this.UIVistaConfirmacionDetalleRecepcion.LevelIndent = 0;
             this.UIVistaConfirmacionDetalleRecepcion.Name = "UIVistaConfirmacionDetalleRecepcion";
@@ -2934,18 +2947,18 @@
             this.UiColUmFactor,
             this.UiColQtyConfirmado,
             this.UiColERP_BODEGA});
-            gridFormatRule24.ApplyToRow = true;
-            gridFormatRule24.Name = "Format0";
-            formatConditionRuleExpression24.Expression = "[PENDING] > 0 And [QTY_CONFIRMED] <> [QTY] And [QTY_CONFIRMED] > 0";
-            formatConditionRuleExpression24.PredefinedName = "Yellow Fill, Yellow Text";
-            gridFormatRule24.Rule = formatConditionRuleExpression24;
             gridFormatRule25.ApplyToRow = true;
-            gridFormatRule25.Name = "Format1";
-            formatConditionRuleExpression25.Expression = "[PENDING] = 0";
-            formatConditionRuleExpression25.PredefinedName = "Green Fill, Green Text";
+            gridFormatRule25.Name = "Format0";
+            formatConditionRuleExpression25.Expression = "[PENDING] > 0 And [QTY_CONFIRMED] <> [QTY] And [QTY_CONFIRMED] > 0";
+            formatConditionRuleExpression25.PredefinedName = "Yellow Fill, Yellow Text";
             gridFormatRule25.Rule = formatConditionRuleExpression25;
-            this.UIVistaConfirmacionOrdenDeCompra.FormatRules.Add(gridFormatRule24);
+            gridFormatRule26.ApplyToRow = true;
+            gridFormatRule26.Name = "Format1";
+            formatConditionRuleExpression26.Expression = "[PENDING] = 0";
+            formatConditionRuleExpression26.PredefinedName = "Green Fill, Green Text";
+            gridFormatRule26.Rule = formatConditionRuleExpression26;
             this.UIVistaConfirmacionOrdenDeCompra.FormatRules.Add(gridFormatRule25);
+            this.UIVistaConfirmacionOrdenDeCompra.FormatRules.Add(gridFormatRule26);
             this.UIVistaConfirmacionOrdenDeCompra.GridControl = this.UiContenedorVistaConfirmacionOrdenDeCompra;
             this.UIVistaConfirmacionOrdenDeCompra.LevelIndent = 0;
             this.UIVistaConfirmacionOrdenDeCompra.Name = "UIVistaConfirmacionOrdenDeCompra";
@@ -3275,12 +3288,12 @@
             this.UIColCorrelativoConfirmacionSerie,
             this.UiColNombreMaterialSeries});
             this.UIVistaConfirmacionSeries.CustomizationFormBounds = new System.Drawing.Rectangle(942, 353, 212, 212);
-            gridFormatRule26.ApplyToRow = true;
-            gridFormatRule26.Name = "Format0";
-            formatConditionRuleExpression26.Expression = "[ASIGNADO] = [QTY]";
-            formatConditionRuleExpression26.PredefinedName = "Green Fill, Green Text";
-            gridFormatRule26.Rule = formatConditionRuleExpression26;
-            this.UIVistaConfirmacionSeries.FormatRules.Add(gridFormatRule26);
+            gridFormatRule27.ApplyToRow = true;
+            gridFormatRule27.Name = "Format0";
+            formatConditionRuleExpression27.Expression = "[ASIGNADO] = [QTY]";
+            formatConditionRuleExpression27.PredefinedName = "Green Fill, Green Text";
+            gridFormatRule27.Rule = formatConditionRuleExpression27;
+            this.UIVistaConfirmacionSeries.FormatRules.Add(gridFormatRule27);
             this.UIVistaConfirmacionSeries.GridControl = this.UIContenedorVistaConfirmacionSeries;
             this.UIVistaConfirmacionSeries.LevelIndent = 0;
             this.UIVistaConfirmacionSeries.Name = "UIVistaConfirmacionSeries";
