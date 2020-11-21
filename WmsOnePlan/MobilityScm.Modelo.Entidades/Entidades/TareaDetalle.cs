@@ -22,6 +22,7 @@ namespace MobilityScm.Modelo.Entidades
         public string CODIGO_POLIZA_SOURCE { get; set; }
         public int USE_PICKING_LINE { get; set; }
         public int PHYSICAL_COUNT_DETAIL_ID { get; set; }
+        public decimal PHYSICAL_COUNT_HEADER_ID { get; set; }
         public string WAREHOUSE_ID { get; set; }
         public string ZONE { get; set; }
         public string LOCATION { get; set; }

@@ -57,6 +57,42 @@ namespace MobilityScm.Modelo.Servicios
             }
         }
 
+        public Operacion AutorizarDocumentoErpConteoFisico(TareaArgumento tareaArgumento)
+        {
+            try
+            {
+                DbParameter[] parameters = {
+                   new OAParameter
+                   {
+                       ParameterName = "@PHYSICAL_COUNT_HEADER_ID",
+                       Value = tareaArgumento.Tarea.PHYSICAL_COUNT_HEADER_ID
+
+                   }
+                   // new OAParameter
+                   //{
+                   //    ParameterName = "@LAST_UPDATE_BY",
+                   //    Value = tareaArgumento.Login
+                   //}
+
+                };
+                var op = BaseDeDatosServicio.ExecuteQuery<Operacion>(BaseDeDatosServicio.Esquema + ".OP_WMS_SP_AUTHORIZE_ERP_COUNT_DOCUMENT", CommandType.StoredProcedure, true, parameters)[0];
+                if (op.Resultado == ResultadoOperacionTipo.Error)
+                {
+                    throw new Exception("Ocurrió un error al autorizar picking ERP: " + op.Mensaje);
+                }
+                return op;
+            }
+            catch (Exception ex)
+            {
+                return new Operacion
+                {
+                    Codigo = -1,
+                    Mensaje = ex.Message,
+                    Resultado = ResultadoOperacionTipo.Error
+                };
+            }
+        }
+
         public Operacion AutorizarDocumentoErpRecepcion(TareaArgumento tareaArgumento)
         {
             try

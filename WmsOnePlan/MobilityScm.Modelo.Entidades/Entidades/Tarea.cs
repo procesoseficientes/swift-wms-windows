@@ -29,6 +29,8 @@ namespace MobilityScm.Modelo.Entidades
 
         public decimal? WAVE_PICKING_ID { get; set; }
 
+        public decimal PHYSICAL_COUNT_HEADER_ID { get; set; }
+
         public decimal? TRANS_OWNER { get; set; }
 
         public string TASK_TYPE { get; set; }

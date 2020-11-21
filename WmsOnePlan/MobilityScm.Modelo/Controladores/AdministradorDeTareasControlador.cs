@@ -1334,10 +1334,10 @@ namespace MobilityScm.Modelo.Controladores
             {
                 var contador = 0;
                 foreach (var tarea in _vista.Tarea.ToList().Where(t => t.IS_SELECTED
-                                                                    && (t.TASK_TYPE.ToUpper().Equals("TAREA_PICKING") || t.TASK_TYPE.ToUpper().Equals("TAREA_RECEPCION"))
-                                                                    && (t.IS_FROM_ERP.ToUpper().Equals("SI") || t.IS_FROM_SONDA.ToUpper().Equals("SI") || t.TASK_SUBTYPE == "RECEPCION_TRASLADO")
-                                                                    && t.IS_COMPLETED.ToUpper().Equals("COMPLETA")
-                                                                    && t.DetalleErp.Exists(td => td.IS_POSTED_ERP != 1 || td.ATTEMPTED_WITH_ERROR == td.MAX_ATTEMPTS)))
+                    && (t.TASK_TYPE.ToUpper().Equals("TAREA_PICKING") || t.TASK_TYPE.ToUpper().Equals("TAREA_RECEPCION") || t.TASK_TYPE.ToUpper().Equals("TAREA_CONTEO_FISICO"))
+                    && (t.TASK_SUBTYPE == "TAREA_CONTEO_FISICO" || t.IS_FROM_SONDA.ToUpper().Equals("SI") || t.TASK_SUBTYPE == "RECEPCION_TRASLADO" || t.IS_FROM_ERP.ToUpper().Equals("SI"))
+                    && (t.IS_COMPLETED.ToUpper().Equals("COMPLETA") || t.TASK_SUBTYPE == "TAREA_CONTEO_FISICO")
+                    && t.DetalleErp.Exists(td => td.IS_POSTED_ERP != 1 || td.ATTEMPTED_WITH_ERROR == td.MAX_ATTEMPTS || t.TASK_SUBTYPE == "TAREA_CONTEO_FISICO")))
                 {
                     var op = new Operacion() { Resultado = ResultadoOperacionTipo.Exito };
                     switch (tarea.TASK_TYPE.ToUpper())
@@ -1371,6 +1371,15 @@ namespace MobilityScm.Modelo.Controladores
                                     Tarea = tarea,
                                     Login = InteraccionConUsuarioServicio.ObtenerUsuario()
                                 });
+                            break;
+                        case "TAREA_CONTEO_FISICO":
+                            op = TareaServicio.AutorizarDocumentoErpConteoFisico(
+                                new TareaArgumento
+                                {
+                                    Tarea = tarea,
+                                    Login = InteraccionConUsuarioServicio.ObtenerUsuario()
+                                });
+
                             break;
                     }
                     if (op.Resultado == ResultadoOperacionTipo.Error)
