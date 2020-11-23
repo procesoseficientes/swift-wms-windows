@@ -6,8 +6,10 @@ using System.Linq;
 using System.Net.Mime;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Serialization;
+using DevExpress.XtraEditors;
 using MobilityScm.Modelo.Argumentos;
 using MobilityScm.Modelo.Configuracion;
 using MobilityScm.Modelo.Entidades;
@@ -1328,6 +1330,12 @@ namespace MobilityScm.Modelo.Controladores
             }
         }
 
+        private bool ConfirmacionEnviarERP()
+        {
+            return XtraMessageBox.Show("¿Está seguro de que desea enviar la tarea a ERP?", "Swift 3PL", MessageBoxButtons.YesNo,
+                       MessageBoxIcon.Question) == DialogResult.Yes;
+        }
+
         private void AutorizarDocumentosErp()
         {
             try
@@ -1373,12 +1381,16 @@ namespace MobilityScm.Modelo.Controladores
                                 });
                             break;
                         case "TAREA_CONTEO_FISICO":
-                            op = TareaServicio.AutorizarDocumentoErpConteoFisico(
-                                new TareaArgumento
-                                {
-                                    Tarea = tarea,
-                                    Login = InteraccionConUsuarioServicio.ObtenerUsuario()
-                                });
+
+                            if (ConfirmacionEnviarERP())
+                            {
+                                op = TareaServicio.AutorizarDocumentoErpConteoFisico(
+                               new TareaArgumento
+                               {
+                                   Tarea = tarea,
+                                   Login = InteraccionConUsuarioServicio.ObtenerUsuario()
+                               });
+                            }
 
                             break;
                     }
