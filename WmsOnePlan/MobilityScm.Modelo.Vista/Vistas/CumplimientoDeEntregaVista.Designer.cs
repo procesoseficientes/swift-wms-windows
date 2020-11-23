@@ -199,7 +199,7 @@
             this.UiGridVistaCumpimientoDeEntrega.Name = "UiGridVistaCumpimientoDeEntrega";
             this.UiGridVistaCumpimientoDeEntrega.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemProgressBar1});
-            this.UiGridVistaCumpimientoDeEntrega.Size = new System.Drawing.Size(873, 607);
+            this.UiGridVistaCumpimientoDeEntrega.Size = new System.Drawing.Size(872, 612);
             this.UiGridVistaCumpimientoDeEntrega.TabIndex = 4;
             this.UiGridVistaCumpimientoDeEntrega.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.UiVistaCumplimientoDeEntrega});
@@ -650,7 +650,7 @@
             this.barDockControl5.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControl5.Location = new System.Drawing.Point(0, 0);
             this.barDockControl5.Manager = this.barManager2;
-            this.barDockControl5.Size = new System.Drawing.Size(1284, 31);
+            this.barDockControl5.Size = new System.Drawing.Size(1284, 24);
             // 
             // barDockControl6
             // 
@@ -664,17 +664,17 @@
             // 
             this.barDockControl7.CausesValidation = false;
             this.barDockControl7.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControl7.Location = new System.Drawing.Point(0, 31);
+            this.barDockControl7.Location = new System.Drawing.Point(0, 24);
             this.barDockControl7.Manager = this.barManager2;
-            this.barDockControl7.Size = new System.Drawing.Size(0, 670);
+            this.barDockControl7.Size = new System.Drawing.Size(0, 677);
             // 
             // barDockControl8
             // 
             this.barDockControl8.CausesValidation = false;
             this.barDockControl8.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl8.Location = new System.Drawing.Point(1284, 31);
+            this.barDockControl8.Location = new System.Drawing.Point(1284, 24);
             this.barDockControl8.Manager = this.barManager2;
-            this.barDockControl8.Size = new System.Drawing.Size(0, 670);
+            this.barDockControl8.Size = new System.Drawing.Size(0, 677);
             // 
             // UiVehiculos
             // 
@@ -738,7 +738,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "Refrescar", "UiBtnRefrescarListaVehiculos", null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.UiListaVehiculos.Properties.PopupView = this.UiListaVehiculo;
             this.UiListaVehiculos.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiListaVehiculos_Properties_ButtonClick);
-            this.UiListaVehiculos.Size = new System.Drawing.Size(590, 22);
+            this.UiListaVehiculos.Size = new System.Drawing.Size(590, 24);
             this.UiListaVehiculos.TabIndex = 9;
             this.UiListaVehiculos.CustomDisplayText += new DevExpress.XtraEditors.Controls.CustomDisplayTextEventHandler(this.UiListaVehiculos_CustomDisplayText);
             // 
@@ -863,7 +863,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "Refrescar", "UiBtnRefrescarListaPilotos", null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.UiListaPilotos.Properties.PopupView = this.UiListaPiloto;
             this.UiListaPilotos.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiListaVehiculos_Properties_ButtonClick);
-            this.UiListaPilotos.Size = new System.Drawing.Size(590, 22);
+            this.UiListaPilotos.Size = new System.Drawing.Size(590, 24);
             this.UiListaPilotos.TabIndex = 9;
             this.UiListaPilotos.CustomDisplayText += new DevExpress.XtraEditors.Controls.CustomDisplayTextEventHandler(this.UiListaPilotos_CustomDisplayText);
             // 
@@ -972,7 +972,7 @@
             // 
             this.UiSplitControlPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.UiSplitControlPrincipal.Horizontal = false;
-            this.UiSplitControlPrincipal.Location = new System.Drawing.Point(0, 31);
+            this.UiSplitControlPrincipal.Location = new System.Drawing.Point(0, 24);
             this.UiSplitControlPrincipal.Name = "UiSplitControlPrincipal";
             this.UiSplitControlPrincipal.Panel1.Controls.Add(this.UiListaVehiculos);
             this.UiSplitControlPrincipal.Panel1.Controls.Add(this.labelControl1);
@@ -981,7 +981,7 @@
             this.UiSplitControlPrincipal.Panel1.Text = "Panel1";
             this.UiSplitControlPrincipal.Panel2.Controls.Add(this.UiTabPrincipal);
             this.UiSplitControlPrincipal.Panel2.Text = "Panel2";
-            this.UiSplitControlPrincipal.Size = new System.Drawing.Size(1284, 670);
+            this.UiSplitControlPrincipal.Size = new System.Drawing.Size(1284, 677);
             this.UiSplitControlPrincipal.SplitterPosition = 30;
             this.UiSplitControlPrincipal.TabIndex = 15;
             this.UiSplitControlPrincipal.Text = "splitContainerControl1";
@@ -992,7 +992,7 @@
             this.UiTabPrincipal.Location = new System.Drawing.Point(0, 0);
             this.UiTabPrincipal.Name = "UiTabPrincipal";
             this.UiTabPrincipal.SelectedTabPage = this.UiTabPaginaDetalle;
-            this.UiTabPrincipal.Size = new System.Drawing.Size(1284, 635);
+            this.UiTabPrincipal.Size = new System.Drawing.Size(1284, 637);
             this.UiTabPrincipal.TabIndex = 6;
             this.UiTabPrincipal.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.UiTabPaginaDetalle,
@@ -1003,7 +1003,7 @@
             // 
             this.UiTabPaginaDetalle.Controls.Add(this.UiSplitContainerMapa);
             this.UiTabPaginaDetalle.Name = "UiTabPaginaDetalle";
-            this.UiTabPaginaDetalle.Size = new System.Drawing.Size(1278, 607);
+            this.UiTabPaginaDetalle.Size = new System.Drawing.Size(1282, 612);
             this.UiTabPaginaDetalle.Text = "Detalle";
             // 
             // UiSplitContainerMapa
@@ -1013,11 +1013,11 @@
             this.UiSplitContainerMapa.Location = new System.Drawing.Point(0, 0);
             this.UiSplitContainerMapa.Name = "UiSplitContainerMapa";
             this.UiSplitContainerMapa.Panel1.Controls.Add(this.UiControlDeHerramientas);
-            this.UiSplitContainerMapa.Panel1.MinSize = 65;
+            this.UiSplitContainerMapa.Panel1.MinSize = 57;
             this.UiSplitContainerMapa.Panel1.Text = "Panel1";
             this.UiSplitContainerMapa.Panel2.Controls.Add(this.UiGridVistaCumpimientoDeEntrega);
             this.UiSplitContainerMapa.Panel2.Text = "Panel2";
-            this.UiSplitContainerMapa.Size = new System.Drawing.Size(1278, 607);
+            this.UiSplitContainerMapa.Size = new System.Drawing.Size(1282, 612);
             this.UiSplitContainerMapa.SplitterPosition = 400;
             this.UiSplitContainerMapa.TabIndex = 5;
             this.UiSplitContainerMapa.Text = "splitContainerControl1";
@@ -1033,7 +1033,7 @@
             this.UiControlDeHerramientas.OptionsMinimizing.NormalWidth = 400;
             this.UiControlDeHerramientas.OptionsView.ShowMenuButton = false;
             this.UiControlDeHerramientas.OptionsView.ShowSearchPanel = false;
-            this.UiControlDeHerramientas.Size = new System.Drawing.Size(400, 607);
+            this.UiControlDeHerramientas.Size = new System.Drawing.Size(400, 612);
             this.UiControlDeHerramientas.TabIndex = 0;
             // 
             // UiNavigationPanePrincipal
@@ -1048,9 +1048,9 @@
             this.UiNavigationPanePrincipal.PageProperties.ShowExpandButton = false;
             this.UiNavigationPanePrincipal.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
             this.navigationPage1});
-            this.UiNavigationPanePrincipal.RegularSize = new System.Drawing.Size(393, 779);
+            this.UiNavigationPanePrincipal.RegularSize = new System.Drawing.Size(393, 784);
             this.UiNavigationPanePrincipal.SelectedPage = this.navigationPage1;
-            this.UiNavigationPanePrincipal.Size = new System.Drawing.Size(393, 779);
+            this.UiNavigationPanePrincipal.Size = new System.Drawing.Size(393, 784);
             this.UiNavigationPanePrincipal.TabIndex = 3;
             this.UiNavigationPanePrincipal.Text = "navigationPane1";
             this.UiNavigationPanePrincipal.StateChanged += new DevExpress.XtraBars.Navigation.StateChangedEventHandler(this.UiNavigationPanePrincipal_StateChanged);
@@ -1061,7 +1061,7 @@
             this.navigationPage1.Controls.Add(this.UiMapaTracking);
             this.navigationPage1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("navigationPage1.ImageOptions.Image")));
             this.navigationPage1.Name = "navigationPage1";
-            this.navigationPage1.Size = new System.Drawing.Size(327, 733);
+            this.navigationPage1.Size = new System.Drawing.Size(306, 720);
             // 
             // UiMapaTracking
             // 
@@ -1072,7 +1072,7 @@
             this.UiMapaTracking.Location = new System.Drawing.Point(3, 3);
             this.UiMapaTracking.Name = "UiMapaTracking";
             this.UiMapaTracking.NavigationPanelOptions.Visible = false;
-            this.UiMapaTracking.Size = new System.Drawing.Size(321, 529);
+            this.UiMapaTracking.Size = new System.Drawing.Size(321, 534);
             this.UiMapaTracking.TabIndex = 0;
             this.UiMapaTracking.SelectionChanged += new DevExpress.XtraMap.MapSelectionChangedEventHandler(this.UsuarioSeleccionoPing);
             this.UiMapaTracking.DoubleClick += new System.EventHandler(this.UiMapaTracking_DoubleClick);
@@ -1081,7 +1081,7 @@
             // 
             this.UiTabPaginaMapaYFoto.Controls.Add(this.UiSplitMapaYFoto);
             this.UiTabPaginaMapaYFoto.Name = "UiTabPaginaMapaYFoto";
-            this.UiTabPaginaMapaYFoto.Size = new System.Drawing.Size(1278, 607);
+            this.UiTabPaginaMapaYFoto.Size = new System.Drawing.Size(1282, 605);
             this.UiTabPaginaMapaYFoto.Text = "Mapa y Foto";
             // 
             // UiSplitMapaYFoto
@@ -1091,10 +1091,11 @@
             this.UiSplitMapaYFoto.Location = new System.Drawing.Point(0, 0);
             this.UiSplitMapaYFoto.Name = "UiSplitMapaYFoto";
             this.UiSplitMapaYFoto.Panel1.Controls.Add(this.UiControlDeHerramientasMapaYFoto);
+            this.UiSplitMapaYFoto.Panel1.MinSize = 57;
             this.UiSplitMapaYFoto.Panel1.Text = "Panel1";
             this.UiSplitMapaYFoto.Panel2.Controls.Add(this.UiContenedorDeImagenes);
             this.UiSplitMapaYFoto.Panel2.Text = "Panel2";
-            this.UiSplitMapaYFoto.Size = new System.Drawing.Size(1278, 607);
+            this.UiSplitMapaYFoto.Size = new System.Drawing.Size(1282, 605);
             this.UiSplitMapaYFoto.SplitterPosition = 400;
             this.UiSplitMapaYFoto.TabIndex = 6;
             this.UiSplitMapaYFoto.Text = "splitContainerControl1";
@@ -1110,7 +1111,7 @@
             this.UiControlDeHerramientasMapaYFoto.OptionsMinimizing.NormalWidth = 400;
             this.UiControlDeHerramientasMapaYFoto.OptionsView.ShowMenuButton = false;
             this.UiControlDeHerramientasMapaYFoto.OptionsView.ShowSearchPanel = false;
-            this.UiControlDeHerramientasMapaYFoto.Size = new System.Drawing.Size(400, 607);
+            this.UiControlDeHerramientasMapaYFoto.Size = new System.Drawing.Size(400, 605);
             this.UiControlDeHerramientasMapaYFoto.TabIndex = 0;
             // 
             // UiNavigationPaneMapaYFoto
@@ -1127,7 +1128,7 @@
             this.navigationPage2});
             this.UiNavigationPaneMapaYFoto.RegularSize = new System.Drawing.Size(393, 799);
             this.UiNavigationPaneMapaYFoto.SelectedPage = this.navigationPage2;
-            this.UiNavigationPaneMapaYFoto.Size = new System.Drawing.Size(393, 779);
+            this.UiNavigationPaneMapaYFoto.Size = new System.Drawing.Size(393, 777);
             this.UiNavigationPaneMapaYFoto.TabIndex = 3;
             this.UiNavigationPaneMapaYFoto.Text = "navigationPane1";
             // 
@@ -1137,7 +1138,7 @@
             this.navigationPage2.Controls.Add(this.UiMapaTrackingMapaYFoto);
             this.navigationPage2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("navigationPage2.ImageOptions.Image")));
             this.navigationPage2.Name = "navigationPage2";
-            this.navigationPage2.Size = new System.Drawing.Size(327, 733);
+            this.navigationPage2.Size = new System.Drawing.Size(306, 713);
             // 
             // UiMapaTrackingMapaYFoto
             // 
@@ -1148,7 +1149,7 @@
             this.UiMapaTrackingMapaYFoto.Location = new System.Drawing.Point(3, 3);
             this.UiMapaTrackingMapaYFoto.Name = "UiMapaTrackingMapaYFoto";
             this.UiMapaTrackingMapaYFoto.NavigationPanelOptions.Visible = false;
-            this.UiMapaTrackingMapaYFoto.Size = new System.Drawing.Size(321, 529);
+            this.UiMapaTrackingMapaYFoto.Size = new System.Drawing.Size(300, 509);
             this.UiMapaTrackingMapaYFoto.TabIndex = 0;
             this.UiMapaTrackingMapaYFoto.SelectionChanged += new DevExpress.XtraMap.MapSelectionChangedEventHandler(this.UiMapaTrackingMapaYFoto_SelectionChanged);
             // 
@@ -1157,7 +1158,7 @@
             this.UiContenedorDeImagenes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.UiContenedorDeImagenes.Location = new System.Drawing.Point(0, 0);
             this.UiContenedorDeImagenes.Name = "UiContenedorDeImagenes";
-            this.UiContenedorDeImagenes.Size = new System.Drawing.Size(873, 607);
+            this.UiContenedorDeImagenes.Size = new System.Drawing.Size(872, 605);
             this.UiContenedorDeImagenes.TabIndex = 0;
             // 
             // UiTimerCamion

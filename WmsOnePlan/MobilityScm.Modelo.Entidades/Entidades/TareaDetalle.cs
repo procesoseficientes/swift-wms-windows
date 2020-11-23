@@ -26,6 +26,9 @@ namespace MobilityScm.Modelo.Entidades
         public string ASSIGNED_TO { get; set; }
         public string STATUS { get; set; }
         public string REGIMEN { get; set; }
+        public int QTY_SCANNED { get; set; }
+        public int QTY_EXPECTED { get; set; }
+        public int DIFFERENCE { get; set; }
         public string DISTRIBUTION_CENTER { get; set; }
         public string TASK_SUBTYPE { get; set; }
 
