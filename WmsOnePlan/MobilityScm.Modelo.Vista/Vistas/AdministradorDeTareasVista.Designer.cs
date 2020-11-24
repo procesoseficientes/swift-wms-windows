@@ -168,6 +168,7 @@
             this.UiColNombreProyecto = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UiColNombreCortoProyecto = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UiCalNumeroOrden = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.UiColFin = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UiContendorDeBarras = new DevExpress.XtraBars.BarManager(this.components);
             this.UiBarraTarea = new DevExpress.XtraBars.Bar();
             this.UiSwitchActualizarAutomaticamente = new DevExpress.XtraBars.BarToggleSwitchItem();
