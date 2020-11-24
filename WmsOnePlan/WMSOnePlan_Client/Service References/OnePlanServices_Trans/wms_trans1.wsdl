@@ -838,6 +838,30 @@
           </s:sequence>
         </s:complexType>
       </s:element>
+      <s:element name="GetDraftDocEntry">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="passId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="environmentName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDraftDocEntryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDraftDocEntryResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
     </s:schema>
   </wsdl:types>
   <wsdl:message name="RegisterOccupancySoapIn">
@@ -1056,6 +1080,12 @@
   <wsdl:message name="UpdateDeliveryNoteERPSoapOut">
     <wsdl:part name="parameters" element="tns:UpdateDeliveryNoteERPResponse" />
   </wsdl:message>
+  <wsdl:message name="GetDraftDocEntrySoapIn">
+    <wsdl:part name="parameters" element="tns:GetDraftDocEntry" />
+  </wsdl:message>
+  <wsdl:message name="GetDraftDocEntrySoapOut">
+    <wsdl:part name="parameters" element="tns:GetDraftDocEntryResponse" />
+  </wsdl:message>
   <wsdl:portType name="WMS_TransSoap">
     <wsdl:operation name="RegisterOccupancy">
       <wsdl:input message="tns:RegisterOccupancySoapIn" />
@@ -1222,6 +1252,11 @@
       <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Actualizar Demanda de Despacho y Orden de Entrega en ERP</wsdl:documentation>
       <wsdl:input message="tns:UpdateDeliveryNoteERPSoapIn" />
       <wsdl:output message="tns:UpdateDeliveryNoteERPSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDraftDocEntry">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Draft DocEntry Reference by PassID</wsdl:documentation>
+      <wsdl:input message="tns:GetDraftDocEntrySoapIn" />
+      <wsdl:output message="tns:GetDraftDocEntrySoapOut" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="WMS_TransSoap" type="tns:WMS_TransSoap">
@@ -1550,6 +1585,15 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="GetDraftDocEntry">
+      <soap:operation soapAction="http://tempuri.org/GetDraftDocEntry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:binding name="WMS_TransSoap12" type="tns:WMS_TransSoap">
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
@@ -1870,6 +1914,15 @@
     </wsdl:operation>
     <wsdl:operation name="UpdateDeliveryNoteERP">
       <soap12:operation soapAction="http://tempuri.org/UpdateDeliveryNoteERP" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDraftDocEntry">
+      <soap12:operation soapAction="http://tempuri.org/GetDraftDocEntry" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>

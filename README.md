@@ -7,10 +7,6 @@ El repositorio tiene tanto el código como los binarios del software.
 * `WmsOnePlan` tiene el Backoffice
   * `WMSOnePlan_Client` es el cliente Win32
   * `WMSOnePlan_WebForm` es el cliente Web ASP.net
-* `ConfiguracionBotonesYModeloDispositivo` es una aplicación para Windows CE para ver y confirugrar los botones de Handhelds
-* `Swift3PLMobile` es la versión de Windows CE de la aplicación
-  * En este repo la versión móvil está desactualizada
-* Todos los demas directorios son liberarias compartidas por todos los programas
 
 # Cliente Win32
 ## Dependencias

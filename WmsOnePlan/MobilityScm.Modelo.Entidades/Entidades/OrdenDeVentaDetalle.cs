@@ -10,6 +10,10 @@ namespace MobilityScm.Modelo.Entidades
 
         public string SALES_ORDER_ID { get; set; }
 
+        public string BASE_REF { get; set; }
+
+        public string BASE_ENTRY { get; set; }
+
         public string SKU { get; set; }
 
         public string DESCRIPTION_SKU { get; set; }
@@ -20,7 +24,7 @@ namespace MobilityScm.Modelo.Entidades
         public decimal QTY_ORIGINAL { get; set; }
         public decimal QTY_PENDING { get; set; }
         public decimal PRICE { get; set; }
-
+        public decimal TOTAL_WEIGHT { get; set; }
         public decimal DISCOUNT { get; set; }
 
         public decimal TOTAL_LINE { get; set; }
