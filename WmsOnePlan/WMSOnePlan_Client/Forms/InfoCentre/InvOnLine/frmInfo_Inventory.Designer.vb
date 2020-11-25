@@ -45,6 +45,7 @@ Partial Class frmInfo_Inventory
         Me.GridColumnRegimen = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.colFECHA_DOCUMENTO = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.colALTERNATE_BARCODE = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.colCOMMITED_QTY = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumn_Serial = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumn_FVOL = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.colDATE_EXPIRATION = New DevExpress.XtraGrid.Columns.GridColumn()
@@ -147,7 +148,7 @@ Partial Class frmInfo_Inventory
         'GridView1
         '
         Me.GridView1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat
-        Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn_CurrentWH, Me.GridColumn_Linea, Me.GridColumn_Ubicacion, Me.GridColumn_Prod, Me.GridColumn_Descripcion, Me.GridColumn_Unidades, Me.GridColumnClientOwner, Me.GridColumnClientName, Me.GridColumnTermOfTrade, Me.GridColumnLastUpdatedBy, Me.GridColumnFechaLlegada, Me.GridColumnDUA, Me.GridColumnNumeroOrden, Me.GridColumnPoliza, Me.GridColumnRegimen, Me.colFECHA_DOCUMENTO, Me.colALTERNATE_BARCODE, Me.GridColumn_Serial, Me.GridColumn_FVOL, Me.colDATE_EXPIRATION, Me.GridColumn_CLASS, Me.colBATCH, Me.colDOC_ID, Me.colUSED_MT2, Me.GridColumn_VIN, Me.colPENDIENTE_RECTIFICACION, Me.colGRUPO_REGIMEN, Me.colREGIMEN_DOCUMENTO, Me.colCodigoProveedor, Me.colNombreProveedor, Me.colMATERIAL_ID, Me.colZONE, Me.colAVAILABLE_QTY, Me.UiColValorUnitario, Me.UiColValorTotal, Me.UiColIntentarioExterno, Me.UiGridColSkuSerie, Me.UiColDiasRegimen, Me.UiColDiasVencimiento, Me.UiColFechaVencimientoRegimen, Me.UiColEstadoRegimen, Me.UiColNombreEstado, Me.UiColBloqueoInventario, Me.UiColColorEstado, Me.UiColTono, Me.UiColCalibre, Me.UiColOrdenDeVenta, Me.UiColProyecto, Me.UiColNombreCliente, Me.UiColBloqueoInterfaces, Me.UiColPeso, Me.UiColUnidadPeso, Me.UiColOlaPicking, Me.GridColumn_PK_LINE, Me.GridColumn_BATCH_REQUESTED, Me.GridColumn_STATUS_ID, Me.GridColumn_TONE_CALIBER_ID, Me.GridColumn_HANDLE_TONE, Me.GridColumn_HANDLE_CALIBER, Me.UiColCodigoProyecto, Me.UiColNombreProyecto, Me.colTOTAL_POSITION})
+        Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn_CurrentWH, Me.GridColumn_Linea, Me.GridColumn_Ubicacion, Me.GridColumn_Prod, Me.GridColumn_Descripcion, Me.GridColumn_Unidades, Me.GridColumnClientOwner, Me.GridColumnClientName, Me.GridColumnTermOfTrade, Me.GridColumnLastUpdatedBy, Me.GridColumnFechaLlegada, Me.GridColumnDUA, Me.GridColumnNumeroOrden, Me.GridColumnPoliza, Me.GridColumnRegimen, Me.colFECHA_DOCUMENTO, Me.colALTERNATE_BARCODE, Me.colCOMMITED_QTY, Me.GridColumn_Serial, Me.GridColumn_FVOL, Me.colDATE_EXPIRATION, Me.GridColumn_CLASS, Me.colBATCH, Me.colDOC_ID, Me.colUSED_MT2, Me.GridColumn_VIN, Me.colPENDIENTE_RECTIFICACION, Me.colGRUPO_REGIMEN, Me.colREGIMEN_DOCUMENTO, Me.colCodigoProveedor, Me.colNombreProveedor, Me.colMATERIAL_ID, Me.colZONE, Me.colAVAILABLE_QTY, Me.UiColValorUnitario, Me.UiColValorTotal, Me.UiColIntentarioExterno, Me.UiGridColSkuSerie, Me.UiColDiasRegimen, Me.UiColDiasVencimiento, Me.UiColFechaVencimientoRegimen, Me.UiColEstadoRegimen, Me.UiColNombreEstado, Me.UiColBloqueoInventario, Me.UiColColorEstado, Me.UiColTono, Me.UiColCalibre, Me.UiColOrdenDeVenta, Me.UiColProyecto, Me.UiColNombreCliente, Me.UiColBloqueoInterfaces, Me.UiColPeso, Me.UiColUnidadPeso, Me.UiColOlaPicking, Me.GridColumn_PK_LINE, Me.GridColumn_BATCH_REQUESTED, Me.GridColumn_STATUS_ID, Me.GridColumn_TONE_CALIBER_ID, Me.GridColumn_HANDLE_TONE, Me.GridColumn_HANDLE_CALIBER, Me.UiColCodigoProyecto, Me.UiColNombreProyecto, Me.colTOTAL_POSITION})
         Me.GridView1.DetailHeight = 284
         Me.GridView1.GridControl = Me.GridControl1
         Me.GridView1.GroupPanelText = "Organizar por columna"
@@ -359,6 +360,15 @@ Partial Class frmInfo_Inventory
         Me.colALTERNATE_BARCODE.Name = "colALTERNATE_BARCODE"
         Me.colALTERNATE_BARCODE.OptionsColumn.AllowEdit = False
         Me.colALTERNATE_BARCODE.Width = 32
+        '
+        'colCOMMITED_QTY
+        '
+        Me.colCOMMITED_QTY.Caption = "Inventario Comprometido"
+        Me.colCOMMITED_QTY.FieldName = "COMMITED_QTY"
+        Me.colCOMMITED_QTY.MinWidth = 15
+        Me.colCOMMITED_QTY.Name = "colCOMMITED_QTY"
+        Me.colCOMMITED_QTY.OptionsColumn.AllowEdit = False
+        Me.colCOMMITED_QTY.Width = 32
         '
         'GridColumn_Serial
         '
@@ -1051,6 +1061,7 @@ Partial Class frmInfo_Inventory
     Friend WithEvents GridColumnRegimen As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents colFECHA_DOCUMENTO As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents colALTERNATE_BARCODE As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents colCOMMITED_QTY As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GridColumn_Serial As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GridColumn_FVOL As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GridColumn_CLASS As DevExpress.XtraGrid.Columns.GridColumn

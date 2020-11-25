@@ -17,6 +17,9 @@ namespace MobilityScm.Modelo.Entidades
         public string CLIENT_CODE { get; set; }
 
         public string MATERIAL_ID { get; set; }
+        public int QTY_SCANNED { get; set; }
+        public int QTY_EXPECTED { get; set; }
+        public int DIFFERENCE { get; set; }
 
         public string ASSIGNED_TO { get; set; }
 

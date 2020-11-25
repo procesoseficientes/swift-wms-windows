@@ -973,6 +973,9 @@ namespace MobilityScm.Modelo.Vistas
                         CambiarOperadorADetalleDeTarea(usuario.LOGIN_ID);
                         //ObtenerTareas();
                         UiContenedorDetalle.RefreshDataSource();
+                    } else if (TareaDetalle.Count(x => x.IS_SELECTED && (x.STATUS == "INCOMPLETA" || x.STATUS == "ACEPTADA")) == 0)
+                    {
+                        InteraccionConUsuarioServicio.Mensaje("No hay lineas seleccionadas disponibles para asignación");
                     }
                     Cursor = Cursors.Default;
                 }
@@ -1580,11 +1583,11 @@ namespace MobilityScm.Modelo.Vistas
             try
             {
                 if (!Tarea.ToList().Exists(t => t.IS_SELECTED
-                                            && ((t.TASK_TYPE.ToUpper().Equals("TAREA_PICKING") && !t.TASK_SUBTYPE.Equals("DESPACHO_WT")) || t.TASK_TYPE.ToUpper().Equals("TAREA_RECEPCION"))
-                                            && (t.IS_FROM_ERP.ToUpper().Equals("SI") || t.IS_FROM_SONDA.ToUpper().Equals("SI") || t.TASK_SUBTYPE == "RECEPCION_TRASLADO")
-                                            && t.IS_COMPLETED.ToUpper().Equals("COMPLETA")
-                                            && t.DetalleErp.Exists(td => td.IS_POSTED_ERP != 1 || td.ATTEMPTED_WITH_ERROR == td.MAX_ATTEMPTS)
-                                            )) return;
+                    && ((t.TASK_TYPE.ToUpper().Equals("TAREA_PICKING") && !t.TASK_SUBTYPE.Equals("DESPACHO_WT")) || t.TASK_TYPE.ToUpper().Equals("TAREA_RECEPCION") || t.TASK_TYPE.ToUpper().Equals("TAREA_CONTEO_FISICO"))
+                    && (t.TASK_SUBTYPE.ToUpper().Equals("TAREA_CONTEO_FISICO") || t.IS_FROM_SONDA.ToUpper().Equals("SI") || t.TASK_SUBTYPE == "RECEPCION_TRASLADO" || t.IS_FROM_ERP.ToUpper().Equals("SI"))
+                    && (t.IS_COMPLETED.ToUpper().Equals("COMPLETA") || (t.TASK_SUBTYPE.ToUpper().Equals("TAREA_CONTEO_FISICO") && t.STATUS.ToUpper().Equals("COMPLETA")))
+                    && t.DetalleErp.Exists(td => td.IS_POSTED_ERP != 1 || td.ATTEMPTED_WITH_ERROR == td.MAX_ATTEMPTS)
+                    )) return;
                 UsuarioDeseaAutorizarDocumentoErp?.Invoke(null, null);
             }
             catch (Exception exception)
@@ -2402,6 +2405,11 @@ namespace MobilityScm.Modelo.Vistas
             UiContenedorTab.SelectedTabPageIndex = 0;
             UIBtnReAbrirTask.Enabled = false;
             UiBotonRefrescar_ItemClick(sender, e);
+        }
+
+        private void UiContenedorVistaTareasEncabezado_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

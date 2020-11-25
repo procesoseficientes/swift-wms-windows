@@ -25,6 +25,8 @@ namespace MobilityScm.Modelo.Interfaces.Servicios
 
         Operacion AutorizarDocumentoErpRecepcion(TareaArgumento tareaArgumento);
 
+        Operacion AutorizarDocumentoErpConteoFisico(TareaArgumento tareaArgumento);
+
         Operacion CambiarEstadoTareaConteno(TareaArgumento tareaArgumento);
 
         Operacion CancelarTareaPorOla(TareaArgumento tareaArgumento);

@@ -2198,17 +2198,19 @@ Public Class WMS_Trans
         Dim DocEntryTable = GetDraftDocEntry(passId, environmentName, rst)
         Dim DocNum = 0
 
-        Dim DocEntry As String = DocEntryTable.Rows(0)(0)
+        If (DocEntryTable.Rows.Count > 0) Then
+            Dim DocEntry As String = DocEntryTable.Rows(0)(0)
 
-        If Not String.IsNullOrEmpty(DocEntry) Then
-            Dim webClient As New System.Net.WebClient
-            Dim response As String = webClient.DownloadString(AppSettings("SAPBOAPI") + "/CloseDraft/" + DocEntry)
+            If Not String.IsNullOrEmpty(DocEntry) Then
+                Dim webClient As New System.Net.WebClient
+                Dim response As String = webClient.DownloadString(AppSettings("SAPBOAPI") + "/CloseDraft/" + DocEntry)
 
-            If response.Contains("Error") Then
-                result = "ERROR, (" + AppSettings("SAPBOAPI") + "/CloseDraft/" + DocEntry + ") ; " + response
-                Throw New Exception(result)
-            Else
-                DocNum = response
+                If response.Contains("Error") Then
+                    result = "ERROR, (" + AppSettings("SAPBOAPI") + "/CloseDraft/" + DocEntry + ") ; " + response
+                    Throw New Exception(result)
+                Else
+                    DocNum = response
+                End If
             End If
         End If
 

@@ -22,6 +22,7 @@ namespace MobilityScm.Modelo.Argumentos
         public string Razon { get; set; }
         public int OlaDePicking { get; set; }
         public decimal WAVE_PICKING_ID { get; set; }
+        public decimal PHYSICAL_COUNT_HEADER_ID { get; set; }
 
         public TareaDetalle FilaTareaDetalle { get; set; }
         public OrdenDeCompraDetalle FilaOrdenDeCompraDetalle { get; set; }

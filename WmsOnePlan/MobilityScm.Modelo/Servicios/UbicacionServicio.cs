@@ -56,7 +56,7 @@ namespace MobilityScm.Modelo.Servicios
             DbParameter[] parameters = {
                 new OAParameter
                 {
-                    ParameterName = "@DISTRIBUTION_CENTER_ID",
+                    ParameterName = "@WAREHOUSE_ID",
                     Value =  distributionCenterId
                 }
             };

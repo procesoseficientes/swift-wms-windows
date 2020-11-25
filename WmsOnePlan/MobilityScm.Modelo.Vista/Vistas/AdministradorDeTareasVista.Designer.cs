@@ -61,11 +61,11 @@
             DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression14 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule15 = new DevExpress.XtraGrid.GridFormatRule();
             DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression15 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule16 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression16 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdministradorDeTareasVista));
             DevExpress.XtraGrid.GridLevelNode gridLevelNode3 = new DevExpress.XtraGrid.GridLevelNode();
             DevExpress.XtraGrid.GridLevelNode gridLevelNode4 = new DevExpress.XtraGrid.GridLevelNode();
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule16 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression16 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule17 = new DevExpress.XtraGrid.GridFormatRule();
             DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression17 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule18 = new DevExpress.XtraGrid.GridFormatRule();
@@ -78,6 +78,8 @@
             DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression21 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule22 = new DevExpress.XtraGrid.GridFormatRule();
             DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression22 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule23 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression23 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
             DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
@@ -102,14 +104,14 @@
             DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
             DevExpress.XtraCharts.SideBySideBarSeriesLabel sideBySideBarSeriesLabel1 = new DevExpress.XtraCharts.SideBySideBarSeriesLabel();
             DevExpress.XtraCharts.ChartTitle chartTitle2 = new DevExpress.XtraCharts.ChartTitle();
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule23 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression23 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule24 = new DevExpress.XtraGrid.GridFormatRule();
             DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression24 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule25 = new DevExpress.XtraGrid.GridFormatRule();
             DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression25 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule26 = new DevExpress.XtraGrid.GridFormatRule();
             DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression26 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule27 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression27 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
             this.UiVistaDetalleErpEncabezado = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.UiColNumeroDocumentoDetalleErp = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UiColNumeroIntentosDetalleErp = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -168,6 +170,7 @@
             this.UiColNombreProyecto = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UiColNombreCortoProyecto = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UiCalNumeroOrden = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.UiColFin = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UiContendorDeBarras = new DevExpress.XtraBars.BarManager(this.components);
             this.UiBarraTarea = new DevExpress.XtraBars.Bar();
             this.UiSwitchActualizarAutomaticamente = new DevExpress.XtraBars.BarToggleSwitchItem();
@@ -187,6 +190,9 @@
             this.UiSplitControlTareas = new DevExpress.XtraEditors.SplitContainerControl();
             this.UiContenedorDetalle = new DevExpress.XtraGrid.GridControl();
             this.UiVistaDetalleCounting = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.UiStockQTY = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.UiPhysicalCounting = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.UiDifference = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colPHYSICAL_COUNT_DETAIL_ID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colWAREHOUSE_ID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colZONE = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -471,98 +477,83 @@
             this.UiColMensajeDetalleErp,
             this.UiColReferenciaDetalleErp,
             this.UiColMaximoDeIntentosEncabezado});
-            this.UiVistaDetalleErpEncabezado.DetailHeight = 673;
-            this.UiVistaDetalleErpEncabezado.FixedLineWidth = 4;
             this.UiVistaDetalleErpEncabezado.GridControl = this.UiContenedorVistaTareasEncabezado;
+            this.UiVistaDetalleErpEncabezado.LevelIndent = 0;
             this.UiVistaDetalleErpEncabezado.Name = "UiVistaDetalleErpEncabezado";
             this.UiVistaDetalleErpEncabezado.OptionsView.ShowFooter = true;
             this.UiVistaDetalleErpEncabezado.OptionsView.ShowGroupPanel = false;
+            this.UiVistaDetalleErpEncabezado.PreviewIndent = 0;
             this.UiVistaDetalleErpEncabezado.ViewCaption = "Documentos de despacho";
             // 
             // UiColNumeroDocumentoDetalleErp
             // 
             this.UiColNumeroDocumentoDetalleErp.Caption = "Numero Documento";
             this.UiColNumeroDocumentoDetalleErp.FieldName = "DOC_ID";
-            this.UiColNumeroDocumentoDetalleErp.MinWidth = 40;
             this.UiColNumeroDocumentoDetalleErp.Name = "UiColNumeroDocumentoDetalleErp";
             this.UiColNumeroDocumentoDetalleErp.OptionsColumn.AllowEdit = false;
             this.UiColNumeroDocumentoDetalleErp.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count, "DOC_ID", "{0}")});
             this.UiColNumeroDocumentoDetalleErp.Visible = true;
             this.UiColNumeroDocumentoDetalleErp.VisibleIndex = 0;
-            this.UiColNumeroDocumentoDetalleErp.Width = 150;
             // 
             // UiColNumeroIntentosDetalleErp
             // 
             this.UiColNumeroIntentosDetalleErp.Caption = "Numero de Intentos";
             this.UiColNumeroIntentosDetalleErp.FieldName = "ATTEMPTED_WITH_ERROR";
-            this.UiColNumeroIntentosDetalleErp.MinWidth = 40;
             this.UiColNumeroIntentosDetalleErp.Name = "UiColNumeroIntentosDetalleErp";
             this.UiColNumeroIntentosDetalleErp.OptionsColumn.AllowEdit = false;
             this.UiColNumeroIntentosDetalleErp.Visible = true;
             this.UiColNumeroIntentosDetalleErp.VisibleIndex = 1;
-            this.UiColNumeroIntentosDetalleErp.Width = 150;
             // 
             // UiColEstadoDetalleErp
             // 
             this.UiColEstadoDetalleErp.Caption = "Estado";
             this.UiColEstadoDetalleErp.FieldName = "STATUS_POSTED_ERP";
-            this.UiColEstadoDetalleErp.MinWidth = 40;
             this.UiColEstadoDetalleErp.Name = "UiColEstadoDetalleErp";
             this.UiColEstadoDetalleErp.OptionsColumn.AllowEdit = false;
             this.UiColEstadoDetalleErp.Visible = true;
             this.UiColEstadoDetalleErp.VisibleIndex = 2;
-            this.UiColEstadoDetalleErp.Width = 150;
             // 
             // UiColFechaPosteoDetalleErp
             // 
             this.UiColFechaPosteoDetalleErp.Caption = "Fecha de Posteo";
             this.UiColFechaPosteoDetalleErp.FieldName = "POSTED_ERP";
-            this.UiColFechaPosteoDetalleErp.MinWidth = 40;
             this.UiColFechaPosteoDetalleErp.Name = "UiColFechaPosteoDetalleErp";
             this.UiColFechaPosteoDetalleErp.OptionsColumn.AllowEdit = false;
             this.UiColFechaPosteoDetalleErp.Visible = true;
             this.UiColFechaPosteoDetalleErp.VisibleIndex = 3;
-            this.UiColFechaPosteoDetalleErp.Width = 150;
             // 
             // UiColMensajeDetalleErp
             // 
             this.UiColMensajeDetalleErp.Caption = "Mensaje";
             this.UiColMensajeDetalleErp.FieldName = "POSTED_RESPONSE";
-            this.UiColMensajeDetalleErp.MinWidth = 40;
             this.UiColMensajeDetalleErp.Name = "UiColMensajeDetalleErp";
             this.UiColMensajeDetalleErp.OptionsColumn.AllowEdit = false;
             this.UiColMensajeDetalleErp.Visible = true;
             this.UiColMensajeDetalleErp.VisibleIndex = 4;
-            this.UiColMensajeDetalleErp.Width = 150;
             // 
             // UiColReferenciaDetalleErp
             // 
             this.UiColReferenciaDetalleErp.Caption = "Referencia";
             this.UiColReferenciaDetalleErp.FieldName = "ERP_REFERENCE";
-            this.UiColReferenciaDetalleErp.MinWidth = 40;
             this.UiColReferenciaDetalleErp.Name = "UiColReferenciaDetalleErp";
             this.UiColReferenciaDetalleErp.OptionsColumn.AllowEdit = false;
             this.UiColReferenciaDetalleErp.Visible = true;
             this.UiColReferenciaDetalleErp.VisibleIndex = 5;
-            this.UiColReferenciaDetalleErp.Width = 150;
             // 
             // UiColMaximoDeIntentosEncabezado
             // 
             this.UiColMaximoDeIntentosEncabezado.Caption = "Maximo de Intentos";
             this.UiColMaximoDeIntentosEncabezado.FieldName = "MAX_ATTEMPTS";
-            this.UiColMaximoDeIntentosEncabezado.MinWidth = 40;
             this.UiColMaximoDeIntentosEncabezado.Name = "UiColMaximoDeIntentosEncabezado";
             this.UiColMaximoDeIntentosEncabezado.OptionsColumn.AllowEdit = false;
             this.UiColMaximoDeIntentosEncabezado.Visible = true;
             this.UiColMaximoDeIntentosEncabezado.VisibleIndex = 6;
-            this.UiColMaximoDeIntentosEncabezado.Width = 150;
             // 
             // UiContenedorVistaTareasEncabezado
             // 
             this.UiContenedorVistaTareasEncabezado.AllowDrop = true;
             this.UiContenedorVistaTareasEncabezado.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.UiContenedorVistaTareasEncabezado.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(6);
             gridLevelNode1.LevelTemplate = this.UiVistaDetalleErpEncabezado;
             gridLevelNode1.RelationName = "DetalleErp";
             gridLevelNode2.LevelTemplate = this.UiVistaEncabezadoConDetalle;
@@ -572,17 +563,17 @@
             gridLevelNode2});
             this.UiContenedorVistaTareasEncabezado.Location = new System.Drawing.Point(0, 0);
             this.UiContenedorVistaTareasEncabezado.MainView = this.UiVistaEncabezado;
-            this.UiContenedorVistaTareasEncabezado.Margin = new System.Windows.Forms.Padding(6);
             this.UiContenedorVistaTareasEncabezado.MenuManager = this.UiContendorDeBarras;
             this.UiContenedorVistaTareasEncabezado.Name = "UiContenedorVistaTareasEncabezado";
             this.UiContenedorVistaTareasEncabezado.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.UiListaOperadoresEncabezado});
-            this.UiContenedorVistaTareasEncabezado.Size = new System.Drawing.Size(1585, 727);
+            this.UiContenedorVistaTareasEncabezado.Size = new System.Drawing.Size(353, 412);
             this.UiContenedorVistaTareasEncabezado.TabIndex = 0;
             this.UiContenedorVistaTareasEncabezado.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.UiVistaEncabezadoConDetalle,
             this.UiVistaEncabezado,
             this.UiVistaDetalleErpEncabezado});
+            this.UiContenedorVistaTareasEncabezado.Click += new System.EventHandler(this.UiContenedorVistaTareasEncabezado_Click);
             this.UiContenedorVistaTareasEncabezado.DragDrop += new System.Windows.Forms.DragEventHandler(this.UiContenedorVistaTareasEncabezado_DragDrop);
             this.UiContenedorVistaTareasEncabezado.DragEnter += new System.Windows.Forms.DragEventHandler(this.UiContenedorVistaTareasEncabezado_DragEnter);
             // 
@@ -611,8 +602,6 @@
             this.UiColSOURCE_TYPE,
             this.UiColIS_POSTED_ERP,
             this.UiColDetalleCreadoPor});
-            this.UiVistaEncabezadoConDetalle.DetailHeight = 673;
-            this.UiVistaEncabezadoConDetalle.FixedLineWidth = 4;
             gridFormatRule1.ApplyToRow = true;
             gridFormatRule1.Column = this.UiColSTATUS;
             gridFormatRule1.ColumnApplyTo = this.UiColSTATUS;
@@ -700,12 +689,14 @@
             this.UiVistaEncabezadoConDetalle.FormatRules.Add(gridFormatRule7);
             this.UiVistaEncabezadoConDetalle.GridControl = this.UiContenedorVistaTareasEncabezado;
             this.UiVistaEncabezadoConDetalle.GroupCount = 1;
+            this.UiVistaEncabezadoConDetalle.LevelIndent = 0;
             this.UiVistaEncabezadoConDetalle.Name = "UiVistaEncabezadoConDetalle";
             this.UiVistaEncabezadoConDetalle.OptionsSelection.MultiSelect = true;
             this.UiVistaEncabezadoConDetalle.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
             this.UiVistaEncabezadoConDetalle.OptionsView.ShowAutoFilterRow = true;
             this.UiVistaEncabezadoConDetalle.OptionsView.ShowChildrenInGroupPanel = true;
             this.UiVistaEncabezadoConDetalle.OptionsView.ShowFooter = true;
+            this.UiVistaEncabezadoConDetalle.PreviewIndent = 0;
             this.UiVistaEncabezadoConDetalle.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
             new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.UiColTASK_TYPE, DevExpress.Data.ColumnSortOrder.Ascending)});
             this.UiVistaEncabezadoConDetalle.SelectionChanged += new DevExpress.Data.SelectionChangedEventHandler(this.UiVistaEncabezadoConDetalle_SelectionChanged);
@@ -716,81 +707,67 @@
             // 
             this.UiColWAVE_PICKING_ID.Caption = "Número de Ola";
             this.UiColWAVE_PICKING_ID.FieldName = "TASK_COMMENTS";
-            this.UiColWAVE_PICKING_ID.MinWidth = 40;
             this.UiColWAVE_PICKING_ID.Name = "UiColWAVE_PICKING_ID";
             this.UiColWAVE_PICKING_ID.OptionsColumn.AllowEdit = false;
             this.UiColWAVE_PICKING_ID.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count, "TASK_COMMENTS", "{0}")});
             this.UiColWAVE_PICKING_ID.Visible = true;
             this.UiColWAVE_PICKING_ID.VisibleIndex = 1;
-            this.UiColWAVE_PICKING_ID.Width = 150;
             // 
             // UiColSerialNumber
             // 
             this.UiColSerialNumber.Caption = "Tarea no.";
             this.UiColSerialNumber.FieldName = "TASK_OR_WAVE_ID";
-            this.UiColSerialNumber.MinWidth = 40;
             this.UiColSerialNumber.Name = "UiColSerialNumber";
             this.UiColSerialNumber.OptionsColumn.AllowEdit = false;
             this.UiColSerialNumber.Visible = true;
             this.UiColSerialNumber.VisibleIndex = 2;
-            this.UiColSerialNumber.Width = 150;
             // 
             // UiColDOC_NUM
             // 
             this.UiColDOC_NUM.Caption = "Numero de Orden";
             this.UiColDOC_NUM.FieldName = "NO_DOC";
-            this.UiColDOC_NUM.MinWidth = 40;
             this.UiColDOC_NUM.Name = "UiColDOC_NUM";
             this.UiColDOC_NUM.OptionsColumn.AllowEdit = false;
             this.UiColDOC_NUM.Visible = true;
             this.UiColDOC_NUM.VisibleIndex = 3;
-            this.UiColDOC_NUM.Width = 150;
             // 
             // UiColCLIENT_NAME
             // 
             this.UiColCLIENT_NAME.Caption = "Cliente";
             this.UiColCLIENT_NAME.FieldName = "CLIENT_NAME";
-            this.UiColCLIENT_NAME.MinWidth = 40;
             this.UiColCLIENT_NAME.Name = "UiColCLIENT_NAME";
             this.UiColCLIENT_NAME.OptionsColumn.AllowEdit = false;
             this.UiColCLIENT_NAME.Visible = true;
             this.UiColCLIENT_NAME.VisibleIndex = 5;
-            this.UiColCLIENT_NAME.Width = 150;
             // 
             // UiColTASK_TYPE
             // 
             this.UiColTASK_TYPE.Caption = "Tipo Tarea";
             this.UiColTASK_TYPE.FieldName = "TASK_TYPE";
-            this.UiColTASK_TYPE.MinWidth = 40;
             this.UiColTASK_TYPE.Name = "UiColTASK_TYPE";
             this.UiColTASK_TYPE.OptionsColumn.AllowEdit = false;
             this.UiColTASK_TYPE.Visible = true;
             this.UiColTASK_TYPE.VisibleIndex = 2;
-            this.UiColTASK_TYPE.Width = 150;
             // 
             // UiColTASK_SUB_TYPE
             // 
             this.UiColTASK_SUB_TYPE.Caption = "Subtipo de Tarea";
             this.UiColTASK_SUB_TYPE.FieldName = "TASK_SUBTYPE";
-            this.UiColTASK_SUB_TYPE.MinWidth = 40;
             this.UiColTASK_SUB_TYPE.Name = "UiColTASK_SUB_TYPE";
             this.UiColTASK_SUB_TYPE.OptionsColumn.AllowEdit = false;
             this.UiColTASK_SUB_TYPE.Visible = true;
             this.UiColTASK_SUB_TYPE.VisibleIndex = 4;
-            this.UiColTASK_SUB_TYPE.Width = 150;
             // 
             // UiColTASK_ASSIGNEDTO
             // 
             this.UiColTASK_ASSIGNEDTO.Caption = "Asignado";
             this.UiColTASK_ASSIGNEDTO.ColumnEdit = this.UiListaOperadoresEncabezado;
             this.UiColTASK_ASSIGNEDTO.FieldName = "TASK_ASSIGNEDTO";
-            this.UiColTASK_ASSIGNEDTO.MinWidth = 40;
             this.UiColTASK_ASSIGNEDTO.Name = "UiColTASK_ASSIGNEDTO";
             this.UiColTASK_ASSIGNEDTO.OptionsColumn.AllowEdit = false;
             this.UiColTASK_ASSIGNEDTO.Visible = true;
             this.UiColTASK_ASSIGNEDTO.VisibleIndex = 6;
-            this.UiColTASK_ASSIGNEDTO.Width = 150;
             // 
             // UiListaOperadoresEncabezado
             // 
@@ -811,21 +788,17 @@
             // 
             this.UiColREGIMEN.Caption = "Regimen";
             this.UiColREGIMEN.FieldName = "REGIMEN";
-            this.UiColREGIMEN.MinWidth = 40;
             this.UiColREGIMEN.Name = "UiColREGIMEN";
             this.UiColREGIMEN.OptionsColumn.AllowEdit = false;
-            this.UiColREGIMEN.Width = 150;
             // 
             // UiColSTATUS
             // 
             this.UiColSTATUS.Caption = "Estado";
             this.UiColSTATUS.FieldName = "IS_COMPLETED";
-            this.UiColSTATUS.MinWidth = 40;
             this.UiColSTATUS.Name = "UiColSTATUS";
             this.UiColSTATUS.OptionsColumn.AllowEdit = false;
             this.UiColSTATUS.Visible = true;
             this.UiColSTATUS.VisibleIndex = 7;
-            this.UiColSTATUS.Width = 150;
             // 
             // UiColASSIGNED_DATE
             // 
@@ -835,136 +808,110 @@
             this.UiColASSIGNED_DATE.FieldName = "ASSIGNED_DATE";
             this.UiColASSIGNED_DATE.GroupFormat.FormatString = "g";
             this.UiColASSIGNED_DATE.GroupFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.UiColASSIGNED_DATE.MinWidth = 40;
             this.UiColASSIGNED_DATE.Name = "UiColASSIGNED_DATE";
             this.UiColASSIGNED_DATE.OptionsColumn.AllowEdit = false;
             this.UiColASSIGNED_DATE.Visible = true;
             this.UiColASSIGNED_DATE.VisibleIndex = 8;
-            this.UiColASSIGNED_DATE.Width = 150;
             // 
             // UiColMATERIAL_ID
             // 
             this.UiColMATERIAL_ID.Caption = "Codigo Material";
             this.UiColMATERIAL_ID.FieldName = "MATERIAL_ID";
-            this.UiColMATERIAL_ID.MinWidth = 40;
             this.UiColMATERIAL_ID.Name = "UiColMATERIAL_ID";
             this.UiColMATERIAL_ID.OptionsColumn.AllowEdit = false;
             this.UiColMATERIAL_ID.Visible = true;
             this.UiColMATERIAL_ID.VisibleIndex = 9;
-            this.UiColMATERIAL_ID.Width = 150;
             // 
             // UiColMATERIAL_NAME
             // 
             this.UiColMATERIAL_NAME.Caption = "Material";
             this.UiColMATERIAL_NAME.FieldName = "MATERIAL_NAME";
-            this.UiColMATERIAL_NAME.MinWidth = 40;
             this.UiColMATERIAL_NAME.Name = "UiColMATERIAL_NAME";
             this.UiColMATERIAL_NAME.OptionsColumn.AllowEdit = false;
             this.UiColMATERIAL_NAME.Visible = true;
             this.UiColMATERIAL_NAME.VisibleIndex = 10;
-            this.UiColMATERIAL_NAME.Width = 150;
             // 
             // UiColQUANTITY_PENDING
             // 
             this.UiColQUANTITY_PENDING.Caption = "Cantidad Pendiente";
             this.UiColQUANTITY_PENDING.FieldName = "QUANTITY_PENDING";
-            this.UiColQUANTITY_PENDING.MinWidth = 40;
             this.UiColQUANTITY_PENDING.Name = "UiColQUANTITY_PENDING";
             this.UiColQUANTITY_PENDING.OptionsColumn.AllowEdit = false;
             this.UiColQUANTITY_PENDING.Visible = true;
             this.UiColQUANTITY_PENDING.VisibleIndex = 11;
-            this.UiColQUANTITY_PENDING.Width = 150;
             // 
             // UiColQUANTITY_ASSIGNED_TASK
             // 
             this.UiColQUANTITY_ASSIGNED_TASK.Caption = "Cantidad";
             this.UiColQUANTITY_ASSIGNED_TASK.FieldName = "QUANTITY_ASSIGNED_TASK";
-            this.UiColQUANTITY_ASSIGNED_TASK.MinWidth = 40;
             this.UiColQUANTITY_ASSIGNED_TASK.Name = "UiColQUANTITY_ASSIGNED_TASK";
             this.UiColQUANTITY_ASSIGNED_TASK.OptionsColumn.AllowEdit = false;
             this.UiColQUANTITY_ASSIGNED_TASK.Visible = true;
             this.UiColQUANTITY_ASSIGNED_TASK.VisibleIndex = 12;
-            this.UiColQUANTITY_ASSIGNED_TASK.Width = 150;
             // 
             // UiColIS_PAUSED
             // 
             this.UiColIS_PAUSED.Caption = "Pausada";
             this.UiColIS_PAUSED.FieldName = "IS_PAUSED_DESCRIPTION";
-            this.UiColIS_PAUSED.MinWidth = 40;
             this.UiColIS_PAUSED.Name = "UiColIS_PAUSED";
             this.UiColIS_PAUSED.OptionsColumn.AllowEdit = false;
             this.UiColIS_PAUSED.Visible = true;
             this.UiColIS_PAUSED.VisibleIndex = 13;
-            this.UiColIS_PAUSED.Width = 150;
             // 
             // UiColIS_AUTHORIZED_DESCRIPTION
             // 
             this.UiColIS_AUTHORIZED_DESCRIPTION.Caption = "Autorizada";
             this.UiColIS_AUTHORIZED_DESCRIPTION.FieldName = "IS_AUTHORIZED_DESCRIPTION";
-            this.UiColIS_AUTHORIZED_DESCRIPTION.MinWidth = 40;
             this.UiColIS_AUTHORIZED_DESCRIPTION.Name = "UiColIS_AUTHORIZED_DESCRIPTION";
             this.UiColIS_AUTHORIZED_DESCRIPTION.OptionsColumn.AllowEdit = false;
             this.UiColIS_AUTHORIZED_DESCRIPTION.Visible = true;
             this.UiColIS_AUTHORIZED_DESCRIPTION.VisibleIndex = 14;
-            this.UiColIS_AUTHORIZED_DESCRIPTION.Width = 150;
             // 
             // UiColPRIORITY
             // 
             this.UiColPRIORITY.Caption = "Prioridad";
             this.UiColPRIORITY.FieldName = "PRIORITY_DESCRIPTION";
-            this.UiColPRIORITY.MinWidth = 40;
             this.UiColPRIORITY.Name = "UiColPRIORITY";
             this.UiColPRIORITY.OptionsColumn.AllowEdit = false;
             this.UiColPRIORITY.Visible = true;
             this.UiColPRIORITY.VisibleIndex = 15;
-            this.UiColPRIORITY.Width = 150;
             // 
             // UiColLOCATION_SPOT_TARGET
             // 
             this.UiColLOCATION_SPOT_TARGET.Caption = "Destino";
             this.UiColLOCATION_SPOT_TARGET.FieldName = "LOCATION_SPOT_TARGET";
-            this.UiColLOCATION_SPOT_TARGET.MinWidth = 40;
             this.UiColLOCATION_SPOT_TARGET.Name = "UiColLOCATION_SPOT_TARGET";
             this.UiColLOCATION_SPOT_TARGET.OptionsColumn.AllowEdit = false;
             this.UiColLOCATION_SPOT_TARGET.Visible = true;
             this.UiColLOCATION_SPOT_TARGET.VisibleIndex = 16;
-            this.UiColLOCATION_SPOT_TARGET.Width = 150;
             // 
             // UiColPRIORITY_
             // 
             this.UiColPRIORITY_.Caption = "Valor Prioridad";
             this.UiColPRIORITY_.FieldName = "PRIORITY";
-            this.UiColPRIORITY_.MinWidth = 40;
             this.UiColPRIORITY_.Name = "UiColPRIORITY_";
             this.UiColPRIORITY_.OptionsColumn.AllowEdit = false;
-            this.UiColPRIORITY_.Width = 150;
             // 
             // UiColSOURCE_TYPE
             // 
             this.UiColSOURCE_TYPE.Caption = "Fuente";
             this.UiColSOURCE_TYPE.FieldName = "SOURCE_TYPE";
-            this.UiColSOURCE_TYPE.MinWidth = 40;
             this.UiColSOURCE_TYPE.Name = "UiColSOURCE_TYPE";
             this.UiColSOURCE_TYPE.OptionsColumn.AllowEdit = false;
-            this.UiColSOURCE_TYPE.Width = 150;
             // 
             // UiColIS_POSTED_ERP
             // 
             this.UiColIS_POSTED_ERP.Caption = "Enviado a ERP";
             this.UiColIS_POSTED_ERP.FieldName = "IS_POSTED_ERP";
-            this.UiColIS_POSTED_ERP.MinWidth = 40;
             this.UiColIS_POSTED_ERP.Name = "UiColIS_POSTED_ERP";
             this.UiColIS_POSTED_ERP.OptionsColumn.AllowEdit = false;
-            this.UiColIS_POSTED_ERP.Width = 150;
             // 
             // UiColDetalleCreadoPor
             // 
             this.UiColDetalleCreadoPor.Caption = "Creado por";
             this.UiColDetalleCreadoPor.FieldName = "CREATE_BY";
-            this.UiColDetalleCreadoPor.MinWidth = 40;
             this.UiColDetalleCreadoPor.Name = "UiColDetalleCreadoPor";
             this.UiColDetalleCreadoPor.OptionsColumn.AllowEdit = false;
-            this.UiColDetalleCreadoPor.Width = 150;
             // 
             // UiVistaEncabezado
             // 
@@ -993,9 +940,8 @@
             this.UiColCodigoProyecto,
             this.UiColNombreProyecto,
             this.UiColNombreCortoProyecto,
-            this.UiCalNumeroOrden});
-            this.UiVistaEncabezado.DetailHeight = 673;
-            this.UiVistaEncabezado.FixedLineWidth = 4;
+            this.UiCalNumeroOrden,
+            this.UiColFin});
             gridFormatRule8.ApplyToRow = true;
             gridFormatRule8.Column = this.UiColEstadoEncabezado;
             gridFormatRule8.ColumnApplyTo = this.UiColEstadoEncabezado;
@@ -1017,7 +963,8 @@
             formatConditionRuleExpression9.Appearance.BorderColor = System.Drawing.Color.Lime;
             formatConditionRuleExpression9.Appearance.Options.UseBackColor = true;
             formatConditionRuleExpression9.Appearance.Options.UseBorderColor = true;
-            formatConditionRuleExpression9.Expression = "[IS_COMPLETED] = \'COMPLETA\' And [TASK_SUBTYPE] <> \'RECEPCION_TRASLADO\'";
+            formatConditionRuleExpression9.Expression = "[IS_COMPLETED] = \'COMPLETA\' And [TASK_SUBTYPE] <> \'RECEPCION_TRASLADO\' And [TASK_" +
+    "SUBTYPE] <> \'TAREA_CONTEO_FISICO\'";
             formatConditionRuleExpression9.PredefinedName = "Green Fill, Green Text";
             gridFormatRule9.Rule = formatConditionRuleExpression9;
             gridFormatRule10.ApplyToRow = true;
@@ -1087,6 +1034,14 @@
             formatConditionRuleExpression15.Appearance.Options.UseBorderColor = true;
             formatConditionRuleExpression15.Expression = "[COMPLETED_DOC_ERP] <> 1 AND [IS_FROM_ERP] = 1";
             gridFormatRule15.Rule = formatConditionRuleExpression15;
+            gridFormatRule16.ApplyToRow = true;
+            gridFormatRule16.Name = "Format8";
+            formatConditionRuleExpression16.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            formatConditionRuleExpression16.Appearance.Options.UseBackColor = true;
+            formatConditionRuleExpression16.Expression = "[TASK_SUBTYPE] = \'TAREA_CONTEO_FISICO\' And [IS_AUTHORIZED_DESCRIPTION] = \'NO\' And" +
+    " [IS_COMPLETED] = \'COMPLETA\'";
+            formatConditionRuleExpression16.PredefinedName = "Yellow Fill, Yellow Text";
+            gridFormatRule16.Rule = formatConditionRuleExpression16;
             this.UiVistaEncabezado.FormatRules.Add(gridFormatRule8);
             this.UiVistaEncabezado.FormatRules.Add(gridFormatRule9);
             this.UiVistaEncabezado.FormatRules.Add(gridFormatRule10);
@@ -1095,14 +1050,17 @@
             this.UiVistaEncabezado.FormatRules.Add(gridFormatRule13);
             this.UiVistaEncabezado.FormatRules.Add(gridFormatRule14);
             this.UiVistaEncabezado.FormatRules.Add(gridFormatRule15);
+            this.UiVistaEncabezado.FormatRules.Add(gridFormatRule16);
             this.UiVistaEncabezado.GridControl = this.UiContenedorVistaTareasEncabezado;
             this.UiVistaEncabezado.GroupCount = 1;
+            this.UiVistaEncabezado.LevelIndent = 0;
             this.UiVistaEncabezado.Name = "UiVistaEncabezado";
             this.UiVistaEncabezado.OptionsSelection.MultiSelect = true;
             this.UiVistaEncabezado.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
             this.UiVistaEncabezado.OptionsView.ShowAutoFilterRow = true;
             this.UiVistaEncabezado.OptionsView.ShowChildrenInGroupPanel = true;
             this.UiVistaEncabezado.OptionsView.ShowFooter = true;
+            this.UiVistaEncabezado.PreviewIndent = 0;
             this.UiVistaEncabezado.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
             new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.UiColSubTipoTareaEncabezado, DevExpress.Data.ColumnSortOrder.Ascending)});
             this.UiVistaEncabezado.RowClick += new DevExpress.XtraGrid.Views.Grid.RowClickEventHandler(this.UiVistaEncabezado_RowClick);
@@ -1117,82 +1075,74 @@
             // 
             this.UiColOlaPickingEncabezado.Caption = "Numero de Ola";
             this.UiColOlaPickingEncabezado.FieldName = "TASK_COMMENTS";
-            this.UiColOlaPickingEncabezado.MinWidth = 40;
             this.UiColOlaPickingEncabezado.Name = "UiColOlaPickingEncabezado";
             this.UiColOlaPickingEncabezado.OptionsColumn.AllowEdit = false;
             this.UiColOlaPickingEncabezado.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count, "TASK_COMMENTS", "{0}")});
             this.UiColOlaPickingEncabezado.Visible = true;
             this.UiColOlaPickingEncabezado.VisibleIndex = 1;
-            this.UiColOlaPickingEncabezado.Width = 150;
+            this.UiColOlaPickingEncabezado.Width = 37;
             // 
             // UiColIdTarea
             // 
             this.UiColIdTarea.Caption = "Tarea no.";
             this.UiColIdTarea.FieldName = "TASK_OR_WAVE_ID";
-            this.UiColIdTarea.MinWidth = 40;
             this.UiColIdTarea.Name = "UiColIdTarea";
             this.UiColIdTarea.OptionsColumn.AllowEdit = false;
             this.UiColIdTarea.Visible = true;
             this.UiColIdTarea.VisibleIndex = 2;
-            this.UiColIdTarea.Width = 150;
+            this.UiColIdTarea.Width = 37;
             // 
             // UiColNombreClienteEncabezado
             // 
             this.UiColNombreClienteEncabezado.Caption = "Cliente";
             this.UiColNombreClienteEncabezado.FieldName = "CLIENT_NAME";
-            this.UiColNombreClienteEncabezado.MinWidth = 40;
             this.UiColNombreClienteEncabezado.Name = "UiColNombreClienteEncabezado";
             this.UiColNombreClienteEncabezado.OptionsColumn.AllowEdit = false;
             this.UiColNombreClienteEncabezado.Visible = true;
             this.UiColNombreClienteEncabezado.VisibleIndex = 3;
-            this.UiColNombreClienteEncabezado.Width = 150;
+            this.UiColNombreClienteEncabezado.Width = 37;
             // 
             // UiColSubTipoTareaEncabezado
             // 
             this.UiColSubTipoTareaEncabezado.Caption = "Tipo Tarea";
             this.UiColSubTipoTareaEncabezado.FieldName = "TASK_TYPE";
-            this.UiColSubTipoTareaEncabezado.MinWidth = 40;
             this.UiColSubTipoTareaEncabezado.Name = "UiColSubTipoTareaEncabezado";
             this.UiColSubTipoTareaEncabezado.OptionsColumn.AllowEdit = false;
             this.UiColSubTipoTareaEncabezado.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count, "TASK_TYPE", "{0}")});
             this.UiColSubTipoTareaEncabezado.Visible = true;
             this.UiColSubTipoTareaEncabezado.VisibleIndex = 3;
-            this.UiColSubTipoTareaEncabezado.Width = 150;
             // 
             // UiColAsignadoEncabezado
             // 
             this.UiColAsignadoEncabezado.Caption = "Asignado";
             this.UiColAsignadoEncabezado.ColumnEdit = this.UiListaOperadoresEncabezado;
             this.UiColAsignadoEncabezado.FieldName = "TASK_ASSIGNEDTO";
-            this.UiColAsignadoEncabezado.MinWidth = 40;
             this.UiColAsignadoEncabezado.Name = "UiColAsignadoEncabezado";
             this.UiColAsignadoEncabezado.Visible = true;
             this.UiColAsignadoEncabezado.VisibleIndex = 4;
-            this.UiColAsignadoEncabezado.Width = 150;
+            this.UiColAsignadoEncabezado.Width = 37;
             // 
             // UiColRegimenEncabezado
             // 
             this.UiColRegimenEncabezado.Caption = "Regimen";
             this.UiColRegimenEncabezado.FieldName = "REGIMEN";
-            this.UiColRegimenEncabezado.MinWidth = 40;
             this.UiColRegimenEncabezado.Name = "UiColRegimenEncabezado";
             this.UiColRegimenEncabezado.OptionsColumn.AllowEdit = false;
             this.UiColRegimenEncabezado.Visible = true;
             this.UiColRegimenEncabezado.VisibleIndex = 5;
-            this.UiColRegimenEncabezado.Width = 150;
+            this.UiColRegimenEncabezado.Width = 37;
             // 
             // UiColEstadoEncabezado
             // 
             this.UiColEstadoEncabezado.Caption = "Estado";
             this.UiColEstadoEncabezado.FieldName = "IS_COMPLETED";
-            this.UiColEstadoEncabezado.MinWidth = 40;
             this.UiColEstadoEncabezado.Name = "UiColEstadoEncabezado";
             this.UiColEstadoEncabezado.OptionsColumn.AllowEdit = false;
             this.UiColEstadoEncabezado.Visible = true;
             this.UiColEstadoEncabezado.VisibleIndex = 6;
-            this.UiColEstadoEncabezado.Width = 150;
+            this.UiColEstadoEncabezado.Width = 37;
             // 
             // UiFechaAsignadoElEncabezado
             // 
@@ -1202,173 +1152,157 @@
             this.UiFechaAsignadoElEncabezado.FieldName = "ASSIGNED_DATE";
             this.UiFechaAsignadoElEncabezado.GroupFormat.FormatString = "g";
             this.UiFechaAsignadoElEncabezado.GroupFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.UiFechaAsignadoElEncabezado.MinWidth = 40;
             this.UiFechaAsignadoElEncabezado.Name = "UiFechaAsignadoElEncabezado";
             this.UiFechaAsignadoElEncabezado.OptionsColumn.AllowEdit = false;
             this.UiFechaAsignadoElEncabezado.Visible = true;
             this.UiFechaAsignadoElEncabezado.VisibleIndex = 9;
-            this.UiFechaAsignadoElEncabezado.Width = 150;
+            this.UiFechaAsignadoElEncabezado.Width = 37;
             // 
             // UiColEsDeSondaEncabezado
             // 
             this.UiColEsDeSondaEncabezado.Caption = "Es de Sonda";
             this.UiColEsDeSondaEncabezado.FieldName = "IS_FROM_SONDA";
-            this.UiColEsDeSondaEncabezado.MinWidth = 40;
             this.UiColEsDeSondaEncabezado.Name = "UiColEsDeSondaEncabezado";
             this.UiColEsDeSondaEncabezado.OptionsColumn.AllowEdit = false;
             this.UiColEsDeSondaEncabezado.Visible = true;
             this.UiColEsDeSondaEncabezado.VisibleIndex = 7;
-            this.UiColEsDeSondaEncabezado.Width = 150;
+            this.UiColEsDeSondaEncabezado.Width = 37;
             // 
             // UiColEsDeErpEncabezado
             // 
             this.UiColEsDeErpEncabezado.Caption = "Es de ERP";
             this.UiColEsDeErpEncabezado.FieldName = "IS_FROM_ERP";
-            this.UiColEsDeErpEncabezado.MinWidth = 40;
             this.UiColEsDeErpEncabezado.Name = "UiColEsDeErpEncabezado";
             this.UiColEsDeErpEncabezado.OptionsColumn.AllowEdit = false;
             this.UiColEsDeErpEncabezado.Visible = true;
             this.UiColEsDeErpEncabezado.VisibleIndex = 8;
-            this.UiColEsDeErpEncabezado.Width = 150;
+            this.UiColEsDeErpEncabezado.Width = 37;
             // 
             // UiColDescripcionPausada
             // 
             this.UiColDescripcionPausada.Caption = "Esta Pausada";
             this.UiColDescripcionPausada.FieldName = "IS_PAUSED_DESCRIPTION";
-            this.UiColDescripcionPausada.MinWidth = 40;
             this.UiColDescripcionPausada.Name = "UiColDescripcionPausada";
             this.UiColDescripcionPausada.OptionsColumn.AllowEdit = false;
             this.UiColDescripcionPausada.Visible = true;
             this.UiColDescripcionPausada.VisibleIndex = 10;
-            this.UiColDescripcionPausada.Width = 150;
+            this.UiColDescripcionPausada.Width = 37;
             // 
             // UiColSubTipoTarea
             // 
             this.UiColSubTipoTarea.Caption = "Sub Tipo Tarea";
             this.UiColSubTipoTarea.FieldName = "TASK_SUBTYPE";
-            this.UiColSubTipoTarea.MinWidth = 40;
             this.UiColSubTipoTarea.Name = "UiColSubTipoTarea";
             this.UiColSubTipoTarea.OptionsColumn.AllowEdit = false;
             this.UiColSubTipoTarea.Visible = true;
             this.UiColSubTipoTarea.VisibleIndex = 11;
-            this.UiColSubTipoTarea.Width = 150;
+            this.UiColSubTipoTarea.Width = 37;
             // 
             // UiColAutorizadaEncabezado
             // 
             this.UiColAutorizadaEncabezado.Caption = "Autorizada";
             this.UiColAutorizadaEncabezado.FieldName = "IS_AUTHORIZED_DESCRIPTION";
-            this.UiColAutorizadaEncabezado.MinWidth = 40;
             this.UiColAutorizadaEncabezado.Name = "UiColAutorizadaEncabezado";
             this.UiColAutorizadaEncabezado.OptionsColumn.AllowEdit = false;
             this.UiColAutorizadaEncabezado.Visible = true;
             this.UiColAutorizadaEncabezado.VisibleIndex = 12;
-            this.UiColAutorizadaEncabezado.Width = 150;
+            this.UiColAutorizadaEncabezado.Width = 37;
             // 
             // UiColPrioridad
             // 
             this.UiColPrioridad.Caption = "Prioridad";
             this.UiColPrioridad.FieldName = "PRIORITY_DESCRIPTION";
-            this.UiColPrioridad.MinWidth = 40;
             this.UiColPrioridad.Name = "UiColPrioridad";
             this.UiColPrioridad.OptionsColumn.AllowEdit = false;
             this.UiColPrioridad.Visible = true;
             this.UiColPrioridad.VisibleIndex = 13;
-            this.UiColPrioridad.Width = 150;
+            this.UiColPrioridad.Width = 37;
             // 
             // UiColDocumentoId
             // 
             this.UiColDocumentoId.Caption = "Documento";
             this.UiColDocumentoId.FieldName = "DOC_ID_GRID";
-            this.UiColDocumentoId.MinWidth = 40;
             this.UiColDocumentoId.Name = "UiColDocumentoId";
             this.UiColDocumentoId.OptionsColumn.AllowEdit = false;
             this.UiColDocumentoId.Visible = true;
             this.UiColDocumentoId.VisibleIndex = 14;
-            this.UiColDocumentoId.Width = 150;
+            this.UiColDocumentoId.Width = 20;
             // 
             // UiColValorPrioridad
             // 
             this.UiColValorPrioridad.Caption = "Valor Prioridad";
             this.UiColValorPrioridad.FieldName = "PRIORITY";
-            this.UiColValorPrioridad.MinWidth = 40;
             this.UiColValorPrioridad.Name = "UiColValorPrioridad";
-            this.UiColValorPrioridad.Width = 150;
             // 
             // UiColFuente
             // 
             this.UiColFuente.Caption = "Fuente";
             this.UiColFuente.FieldName = "SOURCE_TYPE";
-            this.UiColFuente.MinWidth = 40;
             this.UiColFuente.Name = "UiColFuente";
             this.UiColFuente.OptionsColumn.AllowEdit = false;
-            this.UiColFuente.Width = 150;
             // 
             // UiColPosteadoERP
             // 
             this.UiColPosteadoERP.Caption = "En ERP";
             this.UiColPosteadoERP.FieldName = "IS_POSTED_ERP";
-            this.UiColPosteadoERP.MinWidth = 40;
             this.UiColPosteadoERP.Name = "UiColPosteadoERP";
-            this.UiColPosteadoERP.Width = 150;
             // 
             // UiColDestino
             // 
             this.UiColDestino.Caption = "Destino";
             this.UiColDestino.FieldName = "LOCATION_SPOT_TARGET";
-            this.UiColDestino.MinWidth = 40;
             this.UiColDestino.Name = "UiColDestino";
             this.UiColDestino.OptionsColumn.AllowEdit = false;
-            this.UiColDestino.Width = 150;
             // 
             // UiColCreadoPor
             // 
             this.UiColCreadoPor.Caption = "Creado por";
             this.UiColCreadoPor.FieldName = "CREATE_BY";
-            this.UiColCreadoPor.MinWidth = 40;
             this.UiColCreadoPor.Name = "UiColCreadoPor";
             this.UiColCreadoPor.OptionsColumn.AllowEdit = false;
-            this.UiColCreadoPor.Width = 150;
             // 
             // UiColCodigoProyecto
             // 
             this.UiColCodigoProyecto.Caption = "Código proyecto";
             this.UiColCodigoProyecto.FieldName = "PROJECT_CODE";
-            this.UiColCodigoProyecto.MinWidth = 40;
             this.UiColCodigoProyecto.Name = "UiColCodigoProyecto";
             this.UiColCodigoProyecto.OptionsColumn.AllowEdit = false;
             this.UiColCodigoProyecto.OptionsColumn.AllowFocus = false;
-            this.UiColCodigoProyecto.Width = 150;
             // 
             // UiColNombreProyecto
             // 
             this.UiColNombreProyecto.Caption = "Nombre proyecto";
             this.UiColNombreProyecto.FieldName = "PROJECT_NAME";
-            this.UiColNombreProyecto.MinWidth = 40;
             this.UiColNombreProyecto.Name = "UiColNombreProyecto";
             this.UiColNombreProyecto.OptionsColumn.AllowEdit = false;
             this.UiColNombreProyecto.OptionsColumn.AllowFocus = false;
-            this.UiColNombreProyecto.Width = 150;
             // 
             // UiColNombreCortoProyecto
             // 
             this.UiColNombreCortoProyecto.Caption = "Nombre corto del proyecto";
             this.UiColNombreCortoProyecto.FieldName = "PROJECT_SHORT_NAME";
-            this.UiColNombreCortoProyecto.MinWidth = 40;
             this.UiColNombreCortoProyecto.Name = "UiColNombreCortoProyecto";
             this.UiColNombreCortoProyecto.OptionsColumn.AllowEdit = false;
             this.UiColNombreCortoProyecto.OptionsColumn.AllowFocus = false;
-            this.UiColNombreCortoProyecto.Width = 150;
             // 
             // UiCalNumeroOrden
             // 
             this.UiCalNumeroOrden.Caption = "Número orden";
             this.UiCalNumeroOrden.FieldName = "ORDER_NUMBER";
-            this.UiCalNumeroOrden.MinWidth = 40;
             this.UiCalNumeroOrden.Name = "UiCalNumeroOrden";
             this.UiCalNumeroOrden.OptionsColumn.AllowEdit = false;
             this.UiCalNumeroOrden.Visible = true;
-            this.UiCalNumeroOrden.VisibleIndex = 15;
-            this.UiCalNumeroOrden.Width = 150;
+            this.UiCalNumeroOrden.VisibleIndex = 16;
+            this.UiCalNumeroOrden.Width = 22;
+            // 
+            // UiColFin
+            // 
+            this.UiColFin.Caption = "Fin de tarea";
+            this.UiColFin.FieldName = "PICKING_FINISHED_DATE";
+            this.UiColFin.Name = "UiColFin";
+            this.UiColFin.Visible = true;
+            this.UiColFin.VisibleIndex = 15;
+            this.UiColFin.Width = 87;
             // 
             // UiContendorDeBarras
             // 
@@ -1501,35 +1435,31 @@
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.UiContendorDeBarras;
-            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(6);
-            this.barDockControlTop.Size = new System.Drawing.Size(2245, 46);
+            this.barDockControlTop.Size = new System.Drawing.Size(683, 24);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 1255);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 447);
             this.barDockControlBottom.Manager = this.UiContendorDeBarras;
-            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(6);
-            this.barDockControlBottom.Size = new System.Drawing.Size(2245, 0);
+            this.barDockControlBottom.Size = new System.Drawing.Size(683, 0);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 46);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 24);
             this.barDockControlLeft.Manager = this.UiContendorDeBarras;
-            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(6);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 1209);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 423);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(2245, 46);
+            this.barDockControlRight.Location = new System.Drawing.Point(683, 24);
             this.barDockControlRight.Manager = this.UiContendorDeBarras;
-            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(6);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 1209);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 423);
             // 
             // UiTabTareas
             // 
@@ -1540,9 +1470,8 @@
             this.UiTabTareas.Controls.Add(this.barDockControlBottom);
             this.UiTabTareas.Controls.Add(this.barDockControlTop);
             this.UiTabTareas.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiTabTareas.ImageOptions.Image")));
-            this.UiTabTareas.Margin = new System.Windows.Forms.Padding(6);
             this.UiTabTareas.Name = "UiTabTareas";
-            this.UiTabTareas.Size = new System.Drawing.Size(2245, 1255);
+            this.UiTabTareas.Size = new System.Drawing.Size(683, 447);
             this.UiTabTareas.Text = "Tareas";
             // 
             // UiSplitControlTareas
@@ -1550,15 +1479,14 @@
             this.UiSplitControlTareas.CollapsePanel = DevExpress.XtraEditors.SplitCollapsePanel.Panel2;
             this.UiSplitControlTareas.Dock = System.Windows.Forms.DockStyle.Fill;
             this.UiSplitControlTareas.Horizontal = false;
-            this.UiSplitControlTareas.Location = new System.Drawing.Point(660, 46);
-            this.UiSplitControlTareas.Margin = new System.Windows.Forms.Padding(6);
+            this.UiSplitControlTareas.Location = new System.Drawing.Point(330, 24);
             this.UiSplitControlTareas.Name = "UiSplitControlTareas";
             this.UiSplitControlTareas.Panel1.Controls.Add(this.UiContenedorVistaTareasEncabezado);
             this.UiSplitControlTareas.Panel1.Text = "Panel1";
             this.UiSplitControlTareas.Panel2.Controls.Add(this.UiContenedorDetalle);
             this.UiSplitControlTareas.Panel2.Text = "Panel2";
-            this.UiSplitControlTareas.Size = new System.Drawing.Size(1585, 1209);
-            this.UiSplitControlTareas.SplitterPosition = 727;
+            this.UiSplitControlTareas.Size = new System.Drawing.Size(353, 423);
+            this.UiSplitControlTareas.SplitterPosition = 412;
             this.UiSplitControlTareas.TabIndex = 9;
             this.UiSplitControlTareas.Text = "splitContainerControl1";
             // 
@@ -1566,7 +1494,6 @@
             // 
             this.UiContenedorDetalle.AllowDrop = true;
             this.UiContenedorDetalle.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.UiContenedorDetalle.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(6);
             gridLevelNode3.LevelTemplate = this.UiVistaDetalleCounting;
             gridLevelNode3.RelationName = "LevelGridCounting";
             gridLevelNode4.LevelTemplate = this.UiVistaDetalleReubicacion;
@@ -1576,13 +1503,12 @@
             gridLevelNode4});
             this.UiContenedorDetalle.Location = new System.Drawing.Point(0, 0);
             this.UiContenedorDetalle.MainView = this.UiVistaDetalleRecepcion;
-            this.UiContenedorDetalle.Margin = new System.Windows.Forms.Padding(6);
             this.UiContenedorDetalle.Name = "UiContenedorDetalle";
             this.UiContenedorDetalle.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.UiListaOperadoresParaPickingDetalle,
             this.UiListaOperadoresParaReubicacionDetalle,
             this.UiListaOperadoresParaConteo});
-            this.UiContenedorDetalle.Size = new System.Drawing.Size(1585, 462);
+            this.UiContenedorDetalle.Size = new System.Drawing.Size(353, 1);
             this.UiContenedorDetalle.TabIndex = 1;
             this.UiContenedorDetalle.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.UiVistaDetalleCounting,
@@ -1597,6 +1523,9 @@
             // UiVistaDetalleCounting
             // 
             this.UiVistaDetalleCounting.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.UiStockQTY,
+            this.UiPhysicalCounting,
+            this.UiDifference,
             this.colPHYSICAL_COUNT_DETAIL_ID,
             this.colWAREHOUSE_ID,
             this.colZONE,
@@ -1608,96 +1537,106 @@
             this.colREGIMEN,
             this.colDISTRIBUTION_CENTER,
             this.colMATERIAL_CLASS});
-            this.UiVistaDetalleCounting.DetailHeight = 673;
-            this.UiVistaDetalleCounting.FixedLineWidth = 4;
             this.UiVistaDetalleCounting.GridControl = this.UiContenedorDetalle;
+            this.UiVistaDetalleCounting.LevelIndent = 0;
             this.UiVistaDetalleCounting.Name = "UiVistaDetalleCounting";
             this.UiVistaDetalleCounting.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.UiVistaDetalleCounting.OptionsSelection.MultiSelect = true;
             this.UiVistaDetalleCounting.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
             this.UiVistaDetalleCounting.OptionsView.ShowAutoFilterRow = true;
             this.UiVistaDetalleCounting.OptionsView.ShowFooter = true;
+            this.UiVistaDetalleCounting.PreviewIndent = 0;
             this.UiVistaDetalleCounting.SelectionChanged += new DevExpress.Data.SelectionChangedEventHandler(this.UiVistaDetallePicking_SelectionChanged);
             this.UiVistaDetalleCounting.BeforeLeaveRow += new DevExpress.XtraGrid.Views.Base.RowAllowEventHandler(this.UiVistaDetallePicking_BeforeLeaveRow);
             this.UiVistaDetalleCounting.ColumnFilterChanged += new System.EventHandler(this.UiVistaDetallePicking_ColumnFilterChanged);
             this.UiVistaDetalleCounting.CustomColumnDisplayText += new DevExpress.XtraGrid.Views.Base.CustomColumnDisplayTextEventHandler(this.UiVistaDetalleCounting_CustomColumnDisplayText);
             this.UiVistaDetalleCounting.MouseUp += new System.Windows.Forms.MouseEventHandler(this.UiVistaDetallePicking_MouseUp);
             // 
+            // UiStockQTY
+            // 
+            this.UiStockQTY.Caption = "Cantidad Inventario";
+            this.UiStockQTY.FieldName = "QTY_SCANNED";
+            this.UiStockQTY.Name = "UiStockQTY";
+            this.UiStockQTY.Visible = true;
+            this.UiStockQTY.VisibleIndex = 1;
+            // 
+            // UiPhysicalCounting
+            // 
+            this.UiPhysicalCounting.Caption = "Cantidad Conteo Físico";
+            this.UiPhysicalCounting.FieldName = "QTY_EXPECTED";
+            this.UiPhysicalCounting.Name = "UiPhysicalCounting";
+            this.UiPhysicalCounting.Visible = true;
+            this.UiPhysicalCounting.VisibleIndex = 2;
+            // 
+            // UiDifference
+            // 
+            this.UiDifference.Caption = "Diferencia";
+            this.UiDifference.FieldName = "DIFFERENCE";
+            this.UiDifference.Name = "UiDifference";
+            this.UiDifference.Visible = true;
+            this.UiDifference.VisibleIndex = 3;
+            // 
             // colPHYSICAL_COUNT_DETAIL_ID
             // 
             this.colPHYSICAL_COUNT_DETAIL_ID.Caption = "PHYSICAL_COUNT_DETAIL_ID";
             this.colPHYSICAL_COUNT_DETAIL_ID.FieldName = "PHYSICAL_COUNT_DETAIL_ID";
-            this.colPHYSICAL_COUNT_DETAIL_ID.MinWidth = 40;
             this.colPHYSICAL_COUNT_DETAIL_ID.Name = "colPHYSICAL_COUNT_DETAIL_ID";
             this.colPHYSICAL_COUNT_DETAIL_ID.OptionsColumn.AllowEdit = false;
             this.colPHYSICAL_COUNT_DETAIL_ID.OptionsColumn.ShowInCustomizationForm = false;
-            this.colPHYSICAL_COUNT_DETAIL_ID.Width = 150;
             // 
             // colWAREHOUSE_ID
             // 
             this.colWAREHOUSE_ID.Caption = "Bodega";
             this.colWAREHOUSE_ID.FieldName = "WAREHOUSE_ID";
-            this.colWAREHOUSE_ID.MinWidth = 40;
             this.colWAREHOUSE_ID.Name = "colWAREHOUSE_ID";
             this.colWAREHOUSE_ID.OptionsColumn.AllowEdit = false;
             this.colWAREHOUSE_ID.Visible = true;
-            this.colWAREHOUSE_ID.VisibleIndex = 1;
-            this.colWAREHOUSE_ID.Width = 150;
+            this.colWAREHOUSE_ID.VisibleIndex = 4;
             // 
             // colZONE
             // 
             this.colZONE.Caption = "Zona";
             this.colZONE.FieldName = "ZONE";
-            this.colZONE.MinWidth = 40;
             this.colZONE.Name = "colZONE";
             this.colZONE.OptionsColumn.AllowEdit = false;
             this.colZONE.Visible = true;
-            this.colZONE.VisibleIndex = 2;
-            this.colZONE.Width = 150;
+            this.colZONE.VisibleIndex = 5;
             // 
             // colLOCATION
             // 
             this.colLOCATION.Caption = "Ubicación";
             this.colLOCATION.FieldName = "LOCATION";
-            this.colLOCATION.MinWidth = 40;
             this.colLOCATION.Name = "colLOCATION";
             this.colLOCATION.OptionsColumn.AllowEdit = false;
             this.colLOCATION.Visible = true;
-            this.colLOCATION.VisibleIndex = 3;
-            this.colLOCATION.Width = 150;
+            this.colLOCATION.VisibleIndex = 6;
             // 
             // colCLIENT_CODE
             // 
             this.colCLIENT_CODE.Caption = "Código Cliente";
             this.colCLIENT_CODE.FieldName = "CLIENT_CODE";
-            this.colCLIENT_CODE.MinWidth = 40;
             this.colCLIENT_CODE.Name = "colCLIENT_CODE";
             this.colCLIENT_CODE.OptionsColumn.AllowEdit = false;
             this.colCLIENT_CODE.Visible = true;
-            this.colCLIENT_CODE.VisibleIndex = 4;
-            this.colCLIENT_CODE.Width = 150;
+            this.colCLIENT_CODE.VisibleIndex = 7;
             // 
             // colMATERIAL_ID
             // 
             this.colMATERIAL_ID.Caption = "Código Material";
             this.colMATERIAL_ID.FieldName = "MATERIAL_ID";
-            this.colMATERIAL_ID.MinWidth = 40;
             this.colMATERIAL_ID.Name = "colMATERIAL_ID";
             this.colMATERIAL_ID.OptionsColumn.AllowEdit = false;
             this.colMATERIAL_ID.Visible = true;
-            this.colMATERIAL_ID.VisibleIndex = 5;
-            this.colMATERIAL_ID.Width = 150;
+            this.colMATERIAL_ID.VisibleIndex = 8;
             // 
             // colASSIGNED_TO
             // 
             this.colASSIGNED_TO.Caption = "Asignado A";
             this.colASSIGNED_TO.ColumnEdit = this.UiListaOperadoresParaConteo;
             this.colASSIGNED_TO.FieldName = "ASSIGNED_TO";
-            this.colASSIGNED_TO.MinWidth = 40;
             this.colASSIGNED_TO.Name = "colASSIGNED_TO";
             this.colASSIGNED_TO.Visible = true;
-            this.colASSIGNED_TO.VisibleIndex = 6;
-            this.colASSIGNED_TO.Width = 150;
+            this.colASSIGNED_TO.VisibleIndex = 9;
             // 
             // UiListaOperadoresParaConteo
             // 
@@ -1717,45 +1656,37 @@
             // 
             this.colSTATUS.Caption = "Estado";
             this.colSTATUS.FieldName = "STATUS";
-            this.colSTATUS.MinWidth = 40;
             this.colSTATUS.Name = "colSTATUS";
             this.colSTATUS.OptionsColumn.AllowEdit = false;
             this.colSTATUS.Visible = true;
-            this.colSTATUS.VisibleIndex = 7;
-            this.colSTATUS.Width = 150;
+            this.colSTATUS.VisibleIndex = 10;
             // 
             // colREGIMEN
             // 
             this.colREGIMEN.Caption = "Régimen";
             this.colREGIMEN.FieldName = "REGIMEN";
-            this.colREGIMEN.MinWidth = 40;
             this.colREGIMEN.Name = "colREGIMEN";
             this.colREGIMEN.OptionsColumn.AllowEdit = false;
             this.colREGIMEN.Visible = true;
-            this.colREGIMEN.VisibleIndex = 8;
-            this.colREGIMEN.Width = 150;
+            this.colREGIMEN.VisibleIndex = 11;
             // 
             // colDISTRIBUTION_CENTER
             // 
             this.colDISTRIBUTION_CENTER.Caption = "Centro Distribución";
             this.colDISTRIBUTION_CENTER.FieldName = "DISTRIBUTION_CENTER";
-            this.colDISTRIBUTION_CENTER.MinWidth = 40;
             this.colDISTRIBUTION_CENTER.Name = "colDISTRIBUTION_CENTER";
             this.colDISTRIBUTION_CENTER.OptionsColumn.AllowEdit = false;
             this.colDISTRIBUTION_CENTER.Visible = true;
-            this.colDISTRIBUTION_CENTER.VisibleIndex = 9;
-            this.colDISTRIBUTION_CENTER.Width = 150;
+            this.colDISTRIBUTION_CENTER.VisibleIndex = 12;
             // 
             // colMATERIAL_CLASS
             // 
             this.colMATERIAL_CLASS.Caption = "Clase Material";
             this.colMATERIAL_CLASS.FieldName = "CLASS_NAME";
-            this.colMATERIAL_CLASS.MinWidth = 40;
             this.colMATERIAL_CLASS.Name = "colMATERIAL_CLASS";
             this.colMATERIAL_CLASS.OptionsColumn.AllowEdit = false;
             this.colMATERIAL_CLASS.Visible = true;
-            this.colMATERIAL_CLASS.VisibleIndex = 10;
-            this.colMATERIAL_CLASS.Width = 150;
+            this.colMATERIAL_CLASS.VisibleIndex = 13;
             // 
             // UiVistaDetalleReubicacion
             // 
@@ -1769,15 +1700,15 @@
             this.UiColEsCompletada,
             this.UiColSubTipoTareaReubicacion,
             this.UiColClaseMaterial});
-            this.UiVistaDetalleReubicacion.DetailHeight = 673;
-            this.UiVistaDetalleReubicacion.FixedLineWidth = 4;
             this.UiVistaDetalleReubicacion.GridControl = this.UiContenedorDetalle;
+            this.UiVistaDetalleReubicacion.LevelIndent = 0;
             this.UiVistaDetalleReubicacion.Name = "UiVistaDetalleReubicacion";
             this.UiVistaDetalleReubicacion.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.UiVistaDetalleReubicacion.OptionsSelection.MultiSelect = true;
             this.UiVistaDetalleReubicacion.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
             this.UiVistaDetalleReubicacion.OptionsView.ShowAutoFilterRow = true;
             this.UiVistaDetalleReubicacion.OptionsView.ShowFooter = true;
+            this.UiVistaDetalleReubicacion.PreviewIndent = 0;
             this.UiVistaDetalleReubicacion.SelectionChanged += new DevExpress.Data.SelectionChangedEventHandler(this.UiVistaDetallePicking_SelectionChanged);
             this.UiVistaDetalleReubicacion.BeforeLeaveRow += new DevExpress.XtraGrid.Views.Base.RowAllowEventHandler(this.UiVistaDetallePicking_BeforeLeaveRow);
             this.UiVistaDetalleReubicacion.ColumnFilterChanged += new System.EventHandler(this.UiVistaDetallePicking_ColumnFilterChanged);
@@ -1788,24 +1719,20 @@
             // 
             this.UiColQuantityPending.Caption = "Cantidad Pendiente";
             this.UiColQuantityPending.FieldName = "QTY";
-            this.UiColQuantityPending.MinWidth = 40;
             this.UiColQuantityPending.Name = "UiColQuantityPending";
             this.UiColQuantityPending.OptionsColumn.AllowEdit = false;
             this.UiColQuantityPending.OptionsColumn.ReadOnly = true;
             this.UiColQuantityPending.Visible = true;
             this.UiColQuantityPending.VisibleIndex = 2;
-            this.UiColQuantityPending.Width = 150;
             // 
             // UiColTaskAssignedTo
             // 
             this.UiColTaskAssignedTo.Caption = "Asignado a";
             this.UiColTaskAssignedTo.ColumnEdit = this.UiListaOperadoresParaReubicacionDetalle;
             this.UiColTaskAssignedTo.FieldName = "ASSIGNED_TO";
-            this.UiColTaskAssignedTo.MinWidth = 40;
             this.UiColTaskAssignedTo.Name = "UiColTaskAssignedTo";
             this.UiColTaskAssignedTo.Visible = true;
             this.UiColTaskAssignedTo.VisibleIndex = 1;
-            this.UiColTaskAssignedTo.Width = 150;
             // 
             // UiListaOperadoresParaReubicacionDetalle
             // 
@@ -1828,7 +1755,6 @@
             // 
             this.UiColQuantityAssigned.Caption = "Cantidad Asignada";
             this.UiColQuantityAssigned.FieldName = "QTY_DOC";
-            this.UiColQuantityAssigned.MinWidth = 40;
             this.UiColQuantityAssigned.Name = "UiColQuantityAssigned";
             this.UiColQuantityAssigned.OptionsColumn.AllowEdit = false;
             this.UiColQuantityAssigned.OptionsColumn.ReadOnly = true;
@@ -1836,78 +1762,65 @@
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "QTY_DOC", "{0:0.##}")});
             this.UiColQuantityAssigned.Visible = true;
             this.UiColQuantityAssigned.VisibleIndex = 3;
-            this.UiColQuantityAssigned.Width = 150;
             // 
             // UiColMaterialId
             // 
             this.UiColMaterialId.Caption = "Código material";
             this.UiColMaterialId.FieldName = "MATERIAL_ID";
-            this.UiColMaterialId.MinWidth = 40;
             this.UiColMaterialId.Name = "UiColMaterialId";
             this.UiColMaterialId.OptionsColumn.AllowEdit = false;
             this.UiColMaterialId.OptionsColumn.ReadOnly = true;
             this.UiColMaterialId.Visible = true;
             this.UiColMaterialId.VisibleIndex = 4;
-            this.UiColMaterialId.Width = 150;
             // 
             // UiColBarcode
             // 
             this.UiColBarcode.Caption = "Código de Barras";
             this.UiColBarcode.FieldName = "BARCODE_ID";
-            this.UiColBarcode.MinWidth = 40;
             this.UiColBarcode.Name = "UiColBarcode";
             this.UiColBarcode.OptionsColumn.AllowEdit = false;
             this.UiColBarcode.OptionsColumn.ReadOnly = true;
             this.UiColBarcode.Visible = true;
             this.UiColBarcode.VisibleIndex = 5;
-            this.UiColBarcode.Width = 150;
             // 
             // UiColNombreMaterial
             // 
             this.UiColNombreMaterial.Caption = "Nombre del material";
             this.UiColNombreMaterial.FieldName = "MATERIAL_NAME";
-            this.UiColNombreMaterial.MinWidth = 40;
             this.UiColNombreMaterial.Name = "UiColNombreMaterial";
             this.UiColNombreMaterial.OptionsColumn.AllowEdit = false;
             this.UiColNombreMaterial.OptionsColumn.ReadOnly = true;
             this.UiColNombreMaterial.Visible = true;
             this.UiColNombreMaterial.VisibleIndex = 6;
-            this.UiColNombreMaterial.Width = 150;
             // 
             // UiColEsCompletada
             // 
             this.UiColEsCompletada.Caption = "Estado";
             this.UiColEsCompletada.FieldName = "STATUS";
-            this.UiColEsCompletada.MinWidth = 40;
             this.UiColEsCompletada.Name = "UiColEsCompletada";
             this.UiColEsCompletada.OptionsColumn.AllowEdit = false;
             this.UiColEsCompletada.OptionsColumn.ReadOnly = true;
             this.UiColEsCompletada.Visible = true;
             this.UiColEsCompletada.VisibleIndex = 7;
-            this.UiColEsCompletada.Width = 150;
             // 
             // UiColSubTipoTareaReubicacion
             // 
             this.UiColSubTipoTareaReubicacion.Caption = "Tipo de tarea";
             this.UiColSubTipoTareaReubicacion.FieldName = "TASK_SUBTYPE";
-            this.UiColSubTipoTareaReubicacion.MinWidth = 40;
             this.UiColSubTipoTareaReubicacion.Name = "UiColSubTipoTareaReubicacion";
             this.UiColSubTipoTareaReubicacion.OptionsColumn.AllowEdit = false;
             this.UiColSubTipoTareaReubicacion.OptionsColumn.ReadOnly = true;
             this.UiColSubTipoTareaReubicacion.Visible = true;
             this.UiColSubTipoTareaReubicacion.VisibleIndex = 9;
-            this.UiColSubTipoTareaReubicacion.Width = 150;
             // 
             // UiColClaseMaterial
             // 
             this.UiColClaseMaterial.Caption = "Clase Material";
             this.UiColClaseMaterial.FieldName = "CLASS_NAME";
-            this.UiColClaseMaterial.MinWidth = 40;
             this.UiColClaseMaterial.Name = "UiColClaseMaterial";
             this.UiColClaseMaterial.OptionsColumn.AllowEdit = false;
             this.UiColClaseMaterial.Visible = true;
             this.UiColClaseMaterial.VisibleIndex = 8;
-            this.UiColClaseMaterial.Width = 150;
             // 
             // UiVistaDetalleRecepcion
             // 
@@ -1918,69 +1831,69 @@
             this.UiColCantidadRecepcion,
             this.UiColCantidadDocumentoRecepcion,
             this.UiColDiferenciaCantidadRecepcion});
-            this.UiVistaDetalleRecepcion.DetailHeight = 673;
-            this.UiVistaDetalleRecepcion.FixedLineWidth = 4;
-            gridFormatRule16.ApplyToRow = true;
-            gridFormatRule16.Name = "Format0";
-            formatConditionRuleExpression16.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            formatConditionRuleExpression16.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            formatConditionRuleExpression16.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            formatConditionRuleExpression16.Appearance.Options.UseBackColor = true;
-            formatConditionRuleExpression16.Appearance.Options.UseBorderColor = true;
-            formatConditionRuleExpression16.Expression = "[QTY_DIFFERENCE] < 0";
-            gridFormatRule16.Rule = formatConditionRuleExpression16;
             gridFormatRule17.ApplyToRow = true;
-            gridFormatRule17.Name = "Format1";
-            formatConditionRuleExpression17.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            formatConditionRuleExpression17.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            formatConditionRuleExpression17.Appearance.BorderColor = System.Drawing.Color.Yellow;
+            gridFormatRule17.Name = "Format0";
+            formatConditionRuleExpression17.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            formatConditionRuleExpression17.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            formatConditionRuleExpression17.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             formatConditionRuleExpression17.Appearance.Options.UseBackColor = true;
             formatConditionRuleExpression17.Appearance.Options.UseBorderColor = true;
-            formatConditionRuleExpression17.Expression = "[QTY_DIFFERENCE] > 0";
+            formatConditionRuleExpression17.Expression = "[QTY_DIFFERENCE] < 0";
             gridFormatRule17.Rule = formatConditionRuleExpression17;
             gridFormatRule18.ApplyToRow = true;
-            gridFormatRule18.Name = "Format2";
-            formatConditionRuleExpression18.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            formatConditionRuleExpression18.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            formatConditionRuleExpression18.Appearance.BorderColor = System.Drawing.Color.Lime;
+            gridFormatRule18.Name = "Format1";
+            formatConditionRuleExpression18.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            formatConditionRuleExpression18.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            formatConditionRuleExpression18.Appearance.BorderColor = System.Drawing.Color.Yellow;
             formatConditionRuleExpression18.Appearance.Options.UseBackColor = true;
             formatConditionRuleExpression18.Appearance.Options.UseBorderColor = true;
-            formatConditionRuleExpression18.Expression = "IsNullOrEmpty([QTY_DIFFERENCE]) Or [QTY_DIFFERENCE] = 0";
+            formatConditionRuleExpression18.Expression = "[QTY_DIFFERENCE] > 0";
             gridFormatRule18.Rule = formatConditionRuleExpression18;
             gridFormatRule19.ApplyToRow = true;
-            gridFormatRule19.Name = "Format3";
-            formatConditionRuleExpression19.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            formatConditionRuleExpression19.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            formatConditionRuleExpression19.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            gridFormatRule19.Name = "Format2";
+            formatConditionRuleExpression19.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            formatConditionRuleExpression19.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            formatConditionRuleExpression19.Appearance.BorderColor = System.Drawing.Color.Lime;
             formatConditionRuleExpression19.Appearance.Options.UseBackColor = true;
             formatConditionRuleExpression19.Appearance.Options.UseBorderColor = true;
-            formatConditionRuleExpression19.Expression = "[QTY] >= 0 And [QTY_DOC] <> [QTY] And [QTY_DIFFERENCE] <> 0";
-            formatConditionRuleExpression19.PredefinedName = "Yellow Fill, Yellow Text";
+            formatConditionRuleExpression19.Expression = "IsNullOrEmpty([QTY_DIFFERENCE]) Or [QTY_DIFFERENCE] = 0";
             gridFormatRule19.Rule = formatConditionRuleExpression19;
             gridFormatRule20.ApplyToRow = true;
-            gridFormatRule20.Name = "Format4";
-            formatConditionRuleExpression20.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            formatConditionRuleExpression20.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            formatConditionRuleExpression20.Appearance.BorderColor = System.Drawing.Color.Lime;
+            gridFormatRule20.Name = "Format3";
+            formatConditionRuleExpression20.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            formatConditionRuleExpression20.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            formatConditionRuleExpression20.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             formatConditionRuleExpression20.Appearance.Options.UseBackColor = true;
             formatConditionRuleExpression20.Appearance.Options.UseBorderColor = true;
-            formatConditionRuleExpression20.Expression = "[QTY] = [QTY_DOC]";
-            formatConditionRuleExpression20.PredefinedName = "Green Fill, Green Text";
+            formatConditionRuleExpression20.Expression = "[QTY] >= 0 And [QTY_DOC] <> [QTY] And [QTY_DIFFERENCE] <> 0";
+            formatConditionRuleExpression20.PredefinedName = "Yellow Fill, Yellow Text";
             gridFormatRule20.Rule = formatConditionRuleExpression20;
-            this.UiVistaDetalleRecepcion.FormatRules.Add(gridFormatRule16);
+            gridFormatRule21.ApplyToRow = true;
+            gridFormatRule21.Name = "Format4";
+            formatConditionRuleExpression21.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            formatConditionRuleExpression21.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            formatConditionRuleExpression21.Appearance.BorderColor = System.Drawing.Color.Lime;
+            formatConditionRuleExpression21.Appearance.Options.UseBackColor = true;
+            formatConditionRuleExpression21.Appearance.Options.UseBorderColor = true;
+            formatConditionRuleExpression21.Expression = "[QTY] = [QTY_DOC]";
+            formatConditionRuleExpression21.PredefinedName = "Green Fill, Green Text";
+            gridFormatRule21.Rule = formatConditionRuleExpression21;
             this.UiVistaDetalleRecepcion.FormatRules.Add(gridFormatRule17);
             this.UiVistaDetalleRecepcion.FormatRules.Add(gridFormatRule18);
             this.UiVistaDetalleRecepcion.FormatRules.Add(gridFormatRule19);
             this.UiVistaDetalleRecepcion.FormatRules.Add(gridFormatRule20);
+            this.UiVistaDetalleRecepcion.FormatRules.Add(gridFormatRule21);
             this.UiVistaDetalleRecepcion.GridControl = this.UiContenedorDetalle;
             this.UiVistaDetalleRecepcion.GroupSummary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridGroupSummaryItem(DevExpress.Data.SummaryItemType.Count, "MATERIAL_ID", this.UiColCodigoMaterialRecepcion, "(Código Material: Count={0})"),
             new DevExpress.XtraGrid.GridGroupSummaryItem(DevExpress.Data.SummaryItemType.None, "", null, "")});
+            this.UiVistaDetalleRecepcion.LevelIndent = 0;
             this.UiVistaDetalleRecepcion.Name = "UiVistaDetalleRecepcion";
             this.UiVistaDetalleRecepcion.OptionsSelection.MultiSelect = true;
             this.UiVistaDetalleRecepcion.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
             this.UiVistaDetalleRecepcion.OptionsView.ShowAutoFilterRow = true;
             this.UiVistaDetalleRecepcion.OptionsView.ShowFooter = true;
+            this.UiVistaDetalleRecepcion.PreviewIndent = 0;
             this.UiVistaDetalleRecepcion.SelectionChanged += new DevExpress.Data.SelectionChangedEventHandler(this.UiVistaDetalleRecepcion_SelectionChanged);
             this.UiVistaDetalleRecepcion.BeforeLeaveRow += new DevExpress.XtraGrid.Views.Base.RowAllowEventHandler(this.UiVistaDetalleRecepcion_BeforeLeaveRow);
             this.UiVistaDetalleRecepcion.ColumnFilterChanged += new System.EventHandler(this.UiVistaDetalleRecepcion_ColumnFilterChanged);
@@ -1991,73 +1904,61 @@
             // 
             this.UiColTareaDetalleRecepcion.Caption = "Tarea";
             this.UiColTareaDetalleRecepcion.FieldName = "TASK_COMMENTS";
-            this.UiColTareaDetalleRecepcion.MinWidth = 40;
             this.UiColTareaDetalleRecepcion.Name = "UiColTareaDetalleRecepcion";
             this.UiColTareaDetalleRecepcion.OptionsColumn.AllowEdit = false;
             this.UiColTareaDetalleRecepcion.Visible = true;
             this.UiColTareaDetalleRecepcion.VisibleIndex = 1;
-            this.UiColTareaDetalleRecepcion.Width = 150;
             // 
             // UiColCodigoMaterialRecepcion
             // 
             this.UiColCodigoMaterialRecepcion.Caption = "Código Material";
             this.UiColCodigoMaterialRecepcion.FieldName = "MATERIAL_ID";
-            this.UiColCodigoMaterialRecepcion.MinWidth = 40;
             this.UiColCodigoMaterialRecepcion.Name = "UiColCodigoMaterialRecepcion";
             this.UiColCodigoMaterialRecepcion.OptionsColumn.AllowEdit = false;
             this.UiColCodigoMaterialRecepcion.Visible = true;
             this.UiColCodigoMaterialRecepcion.VisibleIndex = 2;
-            this.UiColCodigoMaterialRecepcion.Width = 150;
             // 
             // UiColNombreMaterialRecepcion
             // 
             this.UiColNombreMaterialRecepcion.Caption = "Nombre Material";
             this.UiColNombreMaterialRecepcion.FieldName = "MATERIAL_NAME";
-            this.UiColNombreMaterialRecepcion.MinWidth = 40;
             this.UiColNombreMaterialRecepcion.Name = "UiColNombreMaterialRecepcion";
             this.UiColNombreMaterialRecepcion.OptionsColumn.AllowEdit = false;
             this.UiColNombreMaterialRecepcion.Visible = true;
             this.UiColNombreMaterialRecepcion.VisibleIndex = 3;
-            this.UiColNombreMaterialRecepcion.Width = 150;
             // 
             // UiColCantidadRecepcion
             // 
             this.UiColCantidadRecepcion.Caption = "Cantidad";
             this.UiColCantidadRecepcion.FieldName = "QTY";
-            this.UiColCantidadRecepcion.MinWidth = 40;
             this.UiColCantidadRecepcion.Name = "UiColCantidadRecepcion";
             this.UiColCantidadRecepcion.OptionsColumn.AllowEdit = false;
             this.UiColCantidadRecepcion.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "QTY", "{0:0.##}")});
             this.UiColCantidadRecepcion.Visible = true;
             this.UiColCantidadRecepcion.VisibleIndex = 4;
-            this.UiColCantidadRecepcion.Width = 150;
             // 
             // UiColCantidadDocumentoRecepcion
             // 
             this.UiColCantidadDocumentoRecepcion.Caption = "Cantidad del Documento";
             this.UiColCantidadDocumentoRecepcion.FieldName = "QTY_DOC";
-            this.UiColCantidadDocumentoRecepcion.MinWidth = 40;
             this.UiColCantidadDocumentoRecepcion.Name = "UiColCantidadDocumentoRecepcion";
             this.UiColCantidadDocumentoRecepcion.OptionsColumn.AllowEdit = false;
             this.UiColCantidadDocumentoRecepcion.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "QTY_DOC", "{0:0.##}")});
             this.UiColCantidadDocumentoRecepcion.Visible = true;
             this.UiColCantidadDocumentoRecepcion.VisibleIndex = 5;
-            this.UiColCantidadDocumentoRecepcion.Width = 150;
             // 
             // UiColDiferenciaCantidadRecepcion
             // 
             this.UiColDiferenciaCantidadRecepcion.Caption = "Diferencia";
             this.UiColDiferenciaCantidadRecepcion.FieldName = "QTY_DIFFERENCE";
-            this.UiColDiferenciaCantidadRecepcion.MinWidth = 40;
             this.UiColDiferenciaCantidadRecepcion.Name = "UiColDiferenciaCantidadRecepcion";
             this.UiColDiferenciaCantidadRecepcion.OptionsColumn.AllowEdit = false;
             this.UiColDiferenciaCantidadRecepcion.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "QTY_DIFFERENCE", "{0:0.##}")});
             this.UiColDiferenciaCantidadRecepcion.Visible = true;
             this.UiColDiferenciaCantidadRecepcion.VisibleIndex = 6;
-            this.UiColDiferenciaCantidadRecepcion.Width = 150;
             // 
             // UiListaOperadoresParaPickingDetalle
             // 
@@ -2090,37 +1991,37 @@
             this.UiColCodigoBarraDetallePicking,
             this.UiColIsCompleted,
             this.UiColClassName});
-            this.UiVistaDetallePicking.DetailHeight = 673;
-            this.UiVistaDetallePicking.FixedLineWidth = 4;
-            gridFormatRule21.ApplyToRow = true;
-            gridFormatRule21.Name = "Format0";
-            formatConditionRuleExpression21.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            formatConditionRuleExpression21.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            formatConditionRuleExpression21.Appearance.BorderColor = System.Drawing.Color.Lime;
-            formatConditionRuleExpression21.Appearance.Options.UseBackColor = true;
-            formatConditionRuleExpression21.Appearance.Options.UseBorderColor = true;
-            formatConditionRuleExpression21.Expression = "[QTY] = 0";
-            formatConditionRuleExpression21.PredefinedName = "Green Text";
-            gridFormatRule21.Rule = formatConditionRuleExpression21;
             gridFormatRule22.ApplyToRow = true;
-            gridFormatRule22.Name = "Format1";
-            formatConditionRuleExpression22.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            formatConditionRuleExpression22.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            formatConditionRuleExpression22.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            gridFormatRule22.Name = "Format0";
+            formatConditionRuleExpression22.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            formatConditionRuleExpression22.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            formatConditionRuleExpression22.Appearance.BorderColor = System.Drawing.Color.Lime;
             formatConditionRuleExpression22.Appearance.Options.UseBackColor = true;
             formatConditionRuleExpression22.Appearance.Options.UseBorderColor = true;
-            formatConditionRuleExpression22.Expression = "[QTY] > 0";
-            formatConditionRuleExpression22.PredefinedName = "Yellow Fill, Yellow Text";
+            formatConditionRuleExpression22.Expression = "[QTY] = 0";
+            formatConditionRuleExpression22.PredefinedName = "Green Text";
             gridFormatRule22.Rule = formatConditionRuleExpression22;
-            this.UiVistaDetallePicking.FormatRules.Add(gridFormatRule21);
+            gridFormatRule23.ApplyToRow = true;
+            gridFormatRule23.Name = "Format1";
+            formatConditionRuleExpression23.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            formatConditionRuleExpression23.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            formatConditionRuleExpression23.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            formatConditionRuleExpression23.Appearance.Options.UseBackColor = true;
+            formatConditionRuleExpression23.Appearance.Options.UseBorderColor = true;
+            formatConditionRuleExpression23.Expression = "[QTY] > 0";
+            formatConditionRuleExpression23.PredefinedName = "Yellow Fill, Yellow Text";
+            gridFormatRule23.Rule = formatConditionRuleExpression23;
             this.UiVistaDetallePicking.FormatRules.Add(gridFormatRule22);
+            this.UiVistaDetallePicking.FormatRules.Add(gridFormatRule23);
             this.UiVistaDetallePicking.GridControl = this.UiContenedorDetalle;
+            this.UiVistaDetallePicking.LevelIndent = 0;
             this.UiVistaDetallePicking.Name = "UiVistaDetallePicking";
             this.UiVistaDetallePicking.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.UiVistaDetallePicking.OptionsSelection.MultiSelect = true;
             this.UiVistaDetallePicking.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
             this.UiVistaDetallePicking.OptionsView.ShowAutoFilterRow = true;
             this.UiVistaDetallePicking.OptionsView.ShowFooter = true;
+            this.UiVistaDetallePicking.PreviewIndent = 0;
             this.UiVistaDetallePicking.SelectionChanged += new DevExpress.Data.SelectionChangedEventHandler(this.UiVistaDetallePicking_SelectionChanged);
             this.UiVistaDetallePicking.BeforeLeaveRow += new DevExpress.XtraGrid.Views.Base.RowAllowEventHandler(this.UiVistaDetallePicking_BeforeLeaveRow);
             this.UiVistaDetallePicking.ColumnFilterChanged += new System.EventHandler(this.UiVistaDetallePicking_ColumnFilterChanged);
@@ -2131,145 +2032,122 @@
             // 
             this.UiColTareaDetallePicking.Caption = "Tarea";
             this.UiColTareaDetallePicking.FieldName = "TASK_COMMENTS";
-            this.UiColTareaDetallePicking.MinWidth = 40;
             this.UiColTareaDetallePicking.Name = "UiColTareaDetallePicking";
             this.UiColTareaDetallePicking.OptionsColumn.AllowEdit = false;
             this.UiColTareaDetallePicking.Visible = true;
             this.UiColTareaDetallePicking.VisibleIndex = 1;
-            this.UiColTareaDetallePicking.Width = 150;
             // 
             // UiColOperadorDetallePicking
             // 
             this.UiColOperadorDetallePicking.Caption = "Operador";
             this.UiColOperadorDetallePicking.ColumnEdit = this.UiListaOperadoresParaPickingDetalle;
             this.UiColOperadorDetallePicking.FieldName = "ASSIGNED_TO";
-            this.UiColOperadorDetallePicking.MinWidth = 40;
             this.UiColOperadorDetallePicking.Name = "UiColOperadorDetallePicking";
             this.UiColOperadorDetallePicking.Visible = true;
             this.UiColOperadorDetallePicking.VisibleIndex = 2;
-            this.UiColOperadorDetallePicking.Width = 150;
             // 
             // UiColCantidadPendienteDetallePicking
             // 
             this.UiColCantidadPendienteDetallePicking.Caption = "Cantidad Pendiente";
             this.UiColCantidadPendienteDetallePicking.FieldName = "QTY";
-            this.UiColCantidadPendienteDetallePicking.MinWidth = 40;
             this.UiColCantidadPendienteDetallePicking.Name = "UiColCantidadPendienteDetallePicking";
             this.UiColCantidadPendienteDetallePicking.OptionsColumn.AllowEdit = false;
             this.UiColCantidadPendienteDetallePicking.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "QTY", "{0:0.##}")});
             this.UiColCantidadPendienteDetallePicking.Visible = true;
             this.UiColCantidadPendienteDetallePicking.VisibleIndex = 3;
-            this.UiColCantidadPendienteDetallePicking.Width = 150;
             // 
             // UiColCantidadDetallePicking
             // 
             this.UiColCantidadDetallePicking.Caption = "Cantidad";
             this.UiColCantidadDetallePicking.FieldName = "QTY_DOC";
-            this.UiColCantidadDetallePicking.MinWidth = 40;
             this.UiColCantidadDetallePicking.Name = "UiColCantidadDetallePicking";
             this.UiColCantidadDetallePicking.OptionsColumn.AllowEdit = false;
             this.UiColCantidadDetallePicking.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "QTY_DOC", "{0:0.##}")});
             this.UiColCantidadDetallePicking.Visible = true;
             this.UiColCantidadDetallePicking.VisibleIndex = 4;
-            this.UiColCantidadDetallePicking.Width = 150;
             // 
             // UiColCantidadDocumento
             // 
             this.UiColCantidadDocumento.Caption = "Cantidad Documento";
             this.UiColCantidadDocumento.FieldName = "QTY_DOC";
-            this.UiColCantidadDocumento.MinWidth = 40;
             this.UiColCantidadDocumento.Name = "UiColCantidadDocumento";
             this.UiColCantidadDocumento.OptionsColumn.AllowEdit = false;
             this.UiColCantidadDocumento.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "QTY_DOC", "{0:0.##}")});
             this.UiColCantidadDocumento.Visible = true;
             this.UiColCantidadDocumento.VisibleIndex = 5;
-            this.UiColCantidadDocumento.Width = 150;
             // 
             // UiColCodigoPolizaDestinoDetallePicking
             // 
             this.UiColCodigoPolizaDestinoDetallePicking.Caption = "Código Poliza Destino";
             this.UiColCodigoPolizaDestinoDetallePicking.FieldName = "CODIGO_POLIZA_TARGET";
-            this.UiColCodigoPolizaDestinoDetallePicking.MinWidth = 40;
             this.UiColCodigoPolizaDestinoDetallePicking.Name = "UiColCodigoPolizaDestinoDetallePicking";
             this.UiColCodigoPolizaDestinoDetallePicking.OptionsColumn.AllowEdit = false;
             this.UiColCodigoPolizaDestinoDetallePicking.Visible = true;
             this.UiColCodigoPolizaDestinoDetallePicking.VisibleIndex = 6;
-            this.UiColCodigoPolizaDestinoDetallePicking.Width = 150;
             // 
             // UiColCodigoMaterialDetallePicking
             // 
             this.UiColCodigoMaterialDetallePicking.Caption = "Código Material";
             this.UiColCodigoMaterialDetallePicking.FieldName = "MATERIAL_ID";
-            this.UiColCodigoMaterialDetallePicking.MinWidth = 40;
             this.UiColCodigoMaterialDetallePicking.Name = "UiColCodigoMaterialDetallePicking";
             this.UiColCodigoMaterialDetallePicking.OptionsColumn.AllowEdit = false;
             this.UiColCodigoMaterialDetallePicking.Visible = true;
             this.UiColCodigoMaterialDetallePicking.VisibleIndex = 7;
-            this.UiColCodigoMaterialDetallePicking.Width = 150;
             // 
             // UiColNombreMaterialDetallePicking
             // 
             this.UiColNombreMaterialDetallePicking.Caption = "Nombre Material";
             this.UiColNombreMaterialDetallePicking.FieldName = "MATERIAL_NAME";
-            this.UiColNombreMaterialDetallePicking.MinWidth = 40;
             this.UiColNombreMaterialDetallePicking.Name = "UiColNombreMaterialDetallePicking";
             this.UiColNombreMaterialDetallePicking.OptionsColumn.AllowEdit = false;
             this.UiColNombreMaterialDetallePicking.Visible = true;
             this.UiColNombreMaterialDetallePicking.VisibleIndex = 8;
-            this.UiColNombreMaterialDetallePicking.Width = 150;
             // 
             // UiColCodigoBarraDetallePicking
             // 
             this.UiColCodigoBarraDetallePicking.Caption = "Código de Barra";
             this.UiColCodigoBarraDetallePicking.FieldName = "BARCODE_ID";
-            this.UiColCodigoBarraDetallePicking.MinWidth = 40;
             this.UiColCodigoBarraDetallePicking.Name = "UiColCodigoBarraDetallePicking";
             this.UiColCodigoBarraDetallePicking.OptionsColumn.AllowEdit = false;
             this.UiColCodigoBarraDetallePicking.Visible = true;
             this.UiColCodigoBarraDetallePicking.VisibleIndex = 11;
-            this.UiColCodigoBarraDetallePicking.Width = 150;
             // 
             // UiColIsCompleted
             // 
             this.UiColIsCompleted.Caption = "Estado";
             this.UiColIsCompleted.FieldName = "STATUS";
-            this.UiColIsCompleted.MinWidth = 40;
             this.UiColIsCompleted.Name = "UiColIsCompleted";
             this.UiColIsCompleted.OptionsColumn.AllowEdit = false;
             this.UiColIsCompleted.Visible = true;
             this.UiColIsCompleted.VisibleIndex = 9;
-            this.UiColIsCompleted.Width = 150;
             // 
             // UiColClassName
             // 
             this.UiColClassName.Caption = "Clase de Material";
             this.UiColClassName.FieldName = "CLASS_NAME";
-            this.UiColClassName.MinWidth = 40;
             this.UiColClassName.Name = "UiColClassName";
             this.UiColClassName.OptionsColumn.AllowEdit = false;
             this.UiColClassName.Visible = true;
             this.UiColClassName.VisibleIndex = 10;
-            this.UiColClassName.Width = 150;
             // 
             // UiNavegacionPaginasPricipal
             // 
             this.UiNavegacionPaginasPricipal.Controls.Add(this.UiPaginaFecha);
             this.UiNavegacionPaginasPricipal.Controls.Add(this.UiPaginaUsuarios);
             this.UiNavegacionPaginasPricipal.Dock = System.Windows.Forms.DockStyle.Left;
-            this.UiNavegacionPaginasPricipal.Location = new System.Drawing.Point(0, 46);
-            this.UiNavegacionPaginasPricipal.Margin = new System.Windows.Forms.Padding(6);
+            this.UiNavegacionPaginasPricipal.Location = new System.Drawing.Point(0, 24);
             this.UiNavegacionPaginasPricipal.Name = "UiNavegacionPaginasPricipal";
             this.UiNavegacionPaginasPricipal.PageProperties.ShowCollapseButton = false;
             this.UiNavegacionPaginasPricipal.PageProperties.ShowExpandButton = false;
             this.UiNavegacionPaginasPricipal.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
             this.UiPaginaFecha,
             this.UiPaginaUsuarios});
-            this.UiNavegacionPaginasPricipal.RegularSize = new System.Drawing.Size(660, 1209);
+            this.UiNavegacionPaginasPricipal.RegularSize = new System.Drawing.Size(330, 423);
             this.UiNavegacionPaginasPricipal.SelectedPage = this.UiPaginaFecha;
-            this.UiNavegacionPaginasPricipal.Size = new System.Drawing.Size(660, 1209);
+            this.UiNavegacionPaginasPricipal.Size = new System.Drawing.Size(330, 423);
             this.UiNavegacionPaginasPricipal.TabIndex = 3;
             this.UiNavegacionPaginasPricipal.Text = "navigationPane1";
             // 
@@ -2291,18 +2169,16 @@
             this.UiPaginaFecha.Controls.Add(this.UIListaTiposDeTarea);
             this.UiPaginaFecha.Controls.Add(this.UiEtiqeutaTipoDeTareas);
             this.UiPaginaFecha.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiPaginaFecha.ImageOptions.Image")));
-            this.UiPaginaFecha.Margin = new System.Windows.Forms.Padding(6);
             this.UiPaginaFecha.Name = "UiPaginaFecha";
-            this.UiPaginaFecha.Size = new System.Drawing.Size(534, 1080);
+            this.UiPaginaFecha.Size = new System.Drawing.Size(259, 359);
             // 
             // UiBotonAceptarRangoFecha
             // 
             this.UiBotonAceptarRangoFecha.Dock = System.Windows.Forms.DockStyle.Top;
             this.UiBotonAceptarRangoFecha.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBotonAceptarRangoFecha.ImageOptions.Image")));
-            this.UiBotonAceptarRangoFecha.Location = new System.Drawing.Point(0, 610);
-            this.UiBotonAceptarRangoFecha.Margin = new System.Windows.Forms.Padding(6);
+            this.UiBotonAceptarRangoFecha.Location = new System.Drawing.Point(0, 322);
             this.UiBotonAceptarRangoFecha.Name = "UiBotonAceptarRangoFecha";
-            this.UiBotonAceptarRangoFecha.Size = new System.Drawing.Size(534, 42);
+            this.UiBotonAceptarRangoFecha.Size = new System.Drawing.Size(259, 22);
             this.UiBotonAceptarRangoFecha.TabIndex = 7;
             this.UiBotonAceptarRangoFecha.Text = "Aceptar";
             this.UiBotonAceptarRangoFecha.Click += new System.EventHandler(this.UiBotonAceptarRangoFecha_Click);
@@ -2310,17 +2186,17 @@
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 568);
+            this.panel2.Location = new System.Drawing.Point(0, 300);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(534, 42);
+            this.panel2.Size = new System.Drawing.Size(259, 22);
             this.panel2.TabIndex = 13;
             // 
             // UiFechaFinal
             // 
             this.UiFechaFinal.Dock = System.Windows.Forms.DockStyle.Top;
             this.UiFechaFinal.EditValue = new System.DateTime(2017, 5, 22, 10, 7, 17, 0);
-            this.UiFechaFinal.Location = new System.Drawing.Point(0, 528);
-            this.UiFechaFinal.Margin = new System.Windows.Forms.Padding(6);
+            this.UiFechaFinal.Location = new System.Drawing.Point(0, 280);
             this.UiFechaFinal.MenuManager = this.UiContendorDeBarras;
             this.UiFechaFinal.Name = "UiFechaFinal";
             this.UiFechaFinal.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -2333,18 +2209,17 @@
             this.UiFechaFinal.Properties.EditFormat.FormatString = "";
             this.UiFechaFinal.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.UiFechaFinal.Properties.Mask.EditMask = "";
-            this.UiFechaFinal.Size = new System.Drawing.Size(534, 40);
+            this.UiFechaFinal.Size = new System.Drawing.Size(259, 20);
             this.UiFechaFinal.TabIndex = 4;
             // 
             // UiEtiquetaFechaFinal
             // 
             this.UiEtiquetaFechaFinal.AutoSize = true;
             this.UiEtiquetaFechaFinal.Dock = System.Windows.Forms.DockStyle.Top;
-            this.UiEtiquetaFechaFinal.Location = new System.Drawing.Point(0, 488);
-            this.UiEtiquetaFechaFinal.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.UiEtiquetaFechaFinal.Location = new System.Drawing.Point(0, 259);
             this.UiEtiquetaFechaFinal.Name = "UiEtiquetaFechaFinal";
-            this.UiEtiquetaFechaFinal.Padding = new System.Windows.Forms.Padding(0, 15, 0, 0);
-            this.UiEtiquetaFechaFinal.Size = new System.Drawing.Size(125, 40);
+            this.UiEtiquetaFechaFinal.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
+            this.UiEtiquetaFechaFinal.Size = new System.Drawing.Size(65, 21);
             this.UiEtiquetaFechaFinal.TabIndex = 3;
             this.UiEtiquetaFechaFinal.Text = "Fecha Final:";
             // 
@@ -2352,8 +2227,7 @@
             // 
             this.UiFechaInicial.Dock = System.Windows.Forms.DockStyle.Top;
             this.UiFechaInicial.EditValue = null;
-            this.UiFechaInicial.Location = new System.Drawing.Point(0, 448);
-            this.UiFechaInicial.Margin = new System.Windows.Forms.Padding(6);
+            this.UiFechaInicial.Location = new System.Drawing.Point(0, 239);
             this.UiFechaInicial.MenuManager = this.UiContendorDeBarras;
             this.UiFechaInicial.Name = "UiFechaInicial";
             this.UiFechaInicial.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -2366,26 +2240,24 @@
             this.UiFechaInicial.Properties.EditFormat.FormatString = "";
             this.UiFechaInicial.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.UiFechaInicial.Properties.Mask.EditMask = "";
-            this.UiFechaInicial.Size = new System.Drawing.Size(534, 40);
+            this.UiFechaInicial.Size = new System.Drawing.Size(259, 20);
             this.UiFechaInicial.TabIndex = 1;
             // 
             // UiEtiquetaFechaInicial
             // 
             this.UiEtiquetaFechaInicial.AutoSize = true;
             this.UiEtiquetaFechaInicial.Dock = System.Windows.Forms.DockStyle.Top;
-            this.UiEtiquetaFechaInicial.Location = new System.Drawing.Point(0, 408);
-            this.UiEtiquetaFechaInicial.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.UiEtiquetaFechaInicial.Location = new System.Drawing.Point(0, 218);
             this.UiEtiquetaFechaInicial.Name = "UiEtiquetaFechaInicial";
-            this.UiEtiquetaFechaInicial.Padding = new System.Windows.Forms.Padding(0, 15, 0, 0);
-            this.UiEtiquetaFechaInicial.Size = new System.Drawing.Size(137, 40);
+            this.UiEtiquetaFechaInicial.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
+            this.UiEtiquetaFechaInicial.Size = new System.Drawing.Size(70, 21);
             this.UiEtiquetaFechaInicial.TabIndex = 2;
             this.UiEtiquetaFechaInicial.Text = "Fecha Inicial:";
             // 
             // UiGrupoRadioFechas
             // 
             this.UiGrupoRadioFechas.Dock = System.Windows.Forms.DockStyle.Top;
-            this.UiGrupoRadioFechas.Location = new System.Drawing.Point(0, 248);
-            this.UiGrupoRadioFechas.Margin = new System.Windows.Forms.Padding(6);
+            this.UiGrupoRadioFechas.Location = new System.Drawing.Point(0, 135);
             this.UiGrupoRadioFechas.MenuManager = this.UiContendorDeBarras;
             this.UiGrupoRadioFechas.Name = "UiGrupoRadioFechas";
             this.UiGrupoRadioFechas.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
@@ -2394,23 +2266,24 @@
             new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "1 Semana"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "1 Mes"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "3 Meses")});
-            this.UiGrupoRadioFechas.Size = new System.Drawing.Size(534, 160);
+            this.UiGrupoRadioFechas.Size = new System.Drawing.Size(259, 83);
             this.UiGrupoRadioFechas.TabIndex = 0;
             this.UiGrupoRadioFechas.SelectedIndexChanged += new System.EventHandler(this.UiGrupoRadioFechas_SelectedIndexChanged);
             // 
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 225);
+            this.panel1.Location = new System.Drawing.Point(0, 123);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(534, 23);
+            this.panel1.Size = new System.Drawing.Size(259, 12);
             this.panel1.TabIndex = 12;
             // 
             // UiListaDeClases
             // 
             this.UiListaDeClases.Dock = System.Windows.Forms.DockStyle.Top;
-            this.UiListaDeClases.Location = new System.Drawing.Point(0, 185);
-            this.UiListaDeClases.Margin = new System.Windows.Forms.Padding(4);
+            this.UiListaDeClases.Location = new System.Drawing.Point(0, 99);
+            this.UiListaDeClases.Margin = new System.Windows.Forms.Padding(2);
             this.UiListaDeClases.MenuManager = this.UiContendorDeBarras;
             this.UiListaDeClases.Name = "UiListaDeClases";
             editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
@@ -2419,7 +2292,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", "UiBotonRefrescar-Operadores", null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.UiListaDeClases.Properties.PopupView = this.UiVistaClases;
             this.UiListaDeClases.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UILista_Properties_ButtonClick);
-            this.UiListaDeClases.Size = new System.Drawing.Size(534, 40);
+            this.UiListaDeClases.Size = new System.Drawing.Size(259, 24);
             this.UiListaDeClases.TabIndex = 11;
             this.UiListaDeClases.CustomDisplayText += new DevExpress.XtraEditors.Controls.CustomDisplayTextEventHandler(this.UiListaDeClases_CustomDisplayText);
             // 
@@ -2460,19 +2333,18 @@
             // 
             this.UiEtiquetaClases.AutoSize = true;
             this.UiEtiquetaClases.Dock = System.Windows.Forms.DockStyle.Top;
-            this.UiEtiquetaClases.Location = new System.Drawing.Point(0, 145);
-            this.UiEtiquetaClases.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.UiEtiquetaClases.Location = new System.Drawing.Point(0, 78);
+            this.UiEtiquetaClases.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.UiEtiquetaClases.Name = "UiEtiquetaClases";
-            this.UiEtiquetaClases.Padding = new System.Windows.Forms.Padding(0, 15, 0, 0);
-            this.UiEtiquetaClases.Size = new System.Drawing.Size(77, 40);
+            this.UiEtiquetaClases.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
+            this.UiEtiquetaClases.Size = new System.Drawing.Size(42, 21);
             this.UiEtiquetaClases.TabIndex = 10;
             this.UiEtiquetaClases.Text = "Clases:";
             // 
             // UiListaDeOperadores
             // 
             this.UiListaDeOperadores.Dock = System.Windows.Forms.DockStyle.Top;
-            this.UiListaDeOperadores.Location = new System.Drawing.Point(0, 105);
-            this.UiListaDeOperadores.Margin = new System.Windows.Forms.Padding(6);
+            this.UiListaDeOperadores.Location = new System.Drawing.Point(0, 54);
             this.UiListaDeOperadores.MenuManager = this.UiContendorDeBarras;
             this.UiListaDeOperadores.Name = "UiListaDeOperadores";
             editorButtonImageOptions2.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions2.Image")));
@@ -2481,7 +2353,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", "UiBotonRefrescar-Operadores", null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.UiListaDeOperadores.Properties.PopupView = this.UiListaVistaDeOperadores;
             this.UiListaDeOperadores.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UILista_Properties_ButtonClick);
-            this.UiListaDeOperadores.Size = new System.Drawing.Size(534, 40);
+            this.UiListaDeOperadores.Size = new System.Drawing.Size(259, 24);
             this.UiListaDeOperadores.TabIndex = 9;
             this.UiListaDeOperadores.EditValueChanged += new System.EventHandler(this.UiListaDeOperadores_EditValueChanged);
             this.UiListaDeOperadores.CustomDisplayText += new DevExpress.XtraEditors.Controls.CustomDisplayTextEventHandler(this.UiListaDeOperadores_CustomDisplayText);
@@ -2523,11 +2395,10 @@
             // 
             this.UiEtiquetaOperadores.AutoSize = true;
             this.UiEtiquetaOperadores.Dock = System.Windows.Forms.DockStyle.Top;
-            this.UiEtiquetaOperadores.Location = new System.Drawing.Point(0, 65);
-            this.UiEtiquetaOperadores.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.UiEtiquetaOperadores.Location = new System.Drawing.Point(0, 33);
             this.UiEtiquetaOperadores.Name = "UiEtiquetaOperadores";
-            this.UiEtiquetaOperadores.Padding = new System.Windows.Forms.Padding(0, 15, 0, 0);
-            this.UiEtiquetaOperadores.Size = new System.Drawing.Size(127, 40);
+            this.UiEtiquetaOperadores.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
+            this.UiEtiquetaOperadores.Size = new System.Drawing.Size(68, 21);
             this.UiEtiquetaOperadores.TabIndex = 8;
             this.UiEtiquetaOperadores.Text = "Operadores:";
             this.UiEtiquetaOperadores.Click += new System.EventHandler(this.UiEtiquetaOperadores_Click);
@@ -2535,8 +2406,7 @@
             // UIListaTiposDeTarea
             // 
             this.UIListaTiposDeTarea.Dock = System.Windows.Forms.DockStyle.Top;
-            this.UIListaTiposDeTarea.Location = new System.Drawing.Point(0, 25);
-            this.UIListaTiposDeTarea.Margin = new System.Windows.Forms.Padding(6);
+            this.UIListaTiposDeTarea.Location = new System.Drawing.Point(0, 13);
             this.UIListaTiposDeTarea.MenuManager = this.UiContendorDeBarras;
             this.UIListaTiposDeTarea.Name = "UIListaTiposDeTarea";
             this.UIListaTiposDeTarea.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -2544,7 +2414,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions3, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject9, serializableAppearanceObject10, serializableAppearanceObject11, serializableAppearanceObject12, "", "UiBotonRefrescar-TiposDeTarea", null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.UIListaTiposDeTarea.Properties.PopupView = this.UiListaVistaTipoDeTarea;
             this.UIListaTiposDeTarea.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UILista_Properties_ButtonClick);
-            this.UIListaTiposDeTarea.Size = new System.Drawing.Size(534, 40);
+            this.UIListaTiposDeTarea.Size = new System.Drawing.Size(259, 20);
             this.UIListaTiposDeTarea.TabIndex = 5;
             this.UIListaTiposDeTarea.CustomDisplayText += new DevExpress.XtraEditors.Controls.CustomDisplayTextEventHandler(this.UIListaTiposDeTarea_CustomDisplayText);
             // 
@@ -2586,9 +2456,8 @@
             this.UiEtiqeutaTipoDeTareas.AutoSize = true;
             this.UiEtiqeutaTipoDeTareas.Dock = System.Windows.Forms.DockStyle.Top;
             this.UiEtiqeutaTipoDeTareas.Location = new System.Drawing.Point(0, 0);
-            this.UiEtiqeutaTipoDeTareas.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.UiEtiqeutaTipoDeTareas.Name = "UiEtiqeutaTipoDeTareas";
-            this.UiEtiqeutaTipoDeTareas.Size = new System.Drawing.Size(158, 25);
+            this.UiEtiqeutaTipoDeTareas.Size = new System.Drawing.Size(82, 13);
             this.UiEtiqeutaTipoDeTareas.TabIndex = 6;
             this.UiEtiqeutaTipoDeTareas.Text = "Tipo de Tareas:";
             // 
@@ -2602,18 +2471,16 @@
             this.UiPaginaUsuarios.Controls.Add(this.UiBotonPausarTarea);
             this.UiPaginaUsuarios.Controls.Add(this.UiBotonReanudarTarea);
             this.UiPaginaUsuarios.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiPaginaUsuarios.ImageOptions.Image")));
-            this.UiPaginaUsuarios.Margin = new System.Windows.Forms.Padding(6);
             this.UiPaginaUsuarios.Name = "UiPaginaUsuarios";
-            this.UiPaginaUsuarios.Size = new System.Drawing.Size(534, 1080);
+            this.UiPaginaUsuarios.Size = new System.Drawing.Size(267, 562);
             // 
             // UiListaOperadores
             // 
             this.UiListaOperadores.DisplayMember = "LOGIN_NAME";
             this.UiListaOperadores.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.UiListaOperadores.Location = new System.Drawing.Point(0, 210);
-            this.UiListaOperadores.Margin = new System.Windows.Forms.Padding(6);
+            this.UiListaOperadores.Location = new System.Drawing.Point(0, 110);
             this.UiListaOperadores.Name = "UiListaOperadores";
-            this.UiListaOperadores.Size = new System.Drawing.Size(534, 870);
+            this.UiListaOperadores.Size = new System.Drawing.Size(267, 452);
             this.UiListaOperadores.TabIndex = 11;
             this.UiListaOperadores.ValueMember = "LOGIN_ID";
             this.UiListaOperadores.DragOver += new System.Windows.Forms.DragEventHandler(this.UiListaOperadores_DragOver);
@@ -2625,10 +2492,10 @@
             // 
             this.UiBotonCambiarPrioridad.Dock = System.Windows.Forms.DockStyle.Top;
             this.UiBotonCambiarPrioridad.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBotonCambiarPrioridad.ImageOptions.Image")));
-            this.UiBotonCambiarPrioridad.Location = new System.Drawing.Point(0, 168);
-            this.UiBotonCambiarPrioridad.Margin = new System.Windows.Forms.Padding(4);
+            this.UiBotonCambiarPrioridad.Location = new System.Drawing.Point(0, 88);
+            this.UiBotonCambiarPrioridad.Margin = new System.Windows.Forms.Padding(2);
             this.UiBotonCambiarPrioridad.Name = "UiBotonCambiarPrioridad";
-            this.UiBotonCambiarPrioridad.Size = new System.Drawing.Size(534, 42);
+            this.UiBotonCambiarPrioridad.Size = new System.Drawing.Size(267, 22);
             this.UiBotonCambiarPrioridad.TabIndex = 13;
             this.UiBotonCambiarPrioridad.Text = "Cambiar Prioridad";
             this.UiBotonCambiarPrioridad.Visible = false;
@@ -2638,10 +2505,10 @@
             // 
             this.UiBotonReasignarBanda.Dock = System.Windows.Forms.DockStyle.Top;
             this.UiBotonReasignarBanda.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBotonReasignarBanda.ImageOptions.Image")));
-            this.UiBotonReasignarBanda.Location = new System.Drawing.Point(0, 126);
-            this.UiBotonReasignarBanda.Margin = new System.Windows.Forms.Padding(4);
+            this.UiBotonReasignarBanda.Location = new System.Drawing.Point(0, 66);
+            this.UiBotonReasignarBanda.Margin = new System.Windows.Forms.Padding(2);
             this.UiBotonReasignarBanda.Name = "UiBotonReasignarBanda";
-            this.UiBotonReasignarBanda.Size = new System.Drawing.Size(534, 42);
+            this.UiBotonReasignarBanda.Size = new System.Drawing.Size(267, 22);
             this.UiBotonReasignarBanda.TabIndex = 12;
             this.UiBotonReasignarBanda.Text = "Reasignar Banda";
             this.UiBotonReasignarBanda.Click += new System.EventHandler(this.UiBotonReasignarBanda_Click);
@@ -2650,10 +2517,9 @@
             // 
             this.UiBotonCancelarTarea.Dock = System.Windows.Forms.DockStyle.Top;
             this.UiBotonCancelarTarea.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBotonCancelarTarea.ImageOptions.Image")));
-            this.UiBotonCancelarTarea.Location = new System.Drawing.Point(0, 84);
-            this.UiBotonCancelarTarea.Margin = new System.Windows.Forms.Padding(6);
+            this.UiBotonCancelarTarea.Location = new System.Drawing.Point(0, 44);
             this.UiBotonCancelarTarea.Name = "UiBotonCancelarTarea";
-            this.UiBotonCancelarTarea.Size = new System.Drawing.Size(534, 42);
+            this.UiBotonCancelarTarea.Size = new System.Drawing.Size(267, 22);
             this.UiBotonCancelarTarea.TabIndex = 10;
             this.UiBotonCancelarTarea.Text = "Cancelar";
             this.UiBotonCancelarTarea.Click += new System.EventHandler(this.UiBotonCancelarTarea_Click);
@@ -2662,10 +2528,9 @@
             // 
             this.UiBotonPausarTarea.Dock = System.Windows.Forms.DockStyle.Top;
             this.UiBotonPausarTarea.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBotonPausarTarea.ImageOptions.Image")));
-            this.UiBotonPausarTarea.Location = new System.Drawing.Point(0, 42);
-            this.UiBotonPausarTarea.Margin = new System.Windows.Forms.Padding(6);
+            this.UiBotonPausarTarea.Location = new System.Drawing.Point(0, 22);
             this.UiBotonPausarTarea.Name = "UiBotonPausarTarea";
-            this.UiBotonPausarTarea.Size = new System.Drawing.Size(534, 42);
+            this.UiBotonPausarTarea.Size = new System.Drawing.Size(267, 22);
             this.UiBotonPausarTarea.TabIndex = 9;
             this.UiBotonPausarTarea.Text = "Pausar";
             this.UiBotonPausarTarea.Click += new System.EventHandler(this.UiBotonPausarTarea_Click);
@@ -2675,9 +2540,8 @@
             this.UiBotonReanudarTarea.Dock = System.Windows.Forms.DockStyle.Top;
             this.UiBotonReanudarTarea.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBotonReanudarTarea.ImageOptions.Image")));
             this.UiBotonReanudarTarea.Location = new System.Drawing.Point(0, 0);
-            this.UiBotonReanudarTarea.Margin = new System.Windows.Forms.Padding(6);
             this.UiBotonReanudarTarea.Name = "UiBotonReanudarTarea";
-            this.UiBotonReanudarTarea.Size = new System.Drawing.Size(534, 42);
+            this.UiBotonReanudarTarea.Size = new System.Drawing.Size(267, 22);
             this.UiBotonReanudarTarea.TabIndex = 8;
             this.UiBotonReanudarTarea.Text = "Reanudar";
             this.UiBotonReanudarTarea.Click += new System.EventHandler(this.UiBotonReanudarTarea_Click);
@@ -2695,21 +2559,18 @@
             this.UiColAsignado.DisplayFormat.FormatString = "{0:0.0000}";
             this.UiColAsignado.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.UiColAsignado.FieldName = "ASIGNADO";
-            this.UiColAsignado.MinWidth = 40;
             this.UiColAsignado.Name = "UiColAsignado";
             this.UiColAsignado.OptionsColumn.AllowEdit = false;
             this.UiColAsignado.Visible = true;
             this.UiColAsignado.VisibleIndex = 6;
-            this.UiColAsignado.Width = 150;
             // 
             // UiContenedorTab
             // 
             this.UiContenedorTab.Dock = System.Windows.Forms.DockStyle.Fill;
             this.UiContenedorTab.Location = new System.Drawing.Point(0, 0);
-            this.UiContenedorTab.Margin = new System.Windows.Forms.Padding(6);
             this.UiContenedorTab.Name = "UiContenedorTab";
             this.UiContenedorTab.SelectedTabPage = this.UiTabTareas;
-            this.UiContenedorTab.Size = new System.Drawing.Size(2249, 1304);
+            this.UiContenedorTab.Size = new System.Drawing.Size(685, 475);
             this.UiContenedorTab.TabIndex = 0;
             this.UiContenedorTab.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.UiTabTareas,
@@ -2727,23 +2588,21 @@
             this.UiTabGraficas.Controls.Add(this.barDockControl2);
             this.UiTabGraficas.Controls.Add(this.barDockControl1);
             this.UiTabGraficas.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiTabGraficas.ImageOptions.Image")));
-            this.UiTabGraficas.Margin = new System.Windows.Forms.Padding(6);
             this.UiTabGraficas.Name = "UiTabGraficas";
-            this.UiTabGraficas.Size = new System.Drawing.Size(2245, 1255);
+            this.UiTabGraficas.Size = new System.Drawing.Size(683, 447);
             this.UiTabGraficas.Text = "Gráficas";
             // 
             // UiSplitGraficas
             // 
             this.UiSplitGraficas.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.UiSplitGraficas.Location = new System.Drawing.Point(0, 46);
-            this.UiSplitGraficas.Margin = new System.Windows.Forms.Padding(6);
+            this.UiSplitGraficas.Location = new System.Drawing.Point(0, 24);
             this.UiSplitGraficas.Name = "UiSplitGraficas";
             this.UiSplitGraficas.Panel1.Controls.Add(this.UiChartTareasPorOperador);
             this.UiSplitGraficas.Panel1.Text = "Panel1";
             this.UiSplitGraficas.Panel2.Controls.Add(this.UiChartTiposTareas);
             this.UiSplitGraficas.Panel2.Text = "Panel2";
-            this.UiSplitGraficas.Size = new System.Drawing.Size(2245, 1209);
-            this.UiSplitGraficas.SplitterPosition = 1040;
+            this.UiSplitGraficas.Size = new System.Drawing.Size(683, 423);
+            this.UiSplitGraficas.SplitterPosition = 520;
             this.UiSplitGraficas.TabIndex = 1;
             this.UiSplitGraficas.Text = "UiSplitGraficas";
             // 
@@ -2757,7 +2616,6 @@
             this.UiChartTareasPorOperador.Legend.Name = "Default Legend";
             this.UiChartTareasPorOperador.Legend.Visibility = DevExpress.Utils.DefaultBoolean.True;
             this.UiChartTareasPorOperador.Location = new System.Drawing.Point(0, 0);
-            this.UiChartTareasPorOperador.Margin = new System.Windows.Forms.Padding(6);
             this.UiChartTareasPorOperador.Name = "UiChartTareasPorOperador";
             series1.ArgumentDataMember = "TASK_ASSIGNEDTO";
             series1.DateTimeSummaryOptions.SummaryFunction = "COUNT()";
@@ -2776,7 +2634,7 @@
             this.UiChartTareasPorOperador.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series1};
             this.UiChartTareasPorOperador.SeriesTemplate.View = pieSeriesView2;
-            this.UiChartTareasPorOperador.Size = new System.Drawing.Size(1040, 1209);
+            this.UiChartTareasPorOperador.Size = new System.Drawing.Size(520, 423);
             this.UiChartTareasPorOperador.TabIndex = 0;
             chartTitle1.Text = "Tareas por operador";
             this.UiChartTareasPorOperador.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
@@ -2793,7 +2651,6 @@
             this.UiChartTiposTareas.Dock = System.Windows.Forms.DockStyle.Fill;
             this.UiChartTiposTareas.Legend.Name = "Default Legend";
             this.UiChartTiposTareas.Location = new System.Drawing.Point(0, 0);
-            this.UiChartTiposTareas.Margin = new System.Windows.Forms.Padding(6);
             this.UiChartTiposTareas.Name = "UiChartTiposTareas";
             this.UiChartTiposTareas.OptionsPrint.SizeMode = DevExpress.XtraCharts.Printing.PrintSizeMode.Stretch;
             this.UiChartTiposTareas.SeriesDataMember = "TASK_ASSIGNEDTO";
@@ -2810,7 +2667,7 @@
             this.UiChartTiposTareas.SeriesTemplate.SeriesDataMember = "TASK_ASSIGNEDTO";
             this.UiChartTiposTareas.SeriesTemplate.ToolTipEnabled = DevExpress.Utils.DefaultBoolean.True;
             this.UiChartTiposTareas.SeriesTemplate.ToolTipSeriesPattern = "{V:#.00}";
-            this.UiChartTiposTareas.Size = new System.Drawing.Size(1185, 1209);
+            this.UiChartTiposTareas.Size = new System.Drawing.Size(153, 423);
             this.UiChartTiposTareas.TabIndex = 1;
             chartTitle2.Text = "Tiempo promedio de tareas";
             this.UiChartTiposTareas.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
@@ -2824,10 +2681,9 @@
             // 
             this.barDockControl3.CausesValidation = false;
             this.barDockControl3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControl3.Location = new System.Drawing.Point(0, 46);
+            this.barDockControl3.Location = new System.Drawing.Point(0, 24);
             this.barDockControl3.Manager = this.UiBarManagerGraficas;
-            this.barDockControl3.Margin = new System.Windows.Forms.Padding(6);
-            this.barDockControl3.Size = new System.Drawing.Size(0, 1209);
+            this.barDockControl3.Size = new System.Drawing.Size(0, 423);
             // 
             // UiBarManagerGraficas
             // 
@@ -2899,26 +2755,23 @@
             this.barDockControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControl1.Location = new System.Drawing.Point(0, 0);
             this.barDockControl1.Manager = this.UiBarManagerGraficas;
-            this.barDockControl1.Margin = new System.Windows.Forms.Padding(6);
-            this.barDockControl1.Size = new System.Drawing.Size(2245, 46);
+            this.barDockControl1.Size = new System.Drawing.Size(683, 24);
             // 
             // barDockControl2
             // 
             this.barDockControl2.CausesValidation = false;
             this.barDockControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl2.Location = new System.Drawing.Point(0, 1255);
+            this.barDockControl2.Location = new System.Drawing.Point(0, 447);
             this.barDockControl2.Manager = this.UiBarManagerGraficas;
-            this.barDockControl2.Margin = new System.Windows.Forms.Padding(6);
-            this.barDockControl2.Size = new System.Drawing.Size(2245, 0);
+            this.barDockControl2.Size = new System.Drawing.Size(683, 0);
             // 
             // barDockControl4
             // 
             this.barDockControl4.CausesValidation = false;
             this.barDockControl4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl4.Location = new System.Drawing.Point(2245, 46);
+            this.barDockControl4.Location = new System.Drawing.Point(683, 24);
             this.barDockControl4.Manager = this.UiBarManagerGraficas;
-            this.barDockControl4.Margin = new System.Windows.Forms.Padding(6);
-            this.barDockControl4.Size = new System.Drawing.Size(0, 1209);
+            this.barDockControl4.Size = new System.Drawing.Size(0, 423);
             // 
             // UITabConfirmarRecepcion
             // 
@@ -2927,36 +2780,32 @@
             this.UITabConfirmarRecepcion.Controls.Add(this.barDockControl8);
             this.UITabConfirmarRecepcion.Controls.Add(this.barDockControl6);
             this.UITabConfirmarRecepcion.Controls.Add(this.barDockControl5);
-            this.UITabConfirmarRecepcion.Margin = new System.Windows.Forms.Padding(6);
             this.UITabConfirmarRecepcion.Name = "UITabConfirmarRecepcion";
-            this.UITabConfirmarRecepcion.Size = new System.Drawing.Size(2245, 1255);
+            this.UITabConfirmarRecepcion.Size = new System.Drawing.Size(683, 447);
             this.UITabConfirmarRecepcion.Text = "Confirmación Recepción";
             // 
             // splitContainerControl1
             // 
             this.splitContainerControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainerControl1.Location = new System.Drawing.Point(0, 46);
-            this.splitContainerControl1.Margin = new System.Windows.Forms.Padding(6);
+            this.splitContainerControl1.Location = new System.Drawing.Point(0, 24);
             this.splitContainerControl1.Name = "splitContainerControl1";
             this.splitContainerControl1.Panel1.Controls.Add(this.UiContenedorVistaConfirmacionDetalleRecepcion);
             this.splitContainerControl1.Panel1.Text = "Panel1";
             this.splitContainerControl1.Panel2.Controls.Add(this.UiContenedorVistaConfirmacionOrdenDeCompra);
             this.splitContainerControl1.Panel2.Text = "Panel2";
-            this.splitContainerControl1.Size = new System.Drawing.Size(2245, 1209);
-            this.splitContainerControl1.SplitterPosition = 1412;
+            this.splitContainerControl1.Size = new System.Drawing.Size(683, 423);
+            this.splitContainerControl1.SplitterPosition = 706;
             this.splitContainerControl1.TabIndex = 10;
             this.splitContainerControl1.Text = "splitContainerControl1";
             // 
             // UiContenedorVistaConfirmacionDetalleRecepcion
             // 
             this.UiContenedorVistaConfirmacionDetalleRecepcion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.UiContenedorVistaConfirmacionDetalleRecepcion.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(6);
             this.UiContenedorVistaConfirmacionDetalleRecepcion.Location = new System.Drawing.Point(0, 0);
             this.UiContenedorVistaConfirmacionDetalleRecepcion.MainView = this.UIVistaConfirmacionDetalleRecepcion;
-            this.UiContenedorVistaConfirmacionDetalleRecepcion.Margin = new System.Windows.Forms.Padding(6);
             this.UiContenedorVistaConfirmacionDetalleRecepcion.MenuManager = this.UiContendorDeBarras;
             this.UiContenedorVistaConfirmacionDetalleRecepcion.Name = "UiContenedorVistaConfirmacionDetalleRecepcion";
-            this.UiContenedorVistaConfirmacionDetalleRecepcion.Size = new System.Drawing.Size(1412, 1209);
+            this.UiContenedorVistaConfirmacionDetalleRecepcion.Size = new System.Drawing.Size(673, 423);
             this.UiContenedorVistaConfirmacionDetalleRecepcion.TabIndex = 4;
             this.UiContenedorVistaConfirmacionDetalleRecepcion.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.UIVistaConfirmacionDetalleRecepcion});
@@ -2975,76 +2824,66 @@
             this.UiColAsignado,
             this.UiColLote,
             this.UiColFechaExpiracion});
-            this.UIVistaConfirmacionDetalleRecepcion.DetailHeight = 673;
-            this.UIVistaConfirmacionDetalleRecepcion.FixedLineWidth = 4;
-            gridFormatRule23.ApplyToRow = true;
-            gridFormatRule23.Name = "Format0";
-            formatConditionRuleExpression23.Expression = "[ASIGNADO] = [QTY]";
-            formatConditionRuleExpression23.PredefinedName = "Green Fill, Green Text";
-            gridFormatRule23.Rule = formatConditionRuleExpression23;
-            this.UIVistaConfirmacionDetalleRecepcion.FormatRules.Add(gridFormatRule23);
+            gridFormatRule24.ApplyToRow = true;
+            gridFormatRule24.Name = "Format0";
+            formatConditionRuleExpression24.Expression = "[ASIGNADO] = [QTY]";
+            formatConditionRuleExpression24.PredefinedName = "Green Fill, Green Text";
+            gridFormatRule24.Rule = formatConditionRuleExpression24;
+            this.UIVistaConfirmacionDetalleRecepcion.FormatRules.Add(gridFormatRule24);
             this.UIVistaConfirmacionDetalleRecepcion.GridControl = this.UiContenedorVistaConfirmacionDetalleRecepcion;
+            this.UIVistaConfirmacionDetalleRecepcion.LevelIndent = 0;
             this.UIVistaConfirmacionDetalleRecepcion.Name = "UIVistaConfirmacionDetalleRecepcion";
             this.UIVistaConfirmacionDetalleRecepcion.OptionsBehavior.ReadOnly = true;
             this.UIVistaConfirmacionDetalleRecepcion.OptionsCustomization.AllowGroup = false;
             this.UIVistaConfirmacionDetalleRecepcion.OptionsCustomization.AllowSort = false;
             this.UIVistaConfirmacionDetalleRecepcion.OptionsView.ShowAutoFilterRow = true;
             this.UIVistaConfirmacionDetalleRecepcion.OptionsView.ShowGroupPanel = false;
+            this.UIVistaConfirmacionDetalleRecepcion.PreviewIndent = 0;
             // 
             // UiColTarea
             // 
             this.UiColTarea.Caption = "Tarea";
             this.UiColTarea.FieldName = "SERIAL_NUMBER";
-            this.UiColTarea.MinWidth = 40;
             this.UiColTarea.Name = "UiColTarea";
             this.UiColTarea.OptionsColumn.AllowEdit = false;
             this.UiColTarea.Visible = true;
             this.UiColTarea.VisibleIndex = 0;
-            this.UiColTarea.Width = 150;
             // 
             // UiColOperador
             // 
             this.UiColOperador.Caption = "Operador";
             this.UiColOperador.FieldName = "ASSIGNED_TO";
-            this.UiColOperador.MinWidth = 40;
             this.UiColOperador.Name = "UiColOperador";
             this.UiColOperador.OptionsColumn.AllowFocus = false;
             this.UiColOperador.Visible = true;
             this.UiColOperador.VisibleIndex = 1;
-            this.UiColOperador.Width = 150;
             // 
             // UiColLicencia
             // 
             this.UiColLicencia.Caption = "Licencia";
             this.UiColLicencia.FieldName = "LICENSE_ID";
-            this.UiColLicencia.MinWidth = 40;
             this.UiColLicencia.Name = "UiColLicencia";
             this.UiColLicencia.OptionsColumn.AllowEdit = false;
             this.UiColLicencia.Visible = true;
             this.UiColLicencia.VisibleIndex = 2;
-            this.UiColLicencia.Width = 150;
             // 
             // UiColMaterial
             // 
             this.UiColMaterial.Caption = "Material";
             this.UiColMaterial.FieldName = "MATERIAL_ID";
-            this.UiColMaterial.MinWidth = 40;
             this.UiColMaterial.Name = "UiColMaterial";
             this.UiColMaterial.OptionsColumn.AllowEdit = false;
             this.UiColMaterial.Visible = true;
             this.UiColMaterial.VisibleIndex = 3;
-            this.UiColMaterial.Width = 150;
             // 
             // UiColDescripcion
             // 
             this.UiColDescripcion.Caption = "Descripción";
             this.UiColDescripcion.FieldName = "MATERIAL_NAME";
-            this.UiColDescripcion.MinWidth = 40;
             this.UiColDescripcion.Name = "UiColDescripcion";
             this.UiColDescripcion.OptionsColumn.AllowEdit = false;
             this.UiColDescripcion.Visible = true;
             this.UiColDescripcion.VisibleIndex = 4;
-            this.UiColDescripcion.Width = 150;
             // 
             // UiColQty
             // 
@@ -3052,23 +2891,19 @@
             this.UiColQty.DisplayFormat.FormatString = "{0:0.0000}";
             this.UiColQty.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.UiColQty.FieldName = "QTY";
-            this.UiColQty.MinWidth = 40;
             this.UiColQty.Name = "UiColQty";
             this.UiColQty.OptionsColumn.AllowEdit = false;
             this.UiColQty.Visible = true;
             this.UiColQty.VisibleIndex = 5;
-            this.UiColQty.Width = 150;
             // 
             // UiColLote
             // 
             this.UiColLote.Caption = "Lote";
             this.UiColLote.FieldName = "BATCH";
-            this.UiColLote.MinWidth = 40;
             this.UiColLote.Name = "UiColLote";
             this.UiColLote.OptionsColumn.AllowEdit = false;
             this.UiColLote.Visible = true;
             this.UiColLote.VisibleIndex = 7;
-            this.UiColLote.Width = 150;
             // 
             // UiColFechaExpiracion
             // 
@@ -3076,26 +2911,22 @@
             this.UiColFechaExpiracion.DisplayFormat.FormatString = "dd/MM/yyyy";
             this.UiColFechaExpiracion.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.UiColFechaExpiracion.FieldName = "DATE_EXPIRATION";
-            this.UiColFechaExpiracion.MinWidth = 40;
             this.UiColFechaExpiracion.Name = "UiColFechaExpiracion";
             this.UiColFechaExpiracion.OptionsColumn.AllowEdit = false;
             this.UiColFechaExpiracion.Visible = true;
             this.UiColFechaExpiracion.VisibleIndex = 8;
-            this.UiColFechaExpiracion.Width = 150;
             // 
             // UiContenedorVistaConfirmacionOrdenDeCompra
             // 
             this.UiContenedorVistaConfirmacionOrdenDeCompra.AllowDrop = true;
             this.UiContenedorVistaConfirmacionOrdenDeCompra.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.UiContenedorVistaConfirmacionOrdenDeCompra.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(6);
             this.UiContenedorVistaConfirmacionOrdenDeCompra.Location = new System.Drawing.Point(0, 0);
             this.UiContenedorVistaConfirmacionOrdenDeCompra.MainView = this.UIVistaConfirmacionOrdenDeCompra;
-            this.UiContenedorVistaConfirmacionOrdenDeCompra.Margin = new System.Windows.Forms.Padding(6);
             this.UiContenedorVistaConfirmacionOrdenDeCompra.MenuManager = this.UiContendorDeBarras;
             this.UiContenedorVistaConfirmacionOrdenDeCompra.Name = "UiContenedorVistaConfirmacionOrdenDeCompra";
             this.UiContenedorVistaConfirmacionOrdenDeCompra.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.UiLookUpEditBodegaERP});
-            this.UiContenedorVistaConfirmacionOrdenDeCompra.Size = new System.Drawing.Size(813, 1209);
+            this.UiContenedorVistaConfirmacionOrdenDeCompra.Size = new System.Drawing.Size(0, 0);
             this.UiContenedorVistaConfirmacionOrdenDeCompra.TabIndex = 5;
             this.UiContenedorVistaConfirmacionOrdenDeCompra.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.UIVistaConfirmacionOrdenDeCompra});
@@ -3116,70 +2947,62 @@
             this.UiColUmFactor,
             this.UiColQtyConfirmado,
             this.UiColERP_BODEGA});
-            this.UIVistaConfirmacionOrdenDeCompra.DetailHeight = 673;
-            this.UIVistaConfirmacionOrdenDeCompra.FixedLineWidth = 4;
-            gridFormatRule24.ApplyToRow = true;
-            gridFormatRule24.Name = "Format0";
-            formatConditionRuleExpression24.Expression = "[PENDING] > 0 And [QTY_CONFIRMED] <> [QTY] And [QTY_CONFIRMED] > 0";
-            formatConditionRuleExpression24.PredefinedName = "Yellow Fill, Yellow Text";
-            gridFormatRule24.Rule = formatConditionRuleExpression24;
             gridFormatRule25.ApplyToRow = true;
-            gridFormatRule25.Name = "Format1";
-            formatConditionRuleExpression25.Expression = "[PENDING] = 0";
-            formatConditionRuleExpression25.PredefinedName = "Green Fill, Green Text";
+            gridFormatRule25.Name = "Format0";
+            formatConditionRuleExpression25.Expression = "[PENDING] > 0 And [QTY_CONFIRMED] <> [QTY] And [QTY_CONFIRMED] > 0";
+            formatConditionRuleExpression25.PredefinedName = "Yellow Fill, Yellow Text";
             gridFormatRule25.Rule = formatConditionRuleExpression25;
-            this.UIVistaConfirmacionOrdenDeCompra.FormatRules.Add(gridFormatRule24);
+            gridFormatRule26.ApplyToRow = true;
+            gridFormatRule26.Name = "Format1";
+            formatConditionRuleExpression26.Expression = "[PENDING] = 0";
+            formatConditionRuleExpression26.PredefinedName = "Green Fill, Green Text";
+            gridFormatRule26.Rule = formatConditionRuleExpression26;
             this.UIVistaConfirmacionOrdenDeCompra.FormatRules.Add(gridFormatRule25);
+            this.UIVistaConfirmacionOrdenDeCompra.FormatRules.Add(gridFormatRule26);
             this.UIVistaConfirmacionOrdenDeCompra.GridControl = this.UiContenedorVistaConfirmacionOrdenDeCompra;
+            this.UIVistaConfirmacionOrdenDeCompra.LevelIndent = 0;
             this.UIVistaConfirmacionOrdenDeCompra.Name = "UIVistaConfirmacionOrdenDeCompra";
             this.UIVistaConfirmacionOrdenDeCompra.OptionsCustomization.AllowGroup = false;
             this.UIVistaConfirmacionOrdenDeCompra.OptionsView.ShowAutoFilterRow = true;
             this.UIVistaConfirmacionOrdenDeCompra.OptionsView.ShowGroupPanel = false;
+            this.UIVistaConfirmacionOrdenDeCompra.PreviewIndent = 0;
             this.UIVistaConfirmacionOrdenDeCompra.ValidatingEditor += new DevExpress.XtraEditors.Controls.BaseContainerValidateEditorEventHandler(this.UIVistaConfirmacionOrdenDeCompra_ValidatingEditor);
             // 
             // UiColOrdenCompra
             // 
             this.UiColOrdenCompra.Caption = "Orden Compra";
             this.UiColOrdenCompra.FieldName = "DOC_NUM";
-            this.UiColOrdenCompra.MinWidth = 40;
             this.UiColOrdenCompra.Name = "UiColOrdenCompra";
             this.UiColOrdenCompra.OptionsColumn.AllowEdit = false;
             this.UiColOrdenCompra.Visible = true;
             this.UiColOrdenCompra.VisibleIndex = 0;
-            this.UiColOrdenCompra.Width = 150;
             // 
             // UiColMaterialOrdenCompra
             // 
             this.UiColMaterialOrdenCompra.Caption = "Material";
             this.UiColMaterialOrdenCompra.FieldName = "MATERIAL_ID";
-            this.UiColMaterialOrdenCompra.MinWidth = 40;
             this.UiColMaterialOrdenCompra.Name = "UiColMaterialOrdenCompra";
             this.UiColMaterialOrdenCompra.OptionsColumn.AllowEdit = false;
             this.UiColMaterialOrdenCompra.Visible = true;
             this.UiColMaterialOrdenCompra.VisibleIndex = 1;
-            this.UiColMaterialOrdenCompra.Width = 150;
             // 
             // UiColMaterialDescription
             // 
             this.UiColMaterialDescription.Caption = "Descripción";
             this.UiColMaterialDescription.FieldName = "MATERIAL_NAME";
-            this.UiColMaterialDescription.MinWidth = 40;
             this.UiColMaterialDescription.Name = "UiColMaterialDescription";
             this.UiColMaterialDescription.OptionsColumn.AllowEdit = false;
             this.UiColMaterialDescription.Visible = true;
             this.UiColMaterialDescription.VisibleIndex = 2;
-            this.UiColMaterialDescription.Width = 150;
             // 
             // UiLineaOrdenCompra
             // 
             this.UiLineaOrdenCompra.Caption = "Línea";
             this.UiLineaOrdenCompra.FieldName = "LINE_NUM";
-            this.UiLineaOrdenCompra.MinWidth = 40;
             this.UiLineaOrdenCompra.Name = "UiLineaOrdenCompra";
             this.UiLineaOrdenCompra.OptionsColumn.AllowEdit = false;
             this.UiLineaOrdenCompra.Visible = true;
             this.UiLineaOrdenCompra.VisibleIndex = 3;
-            this.UiLineaOrdenCompra.Width = 150;
             // 
             // UiQtyOrdenCompra
             // 
@@ -3187,12 +3010,10 @@
             this.UiQtyOrdenCompra.DisplayFormat.FormatString = "{0:0.0000}";
             this.UiQtyOrdenCompra.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.UiQtyOrdenCompra.FieldName = "QTY";
-            this.UiQtyOrdenCompra.MinWidth = 40;
             this.UiQtyOrdenCompra.Name = "UiQtyOrdenCompra";
             this.UiQtyOrdenCompra.OptionsColumn.AllowEdit = false;
             this.UiQtyOrdenCompra.Visible = true;
             this.UiQtyOrdenCompra.VisibleIndex = 4;
-            this.UiQtyOrdenCompra.Width = 150;
             // 
             // UiColPendienteOrdenCompra
             // 
@@ -3200,34 +3021,28 @@
             this.UiColPendienteOrdenCompra.DisplayFormat.FormatString = "{0:0.0000}";
             this.UiColPendienteOrdenCompra.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.UiColPendienteOrdenCompra.FieldName = "PENDING";
-            this.UiColPendienteOrdenCompra.MinWidth = 40;
             this.UiColPendienteOrdenCompra.Name = "UiColPendienteOrdenCompra";
             this.UiColPendienteOrdenCompra.OptionsColumn.AllowEdit = false;
             this.UiColPendienteOrdenCompra.Visible = true;
             this.UiColPendienteOrdenCompra.VisibleIndex = 5;
-            this.UiColPendienteOrdenCompra.Width = 150;
             // 
             // UiColUmOrdenCompra
             // 
             this.UiColUmOrdenCompra.Caption = "UM";
             this.UiColUmOrdenCompra.FieldName = "UNIT";
-            this.UiColUmOrdenCompra.MinWidth = 40;
             this.UiColUmOrdenCompra.Name = "UiColUmOrdenCompra";
             this.UiColUmOrdenCompra.OptionsColumn.AllowEdit = false;
             this.UiColUmOrdenCompra.Visible = true;
             this.UiColUmOrdenCompra.VisibleIndex = 6;
-            this.UiColUmOrdenCompra.Width = 150;
             // 
             // UiColUmFactor
             // 
             this.UiColUmFactor.Caption = "Factor";
             this.UiColUmFactor.FieldName = "QTY_FACTOR";
-            this.UiColUmFactor.MinWidth = 40;
             this.UiColUmFactor.Name = "UiColUmFactor";
             this.UiColUmFactor.OptionsColumn.AllowEdit = false;
             this.UiColUmFactor.Visible = true;
             this.UiColUmFactor.VisibleIndex = 7;
-            this.UiColUmFactor.Width = 150;
             // 
             // UiColQtyConfirmado
             // 
@@ -3235,25 +3050,21 @@
             this.UiColQtyConfirmado.DisplayFormat.FormatString = "{0:0.0000}";
             this.UiColQtyConfirmado.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.UiColQtyConfirmado.FieldName = "QTY_CONFIRMED";
-            this.UiColQtyConfirmado.MinWidth = 40;
             this.UiColQtyConfirmado.Name = "UiColQtyConfirmado";
             this.UiColQtyConfirmado.OptionsColumn.AllowEdit = false;
             this.UiColQtyConfirmado.UnboundType = DevExpress.Data.UnboundColumnType.Decimal;
             this.UiColQtyConfirmado.Visible = true;
             this.UiColQtyConfirmado.VisibleIndex = 8;
-            this.UiColQtyConfirmado.Width = 150;
             // 
             // UiColERP_BODEGA
             // 
             this.UiColERP_BODEGA.Caption = "Bodega ERP";
             this.UiColERP_BODEGA.ColumnEdit = this.UiLookUpEditBodegaERP;
             this.UiColERP_BODEGA.FieldName = "WAREHOUSE_CODE";
-            this.UiColERP_BODEGA.MinWidth = 40;
             this.UiColERP_BODEGA.Name = "UiColERP_BODEGA";
             this.UiColERP_BODEGA.OptionsColumn.AllowEdit = false;
             this.UiColERP_BODEGA.Visible = true;
             this.UiColERP_BODEGA.VisibleIndex = 9;
-            this.UiColERP_BODEGA.Width = 150;
             // 
             // UiLookUpEditBodegaERP
             // 
@@ -3295,10 +3106,9 @@
             // 
             this.barDockControl7.CausesValidation = false;
             this.barDockControl7.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControl7.Location = new System.Drawing.Point(0, 46);
+            this.barDockControl7.Location = new System.Drawing.Point(0, 24);
             this.barDockControl7.Manager = this.UIBarManagerConfirmarRecepcion;
-            this.barDockControl7.Margin = new System.Windows.Forms.Padding(6);
-            this.barDockControl7.Size = new System.Drawing.Size(0, 1209);
+            this.barDockControl7.Size = new System.Drawing.Size(0, 423);
             // 
             // UIBarManagerConfirmarRecepcion
             // 
@@ -3417,26 +3227,23 @@
             this.barDockControl5.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControl5.Location = new System.Drawing.Point(0, 0);
             this.barDockControl5.Manager = this.UIBarManagerConfirmarRecepcion;
-            this.barDockControl5.Margin = new System.Windows.Forms.Padding(6);
-            this.barDockControl5.Size = new System.Drawing.Size(2245, 46);
+            this.barDockControl5.Size = new System.Drawing.Size(683, 24);
             // 
             // barDockControl6
             // 
             this.barDockControl6.CausesValidation = false;
             this.barDockControl6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl6.Location = new System.Drawing.Point(0, 1255);
+            this.barDockControl6.Location = new System.Drawing.Point(0, 447);
             this.barDockControl6.Manager = this.UIBarManagerConfirmarRecepcion;
-            this.barDockControl6.Margin = new System.Windows.Forms.Padding(6);
-            this.barDockControl6.Size = new System.Drawing.Size(2245, 0);
+            this.barDockControl6.Size = new System.Drawing.Size(683, 0);
             // 
             // barDockControl8
             // 
             this.barDockControl8.CausesValidation = false;
             this.barDockControl8.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl8.Location = new System.Drawing.Point(2245, 46);
+            this.barDockControl8.Location = new System.Drawing.Point(683, 24);
             this.barDockControl8.Manager = this.UIBarManagerConfirmarRecepcion;
-            this.barDockControl8.Margin = new System.Windows.Forms.Padding(6);
-            this.barDockControl8.Size = new System.Drawing.Size(0, 1209);
+            this.barDockControl8.Size = new System.Drawing.Size(0, 423);
             // 
             // barButtonItem1
             // 
@@ -3451,22 +3258,19 @@
             this.UITabConfirmarSeries.Controls.Add(this.barDockControl12);
             this.UITabConfirmarSeries.Controls.Add(this.barDockControl10);
             this.UITabConfirmarSeries.Controls.Add(this.barDockControl9);
-            this.UITabConfirmarSeries.Margin = new System.Windows.Forms.Padding(6);
             this.UITabConfirmarSeries.Name = "UITabConfirmarSeries";
             this.UITabConfirmarSeries.PageVisible = false;
-            this.UITabConfirmarSeries.Size = new System.Drawing.Size(2245, 1255);
+            this.UITabConfirmarSeries.Size = new System.Drawing.Size(683, 447);
             this.UITabConfirmarSeries.Text = "Confirmación Series";
             // 
             // UIContenedorVistaConfirmacionSeries
             // 
             this.UIContenedorVistaConfirmacionSeries.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.UIContenedorVistaConfirmacionSeries.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(6);
-            this.UIContenedorVistaConfirmacionSeries.Location = new System.Drawing.Point(0, 46);
+            this.UIContenedorVistaConfirmacionSeries.Location = new System.Drawing.Point(0, 24);
             this.UIContenedorVistaConfirmacionSeries.MainView = this.UIVistaConfirmacionSeries;
-            this.UIContenedorVistaConfirmacionSeries.Margin = new System.Windows.Forms.Padding(6);
             this.UIContenedorVistaConfirmacionSeries.MenuManager = this.UiContendorDeBarras;
             this.UIContenedorVistaConfirmacionSeries.Name = "UIContenedorVistaConfirmacionSeries";
-            this.UIContenedorVistaConfirmacionSeries.Size = new System.Drawing.Size(2245, 1209);
+            this.UIContenedorVistaConfirmacionSeries.Size = new System.Drawing.Size(683, 423);
             this.UIContenedorVistaConfirmacionSeries.TabIndex = 5;
             this.UIContenedorVistaConfirmacionSeries.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.UIVistaConfirmacionSeries});
@@ -3483,126 +3287,107 @@
             this.UIColSerieConfirmacionSerie,
             this.UIColCorrelativoConfirmacionSerie,
             this.UiColNombreMaterialSeries});
-            this.UIVistaConfirmacionSeries.CustomizationFormBounds = new System.Drawing.Rectangle(1637, 761, 424, 408);
-            this.UIVistaConfirmacionSeries.DetailHeight = 673;
-            this.UIVistaConfirmacionSeries.FixedLineWidth = 4;
-            gridFormatRule26.ApplyToRow = true;
-            gridFormatRule26.Name = "Format0";
-            formatConditionRuleExpression26.Expression = "[ASIGNADO] = [QTY]";
-            formatConditionRuleExpression26.PredefinedName = "Green Fill, Green Text";
-            gridFormatRule26.Rule = formatConditionRuleExpression26;
-            this.UIVistaConfirmacionSeries.FormatRules.Add(gridFormatRule26);
+            this.UIVistaConfirmacionSeries.CustomizationFormBounds = new System.Drawing.Rectangle(942, 353, 212, 212);
+            gridFormatRule27.ApplyToRow = true;
+            gridFormatRule27.Name = "Format0";
+            formatConditionRuleExpression27.Expression = "[ASIGNADO] = [QTY]";
+            formatConditionRuleExpression27.PredefinedName = "Green Fill, Green Text";
+            gridFormatRule27.Rule = formatConditionRuleExpression27;
+            this.UIVistaConfirmacionSeries.FormatRules.Add(gridFormatRule27);
             this.UIVistaConfirmacionSeries.GridControl = this.UIContenedorVistaConfirmacionSeries;
+            this.UIVistaConfirmacionSeries.LevelIndent = 0;
             this.UIVistaConfirmacionSeries.Name = "UIVistaConfirmacionSeries";
             this.UIVistaConfirmacionSeries.OptionsBehavior.ReadOnly = true;
             this.UIVistaConfirmacionSeries.OptionsCustomization.AllowGroup = false;
             this.UIVistaConfirmacionSeries.OptionsCustomization.AllowSort = false;
             this.UIVistaConfirmacionSeries.OptionsView.ShowAutoFilterRow = true;
             this.UIVistaConfirmacionSeries.OptionsView.ShowGroupPanel = false;
+            this.UIVistaConfirmacionSeries.PreviewIndent = 0;
             // 
             // UIColOrdenCompraConfirmacionSerie
             // 
             this.UIColOrdenCompraConfirmacionSerie.Caption = "Id Tarea";
             this.UIColOrdenCompraConfirmacionSerie.FieldName = "DOC_ID";
-            this.UIColOrdenCompraConfirmacionSerie.MinWidth = 40;
             this.UIColOrdenCompraConfirmacionSerie.Name = "UIColOrdenCompraConfirmacionSerie";
             this.UIColOrdenCompraConfirmacionSerie.OptionsColumn.AllowEdit = false;
             this.UIColOrdenCompraConfirmacionSerie.Visible = true;
             this.UIColOrdenCompraConfirmacionSerie.VisibleIndex = 0;
-            this.UIColOrdenCompraConfirmacionSerie.Width = 150;
             // 
             // UiColCodigoProveedor
             // 
             this.UiColCodigoProveedor.Caption = "Cod Proveedor";
             this.UiColCodigoProveedor.FieldName = "CODE_SUPPLIER";
-            this.UiColCodigoProveedor.MinWidth = 40;
             this.UiColCodigoProveedor.Name = "UiColCodigoProveedor";
             this.UiColCodigoProveedor.OptionsColumn.AllowEdit = false;
             this.UiColCodigoProveedor.Visible = true;
             this.UiColCodigoProveedor.VisibleIndex = 2;
-            this.UiColCodigoProveedor.Width = 150;
             // 
             // UicolNombreProveedor
             // 
             this.UicolNombreProveedor.Caption = "Nombre Proveedor";
             this.UicolNombreProveedor.FieldName = "NAME_SUPPLIER";
-            this.UicolNombreProveedor.MinWidth = 40;
             this.UicolNombreProveedor.Name = "UicolNombreProveedor";
             this.UicolNombreProveedor.Visible = true;
             this.UicolNombreProveedor.VisibleIndex = 3;
-            this.UicolNombreProveedor.Width = 150;
             // 
             // UiColUbicacion
             // 
             this.UiColUbicacion.Caption = "Ubicación";
             this.UiColUbicacion.FieldName = "CURRENT_LOCATION";
-            this.UiColUbicacion.MinWidth = 40;
             this.UiColUbicacion.Name = "UiColUbicacion";
             this.UiColUbicacion.Visible = true;
             this.UiColUbicacion.VisibleIndex = 1;
-            this.UiColUbicacion.Width = 150;
             // 
             // UiColLicenciaSerie
             // 
             this.UiColLicenciaSerie.Caption = "Licencia";
             this.UiColLicenciaSerie.FieldName = "LICENSE_ID";
-            this.UiColLicenciaSerie.MinWidth = 40;
             this.UiColLicenciaSerie.Name = "UiColLicenciaSerie";
             this.UiColLicenciaSerie.Visible = true;
             this.UiColLicenciaSerie.VisibleIndex = 4;
-            this.UiColLicenciaSerie.Width = 150;
             // 
             // UIColMaterialConfirmacionSerie
             // 
             this.UIColMaterialConfirmacionSerie.Caption = "Material";
             this.UIColMaterialConfirmacionSerie.FieldName = "MATERIAL_ID";
-            this.UIColMaterialConfirmacionSerie.MinWidth = 40;
             this.UIColMaterialConfirmacionSerie.Name = "UIColMaterialConfirmacionSerie";
             this.UIColMaterialConfirmacionSerie.OptionsColumn.AllowEdit = false;
             this.UIColMaterialConfirmacionSerie.Visible = true;
             this.UIColMaterialConfirmacionSerie.VisibleIndex = 5;
-            this.UIColMaterialConfirmacionSerie.Width = 150;
             // 
             // UIColSerieConfirmacionSerie
             // 
             this.UIColSerieConfirmacionSerie.Caption = "Serie Escaneada";
             this.UIColSerieConfirmacionSerie.FieldName = "SERIAL";
-            this.UIColSerieConfirmacionSerie.MinWidth = 40;
             this.UIColSerieConfirmacionSerie.Name = "UIColSerieConfirmacionSerie";
             this.UIColSerieConfirmacionSerie.Visible = true;
             this.UIColSerieConfirmacionSerie.VisibleIndex = 6;
-            this.UIColSerieConfirmacionSerie.Width = 150;
             // 
             // UIColCorrelativoConfirmacionSerie
             // 
             this.UIColCorrelativoConfirmacionSerie.Caption = "Correlativo";
             this.UIColCorrelativoConfirmacionSerie.FieldName = "CORRELATIVE";
-            this.UIColCorrelativoConfirmacionSerie.MinWidth = 40;
             this.UIColCorrelativoConfirmacionSerie.Name = "UIColCorrelativoConfirmacionSerie";
             this.UIColCorrelativoConfirmacionSerie.OptionsColumn.AllowEdit = false;
             this.UIColCorrelativoConfirmacionSerie.Visible = true;
             this.UIColCorrelativoConfirmacionSerie.VisibleIndex = 7;
-            this.UIColCorrelativoConfirmacionSerie.Width = 150;
             // 
             // UiColNombreMaterialSeries
             // 
             this.UiColNombreMaterialSeries.Caption = "Nombre Material";
             this.UiColNombreMaterialSeries.FieldName = "MATERIAL_NAME";
-            this.UiColNombreMaterialSeries.MinWidth = 40;
             this.UiColNombreMaterialSeries.Name = "UiColNombreMaterialSeries";
             this.UiColNombreMaterialSeries.OptionsColumn.AllowEdit = false;
             this.UiColNombreMaterialSeries.Visible = true;
             this.UiColNombreMaterialSeries.VisibleIndex = 8;
-            this.UiColNombreMaterialSeries.Width = 150;
             // 
             // barDockControl11
             // 
             this.barDockControl11.CausesValidation = false;
             this.barDockControl11.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControl11.Location = new System.Drawing.Point(0, 46);
+            this.barDockControl11.Location = new System.Drawing.Point(0, 24);
             this.barDockControl11.Manager = this.UIBarManagerConfirmacionSeries;
-            this.barDockControl11.Margin = new System.Windows.Forms.Padding(6);
-            this.barDockControl11.Size = new System.Drawing.Size(0, 1209);
+            this.barDockControl11.Size = new System.Drawing.Size(0, 423);
             // 
             // UIBarManagerConfirmacionSeries
             // 
@@ -3699,26 +3484,23 @@
             this.barDockControl9.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControl9.Location = new System.Drawing.Point(0, 0);
             this.barDockControl9.Manager = this.UIBarManagerConfirmacionSeries;
-            this.barDockControl9.Margin = new System.Windows.Forms.Padding(6);
-            this.barDockControl9.Size = new System.Drawing.Size(2245, 46);
+            this.barDockControl9.Size = new System.Drawing.Size(683, 24);
             // 
             // barDockControl10
             // 
             this.barDockControl10.CausesValidation = false;
             this.barDockControl10.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl10.Location = new System.Drawing.Point(0, 1255);
+            this.barDockControl10.Location = new System.Drawing.Point(0, 447);
             this.barDockControl10.Manager = this.UIBarManagerConfirmacionSeries;
-            this.barDockControl10.Margin = new System.Windows.Forms.Padding(6);
-            this.barDockControl10.Size = new System.Drawing.Size(2245, 0);
+            this.barDockControl10.Size = new System.Drawing.Size(683, 0);
             // 
             // barDockControl12
             // 
             this.barDockControl12.CausesValidation = false;
             this.barDockControl12.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl12.Location = new System.Drawing.Point(2245, 46);
+            this.barDockControl12.Location = new System.Drawing.Point(683, 24);
             this.barDockControl12.Manager = this.UIBarManagerConfirmacionSeries;
-            this.barDockControl12.Margin = new System.Windows.Forms.Padding(6);
-            this.barDockControl12.Size = new System.Drawing.Size(0, 1209);
+            this.barDockControl12.Size = new System.Drawing.Size(0, 423);
             // 
             // UITabOlaPicking
             // 
@@ -3727,21 +3509,18 @@
             this.UITabOlaPicking.Controls.Add(this.barDockControl16);
             this.UITabOlaPicking.Controls.Add(this.barDockControl14);
             this.UITabOlaPicking.Controls.Add(this.barDockControl13);
-            this.UITabOlaPicking.Margin = new System.Windows.Forms.Padding(6);
             this.UITabOlaPicking.Name = "UITabOlaPicking";
-            this.UITabOlaPicking.Size = new System.Drawing.Size(2245, 1255);
+            this.UITabOlaPicking.Size = new System.Drawing.Size(683, 447);
             this.UITabOlaPicking.Text = "Ola de Picking";
             // 
             // UIContenedorOla
             // 
             this.UIContenedorOla.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.UIContenedorOla.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(6);
-            this.UIContenedorOla.Location = new System.Drawing.Point(0, 46);
+            this.UIContenedorOla.Location = new System.Drawing.Point(0, 24);
             this.UIContenedorOla.MainView = this.UIViewOlaPicking;
-            this.UIContenedorOla.Margin = new System.Windows.Forms.Padding(6);
             this.UIContenedorOla.MenuManager = this.UiContendorDeBarras;
             this.UIContenedorOla.Name = "UIContenedorOla";
-            this.UIContenedorOla.Size = new System.Drawing.Size(2245, 1187);
+            this.UIContenedorOla.Size = new System.Drawing.Size(683, 403);
             this.UIContenedorOla.TabIndex = 5;
             this.UIContenedorOla.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.UIViewOlaPicking});
@@ -3768,230 +3547,191 @@
             this.UIColOlaCaliber,
             this.UIColOlaStatus,
             this.UIColOlaPicking});
-            this.UIViewOlaPicking.DetailHeight = 673;
-            this.UIViewOlaPicking.FixedLineWidth = 4;
             this.UIViewOlaPicking.GridControl = this.UIContenedorOla;
+            this.UIViewOlaPicking.LevelIndent = 0;
             this.UIViewOlaPicking.Name = "UIViewOlaPicking";
             this.UIViewOlaPicking.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
             this.UIViewOlaPicking.OptionsView.ShowAutoFilterRow = true;
             this.UIViewOlaPicking.OptionsView.ShowFooter = true;
+            this.UIViewOlaPicking.PreviewIndent = 0;
             // 
             // UIColOlaSerialNumber
             // 
             this.UIColOlaSerialNumber.Caption = "Id";
             this.UIColOlaSerialNumber.FieldName = "SERIAL_NUMBER";
-            this.UIColOlaSerialNumber.MinWidth = 40;
             this.UIColOlaSerialNumber.Name = "UIColOlaSerialNumber";
             this.UIColOlaSerialNumber.OptionsColumn.AllowEdit = false;
             this.UIColOlaSerialNumber.Visible = true;
             this.UIColOlaSerialNumber.VisibleIndex = 0;
-            this.UIColOlaSerialNumber.Width = 150;
             // 
             // UIColOlaMaterialId
             // 
             this.UIColOlaMaterialId.Caption = "Material";
             this.UIColOlaMaterialId.FieldName = "MATERIAL_ID";
-            this.UIColOlaMaterialId.MinWidth = 40;
             this.UIColOlaMaterialId.Name = "UIColOlaMaterialId";
             this.UIColOlaMaterialId.OptionsColumn.AllowEdit = false;
             this.UIColOlaMaterialId.Visible = true;
             this.UIColOlaMaterialId.VisibleIndex = 2;
-            this.UIColOlaMaterialId.Width = 150;
             // 
             // UIColOlaMaterialName
             // 
             this.UIColOlaMaterialName.Caption = "Descripción";
             this.UIColOlaMaterialName.FieldName = "MATERIAL_NAME";
-            this.UIColOlaMaterialName.MinWidth = 40;
             this.UIColOlaMaterialName.Name = "UIColOlaMaterialName";
             this.UIColOlaMaterialName.OptionsColumn.AllowEdit = false;
             this.UIColOlaMaterialName.Visible = true;
             this.UIColOlaMaterialName.VisibleIndex = 3;
-            this.UIColOlaMaterialName.Width = 150;
             // 
             // UIColOlaCompletedDate
             // 
             this.UIColOlaCompletedDate.Caption = "Completada el?";
             this.UIColOlaCompletedDate.FieldName = "COMPLETED_DATE";
-            this.UIColOlaCompletedDate.MinWidth = 40;
             this.UIColOlaCompletedDate.Name = "UIColOlaCompletedDate";
             this.UIColOlaCompletedDate.OptionsColumn.AllowEdit = false;
             this.UIColOlaCompletedDate.Visible = true;
             this.UIColOlaCompletedDate.VisibleIndex = 4;
-            this.UIColOlaCompletedDate.Width = 150;
             // 
             // UIColOlaClientName
             // 
             this.UIColOlaClientName.Caption = "Cliente";
             this.UIColOlaClientName.FieldName = "CLIENT_NAME";
-            this.UIColOlaClientName.MinWidth = 40;
             this.UIColOlaClientName.Name = "UIColOlaClientName";
             this.UIColOlaClientName.OptionsColumn.AllowEdit = false;
             this.UIColOlaClientName.Visible = true;
             this.UIColOlaClientName.VisibleIndex = 5;
-            this.UIColOlaClientName.Width = 150;
             // 
             // UIColOlaDocNum
             // 
             this.UIColOlaDocNum.Caption = "No. Pedido";
             this.UIColOlaDocNum.FieldName = "DOC_NUM";
-            this.UIColOlaDocNum.MinWidth = 40;
             this.UIColOlaDocNum.Name = "UIColOlaDocNum";
             this.UIColOlaDocNum.OptionsColumn.AllowEdit = false;
             this.UIColOlaDocNum.Visible = true;
             this.UIColOlaDocNum.VisibleIndex = 6;
-            this.UIColOlaDocNum.Width = 150;
             // 
             // UIColOlaLicenseIdSource
             // 
             this.UIColOlaLicenseIdSource.Caption = "Licencia orígen";
             this.UIColOlaLicenseIdSource.FieldName = "LICENSE_ID_SOURCE";
-            this.UIColOlaLicenseIdSource.MinWidth = 40;
             this.UIColOlaLicenseIdSource.Name = "UIColOlaLicenseIdSource";
             this.UIColOlaLicenseIdSource.OptionsColumn.AllowEdit = false;
             this.UIColOlaLicenseIdSource.Visible = true;
             this.UIColOlaLicenseIdSource.VisibleIndex = 7;
-            this.UIColOlaLicenseIdSource.Width = 150;
             // 
             // UIColOlaLicenseIdTarget
             // 
             this.UIColOlaLicenseIdTarget.Caption = "Licencia Destino";
             this.UIColOlaLicenseIdTarget.FieldName = "LICENSE_ID_TARGET";
-            this.UIColOlaLicenseIdTarget.MinWidth = 40;
             this.UIColOlaLicenseIdTarget.Name = "UIColOlaLicenseIdTarget";
             this.UIColOlaLicenseIdTarget.OptionsColumn.AllowEdit = false;
             this.UIColOlaLicenseIdTarget.Visible = true;
             this.UIColOlaLicenseIdTarget.VisibleIndex = 8;
-            this.UIColOlaLicenseIdTarget.Width = 150;
             // 
             // UIColOlaBatch
             // 
             this.UIColOlaBatch.Caption = "Lote";
             this.UIColOlaBatch.FieldName = "BATCH";
-            this.UIColOlaBatch.MinWidth = 40;
             this.UIColOlaBatch.Name = "UIColOlaBatch";
             this.UIColOlaBatch.OptionsColumn.AllowEdit = false;
             this.UIColOlaBatch.Visible = true;
             this.UIColOlaBatch.VisibleIndex = 9;
-            this.UIColOlaBatch.Width = 150;
             // 
             // UIColOlaDateExpiration
             // 
             this.UIColOlaDateExpiration.Caption = "Fecha Expiración";
             this.UIColOlaDateExpiration.FieldName = "DATE_EXPIRATION";
-            this.UIColOlaDateExpiration.MinWidth = 40;
             this.UIColOlaDateExpiration.Name = "UIColOlaDateExpiration";
             this.UIColOlaDateExpiration.OptionsColumn.AllowEdit = false;
             this.UIColOlaDateExpiration.Visible = true;
             this.UIColOlaDateExpiration.VisibleIndex = 10;
-            this.UIColOlaDateExpiration.Width = 150;
             // 
             // UIColOlaStatusCode
             // 
             this.UIColOlaStatusCode.Caption = "Estado de Licencia";
             this.UIColOlaStatusCode.FieldName = "STATUS_CODE";
-            this.UIColOlaStatusCode.MinWidth = 40;
             this.UIColOlaStatusCode.Name = "UIColOlaStatusCode";
             this.UIColOlaStatusCode.OptionsColumn.AllowEdit = false;
             this.UIColOlaStatusCode.Visible = true;
             this.UIColOlaStatusCode.VisibleIndex = 11;
-            this.UIColOlaStatusCode.Width = 150;
             // 
             // UIColOlaLocationSpotSource
             // 
             this.UIColOlaLocationSpotSource.Caption = "Ubicación Orígen";
             this.UIColOlaLocationSpotSource.FieldName = "LOCATION_SPOT_SOURCE";
-            this.UIColOlaLocationSpotSource.MinWidth = 40;
             this.UIColOlaLocationSpotSource.Name = "UIColOlaLocationSpotSource";
             this.UIColOlaLocationSpotSource.OptionsColumn.AllowEdit = false;
             this.UIColOlaLocationSpotSource.Visible = true;
             this.UIColOlaLocationSpotSource.VisibleIndex = 12;
-            this.UIColOlaLocationSpotSource.Width = 150;
             // 
             // UIColOlaLocationSpotTarget
             // 
             this.UIColOlaLocationSpotTarget.Caption = "Ubicación Destino";
             this.UIColOlaLocationSpotTarget.FieldName = "LOCATION_SPOT_TARGET";
-            this.UIColOlaLocationSpotTarget.MinWidth = 40;
             this.UIColOlaLocationSpotTarget.Name = "UIColOlaLocationSpotTarget";
             this.UIColOlaLocationSpotTarget.OptionsColumn.AllowEdit = false;
             this.UIColOlaLocationSpotTarget.Visible = true;
             this.UIColOlaLocationSpotTarget.VisibleIndex = 13;
-            this.UIColOlaLocationSpotTarget.Width = 150;
             // 
             // UIColOlaQuantityPending
             // 
             this.UIColOlaQuantityPending.Caption = "Cantidad Pendiente";
             this.UIColOlaQuantityPending.FieldName = "QUANTITY_PENDING";
-            this.UIColOlaQuantityPending.MinWidth = 40;
             this.UIColOlaQuantityPending.Name = "UIColOlaQuantityPending";
             this.UIColOlaQuantityPending.OptionsColumn.AllowEdit = false;
             this.UIColOlaQuantityPending.Visible = true;
             this.UIColOlaQuantityPending.VisibleIndex = 14;
-            this.UIColOlaQuantityPending.Width = 150;
             // 
             // UIColOlaQuantityAssigned
             // 
             this.UIColOlaQuantityAssigned.Caption = "Cantidad Asignada";
             this.UIColOlaQuantityAssigned.FieldName = "QUANTITY_ASSIGNED";
-            this.UIColOlaQuantityAssigned.MinWidth = 40;
             this.UIColOlaQuantityAssigned.Name = "UIColOlaQuantityAssigned";
             this.UIColOlaQuantityAssigned.OptionsColumn.AllowEdit = false;
             this.UIColOlaQuantityAssigned.Visible = true;
             this.UIColOlaQuantityAssigned.VisibleIndex = 15;
-            this.UIColOlaQuantityAssigned.Width = 150;
             // 
             // UIColOlaTone
             // 
             this.UIColOlaTone.Caption = "Tono";
             this.UIColOlaTone.FieldName = "TONE";
-            this.UIColOlaTone.MinWidth = 40;
             this.UIColOlaTone.Name = "UIColOlaTone";
             this.UIColOlaTone.OptionsColumn.AllowEdit = false;
             this.UIColOlaTone.Visible = true;
             this.UIColOlaTone.VisibleIndex = 16;
-            this.UIColOlaTone.Width = 150;
             // 
             // UIColOlaCaliber
             // 
             this.UIColOlaCaliber.Caption = "Calibre";
             this.UIColOlaCaliber.FieldName = "CALIBER";
-            this.UIColOlaCaliber.MinWidth = 40;
             this.UIColOlaCaliber.Name = "UIColOlaCaliber";
             this.UIColOlaCaliber.OptionsColumn.AllowEdit = false;
             this.UIColOlaCaliber.Visible = true;
             this.UIColOlaCaliber.VisibleIndex = 17;
-            this.UIColOlaCaliber.Width = 150;
             // 
             // UIColOlaStatus
             // 
             this.UIColOlaStatus.Caption = "Status";
             this.UIColOlaStatus.FieldName = "STATUS";
-            this.UIColOlaStatus.MinWidth = 40;
             this.UIColOlaStatus.Name = "UIColOlaStatus";
             this.UIColOlaStatus.OptionsColumn.AllowEdit = false;
             this.UIColOlaStatus.Visible = true;
             this.UIColOlaStatus.VisibleIndex = 18;
-            this.UIColOlaStatus.Width = 150;
             // 
             // UIColOlaPicking
             // 
             this.UIColOlaPicking.Caption = "Ola de Picking";
             this.UIColOlaPicking.FieldName = "WAVE_PICKING_ID";
-            this.UIColOlaPicking.MinWidth = 40;
             this.UIColOlaPicking.Name = "UIColOlaPicking";
             this.UIColOlaPicking.Visible = true;
             this.UIColOlaPicking.VisibleIndex = 1;
-            this.UIColOlaPicking.Width = 150;
             // 
             // barDockControl15
             // 
             this.barDockControl15.CausesValidation = false;
             this.barDockControl15.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControl15.Location = new System.Drawing.Point(0, 46);
+            this.barDockControl15.Location = new System.Drawing.Point(0, 24);
             this.barDockControl15.Manager = this.barManager1;
-            this.barDockControl15.Margin = new System.Windows.Forms.Padding(6);
-            this.barDockControl15.Size = new System.Drawing.Size(0, 1187);
+            this.barDockControl15.Size = new System.Drawing.Size(0, 403);
             // 
             // barManager1
             // 
@@ -4049,26 +3789,23 @@
             this.barDockControl13.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControl13.Location = new System.Drawing.Point(0, 0);
             this.barDockControl13.Manager = this.barManager1;
-            this.barDockControl13.Margin = new System.Windows.Forms.Padding(6);
-            this.barDockControl13.Size = new System.Drawing.Size(2245, 46);
+            this.barDockControl13.Size = new System.Drawing.Size(683, 24);
             // 
             // barDockControl14
             // 
             this.barDockControl14.CausesValidation = false;
             this.barDockControl14.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl14.Location = new System.Drawing.Point(0, 1233);
+            this.barDockControl14.Location = new System.Drawing.Point(0, 427);
             this.barDockControl14.Manager = this.barManager1;
-            this.barDockControl14.Margin = new System.Windows.Forms.Padding(6);
-            this.barDockControl14.Size = new System.Drawing.Size(2245, 22);
+            this.barDockControl14.Size = new System.Drawing.Size(683, 20);
             // 
             // barDockControl16
             // 
             this.barDockControl16.CausesValidation = false;
             this.barDockControl16.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl16.Location = new System.Drawing.Point(2245, 46);
+            this.barDockControl16.Location = new System.Drawing.Point(683, 24);
             this.barDockControl16.Manager = this.barManager1;
-            this.barDockControl16.Margin = new System.Windows.Forms.Padding(6);
-            this.barDockControl16.Size = new System.Drawing.Size(0, 1187);
+            this.barDockControl16.Size = new System.Drawing.Size(0, 403);
             // 
             // bar2
             // 
@@ -4170,11 +3907,10 @@
             // 
             // AdministradorDeTareasVista
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2249, 1304);
+            this.ClientSize = new System.Drawing.Size(685, 475);
             this.Controls.Add(this.UiContenedorTab);
-            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "AdministradorDeTareasVista";
             this.Text = "Administrador De Tareas";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AdministradorDeTareasVista_FormClosing);
@@ -4540,5 +4276,9 @@
         private DevExpress.XtraEditors.SimpleButton UiBotonCancelarTarea;
         private DevExpress.XtraEditors.SimpleButton UiBotonPausarTarea;
         private DevExpress.XtraEditors.SimpleButton UiBotonReanudarTarea;
+        private DevExpress.XtraGrid.Columns.GridColumn UiColFin;
+        private DevExpress.XtraGrid.Columns.GridColumn UiStockQTY;
+        private DevExpress.XtraGrid.Columns.GridColumn UiPhysicalCounting;
+        private DevExpress.XtraGrid.Columns.GridColumn UiDifference;
     }
 }

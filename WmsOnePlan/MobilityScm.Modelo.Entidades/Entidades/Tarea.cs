@@ -9,6 +9,9 @@ namespace MobilityScm.Modelo.Entidades
     {
         public decimal SERIAL_NUMBER { get; set; }
 
+        public DateTime PICKING_FINISHED_DATE { get; set; }
+
+
         public decimal TASK_OR_WAVE_ID
         {
             get
@@ -25,6 +28,8 @@ namespace MobilityScm.Modelo.Entidades
         }
 
         public decimal? WAVE_PICKING_ID { get; set; }
+
+        public decimal PHYSICAL_COUNT_HEADER_ID { get; set; }
 
         public decimal? TRANS_OWNER { get; set; }
 
