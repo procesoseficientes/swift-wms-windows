@@ -33,30 +33,36 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SolicitudDeTrasladoVista));
             DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject21 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject22 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject23 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject24 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions2 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject17 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject18 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject19 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject20 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject9 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject10 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject11 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject12 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions4 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject13 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject14 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject15 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject16 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions6 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject21 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject22 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject23 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject24 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions3 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject9 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject10 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject11 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject12 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions5 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject17 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject18 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject19 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject20 = new DevExpress.Utils.SerializableAppearanceObject();
             this.UiVistaSolicitudDeTrasladoDetalle = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colMATERIAL_ID2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colMATERIAL_NAME2 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -104,22 +110,23 @@
             this.colPARAM_CAPTION2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UiLabelCentroDistribucionDestino = new DevExpress.XtraEditors.LabelControl();
             this.UiGrupoBodegas = new DevExpress.XtraEditors.GroupControl();
-            this.UiTextoComentario = new DevExpress.XtraEditors.TextEdit();
-            this.UiFechaEntrega = new DevExpress.XtraEditors.DateEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.UiFechaEntrega = new DevExpress.XtraEditors.DateEdit();
             this.UiLabelFechaEntrega = new DevExpress.XtraEditors.LabelControl();
-            this.UiListaBodegaOrigen = new DevExpress.XtraEditors.SearchLookUpEdit();
-            this.UiVistaBodegaOrigen = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.colWAREHOUSE_ID = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colNAME = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UiLabelBodegaDestino = new DevExpress.XtraEditors.LabelControl();
-            this.UiLabelBodegaOrigen = new DevExpress.XtraEditors.LabelControl();
             this.UiListaBodegaDestino = new DevExpress.XtraEditors.SearchLookUpEdit();
             this.UiVistaBodegaDestino = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colWAREHOUSE_ID2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colNAME2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.UiTextoBodegaOrigen = new DevExpress.XtraEditors.TextEdit();
             this.UiTextoBodegaDestino = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit1 = new DevExpress.XtraEditors.ToggleSwitch();
+            this.UiTextoComentario = new DevExpress.XtraEditors.MemoEdit();
+            this.UiListaBodegaOrigen = new DevExpress.XtraEditors.SearchLookUpEdit();
+            this.UiVistaBodegaOrigen = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colWAREHOUSE_ID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNAME = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.UiLabelBodegaOrigen = new DevExpress.XtraEditors.LabelControl();
+            this.UiTextoBodegaOrigen = new DevExpress.XtraEditors.TextEdit();
             this.UiListaCentroDistribucionOrigen = new DevExpress.XtraEditors.SearchLookUpEdit();
             this.UiError = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             this.repositoryItemTimeEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTimeEdit();
@@ -168,15 +175,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.UiVistaCentroDistribucionDestino)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiGrupoBodegas)).BeginInit();
             this.UiGrupoBodegas.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.UiTextoComentario.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiFechaEntrega.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiFechaEntrega.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UiListaBodegaOrigen.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UiVistaBodegaOrigen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiListaBodegaDestino.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiVistaBodegaDestino)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UiTextoBodegaOrigen.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiTextoBodegaDestino.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UiTextoComentario.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UiListaBodegaOrigen.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UiVistaBodegaOrigen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UiTextoBodegaOrigen.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiListaCentroDistribucionOrigen.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiError)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTimeEdit1)).BeginInit();
@@ -275,13 +283,13 @@
             gridLevelNode1.RelationName = "Level1";
             this.UiContenedorVistaSolicitudDeTraslado.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
             gridLevelNode1});
-            this.UiContenedorVistaSolicitudDeTraslado.Location = new System.Drawing.Point(0, 148);
+            this.UiContenedorVistaSolicitudDeTraslado.Location = new System.Drawing.Point(0, 167);
             this.UiContenedorVistaSolicitudDeTraslado.MainView = this.UiVistaSolicitudTraslado;
             this.UiContenedorVistaSolicitudDeTraslado.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiContenedorVistaSolicitudDeTraslado.Name = "UiContenedorVistaSolicitudDeTraslado";
             this.UiContenedorVistaSolicitudDeTraslado.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemCheckEdit1});
-            this.UiContenedorVistaSolicitudDeTraslado.Size = new System.Drawing.Size(1136, 488);
+            this.UiContenedorVistaSolicitudDeTraslado.Size = new System.Drawing.Size(1136, 469);
             this.UiContenedorVistaSolicitudDeTraslado.TabIndex = 14;
             this.UiContenedorVistaSolicitudDeTraslado.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.UiVistaSolicitudTraslado,
@@ -430,18 +438,18 @@
             // UiBotonNuevo
             // 
             this.UiBotonNuevo.Caption = "Nuevo";
-            this.UiBotonNuevo.Glyph = ((System.Drawing.Image)(resources.GetObject("UiBotonNuevo.Glyph")));
             this.UiBotonNuevo.Id = 6;
-            this.UiBotonNuevo.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiBotonNuevo.LargeGlyph")));
+            this.UiBotonNuevo.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBotonNuevo.ImageOptions.Image")));
+            this.UiBotonNuevo.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiBotonNuevo.ImageOptions.LargeImage")));
             this.UiBotonNuevo.Name = "UiBotonNuevo";
             this.UiBotonNuevo.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.UiBotonNuevo_ItemClick);
             // 
             // UiBotonGrabar
             // 
             this.UiBotonGrabar.Caption = "Grabar";
-            this.UiBotonGrabar.Glyph = ((System.Drawing.Image)(resources.GetObject("UiBotonGrabar.Glyph")));
             this.UiBotonGrabar.Id = 1;
-            this.UiBotonGrabar.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiBotonGrabar.LargeGlyph")));
+            this.UiBotonGrabar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBotonGrabar.ImageOptions.Image")));
+            this.UiBotonGrabar.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiBotonGrabar.ImageOptions.LargeImage")));
             this.UiBotonGrabar.Name = "UiBotonGrabar";
             toolTipTitleItem1.Text = "Grabar";
             superToolTip1.Items.Add(toolTipTitleItem1);
@@ -452,14 +460,13 @@
             // 
             this.barStaticItem1.Id = 19;
             this.barStaticItem1.Name = "barStaticItem1";
-            this.barStaticItem1.TextAlignment = System.Drawing.StringAlignment.Near;
             // 
             // UiBotonRefrescar
             // 
             this.UiBotonRefrescar.Caption = "Refrescar";
-            this.UiBotonRefrescar.Glyph = ((System.Drawing.Image)(resources.GetObject("UiBotonRefrescar.Glyph")));
             this.UiBotonRefrescar.Id = 8;
-            this.UiBotonRefrescar.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiBotonRefrescar.LargeGlyph")));
+            this.UiBotonRefrescar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBotonRefrescar.ImageOptions.Image")));
+            this.UiBotonRefrescar.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiBotonRefrescar.ImageOptions.LargeImage")));
             this.UiBotonRefrescar.Name = "UiBotonRefrescar";
             this.UiBotonRefrescar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.UiBotonRefrescar_ItemClick);
             // 
@@ -467,9 +474,9 @@
             // 
             this.UiBotonExportar.Caption = "Exportar";
             this.UiBotonExportar.Enabled = false;
-            this.UiBotonExportar.Glyph = ((System.Drawing.Image)(resources.GetObject("UiBotonExportar.Glyph")));
             this.UiBotonExportar.Id = 7;
-            this.UiBotonExportar.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiBotonExportar.LargeGlyph")));
+            this.UiBotonExportar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBotonExportar.ImageOptions.Image")));
+            this.UiBotonExportar.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiBotonExportar.ImageOptions.LargeImage")));
             this.UiBotonExportar.Name = "UiBotonExportar";
             this.UiBotonExportar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.UiBotonExportar_ItemClick);
             // 
@@ -477,9 +484,9 @@
             // 
             this.UiBotonReporte.Caption = "Imprimir";
             this.UiBotonReporte.Enabled = false;
-            this.UiBotonReporte.Glyph = ((System.Drawing.Image)(resources.GetObject("UiBotonReporte.Glyph")));
             this.UiBotonReporte.Id = 23;
-            this.UiBotonReporte.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiBotonReporte.LargeGlyph")));
+            this.UiBotonReporte.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBotonReporte.ImageOptions.Image")));
+            this.UiBotonReporte.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiBotonReporte.ImageOptions.LargeImage")));
             this.UiBotonReporte.Name = "UiBotonReporte";
             this.UiBotonReporte.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.UiBotonReporte.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.UiBotonReporte_ItemClick);
@@ -488,9 +495,9 @@
             // 
             this.UiTextoIdSolicitud.Caption = "Solicitud de Traslado";
             this.UiTextoIdSolicitud.Edit = this.UiControlTextoIdSolicitud;
-            this.UiTextoIdSolicitud.Glyph = ((System.Drawing.Image)(resources.GetObject("UiTextoIdSolicitud.Glyph")));
             this.UiTextoIdSolicitud.Id = 20;
-            this.UiTextoIdSolicitud.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiTextoIdSolicitud.LargeGlyph")));
+            this.UiTextoIdSolicitud.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiTextoIdSolicitud.ImageOptions.Image")));
+            this.UiTextoIdSolicitud.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiTextoIdSolicitud.ImageOptions.LargeImage")));
             this.UiTextoIdSolicitud.Name = "UiTextoIdSolicitud";
             this.UiTextoIdSolicitud.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
@@ -503,9 +510,9 @@
             // UiBotonBuscar
             // 
             this.UiBotonBuscar.Caption = "Buscar";
-            this.UiBotonBuscar.Glyph = ((System.Drawing.Image)(resources.GetObject("UiBotonBuscar.Glyph")));
             this.UiBotonBuscar.Id = 21;
-            this.UiBotonBuscar.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiBotonBuscar.LargeGlyph")));
+            this.UiBotonBuscar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBotonBuscar.ImageOptions.Image")));
+            this.UiBotonBuscar.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiBotonBuscar.ImageOptions.LargeImage")));
             this.UiBotonBuscar.Name = "UiBotonBuscar";
             this.UiBotonBuscar.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.UiBotonBuscar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.UiBotonBuscar_ItemClick);
@@ -515,6 +522,7 @@
             this.barDockControlTop.CausesValidation = false;
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
+            this.barDockControlTop.Manager = this.UiBarraContenedorPrincipal;
             this.barDockControlTop.Size = new System.Drawing.Size(1136, 24);
             // 
             // barDockControlBottom
@@ -522,6 +530,7 @@
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.barDockControlBottom.Location = new System.Drawing.Point(0, 638);
+            this.barDockControlBottom.Manager = this.UiBarraContenedorPrincipal;
             this.barDockControlBottom.Size = new System.Drawing.Size(1136, 0);
             // 
             // barDockControlLeft
@@ -529,6 +538,7 @@
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 24);
+            this.barDockControlLeft.Manager = this.UiBarraContenedorPrincipal;
             this.barDockControlLeft.Size = new System.Drawing.Size(0, 614);
             // 
             // barDockControlRight
@@ -536,15 +546,16 @@
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.barDockControlRight.Location = new System.Drawing.Point(1136, 24);
+            this.barDockControlRight.Manager = this.UiBarraContenedorPrincipal;
             this.barDockControlRight.Size = new System.Drawing.Size(0, 614);
             // 
             // UiFechaInicial
             // 
             this.UiFechaInicial.Caption = "Fecha Inicial";
             this.UiFechaInicial.Edit = this.repositoryItemDateEdit1;
-            this.UiFechaInicial.Glyph = ((System.Drawing.Image)(resources.GetObject("UiFechaInicial.Glyph")));
             this.UiFechaInicial.Id = 4;
-            this.UiFechaInicial.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiFechaInicial.LargeGlyph")));
+            this.UiFechaInicial.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiFechaInicial.ImageOptions.Image")));
+            this.UiFechaInicial.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiFechaInicial.ImageOptions.LargeImage")));
             this.UiFechaInicial.Name = "UiFechaInicial";
             this.UiFechaInicial.Size = new System.Drawing.Size(180, 0);
             // 
@@ -561,9 +572,9 @@
             // 
             this.UiFechaFinal.Caption = "Fecha Final";
             this.UiFechaFinal.Edit = this.repositoryItemDateEdit2;
-            this.UiFechaFinal.Glyph = ((System.Drawing.Image)(resources.GetObject("UiFechaFinal.Glyph")));
             this.UiFechaFinal.Id = 5;
-            this.UiFechaFinal.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiFechaFinal.LargeGlyph")));
+            this.UiFechaFinal.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiFechaFinal.ImageOptions.Image")));
+            this.UiFechaFinal.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiFechaFinal.ImageOptions.LargeImage")));
             this.UiFechaFinal.Name = "UiFechaFinal";
             this.UiFechaFinal.Size = new System.Drawing.Size(180, 0);
             // 
@@ -579,17 +590,17 @@
             // UiBotonManifiestoConsolidado
             // 
             this.UiBotonManifiestoConsolidado.Caption = "Manifiesto Consolidado";
-            this.UiBotonManifiestoConsolidado.Glyph = ((System.Drawing.Image)(resources.GetObject("UiBotonManifiestoConsolidado.Glyph")));
             this.UiBotonManifiestoConsolidado.Id = 9;
-            this.UiBotonManifiestoConsolidado.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiBotonManifiestoConsolidado.LargeGlyph")));
+            this.UiBotonManifiestoConsolidado.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBotonManifiestoConsolidado.ImageOptions.Image")));
+            this.UiBotonManifiestoConsolidado.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiBotonManifiestoConsolidado.ImageOptions.LargeImage")));
             this.UiBotonManifiestoConsolidado.Name = "UiBotonManifiestoConsolidado";
             // 
             // UiManifiestoDetallado
             // 
             this.UiManifiestoDetallado.Caption = "Manifiesto Detallado";
-            this.UiManifiestoDetallado.Glyph = ((System.Drawing.Image)(resources.GetObject("UiManifiestoDetallado.Glyph")));
             this.UiManifiestoDetallado.Id = 10;
-            this.UiManifiestoDetallado.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiManifiestoDetallado.LargeGlyph")));
+            this.UiManifiestoDetallado.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiManifiestoDetallado.ImageOptions.Image")));
+            this.UiManifiestoDetallado.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiManifiestoDetallado.ImageOptions.LargeImage")));
             this.UiManifiestoDetallado.Name = "UiManifiestoDetallado";
             // 
             // UiLabelUltimoManifiesto
@@ -603,7 +614,6 @@
             this.UiLabelNumeroUltimoManifiesto.Caption = "0";
             this.UiLabelNumeroUltimoManifiesto.Id = 18;
             this.UiLabelNumeroUltimoManifiesto.Name = "UiLabelNumeroUltimoManifiesto";
-            this.UiLabelNumeroUltimoManifiesto.TextAlignment = System.Drawing.StringAlignment.Near;
             // 
             // UiVistaCentroDistribucionOrigen
             // 
@@ -637,17 +647,18 @@
             // 
             this.UiListaCentroDistribucionDestino.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.UiListaCentroDistribucionDestino.Location = new System.Drawing.Point(156, 31);
+            this.UiListaCentroDistribucionDestino.Location = new System.Drawing.Point(112, 5);
             this.UiListaCentroDistribucionDestino.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiListaCentroDistribucionDestino.Name = "UiListaCentroDistribucionDestino";
+            editorButtonImageOptions2.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions2.Image")));
             this.UiListaCentroDistribucionDestino.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, DevExpress.XtraEditors.ImageLocation.MiddleCenter, ((System.Drawing.Image)(resources.GetObject("UiListaCentroDistribucionDestino.Properties.Buttons"))), new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject21, serializableAppearanceObject22, serializableAppearanceObject23, serializableAppearanceObject24, "", "REFRESCAR-CD-DESTINO", null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", "REFRESCAR-CD-DESTINO", null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.UiListaCentroDistribucionDestino.Properties.DisplayMember = "PARAM_CAPTION";
+            this.UiListaCentroDistribucionDestino.Properties.PopupView = this.UiVistaCentroDistribucionDestino;
             this.UiListaCentroDistribucionDestino.Properties.ValueMember = "PARAM_NAME";
-            this.UiListaCentroDistribucionDestino.Properties.View = this.UiVistaCentroDistribucionDestino;
             this.UiListaCentroDistribucionDestino.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
-            this.UiListaCentroDistribucionDestino.Size = new System.Drawing.Size(345, 22);
+            this.UiListaCentroDistribucionDestino.Size = new System.Drawing.Size(523, 24);
             this.UiListaCentroDistribucionDestino.TabIndex = 6;
             this.UiListaCentroDistribucionDestino.EditValueChanged += new System.EventHandler(this.UiListaCentroDistribucionDestino_EditValueChanged);
             // 
@@ -681,87 +692,186 @@
             // 
             // UiLabelCentroDistribucionDestino
             // 
-            this.UiLabelCentroDistribucionDestino.Location = new System.Drawing.Point(5, 34);
+            this.UiLabelCentroDistribucionDestino.Location = new System.Drawing.Point(5, 10);
             this.UiLabelCentroDistribucionDestino.Name = "UiLabelCentroDistribucionDestino";
-            this.UiLabelCentroDistribucionDestino.Size = new System.Drawing.Size(149, 13);
+            this.UiLabelCentroDistribucionDestino.Size = new System.Drawing.Size(101, 13);
             this.UiLabelCentroDistribucionDestino.TabIndex = 7;
-            this.UiLabelCentroDistribucionDestino.Text = "Centro de Distribución Destino:";
+            this.UiLabelCentroDistribucionDestino.Text = "Centro Dist. Destino:";
+            this.UiLabelCentroDistribucionDestino.Click += new System.EventHandler(this.UiLabelCentroDistribucionDestino_Click);
             // 
             // UiGrupoBodegas
             // 
             this.UiGrupoBodegas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.UiGrupoBodegas.Controls.Add(this.UiTextoComentario);
-            this.UiGrupoBodegas.Controls.Add(this.UiFechaEntrega);
+            this.UiGrupoBodegas.AutoSize = true;
             this.UiGrupoBodegas.Controls.Add(this.labelControl3);
+            this.UiGrupoBodegas.Controls.Add(this.UiFechaEntrega);
             this.UiGrupoBodegas.Controls.Add(this.UiLabelFechaEntrega);
-            this.UiGrupoBodegas.Controls.Add(this.UiListaBodegaOrigen);
             this.UiGrupoBodegas.Controls.Add(this.UiLabelBodegaDestino);
-            this.UiGrupoBodegas.Controls.Add(this.UiLabelBodegaOrigen);
             this.UiGrupoBodegas.Controls.Add(this.UiListaBodegaDestino);
-            this.UiGrupoBodegas.Controls.Add(this.UiTextoBodegaOrigen);
             this.UiGrupoBodegas.Controls.Add(this.UiTextoBodegaDestino);
-            this.UiGrupoBodegas.Location = new System.Drawing.Point(512, 30);
+            this.UiGrupoBodegas.Controls.Add(this.textEdit1);
+            this.UiGrupoBodegas.Controls.Add(this.UiTextoComentario);
+            this.UiGrupoBodegas.Controls.Add(this.UiListaCentroDistribucionDestino);
+            this.UiGrupoBodegas.Controls.Add(this.UiLabelCentroDistribucionDestino);
+            this.UiGrupoBodegas.Location = new System.Drawing.Point(496, 30);
             this.UiGrupoBodegas.Name = "UiGrupoBodegas";
             this.UiGrupoBodegas.ShowCaption = false;
-            this.UiGrupoBodegas.Size = new System.Drawing.Size(624, 112);
+            this.UiGrupoBodegas.Size = new System.Drawing.Size(640, 131);
             this.UiGrupoBodegas.TabIndex = 8;
             // 
-            // UiTextoComentario
+            // labelControl3
             // 
-            this.UiTextoComentario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.UiTextoComentario.Location = new System.Drawing.Point(89, 83);
-            this.UiTextoComentario.MenuManager = this.UiBarraContenedorPrincipal;
-            this.UiTextoComentario.Name = "UiTextoComentario";
-            this.UiTextoComentario.Size = new System.Drawing.Size(530, 20);
-            this.UiTextoComentario.TabIndex = 9;
+            this.labelControl3.Location = new System.Drawing.Point(15, 88);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(59, 13);
+            this.labelControl3.TabIndex = 13;
+            this.labelControl3.Text = "Comentario:";
+            this.labelControl3.Click += new System.EventHandler(this.labelControl3_Click);
             // 
             // UiFechaEntrega
             // 
             this.UiFechaEntrega.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.UiFechaEntrega.EditValue = null;
-            this.UiFechaEntrega.Location = new System.Drawing.Point(89, 58);
+            this.UiFechaEntrega.Location = new System.Drawing.Point(112, 58);
             this.UiFechaEntrega.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiFechaEntrega.Name = "UiFechaEntrega";
             this.UiFechaEntrega.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.UiFechaEntrega.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.UiFechaEntrega.Size = new System.Drawing.Size(530, 20);
+            this.UiFechaEntrega.Size = new System.Drawing.Size(523, 20);
             this.UiFechaEntrega.TabIndex = 8;
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Location = new System.Drawing.Point(5, 88);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(59, 13);
-            this.labelControl3.TabIndex = 7;
-            this.labelControl3.Text = "Comentario:";
             // 
             // UiLabelFechaEntrega
             // 
-            this.UiLabelFechaEntrega.Location = new System.Drawing.Point(5, 61);
+            this.UiLabelFechaEntrega.Location = new System.Drawing.Point(15, 62);
             this.UiLabelFechaEntrega.Name = "UiLabelFechaEntrega";
             this.UiLabelFechaEntrega.Size = new System.Drawing.Size(74, 13);
             this.UiLabelFechaEntrega.TabIndex = 5;
             this.UiLabelFechaEntrega.Text = "Fecha Entrega:";
             // 
+            // UiLabelBodegaDestino
+            // 
+            this.UiLabelBodegaDestino.Location = new System.Drawing.Point(15, 38);
+            this.UiLabelBodegaDestino.Name = "UiLabelBodegaDestino";
+            this.UiLabelBodegaDestino.Size = new System.Drawing.Size(79, 13);
+            this.UiLabelBodegaDestino.TabIndex = 3;
+            this.UiLabelBodegaDestino.Text = "Bodega Destino:";
+            // 
+            // UiListaBodegaDestino
+            // 
+            this.UiListaBodegaDestino.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.UiListaBodegaDestino.Location = new System.Drawing.Point(112, 33);
+            this.UiListaBodegaDestino.MenuManager = this.UiBarraContenedorPrincipal;
+            this.UiListaBodegaDestino.Name = "UiListaBodegaDestino";
+            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
+            this.UiListaBodegaDestino.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", "REFRESCAR-BODEGA-DESTINO", null, DevExpress.Utils.ToolTipAnchor.Default)});
+            this.UiListaBodegaDestino.Properties.DisplayMember = "NAME";
+            this.UiListaBodegaDestino.Properties.PopupView = this.UiVistaBodegaDestino;
+            this.UiListaBodegaDestino.Properties.ValueMember = "WAREHOUSE_ID";
+            this.UiListaBodegaDestino.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
+            this.UiListaBodegaDestino.Size = new System.Drawing.Size(523, 24);
+            this.UiListaBodegaDestino.TabIndex = 2;
+            // 
+            // UiVistaBodegaDestino
+            // 
+            this.UiVistaBodegaDestino.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colWAREHOUSE_ID2,
+            this.colNAME2});
+            this.UiVistaBodegaDestino.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.UiVistaBodegaDestino.Name = "UiVistaBodegaDestino";
+            this.UiVistaBodegaDestino.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.UiVistaBodegaDestino.OptionsView.ShowGroupPanel = false;
+            // 
+            // colWAREHOUSE_ID2
+            // 
+            this.colWAREHOUSE_ID2.Caption = "ID Bodega";
+            this.colWAREHOUSE_ID2.FieldName = "WAREHOUSE_ID";
+            this.colWAREHOUSE_ID2.Name = "colWAREHOUSE_ID2";
+            this.colWAREHOUSE_ID2.OptionsColumn.AllowEdit = false;
+            this.colWAREHOUSE_ID2.Visible = true;
+            this.colWAREHOUSE_ID2.VisibleIndex = 0;
+            // 
+            // colNAME2
+            // 
+            this.colNAME2.Caption = "Nombre Bodega";
+            this.colNAME2.FieldName = "NAME";
+            this.colNAME2.Name = "colNAME2";
+            this.colNAME2.OptionsColumn.AllowEdit = false;
+            this.colNAME2.Visible = true;
+            this.colNAME2.VisibleIndex = 1;
+            // 
+            // UiTextoBodegaDestino
+            // 
+            this.UiTextoBodegaDestino.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.UiTextoBodegaDestino.Enabled = false;
+            this.UiTextoBodegaDestino.Location = new System.Drawing.Point(112, 33);
+            this.UiTextoBodegaDestino.MenuManager = this.UiBarraContenedorPrincipal;
+            this.UiTextoBodegaDestino.Name = "UiTextoBodegaDestino";
+            this.UiTextoBodegaDestino.Size = new System.Drawing.Size(523, 20);
+            this.UiTextoBodegaDestino.TabIndex = 11;
+            this.UiTextoBodegaDestino.Visible = false;
+            // 
+            // textEdit1
+            // 
+            this.textEdit1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textEdit1.AutoSizeInLayoutControl = true;
+            this.textEdit1.EditValue = null;
+            this.textEdit1.Location = new System.Drawing.Point(15, 107);
+            this.textEdit1.MenuManager = this.UiBarraContenedorPrincipal;
+            this.textEdit1.Name = "textEdit1";
+            this.textEdit1.Properties.AllowThumbAnimation = false;
+            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 6.25F);
+            this.textEdit1.Properties.Appearance.Options.UseFont = true;
+            this.textEdit1.Properties.AppearanceDisabled.Font = new System.Drawing.Font("Tahoma", 6.25F);
+            this.textEdit1.Properties.AppearanceDisabled.Options.UseFont = true;
+            this.textEdit1.Properties.AppearanceFocused.Font = new System.Drawing.Font("Tahoma", 6.25F);
+            this.textEdit1.Properties.AppearanceFocused.Options.UseFont = true;
+            this.textEdit1.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Tahoma", 6.25F);
+            this.textEdit1.Properties.AppearanceReadOnly.Options.UseFont = true;
+            this.textEdit1.Properties.AutoWidth = true;
+            this.textEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Default;
+            this.textEdit1.Properties.OffText = "Enviar a ERP ";
+            this.textEdit1.Properties.OnText = "Enviar a ERP";
+            this.textEdit1.Size = new System.Drawing.Size(90, 15);
+            this.textEdit1.TabIndex = 12;
+            this.textEdit1.Toggled += new System.EventHandler(this.textEdit1_Toggled);
+            // 
+            // UiTextoComentario
+            // 
+            this.UiTextoComentario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.UiTextoComentario.EditValue = "";
+            this.UiTextoComentario.Location = new System.Drawing.Point(127, 83);
+            this.UiTextoComentario.MenuManager = this.UiBarraContenedorPrincipal;
+            this.UiTextoComentario.Name = "UiTextoComentario";
+            this.UiTextoComentario.Properties.WordWrap = false;
+            this.UiTextoComentario.Size = new System.Drawing.Size(508, 42);
+            this.UiTextoComentario.TabIndex = 9;
+            this.UiTextoComentario.EditValueChanged += new System.EventHandler(this.UiTextoComentario_EditValueChanged);
+            // 
             // UiListaBodegaOrigen
             // 
             this.UiListaBodegaOrigen.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.UiListaBodegaOrigen.Location = new System.Drawing.Point(89, 6);
+            this.UiListaBodegaOrigen.Location = new System.Drawing.Point(144, 31);
             this.UiListaBodegaOrigen.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiListaBodegaOrigen.Name = "UiListaBodegaOrigen";
+            editorButtonImageOptions4.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions4.Image")));
             this.UiListaBodegaOrigen.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, DevExpress.XtraEditors.ImageLocation.MiddleCenter, ((System.Drawing.Image)(resources.GetObject("UiListaBodegaOrigen.Properties.Buttons"))), new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", "REFRESCAR-BODEGA-ORIGEN", null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions4, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject13, serializableAppearanceObject14, serializableAppearanceObject15, serializableAppearanceObject16, "", "REFRESCAR-BODEGA-ORIGEN", null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.UiListaBodegaOrigen.Properties.DisplayMember = "NAME";
+            this.UiListaBodegaOrigen.Properties.PopupView = this.UiVistaBodegaOrigen;
             this.UiListaBodegaOrigen.Properties.ValueMember = "WAREHOUSE_ID";
-            this.UiListaBodegaOrigen.Properties.View = this.UiVistaBodegaOrigen;
             this.UiListaBodegaOrigen.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
-            this.UiListaBodegaOrigen.Size = new System.Drawing.Size(530, 22);
+            this.UiListaBodegaOrigen.Size = new System.Drawing.Size(346, 24);
             this.UiListaBodegaOrigen.TabIndex = 0;
             this.UiListaBodegaOrigen.EditValueChanged += new System.EventHandler(this.UiListaBodegaOrigen_EditValueChanged);
             // 
@@ -793,106 +903,42 @@
             this.colNAME.Visible = true;
             this.colNAME.VisibleIndex = 1;
             // 
-            // UiLabelBodegaDestino
-            // 
-            this.UiLabelBodegaDestino.Location = new System.Drawing.Point(5, 34);
-            this.UiLabelBodegaDestino.Name = "UiLabelBodegaDestino";
-            this.UiLabelBodegaDestino.Size = new System.Drawing.Size(79, 13);
-            this.UiLabelBodegaDestino.TabIndex = 3;
-            this.UiLabelBodegaDestino.Text = "Bodega Destino:";
-            // 
             // UiLabelBodegaOrigen
             // 
-            this.UiLabelBodegaOrigen.Location = new System.Drawing.Point(5, 8);
+            this.UiLabelBodegaOrigen.Location = new System.Drawing.Point(5, 36);
             this.UiLabelBodegaOrigen.Name = "UiLabelBodegaOrigen";
             this.UiLabelBodegaOrigen.Size = new System.Drawing.Size(78, 13);
             this.UiLabelBodegaOrigen.TabIndex = 1;
             this.UiLabelBodegaOrigen.Text = "Bodega Origen: ";
-            // 
-            // UiListaBodegaDestino
-            // 
-            this.UiListaBodegaDestino.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.UiListaBodegaDestino.Location = new System.Drawing.Point(89, 33);
-            this.UiListaBodegaDestino.MenuManager = this.UiBarraContenedorPrincipal;
-            this.UiListaBodegaDestino.Name = "UiListaBodegaDestino";
-            this.UiListaBodegaDestino.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, DevExpress.XtraEditors.ImageLocation.MiddleCenter, ((System.Drawing.Image)(resources.GetObject("UiListaBodegaDestino.Properties.Buttons"))), new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", "REFRESCAR-BODEGA-DESTINO", null, true)});
-            this.UiListaBodegaDestino.Properties.DisplayMember = "NAME";
-            this.UiListaBodegaDestino.Properties.ValueMember = "WAREHOUSE_ID";
-            this.UiListaBodegaDestino.Properties.View = this.UiVistaBodegaDestino;
-            this.UiListaBodegaDestino.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
-            this.UiListaBodegaDestino.Size = new System.Drawing.Size(530, 22);
-            this.UiListaBodegaDestino.TabIndex = 2;
-            // 
-            // UiVistaBodegaDestino
-            // 
-            this.UiVistaBodegaDestino.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colWAREHOUSE_ID2,
-            this.colNAME2});
-            this.UiVistaBodegaDestino.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
-            this.UiVistaBodegaDestino.Name = "UiVistaBodegaDestino";
-            this.UiVistaBodegaDestino.OptionsSelection.EnableAppearanceFocusedCell = false;
-            this.UiVistaBodegaDestino.OptionsView.ShowGroupPanel = false;
-            // 
-            // colWAREHOUSE_ID2
-            // 
-            this.colWAREHOUSE_ID2.Caption = "ID Bodega";
-            this.colWAREHOUSE_ID2.FieldName = "WAREHOUSE_ID";
-            this.colWAREHOUSE_ID2.Name = "colWAREHOUSE_ID2";
-            this.colWAREHOUSE_ID2.OptionsColumn.AllowEdit = false;
-            this.colWAREHOUSE_ID2.Visible = true;
-            this.colWAREHOUSE_ID2.VisibleIndex = 0;
-            // 
-            // colNAME2
-            // 
-            this.colNAME2.Caption = "Nombre Bodega";
-            this.colNAME2.FieldName = "NAME";
-            this.colNAME2.Name = "colNAME2";
-            this.colNAME2.OptionsColumn.AllowEdit = false;
-            this.colNAME2.Visible = true;
-            this.colNAME2.VisibleIndex = 1;
             // 
             // UiTextoBodegaOrigen
             // 
             this.UiTextoBodegaOrigen.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.UiTextoBodegaOrigen.Enabled = false;
-            this.UiTextoBodegaOrigen.Location = new System.Drawing.Point(89, 7);
+            this.UiTextoBodegaOrigen.Location = new System.Drawing.Point(144, 33);
             this.UiTextoBodegaOrigen.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiTextoBodegaOrigen.Name = "UiTextoBodegaOrigen";
-            this.UiTextoBodegaOrigen.Size = new System.Drawing.Size(530, 20);
+            this.UiTextoBodegaOrigen.Size = new System.Drawing.Size(346, 20);
             this.UiTextoBodegaOrigen.TabIndex = 10;
             this.UiTextoBodegaOrigen.Visible = false;
-            // 
-            // UiTextoBodegaDestino
-            // 
-            this.UiTextoBodegaDestino.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.UiTextoBodegaDestino.Enabled = false;
-            this.UiTextoBodegaDestino.Location = new System.Drawing.Point(89, 33);
-            this.UiTextoBodegaDestino.MenuManager = this.UiBarraContenedorPrincipal;
-            this.UiTextoBodegaDestino.Name = "UiTextoBodegaDestino";
-            this.UiTextoBodegaDestino.Size = new System.Drawing.Size(530, 20);
-            this.UiTextoBodegaDestino.TabIndex = 11;
-            this.UiTextoBodegaDestino.Visible = false;
             // 
             // UiListaCentroDistribucionOrigen
             // 
             this.UiListaCentroDistribucionOrigen.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.UiListaCentroDistribucionOrigen.Location = new System.Drawing.Point(156, 5);
+            this.UiListaCentroDistribucionOrigen.Location = new System.Drawing.Point(144, 5);
             this.UiListaCentroDistribucionOrigen.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiListaCentroDistribucionOrigen.Name = "UiListaCentroDistribucionOrigen";
+            editorButtonImageOptions6.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions6.Image")));
             this.UiListaCentroDistribucionOrigen.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, DevExpress.XtraEditors.ImageLocation.MiddleCenter, ((System.Drawing.Image)(resources.GetObject("UiListaCentroDistribucionOrigen.Properties.Buttons"))), new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject17, serializableAppearanceObject18, serializableAppearanceObject19, serializableAppearanceObject20, "", "REFRESCAR-CD-ORIGEN", null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions6, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject21, serializableAppearanceObject22, serializableAppearanceObject23, serializableAppearanceObject24, "", "REFRESCAR-CD-ORIGEN", null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.UiListaCentroDistribucionOrigen.Properties.DisplayMember = "PARAM_CAPTION";
+            this.UiListaCentroDistribucionOrigen.Properties.PopupView = this.UiVistaCentroDistribucionOrigen;
             this.UiListaCentroDistribucionOrigen.Properties.ValueMember = "PARAM_NAME";
-            this.UiListaCentroDistribucionOrigen.Properties.View = this.UiVistaCentroDistribucionOrigen;
             this.UiListaCentroDistribucionOrigen.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
-            this.UiListaCentroDistribucionOrigen.Size = new System.Drawing.Size(345, 22);
+            this.UiListaCentroDistribucionOrigen.Size = new System.Drawing.Size(346, 24);
             this.UiListaCentroDistribucionOrigen.TabIndex = 4;
             this.UiListaCentroDistribucionOrigen.EditValueChanged += new System.EventHandler(this.UiListaCentroDistribucionOrigen_EditValueChanged);
             // 
@@ -913,15 +959,16 @@
             this.UiGrupoCentrosDeDistribucion.Controls.Add(this.labelControl2);
             this.UiGrupoCentrosDeDistribucion.Controls.Add(this.UiListaTipo);
             this.UiGrupoCentrosDeDistribucion.Controls.Add(this.labelControl1);
+            this.UiGrupoCentrosDeDistribucion.Controls.Add(this.UiListaBodegaOrigen);
             this.UiGrupoCentrosDeDistribucion.Controls.Add(this.UiLabelCentroDistribucionOrigen);
+            this.UiGrupoCentrosDeDistribucion.Controls.Add(this.UiTextoBodegaOrigen);
             this.UiGrupoCentrosDeDistribucion.Controls.Add(this.UiListaCliente);
+            this.UiGrupoCentrosDeDistribucion.Controls.Add(this.UiLabelBodegaOrigen);
             this.UiGrupoCentrosDeDistribucion.Controls.Add(this.UiListaCentroDistribucionOrigen);
-            this.UiGrupoCentrosDeDistribucion.Controls.Add(this.UiListaCentroDistribucionDestino);
-            this.UiGrupoCentrosDeDistribucion.Controls.Add(this.UiLabelCentroDistribucionDestino);
             this.UiGrupoCentrosDeDistribucion.Location = new System.Drawing.Point(0, 30);
             this.UiGrupoCentrosDeDistribucion.Name = "UiGrupoCentrosDeDistribucion";
             this.UiGrupoCentrosDeDistribucion.ShowCaption = false;
-            this.UiGrupoCentrosDeDistribucion.Size = new System.Drawing.Size(506, 112);
+            this.UiGrupoCentrosDeDistribucion.Size = new System.Drawing.Size(495, 131);
             this.UiGrupoCentrosDeDistribucion.TabIndex = 7;
             // 
             // labelControl2
@@ -936,17 +983,18 @@
             // 
             this.UiListaTipo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.UiListaTipo.Location = new System.Drawing.Point(156, 85);
+            this.UiListaTipo.Location = new System.Drawing.Point(144, 85);
             this.UiListaTipo.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiListaTipo.Name = "UiListaTipo";
+            editorButtonImageOptions3.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions3.Image")));
             this.UiListaTipo.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, DevExpress.XtraEditors.ImageLocation.MiddleCenter, ((System.Drawing.Image)(resources.GetObject("UiListaTipo.Properties.Buttons"))), new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject9, serializableAppearanceObject10, serializableAppearanceObject11, serializableAppearanceObject12, "", "REFRESCAR-TIPO", null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions3, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject9, serializableAppearanceObject10, serializableAppearanceObject11, serializableAppearanceObject12, "", "REFRESCAR-TIPO", null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.UiListaTipo.Properties.DisplayMember = "PARAM_CAPTION";
+            this.UiListaTipo.Properties.PopupView = this.UiVistaTipo;
             this.UiListaTipo.Properties.ValueMember = "TEXT_VALUE";
-            this.UiListaTipo.Properties.View = this.UiVistaTipo;
             this.UiListaTipo.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
-            this.UiListaTipo.Size = new System.Drawing.Size(345, 22);
+            this.UiListaTipo.Size = new System.Drawing.Size(346, 24);
             this.UiListaTipo.TabIndex = 10;
             // 
             // UiVistaTipo
@@ -979,25 +1027,27 @@
             // 
             this.UiLabelCentroDistribucionOrigen.Location = new System.Drawing.Point(5, 8);
             this.UiLabelCentroDistribucionOrigen.Name = "UiLabelCentroDistribucionOrigen";
-            this.UiLabelCentroDistribucionOrigen.Size = new System.Drawing.Size(145, 13);
+            this.UiLabelCentroDistribucionOrigen.Size = new System.Drawing.Size(97, 13);
             this.UiLabelCentroDistribucionOrigen.TabIndex = 5;
-            this.UiLabelCentroDistribucionOrigen.Text = "Centro de Distribución Origen:";
+            this.UiLabelCentroDistribucionOrigen.Text = "Centro Dist. Origen:";
+            this.UiLabelCentroDistribucionOrigen.Click += new System.EventHandler(this.UiLabelCentroDistribucionOrigen_Click);
             // 
             // UiListaCliente
             // 
             this.UiListaCliente.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.UiListaCliente.Location = new System.Drawing.Point(156, 57);
+            this.UiListaCliente.Location = new System.Drawing.Point(144, 57);
             this.UiListaCliente.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiListaCliente.Name = "UiListaCliente";
+            editorButtonImageOptions5.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions5.Image")));
             this.UiListaCliente.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, DevExpress.XtraEditors.ImageLocation.MiddleCenter, ((System.Drawing.Image)(resources.GetObject("UiListaCliente.Properties.Buttons"))), new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject13, serializableAppearanceObject14, serializableAppearanceObject15, serializableAppearanceObject16, "", "REFRESCAR-CLIENTE", null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions5, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject17, serializableAppearanceObject18, serializableAppearanceObject19, serializableAppearanceObject20, "", "REFRESCAR-CLIENTE", null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.UiListaCliente.Properties.DisplayMember = "CLIENT_NAME";
+            this.UiListaCliente.Properties.PopupView = this.UiVistaCliente;
             this.UiListaCliente.Properties.ValueMember = "CLIENT_CODE";
-            this.UiListaCliente.Properties.View = this.UiVistaCliente;
             this.UiListaCliente.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
-            this.UiListaCliente.Size = new System.Drawing.Size(345, 22);
+            this.UiListaCliente.Size = new System.Drawing.Size(346, 24);
             this.UiListaCliente.TabIndex = 8;
             this.UiListaCliente.EditValueChanged += new System.EventHandler(this.UiListaCliente_EditValueChanged);
             this.UiListaCliente.CustomDisplayText += new DevExpress.XtraEditors.Controls.CustomDisplayTextEventHandler(this.UiListaCliente_CustomDisplayText);
@@ -1037,9 +1087,9 @@
             // barButtonItem1
             // 
             this.barButtonItem1.Caption = "Exportar";
-            this.barButtonItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.Glyph")));
             this.barButtonItem1.Id = 7;
-            this.barButtonItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.LargeGlyph")));
+            this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
             this.barButtonItem1.Name = "barButtonItem1";
             // 
             // barButtonItem2
@@ -1053,14 +1103,14 @@
             this.UiContenedorExportar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.UiContenedorExportar.Location = new System.Drawing.Point(17, 148);
+            this.UiContenedorExportar.Location = new System.Drawing.Point(17, 167);
             this.UiContenedorExportar.MainView = this.UiVistaExportar;
             this.UiContenedorExportar.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiContenedorExportar.Name = "UiContenedorExportar";
             this.UiContenedorExportar.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemCheckEdit5,
             this.repositoryItemCheckEdit4});
-            this.UiContenedorExportar.Size = new System.Drawing.Size(1111, 478);
+            this.UiContenedorExportar.Size = new System.Drawing.Size(1111, 459);
             this.UiContenedorExportar.TabIndex = 24;
             this.UiContenedorExportar.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.UiVistaExportar});
@@ -1234,15 +1284,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.UiGrupoBodegas)).EndInit();
             this.UiGrupoBodegas.ResumeLayout(false);
             this.UiGrupoBodegas.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.UiTextoComentario.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiFechaEntrega.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiFechaEntrega.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UiListaBodegaOrigen.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UiVistaBodegaOrigen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiListaBodegaDestino.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiVistaBodegaDestino)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UiTextoBodegaOrigen.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiTextoBodegaDestino.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UiTextoComentario.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UiListaBodegaOrigen.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UiVistaBodegaOrigen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UiTextoBodegaOrigen.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiListaCentroDistribucionOrigen.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiError)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTimeEdit1)).EndInit();
@@ -1307,13 +1358,11 @@
         private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider UiError;
         private DevExpress.XtraEditors.Repository.RepositoryItemTimeEdit repositoryItemTimeEdit1;
         private DevExpress.XtraBars.BarStaticItem barStaticItem1;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl UiLabelFechaEntrega;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.SearchLookUpEdit UiListaTipo;
         private DevExpress.XtraGrid.Views.Grid.GridView UiVistaTipo;
         private DevExpress.XtraGrid.Columns.GridColumn colPARAM_CAPTION3;
-        private DevExpress.XtraEditors.TextEdit UiTextoComentario;
         private DevExpress.XtraEditors.DateEdit UiFechaEntrega;
         private DevExpress.XtraBars.BarEditItem UiTextoIdSolicitud;
         private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit UiControlTextoIdSolicitud;
@@ -1358,5 +1407,8 @@
         private DevExpress.XtraGrid.Columns.GridColumn colINVENTORY;
         private DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit repositoryItemCheckEdit3;
         private DevExpress.XtraGrid.Columns.GridColumn colTRANSFER_REQUEST_ID;
+        private DevExpress.XtraEditors.ToggleSwitch textEdit1;
+        private DevExpress.XtraEditors.MemoEdit UiTextoComentario;
+        private DevExpress.XtraEditors.LabelControl labelControl3;
     }
 }

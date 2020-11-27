@@ -704,8 +704,32 @@ namespace MobilityScm.Modelo.Vistas
             }
         }
 
+
         #endregion
 
+        private void textEdit1_Toggled(object sender, EventArgs e)
+        {
 
+        }
+
+        private void UiLabelCentroDistribucionOrigen_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UiLabelCentroDistribucionDestino_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UiTextoComentario_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelControl3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
