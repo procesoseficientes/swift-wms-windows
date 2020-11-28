@@ -119,7 +119,7 @@
             this.colWAREHOUSE_ID2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colNAME2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UiTextoBodegaDestino = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit1 = new DevExpress.XtraEditors.ToggleSwitch();
+            this.UiSwitchEnviarERP = new DevExpress.XtraEditors.ToggleSwitch();
             this.UiTextoComentario = new DevExpress.XtraEditors.MemoEdit();
             this.UiListaBodegaOrigen = new DevExpress.XtraEditors.SearchLookUpEdit();
             this.UiVistaBodegaOrigen = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -180,7 +180,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.UiListaBodegaDestino.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiVistaBodegaDestino)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiTextoBodegaDestino.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UiSwitchEnviarERP.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiTextoComentario.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiListaBodegaOrigen.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiVistaBodegaOrigen)).BeginInit();
@@ -709,11 +709,11 @@
             this.UiGrupoBodegas.Controls.Add(this.UiLabelBodegaDestino);
             this.UiGrupoBodegas.Controls.Add(this.UiListaBodegaDestino);
             this.UiGrupoBodegas.Controls.Add(this.UiTextoBodegaDestino);
-            this.UiGrupoBodegas.Controls.Add(this.textEdit1);
+            this.UiGrupoBodegas.Controls.Add(this.UiSwitchEnviarERP);
             this.UiGrupoBodegas.Controls.Add(this.UiTextoComentario);
             this.UiGrupoBodegas.Controls.Add(this.UiListaCentroDistribucionDestino);
             this.UiGrupoBodegas.Controls.Add(this.UiLabelCentroDistribucionDestino);
-            this.UiGrupoBodegas.Location = new System.Drawing.Point(496, 30);
+            this.UiGrupoBodegas.Location = new System.Drawing.Point(496, 31);
             this.UiGrupoBodegas.Name = "UiGrupoBodegas";
             this.UiGrupoBodegas.ShowCaption = false;
             this.UiGrupoBodegas.Size = new System.Drawing.Size(640, 131);
@@ -817,31 +817,31 @@
             this.UiTextoBodegaDestino.TabIndex = 11;
             this.UiTextoBodegaDestino.Visible = false;
             // 
-            // textEdit1
+            // UiSwitchEnviarERP
             // 
-            this.textEdit1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.UiSwitchEnviarERP.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textEdit1.AutoSizeInLayoutControl = true;
-            this.textEdit1.EditValue = null;
-            this.textEdit1.Location = new System.Drawing.Point(15, 107);
-            this.textEdit1.MenuManager = this.UiBarraContenedorPrincipal;
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.AllowThumbAnimation = false;
-            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 6.25F);
-            this.textEdit1.Properties.Appearance.Options.UseFont = true;
-            this.textEdit1.Properties.AppearanceDisabled.Font = new System.Drawing.Font("Tahoma", 6.25F);
-            this.textEdit1.Properties.AppearanceDisabled.Options.UseFont = true;
-            this.textEdit1.Properties.AppearanceFocused.Font = new System.Drawing.Font("Tahoma", 6.25F);
-            this.textEdit1.Properties.AppearanceFocused.Options.UseFont = true;
-            this.textEdit1.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Tahoma", 6.25F);
-            this.textEdit1.Properties.AppearanceReadOnly.Options.UseFont = true;
-            this.textEdit1.Properties.AutoWidth = true;
-            this.textEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Default;
-            this.textEdit1.Properties.OffText = "Enviar a ERP ";
-            this.textEdit1.Properties.OnText = "Enviar a ERP";
-            this.textEdit1.Size = new System.Drawing.Size(90, 15);
-            this.textEdit1.TabIndex = 12;
-            this.textEdit1.Toggled += new System.EventHandler(this.textEdit1_Toggled);
+            this.UiSwitchEnviarERP.AutoSizeInLayoutControl = true;
+            this.UiSwitchEnviarERP.EditValue = null;
+            this.UiSwitchEnviarERP.Location = new System.Drawing.Point(15, 107);
+            this.UiSwitchEnviarERP.MenuManager = this.UiBarraContenedorPrincipal;
+            this.UiSwitchEnviarERP.Name = "UiSwitchEnviarERP";
+            this.UiSwitchEnviarERP.Properties.AllowThumbAnimation = false;
+            this.UiSwitchEnviarERP.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 6.25F);
+            this.UiSwitchEnviarERP.Properties.Appearance.Options.UseFont = true;
+            this.UiSwitchEnviarERP.Properties.AppearanceDisabled.Font = new System.Drawing.Font("Tahoma", 6.25F);
+            this.UiSwitchEnviarERP.Properties.AppearanceDisabled.Options.UseFont = true;
+            this.UiSwitchEnviarERP.Properties.AppearanceFocused.Font = new System.Drawing.Font("Tahoma", 6.25F);
+            this.UiSwitchEnviarERP.Properties.AppearanceFocused.Options.UseFont = true;
+            this.UiSwitchEnviarERP.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Tahoma", 6.25F);
+            this.UiSwitchEnviarERP.Properties.AppearanceReadOnly.Options.UseFont = true;
+            this.UiSwitchEnviarERP.Properties.AutoWidth = true;
+            this.UiSwitchEnviarERP.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Default;
+            this.UiSwitchEnviarERP.Properties.OffText = "Enviar a ERP ";
+            this.UiSwitchEnviarERP.Properties.OnText = "Enviar a ERP";
+            this.UiSwitchEnviarERP.Size = new System.Drawing.Size(90, 15);
+            this.UiSwitchEnviarERP.TabIndex = 12;
+            this.UiSwitchEnviarERP.Toggled += new System.EventHandler(this.textEdit1_Toggled);
             // 
             // UiTextoComentario
             // 
@@ -1289,7 +1289,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.UiListaBodegaDestino.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiVistaBodegaDestino)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiTextoBodegaDestino.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UiSwitchEnviarERP.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiTextoComentario.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiListaBodegaOrigen.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiVistaBodegaOrigen)).EndInit();
@@ -1407,7 +1407,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn colINVENTORY;
         private DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit repositoryItemCheckEdit3;
         private DevExpress.XtraGrid.Columns.GridColumn colTRANSFER_REQUEST_ID;
-        private DevExpress.XtraEditors.ToggleSwitch textEdit1;
+        private DevExpress.XtraEditors.ToggleSwitch UiSwitchEnviarERP;
         private DevExpress.XtraEditors.MemoEdit UiTextoComentario;
         private DevExpress.XtraEditors.LabelControl labelControl3;
     }

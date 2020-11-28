@@ -483,6 +483,7 @@
     <Compile Include="Vistas\ProyectoVista.Designer.cs">
       <DependentUpon>ProyectoVista.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Public.cs" />
     <Compile Include="Vistas\SugeridoCompraVista.cs">
       <SubType>Form</SubType>
     </Compile>

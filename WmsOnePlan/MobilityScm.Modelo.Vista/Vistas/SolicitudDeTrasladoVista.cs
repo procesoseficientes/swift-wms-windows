@@ -583,13 +583,19 @@ namespace MobilityScm.Modelo.Vistas
                     DELIVERY_DATE = UiFechaEntrega.DateTime,
                     COMMENT = UiTextoComentario.Text,
                     STATUS = EstadoSolicitudDeTraslado.OPEN.ToString(),
-                    CREATED_BY = InteraccionConUsuarioServicio.ObtenerUsuario()
+                    CREATED_BY = InteraccionConUsuarioServicio.ObtenerUsuario(),
+                    IS_FROM_ERP = Convert.ToInt32(UiSwitchEnviarERP.InplaceType) // Poner condicion para que valide 1 o 0
                 },
                 ListadoMateriales = listadoMateriales
             });
 
 
             BuscarSolicitudDeTraslado(sender, IdSolicitudDeTraslado);
+        }
+
+        private int IIf(object @checked, object v1, object v2)
+        {
+            throw new NotImplementedException();
         }
 
         private void UiBotonExportar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
