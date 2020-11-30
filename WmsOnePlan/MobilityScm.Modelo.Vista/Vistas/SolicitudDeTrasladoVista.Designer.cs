@@ -697,7 +697,6 @@
             this.UiLabelCentroDistribucionDestino.Size = new System.Drawing.Size(101, 13);
             this.UiLabelCentroDistribucionDestino.TabIndex = 7;
             this.UiLabelCentroDistribucionDestino.Text = "Centro Dist. Destino:";
-            this.UiLabelCentroDistribucionDestino.Click += new System.EventHandler(this.UiLabelCentroDistribucionDestino_Click);
             // 
             // UiGrupoBodegas
             // 
@@ -726,7 +725,6 @@
             this.labelControl3.Size = new System.Drawing.Size(59, 13);
             this.labelControl3.TabIndex = 13;
             this.labelControl3.Text = "Comentario:";
-            this.labelControl3.Click += new System.EventHandler(this.labelControl3_Click);
             // 
             // UiFechaEntrega
             // 
@@ -841,7 +839,6 @@
             this.UiSwitchEnviarERP.Properties.OnText = "Enviar a ERP";
             this.UiSwitchEnviarERP.Size = new System.Drawing.Size(90, 15);
             this.UiSwitchEnviarERP.TabIndex = 12;
-            this.UiSwitchEnviarERP.Toggled += new System.EventHandler(this.textEdit1_Toggled);
             // 
             // UiTextoComentario
             // 
@@ -854,7 +851,6 @@
             this.UiTextoComentario.Properties.WordWrap = false;
             this.UiTextoComentario.Size = new System.Drawing.Size(508, 42);
             this.UiTextoComentario.TabIndex = 9;
-            this.UiTextoComentario.EditValueChanged += new System.EventHandler(this.UiTextoComentario_EditValueChanged);
             // 
             // UiListaBodegaOrigen
             // 
@@ -1030,7 +1026,6 @@
             this.UiLabelCentroDistribucionOrigen.Size = new System.Drawing.Size(97, 13);
             this.UiLabelCentroDistribucionOrigen.TabIndex = 5;
             this.UiLabelCentroDistribucionOrigen.Text = "Centro Dist. Origen:";
-            this.UiLabelCentroDistribucionOrigen.Click += new System.EventHandler(this.UiLabelCentroDistribucionOrigen_Click);
             // 
             // UiListaCliente
             // 

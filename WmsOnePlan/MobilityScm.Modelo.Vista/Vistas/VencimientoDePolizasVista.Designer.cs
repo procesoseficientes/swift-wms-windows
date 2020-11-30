@@ -30,10 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VencimientoDePolizasVista));
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
             this.UiContenedorVistaPoliza = new DevExpress.XtraGrid.GridControl();
             this.UiVistaPoliza = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colCODIGO_CLIENTE = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -323,13 +324,13 @@
             this.nPageClientesYRangosDeFechas.Controls.Add(this.UiSwitchVencidas);
             this.nPageClientesYRangosDeFechas.Controls.Add(this.UiEtiquetaClientes);
             this.nPageClientesYRangosDeFechas.Controls.Add(this.UIListaClientes);
-            this.nPageClientesYRangosDeFechas.Image = ((System.Drawing.Image)(resources.GetObject("nPageClientesYRangosDeFechas.Image")));
+            this.nPageClientesYRangosDeFechas.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("nPageClientesYRangosDeFechas.ImageOptions.Image")));
             this.nPageClientesYRangosDeFechas.Name = "nPageClientesYRangosDeFechas";
-            this.nPageClientesYRangosDeFechas.Size = new System.Drawing.Size(197, 822);
+            this.nPageClientesYRangosDeFechas.Size = new System.Drawing.Size(194, 804);
             // 
             // UiBotonAceptarFiltro
             // 
-            this.UiBotonAceptarFiltro.Image = ((System.Drawing.Image)(resources.GetObject("UiBotonAceptarFiltro.Image")));
+            this.UiBotonAceptarFiltro.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBotonAceptarFiltro.ImageOptions.Image")));
             this.UiBotonAceptarFiltro.Location = new System.Drawing.Point(3, 280);
             this.UiBotonAceptarFiltro.Name = "UiBotonAceptarFiltro";
             this.UiBotonAceptarFiltro.Size = new System.Drawing.Size(188, 22);
@@ -429,7 +430,7 @@
             this.UiSwitchVencidas.Name = "UiSwitchVencidas";
             this.UiSwitchVencidas.Properties.OffText = "";
             this.UiSwitchVencidas.Properties.OnText = "";
-            this.UiSwitchVencidas.Size = new System.Drawing.Size(73, 24);
+            this.UiSwitchVencidas.Size = new System.Drawing.Size(73, 18);
             this.UiSwitchVencidas.TabIndex = 9;
             this.UiSwitchVencidas.Toggled += new System.EventHandler(this.UiSwitchVencidas_Toggled);
             // 
@@ -446,12 +447,13 @@
             // 
             this.UIListaClientes.Location = new System.Drawing.Point(3, 29);
             this.UIListaClientes.Name = "UIListaClientes";
+            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
             this.UIListaClientes.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, DevExpress.XtraEditors.ImageLocation.MiddleCenter, ((System.Drawing.Image)(resources.GetObject("UIListaClientes.Properties.Buttons"))), new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", "UiBotonRefrescar-TiposDeTarea", null, true)});
-            this.UIListaClientes.Properties.View = this.UiListaVistaClientes;
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", "UiBotonRefrescar-TiposDeTarea", null, DevExpress.Utils.ToolTipAnchor.Default)});
+            this.UIListaClientes.Properties.PopupView = this.UiListaVistaClientes;
             this.UIListaClientes.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UIListaClientes_Properties_ButtonClick);
-            this.UIListaClientes.Size = new System.Drawing.Size(188, 22);
+            this.UIListaClientes.Size = new System.Drawing.Size(188, 24);
             this.UIListaClientes.TabIndex = 7;
             this.UIListaClientes.CustomDisplayText += new DevExpress.XtraEditors.Controls.CustomDisplayTextEventHandler(this.UIListaClientes_CustomDisplayText);
             // 
@@ -535,36 +537,36 @@
             // UiBarButtonExpandir
             // 
             this.UiBarButtonExpandir.Caption = "Expandir";
-            this.UiBarButtonExpandir.Glyph = ((System.Drawing.Image)(resources.GetObject("UiBarButtonExpandir.Glyph")));
             this.UiBarButtonExpandir.Id = 1;
-            this.UiBarButtonExpandir.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiBarButtonExpandir.LargeGlyph")));
+            this.UiBarButtonExpandir.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBarButtonExpandir.ImageOptions.Image")));
+            this.UiBarButtonExpandir.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiBarButtonExpandir.ImageOptions.LargeImage")));
             this.UiBarButtonExpandir.Name = "UiBarButtonExpandir";
             this.UiBarButtonExpandir.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.UiBarButtonExpandir_ItemClick);
             // 
             // UiBarButtonColapsar
             // 
             this.UiBarButtonColapsar.Caption = "Colapsar";
-            this.UiBarButtonColapsar.Glyph = ((System.Drawing.Image)(resources.GetObject("UiBarButtonColapsar.Glyph")));
             this.UiBarButtonColapsar.Id = 2;
-            this.UiBarButtonColapsar.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiBarButtonColapsar.LargeGlyph")));
+            this.UiBarButtonColapsar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBarButtonColapsar.ImageOptions.Image")));
+            this.UiBarButtonColapsar.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiBarButtonColapsar.ImageOptions.LargeImage")));
             this.UiBarButtonColapsar.Name = "UiBarButtonColapsar";
             this.UiBarButtonColapsar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.UiBarButtonColapsar_ItemClick);
             // 
             // UiBarButtonExportarExcel
             // 
             this.UiBarButtonExportarExcel.Caption = "Exportar";
-            this.UiBarButtonExportarExcel.Glyph = ((System.Drawing.Image)(resources.GetObject("UiBarButtonExportarExcel.Glyph")));
             this.UiBarButtonExportarExcel.Id = 3;
-            this.UiBarButtonExportarExcel.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiBarButtonExportarExcel.LargeGlyph")));
+            this.UiBarButtonExportarExcel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBarButtonExportarExcel.ImageOptions.Image")));
+            this.UiBarButtonExportarExcel.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiBarButtonExportarExcel.ImageOptions.LargeImage")));
             this.UiBarButtonExportarExcel.Name = "UiBarButtonExportarExcel";
             this.UiBarButtonExportarExcel.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.UiBarButtonExportarExcel_ItemClick);
             // 
             // UiBarButtonImprimir
             // 
             this.UiBarButtonImprimir.Caption = "Reporte";
-            this.UiBarButtonImprimir.Glyph = ((System.Drawing.Image)(resources.GetObject("UiBarButtonImprimir.Glyph")));
             this.UiBarButtonImprimir.Id = 4;
-            this.UiBarButtonImprimir.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("UiBarButtonImprimir.LargeGlyph")));
+            this.UiBarButtonImprimir.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiBarButtonImprimir.ImageOptions.Image")));
+            this.UiBarButtonImprimir.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UiBarButtonImprimir.ImageOptions.LargeImage")));
             this.UiBarButtonImprimir.Name = "UiBarButtonImprimir";
             this.UiBarButtonImprimir.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.UiBarButtonImprimir_ItemClick);
             // 
@@ -573,6 +575,7 @@
             this.barDockControlTop.CausesValidation = false;
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
+            this.barDockControlTop.Manager = this.barManager1;
             this.barDockControlTop.Size = new System.Drawing.Size(1250, 24);
             // 
             // barDockControlBottom
@@ -580,6 +583,7 @@
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.barDockControlBottom.Location = new System.Drawing.Point(0, 672);
+            this.barDockControlBottom.Manager = this.barManager1;
             this.barDockControlBottom.Size = new System.Drawing.Size(1250, 0);
             // 
             // barDockControlLeft
@@ -587,6 +591,7 @@
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 24);
+            this.barDockControlLeft.Manager = this.barManager1;
             this.barDockControlLeft.Size = new System.Drawing.Size(0, 648);
             // 
             // barDockControlRight
@@ -594,6 +599,7 @@
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.barDockControlRight.Location = new System.Drawing.Point(1250, 24);
+            this.barDockControlRight.Manager = this.barManager1;
             this.barDockControlRight.Size = new System.Drawing.Size(0, 648);
             // 
             // VencimientoDePolizasVista
