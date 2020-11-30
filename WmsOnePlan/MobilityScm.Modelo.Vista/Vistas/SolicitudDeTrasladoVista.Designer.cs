@@ -119,8 +119,8 @@
             this.colWAREHOUSE_ID2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colNAME2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UiTextoBodegaDestino = new DevExpress.XtraEditors.TextEdit();
-            this.UiSwitchEnviarERP = new DevExpress.XtraEditors.ToggleSwitch();
             this.UiTextoComentario = new DevExpress.XtraEditors.MemoEdit();
+            this.UiCheckEnviarErp = new DevExpress.XtraEditors.CheckEdit();
             this.UiListaBodegaOrigen = new DevExpress.XtraEditors.SearchLookUpEdit();
             this.UiVistaBodegaOrigen = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colWAREHOUSE_ID = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -180,8 +180,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.UiListaBodegaDestino.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiVistaBodegaDestino)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiTextoBodegaDestino.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UiSwitchEnviarERP.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiTextoComentario.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UiCheckEnviarErp.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiListaBodegaOrigen.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiVistaBodegaOrigen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiTextoBodegaOrigen.Properties)).BeginInit();
@@ -708,19 +708,19 @@
             this.UiGrupoBodegas.Controls.Add(this.UiLabelBodegaDestino);
             this.UiGrupoBodegas.Controls.Add(this.UiListaBodegaDestino);
             this.UiGrupoBodegas.Controls.Add(this.UiTextoBodegaDestino);
-            this.UiGrupoBodegas.Controls.Add(this.UiSwitchEnviarERP);
             this.UiGrupoBodegas.Controls.Add(this.UiTextoComentario);
             this.UiGrupoBodegas.Controls.Add(this.UiListaCentroDistribucionDestino);
             this.UiGrupoBodegas.Controls.Add(this.UiLabelCentroDistribucionDestino);
+            this.UiGrupoBodegas.Controls.Add(this.UiCheckEnviarErp);
             this.UiGrupoBodegas.Location = new System.Drawing.Point(496, 31);
             this.UiGrupoBodegas.Name = "UiGrupoBodegas";
             this.UiGrupoBodegas.ShowCaption = false;
-            this.UiGrupoBodegas.Size = new System.Drawing.Size(640, 131);
+            this.UiGrupoBodegas.Size = new System.Drawing.Size(749, 132);
             this.UiGrupoBodegas.TabIndex = 8;
             // 
             // labelControl3
             // 
-            this.labelControl3.Location = new System.Drawing.Point(15, 88);
+            this.labelControl3.Location = new System.Drawing.Point(35, 86);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(59, 13);
             this.labelControl3.TabIndex = 13;
@@ -743,7 +743,7 @@
             // 
             // UiLabelFechaEntrega
             // 
-            this.UiLabelFechaEntrega.Location = new System.Drawing.Point(15, 62);
+            this.UiLabelFechaEntrega.Location = new System.Drawing.Point(20, 61);
             this.UiLabelFechaEntrega.Name = "UiLabelFechaEntrega";
             this.UiLabelFechaEntrega.Size = new System.Drawing.Size(74, 13);
             this.UiLabelFechaEntrega.TabIndex = 5;
@@ -815,42 +815,39 @@
             this.UiTextoBodegaDestino.TabIndex = 11;
             this.UiTextoBodegaDestino.Visible = false;
             // 
-            // UiSwitchEnviarERP
-            // 
-            this.UiSwitchEnviarERP.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.UiSwitchEnviarERP.AutoSizeInLayoutControl = true;
-            this.UiSwitchEnviarERP.EditValue = null;
-            this.UiSwitchEnviarERP.Location = new System.Drawing.Point(15, 107);
-            this.UiSwitchEnviarERP.MenuManager = this.UiBarraContenedorPrincipal;
-            this.UiSwitchEnviarERP.Name = "UiSwitchEnviarERP";
-            this.UiSwitchEnviarERP.Properties.AllowThumbAnimation = false;
-            this.UiSwitchEnviarERP.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 6.25F);
-            this.UiSwitchEnviarERP.Properties.Appearance.Options.UseFont = true;
-            this.UiSwitchEnviarERP.Properties.AppearanceDisabled.Font = new System.Drawing.Font("Tahoma", 6.25F);
-            this.UiSwitchEnviarERP.Properties.AppearanceDisabled.Options.UseFont = true;
-            this.UiSwitchEnviarERP.Properties.AppearanceFocused.Font = new System.Drawing.Font("Tahoma", 6.25F);
-            this.UiSwitchEnviarERP.Properties.AppearanceFocused.Options.UseFont = true;
-            this.UiSwitchEnviarERP.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Tahoma", 6.25F);
-            this.UiSwitchEnviarERP.Properties.AppearanceReadOnly.Options.UseFont = true;
-            this.UiSwitchEnviarERP.Properties.AutoWidth = true;
-            this.UiSwitchEnviarERP.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Default;
-            this.UiSwitchEnviarERP.Properties.OffText = "Enviar a ERP ";
-            this.UiSwitchEnviarERP.Properties.OnText = "Enviar a ERP";
-            this.UiSwitchEnviarERP.Size = new System.Drawing.Size(90, 15);
-            this.UiSwitchEnviarERP.TabIndex = 12;
-            // 
             // UiTextoComentario
             // 
             this.UiTextoComentario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.UiTextoComentario.EditValue = "";
-            this.UiTextoComentario.Location = new System.Drawing.Point(127, 83);
+            this.UiTextoComentario.Location = new System.Drawing.Point(112, 83);
             this.UiTextoComentario.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiTextoComentario.Name = "UiTextoComentario";
             this.UiTextoComentario.Properties.WordWrap = false;
-            this.UiTextoComentario.Size = new System.Drawing.Size(508, 42);
+            this.UiTextoComentario.Size = new System.Drawing.Size(523, 42);
             this.UiTextoComentario.TabIndex = 9;
+            // 
+            // UiCheckEnviarErp
+            // 
+            this.UiCheckEnviarErp.EditValue = null;
+            this.UiCheckEnviarErp.Location = new System.Drawing.Point(15, 105);
+            this.UiCheckEnviarErp.MenuManager = this.UiBarraContenedorPrincipal;
+            this.UiCheckEnviarErp.Name = "UiCheckEnviarErp";
+            this.UiCheckEnviarErp.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UiCheckEnviarErp.Properties.Appearance.Options.UseFont = true;
+            this.UiCheckEnviarErp.Properties.AppearanceDisabled.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UiCheckEnviarErp.Properties.AppearanceDisabled.Options.UseFont = true;
+            this.UiCheckEnviarErp.Properties.AppearanceFocused.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UiCheckEnviarErp.Properties.AppearanceFocused.Options.UseFont = true;
+            this.UiCheckEnviarErp.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UiCheckEnviarErp.Properties.AppearanceReadOnly.Options.UseFont = true;
+            this.UiCheckEnviarErp.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
+            this.UiCheckEnviarErp.Properties.Caption = "Es de ERP";
+            this.UiCheckEnviarErp.Properties.CheckBoxOptions.Style = DevExpress.XtraEditors.Controls.CheckBoxStyle.Radio;
+            this.UiCheckEnviarErp.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.UiCheckEnviarErp.Properties.NullStyle = DevExpress.XtraEditors.Controls.StyleIndeterminate.Unchecked;
+            this.UiCheckEnviarErp.Size = new System.Drawing.Size(79, 24);
+            this.UiCheckEnviarErp.TabIndex = 12;
             // 
             // UiListaBodegaOrigen
             // 
@@ -1284,8 +1281,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.UiListaBodegaDestino.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiVistaBodegaDestino)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiTextoBodegaDestino.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UiSwitchEnviarERP.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiTextoComentario.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UiCheckEnviarErp.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiListaBodegaOrigen.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiVistaBodegaOrigen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiTextoBodegaOrigen.Properties)).EndInit();
@@ -1402,8 +1399,8 @@
         private DevExpress.XtraGrid.Columns.GridColumn colINVENTORY;
         private DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit repositoryItemCheckEdit3;
         private DevExpress.XtraGrid.Columns.GridColumn colTRANSFER_REQUEST_ID;
-        private DevExpress.XtraEditors.ToggleSwitch UiSwitchEnviarERP;
         private DevExpress.XtraEditors.MemoEdit UiTextoComentario;
         private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraEditors.CheckEdit UiCheckEnviarErp;
     }
 }

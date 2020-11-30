@@ -584,7 +584,7 @@ namespace MobilityScm.Modelo.Vistas
                     COMMENT = UiTextoComentario.Text,
                     STATUS = EstadoSolicitudDeTraslado.OPEN.ToString(),
                     CREATED_BY = InteraccionConUsuarioServicio.ObtenerUsuario(),
-                    IS_FROM_ERP = UiSwitchEnviarERP.IsOn ? (int)SiNo.Si : (int)SiNo.No// Poner condicion para que valide 1 o 0
+                    IS_FROM_ERP = UiCheckEnviarErp.Checked ? (int)SiNo.Si : (int)SiNo.No// Poner condicion para que valide 1 o 0
                     //IS_FROM_ERP = EstadoSwitchErp(UiSwitchEnviarERP.IsOn)// Poner condicion para que valide 1 o 0
                 },
                 ListadoMateriales = listadoMateriales
