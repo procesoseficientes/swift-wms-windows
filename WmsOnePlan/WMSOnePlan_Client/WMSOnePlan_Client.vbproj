@@ -95,6 +95,7 @@
     </Reference>
     <Reference Include="DevExpress.DataAccess.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Diagram.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dialogs.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Docs.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
@@ -129,6 +130,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="DevExpress.XtraDiagram.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraDialogs.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
@@ -1065,6 +1067,12 @@
     <Compile Include="Forms\LetterQuota\RptQuotaLetter.vb">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Forms\License\FrmLicense.Designer.vb">
+      <DependentUpon>FrmLicense.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\License\FrmLicense.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\MonitorCenter\frmMonitorCenter.Designer.vb">
       <DependentUpon>frmMonitorCenter.vb</DependentUpon>
     </Compile>
@@ -1236,6 +1244,7 @@
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Resources.Designer.vb">
@@ -1703,6 +1712,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\LetterQuota\RptQuotaLetter.resx">
       <DependentUpon>RptQuotaLetter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\License\FrmLicense.resx">
+      <DependentUpon>FrmLicense.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MonitorCenter\frmMonitorCenter.resx">
       <DependentUpon>frmMonitorCenter.vb</DependentUpon>
