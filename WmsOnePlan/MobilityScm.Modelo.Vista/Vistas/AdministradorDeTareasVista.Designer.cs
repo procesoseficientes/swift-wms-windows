@@ -567,7 +567,7 @@
             this.UiContenedorVistaTareasEncabezado.Name = "UiContenedorVistaTareasEncabezado";
             this.UiContenedorVistaTareasEncabezado.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.UiListaOperadoresEncabezado});
-            this.UiContenedorVistaTareasEncabezado.Size = new System.Drawing.Size(353, 412);
+            this.UiContenedorVistaTareasEncabezado.Size = new System.Drawing.Size(353, 411);
             this.UiContenedorVistaTareasEncabezado.TabIndex = 0;
             this.UiContenedorVistaTareasEncabezado.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.UiVistaEncabezadoConDetalle,
@@ -1486,7 +1486,7 @@
             this.UiSplitControlTareas.Panel2.Controls.Add(this.UiContenedorDetalle);
             this.UiSplitControlTareas.Panel2.Text = "Panel2";
             this.UiSplitControlTareas.Size = new System.Drawing.Size(353, 423);
-            this.UiSplitControlTareas.SplitterPosition = 412;
+            this.UiSplitControlTareas.SplitterPosition = 411;
             this.UiSplitControlTareas.TabIndex = 9;
             this.UiSplitControlTareas.Text = "splitContainerControl1";
             // 
@@ -1508,7 +1508,7 @@
             this.UiListaOperadoresParaPickingDetalle,
             this.UiListaOperadoresParaReubicacionDetalle,
             this.UiListaOperadoresParaConteo});
-            this.UiContenedorDetalle.Size = new System.Drawing.Size(353, 1);
+            this.UiContenedorDetalle.Size = new System.Drawing.Size(353, 2);
             this.UiContenedorDetalle.TabIndex = 1;
             this.UiContenedorDetalle.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.UiVistaDetalleCounting,
@@ -1555,7 +1555,7 @@
             // UiStockQTY
             // 
             this.UiStockQTY.Caption = "Cantidad Inventario";
-            this.UiStockQTY.FieldName = "QTY_SCANNED";
+            this.UiStockQTY.FieldName = "QTY_EXPECTED";
             this.UiStockQTY.Name = "UiStockQTY";
             this.UiStockQTY.Visible = true;
             this.UiStockQTY.VisibleIndex = 1;
@@ -1563,7 +1563,7 @@
             // UiPhysicalCounting
             // 
             this.UiPhysicalCounting.Caption = "Cantidad Conteo Físico";
-            this.UiPhysicalCounting.FieldName = "QTY_EXPECTED";
+            this.UiPhysicalCounting.FieldName = "QTY_SCANNED";
             this.UiPhysicalCounting.Name = "UiPhysicalCounting";
             this.UiPhysicalCounting.Visible = true;
             this.UiPhysicalCounting.VisibleIndex = 2;
