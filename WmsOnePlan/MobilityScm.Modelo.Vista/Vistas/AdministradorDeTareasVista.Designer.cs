@@ -986,9 +986,8 @@
             formatConditionRuleExpression11.Appearance.Options.UseBackColor = true;
             formatConditionRuleExpression11.Appearance.Options.UseBorderColor = true;
             formatConditionRuleExpression11.Appearance.Options.UseForeColor = true;
-            formatConditionRuleExpression11.Expression = "[IS_COMPLETED] = \'COMPLETA\'  And ([IS_POSTED_ERP] = 0) And ([IS_FROM_ERP] = \'Si\' " +
-    "Or [IS_FROM_SONDA] = \'Si\') And [SOURCE_TYPE] <> \'TRANSFER_REQUEST\' And [TASK_SUB" +
-    "TYPE] <> \'ENTREGA_NO_INMEDIATA\'";
+            formatConditionRuleExpression11.Expression = "[IS_COMPLETED] = \'COMPLETA\' And [IS_POSTED_ERP] = 0 And ([IS_FROM_ERP] = \'Si\' Or " +
+    "[IS_FROM_SONDA] = \'Si\') And [TASK_SUBTYPE] <> \'ENTREGA_NO_INMEDIATA\'";
             gridFormatRule11.Rule = formatConditionRuleExpression11;
             gridFormatRule12.ApplyToRow = true;
             gridFormatRule12.Name = "Format3";
