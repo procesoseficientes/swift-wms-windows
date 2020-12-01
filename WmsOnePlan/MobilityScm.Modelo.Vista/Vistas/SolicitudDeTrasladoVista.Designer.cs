@@ -830,7 +830,7 @@
             // UiCheckEnviarErp
             // 
             this.UiCheckEnviarErp.EditValue = null;
-            this.UiCheckEnviarErp.Location = new System.Drawing.Point(15, 105);
+            this.UiCheckEnviarErp.Location = new System.Drawing.Point(11, 101);
             this.UiCheckEnviarErp.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiCheckEnviarErp.Name = "UiCheckEnviarErp";
             this.UiCheckEnviarErp.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -846,7 +846,7 @@
             this.UiCheckEnviarErp.Properties.CheckBoxOptions.Style = DevExpress.XtraEditors.Controls.CheckBoxStyle.Radio;
             this.UiCheckEnviarErp.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.UiCheckEnviarErp.Properties.NullStyle = DevExpress.XtraEditors.Controls.StyleIndeterminate.Unchecked;
-            this.UiCheckEnviarErp.Size = new System.Drawing.Size(79, 24);
+            this.UiCheckEnviarErp.Size = new System.Drawing.Size(91, 24);
             this.UiCheckEnviarErp.TabIndex = 12;
             // 
             // UiListaBodegaOrigen
