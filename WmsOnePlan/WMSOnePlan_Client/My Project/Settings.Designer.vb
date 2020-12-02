@@ -250,13 +250,16 @@ Namespace My
             End Get
         End Property
         
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("8755A")>  _
-        Public ReadOnly Property LicenseKey() As String
+        Public Property LicenseKey() As String
             Get
                 Return CType(Me("LicenseKey"),String)
             End Get
+            Set
+                Me("LicenseKey") = value
+            End Set
         End Property
     End Class
 End Namespace

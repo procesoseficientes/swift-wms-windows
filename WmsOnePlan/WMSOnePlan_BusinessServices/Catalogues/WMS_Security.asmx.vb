@@ -676,6 +676,26 @@ Public Class WMS_Security
 
     End Function
 
+    <WebMethod(Description:="Actualizar puntos de control de seguridad")>
+    Public Function UpdateLicense(ByVal pPRIV_LOGIN_ID As String, ByVal pPRIV_LICENSE As String, ByRef pResult As String, ByVal pEnvironmentName As String) As Boolean
+
+        Dim XSQL As String = ""
+        Dim sqldb_conexion As SqlConnection = New SqlConnection(AppSettings(pEnvironmentName).ToString)
+        Try
+            XSQL = "exec " & DefaultSchema & "OP_WMS_SP_LICENSE_USER @LOGIN_ID = '" & pPRIV_LOGIN_ID & "' " & "@LICENSE = '" & pPRIV_LICENSE & "'"
+
+            If ExecuteSqlTransaction(sqldb_conexion.ConnectionString, XSQL, pResult) Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            pResult = ex.Message
+            Return False
+        End Try
+
+    End Function
+
 
 
     <WebMethod(Description:="Crear puntos de control de seguridad")>

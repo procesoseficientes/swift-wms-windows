@@ -27,8 +27,8 @@ Partial Class FrmLicense
         Me.BarManager1 = New DevExpress.XtraBars.BarManager(Me.components)
         Me.Bar2 = New DevExpress.XtraBars.Bar()
         Me.BarButtonItem1 = New DevExpress.XtraBars.BarButtonItem()
-        Me.BarButtonItem2 = New DevExpress.XtraBars.BarButtonItem()
-        Me.BarButtonItem3 = New DevExpress.XtraBars.BarButtonItem()
+        Me.BtnAgregar = New DevExpress.XtraBars.BarButtonItem()
+        Me.BtnQuitar = New DevExpress.XtraBars.BarButtonItem()
         Me.BarStaticItem1 = New DevExpress.XtraBars.BarStaticItem()
         Me.BsiLicenseQty = New DevExpress.XtraBars.BarStaticItem()
         Me.barDockControlTop = New DevExpress.XtraBars.BarDockControl()
@@ -36,14 +36,18 @@ Partial Class FrmLicense
         Me.barDockControlLeft = New DevExpress.XtraBars.BarDockControl()
         Me.barDockControlRight = New DevExpress.XtraBars.BarDockControl()
         Me.ListBoxControl2 = New DevExpress.XtraEditors.ListBoxControl()
-        Me.ListBoxControl1 = New DevExpress.XtraEditors.ListBoxControl()
         Me.SplitContainerControl1 = New DevExpress.XtraEditors.SplitContainerControl()
+        Me.GridControl1 = New DevExpress.XtraGrid.GridControl()
+        Me.GridView1 = New DevExpress.XtraGrid.Views.Grid.GridView()
+        Me.ColUiLogin = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.ColUiName = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.OfdLicense = New System.Windows.Forms.OpenFileDialog()
         CType(Me.BarManager1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ListBoxControl2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ListBoxControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SplitContainerControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainerControl1.SuspendLayout()
+        CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BarManager1
@@ -54,7 +58,7 @@ Partial Class FrmLicense
         Me.BarManager1.DockControls.Add(Me.barDockControlLeft)
         Me.BarManager1.DockControls.Add(Me.barDockControlRight)
         Me.BarManager1.Form = Me
-        Me.BarManager1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.BarButtonItem1, Me.BarButtonItem2, Me.BarButtonItem3, Me.BarStaticItem1, Me.BsiLicenseQty})
+        Me.BarManager1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.BarButtonItem1, Me.BtnAgregar, Me.BtnQuitar, Me.BarStaticItem1, Me.BsiLicenseQty})
         Me.BarManager1.MainMenu = Me.Bar2
         Me.BarManager1.MaxItemId = 5
         '
@@ -65,7 +69,7 @@ Partial Class FrmLicense
         Me.Bar2.DockRow = 0
         Me.Bar2.DockStyle = DevExpress.XtraBars.BarDockStyle.Top
         Me.Bar2.FloatLocation = New System.Drawing.Point(349, 133)
-        Me.Bar2.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem2), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem3), New DevExpress.XtraBars.LinkPersistInfo(Me.BarStaticItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.BsiLicenseQty)})
+        Me.Bar2.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.BtnAgregar), New DevExpress.XtraBars.LinkPersistInfo(Me.BtnQuitar), New DevExpress.XtraBars.LinkPersistInfo(Me.BarStaticItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.BsiLicenseQty)})
         Me.Bar2.OptionsBar.MultiLine = True
         Me.Bar2.OptionsBar.UseWholeRow = True
         Me.Bar2.Text = "Menú principal"
@@ -79,25 +83,25 @@ Partial Class FrmLicense
         Me.BarButtonItem1.Name = "BarButtonItem1"
         Me.BarButtonItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph
         '
-        'BarButtonItem2
+        'BtnAgregar
         '
-        Me.BarButtonItem2.Caption = "Agregar"
-        Me.BarButtonItem2.Enabled = False
-        Me.BarButtonItem2.Id = 1
-        Me.BarButtonItem2.ImageOptions.Image = CType(resources.GetObject("BarButtonItem2.ImageOptions.Image"), System.Drawing.Image)
-        Me.BarButtonItem2.ImageOptions.LargeImage = CType(resources.GetObject("BarButtonItem2.ImageOptions.LargeImage"), System.Drawing.Image)
-        Me.BarButtonItem2.Name = "BarButtonItem2"
-        Me.BarButtonItem2.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph
+        Me.BtnAgregar.Caption = "Agregar"
+        Me.BtnAgregar.Enabled = False
+        Me.BtnAgregar.Id = 1
+        Me.BtnAgregar.ImageOptions.Image = CType(resources.GetObject("BarButtonItem2.ImageOptions.Image"), System.Drawing.Image)
+        Me.BtnAgregar.ImageOptions.LargeImage = CType(resources.GetObject("BarButtonItem2.ImageOptions.LargeImage"), System.Drawing.Image)
+        Me.BtnAgregar.Name = "BtnAgregar"
+        Me.BtnAgregar.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph
         '
-        'BarButtonItem3
+        'BtnQuitar
         '
-        Me.BarButtonItem3.Caption = "Quitar"
-        Me.BarButtonItem3.Enabled = False
-        Me.BarButtonItem3.Id = 2
-        Me.BarButtonItem3.ImageOptions.Image = CType(resources.GetObject("BarButtonItem3.ImageOptions.Image"), System.Drawing.Image)
-        Me.BarButtonItem3.ImageOptions.LargeImage = CType(resources.GetObject("BarButtonItem3.ImageOptions.LargeImage"), System.Drawing.Image)
-        Me.BarButtonItem3.Name = "BarButtonItem3"
-        Me.BarButtonItem3.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph
+        Me.BtnQuitar.Caption = "Quitar"
+        Me.BtnQuitar.Enabled = False
+        Me.BtnQuitar.Id = 2
+        Me.BtnQuitar.ImageOptions.Image = CType(resources.GetObject("BarButtonItem3.ImageOptions.Image"), System.Drawing.Image)
+        Me.BtnQuitar.ImageOptions.LargeImage = CType(resources.GetObject("BarButtonItem3.ImageOptions.LargeImage"), System.Drawing.Image)
+        Me.BtnQuitar.Name = "BtnQuitar"
+        Me.BtnQuitar.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph
         '
         'BarStaticItem1
         '
@@ -151,20 +155,12 @@ Partial Class FrmLicense
         Me.ListBoxControl2.Size = New System.Drawing.Size(376, 356)
         Me.ListBoxControl2.TabIndex = 0
         '
-        'ListBoxControl1
-        '
-        Me.ListBoxControl1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ListBoxControl1.Location = New System.Drawing.Point(35, 35)
-        Me.ListBoxControl1.Name = "ListBoxControl1"
-        Me.ListBoxControl1.Size = New System.Drawing.Size(344, 356)
-        Me.ListBoxControl1.TabIndex = 0
-        '
         'SplitContainerControl1
         '
         Me.SplitContainerControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SplitContainerControl1.Location = New System.Drawing.Point(0, 24)
         Me.SplitContainerControl1.Name = "SplitContainerControl1"
-        Me.SplitContainerControl1.Panel1.Controls.Add(Me.ListBoxControl1)
+        Me.SplitContainerControl1.Panel1.Controls.Add(Me.GridControl1)
         Me.SplitContainerControl1.Panel1.Padding = New System.Windows.Forms.Padding(35, 35, 0, 35)
         Me.SplitContainerControl1.Panel1.Text = "Panel1"
         Me.SplitContainerControl1.Panel2.Controls.Add(Me.ListBoxControl2)
@@ -173,6 +169,41 @@ Partial Class FrmLicense
         Me.SplitContainerControl1.Size = New System.Drawing.Size(800, 426)
         Me.SplitContainerControl1.SplitterPosition = 379
         Me.SplitContainerControl1.TabIndex = 11
+        '
+        'GridControl1
+        '
+        Me.GridControl1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GridControl1.Location = New System.Drawing.Point(35, 35)
+        Me.GridControl1.MainView = Me.GridView1
+        Me.GridControl1.MenuManager = Me.BarManager1
+        Me.GridControl1.Name = "GridControl1"
+        Me.GridControl1.Size = New System.Drawing.Size(344, 356)
+        Me.GridControl1.TabIndex = 0
+        Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
+        '
+        'GridView1
+        '
+        Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.ColUiLogin, Me.ColUiName})
+        Me.GridView1.GridControl = Me.GridControl1
+        Me.GridView1.Name = "GridView1"
+        '
+        'ColUiLogin
+        '
+        Me.ColUiLogin.Caption = "Usuario"
+        Me.ColUiLogin.FieldName = "LOGIN_ID"
+        Me.ColUiLogin.Name = "ColUiLogin"
+        Me.ColUiLogin.OptionsColumn.AllowEdit = False
+        Me.ColUiLogin.Visible = True
+        Me.ColUiLogin.VisibleIndex = 0
+        '
+        'ColUiName
+        '
+        Me.ColUiName.Caption = "Nombre"
+        Me.ColUiName.FieldName = "LOGIN_NAME"
+        Me.ColUiName.Name = "ColUiName"
+        Me.ColUiName.OptionsColumn.AllowEdit = False
+        Me.ColUiName.Visible = True
+        Me.ColUiName.VisibleIndex = 1
         '
         'OfdLicense
         '
@@ -192,9 +223,10 @@ Partial Class FrmLicense
         Me.Text = "FrmLicense"
         CType(Me.BarManager1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ListBoxControl2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ListBoxControl1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SplitContainerControl1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainerControl1.ResumeLayout(False)
+        CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -209,10 +241,13 @@ Partial Class FrmLicense
     Friend WithEvents barDockControlRight As DevExpress.XtraBars.BarDockControl
     Friend WithEvents ListBoxControl2 As DevExpress.XtraEditors.ListBoxControl
     Friend WithEvents SplitContainerControl1 As DevExpress.XtraEditors.SplitContainerControl
-    Friend WithEvents ListBoxControl1 As DevExpress.XtraEditors.ListBoxControl
-    Friend WithEvents BarButtonItem2 As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents BarButtonItem3 As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BtnAgregar As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BtnQuitar As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents BarStaticItem1 As DevExpress.XtraBars.BarStaticItem
-    Friend WithEvents BsiLicenseQty As DevExpress.XtraBars.BarStaticItem
     Friend WithEvents OfdLicense As OpenFileDialog
+    Friend WithEvents BsiLicenseQty As DevExpress.XtraBars.BarStaticItem
+    Friend WithEvents GridControl1 As DevExpress.XtraGrid.GridControl
+    Friend WithEvents GridView1 As DevExpress.XtraGrid.Views.Grid.GridView
+    Friend WithEvents ColUiLogin As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents ColUiName As DevExpress.XtraGrid.Columns.GridColumn
 End Class

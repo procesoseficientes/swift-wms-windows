@@ -92,7 +92,7 @@
     <Setting Name="SERVER_IP" Type="System.String" Scope="Application">
       <Value Profile="(Default)">10.101.0.3</Value>
     </Setting>
-    <Setting Name="LicenseKey" Type="System.String" Scope="Application">
+    <Setting Name="LicenseKey" Type="System.String" Scope="User">
       <Value Profile="(Default)">8755A</Value>
     </Setting>
   </Settings>
