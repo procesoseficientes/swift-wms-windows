@@ -1440,6 +1440,7 @@ namespace MobilityScm.Modelo.Controladores
 
             foreach (var encabezado in listaEncabezadoResultado)
             {
+                
                 encabezado.Detalles =
                     listaDetalle.Where(det => det.SALES_ORDER_ID == encabezado.SALES_ORDER_ID && det.EXTERNAL_SOURCE_ID == encabezado.EXTERNAL_SOURCE_ID && det.SOURCE.ToUpper() == encabezado.OWNER.ToUpper()).ToList();
                 encabezado.CODE_WAREHOUSE = codigoBodega;
