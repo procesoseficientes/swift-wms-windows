@@ -703,9 +703,6 @@ namespace MobilityScm.Modelo.Vistas
                 Cursor.Current = Cursors.Default;
             }
         }
-
         #endregion
-
-
     }
 }
