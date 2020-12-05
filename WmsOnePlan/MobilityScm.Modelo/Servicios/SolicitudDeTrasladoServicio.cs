@@ -76,6 +76,10 @@ namespace MobilityScm.Modelo.Servicios
                 {
                     ParameterName = "@OWNER",
                     Value = solicitudDeTrasladoArgumento.SolicitudDeTrasladoEncabezado.OWNER
+                }, new OAParameter
+                {
+                    ParameterName = "@IS_FROM_ERP",
+                    Value = solicitudDeTrasladoArgumento.SolicitudDeTrasladoEncabezado.IS_FROM_ERP
                 }
             };
             var operacion = BaseDeDatosServicio.ExecuteQuery<Operacion>(BaseDeDatosServicio.Esquema + ".OP_WMS_SP_ADD_TRANSFER_REQUEST_HEADER", CommandType.StoredProcedure, false, parameters)[0];

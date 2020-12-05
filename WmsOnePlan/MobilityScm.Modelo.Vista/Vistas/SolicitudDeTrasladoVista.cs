@@ -572,7 +572,6 @@ namespace MobilityScm.Modelo.Vistas
                 InteraccionConUsuarioServicio.Mensaje("Debe de seleccionar al menos un material para la solicitud de traslado.");
                 return;
             }
-
             UsuarioDeseaGuardarSolicitudDeTraslado?.Invoke(sender, new SolicitudDeTrasladoArgumento
             {
                 SolicitudDeTrasladoEncabezado = new SolicitudDeTrasladoEncabezado
@@ -583,7 +582,8 @@ namespace MobilityScm.Modelo.Vistas
                     DELIVERY_DATE = UiFechaEntrega.DateTime,
                     COMMENT = UiTextoComentario.Text,
                     STATUS = EstadoSolicitudDeTraslado.OPEN.ToString(),
-                    CREATED_BY = InteraccionConUsuarioServicio.ObtenerUsuario()
+                    CREATED_BY = InteraccionConUsuarioServicio.ObtenerUsuario(),
+                    IS_FROM_ERP = UiCheckEnviarErp.Checked ? (int)SiNo.Si : (int)SiNo.No
                 },
                 ListadoMateriales = listadoMateriales
             });
@@ -703,9 +703,6 @@ namespace MobilityScm.Modelo.Vistas
                 Cursor.Current = Cursors.Default;
             }
         }
-
         #endregion
-
-
     }
 }

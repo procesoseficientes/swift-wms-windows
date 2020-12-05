@@ -13,5 +13,6 @@ namespace MobilityScm.Modelo.Entidades
         public DateTime? POSTED_ERP { get; set; }
         public string POSTED_RESPONSE { get; set; }
         public string ERP_REFERENCE { get; set; }
+        public string IS_FROM_ERP { get; set; }
     }
 }

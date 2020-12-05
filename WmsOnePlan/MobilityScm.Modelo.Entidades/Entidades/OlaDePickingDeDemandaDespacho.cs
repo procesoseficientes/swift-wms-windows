@@ -19,6 +19,7 @@ namespace MobilityScm.Modelo.Entidades
         public string POSTED_RESPONSE { get; set; }
         public string ERP_REFERENCE { get; set; }
         public string ORDER_NUMBER { get; set; }
+        public string IS_FROM_ERP { get; set; }
         public List<DemandaDeDespachoEncabezado> DemandaDeDespachoEncabezado { get; set; }
     }
 }
