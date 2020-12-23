@@ -5297,6 +5297,8 @@
             this.UiColWeight.Caption = "Peso";
             this.UiColWeight.FieldName = "MATERIAL_WEIGHT";
             this.UiColWeight.Name = "UiColWeight";
+            this.UiColWeight.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "MATERIAL_WEIGHT", "{0:0.##}")});
             this.UiColWeight.Visible = true;
             this.UiColWeight.VisibleIndex = 11;
             this.UiColWeight.Width = 37;
