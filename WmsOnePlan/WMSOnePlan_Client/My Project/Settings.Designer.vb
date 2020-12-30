@@ -185,14 +185,12 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("PropiedadDeDatosGenerales_LEAD_TIME")>  _
-        Public Property _LEAD_TIME() As String
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.WebServiceUrl),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("http://10.240.29.104:8090")>  _
+        Public ReadOnly Property WMSOnePlan_Client_OnePlanServices_Security_WMS_Security() As String
             Get
-                Return CType(Me("_LEAD_TIME"),String)
+                Return CType(Me("WMSOnePlan_Client_OnePlanServices_Security_WMS_Security"),String)
             End Get
-            Set
-                Me("_LEAD_TIME") = value
-            End Set
         End Property
         
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _

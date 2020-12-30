@@ -293,7 +293,9 @@ namespace MobilityScm.Modelo.Servicios
                         CALIBER = consolidado.Max(x => x.CALIBER),
                         USE_PICKING_LINE = consolidado.Max(x => x.USE_PICKING_LINE),
                         MEASUREMENT_UNIT = "Unidad Base 1x1",
-                        STATUS_CODE = ordenDeVentaArgumento.EstadoPredeterminadoDeMaterial.PARAM_NAME
+                        STATUS_CODE = ordenDeVentaArgumento.EstadoPredeterminadoDeMaterial.PARAM_NAME,
+                        MATERIAL_WEIGHT = consolidado.Max(x => x.MATERIAL_WEIGHT),
+                        TOTAL_WEIGHT = consolidado.Max(x => x.TOTAL_WEIGHT)
                     }
             ).ToList();
         }
