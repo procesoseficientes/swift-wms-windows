@@ -572,7 +572,6 @@ namespace MobilityScm.Modelo.Vistas
                 InteraccionConUsuarioServicio.Mensaje("Debe de seleccionar al menos un material para la solicitud de traslado.");
                 return;
             }
-            int entero;
             UsuarioDeseaGuardarSolicitudDeTraslado?.Invoke(sender, new SolicitudDeTrasladoArgumento
             {
                 SolicitudDeTrasladoEncabezado = new SolicitudDeTrasladoEncabezado
@@ -591,11 +590,6 @@ namespace MobilityScm.Modelo.Vistas
 
 
             BuscarSolicitudDeTraslado(sender, IdSolicitudDeTraslado);
-        }
-
-        private int IIf(object @checked, object v1, object v2)
-        {
-            throw new NotImplementedException();
         }
 
         private void UiBotonExportar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
