@@ -1238,7 +1238,7 @@ namespace MobilityScm.Modelo.Vistas
                                   UiVistaOrdenEncabezado.GetRow(UiVistaOrdenEncabezado.FocusedRowHandle);
 
 
-            UiContenedorVistaOrdenDetalle.DataSource = DetallesOrdenDeVenta.Where(det =>det.SALES_ORDER_ID == ordenEncabezado.SALES_ORDER_ID).ToList();
+            UiContenedorVistaOrdenDetalle.DataSource = DetallesOrdenDeVenta.Where(det => det.SALES_ORDER_ID == ordenEncabezado.SALES_ORDER_ID).ToList();
 
             //UiContenedorVistaOrdenDetalle.DataSource = TipoFuente != TipoFuenteDemandaDespacho.SolicitudTrasladoErp
             //    ? DetallesOrdenDeVenta.Where(
