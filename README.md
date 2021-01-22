@@ -94,6 +94,20 @@ Y eso en `<appSettings>`
 
 Para `Ferco` el valor tiene que ser `True`
 
+## Cambiar puerto de SAP
+Esta información tambien está en el archivo de la [guía de release](RELEASE_GUIDE.md).
+
+1. Ir al escritorio remoto donde se encuentra el servicio 
+- (Ejemplo de Ferco: Escritorio 200.124.156.112:18105 Carpeta C:\Mobilityscm\SboInterfacePreliminaresQA)
+2. Abrir el archivo 'appsettings' y cambiar el puerto
+3. Abrir una Power Shell, acceder a la carpeta del servicio, ejecutar el archivo '.\start.bat'
+4. Acceder al escritorio remoto donde se encuentra el Back Office 
+5. Abrir el IIS y buscar nuestro servicio
+6. Dar click en explorar. (Nos abrira una carpeta)
+7. Abrir para editar el 'Web.config'
+8. Cambiar la key que tenga el puerto (image.png) 
+
+
 ## Guía de release
 Esta información tambien está en el archivo de la [guía de release](RELEASE_GUIDE.md).
 
