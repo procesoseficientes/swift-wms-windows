@@ -49,8 +49,8 @@ ex.json -Username <usuario de github> -Password <PAT>
 2. Agregar el puerto 8088
 3. Clic derecho en `Default Web Site` -> `Add Application`
 4. Ingresar la siguiente información
-  - Alias: `WMSOnePlan_BussinessServices`
-  - Path: `<repo>/WmsOnePlan/WmsOnePlan/WMSOnePlan_BussinessServices`
+  - Alias: `WMSOnePlan_BusinessServices`
+  - Path: `<repo>/WmsOnePlan/WmsOnePlan/WMSOnePlan_BusinessServices`
   - Connect As: `Ingresar credenciales de usuario`
 5. Agregar aplicación
 6. Probar que el servicio funcione navegando a [http://localhost:8088/WMSOnePlan_BusinessServices/Catalogues/WMS_Security.asmx](http://localhost:8088/WMSOnePlan_BusinessServices/Catalogues/WMS_Security.asmx)
@@ -63,7 +63,7 @@ ex.json -Username <usuario de github> -Password <PAT>
 
 ### Configución con DB
 Los configs se pueden descargar desde el sharepoint desde [este link](https://github.com/procesoseficientes/configs).  
-Los datos para configurar la DB en el backend está en `WMSOnePlan_BussinessServices/Web.config` en la llave `DESARROLLO`.
+Los datos para configurar la DB en el backend está en `WMSOnePlan_BusinessServices/Web.config` en la llave `DESARROLLO`.
 
 `<add key="DESARROLLO" value="Server=`**`<ip del servidor deprueba>`**`,1433;Database=`**`<nombre de la DB deprueba>`**`;User=`**`<usuario>`**`;Pwd=`**`<SQ1MSCM!9>`**`"/>`
 
