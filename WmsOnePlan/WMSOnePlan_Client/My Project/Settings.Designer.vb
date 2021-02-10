@@ -182,17 +182,11 @@ Namespace My
                 Return CType(Me("UpdateServer"),String)
             End Get
         End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.WebServiceUrl),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("http://10.240.29.104:8090")>  _
-        Public ReadOnly Property WMSOnePlan_Client_OnePlanServices_Security_WMS_Security() As String
-            Get
-                Return CType(Me("WMSOnePlan_Client_OnePlanServices_Security_WMS_Security"),String)
-            End Get
-        End Property
-        
+
+        Public Function GetWMSOnePlan_Client_OnePlanServices_Security_WMS_Security() As String
+            Return CType(Me("WMSOnePlan_Client_OnePlanServices_Security_WMS_Security"), String)
+        End Function
+
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("ferco")>  _
