@@ -724,10 +724,10 @@
             this.xrLabel24.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?ParametroCAI")});
             this.xrLabel24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.xrLabel24.LocationFloat = new DevExpress.Utils.PointFloat(182.1515F, 1.617615F);
+            this.xrLabel24.LocationFloat = new DevExpress.Utils.PointFloat(40.70703F, 1.617615F);
             this.xrLabel24.Name = "xrLabel24";
             this.xrLabel24.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel24.SizeF = new System.Drawing.SizeF(128.1386F, 21.95836F);
+            this.xrLabel24.SizeF = new System.Drawing.SizeF(269.583F, 21.95836F);
             this.xrLabel24.StylePriority.UseBorderColor = false;
             this.xrLabel24.StylePriority.UseFont = false;
             // 
