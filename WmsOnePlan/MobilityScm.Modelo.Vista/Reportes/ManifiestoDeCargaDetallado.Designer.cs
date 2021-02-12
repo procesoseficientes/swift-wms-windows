@@ -131,15 +131,15 @@
             this.xrLabel8 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel15 = new DevExpress.XtraReports.UI.XRLabel();
             this.QTY_FORMAT = new DevExpress.XtraReports.UI.CalculatedField();
-            this.objectDataSource1 = new DevExpress.DataAccess.ObjectBinding.ObjectDataSource(this.components);
             this.DOCUMENT_TOTAL_FORMAT = new DevExpress.XtraReports.UI.CalculatedField();
             this.LINE_TOTAL_FORMAT = new DevExpress.XtraReports.UI.CalculatedField();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.manifiestoDeCarga = new MobilityScm.Modelo.DataSets.ManifiestoDeCarga();
+            this.objectDataSource1 = new DevExpress.DataAccess.ObjectBinding.ObjectDataSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.objectDataSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.manifiestoDeCarga)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.objectDataSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // Detail
@@ -613,7 +613,7 @@
             // 
             this.xrLabel25.BorderColor = System.Drawing.Color.Transparent;
             this.xrLabel25.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?ParametroCentroDistribucion")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CAI_NUMERO]")});
             this.xrLabel25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.xrLabel25.LocationFloat = new DevExpress.Utils.PointFloat(140.8705F, 31.95837F);
             this.xrLabel25.Name = "xrLabel25";
@@ -626,7 +626,7 @@
             // 
             this.xrLabel35.BorderColor = System.Drawing.Color.Transparent;
             this.xrLabel35.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?ParametroCentroDistribucion")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CAI_FECHA_VENCIMIENTO]")});
             this.xrLabel35.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.xrLabel35.LocationFloat = new DevExpress.Utils.PointFloat(41.91174F, 88.37505F);
             this.xrLabel35.Name = "xrLabel35";
@@ -651,7 +651,7 @@
             // 
             this.xrLabel33.BorderColor = System.Drawing.Color.Transparent;
             this.xrLabel33.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?ParametroCentroDistribucion")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CAI_RANGO_FINAL]")});
             this.xrLabel33.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.xrLabel33.LocationFloat = new DevExpress.Utils.PointFloat(128.3701F, 160.2066F);
             this.xrLabel33.Name = "xrLabel33";
@@ -664,7 +664,7 @@
             // 
             this.xrLabel32.BorderColor = System.Drawing.Color.Transparent;
             this.xrLabel32.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?ParametroCentroDistribucion")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CAI_RANGO_INICIAL]")});
             this.xrLabel32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.xrLabel32.LocationFloat = new DevExpress.Utils.PointFloat(10.00012F, 160.2066F);
             this.xrLabel32.Name = "xrLabel32";
@@ -714,7 +714,7 @@
             // 
             this.xrLabel27.BorderColor = System.Drawing.Color.Transparent;
             this.xrLabel27.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?ParametroCentroDistribucion")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CAI_SERIE]")});
             this.xrLabel27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.xrLabel27.LocationFloat = new DevExpress.Utils.PointFloat(43.41666F, 31.95837F);
             this.xrLabel27.Name = "xrLabel27";
@@ -739,7 +739,7 @@
             // 
             this.xrLabel24.BorderColor = System.Drawing.Color.Transparent;
             this.xrLabel24.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[QTY]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CAI]")});
             this.xrLabel24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.xrLabel24.LocationFloat = new DevExpress.Utils.PointFloat(43.41669F, 8.958371F);
             this.xrLabel24.Name = "xrLabel24";
@@ -1282,11 +1282,6 @@
             this.QTY_FORMAT.FieldType = DevExpress.XtraReports.UI.FieldType.Decimal;
             this.QTY_FORMAT.Name = "QTY_FORMAT";
             // 
-            // objectDataSource1
-            // 
-            this.objectDataSource1.DataSource = typeof(MobilityScm.Modelo.Entidades.ManifiestoCarga);
-            this.objectDataSource1.Name = "objectDataSource1";
-            // 
             // DOCUMENT_TOTAL_FORMAT
             // 
             this.DOCUMENT_TOTAL_FORMAT.DisplayName = "DOCUMENT_TOTAL_FORMAT";
@@ -1310,6 +1305,11 @@
             // 
             this.manifiestoDeCarga.DataSetName = "ManifiestoDeCarga";
             this.manifiestoDeCarga.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // objectDataSource1
+            // 
+            this.objectDataSource1.DataSource = typeof(MobilityScm.Modelo.Entidades.ManifiestoCarga);
+            this.objectDataSource1.Name = "objectDataSource1";
             // 
             // ManifiestoDeCargaDetallado
             // 
@@ -1352,9 +1352,9 @@
             this.Version = "19.2";
             this.DataSourceDemanded += new System.EventHandler<System.EventArgs>(this.ManifiestoDeCargaDetallado_DataSourceDemanded);
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.objectDataSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.manifiestoDeCarga)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.objectDataSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
         }

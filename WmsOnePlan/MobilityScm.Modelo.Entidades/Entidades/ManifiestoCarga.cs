@@ -23,9 +23,9 @@ namespace MobilityScm.Modelo.Entidades
         public string CAI { get; set; }
         public string CAI_NUMERO { get; set; }
         public string CAI_SERIE { get; set; }
-        public int CAI_RANGO_INICIAL { get; set; }
-        public int CAI_RANGO_FINAL { get; set; }
-        public DateTime CAI_FECHA_VENCIMIENTO { get; set; }
+        public float? CAI_RANGO_INICIAL { get; set; }
+        public float? CAI_RANGO_FINAL { get; set; }
+        public DateTime? CAI_FECHA_VENCIMIENTO { get; set; }
 
         public int? TRANSFER_REQUEST_ID { get; set; }
 

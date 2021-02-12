@@ -441,7 +441,13 @@ namespace MobilityScm.Modelo.Vistas
                         LINE_DISCOUNT = mc.First().LINE_DISCOUNT,
                         LINE_DISCOUNT_TYPE = mc.First().LINE_DISCOUNT_TYPE,
                         DOCUMENT_TOTAL = mc.Sum(m => m.FINAL_PRICE),
-                        Olas = mc.Key.Olas
+                        Olas = mc.Key.Olas,
+                        CAI = mc.First().CAI,
+                        CAI_NUMERO = mc.First().CAI_NUMERO,
+                        CAI_SERIE = mc.First().CAI_SERIE,
+                        CAI_RANGO_INICIAL = mc.First().CAI_RANGO_INICIAL,
+                        CAI_RANGO_FINAL = mc.First().CAI_RANGO_FINAL,
+                        CAI_FECHA_VENCIMIENTO = mc.First().CAI_FECHA_VENCIMIENTO
                     });
                 var configuracionMontos = ObtenerConfiguracion(Enums.GetStringValue(NombreParametroGeneral.MostrarMontos));
                 bool mostrarMontos = configuracionMontos != null && configuracionMontos.TEXT_VALUE.ToUpper() == SiNo.Si.ToString().ToUpper();
@@ -461,6 +467,12 @@ namespace MobilityScm.Modelo.Vistas
                 reporte.Parameters["ParametroVehiculo"].Value = ManifiestoCarga[0].VEHICLE ?? "N/A";
                 reporte.Parameters["SolicitudDeTraslado"].Value = ManifiestoCarga[0].TRANSFER_REQUEST_ID?.ToString() ?? "N/A";
                 reporte.Parameters["ParametroBodegaDestino"].Value = ManifiestoCarga[0].WAREHOUSE_TO?.ToString();
+                reporte.Parameters["ParametroCAI"].Value = ManifiestoCarga[0].CAI?.ToString() ?? "N/A";
+                reporte.Parameters["ParametroCAINumero"].Value = ManifiestoCarga[0].CAI_NUMERO?.ToString() ?? "N/A";
+                reporte.Parameters["ParametroCAISerie"].Value = ManifiestoCarga[0].CAI_SERIE?.ToString() ?? "N/A";
+                reporte.Parameters["ParametroCAIRangoInicial"].Value = ManifiestoCarga[0].CAI_RANGO_INICIAL?.ToString() ?? "N/A";
+                reporte.Parameters["ParametroCAIRangoFinal"].Value = ManifiestoCarga[0].CAI_RANGO_FINAL?.ToString() ?? "N/A";
+                reporte.Parameters["ParametroCAIFechaVencimiento"].Value = ManifiestoCarga[0].CAI_FECHA_VENCIMIENTO?.ToString() ?? "N/A";
                 reporte.Parameters["ImagenLogo"].Value = InteraccionConUsuarioServicio.ObtenerLogo();
                 reporte.FillDataSource();
 
@@ -553,6 +565,12 @@ namespace MobilityScm.Modelo.Vistas
                 reporte.Parameters["ParametroPiloto"].Value = ManifiestoCarga[0].DRIVER ?? 0;
                 reporte.Parameters["ParametroVehiculo"].Value = ManifiestoCarga[0].VEHICLE ?? "N/A";
                 reporte.Parameters["SolicitudDeTraslado"].Value = (ManifiestoCarga[0].TRANSFER_REQUEST_ID == null ? "N/A" : ManifiestoCarga[0].TRANSFER_REQUEST_ID.ToString());
+                reporte.Parameters["ParametroCAI"].Value = ManifiestoCarga[0].CAI?.ToString() ?? "N/A";
+                reporte.Parameters["ParametroCAINumero"].Value = ManifiestoCarga[0].CAI_NUMERO?.ToString() ?? "N/A";
+                reporte.Parameters["ParametroCAISerie"].Value = ManifiestoCarga[0].CAI_SERIE?.ToString() ?? "N/A";
+                reporte.Parameters["ParametroCAIRangoInicial"].Value = ManifiestoCarga[0].CAI_RANGO_INICIAL?.ToString() ?? "N/A";
+                reporte.Parameters["ParametroCAIRangoFinal"].Value = ManifiestoCarga[0].CAI_RANGO_FINAL?.ToString() ?? "N/A";
+                reporte.Parameters["ParametroCAIFechaVencimiento"].Value = ManifiestoCarga[0].CAI_FECHA_VENCIMIENTO?.ToString() ?? "N/A";
 
                 reporte.Parameters["ImagenLogo"].Value = InteraccionConUsuarioServicio.ObtenerLogo();
                 reporte.FillDataSource();
@@ -605,6 +623,12 @@ namespace MobilityScm.Modelo.Vistas
                 reporte.Parameters["ParametroCentroDistribucion"].Value = CajasPorClientes.FirstOrDefault().DISTRIBUTION_CENTER ?? "N/A";
                 reporte.Parameters["ParametroPiloto"].Value = CajasPorClientes.FirstOrDefault().PILOT_FULL_NAME ?? "N/A";
                 reporte.Parameters["ParametroVehiculo"].Value = CajasPorClientes.FirstOrDefault().PLATE_NUMBER ?? "N/A";
+                reporte.Parameters["ParametroCAI"].Value = ManifiestoCarga[0].CAI?.ToString() ?? "N/A";
+                reporte.Parameters["ParametroCAINumero"].Value = ManifiestoCarga[0].CAI_NUMERO?.ToString() ?? "N/A";
+                reporte.Parameters["ParametroCAISerie"].Value = ManifiestoCarga[0].CAI_SERIE?.ToString() ?? "N/A";
+                reporte.Parameters["ParametroCAIRangoInicial"].Value = ManifiestoCarga[0].CAI_RANGO_INICIAL?.ToString() ?? "N/A";
+                reporte.Parameters["ParametroCAIRangoFinal"].Value = ManifiestoCarga[0].CAI_RANGO_FINAL?.ToString() ?? "N/A";
+                reporte.Parameters["ParametroCAIFechaVencimiento"].Value = ManifiestoCarga[0].CAI_FECHA_VENCIMIENTO?.ToString() ?? "N/A";
 
                 reporte.Parameters["ImagenLogo"].Value = InteraccionConUsuarioServicio.ObtenerLogo();
                 reporte.FillDataSource();
