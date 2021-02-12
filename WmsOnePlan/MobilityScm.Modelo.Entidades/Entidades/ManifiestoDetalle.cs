@@ -19,6 +19,12 @@ namespace MobilityScm.Modelo.Entidades
         public decimal WEIGHT { get; set; }
         public string ADDRESS_CUSTOMER { get; set; }
 
+        public string CAI { get; set; }
+        public string CAI_NUMERO { get; set; }
+        public int CAI_RANGO_INICIAL { get; set; }
+        public int CAI_RANGO_FINAL { get; set; }
+        public DateTime CAI_FECHA_VENCIMIENTO { get; set; }
+
         public string ERP_REFERENCE_DOC_NUM { get; set; }
 
         public int? PICKING_DEMAND_HEADER_ID { get; set; }

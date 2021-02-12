@@ -366,6 +366,14 @@ namespace MobilityScm.Modelo.Vistas
                 reporte.Parameters["ParametroVehiculo"].Value = ManifiestoCarga[0].VEHICLE ?? "N/A";
                 reporte.Parameters["SolicitudDeTraslado"].Value = ManifiestoCarga[0].TRANSFER_REQUEST_ID?.ToString() ?? "N/A";
                 reporte.Parameters["ParametroBodegaDestino"].Value = ManifiestoCarga[0].WAREHOUSE_TO?.ToString();
+
+                reporte.Parameters["ParametroCAI"].Value = ManifiestoCarga[0].CAI?.ToString();
+                reporte.Parameters["ParametroCAI_Serie"].Value = ManifiestoCarga[0].CAI_SERIE?.ToString();
+                reporte.Parameters["ParametroCAI_Numero"].Value = ManifiestoCarga[0].CAI_NUMERO?.ToString();
+                reporte.Parameters["ParametroCAI_RangoInicial"].Value = ManifiestoCarga[0].CAI_RANGO_INICIAL?.ToString();
+                reporte.Parameters["ParametroCAI_RangoFinal"].Value = ManifiestoCarga[0].CAI_RANGO_FINAL?.ToString();
+                reporte.Parameters["ParametroCAI_FechaDeVencimiento"].Value = ManifiestoCarga[0].CAI_FECHA_VENCIMIENTO?.ToString();
+
                 reporte.Parameters["ImagenLogo"].Value = InteraccionConUsuarioServicio.ObtenerLogo();
                 reporte.FillDataSource();
 

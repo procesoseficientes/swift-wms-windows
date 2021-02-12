@@ -20,6 +20,13 @@ namespace MobilityScm.Modelo.Entidades
         public int MANIFEST_HEADER_ID { get; set; }
         public string CODE_ROUTE { get; set; }
 
+        public string CAI { get; set; }
+        public string CAI_NUMERO { get; set; }
+        public string CAI_SERIE { get; set; }
+        public int CAI_RANGO_INICIAL { get; set; }
+        public int CAI_RANGO_FINAL { get; set; }
+        public DateTime CAI_FECHA_VENCIMIENTO { get; set; }
+
         public int? TRANSFER_REQUEST_ID { get; set; }
 
         public decimal WEIGHT { get; set; }
