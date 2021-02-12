@@ -37,6 +37,12 @@
             DevExpress.XtraReports.UI.XRSummary xrSummary5 = new DevExpress.XtraReports.UI.XRSummary();
             DevExpress.XtraReports.UI.XRSummary xrSummary6 = new DevExpress.XtraReports.UI.XRSummary();
             DevExpress.XtraReports.UI.XRSummary xrSummary7 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.Parameters.DynamicListLookUpSettings dynamicListLookUpSettings1 = new DevExpress.XtraReports.Parameters.DynamicListLookUpSettings();
+            DevExpress.XtraReports.Parameters.DynamicListLookUpSettings dynamicListLookUpSettings2 = new DevExpress.XtraReports.Parameters.DynamicListLookUpSettings();
+            DevExpress.XtraReports.Parameters.DynamicListLookUpSettings dynamicListLookUpSettings3 = new DevExpress.XtraReports.Parameters.DynamicListLookUpSettings();
+            DevExpress.XtraReports.Parameters.DynamicListLookUpSettings dynamicListLookUpSettings4 = new DevExpress.XtraReports.Parameters.DynamicListLookUpSettings();
+            DevExpress.XtraReports.Parameters.DynamicListLookUpSettings dynamicListLookUpSettings5 = new DevExpress.XtraReports.Parameters.DynamicListLookUpSettings();
+            DevExpress.XtraReports.Parameters.DynamicListLookUpSettings dynamicListLookUpSettings6 = new DevExpress.XtraReports.Parameters.DynamicListLookUpSettings();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
             this.UiEtiquetaMontoLinea = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel16 = new DevExpress.XtraReports.UI.XRLabel();
@@ -75,13 +81,10 @@
             this.pageFooterBand1 = new DevExpress.XtraReports.UI.PageFooterBand();
             this.reportHeaderBand1 = new DevExpress.XtraReports.UI.ReportHeaderBand();
             this.xrPanel2 = new DevExpress.XtraReports.UI.XRPanel();
-            this.xrLabel25 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel35 = new DevExpress.XtraReports.UI.XRLabel();
             this.ReportLabelFechaDeVencimiento = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel33 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel32 = new DevExpress.XtraReports.UI.XRLabel();
-            this.ReportLabelRangoFinal = new DevExpress.XtraReports.UI.XRLabel();
-            this.ReportLabelRangoInicial = new DevExpress.XtraReports.UI.XRLabel();
             this.ReportLabelRango = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel27 = new DevExpress.XtraReports.UI.XRLabel();
             this.ReportLabelNo = new DevExpress.XtraReports.UI.XRLabel();
@@ -133,6 +136,13 @@
             this.QTY_FORMAT = new DevExpress.XtraReports.UI.CalculatedField();
             this.DOCUMENT_TOTAL_FORMAT = new DevExpress.XtraReports.UI.CalculatedField();
             this.LINE_TOTAL_FORMAT = new DevExpress.XtraReports.UI.CalculatedField();
+            this.ParametroCAI = new DevExpress.XtraReports.Parameters.Parameter();
+            this.ParametroCAINumero = new DevExpress.XtraReports.Parameters.Parameter();
+            this.ParametroCAISerie = new DevExpress.XtraReports.Parameters.Parameter();
+            this.ParametroCAIRangoInicial = new DevExpress.XtraReports.Parameters.Parameter();
+            this.ParametroCAIRangoFinal = new DevExpress.XtraReports.Parameters.Parameter();
+            this.ParametroCAIFechaVencimiento = new DevExpress.XtraReports.Parameters.Parameter();
+            this.xrLabel25 = new DevExpress.XtraReports.UI.XRLabel();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.manifiestoDeCarga = new MobilityScm.Modelo.DataSets.ManifiestoDeCarga();
             this.objectDataSource1 = new DevExpress.DataAccess.ObjectBinding.ObjectDataSource(this.components);
@@ -598,128 +608,99 @@
             this.ReportLabelFechaDeVencimiento,
             this.xrLabel33,
             this.xrLabel32,
-            this.ReportLabelRangoFinal,
-            this.ReportLabelRangoInicial,
             this.ReportLabelRango,
             this.xrLabel27,
             this.ReportLabelNo,
             this.xrLabel24,
             this.ReportLabelCAI});
-            this.xrPanel2.LocationFloat = new DevExpress.Utils.PointFloat(506.1296F, 0F);
+            this.xrPanel2.LocationFloat = new DevExpress.Utils.PointFloat(427.7097F, 0F);
             this.xrPanel2.Name = "xrPanel2";
-            this.xrPanel2.SizeF = new System.Drawing.SizeF(241.8702F, 194.3316F);
-            // 
-            // xrLabel25
-            // 
-            this.xrLabel25.BorderColor = System.Drawing.Color.Transparent;
-            this.xrLabel25.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CAI_NUMERO]")});
-            this.xrLabel25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.xrLabel25.LocationFloat = new DevExpress.Utils.PointFloat(140.8705F, 31.95837F);
-            this.xrLabel25.Name = "xrLabel25";
-            this.xrLabel25.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel25.SizeF = new System.Drawing.SizeF(97.4538F, 23F);
-            this.xrLabel25.StylePriority.UseBorderColor = false;
-            this.xrLabel25.StylePriority.UseFont = false;
+            this.xrPanel2.SizeF = new System.Drawing.SizeF(320.2901F, 121.4094F);
             // 
             // xrLabel35
             // 
             this.xrLabel35.BorderColor = System.Drawing.Color.Transparent;
             this.xrLabel35.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CAI_FECHA_VENCIMIENTO]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?ParametroCAIFechaVencimiento")});
             this.xrLabel35.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.xrLabel35.LocationFloat = new DevExpress.Utils.PointFloat(41.91174F, 88.37505F);
+            this.xrLabel35.LocationFloat = new DevExpress.Utils.PointFloat(182.1515F, 45.53434F);
             this.xrLabel35.Name = "xrLabel35";
             this.xrLabel35.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel35.SizeF = new System.Drawing.SizeF(142.0417F, 23F);
+            this.xrLabel35.SizeF = new System.Drawing.SizeF(128.1386F, 21.95837F);
             this.xrLabel35.StylePriority.UseBorderColor = false;
             this.xrLabel35.StylePriority.UseFont = false;
+            this.xrLabel35.StylePriority.UseTextAlignment = false;
+            this.xrLabel35.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            this.xrLabel35.TextFormatString = "{0:M/d/yyyy}";
             // 
             // ReportLabelFechaDeVencimiento
             // 
             this.ReportLabelFechaDeVencimiento.BorderColor = System.Drawing.Color.Transparent;
             this.ReportLabelFechaDeVencimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.ReportLabelFechaDeVencimiento.LocationFloat = new DevExpress.Utils.PointFloat(10.00009F, 66.41669F);
+            this.ReportLabelFechaDeVencimiento.LocationFloat = new DevExpress.Utils.PointFloat(7.290405F, 45.53433F);
             this.ReportLabelFechaDeVencimiento.Name = "ReportLabelFechaDeVencimiento";
             this.ReportLabelFechaDeVencimiento.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.ReportLabelFechaDeVencimiento.SizeF = new System.Drawing.SizeF(136.4154F, 21.95837F);
             this.ReportLabelFechaDeVencimiento.StylePriority.UseBorderColor = false;
             this.ReportLabelFechaDeVencimiento.StylePriority.UseFont = false;
+            this.ReportLabelFechaDeVencimiento.StylePriority.UseTextAlignment = false;
             this.ReportLabelFechaDeVencimiento.Text = "Fecha de vencimiento:";
+            this.ReportLabelFechaDeVencimiento.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
             // xrLabel33
             // 
             this.xrLabel33.BorderColor = System.Drawing.Color.Transparent;
             this.xrLabel33.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CAI_RANGO_FINAL]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?ParametroCAIRangoFinal")});
             this.xrLabel33.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.xrLabel33.LocationFloat = new DevExpress.Utils.PointFloat(128.3701F, 160.2066F);
+            this.xrLabel33.LocationFloat = new DevExpress.Utils.PointFloat(182.1514F, 89.45105F);
             this.xrLabel33.Name = "xrLabel33";
             this.xrLabel33.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel33.SizeF = new System.Drawing.SizeF(103.5001F, 24.12503F);
+            this.xrLabel33.SizeF = new System.Drawing.SizeF(128.1387F, 21.95836F);
             this.xrLabel33.StylePriority.UseBorderColor = false;
             this.xrLabel33.StylePriority.UseFont = false;
+            this.xrLabel33.StylePriority.UseTextAlignment = false;
+            this.xrLabel33.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
             // xrLabel32
             // 
             this.xrLabel32.BorderColor = System.Drawing.Color.Transparent;
             this.xrLabel32.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CAI_RANGO_INICIAL]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?ParametroCAIRangoInicial")});
             this.xrLabel32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.xrLabel32.LocationFloat = new DevExpress.Utils.PointFloat(10.00012F, 160.2066F);
+            this.xrLabel32.LocationFloat = new DevExpress.Utils.PointFloat(182.1515F, 67.4927F);
             this.xrLabel32.Name = "xrLabel32";
             this.xrLabel32.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel32.SizeF = new System.Drawing.SizeF(103.5001F, 24.12503F);
+            this.xrLabel32.SizeF = new System.Drawing.SizeF(128.1386F, 21.95835F);
             this.xrLabel32.StylePriority.UseBorderColor = false;
             this.xrLabel32.StylePriority.UseFont = false;
-            // 
-            // ReportLabelRangoFinal
-            // 
-            this.ReportLabelRangoFinal.BorderColor = System.Drawing.Color.Transparent;
-            this.ReportLabelRangoFinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.ReportLabelRangoFinal.LocationFloat = new DevExpress.Utils.PointFloat(166.5789F, 138.2483F);
-            this.ReportLabelRangoFinal.Multiline = true;
-            this.ReportLabelRangoFinal.Name = "ReportLabelRangoFinal";
-            this.ReportLabelRangoFinal.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.ReportLabelRangoFinal.SizeF = new System.Drawing.SizeF(40.20825F, 21.95836F);
-            this.ReportLabelRangoFinal.StylePriority.UseBorderColor = false;
-            this.ReportLabelRangoFinal.StylePriority.UseFont = false;
-            this.ReportLabelRangoFinal.Text = "Final\r\n";
-            // 
-            // ReportLabelRangoInicial
-            // 
-            this.ReportLabelRangoInicial.BorderColor = System.Drawing.Color.Transparent;
-            this.ReportLabelRangoInicial.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.ReportLabelRangoInicial.LocationFloat = new DevExpress.Utils.PointFloat(43.41675F, 138.2483F);
-            this.ReportLabelRangoInicial.Name = "ReportLabelRangoInicial";
-            this.ReportLabelRangoInicial.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.ReportLabelRangoInicial.SizeF = new System.Drawing.SizeF(38.12494F, 21.95836F);
-            this.ReportLabelRangoInicial.StylePriority.UseBorderColor = false;
-            this.ReportLabelRangoInicial.StylePriority.UseFont = false;
-            this.ReportLabelRangoInicial.Text = "Inicial";
+            this.xrLabel32.StylePriority.UseTextAlignment = false;
+            this.xrLabel32.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
             // ReportLabelRango
             // 
             this.ReportLabelRango.BorderColor = System.Drawing.Color.Transparent;
             this.ReportLabelRango.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.ReportLabelRango.LocationFloat = new DevExpress.Utils.PointFloat(93.37048F, 119.2066F);
+            this.ReportLabelRango.LocationFloat = new DevExpress.Utils.PointFloat(7.290405F, 67.49271F);
             this.ReportLabelRango.Name = "ReportLabelRango";
             this.ReportLabelRango.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.ReportLabelRango.SizeF = new System.Drawing.SizeF(47.49994F, 21.95835F);
+            this.ReportLabelRango.SizeF = new System.Drawing.SizeF(99.87042F, 21.95835F);
             this.ReportLabelRango.StylePriority.UseBorderColor = false;
             this.ReportLabelRango.StylePriority.UseFont = false;
-            this.ReportLabelRango.Text = "Rango";
+            this.ReportLabelRango.StylePriority.UseTextAlignment = false;
+            this.ReportLabelRango.Text = "Rango Inicial:";
+            this.ReportLabelRango.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
             // xrLabel27
             // 
             this.xrLabel27.BorderColor = System.Drawing.Color.Transparent;
             this.xrLabel27.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CAI_SERIE]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?ParametroCAISerie")});
             this.xrLabel27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.xrLabel27.LocationFloat = new DevExpress.Utils.PointFloat(43.41666F, 31.95837F);
+            this.xrLabel27.LocationFloat = new DevExpress.Utils.PointFloat(182.1515F, 23.57598F);
             this.xrLabel27.Name = "xrLabel27";
             this.xrLabel27.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel27.SizeF = new System.Drawing.SizeF(97.4538F, 23F);
+            this.xrLabel27.SizeF = new System.Drawing.SizeF(128.1386F, 21.95837F);
             this.xrLabel27.StylePriority.UseBorderColor = false;
             this.xrLabel27.StylePriority.UseFont = false;
             // 
@@ -727,24 +708,26 @@
             // 
             this.ReportLabelNo.BorderColor = System.Drawing.Color.Transparent;
             this.ReportLabelNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.ReportLabelNo.LocationFloat = new DevExpress.Utils.PointFloat(10.00006F, 31.95837F);
+            this.ReportLabelNo.LocationFloat = new DevExpress.Utils.PointFloat(7.290405F, 23.57596F);
             this.ReportLabelNo.Name = "ReportLabelNo";
             this.ReportLabelNo.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.ReportLabelNo.SizeF = new System.Drawing.SizeF(33.41663F, 21.95837F);
             this.ReportLabelNo.StylePriority.UseBorderColor = false;
             this.ReportLabelNo.StylePriority.UseFont = false;
+            this.ReportLabelNo.StylePriority.UseTextAlignment = false;
             this.ReportLabelNo.Text = "No.";
+            this.ReportLabelNo.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
             // xrLabel24
             // 
             this.xrLabel24.BorderColor = System.Drawing.Color.Transparent;
             this.xrLabel24.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CAI]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?ParametroCAI")});
             this.xrLabel24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.xrLabel24.LocationFloat = new DevExpress.Utils.PointFloat(43.41669F, 8.958371F);
+            this.xrLabel24.LocationFloat = new DevExpress.Utils.PointFloat(182.1515F, 1.617615F);
             this.xrLabel24.Name = "xrLabel24";
             this.xrLabel24.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel24.SizeF = new System.Drawing.SizeF(189.9584F, 23F);
+            this.xrLabel24.SizeF = new System.Drawing.SizeF(128.1386F, 21.95836F);
             this.xrLabel24.StylePriority.UseBorderColor = false;
             this.xrLabel24.StylePriority.UseFont = false;
             // 
@@ -752,7 +735,7 @@
             // 
             this.ReportLabelCAI.BorderColor = System.Drawing.Color.Transparent;
             this.ReportLabelCAI.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.ReportLabelCAI.LocationFloat = new DevExpress.Utils.PointFloat(10F, 10.00001F);
+            this.ReportLabelCAI.LocationFloat = new DevExpress.Utils.PointFloat(7.290405F, 1.61762F);
             this.ReportLabelCAI.Name = "ReportLabelCAI";
             this.ReportLabelCAI.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.ReportLabelCAI.SizeF = new System.Drawing.SizeF(33.41663F, 21.95837F);
@@ -830,11 +813,11 @@
             // xrLabel14
             // 
             this.xrLabel14.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold);
-            this.xrLabel14.LocationFloat = new DevExpress.Utils.PointFloat(0.9999593F, 138.2483F);
+            this.xrLabel14.LocationFloat = new DevExpress.Utils.PointFloat(0F, 151.3596F);
             this.xrLabel14.Multiline = true;
             this.xrLabel14.Name = "xrLabel14";
             this.xrLabel14.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel14.SizeF = new System.Drawing.SizeF(505.1296F, 26.5416F);
+            this.xrLabel14.SizeF = new System.Drawing.SizeF(748F, 26.54156F);
             this.xrLabel14.StylePriority.UseFont = false;
             this.xrLabel14.StylePriority.UseTextAlignment = false;
             this.xrLabel14.Text = "Manifiesto De Carga Detallado";
@@ -1021,9 +1004,9 @@
             // UiLogoContainer
             // 
             this.UiLogoContainer.ImageAlignment = DevExpress.XtraPrinting.ImageAlignment.MiddleCenter;
-            this.UiLogoContainer.LocationFloat = new DevExpress.Utils.PointFloat(0.9999593F, 0F);
+            this.UiLogoContainer.LocationFloat = new DevExpress.Utils.PointFloat(0.9999452F, 0F);
             this.UiLogoContainer.Name = "UiLogoContainer";
-            this.UiLogoContainer.SizeF = new System.Drawing.SizeF(505.1296F, 105.9567F);
+            this.UiLogoContainer.SizeF = new System.Drawing.SizeF(397.4908F, 105.9567F);
             this.UiLogoContainer.Sizing = DevExpress.XtraPrinting.ImageSizeMode.StretchImage;
             // 
             // ParametroUsuario
@@ -1296,6 +1279,99 @@
             this.LINE_TOTAL_FORMAT.FieldType = DevExpress.XtraReports.UI.FieldType.Decimal;
             this.LINE_TOTAL_FORMAT.Name = "LINE_TOTAL_FORMAT";
             // 
+            // ParametroCAI
+            // 
+            this.ParametroCAI.Description = "parametroCAI";
+            this.ParametroCAI.Name = "ParametroCAI";
+            this.ParametroCAI.ValueInfo = "N/A";
+            dynamicListLookUpSettings1.DataMember = "MANIFIEST_REPORT";
+            dynamicListLookUpSettings1.DataSource = this.manifiestoDeCarga;
+            dynamicListLookUpSettings1.DisplayMember = "CAI";
+            dynamicListLookUpSettings1.SortMember = "CAI";
+            dynamicListLookUpSettings1.SortOrder = DevExpress.Data.ColumnSortOrder.Ascending;
+            dynamicListLookUpSettings1.ValueMember = "CAI";
+            this.ParametroCAI.ValueSourceSettings = dynamicListLookUpSettings1;
+            // 
+            // ParametroCAINumero
+            // 
+            this.ParametroCAINumero.Description = "CAINumero";
+            this.ParametroCAINumero.Name = "ParametroCAINumero";
+            this.ParametroCAINumero.ValueInfo = "N/A";
+            dynamicListLookUpSettings2.DataMember = "MANIFIEST_REPORT";
+            dynamicListLookUpSettings2.DataSource = this.manifiestoDeCarga;
+            dynamicListLookUpSettings2.DisplayMember = "CAI_NUMERO";
+            dynamicListLookUpSettings2.SortMember = "CAI_NUMERO";
+            dynamicListLookUpSettings2.SortOrder = DevExpress.Data.ColumnSortOrder.Ascending;
+            dynamicListLookUpSettings2.ValueMember = "CAI_NUMERO";
+            this.ParametroCAINumero.ValueSourceSettings = dynamicListLookUpSettings2;
+            // 
+            // ParametroCAISerie
+            // 
+            this.ParametroCAISerie.Description = "CAISerie";
+            this.ParametroCAISerie.Name = "ParametroCAISerie";
+            this.ParametroCAISerie.ValueInfo = "N/A";
+            dynamicListLookUpSettings3.DataMember = "MANIFIEST_REPORT";
+            dynamicListLookUpSettings3.DataSource = this.manifiestoDeCarga;
+            dynamicListLookUpSettings3.DisplayMember = "CAI_SERIE";
+            dynamicListLookUpSettings3.SortMember = "CAI_SERIE";
+            dynamicListLookUpSettings3.SortOrder = DevExpress.Data.ColumnSortOrder.Ascending;
+            dynamicListLookUpSettings3.ValueMember = "CAI_SERIE";
+            this.ParametroCAISerie.ValueSourceSettings = dynamicListLookUpSettings3;
+            // 
+            // ParametroCAIRangoInicial
+            // 
+            this.ParametroCAIRangoInicial.Description = "CAIRangoInicial";
+            this.ParametroCAIRangoInicial.Name = "ParametroCAIRangoInicial";
+            this.ParametroCAIRangoInicial.Type = typeof(decimal);
+            dynamicListLookUpSettings4.DataMember = "MANIFIEST_REPORT";
+            dynamicListLookUpSettings4.DataSource = this.manifiestoDeCarga;
+            dynamicListLookUpSettings4.DisplayMember = "CAI_RANGO_INICIAL";
+            dynamicListLookUpSettings4.SortMember = "CAI_RANGO_INICIAL";
+            dynamicListLookUpSettings4.SortOrder = DevExpress.Data.ColumnSortOrder.Ascending;
+            dynamicListLookUpSettings4.ValueMember = "CAI_RANGO_INICIAL";
+            this.ParametroCAIRangoInicial.ValueSourceSettings = dynamicListLookUpSettings4;
+            // 
+            // ParametroCAIRangoFinal
+            // 
+            this.ParametroCAIRangoFinal.Description = "CAIRangoFinal";
+            this.ParametroCAIRangoFinal.Name = "ParametroCAIRangoFinal";
+            this.ParametroCAIRangoFinal.Type = typeof(decimal);
+            dynamicListLookUpSettings5.DataMember = "MANIFIEST_REPORT";
+            dynamicListLookUpSettings5.DataSource = this.manifiestoDeCarga;
+            dynamicListLookUpSettings5.DisplayMember = "CAI_RANGO_FINAL";
+            dynamicListLookUpSettings5.SortMember = "CAI_RANGO_FINAL";
+            dynamicListLookUpSettings5.SortOrder = DevExpress.Data.ColumnSortOrder.Ascending;
+            dynamicListLookUpSettings5.ValueMember = "CAI_RANGO_FINAL";
+            this.ParametroCAIRangoFinal.ValueSourceSettings = dynamicListLookUpSettings5;
+            // 
+            // ParametroCAIFechaVencimiento
+            // 
+            this.ParametroCAIFechaVencimiento.Description = "CAIFechaVencimiento";
+            this.ParametroCAIFechaVencimiento.Name = "ParametroCAIFechaVencimiento";
+            this.ParametroCAIFechaVencimiento.Type = typeof(System.DateTime);
+            this.ParametroCAIFechaVencimiento.ValueInfo = "1900-01-01";
+            dynamicListLookUpSettings6.DataMember = "MANIFIEST_REPORT";
+            dynamicListLookUpSettings6.DataSource = this.manifiestoDeCarga;
+            dynamicListLookUpSettings6.DisplayMember = "CAI_FECHA_VENCIMIENTO";
+            dynamicListLookUpSettings6.SortMember = "CAI_FECHA_VENCIMIENTO";
+            dynamicListLookUpSettings6.SortOrder = DevExpress.Data.ColumnSortOrder.Ascending;
+            dynamicListLookUpSettings6.ValueMember = "CAI_FECHA_VENCIMIENTO";
+            this.ParametroCAIFechaVencimiento.ValueSourceSettings = dynamicListLookUpSettings6;
+            // 
+            // xrLabel25
+            // 
+            this.xrLabel25.BorderColor = System.Drawing.Color.Transparent;
+            this.xrLabel25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.xrLabel25.LocationFloat = new DevExpress.Utils.PointFloat(7.290405F, 89.45106F);
+            this.xrLabel25.Name = "xrLabel25";
+            this.xrLabel25.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel25.SizeF = new System.Drawing.SizeF(99.87042F, 21.95835F);
+            this.xrLabel25.StylePriority.UseBorderColor = false;
+            this.xrLabel25.StylePriority.UseFont = false;
+            this.xrLabel25.StylePriority.UseTextAlignment = false;
+            this.xrLabel25.Text = "Rango Final:";
+            this.xrLabel25.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            // 
             // bindingSource1
             // 
             this.bindingSource1.DataSource = this.manifiestoDeCarga;
@@ -1343,7 +1419,13 @@
             this.ParametroPiloto,
             this.ParametroVehiculo,
             this.SolicitudDeTraslado,
-            this.ParametroBodegaDestino});
+            this.ParametroBodegaDestino,
+            this.ParametroCAI,
+            this.ParametroCAINumero,
+            this.ParametroCAISerie,
+            this.ParametroCAIRangoInicial,
+            this.ParametroCAIRangoFinal,
+            this.ParametroCAIFechaVencimiento});
             this.StyleSheet.AddRange(new DevExpress.XtraReports.UI.XRControlStyle[] {
             this.Title,
             this.FieldCaption,
@@ -1450,15 +1532,19 @@
         private DevExpress.XtraReports.UI.XRLabel ReportLabelFechaDeVencimiento;
         private DevExpress.XtraReports.UI.XRLabel xrLabel33;
         private DevExpress.XtraReports.UI.XRLabel xrLabel32;
-        private DevExpress.XtraReports.UI.XRLabel ReportLabelRangoFinal;
-        private DevExpress.XtraReports.UI.XRLabel ReportLabelRangoInicial;
         private DevExpress.XtraReports.UI.XRLabel ReportLabelRango;
         private DevExpress.XtraReports.UI.XRLabel xrLabel27;
         private DevExpress.XtraReports.UI.XRLabel ReportLabelNo;
         private DevExpress.XtraReports.UI.XRLabel xrLabel24;
         private DevExpress.XtraReports.UI.XRLabel ReportLabelCAI;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel25;
         private System.Windows.Forms.BindingSource bindingSource1;
         private DataSets.ManifiestoDeCarga manifiestoDeCarga;
+        private DevExpress.XtraReports.Parameters.Parameter ParametroCAI;
+        private DevExpress.XtraReports.Parameters.Parameter ParametroCAINumero;
+        private DevExpress.XtraReports.Parameters.Parameter ParametroCAISerie;
+        private DevExpress.XtraReports.Parameters.Parameter ParametroCAIRangoInicial;
+        private DevExpress.XtraReports.Parameters.Parameter ParametroCAIRangoFinal;
+        private DevExpress.XtraReports.Parameters.Parameter ParametroCAIFechaVencimiento;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel25;
     }
 }

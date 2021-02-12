@@ -15,11 +15,11 @@ namespace MobilityScm.Modelo.Entidades
         public string DOCUMENT_PREFIX { get; set; }
         public IList<ManifiestoDetalle> Detalle { get; set; }
 
-        public string CAI { get; set; }
-        public string CAI_NUMERO { get; set; }
-        public int CAI_RANGO_INICIAL { get; set; }
-        public int CAI_RANGO_FINAL { get; set; }
-        public DateTime CAI_FECHA_VENCIMIENTO { get; set; }
+        //public string CAI { get; set; }
+        //public string CAI_NUMERO { get; set; }
+        //public int CAI_RANGO_INICIAL { get; set; }
+        //public int CAI_RANGO_FINAL { get; set; }
+        //public DateTime CAI_FECHA_VENCIMIENTO { get; set; }
 
         public string MANIFEST_TYPE { get; set; }
 
