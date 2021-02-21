@@ -7,6 +7,7 @@ using System.Data;
 using System.Data.Common;
 using MobilityScm.Modelo.Argumentos;
 using Telerik.OpenAccess.Data.Common;
+using System.Configuration;
 
 namespace MobilityScm.Modelo.Servicios
 {
@@ -53,6 +54,8 @@ namespace MobilityScm.Modelo.Servicios
         /// <returns></returns>
         public IList<Ubicacion> ObtenerUbicacionesTipoRampaYPuertaParaDespacho(string distributionCenterId)
         {
+            bool pAlt = bool.Parse(ConfigurationManager.AppSettings["PaseDeSalidaAlt"]);
+            
             DbParameter[] parameters = {
                 new OAParameter
                 {
@@ -60,7 +63,9 @@ namespace MobilityScm.Modelo.Servicios
                     Value =  distributionCenterId
                 }
             };
-
+            if (!pAlt) { 
+                
+            }
             return BaseDeDatosServicio.ExecuteQuery<Ubicacion>(BaseDeDatosServicio.Esquema + ".OP_WMS_SP_GET_LOCATION_FOR_DISPATCH", CommandType.StoredProcedure, parameters);
         }
 
