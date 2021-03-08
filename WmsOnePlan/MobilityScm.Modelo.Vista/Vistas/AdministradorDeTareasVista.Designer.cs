@@ -1031,7 +1031,8 @@
             formatConditionRuleExpression15.Appearance.BorderColor = System.Drawing.Color.Blue;
             formatConditionRuleExpression15.Appearance.Options.UseBackColor = true;
             formatConditionRuleExpression15.Appearance.Options.UseBorderColor = true;
-            formatConditionRuleExpression15.Expression = "[COMPLETED_DOC_ERP] <> 1 AND [IS_FROM_ERP] = 1";
+            formatConditionRuleExpression15.Expression = "([COMPLETED_DOC_ERP] <> 1 And [IS_FROM_ERP] = 1) Or ([IS_AUTHORIZED_DESCRIPTION] " +
+    "= \'TRANSPORTE\' And [IS_FROM_ERP] = \'Si\' And [IS_COMPLETED] = \'COMPLETA\')";
             gridFormatRule15.Rule = formatConditionRuleExpression15;
             gridFormatRule16.ApplyToRow = true;
             gridFormatRule16.Name = "Format8";
