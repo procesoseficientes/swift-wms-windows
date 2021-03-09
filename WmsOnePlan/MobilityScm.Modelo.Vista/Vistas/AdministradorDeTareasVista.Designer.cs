@@ -51,6 +51,7 @@
             DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression9 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule10 = new DevExpress.XtraGrid.GridFormatRule();
             DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression10 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdministradorDeTareasVista));
             DevExpress.XtraGrid.GridFormatRule gridFormatRule11 = new DevExpress.XtraGrid.GridFormatRule();
             DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression11 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule12 = new DevExpress.XtraGrid.GridFormatRule();
@@ -63,7 +64,6 @@
             DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression15 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule16 = new DevExpress.XtraGrid.GridFormatRule();
             DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression16 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdministradorDeTareasVista));
             DevExpress.XtraGrid.GridLevelNode gridLevelNode3 = new DevExpress.XtraGrid.GridLevelNode();
             DevExpress.XtraGrid.GridLevelNode gridLevelNode4 = new DevExpress.XtraGrid.GridLevelNode();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule17 = new DevExpress.XtraGrid.GridFormatRule();
@@ -974,8 +974,7 @@
             formatConditionRuleExpression10.Appearance.BorderColor = System.Drawing.Color.Lime;
             formatConditionRuleExpression10.Appearance.Options.UseBackColor = true;
             formatConditionRuleExpression10.Appearance.Options.UseBorderColor = true;
-            formatConditionRuleExpression10.Expression = "[IS_COMPLETED] = \'COMPLETA\' And ([TASK_SUBTYPE] <> \'RECEPCION_TRASLADO\' Or [TASK_" +
-    "SUBTYPE] <> \'TAREA_CONTEO_FISICO\')";
+            formatConditionRuleExpression10.Expression = resources.GetString("formatConditionRuleExpression10.Expression");
             formatConditionRuleExpression10.PredefinedName = "Green Fill, Green Text";
             gridFormatRule10.Rule = formatConditionRuleExpression10;
             gridFormatRule11.ApplyToRow = true;
@@ -1032,7 +1031,8 @@
             formatConditionRuleExpression15.Appearance.Options.UseBackColor = true;
             formatConditionRuleExpression15.Appearance.Options.UseBorderColor = true;
             formatConditionRuleExpression15.Expression = "([COMPLETED_DOC_ERP] <> 1 And [IS_FROM_ERP] = 1) Or ([IS_AUTHORIZED_DESCRIPTION] " +
-    "= \'TRANSPORTE\' And [IS_FROM_ERP] = \'Si\' And [IS_COMPLETED] = \'COMPLETA\')";
+    "= \'SI\' And [IS_FROM_ERP] = \'Si\' And [IS_COMPLETED] = \'COMPLETA\' And [TASK_SUBTYP" +
+    "E] = \'PICKING_WT\')";
             gridFormatRule15.Rule = formatConditionRuleExpression15;
             gridFormatRule16.ApplyToRow = true;
             gridFormatRule16.Name = "Format8";
