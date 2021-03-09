@@ -1028,8 +1028,10 @@
             formatConditionRuleExpression15.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             formatConditionRuleExpression15.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             formatConditionRuleExpression15.Appearance.BorderColor = System.Drawing.Color.Blue;
+            formatConditionRuleExpression15.Appearance.ForeColor = System.Drawing.Color.Black;
             formatConditionRuleExpression15.Appearance.Options.UseBackColor = true;
             formatConditionRuleExpression15.Appearance.Options.UseBorderColor = true;
+            formatConditionRuleExpression15.Appearance.Options.UseForeColor = true;
             formatConditionRuleExpression15.Expression = "([COMPLETED_DOC_ERP] <> 1 And [IS_FROM_ERP] = 1) Or ([IS_AUTHORIZED_DESCRIPTION] " +
     "= \'SI\' And [IS_FROM_ERP] = \'Si\' And [IS_COMPLETED] = \'COMPLETA\' And [TASK_SUBTYP" +
     "E] = \'PICKING_WT\')";
