@@ -11,7 +11,8 @@ namespace MobilityScm.Modelo.Interfaces.Servicios
         Operacion GrabarPaseDeSalida(PaseDeSalidaArgumento paseDeSalidaArgumento);
         IList<PaseDeSalidaEncabezado> ObtenerPase(PaseDeSalidaArgumento argumento);
         IList<PaseDeSalidaDetalle> ObtenerDetalleDePase(PaseDeSalidaArgumento argumento);
-        DataTable ActualizarEstadoParaElPaseDeSalida(PaseDeSalidaArgumento paseDeSalidaArgumento);
+        DataTable ActualizarEstadoParaElPaseDeSalidaFerco(PaseDeSalidaArgumento paseDeSalidaArgumento);
+        Operacion ActualizarEstadoParaElPaseDeSalida(PaseDeSalidaArgumento paseDeSalidaArgumento);
         IList<PaseDeSalida> ObtenerPasesDeSalidaParaReporte(PaseDeSalidaArgumento paseDeSalidaArgumento);
         IList<PaseDeSalida> ObtnerPasesDeSalidas(PaseDeSalidaArgumento paseDeSalidaArgumento);
     }
