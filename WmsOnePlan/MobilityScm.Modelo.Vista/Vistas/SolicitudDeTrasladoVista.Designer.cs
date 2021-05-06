@@ -326,7 +326,6 @@
             this.colMATERIAL_ID.FieldName = "MATERIAL_ID";
             this.colMATERIAL_ID.Name = "colMATERIAL_ID";
             this.colMATERIAL_ID.OptionsColumn.AllowEdit = false;
-            this.colMATERIAL_ID.OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList;
             this.colMATERIAL_ID.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count, "MATERIAL_ID", "Total: {0:#,###,##0.00}")});
             this.colMATERIAL_ID.Visible = true;
