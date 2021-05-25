@@ -680,6 +680,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\AdministradorDeTareasVista.resx">
       <DependentUpon>AdministradorDeTareasVista.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\AsignacionConteoFisico.resx">
       <DependentUpon>AsignacionConteoFisico.cs</DependentUpon>
@@ -761,6 +762,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\RecepcionErpVista.resx">
       <DependentUpon>RecepcionErpVista.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\ReporteDeSolicitudDeTrasladoVista.resx">
       <DependentUpon>ReporteDeSolicitudDeTrasladoVista.cs</DependentUpon>
@@ -776,6 +778,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\DemandaDeDespachoVista.resx">
       <DependentUpon>DemandaDeDespachoVista.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\SolicitudDeTrasladoVista.resx">
       <DependentUpon>SolicitudDeTrasladoVista.cs</DependentUpon>

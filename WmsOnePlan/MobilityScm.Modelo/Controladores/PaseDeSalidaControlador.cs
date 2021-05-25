@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
 using System.Linq;
 using System.Text;
@@ -150,16 +151,35 @@ namespace MobilityScm.Modelo.Controladores
         {
             try
             {
-                DataTable op = PaseDeSalidaServicio.ActualizarEstadoParaElPaseDeSalida(e);
-                int result = op.Rows[0].Field<int>(0);
-                if (result == 1)
+                bool pAlt = bool.Parse(ConfigurationManager.AppSettings["PaseDeSalidaAlt"]);
+                // Actualiza el estado del Pase de Salida para Ferco
+                if (pAlt)
                 {
-                    _vista.TerminoDeActualizarEstado(Convert.ToInt32(e.PaseDeSalidaEncabezado.PASS_ID),
-                        e.PaseDeSalidaEncabezado.STATUS);
+                    DataTable op = PaseDeSalidaServicio.ActualizarEstadoParaElPaseDeSalidaFerco(e);
+                    int result = op.Rows[0].Field<int>(0);
+                    if (result == 1)
+                    {
+                        _vista.TerminoDeActualizarEstado(Convert.ToInt32(e.PaseDeSalidaEncabezado.PASS_ID),
+                            e.PaseDeSalidaEncabezado.STATUS);
+                    }
+                    else
+                    {
+                        InteraccionConUsuarioServicio.MensajeErrorDialogo(op.Rows[0].Field<string>(1));
+                    }
                 }
+                // Actualiza el estado del Pase de Salida para los demas clientes
                 else
                 {
-                    InteraccionConUsuarioServicio.MensajeErrorDialogo(op.Rows[0].Field<string>(1));
+                    var op = PaseDeSalidaServicio.ActualizarEstadoParaElPaseDeSalida(e);
+                    if (op.Resultado == ResultadoOperacionTipo.Exito)
+                    {
+                        _vista.TerminoDeActualizarEstado(Convert.ToInt32(e.PaseDeSalidaEncabezado.PASS_ID),
+                            e.PaseDeSalidaEncabezado.STATUS);
+                    }
+                    else
+                    {
+                        InteraccionConUsuarioServicio.MensajeErrorDialogo(op.Mensaje);
+                    }
                 }
             }
             catch (Exception ex)

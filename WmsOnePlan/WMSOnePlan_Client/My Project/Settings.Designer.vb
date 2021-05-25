@@ -182,11 +182,47 @@ Namespace My
                 Return CType(Me("UpdateServer"),String)
             End Get
         End Property
-
-        Public Function GetWMSOnePlan_Client_OnePlanServices_Security_WMS_Security() As String
-            Return CType(Me("WMSOnePlan_Client_OnePlanServices_Security_WMS_Security"), String)
-        End Function
-
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("PropiedadDeDatosGenerales_LEAD_TIME")>  _
+        Public Property _LEAD_TIME() As String
+            Get
+                Return CType(Me("_LEAD_TIME"),String)
+            End Get
+            Set
+                Me("_LEAD_TIME") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("True")>  _
+        Public ReadOnly Property PaseDeSalidaAlt() As Boolean
+            Get
+                Return CType(Me("PaseDeSalidaAlt"),Boolean)
+            End Get
+        End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("http://10.240.29.104:8090")>  _
+        Public ReadOnly Property WSHOST() As String
+            Get
+                Return CType(Me("WSHOST"),String)
+            End Get
+        End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.WebServiceUrl),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("http://10.240.29.104:8090")>  _
+        Public ReadOnly Property WMSOnePlan_Client_OnePlanServices_Security_WMS_Security() As String
+            Get
+                Return CType(Me("WMSOnePlan_Client_OnePlanServices_Security_WMS_Security"),String)
+            End Get
+        End Property
+        
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("ferco")>  _
@@ -211,46 +247,6 @@ Namespace My
         Public ReadOnly Property SERVER_IP() As String
             Get
                 Return CType(Me("SERVER_IP"),String)
-            End Get
-        End Property
-        
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("False")>  _
-        Public ReadOnly Property PaseDeSalidaAlt() As Boolean
-            Get
-                Return CType(Me("PaseDeSalidaAlt"),Boolean)
-            End Get
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("8755A")>  _
-        Public Property LicenseKey() As String
-            Get
-                Return CType(Me("LicenseKey"),String)
-            End Get
-            Set
-                Me("LicenseKey") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("http://10.240.29.104:8090")>  _
-        Public ReadOnly Property WSHOST() As String
-            Get
-                Return CType(Me("WSHOST"),String)
-            End Get
-        End Property
-        
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.WebServiceUrl),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("http://10.240.29.104:8090")>  _
-        Public ReadOnly Property WMSOnePlan_Client_OnePlanServices_Security_WMS_Security() As String
-            Get
-                Return CType(Me("WMSOnePlan_Client_OnePlanServices_Security_WMS_Security"),String)
             End Get
         End Property
     End Class

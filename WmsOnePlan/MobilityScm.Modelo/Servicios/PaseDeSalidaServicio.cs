@@ -363,7 +363,7 @@ namespace MobilityScm.Modelo.Servicios
             return BaseDeDatosServicio.ExecuteQuery<PaseDeSalidaDetalle>(BaseDeDatosServicio.Esquema + ".[OP_WMS_SP_GET_DETAIL_PASS]", CommandType.StoredProcedure, parameters);
         }
 
-        public DataTable ActualizarEstadoParaElPaseDeSalida(PaseDeSalidaArgumento paseDeSalidaArgumento)
+        public DataTable ActualizarEstadoParaElPaseDeSalidaFerco(PaseDeSalidaArgumento paseDeSalidaArgumento)
         {
             string wshost = ConfigurationManager.AppSettings["WSHOST"].ToString();
             var xserv = new OnePlanServices_Trans.WMS_TransSoapClient("WMS_TransSoap", wshost + "/Trans/WMS_Trans.asmx");
@@ -421,6 +421,53 @@ namespace MobilityScm.Modelo.Servicios
                 };
             }*/
 
+        }
+
+        public Operacion ActualizarEstadoParaElPaseDeSalida(PaseDeSalidaArgumento paseDeSalidaArgumento)
+        {
+            try
+            {
+                DbParameter[] parameters ={
+                   new OAParameter
+                   {
+                       ParameterName = "@PASS_ID",
+                       Value = paseDeSalidaArgumento.PaseDeSalidaEncabezado.PASS_ID
+                   }
+                   ,
+                       new OAParameter
+                   {
+                       ParameterName = "@STATUS",
+                       Value = paseDeSalidaArgumento.PaseDeSalidaEncabezado.STATUS
+                   }
+                       ,
+                       new OAParameter
+                   {
+                       ParameterName = "@LOGIN",
+                       Value = paseDeSalidaArgumento.Login
+                   }
+                };
+                return BaseDeDatosServicio.ExecuteQuery<Operacion>(BaseDeDatosServicio.Esquema + ".[OP_WMS_SP_UPDATE_STATUS_BY_EXIT_PASS]", CommandType.StoredProcedure, parameters)[0];
+            }
+            catch (DbException ex)
+            {
+                BaseDeDatosServicio.Rollback();
+                return new Operacion
+                {
+                    Codigo = ex.ErrorCode,
+                    Mensaje = ex.Message,
+                    Resultado = ResultadoOperacionTipo.Error
+                };
+            }
+            catch (Exception ex)
+            {
+                BaseDeDatosServicio.Rollback();
+                return new Operacion
+                {
+                    Codigo = -1,
+                    Mensaje = ex.Message,
+                    Resultado = ResultadoOperacionTipo.Error
+                };
+            }
         }
 
         public IList<PaseDeSalida> ObtenerPasesDeSalidaParaReporte(PaseDeSalidaArgumento paseDeSalidaArgumento)

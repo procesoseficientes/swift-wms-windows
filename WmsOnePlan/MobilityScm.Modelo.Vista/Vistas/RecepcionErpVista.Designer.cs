@@ -30,21 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RecepcionErpVista));
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions10 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject37 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject38 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject39 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject40 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions11 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject41 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject42 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject43 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject44 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions2 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
@@ -55,6 +45,11 @@
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject10 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject11 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject12 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions8 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject29 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject30 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject31 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject32 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions6 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject21 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject22 = new DevExpress.Utils.SerializableAppearanceObject();
@@ -70,21 +65,26 @@
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject14 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject15 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject16 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions8 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject29 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject30 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject31 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject32 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule6 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression6 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule7 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression7 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule8 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression8 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule9 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression9 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule10 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression10 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions9 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject33 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject34 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject35 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject36 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions7 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject25 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject26 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject27 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject28 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule1 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression1 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule2 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression2 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule3 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression3 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule4 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression4 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule5 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression5 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
             this.colDetIS_ASSIGNED = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDetIS_MISSING = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UiBarraContenedorPrincipal = new DevExpress.XtraBars.BarManager(this.components);
@@ -93,6 +93,7 @@
             this.UiBotonContraer = new DevExpress.XtraBars.BarButtonItem();
             this.UiBotonExportarExcel = new DevExpress.XtraBars.BarButtonItem();
             this.UiBotonNuevo = new DevExpress.XtraBars.BarButtonItem();
+            this.bbi_Factura = new DevExpress.XtraBars.BarButtonItem();
             this.UiBotonGrabar = new DevExpress.XtraBars.BarButtonItem();
             this.UiBarFuente = new DevExpress.XtraBars.BarEditItem();
             this.UiGridLookUpFuente = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
@@ -188,7 +189,6 @@
             this.UiGrupoTarea = new DevExpress.XtraEditors.GroupControl();
             this.UiError = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.bbi_Factura = new DevExpress.XtraBars.BarButtonItem();
             this.LoadLayout = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.UiBarraContenedorPrincipal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UiGridLookUpFuente)).BeginInit();
@@ -230,21 +230,17 @@
             // 
             this.colDetIS_ASSIGNED.Caption = "Asignado";
             this.colDetIS_ASSIGNED.FieldName = "IS_ASSIGNED";
-            this.colDetIS_ASSIGNED.MinWidth = 40;
             this.colDetIS_ASSIGNED.Name = "colDetIS_ASSIGNED";
             this.colDetIS_ASSIGNED.OptionsColumn.AllowEdit = false;
             this.colDetIS_ASSIGNED.OptionsColumn.ShowInCustomizationForm = false;
-            this.colDetIS_ASSIGNED.Width = 150;
             // 
             // colDetIS_MISSING
             // 
             this.colDetIS_MISSING.Caption = "Es faltante";
             this.colDetIS_MISSING.FieldName = "IS_MISSING";
-            this.colDetIS_MISSING.MinWidth = 40;
             this.colDetIS_MISSING.Name = "colDetIS_MISSING";
             this.colDetIS_MISSING.OptionsColumn.AllowEdit = false;
             this.colDetIS_MISSING.OptionsColumn.ShowInCustomizationForm = false;
-            this.colDetIS_MISSING.Width = 150;
             // 
             // UiBarraContenedorPrincipal
             // 
@@ -335,6 +331,16 @@
             this.UiBotonNuevo.Name = "UiBotonNuevo";
             this.UiBotonNuevo.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.UiBotonNuevo_ItemClick);
             // 
+            // bbi_Factura
+            // 
+            this.bbi_Factura.Caption = "Leer factura";
+            this.bbi_Factura.Id = 13;
+            this.bbi_Factura.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bbi_Factura.ImageOptions.Image")));
+            this.bbi_Factura.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("bbi_Factura.ImageOptions.LargeImage")));
+            this.bbi_Factura.Name = "bbi_Factura";
+            this.bbi_Factura.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            this.bbi_Factura.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbi_Factura_ItemClick);
+            // 
             // UiBotonGrabar
             // 
             this.UiBotonGrabar.Caption = "Grabar";
@@ -420,35 +426,31 @@
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.UiBarraContenedorPrincipal;
-            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(6);
-            this.barDockControlTop.Size = new System.Drawing.Size(2666, 46);
+            this.barDockControlTop.Size = new System.Drawing.Size(692, 24);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 1315);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 393);
             this.barDockControlBottom.Manager = this.UiBarraContenedorPrincipal;
-            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(6);
-            this.barDockControlBottom.Size = new System.Drawing.Size(2666, 0);
+            this.barDockControlBottom.Size = new System.Drawing.Size(692, 0);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 46);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 24);
             this.barDockControlLeft.Manager = this.UiBarraContenedorPrincipal;
-            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(6);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 1269);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 369);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(2666, 46);
+            this.barDockControlRight.Location = new System.Drawing.Point(692, 24);
             this.barDockControlRight.Manager = this.UiBarraContenedorPrincipal;
-            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(6);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 1269);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 369);
             // 
             // UiComboFuente
             // 
@@ -467,10 +469,9 @@
             // 
             // UiEtiquetaCliente
             // 
-            this.UiEtiquetaCliente.Location = new System.Drawing.Point(10, 50);
-            this.UiEtiquetaCliente.Margin = new System.Windows.Forms.Padding(6);
+            this.UiEtiquetaCliente.Location = new System.Drawing.Point(5, 26);
             this.UiEtiquetaCliente.Name = "UiEtiquetaCliente";
-            this.UiEtiquetaCliente.Size = new System.Drawing.Size(71, 25);
+            this.UiEtiquetaCliente.Size = new System.Drawing.Size(37, 13);
             this.UiEtiquetaCliente.TabIndex = 4;
             this.UiEtiquetaCliente.Text = "Cliente:";
             // 
@@ -479,19 +480,18 @@
             this.UiListaCliente.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.UiListaCliente.EditValue = "CLIENT_CODE";
-            this.UiListaCliente.Location = new System.Drawing.Point(208, 44);
-            this.UiListaCliente.Margin = new System.Windows.Forms.Padding(6);
+            this.UiListaCliente.Location = new System.Drawing.Point(104, 23);
             this.UiListaCliente.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiListaCliente.Name = "UiListaCliente";
-            editorButtonImageOptions10.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions10.Image")));
+            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
             this.UiListaCliente.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions10, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject37, serializableAppearanceObject38, serializableAppearanceObject39, serializableAppearanceObject40, "", "REFRESCAR-CLIENTE", null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", "REFRESCAR-CLIENTE", null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.UiListaCliente.Properties.DisplayMember = "COMPANY_NAME";
             this.UiListaCliente.Properties.PopupView = this.UiVistaCliente;
             this.UiListaCliente.Properties.ValueMember = "CLIENT_CODE";
             this.UiListaCliente.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
-            this.UiListaCliente.Size = new System.Drawing.Size(1686, 40);
+            this.UiListaCliente.Size = new System.Drawing.Size(201, 24);
             this.UiListaCliente.TabIndex = 9;
             this.UiListaCliente.EditValueChanged += new System.EventHandler(this.UiListaCliente_EditValueChanged);
             this.UiListaCliente.Click += new System.EventHandler(this.UiListaCliente_Click);
@@ -534,10 +534,9 @@
             // 
             // UiEtiquetaERP
             // 
-            this.UiEtiquetaERP.Location = new System.Drawing.Point(10, 100);
-            this.UiEtiquetaERP.Margin = new System.Windows.Forms.Padding(6);
+            this.UiEtiquetaERP.Location = new System.Drawing.Point(5, 52);
             this.UiEtiquetaERP.Name = "UiEtiquetaERP";
-            this.UiEtiquetaERP.Size = new System.Drawing.Size(44, 25);
+            this.UiEtiquetaERP.Size = new System.Drawing.Size(23, 13);
             this.UiEtiquetaERP.TabIndex = 10;
             this.UiEtiquetaERP.Text = "ERP:";
             // 
@@ -545,20 +544,19 @@
             // 
             this.UiListaErp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.UiListaErp.Location = new System.Drawing.Point(208, 94);
-            this.UiListaErp.Margin = new System.Windows.Forms.Padding(6);
+            this.UiListaErp.Location = new System.Drawing.Point(104, 49);
             this.UiListaErp.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiListaErp.Name = "UiListaErp";
-            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
-            editorButtonImageOptions11.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions11.Image")));
+            editorButtonImageOptions2.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions2.Image")));
+            editorButtonImageOptions3.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions3.Image")));
             this.UiListaErp.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", "REFRESCAR-ERP", null, DevExpress.Utils.ToolTipAnchor.Default),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions11, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject41, serializableAppearanceObject42, serializableAppearanceObject43, serializableAppearanceObject44, "", "AGREGAR-ERP", null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", "REFRESCAR-ERP", null, DevExpress.Utils.ToolTipAnchor.Default),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions3, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject9, serializableAppearanceObject10, serializableAppearanceObject11, serializableAppearanceObject12, "", "AGREGAR-ERP", null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.UiListaErp.Properties.PopupView = this.UiVistaErpEncabezado;
             this.UiListaErp.Properties.ValueMember = "SAP_REFERENCE";
             this.UiListaErp.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
-            this.UiListaErp.Size = new System.Drawing.Size(1686, 40);
+            this.UiListaErp.Size = new System.Drawing.Size(201, 24);
             this.UiListaErp.TabIndex = 11;
             this.UiListaErp.EditValueChanged += new System.EventHandler(this.UiListaErp_EditValueChanged);
             this.UiListaErp.CustomDisplayText += new DevExpress.XtraEditors.Controls.CustomDisplayTextEventHandler(this.UiListaErp_CustomDisplayText);
@@ -643,18 +641,18 @@
             // 
             this.UiListaUbicacion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.UiListaUbicacion.Location = new System.Drawing.Point(174, 94);
-            this.UiListaUbicacion.Margin = new System.Windows.Forms.Padding(6);
+            this.UiListaUbicacion.Location = new System.Drawing.Point(87, 49);
             this.UiListaUbicacion.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiListaUbicacion.Name = "UiListaUbicacion";
+            editorButtonImageOptions8.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions8.Image")));
             this.UiListaUbicacion.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "Refrescar", -1, true, true, true, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", "REFRESCAR-UBICACION", null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions8, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject29, serializableAppearanceObject30, serializableAppearanceObject31, serializableAppearanceObject32, "", "REFRESCAR-UBICACION", null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.UiListaUbicacion.Properties.DisplayMember = "LOCATION_SPOT";
             this.UiListaUbicacion.Properties.PopupView = this.UiVistaDeListaUbicacion;
             this.UiListaUbicacion.Properties.ValueMember = "LOCATION_SPOT";
             this.UiListaUbicacion.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
-            this.UiListaUbicacion.Size = new System.Drawing.Size(500, 42);
+            this.UiListaUbicacion.Size = new System.Drawing.Size(250, 22);
             this.UiListaUbicacion.TabIndex = 15;
             // 
             // UiVistaDeListaUbicacion
@@ -707,10 +705,9 @@
             // 
             // UiEtiquetaUbicacion
             // 
-            this.UiEtiquetaUbicacion.Location = new System.Drawing.Point(10, 100);
-            this.UiEtiquetaUbicacion.Margin = new System.Windows.Forms.Padding(6);
+            this.UiEtiquetaUbicacion.Location = new System.Drawing.Point(5, 52);
             this.UiEtiquetaUbicacion.Name = "UiEtiquetaUbicacion";
-            this.UiEtiquetaUbicacion.Size = new System.Drawing.Size(97, 25);
+            this.UiEtiquetaUbicacion.Size = new System.Drawing.Size(49, 13);
             this.UiEtiquetaUbicacion.TabIndex = 14;
             this.UiEtiquetaUbicacion.Text = "Ubicación:";
             // 
@@ -718,19 +715,18 @@
             // 
             this.UiListaOperador.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.UiListaOperador.Location = new System.Drawing.Point(174, 44);
-            this.UiListaOperador.Margin = new System.Windows.Forms.Padding(6);
+            this.UiListaOperador.Location = new System.Drawing.Point(87, 23);
             this.UiListaOperador.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiListaOperador.Name = "UiListaOperador";
-            editorButtonImageOptions3.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions3.Image")));
+            editorButtonImageOptions6.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions6.Image")));
             this.UiListaOperador.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions3, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject9, serializableAppearanceObject10, serializableAppearanceObject11, serializableAppearanceObject12, "", "REFRESCAR-USUARIO", null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions6, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject21, serializableAppearanceObject22, serializableAppearanceObject23, serializableAppearanceObject24, "", "REFRESCAR-USUARIO", null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.UiListaOperador.Properties.DisplayMember = "LOGIN_ID";
             this.UiListaOperador.Properties.PopupView = this.UiVistaUsuario;
             this.UiListaOperador.Properties.ValueMember = "LOGIN_ID";
             this.UiListaOperador.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
-            this.UiListaOperador.Size = new System.Drawing.Size(500, 40);
+            this.UiListaOperador.Size = new System.Drawing.Size(250, 24);
             this.UiListaOperador.TabIndex = 13;
             // 
             // UiVistaUsuario
@@ -763,37 +759,33 @@
             // 
             // UiEtiquetaOperador
             // 
-            this.UiEtiquetaOperador.Location = new System.Drawing.Point(10, 50);
-            this.UiEtiquetaOperador.Margin = new System.Windows.Forms.Padding(6);
+            this.UiEtiquetaOperador.Location = new System.Drawing.Point(5, 26);
             this.UiEtiquetaOperador.Name = "UiEtiquetaOperador";
-            this.UiEtiquetaOperador.Size = new System.Drawing.Size(95, 25);
+            this.UiEtiquetaOperador.Size = new System.Drawing.Size(50, 13);
             this.UiEtiquetaOperador.TabIndex = 12;
             this.UiEtiquetaOperador.Text = "Operador:";
             // 
             // UiEtiqeutaTipoRecepcion
             // 
-            this.UiEtiqeutaTipoRecepcion.Location = new System.Drawing.Point(10, 206);
-            this.UiEtiqeutaTipoRecepcion.Margin = new System.Windows.Forms.Padding(6);
+            this.UiEtiqeutaTipoRecepcion.Location = new System.Drawing.Point(5, 107);
             this.UiEtiqeutaTipoRecepcion.Name = "UiEtiqeutaTipoRecepcion";
-            this.UiEtiqeutaTipoRecepcion.Size = new System.Drawing.Size(149, 25);
+            this.UiEtiqeutaTipoRecepcion.Size = new System.Drawing.Size(76, 13);
             this.UiEtiqeutaTipoRecepcion.TabIndex = 20;
             this.UiEtiqeutaTipoRecepcion.Text = "Tipo Recepción:";
             // 
             // UiEtiquetaAcuerdoComercial
             // 
-            this.UiEtiquetaAcuerdoComercial.Location = new System.Drawing.Point(10, 150);
-            this.UiEtiquetaAcuerdoComercial.Margin = new System.Windows.Forms.Padding(6);
+            this.UiEtiquetaAcuerdoComercial.Location = new System.Drawing.Point(5, 78);
             this.UiEtiquetaAcuerdoComercial.Name = "UiEtiquetaAcuerdoComercial";
-            this.UiEtiquetaAcuerdoComercial.Size = new System.Drawing.Size(183, 25);
+            this.UiEtiquetaAcuerdoComercial.Size = new System.Drawing.Size(93, 13);
             this.UiEtiquetaAcuerdoComercial.TabIndex = 21;
             this.UiEtiquetaAcuerdoComercial.Text = "Acuerdo Comercial:";
             // 
             // UiEtiquetaPolizaDeSeguro
             // 
-            this.UiEtiquetaPolizaDeSeguro.Location = new System.Drawing.Point(10, 200);
-            this.UiEtiquetaPolizaDeSeguro.Margin = new System.Windows.Forms.Padding(6);
+            this.UiEtiquetaPolizaDeSeguro.Location = new System.Drawing.Point(5, 104);
             this.UiEtiquetaPolizaDeSeguro.Name = "UiEtiquetaPolizaDeSeguro";
-            this.UiEtiquetaPolizaDeSeguro.Size = new System.Drawing.Size(163, 25);
+            this.UiEtiquetaPolizaDeSeguro.Size = new System.Drawing.Size(83, 13);
             this.UiEtiquetaPolizaDeSeguro.TabIndex = 22;
             this.UiEtiquetaPolizaDeSeguro.Text = "Poliza de Seguro:";
             // 
@@ -801,19 +793,18 @@
             // 
             this.UiListaAcuerdoComercial.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.UiListaAcuerdoComercial.Location = new System.Drawing.Point(208, 144);
-            this.UiListaAcuerdoComercial.Margin = new System.Windows.Forms.Padding(6);
+            this.UiListaAcuerdoComercial.Location = new System.Drawing.Point(104, 75);
             this.UiListaAcuerdoComercial.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiListaAcuerdoComercial.Name = "UiListaAcuerdoComercial";
-            editorButtonImageOptions6.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions6.Image")));
+            editorButtonImageOptions5.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions5.Image")));
             this.UiListaAcuerdoComercial.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions6, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject21, serializableAppearanceObject22, serializableAppearanceObject23, serializableAppearanceObject24, "", "REFRESCAR-ACUERDOCOMERCIAL", null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions5, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject17, serializableAppearanceObject18, serializableAppearanceObject19, serializableAppearanceObject20, "", "REFRESCAR-ACUERDOCOMERCIAL", null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.UiListaAcuerdoComercial.Properties.DisplayMember = "DESCRIPCION";
             this.UiListaAcuerdoComercial.Properties.PopupView = this.UiVistaAcuerdoComercial;
             this.UiListaAcuerdoComercial.Properties.ValueMember = "ACUERDO_COMERCIAL";
             this.UiListaAcuerdoComercial.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
-            this.UiListaAcuerdoComercial.Size = new System.Drawing.Size(1686, 40);
+            this.UiListaAcuerdoComercial.Size = new System.Drawing.Size(201, 24);
             this.UiListaAcuerdoComercial.TabIndex = 23;
             // 
             // UiVistaAcuerdoComercial
@@ -848,18 +839,17 @@
             // 
             this.UiListaPolizasDeSeguro.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.UiListaPolizasDeSeguro.Location = new System.Drawing.Point(208, 194);
-            this.UiListaPolizasDeSeguro.Margin = new System.Windows.Forms.Padding(6);
+            this.UiListaPolizasDeSeguro.Location = new System.Drawing.Point(104, 101);
             this.UiListaPolizasDeSeguro.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiListaPolizasDeSeguro.Name = "UiListaPolizasDeSeguro";
-            editorButtonImageOptions5.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions5.Image")));
+            editorButtonImageOptions4.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions4.Image")));
             this.UiListaPolizasDeSeguro.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions5, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject17, serializableAppearanceObject18, serializableAppearanceObject19, serializableAppearanceObject20, "", "REFRESCAR-POLIZASEGURO", null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions4, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject13, serializableAppearanceObject14, serializableAppearanceObject15, serializableAppearanceObject16, "", "REFRESCAR-POLIZASEGURO", null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.UiListaPolizasDeSeguro.Properties.DisplayMember = "POLIZA_INSURANCE";
             this.UiListaPolizasDeSeguro.Properties.PopupView = this.UiVistaPolizasSeguro;
             this.UiListaPolizasDeSeguro.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
-            this.UiListaPolizasDeSeguro.Size = new System.Drawing.Size(1686, 40);
+            this.UiListaPolizasDeSeguro.Size = new System.Drawing.Size(201, 24);
             this.UiListaPolizasDeSeguro.TabIndex = 24;
             // 
             // UiVistaPolizasSeguro
@@ -901,18 +891,18 @@
             // 
             this.UiListaTipoRecepcion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.UiListaTipoRecepcion.Location = new System.Drawing.Point(174, 200);
-            this.UiListaTipoRecepcion.Margin = new System.Windows.Forms.Padding(6);
+            this.UiListaTipoRecepcion.Location = new System.Drawing.Point(87, 104);
             this.UiListaTipoRecepcion.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiListaTipoRecepcion.Name = "UiListaTipoRecepcion";
+            editorButtonImageOptions9.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions9.Image")));
             this.UiListaTipoRecepcion.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions4, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject13, serializableAppearanceObject14, serializableAppearanceObject15, serializableAppearanceObject16, "", "REFRESCAR-TIPORECEPCION", null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions9, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject33, serializableAppearanceObject34, serializableAppearanceObject35, serializableAppearanceObject36, "", "REFRESCAR-TIPORECEPCION", null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.UiListaTipoRecepcion.Properties.DisplayMember = "PARAM_CAPTION";
             this.UiListaTipoRecepcion.Properties.PopupView = this.UiVistaTipoRecepcion;
             this.UiListaTipoRecepcion.Properties.ValueMember = "TEXT_VALUE";
             this.UiListaTipoRecepcion.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
-            this.UiListaTipoRecepcion.Size = new System.Drawing.Size(500, 40);
+            this.UiListaTipoRecepcion.Size = new System.Drawing.Size(250, 20);
             this.UiListaTipoRecepcion.TabIndex = 25;
             // 
             // UiVistaTipoRecepcion
@@ -935,10 +925,9 @@
             // 
             // UiEtiquetaPrioridad
             // 
-            this.UiEtiquetaPrioridad.Location = new System.Drawing.Point(10, 150);
-            this.UiEtiquetaPrioridad.Margin = new System.Windows.Forms.Padding(6);
+            this.UiEtiquetaPrioridad.Location = new System.Drawing.Point(5, 78);
             this.UiEtiquetaPrioridad.Name = "UiEtiquetaPrioridad";
-            this.UiEtiquetaPrioridad.Size = new System.Drawing.Size(91, 25);
+            this.UiEtiquetaPrioridad.Size = new System.Drawing.Size(46, 13);
             this.UiEtiquetaPrioridad.TabIndex = 26;
             this.UiEtiquetaPrioridad.Text = "Prioridad:";
             // 
@@ -946,19 +935,18 @@
             // 
             this.UiListaPrioridad.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.UiListaPrioridad.Location = new System.Drawing.Point(174, 146);
-            this.UiListaPrioridad.Margin = new System.Windows.Forms.Padding(6);
+            this.UiListaPrioridad.Location = new System.Drawing.Point(87, 76);
             this.UiListaPrioridad.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiListaPrioridad.Name = "UiListaPrioridad";
-            editorButtonImageOptions8.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions8.Image")));
+            editorButtonImageOptions7.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions7.Image")));
             this.UiListaPrioridad.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions8, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject29, serializableAppearanceObject30, serializableAppearanceObject31, serializableAppearanceObject32, "", "REFRESCAR-PRIORIDAD", null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions7, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject25, serializableAppearanceObject26, serializableAppearanceObject27, serializableAppearanceObject28, "", "REFRESCAR-PRIORIDAD", null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.UiListaPrioridad.Properties.DisplayMember = "PARAM_CAPTION";
             this.UiListaPrioridad.Properties.PopupView = this.gridView7;
             this.UiListaPrioridad.Properties.ValueMember = "NUMERIC_VALUE";
             this.UiListaPrioridad.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
-            this.UiListaPrioridad.Size = new System.Drawing.Size(500, 40);
+            this.UiListaPrioridad.Size = new System.Drawing.Size(250, 24);
             this.UiListaPrioridad.TabIndex = 27;
             // 
             // gridView7
@@ -981,14 +969,12 @@
             // UiContenedorVistaErp
             // 
             this.UiContenedorVistaErp.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.UiContenedorVistaErp.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(6);
-            this.UiContenedorVistaErp.Location = new System.Drawing.Point(0, 327);
+            this.UiContenedorVistaErp.Location = new System.Drawing.Point(0, 170);
             this.UiContenedorVistaErp.MainView = this.UiVistaErp;
-            this.UiContenedorVistaErp.Margin = new System.Windows.Forms.Padding(6);
             this.UiContenedorVistaErp.Name = "UiContenedorVistaErp";
             this.UiContenedorVistaErp.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.UiBotonEliminarEncabezado});
-            this.UiContenedorVistaErp.Size = new System.Drawing.Size(2666, 988);
+            this.UiContenedorVistaErp.Size = new System.Drawing.Size(692, 223);
             this.UiContenedorVistaErp.TabIndex = 28;
             this.UiContenedorVistaErp.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.UiVistaErp});
@@ -1023,71 +1009,71 @@
             this.colOWNER_PROVIDER,
             this.colUNIT_DESCRIPTION,
             this.colUNIT});
-            this.UiVistaErp.DetailHeight = 673;
-            this.UiVistaErp.FixedLineWidth = 4;
-            gridFormatRule6.ApplyToRow = true;
-            gridFormatRule6.Name = "Format0";
-            formatConditionRuleExpression6.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            formatConditionRuleExpression6.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            formatConditionRuleExpression6.Appearance.BorderColor = System.Drawing.Color.Yellow;
-            formatConditionRuleExpression6.Appearance.Options.UseBackColor = true;
-            formatConditionRuleExpression6.Appearance.Options.UseBorderColor = true;
-            formatConditionRuleExpression6.Expression = "[AdvertenciaFaltaInventario] = 1";
-            gridFormatRule6.Rule = formatConditionRuleExpression6;
-            gridFormatRule7.ApplyToRow = true;
-            gridFormatRule7.Name = "Format1";
-            formatConditionRuleExpression7.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            formatConditionRuleExpression7.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            formatConditionRuleExpression7.Appearance.BorderColor = System.Drawing.Color.Lime;
-            formatConditionRuleExpression7.Appearance.Options.UseBackColor = true;
-            formatConditionRuleExpression7.Appearance.Options.UseBorderColor = true;
-            formatConditionRuleExpression7.Expression = "[AdvertenciaFaltaInventario] = 0";
-            gridFormatRule7.Rule = formatConditionRuleExpression7;
-            gridFormatRule8.ApplyToRow = true;
-            gridFormatRule8.Column = this.colDetIS_ASSIGNED;
-            gridFormatRule8.ColumnApplyTo = this.colDetIS_ASSIGNED;
-            gridFormatRule8.Name = "IS_ASSIGNED";
-            formatConditionRuleExpression8.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            formatConditionRuleExpression8.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            formatConditionRuleExpression8.Appearance.BorderColor = System.Drawing.Color.Yellow;
-            formatConditionRuleExpression8.Appearance.Options.UseBackColor = true;
-            formatConditionRuleExpression8.Appearance.Options.UseBorderColor = true;
-            formatConditionRuleExpression8.Expression = "[IS_ASSIGNED] = 1";
-            formatConditionRuleExpression8.PredefinedName = "IS_ASSIGNED";
-            gridFormatRule8.Rule = formatConditionRuleExpression8;
-            gridFormatRule9.ApplyToRow = true;
-            gridFormatRule9.Column = this.colDetIS_ASSIGNED;
-            gridFormatRule9.ColumnApplyTo = this.colDetIS_ASSIGNED;
-            gridFormatRule9.Name = "IS_ASSIGNED2";
-            formatConditionRuleExpression9.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            formatConditionRuleExpression9.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            formatConditionRuleExpression9.Appearance.BorderColor = System.Drawing.Color.Lime;
-            formatConditionRuleExpression9.Appearance.Options.UseBackColor = true;
-            formatConditionRuleExpression9.Appearance.Options.UseBorderColor = true;
-            formatConditionRuleExpression9.Expression = "[IS_ASSIGNED] = 0";
-            formatConditionRuleExpression9.PredefinedName = "IS_ASSIGNED";
-            gridFormatRule9.Rule = formatConditionRuleExpression9;
-            gridFormatRule10.ApplyToRow = true;
-            gridFormatRule10.Column = this.colDetIS_MISSING;
-            gridFormatRule10.ColumnApplyTo = this.colDetIS_MISSING;
-            gridFormatRule10.Name = "IS_MISSING_RULE";
-            formatConditionRuleExpression10.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            formatConditionRuleExpression10.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            formatConditionRuleExpression10.Appearance.BorderColor = System.Drawing.Color.Red;
-            formatConditionRuleExpression10.Appearance.Options.UseBackColor = true;
-            formatConditionRuleExpression10.Appearance.Options.UseBorderColor = true;
-            formatConditionRuleExpression10.Expression = "[IS_MISSING] = 1";
-            formatConditionRuleExpression10.PredefinedName = "IS_MISSING";
-            gridFormatRule10.Rule = formatConditionRuleExpression10;
-            this.UiVistaErp.FormatRules.Add(gridFormatRule6);
-            this.UiVistaErp.FormatRules.Add(gridFormatRule7);
-            this.UiVistaErp.FormatRules.Add(gridFormatRule8);
-            this.UiVistaErp.FormatRules.Add(gridFormatRule9);
-            this.UiVistaErp.FormatRules.Add(gridFormatRule10);
+            gridFormatRule1.ApplyToRow = true;
+            gridFormatRule1.Name = "Format0";
+            formatConditionRuleExpression1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            formatConditionRuleExpression1.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            formatConditionRuleExpression1.Appearance.BorderColor = System.Drawing.Color.Yellow;
+            formatConditionRuleExpression1.Appearance.Options.UseBackColor = true;
+            formatConditionRuleExpression1.Appearance.Options.UseBorderColor = true;
+            formatConditionRuleExpression1.Expression = "[AdvertenciaFaltaInventario] = 1";
+            gridFormatRule1.Rule = formatConditionRuleExpression1;
+            gridFormatRule2.ApplyToRow = true;
+            gridFormatRule2.Name = "Format1";
+            formatConditionRuleExpression2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            formatConditionRuleExpression2.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            formatConditionRuleExpression2.Appearance.BorderColor = System.Drawing.Color.Lime;
+            formatConditionRuleExpression2.Appearance.Options.UseBackColor = true;
+            formatConditionRuleExpression2.Appearance.Options.UseBorderColor = true;
+            formatConditionRuleExpression2.Expression = "[AdvertenciaFaltaInventario] = 0";
+            gridFormatRule2.Rule = formatConditionRuleExpression2;
+            gridFormatRule3.ApplyToRow = true;
+            gridFormatRule3.Column = this.colDetIS_ASSIGNED;
+            gridFormatRule3.ColumnApplyTo = this.colDetIS_ASSIGNED;
+            gridFormatRule3.Name = "IS_ASSIGNED";
+            formatConditionRuleExpression3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            formatConditionRuleExpression3.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            formatConditionRuleExpression3.Appearance.BorderColor = System.Drawing.Color.Yellow;
+            formatConditionRuleExpression3.Appearance.Options.UseBackColor = true;
+            formatConditionRuleExpression3.Appearance.Options.UseBorderColor = true;
+            formatConditionRuleExpression3.Expression = "[IS_ASSIGNED] = 1";
+            formatConditionRuleExpression3.PredefinedName = "IS_ASSIGNED";
+            gridFormatRule3.Rule = formatConditionRuleExpression3;
+            gridFormatRule4.ApplyToRow = true;
+            gridFormatRule4.Column = this.colDetIS_ASSIGNED;
+            gridFormatRule4.ColumnApplyTo = this.colDetIS_ASSIGNED;
+            gridFormatRule4.Name = "IS_ASSIGNED2";
+            formatConditionRuleExpression4.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            formatConditionRuleExpression4.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            formatConditionRuleExpression4.Appearance.BorderColor = System.Drawing.Color.Lime;
+            formatConditionRuleExpression4.Appearance.Options.UseBackColor = true;
+            formatConditionRuleExpression4.Appearance.Options.UseBorderColor = true;
+            formatConditionRuleExpression4.Expression = "[IS_ASSIGNED] = 0";
+            formatConditionRuleExpression4.PredefinedName = "IS_ASSIGNED";
+            gridFormatRule4.Rule = formatConditionRuleExpression4;
+            gridFormatRule5.ApplyToRow = true;
+            gridFormatRule5.Column = this.colDetIS_MISSING;
+            gridFormatRule5.ColumnApplyTo = this.colDetIS_MISSING;
+            gridFormatRule5.Name = "IS_MISSING_RULE";
+            formatConditionRuleExpression5.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            formatConditionRuleExpression5.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            formatConditionRuleExpression5.Appearance.BorderColor = System.Drawing.Color.Red;
+            formatConditionRuleExpression5.Appearance.Options.UseBackColor = true;
+            formatConditionRuleExpression5.Appearance.Options.UseBorderColor = true;
+            formatConditionRuleExpression5.Expression = "[IS_MISSING] = 1";
+            formatConditionRuleExpression5.PredefinedName = "IS_MISSING";
+            gridFormatRule5.Rule = formatConditionRuleExpression5;
+            this.UiVistaErp.FormatRules.Add(gridFormatRule1);
+            this.UiVistaErp.FormatRules.Add(gridFormatRule2);
+            this.UiVistaErp.FormatRules.Add(gridFormatRule3);
+            this.UiVistaErp.FormatRules.Add(gridFormatRule4);
+            this.UiVistaErp.FormatRules.Add(gridFormatRule5);
             this.UiVistaErp.GridControl = this.UiContenedorVistaErp;
             this.UiVistaErp.GroupCount = 1;
+            this.UiVistaErp.LevelIndent = 0;
             this.UiVistaErp.Name = "UiVistaErp";
             this.UiVistaErp.OptionsView.ShowAutoFilterRow = true;
+            this.UiVistaErp.PreviewIndent = 0;
             this.UiVistaErp.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
             new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.colDetERP_DOC, DevExpress.Data.ColumnSortOrder.Ascending)});
             // 
@@ -1095,11 +1081,9 @@
             // 
             this.colEnEliminar.Caption = "Eliminar";
             this.colEnEliminar.ColumnEdit = this.UiBotonEliminarEncabezado;
-            this.colEnEliminar.MinWidth = 40;
             this.colEnEliminar.Name = "colEnEliminar";
             this.colEnEliminar.Visible = true;
             this.colEnEliminar.VisibleIndex = 0;
-            this.colEnEliminar.Width = 150;
             // 
             // UiBotonEliminarEncabezado
             // 
@@ -1114,257 +1098,209 @@
             // 
             this.colDetSAP_RECEPTION_ID.Caption = "Num. Doc";
             this.colDetSAP_RECEPTION_ID.FieldName = "SAP_RECEPTION_ID";
-            this.colDetSAP_RECEPTION_ID.MinWidth = 40;
             this.colDetSAP_RECEPTION_ID.Name = "colDetSAP_RECEPTION_ID";
             this.colDetSAP_RECEPTION_ID.OptionsColumn.AllowEdit = false;
-            this.colDetSAP_RECEPTION_ID.Width = 150;
             // 
             // colDetERP_DOC
             // 
             this.colDetERP_DOC.Caption = "Doc";
             this.colDetERP_DOC.FieldName = "ERP_DOC";
-            this.colDetERP_DOC.MinWidth = 40;
             this.colDetERP_DOC.Name = "colDetERP_DOC";
             this.colDetERP_DOC.OptionsColumn.AllowEdit = false;
             this.colDetERP_DOC.Visible = true;
             this.colDetERP_DOC.VisibleIndex = 1;
-            this.colDetERP_DOC.Width = 150;
             // 
             // colDetPROVIDER_ID
             // 
             this.colDetPROVIDER_ID.Caption = "Código Proveedor";
             this.colDetPROVIDER_ID.FieldName = "PROVIDER_ID";
-            this.colDetPROVIDER_ID.MinWidth = 40;
             this.colDetPROVIDER_ID.Name = "colDetPROVIDER_ID";
             this.colDetPROVIDER_ID.OptionsColumn.AllowEdit = false;
             this.colDetPROVIDER_ID.Visible = true;
             this.colDetPROVIDER_ID.VisibleIndex = 1;
-            this.colDetPROVIDER_ID.Width = 150;
             // 
             // colDetPROVIDER_NAME
             // 
             this.colDetPROVIDER_NAME.Caption = "Nombre Proveedor";
             this.colDetPROVIDER_NAME.FieldName = "PROVIDER_NAME";
-            this.colDetPROVIDER_NAME.MinWidth = 40;
             this.colDetPROVIDER_NAME.Name = "colDetPROVIDER_NAME";
             this.colDetPROVIDER_NAME.OptionsColumn.AllowEdit = false;
             this.colDetPROVIDER_NAME.Visible = true;
             this.colDetPROVIDER_NAME.VisibleIndex = 2;
-            this.colDetPROVIDER_NAME.Width = 150;
             // 
             // colDetSKU
             // 
             this.colDetSKU.Caption = "Código Material";
             this.colDetSKU.FieldName = "SKU";
-            this.colDetSKU.MinWidth = 40;
             this.colDetSKU.Name = "colDetSKU";
             this.colDetSKU.OptionsColumn.AllowEdit = false;
             this.colDetSKU.Visible = true;
             this.colDetSKU.VisibleIndex = 3;
-            this.colDetSKU.Width = 150;
             // 
             // colDetSKU_DESCRIPTION
             // 
             this.colDetSKU_DESCRIPTION.Caption = "Descripción Material";
             this.colDetSKU_DESCRIPTION.FieldName = "SKU_DESCRIPTION";
-            this.colDetSKU_DESCRIPTION.MinWidth = 40;
             this.colDetSKU_DESCRIPTION.Name = "colDetSKU_DESCRIPTION";
             this.colDetSKU_DESCRIPTION.OptionsColumn.AllowEdit = false;
             this.colDetSKU_DESCRIPTION.Visible = true;
             this.colDetSKU_DESCRIPTION.VisibleIndex = 4;
-            this.colDetSKU_DESCRIPTION.Width = 150;
             // 
             // colDetTOTAL_QUANTITY
             // 
             this.colDetTOTAL_QUANTITY.Caption = "Cantidad Total";
             this.colDetTOTAL_QUANTITY.FieldName = "TOTAL_QUANTITY";
-            this.colDetTOTAL_QUANTITY.MinWidth = 40;
             this.colDetTOTAL_QUANTITY.Name = "colDetTOTAL_QUANTITY";
             this.colDetTOTAL_QUANTITY.OptionsColumn.AllowEdit = false;
             this.colDetTOTAL_QUANTITY.Visible = true;
             this.colDetTOTAL_QUANTITY.VisibleIndex = 15;
-            this.colDetTOTAL_QUANTITY.Width = 150;
             // 
             // colDetQTY
             // 
             this.colDetQTY.Caption = "Cantidad a Recibir";
             this.colDetQTY.FieldName = "QTY";
-            this.colDetQTY.MinWidth = 40;
             this.colDetQTY.Name = "colDetQTY";
             this.colDetQTY.OptionsColumn.AllowEdit = false;
             this.colDetQTY.Visible = true;
             this.colDetQTY.VisibleIndex = 5;
-            this.colDetQTY.Width = 150;
             // 
             // colDetRECEPTION_QUANTITY
             // 
             this.colDetRECEPTION_QUANTITY.Caption = "Cantidad Recibida";
             this.colDetRECEPTION_QUANTITY.FieldName = "RECEPTION_QUANTITY";
-            this.colDetRECEPTION_QUANTITY.MinWidth = 40;
             this.colDetRECEPTION_QUANTITY.Name = "colDetRECEPTION_QUANTITY";
             this.colDetRECEPTION_QUANTITY.OptionsColumn.AllowEdit = false;
             this.colDetRECEPTION_QUANTITY.Visible = true;
             this.colDetRECEPTION_QUANTITY.VisibleIndex = 17;
-            this.colDetRECEPTION_QUANTITY.Width = 150;
             // 
             // colDetOPEN_QUANTITY
             // 
             this.colDetOPEN_QUANTITY.Caption = "Cantidad Abierta ERP";
             this.colDetOPEN_QUANTITY.FieldName = "OPEN_QUANTITY";
-            this.colDetOPEN_QUANTITY.MinWidth = 40;
             this.colDetOPEN_QUANTITY.Name = "colDetOPEN_QUANTITY";
             this.colDetOPEN_QUANTITY.OptionsColumn.AllowEdit = false;
             this.colDetOPEN_QUANTITY.Visible = true;
             this.colDetOPEN_QUANTITY.VisibleIndex = 16;
-            this.colDetOPEN_QUANTITY.Width = 150;
             // 
             // colDetLINE_NUM
             // 
             this.colDetLINE_NUM.Caption = "Número de Línea";
             this.colDetLINE_NUM.FieldName = "LINE_NUM";
-            this.colDetLINE_NUM.MinWidth = 40;
             this.colDetLINE_NUM.Name = "colDetLINE_NUM";
             this.colDetLINE_NUM.OptionsColumn.AllowEdit = false;
             this.colDetLINE_NUM.Visible = true;
             this.colDetLINE_NUM.VisibleIndex = 6;
-            this.colDetLINE_NUM.Width = 150;
             // 
             // colDetCOMMENTS
             // 
             this.colDetCOMMENTS.Caption = "Comentario";
             this.colDetCOMMENTS.FieldName = "COMMENTS";
-            this.colDetCOMMENTS.MinWidth = 40;
             this.colDetCOMMENTS.Name = "colDetCOMMENTS";
             this.colDetCOMMENTS.OptionsColumn.AllowEdit = false;
             this.colDetCOMMENTS.Visible = true;
             this.colDetCOMMENTS.VisibleIndex = 7;
-            this.colDetCOMMENTS.Width = 150;
             // 
             // colDetLOGIN_ID
             // 
             this.colDetLOGIN_ID.Caption = "Operador";
             this.colDetLOGIN_ID.FieldName = "LOGIN_ID";
-            this.colDetLOGIN_ID.MinWidth = 40;
             this.colDetLOGIN_ID.Name = "colDetLOGIN_ID";
             this.colDetLOGIN_ID.OptionsColumn.AllowEdit = false;
             this.colDetLOGIN_ID.Visible = true;
             this.colDetLOGIN_ID.VisibleIndex = 8;
-            this.colDetLOGIN_ID.Width = 150;
             // 
             // colDetLOCATION_SPOT
             // 
             this.colDetLOCATION_SPOT.Caption = "Ubicación";
             this.colDetLOCATION_SPOT.FieldName = "LOCATION_SPOT";
-            this.colDetLOCATION_SPOT.MinWidth = 40;
             this.colDetLOCATION_SPOT.Name = "colDetLOCATION_SPOT";
             this.colDetLOCATION_SPOT.OptionsColumn.AllowEdit = false;
             this.colDetLOCATION_SPOT.Visible = true;
             this.colDetLOCATION_SPOT.VisibleIndex = 9;
-            this.colDetLOCATION_SPOT.Width = 150;
             // 
             // colDet
             // 
             this.colDet.Caption = "Tipo De Recepción";
             this.colDet.FieldName = "TYPE_RECEPCTION_DRESCRIPTION";
-            this.colDet.MinWidth = 40;
             this.colDet.Name = "colDet";
             this.colDet.OptionsColumn.AllowEdit = false;
             this.colDet.Visible = true;
             this.colDet.VisibleIndex = 10;
-            this.colDet.Width = 150;
             // 
             // colDetPRIORITY_DESCRIPTION
             // 
             this.colDetPRIORITY_DESCRIPTION.Caption = "Prioridad";
             this.colDetPRIORITY_DESCRIPTION.FieldName = "PRIORITY_DESCRIPTION";
-            this.colDetPRIORITY_DESCRIPTION.MinWidth = 40;
             this.colDetPRIORITY_DESCRIPTION.Name = "colDetPRIORITY_DESCRIPTION";
             this.colDetPRIORITY_DESCRIPTION.OptionsColumn.AllowEdit = false;
             this.colDetPRIORITY_DESCRIPTION.Visible = true;
             this.colDetPRIORITY_DESCRIPTION.VisibleIndex = 11;
-            this.colDetPRIORITY_DESCRIPTION.Width = 150;
             // 
             // colDetTRADE_AGREEMENT_DESCRIPTION
             // 
             this.colDetTRADE_AGREEMENT_DESCRIPTION.Caption = "Acuerdo Comercial";
             this.colDetTRADE_AGREEMENT_DESCRIPTION.FieldName = "TRADE_AGREEMENT_DESCRIPTION";
-            this.colDetTRADE_AGREEMENT_DESCRIPTION.MinWidth = 40;
             this.colDetTRADE_AGREEMENT_DESCRIPTION.Name = "colDetTRADE_AGREEMENT_DESCRIPTION";
             this.colDetTRADE_AGREEMENT_DESCRIPTION.OptionsColumn.AllowEdit = false;
             this.colDetTRADE_AGREEMENT_DESCRIPTION.Visible = true;
             this.colDetTRADE_AGREEMENT_DESCRIPTION.VisibleIndex = 12;
-            this.colDetTRADE_AGREEMENT_DESCRIPTION.Width = 150;
             // 
             // colDetCLIENT_CODE
             // 
             this.colDetCLIENT_CODE.Caption = "Cliente";
             this.colDetCLIENT_CODE.FieldName = "CLIENT_CODE";
-            this.colDetCLIENT_CODE.MinWidth = 40;
             this.colDetCLIENT_CODE.Name = "colDetCLIENT_CODE";
             this.colDetCLIENT_CODE.OptionsColumn.AllowEdit = false;
             this.colDetCLIENT_CODE.Visible = true;
             this.colDetCLIENT_CODE.VisibleIndex = 13;
-            this.colDetCLIENT_CODE.Width = 150;
             // 
             // colDetINSURANCE_DOC_DESCRIPTION
             // 
             this.colDetINSURANCE_DOC_DESCRIPTION.Caption = "Poliza de Seguro";
             this.colDetINSURANCE_DOC_DESCRIPTION.FieldName = "INSURANCE_DOC_DESCRIPTION";
-            this.colDetINSURANCE_DOC_DESCRIPTION.MinWidth = 40;
             this.colDetINSURANCE_DOC_DESCRIPTION.Name = "colDetINSURANCE_DOC_DESCRIPTION";
             this.colDetINSURANCE_DOC_DESCRIPTION.OptionsColumn.AllowEdit = false;
             this.colDetINSURANCE_DOC_DESCRIPTION.Visible = true;
             this.colDetINSURANCE_DOC_DESCRIPTION.VisibleIndex = 14;
-            this.colDetINSURANCE_DOC_DESCRIPTION.Width = 150;
             // 
             // colOWNER
             // 
             this.colOWNER.Caption = "Dueño";
             this.colOWNER.FieldName = "OWNER";
-            this.colOWNER.MinWidth = 40;
             this.colOWNER.Name = "colOWNER";
             this.colOWNER.OptionsColumn.AllowEdit = false;
-            this.colOWNER.Width = 150;
             // 
             // colMASTER_ID_PROVIDER
             // 
             this.colMASTER_ID_PROVIDER.Caption = "MasterId Proveedor";
             this.colMASTER_ID_PROVIDER.FieldName = "MASTER_ID_PROVIDER";
-            this.colMASTER_ID_PROVIDER.MinWidth = 40;
             this.colMASTER_ID_PROVIDER.Name = "colMASTER_ID_PROVIDER";
             this.colMASTER_ID_PROVIDER.OptionsColumn.AllowEdit = false;
-            this.colMASTER_ID_PROVIDER.Width = 150;
             // 
             // colOWNER_PROVIDER
             // 
             this.colOWNER_PROVIDER.Caption = "Dueño Proveedor";
             this.colOWNER_PROVIDER.FieldName = "OWNER_PROVIDER";
-            this.colOWNER_PROVIDER.MinWidth = 40;
             this.colOWNER_PROVIDER.Name = "colOWNER_PROVIDER";
             this.colOWNER_PROVIDER.OptionsColumn.AllowEdit = false;
             this.colOWNER_PROVIDER.Visible = true;
             this.colOWNER_PROVIDER.VisibleIndex = 18;
-            this.colOWNER_PROVIDER.Width = 150;
             // 
             // colUNIT_DESCRIPTION
             // 
             this.colUNIT_DESCRIPTION.Caption = "Unidad de medida";
             this.colUNIT_DESCRIPTION.FieldName = "UNIT_DESCRIPTION";
-            this.colUNIT_DESCRIPTION.MinWidth = 40;
             this.colUNIT_DESCRIPTION.Name = "colUNIT_DESCRIPTION";
             this.colUNIT_DESCRIPTION.OptionsColumn.AllowEdit = false;
             this.colUNIT_DESCRIPTION.Visible = true;
             this.colUNIT_DESCRIPTION.VisibleIndex = 19;
-            this.colUNIT_DESCRIPTION.Width = 150;
             // 
             // colUNIT
             // 
             this.colUNIT.Caption = "Unidad ERP";
             this.colUNIT.FieldName = "UNIT";
-            this.colUNIT.MinWidth = 40;
             this.colUNIT.Name = "colUNIT";
             this.colUNIT.OptionsColumn.AllowEdit = false;
-            this.colUNIT.Width = 150;
             // 
             // UiGrupoCliente
             // 
@@ -1378,10 +1314,9 @@
             this.UiGrupoCliente.Controls.Add(this.UiListaPolizasDeSeguro);
             this.UiGrupoCliente.Controls.Add(this.UiListaAcuerdoComercial);
             this.UiGrupoCliente.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.UiGrupoCliente.Location = new System.Drawing.Point(15, 15);
-            this.UiGrupoCliente.Margin = new System.Windows.Forms.Padding(6);
+            this.UiGrupoCliente.Location = new System.Drawing.Point(8, 8);
             this.UiGrupoCliente.Name = "UiGrupoCliente";
-            this.UiGrupoCliente.Size = new System.Drawing.Size(1936, 251);
+            this.UiGrupoCliente.Size = new System.Drawing.Size(326, 130);
             this.UiGrupoCliente.TabIndex = 29;
             this.UiGrupoCliente.Text = "Datos de Cliente";
             // 
@@ -1390,15 +1325,14 @@
             this.UiTextoNumeroDeFactura.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.UiTextoNumeroDeFactura.CausesValidation = false;
-            this.UiTextoNumeroDeFactura.Location = new System.Drawing.Point(209, 94);
-            this.UiTextoNumeroDeFactura.Margin = new System.Windows.Forms.Padding(6);
+            this.UiTextoNumeroDeFactura.Location = new System.Drawing.Point(104, 49);
             this.UiTextoNumeroDeFactura.MenuManager = this.UiBarraContenedorPrincipal;
             this.UiTextoNumeroDeFactura.Name = "UiTextoNumeroDeFactura";
             this.UiTextoNumeroDeFactura.Properties.Mask.BeepOnError = true;
             this.UiTextoNumeroDeFactura.Properties.Mask.EditMask = "(0?\\d|1\\d|2[0-3])\\:[0-5]\\d";
             this.UiTextoNumeroDeFactura.Properties.Mask.IgnoreMaskBlank = false;
             this.UiTextoNumeroDeFactura.Properties.Mask.ShowPlaceHolders = false;
-            this.UiTextoNumeroDeFactura.Size = new System.Drawing.Size(1686, 40);
+            this.UiTextoNumeroDeFactura.Size = new System.Drawing.Size(201, 20);
             this.UiTextoNumeroDeFactura.TabIndex = 25;
             this.UiTextoNumeroDeFactura.ToolTip = "Ingrese el numero de factura";
             this.UiTextoNumeroDeFactura.Visible = false;
@@ -1416,10 +1350,9 @@
             this.UiGrupoTarea.Controls.Add(this.UiEtiqeutaTipoRecepcion);
             this.UiGrupoTarea.Controls.Add(this.UiListaTipoRecepcion);
             this.UiGrupoTarea.Dock = System.Windows.Forms.DockStyle.Right;
-            this.UiGrupoTarea.Location = new System.Drawing.Point(1951, 15);
-            this.UiGrupoTarea.Margin = new System.Windows.Forms.Padding(6);
+            this.UiGrupoTarea.Location = new System.Drawing.Point(334, 8);
             this.UiGrupoTarea.Name = "UiGrupoTarea";
-            this.UiGrupoTarea.Size = new System.Drawing.Size(700, 251);
+            this.UiGrupoTarea.Size = new System.Drawing.Size(350, 130);
             this.UiGrupoTarea.TabIndex = 30;
             this.UiGrupoTarea.Text = "Datos de Tarea";
             // 
@@ -1432,37 +1365,28 @@
             this.panel1.Controls.Add(this.UiGrupoCliente);
             this.panel1.Controls.Add(this.UiGrupoTarea);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 46);
+            this.panel1.Location = new System.Drawing.Point(0, 24);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Padding = new System.Windows.Forms.Padding(15);
-            this.panel1.Size = new System.Drawing.Size(2666, 281);
+            this.panel1.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.panel1.Size = new System.Drawing.Size(692, 146);
             this.panel1.TabIndex = 35;
             // 
-            // bbi_Factura
-            // 
-            this.bbi_Factura.Caption = "Leer factura";
-            this.bbi_Factura.Id = 13;
-            this.bbi_Factura.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bbi_Factura.ImageOptions.Image")));
-            this.bbi_Factura.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("bbi_Factura.ImageOptions.LargeImage")));
-            this.bbi_Factura.Name = "bbi_Factura";
-            this.bbi_Factura.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
-            this.bbi_Factura.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbi_Factura_ItemClick);
             // LoadLayout
             // 
             this.LoadLayout.Tick += new System.EventHandler(this.LoadLayout_Tick);
             // 
             // RecepcionErpVista
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2666, 1315);
+            this.ClientSize = new System.Drawing.Size(692, 393);
             this.Controls.Add(this.UiContenedorVistaErp);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
-            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "RecepcionErpVista";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Ingreso ERP";

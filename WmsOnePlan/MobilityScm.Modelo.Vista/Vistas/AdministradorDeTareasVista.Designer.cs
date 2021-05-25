@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
             DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule1 = new DevExpress.XtraGrid.GridFormatRule();
@@ -171,7 +170,7 @@
             this.UiColNombreCortoProyecto = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UiCalNumeroOrden = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UiColFin = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.UiContendorDeBarras = new DevExpress.XtraBars.BarManager(this.components);
+            this.UiContendorDeBarras = new DevExpress.XtraBars.BarManager();
             this.UiBarraTarea = new DevExpress.XtraBars.Bar();
             this.UiSwitchActualizarAutomaticamente = new DevExpress.XtraBars.BarToggleSwitchItem();
             this.UiBotonRefrescar = new DevExpress.XtraBars.BarButtonItem();
@@ -276,7 +275,7 @@
             this.UiChartTareasPorOperador = new DevExpress.XtraCharts.ChartControl();
             this.UiChartTiposTareas = new DevExpress.XtraCharts.ChartControl();
             this.barDockControl3 = new DevExpress.XtraBars.BarDockControl();
-            this.UiBarManagerGraficas = new DevExpress.XtraBars.BarManager(this.components);
+            this.UiBarManagerGraficas = new DevExpress.XtraBars.BarManager();
             this.UiBarGraficas = new DevExpress.XtraBars.Bar();
             this.barCheckItem1 = new DevExpress.XtraBars.BarCheckItem();
             this.UiBotonRefreshGraficas = new DevExpress.XtraBars.BarButtonItem();
@@ -314,7 +313,7 @@
             this.UiRepositoryColCódigoBodegaERP = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UiRepositoryColNombreBodegaERP = new DevExpress.XtraGrid.Columns.GridColumn();
             this.barDockControl7 = new DevExpress.XtraBars.BarDockControl();
-            this.UIBarManagerConfirmarRecepcion = new DevExpress.XtraBars.BarManager(this.components);
+            this.UIBarManagerConfirmarRecepcion = new DevExpress.XtraBars.BarManager();
             this.bar9 = new DevExpress.XtraBars.Bar();
             this.UiBotonRefrescarConfirmacionRecepcion = new DevExpress.XtraBars.BarButtonItem();
             this.UiBotonGuardarConfirmacionRecepcion = new DevExpress.XtraBars.BarButtonItem();
@@ -340,7 +339,7 @@
             this.UIColCorrelativoConfirmacionSerie = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UiColNombreMaterialSeries = new DevExpress.XtraGrid.Columns.GridColumn();
             this.barDockControl11 = new DevExpress.XtraBars.BarDockControl();
-            this.UIBarManagerConfirmacionSeries = new DevExpress.XtraBars.BarManager(this.components);
+            this.UIBarManagerConfirmacionSeries = new DevExpress.XtraBars.BarManager();
             this.bar14 = new DevExpress.XtraBars.Bar();
             this.lblDescUltimo = new DevExpress.XtraBars.BarStaticItem();
             this.UIUltimoCorrelativo = new DevExpress.XtraBars.BarStaticItem();
@@ -374,7 +373,7 @@
             this.UIColOlaStatus = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UIColOlaPicking = new DevExpress.XtraGrid.Columns.GridColumn();
             this.barDockControl15 = new DevExpress.XtraBars.BarDockControl();
-            this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
+            this.barManager1 = new DevExpress.XtraBars.BarManager();
             this.bar16 = new DevExpress.XtraBars.Bar();
             this.UIBtnNext = new DevExpress.XtraBars.BarButtonItem();
             this.bar17 = new DevExpress.XtraBars.Bar();
@@ -384,7 +383,7 @@
             this.bar2 = new DevExpress.XtraBars.Bar();
             this.bar3 = new DevExpress.XtraBars.Bar();
             this.toolboxItem1 = new DevExpress.XtraToolbox.ToolboxItem();
-            this.UiError = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.UiError = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
             this.bar1 = new DevExpress.XtraBars.Bar();
             this.bar4 = new DevExpress.XtraBars.Bar();
             this.bar5 = new DevExpress.XtraBars.Bar();
@@ -393,7 +392,7 @@
             this.bar8 = new DevExpress.XtraBars.Bar();
             this.bar10 = new DevExpress.XtraBars.Bar();
             this.bar11 = new DevExpress.XtraBars.Bar();
-            this.TimerTask = new System.Windows.Forms.Timer(this.components);
+            this.TimerTask = new System.Windows.Forms.Timer();
             this.UiDialogoParaGuardar = new System.Windows.Forms.SaveFileDialog();
             this.bar12 = new DevExpress.XtraBars.Bar();
             this.bar13 = new DevExpress.XtraBars.Bar();
@@ -1029,9 +1028,13 @@
             formatConditionRuleExpression15.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             formatConditionRuleExpression15.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             formatConditionRuleExpression15.Appearance.BorderColor = System.Drawing.Color.Blue;
+            formatConditionRuleExpression15.Appearance.ForeColor = System.Drawing.Color.Black;
             formatConditionRuleExpression15.Appearance.Options.UseBackColor = true;
             formatConditionRuleExpression15.Appearance.Options.UseBorderColor = true;
-            formatConditionRuleExpression15.Expression = "[COMPLETED_DOC_ERP] <> 1 AND [IS_FROM_ERP] = 1";
+            formatConditionRuleExpression15.Appearance.Options.UseForeColor = true;
+            formatConditionRuleExpression15.Expression = "([COMPLETED_DOC_ERP] <> 1 And [IS_FROM_ERP] = 1) Or ([IS_AUTHORIZED_DESCRIPTION] " +
+    "= \'SI\' And [IS_FROM_ERP] = \'Si\' And [IS_COMPLETED] = \'COMPLETA\' And [TASK_SUBTYP" +
+    "E] = \'PICKING_WT\')";
             gridFormatRule15.Rule = formatConditionRuleExpression15;
             gridFormatRule16.ApplyToRow = true;
             gridFormatRule16.Name = "Format8";

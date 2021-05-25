@@ -4217,6 +4217,7 @@
             // UiPaginaInventarioDisponible
             // 
             this.UiPaginaInventarioDisponible.Caption = "Inventario Disponible";
+            this.UiPaginaInventarioDisponible.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiPaginaInventarioDisponible.ImageOptions.Image")));
             this.UiPaginaInventarioDisponible.Controls.Add(this.UiGridControlInvnetarioDisponible);
             this.UiPaginaInventarioDisponible.Name = "UiPaginaInventarioDisponible";
             this.UiPaginaInventarioDisponible.Size = new System.Drawing.Size(336, 569);
@@ -4309,6 +4310,7 @@
             this.UiPaginaOlasDePiking.Controls.Add(this.barDockControl8);
             this.UiPaginaOlasDePiking.Controls.Add(this.barDockControl6);
             this.UiPaginaOlasDePiking.Controls.Add(this.barDockControl5);
+            this.UiPaginaOlasDePiking.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UiPaginaOlasDePiking.ImageOptions.Image")));
             this.UiPaginaOlasDePiking.Name = "UiPaginaOlasDePiking";
             this.UiPaginaOlasDePiking.Size = new System.Drawing.Size(424, 569);
             // 
