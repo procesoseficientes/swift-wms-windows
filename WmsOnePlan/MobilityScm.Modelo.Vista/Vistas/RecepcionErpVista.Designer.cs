@@ -287,8 +287,7 @@
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.Width, this.UiBarFuente, "", false, true, true, 165),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.UiFechaInicio, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.UiFechaFinal, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(this.UiToogleOrdenesIncompletas),
-            new DevExpress.XtraBars.LinkPersistInfo(this.UIToogleConsolidado)});
+            new DevExpress.XtraBars.LinkPersistInfo(this.UiToogleOrdenesIncompletas)});
             this.UiBarraPricipalOpciones.OptionsBar.AllowQuickCustomization = false;
             this.UiBarraPricipalOpciones.OptionsBar.DrawDragBorder = false;
             this.UiBarraPricipalOpciones.OptionsBar.UseWholeRow = true;
@@ -652,7 +651,7 @@
             this.UiListaUbicacion.Properties.PopupView = this.UiVistaDeListaUbicacion;
             this.UiListaUbicacion.Properties.ValueMember = "LOCATION_SPOT";
             this.UiListaUbicacion.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
-            this.UiListaUbicacion.Size = new System.Drawing.Size(250, 22);
+            this.UiListaUbicacion.Size = new System.Drawing.Size(250, 24);
             this.UiListaUbicacion.TabIndex = 15;
             // 
             // UiVistaDeListaUbicacion
@@ -902,7 +901,7 @@
             this.UiListaTipoRecepcion.Properties.PopupView = this.UiVistaTipoRecepcion;
             this.UiListaTipoRecepcion.Properties.ValueMember = "TEXT_VALUE";
             this.UiListaTipoRecepcion.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.UiLista_Properties_ButtonClick);
-            this.UiListaTipoRecepcion.Size = new System.Drawing.Size(250, 20);
+            this.UiListaTipoRecepcion.Size = new System.Drawing.Size(250, 24);
             this.UiListaTipoRecepcion.TabIndex = 25;
             // 
             // UiVistaTipoRecepcion
@@ -1366,9 +1365,9 @@
             this.panel1.Controls.Add(this.UiGrupoTarea);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 24);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.panel1.Padding = new System.Windows.Forms.Padding(8);
             this.panel1.Size = new System.Drawing.Size(692, 146);
             this.panel1.TabIndex = 35;
             // 
