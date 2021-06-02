@@ -2199,19 +2199,22 @@ Public Class WMS_Trans
         Dim DocNum = 0
 
         If (DocEntryTable.Rows.Count > 0) Then
-            Dim DocEntry As String = DocEntryTable.Rows(0)(0)
 
-            If Not String.IsNullOrEmpty(DocEntry) Then
-                Dim webClient As New System.Net.WebClient
-                Dim response As String = webClient.DownloadString(AppSettings("SAPBOAPI") + "/CloseDraft/" + DocEntry)
+            For i As Integer = 0 To DocEntryTable.Rows.Count - 1
+                Dim DocEntry As String = DocEntryTable.Rows(0)(i)
 
-                If response.Contains("Error") Then
-                    result = "ERROR, (" + AppSettings("SAPBOAPI") + "/CloseDraft/" + DocEntry + ") ; " + response
-                    Throw New Exception(result)
-                Else
-                    DocNum = response
+                If Not String.IsNullOrEmpty(DocEntry) Then
+                    Dim webClient As New System.Net.WebClient
+                    Dim response As String = webClient.DownloadString(AppSettings("SAPBOAPI") + "/CloseDraft/" + DocEntry)
+
+                    If response.Contains("Error") Then
+                        result = "ERROR, (" + AppSettings("SAPBOAPI") + "/CloseDraft/" + DocEntry + ") ; " + response
+                        Throw New Exception(result)
+                    Else
+                        DocNum = response
+                    End If
                 End If
-            End If
+            Next
         End If
 
         Dim sqldbConexion = New SqlConnection(AppSettings(environmentName).ToString)

@@ -65,7 +65,9 @@ namespace MobilityScm.Modelo.Servicios
                     Value =  distributionCenterId
                 }
             };
-
+            if (!pAlt) { 
+                
+            }
             return BaseDeDatosServicio.ExecuteQuery<Ubicacion>(BaseDeDatosServicio.Esquema + ".OP_WMS_SP_GET_LOCATION_FOR_DISPATCH", CommandType.StoredProcedure, parameters);
         }
 
