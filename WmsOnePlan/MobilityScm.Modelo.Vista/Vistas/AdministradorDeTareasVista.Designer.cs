@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
             DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule1 = new DevExpress.XtraGrid.GridFormatRule();
@@ -170,7 +171,7 @@
             this.UiColNombreCortoProyecto = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UiCalNumeroOrden = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UiColFin = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.UiContendorDeBarras = new DevExpress.XtraBars.BarManager();
+            this.UiContendorDeBarras = new DevExpress.XtraBars.BarManager(this.components);
             this.UiBarraTarea = new DevExpress.XtraBars.Bar();
             this.UiSwitchActualizarAutomaticamente = new DevExpress.XtraBars.BarToggleSwitchItem();
             this.UiBotonRefrescar = new DevExpress.XtraBars.BarButtonItem();
@@ -275,7 +276,7 @@
             this.UiChartTareasPorOperador = new DevExpress.XtraCharts.ChartControl();
             this.UiChartTiposTareas = new DevExpress.XtraCharts.ChartControl();
             this.barDockControl3 = new DevExpress.XtraBars.BarDockControl();
-            this.UiBarManagerGraficas = new DevExpress.XtraBars.BarManager();
+            this.UiBarManagerGraficas = new DevExpress.XtraBars.BarManager(this.components);
             this.UiBarGraficas = new DevExpress.XtraBars.Bar();
             this.barCheckItem1 = new DevExpress.XtraBars.BarCheckItem();
             this.UiBotonRefreshGraficas = new DevExpress.XtraBars.BarButtonItem();
@@ -313,7 +314,7 @@
             this.UiRepositoryColCódigoBodegaERP = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UiRepositoryColNombreBodegaERP = new DevExpress.XtraGrid.Columns.GridColumn();
             this.barDockControl7 = new DevExpress.XtraBars.BarDockControl();
-            this.UIBarManagerConfirmarRecepcion = new DevExpress.XtraBars.BarManager();
+            this.UIBarManagerConfirmarRecepcion = new DevExpress.XtraBars.BarManager(this.components);
             this.bar9 = new DevExpress.XtraBars.Bar();
             this.UiBotonRefrescarConfirmacionRecepcion = new DevExpress.XtraBars.BarButtonItem();
             this.UiBotonGuardarConfirmacionRecepcion = new DevExpress.XtraBars.BarButtonItem();
@@ -339,7 +340,7 @@
             this.UIColCorrelativoConfirmacionSerie = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UiColNombreMaterialSeries = new DevExpress.XtraGrid.Columns.GridColumn();
             this.barDockControl11 = new DevExpress.XtraBars.BarDockControl();
-            this.UIBarManagerConfirmacionSeries = new DevExpress.XtraBars.BarManager();
+            this.UIBarManagerConfirmacionSeries = new DevExpress.XtraBars.BarManager(this.components);
             this.bar14 = new DevExpress.XtraBars.Bar();
             this.lblDescUltimo = new DevExpress.XtraBars.BarStaticItem();
             this.UIUltimoCorrelativo = new DevExpress.XtraBars.BarStaticItem();
@@ -373,9 +374,10 @@
             this.UIColOlaStatus = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UIColOlaPicking = new DevExpress.XtraGrid.Columns.GridColumn();
             this.barDockControl15 = new DevExpress.XtraBars.BarDockControl();
-            this.barManager1 = new DevExpress.XtraBars.BarManager();
+            this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.bar16 = new DevExpress.XtraBars.Bar();
             this.UIBtnNext = new DevExpress.XtraBars.BarButtonItem();
+            this.UIBotonLiberarTransaccion = new DevExpress.XtraBars.BarButtonItem();
             this.bar17 = new DevExpress.XtraBars.Bar();
             this.barDockControl13 = new DevExpress.XtraBars.BarDockControl();
             this.barDockControl14 = new DevExpress.XtraBars.BarDockControl();
@@ -383,7 +385,7 @@
             this.bar2 = new DevExpress.XtraBars.Bar();
             this.bar3 = new DevExpress.XtraBars.Bar();
             this.toolboxItem1 = new DevExpress.XtraToolbox.ToolboxItem();
-            this.UiError = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider();
+            this.UiError = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             this.bar1 = new DevExpress.XtraBars.Bar();
             this.bar4 = new DevExpress.XtraBars.Bar();
             this.bar5 = new DevExpress.XtraBars.Bar();
@@ -392,7 +394,7 @@
             this.bar8 = new DevExpress.XtraBars.Bar();
             this.bar10 = new DevExpress.XtraBars.Bar();
             this.bar11 = new DevExpress.XtraBars.Bar();
-            this.TimerTask = new System.Windows.Forms.Timer();
+            this.TimerTask = new System.Windows.Forms.Timer(this.components);
             this.UiDialogoParaGuardar = new System.Windows.Forms.SaveFileDialog();
             this.bar12 = new DevExpress.XtraBars.Bar();
             this.bar13 = new DevExpress.XtraBars.Bar();
@@ -3746,9 +3748,10 @@
             this.barManager1.DockControls.Add(this.barDockControl16);
             this.barManager1.Form = this.UITabOlaPicking;
             this.barManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.UIBtnNext});
+            this.UIBtnNext,
+            this.UIBotonLiberarTransaccion});
             this.barManager1.MainMenu = this.bar16;
-            this.barManager1.MaxItemId = 1;
+            this.barManager1.MaxItemId = 2;
             this.barManager1.StatusBar = this.bar17;
             // 
             // bar16
@@ -3758,7 +3761,8 @@
             this.bar16.DockRow = 0;
             this.bar16.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
             this.bar16.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.UIBtnNext)});
+            new DevExpress.XtraBars.LinkPersistInfo(this.UIBtnNext),
+            new DevExpress.XtraBars.LinkPersistInfo(this.UIBotonLiberarTransaccion)});
             this.bar16.OptionsBar.MultiLine = true;
             this.bar16.OptionsBar.UseWholeRow = true;
             this.bar16.Text = "Main menu";
@@ -3772,6 +3776,17 @@
             this.UIBtnNext.Name = "UIBtnNext";
             this.UIBtnNext.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.UIBtnNext.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.UIBtnNext_ItemClick);
+            // 
+            // UIBotonLiberarTransaccion
+            // 
+            this.UIBotonLiberarTransaccion.Caption = "Liberar Transacción";
+            this.UIBotonLiberarTransaccion.Id = 1;
+            this.UIBotonLiberarTransaccion.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("UIBotonLiberarTransaccion.ImageOptions.Image")));
+            this.UIBotonLiberarTransaccion.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("UIBotonLiberarTransaccion.ImageOptions.LargeImage")));
+            this.UIBotonLiberarTransaccion.Name = "UIBotonLiberarTransaccion";
+            this.UIBotonLiberarTransaccion.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.UIBotonLiberarTransaccion.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            this.UIBotonLiberarTransaccion.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.UIBotonLiberarTransaccion_ItemClick);
             // 
             // bar17
             // 
@@ -4282,5 +4297,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn UiStockQTY;
         private DevExpress.XtraGrid.Columns.GridColumn UiPhysicalCounting;
         private DevExpress.XtraGrid.Columns.GridColumn UiDifference;
+        private DevExpress.XtraBars.BarButtonItem UIBotonLiberarTransaccion;
     }
 }

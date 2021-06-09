@@ -19,6 +19,8 @@ namespace MobilityScm.Modelo.Interfaces.Servicios
 
         Operacion DesbloquearInventarioParaTareasEnviadasAErpFallidas(TareaArgumento tareaArgumento);
 
+        Operacion DesbloquearTransaccionOperacionManual(TareaArgumento tareaArgumento);
+
         Operacion AutorizarControlDeCalidad(TareaArgumento tareaArgumento);
 
     }

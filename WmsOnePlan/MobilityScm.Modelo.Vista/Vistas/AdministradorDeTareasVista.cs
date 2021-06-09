@@ -64,6 +64,7 @@ namespace MobilityScm.Modelo.Vistas
         public event EventHandler<TareaArgumento> UsuarioDeseaActualizarCantidadConfirmadaManualmente;
         public event EventHandler<TareaArgumento> UsuarioDeseaRefrescarGridConfirmacionRecepcionSeries;
         public event EventHandler<TareaArgumento> UsuarioDeseaLiberarInventarioConfirmado;
+        public event EventHandler<TareaArgumento> UsuarioDeseaLiberarTransaccionConfirmado;
         public event EventHandler<TareaArgumento> UsuarioDeseaValidarVisibilidadDeBoton;
         public event EventHandler<TareaArgumento> UsuarioDeseaAutorizarControlDeCalidad;
         public event EventHandler<TareaArgumento> UsuarioDeseaRecargarGridOrdenDeCompra;
@@ -88,6 +89,23 @@ namespace MobilityScm.Modelo.Vistas
                 else
                 {
                     UIBotonLiberarInventario.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+                }
+            }
+        }
+
+
+        public bool DebeMostrarBotonParaLiberarTransaccion
+        {
+            get { return UIBotonLiberarInventario.Visibility == DevExpress.XtraBars.BarItemVisibility.Always; }
+            set
+            {
+                if (value)
+                {
+                    UIBotonLiberarTransaccion.Visibility = DevExpress.XtraBars.BarItemVisibility.Always;
+                }
+                else
+                {
+                    UIBotonLiberarTransaccion.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
                 }
             }
         }
@@ -1982,6 +2000,14 @@ namespace MobilityScm.Modelo.Vistas
                 }
                 else if (registroConfirmacionRecepcion.TASK_TYPE == "TAREA_PICKING")
                 {
+                    if (registroConfirmacionRecepcion.SOURCE_TYPE == "TRANSFER_REQUEST" && registroConfirmacionRecepcion.IS_COMPLETED == "COMPLETA" && registroConfirmacionRecepcion.IS_FROM_ERP == "Si" && (registroConfirmacionRecepcion.STATUS_POSTED_ERP == "Autorizada" || registroConfirmacionRecepcion.STATUS_POSTED_ERP == "Fallido"))
+                    {
+                        DebeMostrarBotonParaLiberarTransaccion = true;
+                    }
+                    else
+                    {
+                        DebeMostrarBotonParaLiberarTransaccion = false;
+                    }
                     UsuarioDeseaObtenerDetalleOlaPicking?.Invoke(sender, new TareaArgumento { Tarea = registroConfirmacionRecepcion });
                     UiContenedorTab.SelectedTabPageIndex = 4;
                     UIBtnReAbrirTask.Enabled = false;
@@ -2301,6 +2327,41 @@ namespace MobilityScm.Modelo.Vistas
                 }
 
                 UsuarioDeseaLiberarInventarioConfirmado?.Invoke(sender, new TareaArgumento { taskId = (int)registroConfirmacionRecepcion.SERIAL_NUMBER, Login = InteraccionConUsuarioServicio.ObtenerUsuario(), reference = referencia.EditValue?.ToString(), reason = configuracion.PARAM_NAME });
+            }
+            catch (Exception ex)
+            {
+                InteraccionConUsuarioServicio.Mensaje(ex.Message);
+            }
+        }
+
+        private void UIBotonLiberarTransaccion_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+                var popup = new ListaParaParametrosGeneralesPopup(RazonesDetalleLiberarInventarioConfirmado.ToList(), "Referencia:");
+
+                var respuesta = XtraDialog.Show(popup, "Seleccione una razón.", MessageBoxButtons.YesNo);
+
+                if (respuesta != DialogResult.Yes) return;
+                var layout = (LayoutControl)popup.Controls["Layout"];
+                if (layout == null) return;
+                var nuevaPrioridad = (TextEdit)layout.Controls["Listado"];
+                var prioridad = nuevaPrioridad.EditValue;
+                if (prioridad == null)
+                {
+                    InteraccionConUsuarioServicio.Alerta("Debe seleccionar una razón");
+                    return;
+                }
+                var referencia = (TextEdit)layout.Controls["txtReference"];
+
+                var configuracion = RazonesDetalleLiberarInventarioConfirmado.FirstOrDefault(p => Equals(p.PARAM_NAME, prioridad));
+                if (configuracion == null)
+                {
+                    InteraccionConUsuarioServicio.Alerta("Debe seleccionar una razón");
+                    return;
+                }
+
+                UsuarioDeseaLiberarTransaccionConfirmado?.Invoke(sender, new TareaArgumento { taskId = (int)registroConfirmacionRecepcion.SERIAL_NUMBER, Login = InteraccionConUsuarioServicio.ObtenerUsuario(), reference = referencia.EditValue?.ToString(), reason = configuracion.PARAM_NAME });
             }
             catch (Exception ex)
             {
