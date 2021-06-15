@@ -135,6 +135,31 @@ namespace MobilityScm.Modelo.Servicios
             return BaseDeDatosServicio.ExecuteQuery<Operacion>($"{BaseDeDatosServicio.Esquema}.OP_WMS_SP_UNLOCK_INVENTORY_BY_TASKS_SEND_TO_ERP_FAILED", CommandType.StoredProcedure, parameters)[0];
         }
 
+        public Operacion DesbloquearTransaccionOperacionManual(TareaArgumento tareaArgumento)
+        {
+            DbParameter[] parameters =
+            {
+                new OAParameter
+                {
+                    ParameterName = "@TASK_ID",
+                    Value =  tareaArgumento.taskId
+                },new OAParameter
+                {
+                    ParameterName = "@REFERENCE",
+                    Value =  tareaArgumento.reference != null ? tareaArgumento.reference : " "
+                },new OAParameter
+                {
+                    ParameterName = "@REASON",
+                    Value =  tareaArgumento.reason
+                },new OAParameter
+                {
+                    ParameterName = "@LOGIN",
+                    Value =  tareaArgumento.Login
+                }
+            };
+            return BaseDeDatosServicio.ExecuteQuery<Operacion>($"{BaseDeDatosServicio.Esquema}.OP_WMS_SP_UNLOCK_TRANSACTION", CommandType.StoredProcedure, parameters)[0];
+        }
+
         public Operacion AutorizarControlDeCalidad(TareaArgumento tareaArgumento)
         {
             DbParameter[] parameters =

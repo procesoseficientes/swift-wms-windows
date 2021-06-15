@@ -74,6 +74,7 @@ namespace MobilityScm.Modelo.Controladores
             _vista.UsuarioDeseaConfirmarFilaDeRecepcionRecibida += _vista_UsuarioDeseaConfirmarFilaDeRecepcionRecibida;
             _vista.UsuarioDeseaRefrescarGridConfirmacionRecepcionSeries += _vista_UsuarioDeseaRefrescarGridConfirmacionRecepcionSeries;
             _vista.UsuarioDeseaLiberarInventarioConfirmado += _vista_UsuarioDeseaLiberarInventarioConfirmado;
+            _vista.UsuarioDeseaLiberarTransaccionConfirmado += _vista_UsuarioDeseaLiberarTransaccionConfirmado;
             _vista.UsuarioDeseaValidarVisibilidadDeBoton += _vista_UsuarioDeseaValidarVisibilidadDeBoton;
             _vista.UsuarioDeseaAutorizarControlDeCalidad += _vista_UsuarioDeseaAutorizarControlDeCalidad;
             _vista.UsuarioDeseaRecargarGridOrdenDeCompra += _vista_UsuarioDeseaRecargarGridOrdenDeCompra;
@@ -200,6 +201,27 @@ namespace MobilityScm.Modelo.Controladores
                 {
                     _vista.DebeMostrarBotonParaLiberarInventario = false;
                     InteraccionConUsuarioServicio.MensajeExito("Operación de liberación de inventario exitosa", true);
+                }
+                else
+                {
+                    InteraccionConUsuarioServicio.Mensaje(resultado.Mensaje);
+                }
+            }
+            catch (Exception ex)
+            {
+                InteraccionConUsuarioServicio.Mensaje(ex.Message);
+            }
+        }
+
+        private void _vista_UsuarioDeseaLiberarTransaccionConfirmado(object sender, TareaArgumento e)
+        {
+            try
+            {
+                Operacion resultado = OrdenDeCompraServicio.DesbloquearTransaccionOperacionManual(e);
+                if (resultado.Resultado == ResultadoOperacionTipo.Exito)
+                {
+                    _vista.DebeMostrarBotonParaLiberarTransaccion = false;
+                    InteraccionConUsuarioServicio.MensajeExito("Operación de liberación de transaccion exitosa", true);
                 }
                 else
                 {
