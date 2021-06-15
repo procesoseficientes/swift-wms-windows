@@ -2201,7 +2201,7 @@ Public Class WMS_Trans
         If (DocEntryTable.Rows.Count > 0) Then
 
             For i As Integer = 0 To DocEntryTable.Rows.Count - 1
-                Dim DocEntry As String = DocEntryTable.Rows(0)(i)
+                Dim DocEntry As String = DocEntryTable.Rows(i)(0)
 
                 If Not String.IsNullOrEmpty(DocEntry) Then
                     Dim webClient As New System.Net.WebClient
