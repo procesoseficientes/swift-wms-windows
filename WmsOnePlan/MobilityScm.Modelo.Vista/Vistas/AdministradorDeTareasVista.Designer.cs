@@ -966,7 +966,6 @@
     "TED_ERP] = 1";
             formatConditionRuleExpression9.PredefinedName = "Green Fill, Green Text";
             gridFormatRule9.Rule = formatConditionRuleExpression9;
-            gridFormatRule10.ApplyToRow = true;
             gridFormatRule10.Column = this.UiColEstadoEncabezado;
             gridFormatRule10.ColumnApplyTo = this.UiColEstadoEncabezado;
             gridFormatRule10.Name = "Format1";
