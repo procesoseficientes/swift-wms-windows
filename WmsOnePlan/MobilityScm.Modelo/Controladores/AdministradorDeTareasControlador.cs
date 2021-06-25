@@ -495,6 +495,7 @@ namespace MobilityScm.Modelo.Controladores
             catch (Exception ex)
             {
                 InteraccionConUsuarioServicio.Mensaje(ex.Message);
+                _vista.RecargarVistas();
             }
         }
 

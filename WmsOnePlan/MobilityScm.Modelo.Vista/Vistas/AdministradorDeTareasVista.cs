@@ -2095,8 +2095,22 @@ namespace MobilityScm.Modelo.Vistas
             }
         }
 
+        public Boolean ValidarAsignacionBodega(IList<OrdenDeCompraDetalle> detalle)
+        {
+            foreach (OrdenDeCompraDetalle aPart in detalle)
+            {
+                if (aPart.ERP_WAREHOUSE == null)
+                {
+                    return false;
+                }
+            }
+           
+            return true;
+        }
+
         private void UiBotonGuardarConfirmacionRecepcion_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            
             if (ConfirmacionAsignacionReception())
             {
                 if (DetalleConfirmacionRecepcion.Where(detalle => detalle.ASIGNADO != detalle.QTY).Count() > 0)
@@ -2104,7 +2118,7 @@ namespace MobilityScm.Modelo.Vistas
                     InteraccionConUsuarioServicio.MensajeErrorDialogo("Debe asignar todos los materiales recepcionados para continuar");
                     return;
                 }
-                if (DetalleOrdenCompra.Where(detalle => (detalle.WAREHOUSE_CODE == null || detalle.WAREHOUSE_CODE == "") && detalle.QTY_CONFIRMED > 0).Count() > 0)
+                if (DetalleOrdenCompra.Where(detalle => (detalle.ERP_WAREHOUSE == null || detalle.ERP_WAREHOUSE == "") && detalle.QTY_CONFIRMED > 0).Count() > 0)
                 {
                     InteraccionConUsuarioServicio.MensajeErrorDialogo("Debe asignar las bodegas en el documento que tienen cantidad confirmada mayor a 0 para continular");
                     return;
