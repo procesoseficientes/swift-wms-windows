@@ -171,6 +171,7 @@
             this.UiColNombreCortoProyecto = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UiCalNumeroOrden = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UiColFin = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.UiColAttempedWhitError = new DevExpress.XtraGrid.Columns.GridColumn();
             this.UiContendorDeBarras = new DevExpress.XtraBars.BarManager(this.components);
             this.UiBarraTarea = new DevExpress.XtraBars.Bar();
             this.UiSwitchActualizarAutomaticamente = new DevExpress.XtraBars.BarToggleSwitchItem();
@@ -942,7 +943,8 @@
             this.UiColNombreProyecto,
             this.UiColNombreCortoProyecto,
             this.UiCalNumeroOrden,
-            this.UiColFin});
+            this.UiColFin,
+            this.UiColAttempedWhitError});
             gridFormatRule8.ApplyToRow = true;
             gridFormatRule8.Column = this.UiColEstadoEncabezado;
             gridFormatRule8.ColumnApplyTo = this.UiColEstadoEncabezado;
@@ -1010,7 +1012,8 @@
             formatConditionRuleExpression13.Appearance.Options.UseBackColor = true;
             formatConditionRuleExpression13.Appearance.Options.UseBorderColor = true;
             formatConditionRuleExpression13.Appearance.Options.UseForeColor = true;
-            formatConditionRuleExpression13.Expression = "[IS_AUTHORIZED_DESCRIPTION] = \'SI\' And ([IS_POSTED_ERP] <> 1) ";
+            formatConditionRuleExpression13.Expression = "[IS_AUTHORIZED_DESCRIPTION] = \'SI\' Or [ATTEMPTED_WITH_ERROR] = -1 And [IS_POSTED_" +
+    "ERP] <> 1 Or [ATTEMPTED_WITH_ERROR] = -1";
             gridFormatRule13.Rule = formatConditionRuleExpression13;
             gridFormatRule14.ApplyToRow = true;
             gridFormatRule14.Name = "Format5";
@@ -1307,6 +1310,14 @@
             this.UiColFin.Visible = true;
             this.UiColFin.VisibleIndex = 15;
             this.UiColFin.Width = 87;
+            // 
+            // UiColAttempedWhitError
+            // 
+            this.UiColAttempedWhitError.Caption = "Error en Operación";
+            this.UiColAttempedWhitError.FieldName = "ATTEMPTED_WITH_ERROR";
+            this.UiColAttempedWhitError.Name = "UiColAttempedWhitError";
+            this.UiColAttempedWhitError.Visible = true;
+            this.UiColAttempedWhitError.VisibleIndex = 17;
             // 
             // UiContendorDeBarras
             // 
@@ -4298,5 +4309,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn UiPhysicalCounting;
         private DevExpress.XtraGrid.Columns.GridColumn UiDifference;
         private DevExpress.XtraBars.BarButtonItem UIBotonLiberarTransaccion;
+        private DevExpress.XtraGrid.Columns.GridColumn UiColAttempedWhitError;
     }
 }

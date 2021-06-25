@@ -2197,6 +2197,8 @@ Public Class WMS_Trans
         Dim rst As String = ""
         Dim DocEntryTable = GetDraftDocEntry(passId, environmentName, rst)
         Dim DocNum = 0
+        Dim CompletedWhitErrors = 0
+        Dim PostedWhitError = New DataTable
 
         If (DocEntryTable.Rows.Count > 0) Then
 
@@ -2209,7 +2211,8 @@ Public Class WMS_Trans
 
                     If response.Contains("Error") Then
                         result = "ERROR, (" + AppSettings("SAPBOAPI") + "/CloseDraft/" + DocEntry + ") ; " + response
-                        Throw New Exception(result)
+                        CompletedWhitErrors = -1
+                        PostedWhitError = MarkWavePickingAsFailed(DocEntry, environmentName, login, response, rst)
                     Else
                         DocNum = response
                     End If
@@ -2227,6 +2230,7 @@ Public Class WMS_Trans
             cmd.Parameters.Add("@STATUS", SqlDbType.VarChar).Value = status
             cmd.Parameters.Add("@LOGIN", SqlDbType.VarChar).Value = login
             cmd.Parameters.Add("@ERP_REF", SqlDbType.VarChar).Value = DocNum
+            cmd.Parameters.Add("@ATTEMPED_WHIT_ERROR", SqlDbType.Int).Value = CompletedWhitErrors
 
             cmd.CommandText = DefaultSchema + "[OP_WMS_SP_UPDATE_STATUS_BY_EXIT_PASS]"
             cmd.CommandType = CommandType.StoredProcedure
@@ -2271,6 +2275,45 @@ Public Class WMS_Trans
 
             Dim miscDa = New SqlDataAdapter(cmd)
             Dim miscDs = New DataTable("DraftDocEntry")
+
+            Try
+                miscDa.Fill(miscDs)
+            Catch ex As Exception
+                result = "ERROR," + ex.Message
+                Return Nothing
+            End Try
+
+            result = ""
+            Return miscDs
+
+        Catch ex As Exception
+            result = ex.Message
+            Return Nothing
+        Finally
+            sqldbConexion.Close()
+            sqldbConexion.Dispose()
+            sqldbConexion = Nothing
+        End Try
+    End Function
+
+    <WebMethod(Description:="Get Draft DocEntry Reference by PassID")>
+    Public Function MarkWavePickingAsFailed(docEntry As Integer, environmentName As String, loginId As String, response As String, ByRef result As String) As DataTable
+        Dim sqldbConexion = New SqlConnection(AppSettings(environmentName).ToString)
+        sqldbConexion.Open()
+
+        Try
+            Dim cmd As New SqlCommand
+
+            cmd.Parameters.Add("@DOC_ENTRY", SqlDbType.Int).Value = docEntry
+            cmd.Parameters.Add("@SAP_ERROR", SqlDbType.VarChar).Value = response
+            cmd.Parameters.Add("@LOGIN_ID", SqlDbType.VarChar).Value = loginId
+
+            cmd.CommandText = DefaultSchema + "[OP_WMS_SP_MARK_PICKING_WHIT_ERROR]"
+            cmd.CommandType = CommandType.StoredProcedure
+            cmd.Connection = sqldbConexion
+
+            Dim miscDa = New SqlDataAdapter(cmd)
+            Dim miscDs = New DataTable("MarkWhitErrorResponse")
 
             Try
                 miscDa.Fill(miscDs)
