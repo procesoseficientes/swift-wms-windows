@@ -206,7 +206,16 @@ Namespace My
         
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("http://10.240.29.104:8090")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("10.240.29.104")>  _
+        Public ReadOnly Property SERVER_IP() As String
+            Get
+                Return CType(Me("SERVER_IP"),String)
+            End Get
+        End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute(" http://localhost:50005")>  _
         Public ReadOnly Property WSHOST() As String
             Get
                 Return CType(Me("WSHOST"),String)
@@ -216,7 +225,7 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.WebServiceUrl),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("http://10.240.29.104:8090")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute(" http://localhost:50005")>  _
         Public ReadOnly Property WMSOnePlan_Client_OnePlanServices_Security_WMS_Security() As String
             Get
                 Return CType(Me("WMSOnePlan_Client_OnePlanServices_Security_WMS_Security"),String)
@@ -225,7 +234,7 @@ Namespace My
         
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("ferco")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("alsersa")>  _
         Public ReadOnly Property Schema() As String
             Get
                 Return CType(Me("Schema"),String)
@@ -234,19 +243,10 @@ Namespace My
         
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Server=10.240.29.104;Database=OP_WMS_FERCO_GTP;User=sa;Pwd=F3rc0")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Server=190.56.39.218,87;Database=OP_WMS_ALSERSA;User=sa;Pwd=Almaser1981")>  _
         Public ReadOnly Property ConnectionString() As String
             Get
                 Return CType(Me("ConnectionString"),String)
-            End Get
-        End Property
-        
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("10.240.29.104")>  _
-        Public ReadOnly Property SERVER_IP() As String
-            Get
-                Return CType(Me("SERVER_IP"),String)
             End Get
         End Property
     End Class

@@ -331,7 +331,7 @@ Public Class frmGeneraOla
         Try
             Dim xdatarow As DataRow = GridViewPending.GetDataRow(GridViewPending.FocusedRowHandle)
             ''MessageBox.Show(xdatarow("ORIGIN_LINE_NUMBER"))
-            FN_LEE(Val(xdatarow("DOC_ID")), Val(xdatarow("ORIGIN_LINE_NUMBER")))
+            FN_LEE(Val(xdatarow("ORIGIN_DOC_ID")), Val(xdatarow("ORIGIN_LINE_NUMBER")))
             ''FN_LEE(Val(xdatarow("ORIGIN_DOC_ID")), Val(xdatarow("ORIGIN_LINE_NUMBER")))
 
         Catch ex As Exception

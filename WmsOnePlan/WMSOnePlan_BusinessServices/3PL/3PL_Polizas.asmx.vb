@@ -863,6 +863,7 @@ Public Class _3PL_Polizas
             sqldb_conexion = New SqlConnection(AppSettings(pEnvironmentName).ToString)
             Dim miscDA As SqlDataAdapter = New SqlDataAdapter(XSQL, sqldb_conexion)
             Dim miscDS As DataSet = New DataSet()
+            miscDA.SelectCommand.CommandTimeout = 300
             miscDA.Fill(miscDS, "INVENTORY_X_DOCS")
             pResult = "OK"
             Return miscDS
